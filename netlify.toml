@@ -4,3 +4,14 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Rutas antiguas (/docs/...) tras mover la documentación a la raíz del sitio
+[[redirects]]
+  from = "/docs"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/*"
+  to = "/:splat"
+  status = 301

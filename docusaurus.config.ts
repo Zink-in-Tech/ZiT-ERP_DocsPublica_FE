@@ -29,6 +29,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/ZinkInTech/ZiT-ERP_DocsPublica_FE/tree/master/',
@@ -74,15 +75,15 @@ const config: Config = {
           items: [
             {
               label: 'Introducción',
-              to: '/docs/intro',
+              to: '/intro',
             },
             {
               label: 'Arquitectura',
-              to: '/docs/arquitectura',
+              to: '/arquitectura',
             },
             {
               label: 'Primeros pasos',
-              to: '/docs/primeros-pasos',
+              to: '/primeros-pasos',
             },
           ],
         },
