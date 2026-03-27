@@ -31,9 +31,7 @@ const config: Config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          // tree/ = solo navegación; edit/ = editor web en GitHub (ruta relativa a docs/ se añade sola)
-          editUrl:
-            'https://github.com/ZinkInTech/ZiT-ERP_DocsPublica_FE/edit/master/',
+          // Sin editUrl: no se muestra "Editar esta página" (mantenimiento vía repo privado al equipo).
         },
         blog: false,
         theme: {
