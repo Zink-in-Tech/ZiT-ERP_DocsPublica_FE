@@ -84,13 +84,21 @@ const config: Config = {
               label: 'Primeros pasos',
               to: '/primeros-pasos',
             },
+            {
+              label: 'Mantenimiento del sitio',
+              to: '/mantenimiento',
+            },
           ],
         },
         {
-          title: 'Repositorio',
+          title: 'Enlaces',
           items: [
             {
-              label: 'GitHub',
+              label: 'Sitio web Zink ERP',
+              href: 'https://zinkerp.com',
+            },
+            {
+              label: 'Código de esta documentación',
               href: 'https://github.com/ZinkInTech/ZiT-ERP_DocsPublica_FE',
             },
           ],
