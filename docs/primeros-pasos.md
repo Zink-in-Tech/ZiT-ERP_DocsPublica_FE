@@ -1,8 +1,7 @@
 ---
 sidebar_position: 3
+title: Primeros pasos
 ---
-
-# Primeros pasos
 
 Guía para equipos que empiezan a trabajar con **ZinK ERP**. Los textos se alinean con las ayudas del producto; la URL y los contactos de soporte los define tu organización.
 

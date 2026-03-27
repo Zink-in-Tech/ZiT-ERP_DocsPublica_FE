@@ -33,14 +33,27 @@ La salida queda en la carpeta `build/`, lista para cualquier hosting estático.
 
 Sustituí la URL siguiente por la de tu sitio en Netlify (Dashboard del sitio → **Domain settings** o el dominio `*.netlify.app`):
 
-**URL de producción:** _completar con tu URL de Netlify_
+**URL de producción:** [https://zinkerp-docs.netlify.app](https://zinkerp-docs.netlify.app) (dominio `docs.zinkerp.com` cuando active el DNS).
 
 Configuración de build en Netlify: ver [`netlify.toml`](netlify.toml) (`npm run build`, carpeta `build`).
 
-## Contenido
+## Contenido y origen (ERP)
 
-- Fuentes de referencia: ayudas en `ZiT-ERP_FE` (`src/help/content`).
-- Para incrustar videos (YouTube), usar páginas `.mdx` y iframes o componentes; ver [introducción](docs/intro.md).
+Las guías por módulo se **importan** desde el cliente web `ZiT-ERP_FE`, carpeta `src/help/content`, y se adaptan a Docusaurus (frontmatter, carpetas por módulo, encabezados).
+
+```bash
+npm run import-help
+```
+
+Por defecto asume el repo `ZiT-ERP_FE` **junto a** este repositorio en el mismo directorio padre. Otra ruta:
+
+```bash
+node scripts/import-erp-help.mjs /ruta/a/ZiT-ERP_FE/src/help/content
+```
+
+Las páginas [Introducción](docs/intro.md), [Arquitectura](docs/arquitectura.md) y [Primeros pasos](docs/primeros-pasos.md) se mantienen a mano en la raíz de `docs/`.
+
+Para videos (YouTube), usar páginas `.mdx` e iframes; detalles en la introducción del sitio.
 
 ## Licencia
 

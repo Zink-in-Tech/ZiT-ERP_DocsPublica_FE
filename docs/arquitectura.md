@@ -1,8 +1,7 @@
 ---
 sidebar_position: 2
+title: Arquitectura del producto
 ---
-
-# Arquitectura del producto
 
 Esta visión resume cómo está organizado **ZinK ERP** y encaja con las ayudas contextuales del sistema. El detalle de cada pantalla se amplía en guías por módulo.
 
