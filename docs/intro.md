@@ -8,9 +8,13 @@ Bienvenido a la documentación pública de **ZinK ERP**. Aquí encontrarás guí
 
 ## Qué encontrarás
 
-- Visión general de la arquitectura y módulos.
+- Visión general de la arquitectura y módulos (alineada con las ayudas del producto).
 - Pasos iniciales para equipos que adoptan el sistema.
 - Documentación ampliada conforme publiquemos nuevas versiones.
+
+## Videos y contenido multimedia
+
+Sí: podés **incrustar videos de YouTube** (u otros proveedores) en la documentación. En Docusaurus, las páginas pueden ser `.mdx` para usar componentes React o **HTML embebido** (por ejemplo un `<iframe>` de YouTube) donde el proyecto lo permita. Si una página es solo Markdown (`.md`), renombrala a `.mdx` cuando quieras añadir iframes o componentes. Más adelante se pueden añadir atajos o un componente reutilizable para insertar videos con parámetros uniformes.
 
 ## Requisitos locales (para colaboradores)
 

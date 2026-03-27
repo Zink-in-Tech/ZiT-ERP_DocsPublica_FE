@@ -1,41 +1,47 @@
-# Website
+# ZinK ERP — Documentación pública
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Sitio estático generado con [Docusaurus](https://docusaurus.io/). El contenido se basa en las ayudas del producto y se publica en **Netlify** (build automático desde la rama `master`).
 
-## Installation
+## Requisitos
 
-```bash
-yarn
-```
+- [Node.js](https://nodejs.org/) 20 o superior
+- npm (incluido con Node)
 
-## Local Development
-
-```bash
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+## Instalación
 
 ```bash
-yarn build
+npm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
+## Desarrollo local
 
 ```bash
-USE_SSH=true yarn deploy
+npm run start
 ```
 
-Not using SSH:
+Abre `http://localhost:3000` y recarga al guardar cambios en la documentación.
+
+## Build de producción
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm run build
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+La salida queda en la carpeta `build/`, lista para cualquier hosting estático.
+
+## Sitio publicado
+
+Sustituí la URL siguiente por la de tu sitio en Netlify (Dashboard del sitio → **Domain settings** o el dominio `*.netlify.app`):
+
+**URL de producción:** _completar con tu URL de Netlify_
+
+Configuración de build en Netlify: ver [`netlify.toml`](netlify.toml) (`npm run build`, carpeta `build`).
+
+## Contenido
+
+- Fuentes de referencia: ayudas en `ZiT-ERP_FE` (`src/help/content`).
+- Para incrustar videos (YouTube), usar páginas `.mdx` y iframes o componentes; ver [introducción](docs/intro.md).
+
+## Licencia
+
+Uso interno / producto ZinK ERP según política de ZinkInTech.

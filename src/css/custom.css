@@ -1,30 +1,36 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Tema alineado con la app ZinK ERP (acentos #7500B9 / #008ED3 en App.css del cliente web).
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --zink-purple: #7500b9;
+  --zink-blue: #008ed3;
+  --ifm-color-primary: #7500b9;
+  --ifm-color-primary-dark: #600099;
+  --ifm-color-primary-darker: #56008a;
+  --ifm-color-primary-darkest: #42006b;
+  --ifm-color-primary-light: #8f33c9;
+  --ifm-color-primary-lighter: #9d4dd1;
+  --ifm-color-primary-lightest: #b87ae0;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(117, 0, 185, 0.09);
+  --ifm-link-color: #008ed3;
+  --ifm-link-hover-color: #7500b9;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #9d5fd9;
+  --ifm-color-primary-dark: #8c4ccd;
+  --ifm-color-primary-darker: #8445c7;
+  --ifm-color-primary-darkest: #6f35b0;
+  --ifm-color-primary-light: #b07fe3;
+  --ifm-color-primary-lighter: #b88de6;
+  --ifm-color-primary-lightest: #cdb0ee;
+  --docusaurus-highlighted-code-line-bg: rgba(157, 95, 217, 0.25);
+  --ifm-link-color: #5ec4ff;
+  --ifm-link-hover-color: #cfa8ff;
+}
+
+.navbar__title {
+  font-weight: 600;
 }
