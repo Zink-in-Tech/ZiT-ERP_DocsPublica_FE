@@ -53,7 +53,7 @@ node scripts/import-erp-help.mjs /ruta/a/ZiT-ERP_FE/src/help/content
 
 Las páginas [Introducción](docs/intro.md), [Arquitectura](docs/arquitectura.md) y [Primeros pasos](docs/primeros-pasos.md) se mantienen a mano en la raíz de `docs/`.
 
-Para videos (YouTube), usar páginas `.mdx` e iframes; detalles en la introducción del sitio.
+**Equipo (no publicado en el portal):** flujo de import, entorno local, videos y guía de redacción están en [`MANTENIMIENTO-DOCS-INTERNO.md`](MANTENIMIENTO-DOCS-INTERNO.md) y [`GUIA-REDACCION-ARTICULOS-AYUDA.md`](GUIA-REDACCION-ARTICULOS-AYUDA.md).
 
 ## Licencia
 

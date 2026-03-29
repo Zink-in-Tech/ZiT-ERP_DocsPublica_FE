@@ -1,10 +1,6 @@
----
-sidebar_position: 4
-title: Mantenimiento del sitio
-description: Cómo sincronizar ayudas desde el ERP, publicar videos y levantar el sitio en local (equipo técnico).
----
+# Mantenimiento del sitio de documentación
 
-Esta página es para **quien edita este sitio de documentación** (no para usuarios finales del ERP). El detalle también está en el [README del repositorio](https://github.com/ZinkInTech/ZiT-ERP_DocsPublica_FE).
+**Uso interno del equipo.** Este archivo **no** se publica en `docs.zinkerp.com`. Resume cómo sincronizar ayudas, multimedia y entorno local. El [README](README.md) del repo tiene el panorama general; acá el detalle operativo.
 
 ## Sincronizar contenido con el ERP
 
@@ -21,6 +17,10 @@ node scripts/import-erp-help.mjs /ruta/al/repo/ZiT-ERP_FE/src/help/content
 ```
 
 Revisá el diff antes de commitear: podés ajustar redacción en el ERP o afinar aquí después de importar.
+
+## Expandir semillas a artículos largos
+
+Pauta de redacción (SEO, tono, anti-alucinación): [`GUIA-REDACCION-ARTICULOS-AYUDA.md`](GUIA-REDACCION-ARTICULOS-AYUDA.md) — también interna, no publicada en el portal.
 
 ## Videos y contenido multimedia
 

@@ -59,11 +59,6 @@ const config: Config = {
           position: 'left',
           label: 'Documentación',
         },
-        {
-          href: 'https://github.com/ZinkInTech/ZiT-ERP_DocsPublica_FE',
-          label: 'GitHub',
-          position: 'right',
-        },
       ],
     },
     footer: {
@@ -84,10 +79,6 @@ const config: Config = {
               label: 'Primeros pasos',
               to: '/primeros-pasos',
             },
-            {
-              label: 'Mantenimiento del sitio',
-              to: '/mantenimiento',
-            },
           ],
         },
         {
@@ -96,10 +87,6 @@ const config: Config = {
             {
               label: 'Sitio web Zink ERP',
               href: 'https://zinkerp.com',
-            },
-            {
-              label: 'Código de esta documentación',
-              href: 'https://github.com/ZinkInTech/ZiT-ERP_DocsPublica_FE',
             },
           ],
         },

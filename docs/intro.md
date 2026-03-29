@@ -21,5 +21,3 @@ Implementación express y soporte prioritario forman parte de la propuesta de ac
 
 - **[Arquitectura](/arquitectura)** y **[Primeros pasos](/primeros-pasos)** — contexto del producto y puesta en marcha.
 - **Guías por módulo** (Administración, Ventas, Informes, etc.) generadas a partir de las mismas ayudas que ves en el ERP, adaptadas a este sitio (navegación y títulos Docusaurus).
-
-Si **colaborás en el mantenimiento** de este sitio (sincronizar ayudas desde el ERP, entorno local, videos), la referencia técnica está en **[Mantenimiento del sitio](/mantenimiento)**.
