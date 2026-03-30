@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: Primeros pasos
+title: Aspectos Generales
 description: Configurá ZinK ERP y empezá a operar tu negocio correctamente desde el primer día.
 ---
 

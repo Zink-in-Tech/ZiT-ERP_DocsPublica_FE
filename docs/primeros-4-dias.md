@@ -1,5 +1,5 @@
 ---
-title: Primeros días con ZinK ERP
+title: Primeros resultados con ZinK ERP
 description: Empezá a usar ZinK ERP paso a paso y validá el funcionamiento completo del sistema en pocos días.
 sidebar_position: 4
 ---
