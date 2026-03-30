@@ -1,22 +1,22 @@
 ---
 title: Ventas
-description: Registrá ventas, controlá entrega de mercadería y gestioná el cobro según el tipo de cliente.
+description: Registrá la venta final, gestioná la entrega de mercadería y el impacto en stock y cuenta corriente.
 sidebar_position: 5
 ---
 
 ## Resumen
 
-La pantalla de ventas permite registrar operaciones comerciales completas, desde la carga de productos hasta la entrega y el cobro.
+La venta es la etapa final del flujo comercial en Zink ERP.
 
-A diferencia de otras instancias previas (cotizaciones o presupuestos), la venta **impacta stock y cuenta corriente** según su estado.
+Representa el cierre de la operación y es el momento en el que el sistema impacta stock y cuenta corriente según el estado.
 
-El flujo contempla distintas etapas (borrador, confirmación, despacho y entrega) para adaptarse tanto a ventas inmediatas como a entregas programadas.
+Puede generarse desde un pedido o registrarse directamente, según el tipo de operación.
 
 ---
 
 ## Antes de empezar
 
-- Definí correctamente el **tipo de cliente**:
+- Definí correctamente el tipo de cliente:
   - Consumidor Final (pago inmediato)
   - Contacto (puede generar cuenta corriente)
 - Verificá que los productos tengan precios válidos.
@@ -24,14 +24,14 @@ El flujo contempla distintas etapas (borrador, confirmación, despacho y entrega
 
 ---
 
-## Cuándo usar ventas
+## Ubicación dentro del flujo
 
-Usá ventas cuando:
+La venta es la última etapa del proceso:
 
-- Estás registrando una operación real con entrega de productos.
-- El cliente ya confirmó la compra.
-- Necesitás impactar stock y registrar el ingreso o deuda.
-- Querés gestionar despacho antes de entregar la mercadería.
+Cotización → Presupuesto → Pedido → **Venta**
+
+- Puede generarse automáticamente desde un pedido en estado PREPARADO.
+- También puede crearse directamente sin pasar por etapas anteriores.
 
 ---
 
@@ -48,16 +48,16 @@ Usá ventas cuando:
 
 ## Procedimiento
 
-1. Creá una nueva venta.
-2. Seleccioná el contacto:
+1. Crear una nueva venta (o generarla desde un pedido).
+2. Seleccionar el contacto:
    - Consumidor Final → pago inmediato
    - Contacto → puede generar deuda
-3. Agregá productos y cantidades.
-4. Ajustá precios o descuentos si corresponde (según permisos).
-5. Confirmá la venta.
+3. Agregar productos y cantidades.
+4. Ajustar precios o descuentos si corresponde (según permisos).
+5. Confirmar la venta.
 6. Si aplica:
-   - Gestioná despacho
-7. Marcá como ENTREGADO para:
+   - gestionar despacho
+7. Marcar como ENTREGADO para:
    - descontar stock
    - actualizar cuenta corriente
 
@@ -67,7 +67,7 @@ Usá ventas cuando:
 
 | Estado     | Descripción |
 |------------|------------|
-| BORRADOR   | Editable. Podés modificar productos y datos. |
+| BORRADOR   | Editable. Permite modificar productos y datos. |
 | CONFIRMADO | No editable. Permite avanzar al despacho. |
 | DESPACHAR  | Control del inventario según configuración. |
 | ENTREGADO  | Se descuenta stock y se impacta cuenta corriente. |
@@ -78,14 +78,17 @@ Usá ventas cuando:
 
 ## Casos frecuentes
 
-### Venta en mostrador (Consumidor Final)
-Se carga el pago antes de finalizar. Puede pasar directamente a ENTREGADO.
+### Venta desde pedido
 
-### Venta a cliente con cuenta corriente
-El pago se registra luego desde cuenta corriente.
+El sistema genera automáticamente la venta al completar un pedido.
 
-### Venta con entrega diferida
-Se confirma primero y luego se gestiona el despacho.
+### Venta directa
+
+Se crea una venta sin pasar por cotización, presupuesto o pedido.
+
+### Venta en mostrador
+
+Se registra con pago inmediato y puede marcarse directamente como ENTREGADO.
 
 ---
 
@@ -93,9 +96,9 @@ Se confirma primero y luego se gestiona el despacho.
 
 - **No podés marcar como ENTREGADO**
   - Verificá que el pago esté cargado (Consumidor Final).
-  
+
 - **No podés modificar la venta**
-  - Puede estar en estado no editable.
+  - Puede estar en un estado no editable.
 
 - **Problemas con precios**
   - Revisá lista de precios o permisos.
@@ -113,6 +116,6 @@ Se confirma primero y luego se gestiona el despacho.
 
 ## Ver también
 
-- [Presupuestos](./presupuestos.md)
 - [Pedidos](./pedidos.md)
 - [POS](./pos.md)
+- [Flujo de ventas](./flujo-ventas.md)

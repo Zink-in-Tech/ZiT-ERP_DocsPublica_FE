@@ -6,11 +6,11 @@ sidebar_position: 2
 
 ## Resumen
 
-Las cotizaciones permiten armar una propuesta comercial mostrando **varias listas de precios al mismo tiempo**, para que el cliente compare opciones antes de tomar una decisión.
+Las cotizaciones permiten armar una propuesta comercial mostrando múltiples listas de precios en simultáneo para que el cliente compare opciones.
 
-No impactan stock ni generan deuda: son una instancia previa al presupuesto dentro del flujo comercial.
+Son la primera etapa del flujo de ventas y se utilizan cuando todavía no está definida la condición comercial.
 
-Una vez que el cliente define la opción, podés aprobar la cotización y convertirla en presupuesto.
+No impactan stock ni cuenta corriente.
 
 ---
 
@@ -19,6 +19,16 @@ Una vez que el cliente define la opción, podés aprobar la cotización y conver
 - Tené configuradas las listas de precios.
 - Verificá que los productos tengan precios cargados.
 - Algunas modificaciones pueden requerir permisos especiales.
+
+---
+
+## Ubicación dentro del flujo
+
+Cotización → Presupuesto → Pedido → Venta
+
+La cotización representa la etapa inicial, donde el cliente evalúa opciones antes de tomar una decisión.
+
+👉 Al aprobar, se genera un presupuesto en BORRADOR.
 
 ---
 
@@ -64,37 +74,13 @@ Usá cotizaciones cuando:
 
 ---
 
-## Campos principales
-
-### Contacto
-
-Cliente asociado a la cotización.  
-Es opcional, pero recomendable para seguimiento.
-
-### Fecha y vigencia
-
-Define cuándo se emitió la cotización y hasta cuándo es válida.
-
-### Ítems
-
-Productos con cantidades.  
-Cada lista de precios se muestra como una columna para comparación.
-
-### Listas de precios
-
-Permiten mostrar múltiples opciones (ej. mayorista, minorista).
-
-### Observaciones
-
-Texto libre para condiciones comerciales.
-
----
-
 ## Estados
 
-| Estado   | Descripción |
-|----------|------------|
-| BORRADOR | Editable. Permite aprobar como presupuesto seleccionando una lista. |
+| Estado      | Descripción |
+|-------------|------------|
+| BORRADOR    | Editable. |
+| CONFIRMADA  | Propuesta enviada. |
+| ACEPTADA    | Genera presupuesto en BORRADOR. |
 
 ---
 
@@ -104,10 +90,24 @@ Texto libre para condiciones comerciales.
 Se muestran varias listas en una sola pantalla.
 
 ### No está definido el volumen de compra
-La cotización permite avanzar sin cerrar condiciones.
+Permite avanzar sin cerrar condiciones.
 
 ### Envío de propuesta comercial
-Se puede compartir sin comprometer stock ni venta.
+Se comparte sin comprometer operación.
+
+---
+
+## Recomendaciones de uso
+
+Las cotizaciones son ideales para procesos de venta consultivos o con negociación.
+
+Usalas cuando:
+
+- El cliente necesita evaluar alternativas
+- Existen múltiples listas de precios
+- El cierre no es inmediato
+
+👉 Evitá usarlas si la venta ya está definida.
 
 ---
 
@@ -127,13 +127,13 @@ Se puede compartir sin comprometer stock ni venta.
 ## Buenas prácticas
 
 - Verificá listas antes de enviar.
-- Usá observaciones para aclarar condiciones.
+- Usá observaciones para condiciones.
 - Controlá la vigencia.
-- Convertí rápidamente a presupuesto cuando el cliente confirme.
+- Convertí rápidamente a presupuesto al confirmar.
 
 ---
 
 ## Ver también
 
 - [Presupuestos](./presupuestos.md)
-- [Ventas](./ventas.md)
+- [Flujo de ventas](./flujo-ventas.md)

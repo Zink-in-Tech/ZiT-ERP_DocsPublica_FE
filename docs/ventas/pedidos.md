@@ -6,19 +6,27 @@ sidebar_position: 4
 
 ## Resumen
 
-Los pedidos permiten registrar una compra confirmada por el cliente y organizar la preparación de la mercadería antes de generar la venta.
+Los pedidos representan una compra confirmada por el cliente y permiten organizar la preparación de la mercadería antes de concretar la venta.
 
-Funcionan como un paso intermedio entre la intención de compra y la venta final, especialmente útil cuando hay procesos de picking o preparación en depósito.
-
-Al completar la preparación, el sistema genera automáticamente la venta asociada.
+Son la etapa operativa del flujo de ventas, donde se ejecuta la preparación o logística.
 
 ---
 
 ## Antes de empezar
 
-- El contacto **no puede ser Consumidor Final**.
+- El contacto no puede ser Consumidor Final.
 - Verificá que los productos tengan precios válidos.
 - Algunas modificaciones pueden requerir permisos especiales.
+
+---
+
+## Ubicación dentro del flujo
+
+Cotización → Presupuesto → Pedido → Venta
+
+El pedido representa el compromiso del cliente y el inicio de la operación.
+
+👉 Al completarse, genera una venta en BORRADOR.
 
 ---
 
@@ -26,10 +34,10 @@ Al completar la preparación, el sistema genera automáticamente la venta asocia
 
 Usá pedidos cuando:
 
-- El cliente ya confirmó la compra.
-- Necesitás preparar mercadería antes de entregarla.
-- Trabajás con picking o depósito.
-- Querés separar el proceso de venta en etapas.
+- El cliente confirmó la compra.
+- Necesitás preparar mercadería.
+- Trabajás con depósito o picking.
+- Querés separar operación de venta.
 
 ---
 
@@ -37,25 +45,26 @@ Usá pedidos cuando:
 
 **El pedido:**
 
-- ✔️ Organiza la preparación de productos
-- ✔️ Permite generar una venta automáticamente
+- ✔️ Organiza la preparación
+- ✔️ Representa compromiso de compra
+- ✔️ Permite generar venta
 - ❌ No impacta stock directamente
-- ❌ No genera deuda hasta la venta
+- ❌ No genera deuda
 
-👉 El impacto ocurre cuando se genera la venta.
+👉 El impacto ocurre en la venta.
 
 ---
 
 ## Procedimiento
 
 1. Creá un pedido.
-2. Seleccioná el contacto (no puede ser Consumidor Final).
+2. Seleccioná el contacto.
 3. Agregá productos y cantidades.
 4. Confirmá el pedido.
 5. Pasá a EN_PREPARACION.
-6. Prepará la mercadería (picking).
+6. Prepará la mercadería.
 7. Marcá como PREPARADO:
-   - Se genera automáticamente la venta asociada
+   - Se genera la venta en BORRADOR
 
 ---
 
@@ -65,8 +74,8 @@ Usá pedidos cuando:
 |----------------|------------|
 | BORRADOR       | Editable. |
 | CONFIRMADO     | Listo para preparación. |
-| EN_PREPARACION | En proceso de picking. |
-| PREPARADO      | Genera la venta asociada. |
+| EN_PREPARACION | En picking. |
+| PREPARADO      | Genera venta en BORRADOR. |
 | RECHAZAR       | Vuelve a BORRADOR. |
 | CANCELADO      | Flujo cerrado. |
 
@@ -75,28 +84,42 @@ Usá pedidos cuando:
 ## Casos frecuentes
 
 ### Preparación en depósito
-Se usa EN_PREPARACION para organizar el picking.
+Se utiliza para organizar picking.
 
 ### Venta diferida
-Primero se prepara el pedido, luego se genera la venta.
+Se separa preparación de la venta final.
+
+---
+
+## Recomendaciones de uso
+
+Los pedidos son ideales para operaciones donde la venta no es inmediata.
+
+Usalos cuando:
+
+- Hay logística o preparación
+- Se trabaja con stock en depósito
+- La entrega no es instantánea
+
+👉 Evitá usarlos para ventas rápidas (usar POS).
 
 ---
 
 ## Si algo sale mal
 
-- **No podés avanzar de estado**
-  - Verificá que el pedido esté correctamente confirmado.
+- **No podés avanzar**
+  - Verificá estado.
 
-- **No se genera la venta**
-  - Confirmá que el pedido esté en PREPARADO.
+- **No se genera venta**
+  - Confirmá estado PREPARADO.
 
 ---
 
 ## Buenas prácticas
 
-- Confirmá antes de enviar a preparación.
-- Revisá cantidades antes de marcar PREPARADO.
-- Usá picking si tenés ubicaciones configuradas.
+- Confirmá antes de preparar.
+- Revisá cantidades.
+- Usá estados correctamente.
 
 ---
 
@@ -104,3 +127,4 @@ Primero se prepara el pedido, luego se genera la venta.
 
 - [Presupuestos](./presupuestos.md)
 - [Ventas](./ventas.md)
+- [Flujo de ventas](./flujo-ventas.md)

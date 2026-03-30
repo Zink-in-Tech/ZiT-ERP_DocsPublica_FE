@@ -1,58 +1,55 @@
 ---
-title: Notas de Débito
-description: Registrá cargos adicionales que aumentan la deuda del cliente.
-sidebar_position: 9
+title: Notas de débito
+description: Registrá recargos o ajustes sobre ventas realizadas y actualizá la cuenta corriente del cliente.
+sidebar_position: 31
 ---
 
 ## Resumen
 
-Las notas de débito permiten registrar cargos adicionales sobre ventas ya realizadas, como intereses, gastos o ajustes.
+Las notas de débito permiten registrar ajustes adicionales sobre ventas ya realizadas.
 
-Impactan la cuenta corriente aumentando la deuda del cliente y se envían a AFIP al confirmarse.
+Se utilizan para aplicar recargos, diferencias de precio o cualquier ajuste que incremente el importe de una operación.
 
-No afectan stock.
+Impactan la cuenta corriente del cliente.
 
 ---
 
 ## Antes de empezar
 
-- El contacto debe coincidir con la venta asociada.
-- Debés tener una venta previa.
-- Cada ítem requiere motivo e importe.
+- Tener una venta previamente registrada o un cliente asociado.
+- Definir el motivo del ajuste (recargo, diferencia, actualización de precio).
+- **TODO: confirmar con producto** — si puede asociarse obligatoriamente a una venta o puede ser independiente.
 
 ---
 
-## Cuándo usar notas de débito
+## Ubicación dentro del sistema
 
-Usalas cuando:
+Las notas de débito forman parte del **proceso post-venta**.
 
-- Cobrás intereses por mora.
-- Agregás gastos no incluidos.
-- Ajustás el importe a cobrar.
+Se utilizan después de haber registrado una venta:
+
+Venta → Nota de débito
+
+👉 Permiten ajustar operaciones aumentando el importe registrado.
 
 ---
 
-## Qué cambia y qué no cambia
+## Qué permite hacer
 
-**La nota de débito:**
-
-- ✔️ Aumenta la deuda del cliente
-- ✔️ Impacta fiscalmente (AFIP)
-- ❌ No modifica stock
-- ❌ No altera la venta original
+- Aplicar recargos a una venta
+- Ajustar diferencias de precio
+- Incrementar saldos en cuenta corriente
+- Registrar cargos adicionales posteriores a la venta
 
 ---
 
 ## Procedimiento
 
-1. Creá una nota de débito.
-2. Seleccioná el contacto.
-3. Agregá ítems:
-   - venta asociada
-   - motivo
-   - importe
-4. Revisá datos.
-5. Confirmá.
+1. Crear una nueva nota de débito.
+2. Seleccionar la venta asociada (si corresponde).
+3. Definir los importes o conceptos a ajustar.
+4. Verificar los valores.
+5. Confirmar la nota de débito.
 
 ---
 
@@ -60,40 +57,76 @@ Usalas cuando:
 
 | Estado     | Descripción |
 |------------|------------|
-| BORRADOR   | Editable. |
-| CONFIRMADO | Impacta cuenta corriente y AFIP. |
+| BORRADOR   | Editable. Permite modificar datos antes de confirmar. |
+| CONFIRMADO | No editable. Aplica los ajustes correspondientes. |
+
+---
+
+## Qué cambia y qué no cambia
+
+**La nota de débito:**
+
+- ✔️ Incrementa la cuenta corriente del cliente
+- ✔️ Permite ajustar operaciones
+- ❌ No genera una nueva venta
+- ❌ No modifica la operación original
 
 ---
 
 ## Casos frecuentes
 
-### Intereses por mora
-Se agrega un cargo adicional sobre una venta.
+### Diferencia de precio
 
-### Ajustes posteriores
-Se corrigen importes sin modificar la factura original.
+Se ajusta una venta que quedó con un valor incorrecto.
+
+### Recargo adicional
+
+Se aplica un costo extra posterior a la venta.
+
+### Ajuste manual
+
+Se corrige un importe por fuera del flujo habitual.
+
+---
+
+## Recomendaciones de uso
+
+Las notas de débito deben utilizarse cuando una operación ya fue registrada pero requiere un ajuste adicional que incrementa su importe.
+
+Es ideal en situaciones como:
+
+- Diferencias detectadas después de la venta
+- Recargos por servicios adicionales
+- Ajustes administrativos
+
+👉 Usalas en lugar de modificar ventas confirmadas para mantener la trazabilidad.
 
 ---
 
 ## Si algo sale mal
 
-- **No podés confirmar**
-  - Verificá que el contacto coincida.
+- **No podés modificar la nota**
+  - Puede estar en estado CONFIRMADO.
 
-- **Errores en importes**
-  - Revisá los ítems antes de confirmar.
+- **El ajuste no se refleja correctamente**
+  - Verificá los importes cargados.
+
+- **Diferencias en cuenta corriente**
+  - Revisá la operación asociada.
 
 ---
 
 ## Buenas prácticas
 
-- Validá siempre el contacto.
-- Usá motivos claros.
-- Revisá impacto en deuda.
+- Asociá la nota a una venta cuando sea posible.
+- Verificá los importes antes de confirmar.
+- Registrá claramente el motivo del ajuste.
+- Evitá modificar ventas ya cerradas.
 
 ---
 
 ## Ver también
 
+- [Ventas](./ventas.md)
 - [Notas de crédito](./notas-credito.md)
-- [Cuenta corriente](/finanzas/cuenta-corriente)
+- [Flujo de ventas](./flujo-ventas.md)

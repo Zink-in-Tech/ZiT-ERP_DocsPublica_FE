@@ -1,59 +1,55 @@
 ---
-title: Notas de Crédito
-description: Registrá devoluciones o ajustes que reducen la deuda del cliente.
-sidebar_position: 8
+title: Notas de crédito
+description: Registrá devoluciones o ajustes sobre ventas realizadas y actualizá la cuenta corriente del cliente.
+sidebar_position: 30
 ---
 
 ## Resumen
 
-Las notas de crédito permiten registrar importes a favor del cliente, ya sea por devoluciones, descuentos o correcciones.
+Las notas de crédito permiten corregir o ajustar ventas ya realizadas.
 
-Impactan directamente en la cuenta corriente (reduciendo la deuda) y se envían a AFIP al confirmarse.
+Se utilizan para registrar devoluciones, anular total o parcialmente una venta o ajustar importes en la cuenta corriente del cliente.
 
-No afectan stock; los movimientos de mercadería deben gestionarse por separado.
+Pueden impactar en stock y siempre afectan la cuenta corriente según el caso.
 
 ---
 
 ## Antes de empezar
 
-- El contacto debe coincidir con la venta asociada.
-- Debés tener una venta previa para asociar.
-- Cada ítem debe tener motivo e importe.
+- Tener una venta previamente registrada.
+- Tener definido el motivo del ajuste (devolución, error, anulación).
+- **TODO: confirmar con producto** — comportamiento sobre stock según configuración.
 
 ---
 
-## Cuándo usar notas de crédito
+## Ubicación dentro del sistema
 
-Usalas cuando:
+Las notas de crédito forman parte del **proceso post-venta**.
 
-- El cliente devuelve mercadería.
-- Necesitás corregir una venta.
-- Otorgás un descuento posterior.
-- Bajás la deuda del cliente.
+Se utilizan después de haber registrado una venta:
+
+Venta → Nota de crédito
+
+👉 Permiten corregir o ajustar operaciones ya cerradas.
 
 ---
 
-## Qué cambia y qué no cambia
+## Qué permite hacer
 
-**La nota de crédito:**
-
-- ✔️ Reduce la deuda en cuenta corriente
-- ✔️ Impacta fiscalmente (AFIP)
-- ❌ No modifica stock
-- ❌ No altera la venta original
+- Anular total o parcialmente una venta
+- Registrar devoluciones de productos
+- Ajustar saldos en cuenta corriente
+- Corregir errores en operaciones anteriores
 
 ---
 
 ## Procedimiento
 
-1. Creá una nota de crédito.
-2. Seleccioná el contacto.
-3. Agregá ítems:
-   - venta asociada
-   - motivo
-   - importe
-4. Revisá datos.
-5. Confirmá la nota.
+1. Crear una nueva nota de crédito.
+2. Seleccionar la venta asociada (si corresponde).
+3. Definir los productos o importes a ajustar.
+4. Verificar los valores.
+5. Confirmar la nota de crédito.
 
 ---
 
@@ -61,40 +57,78 @@ Usalas cuando:
 
 | Estado     | Descripción |
 |------------|------------|
-| BORRADOR   | Editable. |
-| CONFIRMADO | Impacta cuenta corriente y AFIP. |
+| BORRADOR   | Editable. Permite modificar datos antes de confirmar. |
+| CONFIRMADO | No editable. Aplica los ajustes correspondientes. |
+
+---
+
+## Qué cambia y qué no cambia
+
+**La nota de crédito:**
+
+- ✔️ Ajusta la cuenta corriente del cliente
+- ✔️ Puede devolver stock (según configuración)
+- ✔️ Permite corregir operaciones
+- ❌ No genera una nueva venta
+- ❌ No reemplaza la operación original, la ajusta
 
 ---
 
 ## Casos frecuentes
 
 ### Devolución de mercadería
-Se registra el crédito, pero el stock se maneja aparte.
 
-### Ajuste de factura
-Se corrige el importe sin modificar la venta original.
+El cliente devuelve productos y se ajusta la cuenta corriente.
+
+### Error en facturación
+
+Se corrige una venta mal registrada.
+
+### Anulación parcial
+
+Se elimina solo una parte de la operación original.
+
+---
+
+## Recomendaciones de uso
+
+Las notas de crédito deben utilizarse cuando una venta ya fue registrada pero necesita ser corregida.
+
+Es ideal en situaciones como:
+
+- Devoluciones de productos
+- Reclamos de clientes
+- Errores en precios o cantidades
+- Ajustes posteriores a la venta
+
+👉 Es importante utilizarlas en lugar de modificar ventas ya confirmadas para mantener la trazabilidad.
 
 ---
 
 ## Si algo sale mal
 
-- **No podés confirmar**
-  - Verificá que el contacto coincida con la venta.
+- **No podés modificar la nota**
+  - Puede estar en estado CONFIRMADO.
 
-- **Error en importes**
-  - Revisá cada ítem antes de confirmar.
+- **El ajuste no impacta correctamente**
+  - Verificá la venta asociada.
+
+- **Diferencias en cuenta corriente**
+  - Revisá los importes aplicados.
 
 ---
 
 ## Buenas prácticas
 
-- Verificá datos antes de confirmar.
-- Usá motivos claros.
-- Revisá impacto en cuenta corriente.
+- Asociá siempre la nota a una venta cuando sea posible.
+- Verificá los importes antes de confirmar.
+- Usá notas de crédito para mantener historial en lugar de editar ventas.
+- Documentá el motivo del ajuste.
 
 ---
 
 ## Ver también
 
+- [Ventas](./ventas.md)
 - [Notas de débito](./notas-debito.md)
-- [Cuenta corriente](/finanzas/cuenta-corriente)
+- [Flujo de ventas](./flujo-ventas.md)

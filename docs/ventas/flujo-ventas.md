@@ -1,14 +1,25 @@
 ---
 title: Flujo de ventas
-description: Entendé cómo funciona el proceso completo desde cotización hasta venta en Zink ERP.
+description: Entendé cómo funciona el proceso completo desde cotización hasta la venta en Zink ERP.
 sidebar_position: 1
 ---
 
 ## Resumen
 
-El flujo de ventas en Zink ERP está dividido en distintas etapas que permiten avanzar desde una propuesta inicial hasta la concreción de la venta.
+El flujo de ventas en Zink ERP organiza el proceso comercial desde una propuesta inicial hasta la concreción de la venta.
 
-Cada etapa cumple una función específica y, al avanzar, genera automáticamente la siguiente en estado BORRADOR, manteniendo la relación entre ellas.
+Está dividido en etapas que permiten avanzar progresivamente según el nivel de definición de la operación.
+
+Cada vez que avanzás en el flujo, el sistema genera automáticamente el siguiente documento en estado BORRADOR y mantiene la relación entre ellos.
+
+---
+
+## Antes de empezar
+
+- Tener productos configurados.
+- Tener contactos (clientes) cargados.
+- Definir listas de precios.
+- **TODO: confirmar con producto** — permisos necesarios para avanzar entre etapas.
 
 ---
 
@@ -28,9 +39,9 @@ Cada vez que avanzás en el proceso:
 
 Esto permite:
 
-- trazabilidad completa
+- trazabilidad completa de la operación
 - control por etapas
-- flexibilidad para modificar antes de cerrar
+- posibilidad de ajustar antes de cerrar la venta
 
 ---
 
@@ -38,11 +49,11 @@ Esto permite:
 
 ### Cotización
 
-- Comparación de precios
-- Negociación
-- No genera impacto operativo
+- Comparación de precios entre listas
+- Negociación con el cliente
+- No impacta stock ni cuenta corriente
 
-👉 Cuando el cliente acepta, se genera un presupuesto.
+👉 Al aceptar, se genera un presupuesto en estado BORRADOR.
 
 ---
 
@@ -50,25 +61,26 @@ Esto permite:
 
 - Precio definido
 - Condiciones comerciales
-- Vigencia
+- Vigencia de la propuesta
 
-👉 Al aceptar, se genera un pedido.
+👉 Al aceptar, se genera un pedido en estado BORRADOR.
 
 ---
 
 ### Pedido
 
-- Preparación de mercadería
-- Proceso logístico
+- Representa el compromiso del cliente
+- Permite organizar la preparación o logística
 
-👉 Al completar, se genera la venta.
+👉 Al completar, se genera la venta en estado BORRADOR.
 
 ---
 
 ### Venta
 
 - Cierre de la operación
-- Impacta stock y cuenta corriente
+- Impacta stock
+- Impacta cuenta corriente
 
 ---
 
@@ -83,25 +95,32 @@ Esto permite:
 
 ---
 
-## Ventajas del flujo
-
-- Evita errores operativos
-- Permite trabajar por etapas
-- Mantiene historial completo
-- Facilita control y seguimiento
-
----
-
 ## Casos frecuentes
 
 ### Venta rápida
-Podés ir directo a venta sin pasar por etapas previas.
+
+Podés ir directamente a venta sin pasar por etapas previas.
 
 ### Venta con negociación
+
 Cotización → Presupuesto → Venta
 
 ### Venta con logística
+
 Cotización → Presupuesto → Pedido → Venta
+
+---
+
+## Si algo sale mal
+
+- **No podés avanzar de etapa**
+  - Verificá el estado del documento.
+
+- **Datos incorrectos en la venta**
+  - Revisá la información en las etapas anteriores.
+
+- **Problemas con stock**
+  - Verificá la configuración de los productos.
 
 ---
 

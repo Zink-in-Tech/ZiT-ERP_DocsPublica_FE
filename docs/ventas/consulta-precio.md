@@ -1,87 +1,119 @@
 ---
-title: Consulta de Precios
-description: Consultá precios y stock de productos sin generar comprobantes ni afectar el sistema.
-sidebar_position: 7
+title: Consulta de precios
+description: Consultá precios de productos según listas activas o permití que tus clientes verifiquen precios de forma autónoma.
+sidebar_position: 10
 ---
 
 ## Resumen
 
-La consulta de precios permite verificar rápidamente el valor de un producto sin necesidad de crear una venta o presupuesto.
+La consulta de precios permite visualizar rápidamente los valores de los productos según las listas de precios configuradas.
 
-Es una herramienta ágil para atención en mostrador o consultas internas.
+Puede utilizarse tanto por el equipo interno como por los clientes en un punto de consulta, facilitando la verificación de precios sin necesidad de intervención del vendedor.
 
-No genera comprobantes ni impacta stock.
+No genera documentos ni impacta stock o cuenta corriente.
 
 ---
 
 ## Antes de empezar
 
-- Las listas de precios visibles dependen de la configuración en Preferencias.
-- La visualización de stock también depende de configuración.
-- La consulta inter-organización debe estar habilitada para ver otras sucursales.
+- Tener productos configurados.
+- Tener listas de precios activas.
+- La lista de precios visible depende de la configuración en preferencias.
+- **TODO: confirmar con producto** — si permite seleccionar lista manualmente o es fija según configuración.
 
 ---
 
-## Cuándo usar consulta de precios
+## Ubicación dentro del sistema
 
-Usala cuando:
+La consulta de precios es una **herramienta previa a la venta**.
 
-- Necesitás responder rápidamente el precio de un producto.
-- No querés iniciar un proceso de venta.
-- Querés verificar precios por lista.
-- Querés consultar stock (si está habilitado).
+No forma parte del flujo de ventas, pero se utiliza antes de iniciar cualquier operación:
+
+Consulta de precios → Cotización / POS / Venta
+
+👉 Permite validar precios antes de avanzar en el proceso comercial.
 
 ---
 
-## Qué cambia y qué no cambia
+## Qué permite hacer
 
-**La consulta:**
-
-- ✔️ Muestra precios y stock (según configuración)
-- ❌ No genera comprobantes
-- ❌ No impacta stock
-- ❌ No registra operaciones
+- Consultar precios por producto
+- Visualizar precios según la lista configurada en el sistema
+- Buscar productos rápidamente
+- Validar información antes de vender
 
 ---
 
 ## Procedimiento
 
-1. Ingresá código o descripción del producto.
-2. Seleccioná el producto si hay múltiples resultados.
-3. Visualizá precios según listas disponibles.
-4. (Opcional) Consultá stock si está habilitado.
+1. Buscar el producto:
+   - por nombre
+   - por código
+   - por código de barras
+2. Visualizar los precios disponibles:
+   - según la lista de precios configurada en preferencias
+3. Utilizar la información para:
+   - responder al cliente
+   - definir una cotización
+   - avanzar a una venta
 
 ---
 
 ## Casos frecuentes
 
-### Consulta rápida en mostrador
-Permite responder sin iniciar una venta.
+### Atención al cliente en mostrador
 
-### Comparación de listas
-Se visualizan distintos precios según configuración.
+El vendedor consulta precios antes de generar una venta o cotización.
+
+### Validación interna
+
+Se utiliza para verificar listas de precios o diferencias entre ellas.
+
+### Soporte a ventas
+
+Permite responder consultas rápidas sin iniciar un documento.
+
+---
+
+## Recomendaciones de uso
+
+La consulta de precios es especialmente útil en entornos donde el cliente necesita acceder a la información de forma rápida o autónoma.
+
+Es ideal para:
+
+- Showrooms con alto flujo de clientes
+- Locales donde el cliente recorre el espacio sin asistencia constante
+- Puntos de venta con autoservicio
+- Negocios que quieren reducir la carga operativa del vendedor
+
+### Ejemplo típico
+
+Un cliente en el showroom consulta o escanea un producto y puede ver el precio sin necesidad de interactuar con el personal.
+
+👉 La experiencia del cliente depende de la lista de precios configurada, por lo que es importante definir correctamente qué lista se expone.
 
 ---
 
 ## Si algo sale mal
 
 - **No aparecen precios**
-  - Verificá configuración de listas en Preferencias.
+  - Verificá que las listas de precios estén configuradas correctamente.
 
-- **No aparece stock**
-  - Puede no estar habilitado.
+- **Producto no encontrado**
+  - Revisá nombre, código o configuración del producto.
 
 ---
 
 ## Buenas prácticas
 
-- Usá esta pantalla para consultas rápidas.
-- Evitá iniciar ventas innecesarias.
-- Confirmá listas configuradas.
+- Usá esta herramienta antes de generar cotizaciones o ventas para evitar errores.
+- Asegurate de que las listas de precios estén actualizadas.
+- Si se usa como punto de consulta para clientes, mantené la información clara y consistente.
 
 ---
 
 ## Ver también
 
+- [Cotizaciones](./cotizaciones.md)
 - [POS](./pos.md)
-- [Ventas](./ventas.md)
+- [Flujo de ventas](./flujo-ventas.md)
