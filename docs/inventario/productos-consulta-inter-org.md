@@ -1,36 +1,91 @@
 ---
-title: Consulta de Stock
-sidebar_position: 56
+title: Consulta de stock
+description: Consultá el stock disponible por producto y organización para tomar decisiones de venta o reposición.
+sidebar_position: 4
 ---
+
 ## Resumen
 
-- Consultá la cantidad en stock de un producto en la organización actual (y en otras sucursales propias si está habilitado).
-- No impacta stock; solo consulta. No podés modificar cantidades desde esta pantalla.
-- La consulta inter-organización se habilita en Preferencias; si está habilitada, ves stock por organización.
-- Sirve para decidir desde qué sucursal enviar o reponer.
-- Búsqueda por artículo (código o descripción).
+La consulta de stock permite visualizar la disponibilidad de productos en la organización actual y, si está habilitado, en otras sucursales.
 
-## CuandoUsar
+Es una herramienta de consulta que no modifica datos.
 
-- Verificar el stock de un producto en la organización actual.
-- Ver stock en otras sucursales propias si la consulta inter-organización está habilitada en preferencias.
-- Decidir desde qué sucursal enviar o reponer antes de confirmar un pedido o venta.
+---
 
-## Flujo
+## Antes de empezar
 
-- Buscá artículo (producto). Consultá cantidad en stock (y por organización si la consulta inter-organización está habilitada).
+- Tener productos configurados.
+- **TODO: confirmar con producto** — habilitación de consulta inter-organización en preferencias.
 
-## Campos
+---
 
-## Artículo
+## Ubicación dentro del sistema
 
-Código o descripción del producto a consultar. Se muestra la cantidad en stock (y por organización si la consulta inter-organización está habilitada en preferencias).
+Es una herramienta de apoyo:
 
-## Reglas
+Consulta → Venta / Pedido / Reposición
 
-- La consulta inter-organización se habilita desde Preferencias.
-- Solo se consulta stock; no se modifican cantidades desde esta pantalla.
+👉 Se utiliza antes de operar.
 
-## BuenasPracticas
+---
 
-- Usá esta consulta antes de confirmar un pedido o venta para verificar disponibilidad en la sucursal correcta.
+## Qué permite hacer
+
+- Ver stock disponible
+- Consultar otras sucursales
+- Tomar decisiones de venta o reposición
+
+---
+
+## Procedimiento
+
+1. Buscar producto.
+2. Visualizar stock:
+   - en la organización actual
+   - en otras si aplica
+
+---
+
+## Casos frecuentes
+
+### Ver disponibilidad
+
+Antes de vender o preparar un pedido.
+
+### Reposición
+
+Decidir desde dónde abastecer.
+
+---
+
+## Recomendaciones de uso
+
+Usala antes de tomar decisiones operativas.
+
+Ideal para:
+
+- ventas
+- logística
+- reposición
+
+---
+
+## Si algo sale mal
+
+- **Stock incorrecto**
+  - Revisá movimientos o ajustes.
+
+---
+
+## Buenas prácticas
+
+- Verificá stock antes de confirmar ventas.
+- Usá consulta inter-org si trabajás con sucursales.
+
+---
+
+## Ver también
+
+- [Registro de inventario](./inventarios.md)
+- [Toma de inventario](./inventarios-ubicacion.md)
+- [Ventas](../ventas/ventas.md)

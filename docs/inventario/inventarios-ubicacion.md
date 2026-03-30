@@ -1,45 +1,107 @@
 ---
-title: Toma de Inventario
-sidebar_position: 57
+title: Toma de inventario
+description: Registrá el conteo físico de productos por ubicación y actualizá el stock en una sola operación.
+sidebar_position: 3
 ---
+
 ## Resumen
 
-- Registrá existencias por ubicación (depósito, sector, estante) en una sola operación.
-- Impacta el stock del producto: la cantidad ingresada se registra directamente como stock.
-- Importante: si el producto está en varias ubicaciones, el sistema reconoce un único stock con una sola ubicación.
-- Sirve para conteo físico por ubicación y para cargar o actualizar stock con ubicación.
-- No genera comprobantes; solo actualiza stock.
+La toma de inventario permite registrar el conteo físico de productos y actualizar el stock en una sola operación.
 
-## CuandoUsar
+Es una herramienta para sincronizar el sistema con la realidad del depósito.
 
-- Realizar un conteo físico por ubicación (depósito, sector, estante).
-- Cargar o actualizar stock con ubicación en una sola operación.
-- Tener en cuenta: varias ubicaciones se consolidan en un único stock con una ubicación.
+---
 
-## Flujo
+## Antes de empezar
 
-- Elegí ubicación física. Buscá producto por código o descripción. Ingresá cantidad (se registra como stock). Repetí por producto/ubicación según corresponda.
+- Tener ubicaciones configuradas.
+- Tener productos cargados.
+- **TODO: confirmar con producto** — comportamiento con múltiples ubicaciones.
 
-## Campos
+---
 
-## Ubicación
+## Ubicación dentro del sistema
 
-Ubicación física del artículo (depósito, sector, estante). Sirve para picking y reportes.
+Forma parte del control de inventario:
 
-## Código / Descripción de producto
+Compras → Inventario → Ventas  
+       ↘ Conteo físico
 
-Código o descripción del producto. Si la búsqueda devuelve varios, elegí el correcto.
+👉 Se utiliza para actualizar el stock según la realidad.
 
-## Cantidad
+---
 
-Cantidad a registrar; se ingresa directamente como stock. Importante: si el producto está en varias ubicaciones, el sistema reconoce un único stock con una sola ubicación.
+## Cuándo usar toma de inventario
 
-## Reglas
+Usala cuando:
 
-- La cantidad ingresada se registra directamente como stock.
-- Producto en varias ubicaciones: el sistema reconoce un único stock con una sola ubicación.
+- Realizás conteo físico
+- Querés actualizar stock completo
+- Necesitás validar inventario
 
-## BuenasPracticas
+---
 
-- Realizá la toma por ubicación en orden para facilitar el conteo físico.
-- Verificá que la ubicación esté bien configurada en el producto si se usa para picking.
+## Qué cambia y qué no cambia
+
+**La toma de inventario:**
+
+- ✔️ Define el stock real
+- ✔️ Actualiza cantidades directamente
+- ❌ No registra movimientos intermedios
+- ❌ No genera documentos
+
+---
+
+## Procedimiento
+
+1. Seleccioná la ubicación.
+2. Buscá el producto.
+3. Ingresá la cantidad real.
+4. Confirmá.
+
+---
+
+## Casos frecuentes
+
+### Conteo periódico
+
+Se realiza para control de stock.
+
+### Inicio de operación
+
+Se carga stock real.
+
+---
+
+## Recomendaciones de uso
+
+La toma de inventario debe utilizarse para reflejar la realidad física del stock.
+
+Usala cuando:
+
+- Necesitás actualizar el stock completo
+- Realizás auditorías
+
+👉 Evitá usar ajustes manuales para conteos grandes.
+
+---
+
+## Si algo sale mal
+
+- **Stock incorrecto**
+  - Verificá cantidades ingresadas.
+
+---
+
+## Buenas prácticas
+
+- Contá por ubicación.
+- Verificá antes de confirmar.
+- Realizá conteos periódicos.
+
+---
+
+## Ver también
+
+- [Registro de inventario](./inventarios.md)
+- [Consulta de stock](./productos-consulta-inter-org.md)

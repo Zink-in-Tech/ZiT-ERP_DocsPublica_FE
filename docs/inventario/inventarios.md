@@ -1,51 +1,127 @@
 ---
-title: Registro de Inventario
-sidebar_position: 55
+title: Registro de inventario
+description: Registrá ajustes de stock que no provienen de compras o ventas y mantené la consistencia del inventario.
+sidebar_position: 2
 ---
+
 ## Resumen
 
-- Registrá movimientos de stock que no son compra ni venta (ajustes, inicialización, desecho, devolución).
-- Impacta el stock del producto; los movimientos quedan registrados para auditoría.
-- Los movimientos de compras, ventas y toma de inventario se reflejan automáticamente en el sistema.
-- Tipos de movimiento: Ingreso, Egreso, Ajuste Manual, Inicialización. Tipo de evento: Desecho, Devolución.
-- Sirve para ver el historial de movimientos de un producto.
+El registro de inventario permite ajustar el stock de productos cuando los movimientos no provienen de compras o ventas.
 
-## CuandoUsar
+Se utiliza para corregir diferencias, registrar pérdidas, devoluciones o cargar stock inicial.
 
-- Registrar un ingreso o egreso de stock que no sea por compra o venta (rotura, devolución, ajuste).
-- Cargar stock inicial de un producto.
-- Corregir diferencias entre stock real y el que muestra el sistema.
-- Ver movimientos de un producto.
+Todos los movimientos quedan registrados para auditoría.
 
-## Flujo
+---
 
-- Elegí tipo de movimiento (Ingreso, Egreso, Ajuste Manual, Inicialización) y tipo de evento si aplica (Desecho, Devolución).
-- Buscá producto por código o descripción. Indicá cantidad. Registrá.
+## Antes de empezar
 
-## Campos
+- Tener productos configurados.
+- Verificá el stock actual antes de realizar ajustes.
+- **TODO: confirmar con producto** — permisos necesarios para ajustes manuales.
 
-## Tipo de Movimiento
+---
 
-Ingreso, Egreso, Ajuste Manual o Inicialización. Define si el stock sube o baja y en qué contexto.
+## Ubicación dentro del sistema
 
-## Tipo Evento
+El registro de inventario forma parte del control de stock:
 
-Desecho o Devolución (según el tipo de movimiento). Sirve para categorizar el motivo.
+Compras → Inventario → Ventas  
+       ↘ Ajustes
 
-## Código / Descripción de producto
+👉 Se utiliza para corregir o registrar movimientos no contemplados en el flujo principal.
 
-Código o descripción del producto. Si la búsqueda devuelve varios, elegí el correcto.
+---
 
-## Cantidad
+## Cuándo usar registro de inventario
 
-Cantidad a registrar en el movimiento. Importante: verificá antes de confirmar.
+Usalo cuando:
 
-## Reglas
+- Hay diferencias entre stock real y sistema
+- Necesitás registrar roturas o pérdidas
+- Recibís devoluciones sin proceso formal
+- Cargás stock inicial
 
-- Los movimientos de compras, ventas y toma de inventario se reflejan automáticamente; no los cargás acá.
-- Este registro es para movimientos no contemplados por compras/ventas (roturas, devoluciones, ajustes).
+---
 
-## BuenasPracticas
+## Qué cambia y qué no cambia
 
-- Usá Ajuste Manual o Inicialización con cuidado; verificá cantidades antes de confirmar.
-- Revisá movimientos previos del producto para entender el stock actual antes de un ajuste.
+**El registro de inventario:**
+
+- ✔️ Modifica el stock
+- ✔️ Registra historial de movimientos
+- ✔️ Permite correcciones
+- ❌ No genera compras ni ventas
+- ❌ No impacta cuenta corriente
+
+---
+
+## Procedimiento
+
+1. Seleccioná tipo de movimiento:
+   - Ingreso
+   - Egreso
+   - Ajuste manual
+   - Inicialización
+2. (Opcional) Seleccioná tipo de evento:
+   - Desecho
+   - Devolución
+3. Buscá el producto.
+4. Ingresá la cantidad.
+5. Confirmá el movimiento.
+
+---
+
+## Casos frecuentes
+
+### Ajuste por diferencia
+
+Se corrige el stock cuando no coincide con el conteo físico.
+
+### Rotura o pérdida
+
+Se registra como egreso.
+
+### Stock inicial
+
+Se carga al comenzar a usar el sistema.
+
+---
+
+## Recomendaciones de uso
+
+El registro de inventario debe utilizarse con cuidado, ya que modifica directamente el stock.
+
+Usalo cuando:
+
+- No existe un documento previo (compra/venta)
+- Necesitás corregir el sistema
+
+👉 Evitá usarlo para movimientos que deberían registrarse como compra o venta.
+
+---
+
+## Si algo sale mal
+
+- **Stock incorrecto**
+  - Revisá movimientos previos.
+
+- **Error en cantidad**
+  - Verificá antes de confirmar.
+
+---
+
+## Buenas prácticas
+
+- Revisá historial antes de ajustar.
+- Usá eventos para categorizar movimientos.
+- Evitá ajustes innecesarios.
+
+---
+
+## Ver también
+
+- [Toma de inventario](./inventarios-ubicacion.md)
+- [Consulta de stock](./productos-consulta-inter-org.md)
+- [Compras](../compras/compras.md)
+- [Ventas](../ventas/ventas.md)
