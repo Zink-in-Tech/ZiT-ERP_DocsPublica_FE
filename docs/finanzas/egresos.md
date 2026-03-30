@@ -1,49 +1,82 @@
 ---
 title: Egresos
-sidebar_position: 53
+description: Registrá salidas de dinero fuera del flujo de compras y controlá gastos del negocio.
+sidebar_position: 6
 ---
+
 ## Resumen
 
-- Registrá la salida de dinero de la caja (gastos, retiros, etc.).
-- Requerís concepto (motivo) y monto; opcional: contacto y observaciones.
-- No impacta la Cuenta Corriente del contacto; solo sirve para referencia.
-- Los conceptos deben ser de tipo egreso (configurados en Conceptos).
-- Sirve para categorizar y reportar egresos por tipo.
+Los egresos permiten registrar salidas de dinero que no provienen de compras.
 
-## CuandoUsar
+Son clave para controlar gastos operativos.
 
-- Registrás una salida de dinero de caja (gastos operativos, retiros, pagos en efectivo).
-- Querés categorizar el egreso con un concepto para filtrar y reportar después.
-- Opcional: asociar a un contacto para referencia (no modifica cuenta corriente).
+---
 
-## Flujo
+## Antes de empezar
 
-- Elegí concepto (motivo del egreso). Indicá monto. Opcional: contacto, observaciones. Registrá.
+- Tener conceptos configurados.
+- **TODO: confirmar con producto** — validaciones.
 
-## Campos
+---
 
-## Concepto
+## Ubicación dentro del sistema
 
-Motivo del egreso. Debe ser un concepto de tipo egreso configurado en Conceptos.
+Egreso → Caja
 
-## Monto
+---
 
-Monto que sale de la caja.
+## Cuándo usar egresos
 
-## Contacto (opcional)
+- Gastos operativos
+- Retiros
+- Pagos manuales
 
-Podés asociar el egreso a un contacto. No modifica la Cuenta Corriente del contacto.
+---
 
-## Observación (opcional)
+## Qué cambia y qué no cambia
 
-Comentarios o justificación del egreso.
+**El egreso:**
 
-## Reglas
+- ✔️ Reduce dinero en caja
+- ✔️ Permite categorizar gastos
+- ❌ No impacta deuda
 
-- El concepto debe ser de tipo egreso (configurado en Conceptos).
-- Asociar a contacto no modifica la Cuenta Corriente.
+---
 
-## BuenasPracticas
+## Procedimiento
 
-- Usá conceptos claros para poder filtrar y reportar egresos por tipo.
-- Completá observaciones cuando el egreso requiera justificación o referencia.
+1. Seleccioná concepto.
+2. Ingresá monto.
+3. (Opcional) asociá contacto.
+4. Confirmá.
+
+---
+
+## Casos frecuentes
+
+### Gastos del negocio
+
+Pagos de servicios, insumos, etc.
+
+### Retiros
+
+Extracciones de dinero.
+
+---
+
+## Recomendaciones de uso
+
+Usalos solo fuera del flujo de compras.
+
+---
+
+## Buenas prácticas
+
+- Registrá todos los gastos.
+- Usá conceptos claros.
+
+---
+
+## Ver también
+
+- [Caja diaria](./caja-diaria.md)

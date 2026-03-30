@@ -1,5 +1,9 @@
 {
   "label": "Finanzas",
   "position": 50,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "finanzas/finanzas"
+  }
 }

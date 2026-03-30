@@ -1,64 +1,107 @@
 ---
 title: Pagos
-sidebar_position: 50
+description: Registrá cobros y pagos, aplicalos a comprobantes y mantené actualizada la cuenta corriente.
+sidebar_position: 3
 ---
+
 ## Resumen
 
-- Registrá cobros a clientes (ingresos) o pagos a proveedores (egresos).
-- Impacta la Cuenta Corriente del contacto; aplica el monto a uno o varios comprobantes.
-- Podés usar uno o varios medios de pago (efectivo, transferencia, tarjeta, Mercado Pago, etc.).
-- No podés aplicar un monto mayor al adeudado ni dejar parte del pago sin aplicar (genera nota de crédito).
-- Mercado Pago: solo guardar cuando la transacción esté APROBADA.
+Los pagos permiten registrar cobros a clientes y pagos a proveedores, aplicando montos sobre comprobantes existentes.
 
-## CuandoUsar
+Son el mecanismo que transforma deuda en dinero, impactando tanto la cuenta corriente como la caja.
 
-- Registrar un cobro a un cliente desde Cuenta Corriente o tras una venta a consumidor final.
-- Registrar un pago a un proveedor desde Cuenta Corriente.
-- Aplicar un pago parcial o total sobre facturas, ventas o compras.
+---
 
-## Flujo
+## Antes de empezar
 
-- Elegí contacto, tipo de pago (cobro a cliente o pago a proveedor), fecha y medios de pago. Agregá comprobantes y montos a acreditar. Guardá; opcional: enviar comprobante o saldo de cuenta por email.
+- Tener comprobantes registrados.
+- Verificar saldo en cuenta corriente.
+- Mercado Pago debe estar aprobado antes de registrar.
+- **TODO: confirmar con producto** — manejo de anticipos.
 
-## Campos
+---
 
-## Contacto
+## Ubicación dentro del sistema
 
-Contacto al que está dirigido el movimiento. No se puede editar después de seleccionado.
+Cuenta corriente → Pago → Caja
 
-## Tipo de Pago
+👉 Es el paso donde se cancela la deuda.
 
-Cobro a cliente (ingreso) o Pago a proveedor (egreso). Define si impacta como ingreso o egreso en Cuenta Corriente.
+---
 
-## Fecha de Pago
+## Qué permite hacer
 
-Se completa automáticamente con la fecha actual. Modificarla requiere permisos especiales.
+- Cancelar deudas
+- Aplicar pagos parciales o totales
+- Registrar múltiples medios de pago
+- Enviar comprobantes al contacto
 
-## Medios de Pago
+---
 
-Efectivo, Cuenta Corriente, Cheque, Transferencia, Tarjeta Crédito/Débito, Mercado Pago. Cada medio tiene sus campos; Mercado Pago: procesar y aprobar antes de guardar.
+## Qué cambia y qué no cambia
 
-## Comprobantes
+**El pago:**
 
-Tipo COMPRAS o VENTAS: agregá las facturas/ventas/compras sobre las que se aplica el pago. Podés asignar el pago completo o parcial a uno o varios comprobantes. Importante: el monto a acreditar no puede superar lo adeudado.
+- ✔️ Reduce deuda
+- ✔️ Registra ingreso o egreso
+- ✔️ Impacta medios de pago
+- ❌ No genera deuda nueva
 
-## Observaciones
+---
 
-Texto opcional para comentarios o aclaraciones.
+## Procedimiento
 
-## Enviar Comprobante / Enviar Saldo de Cuenta
+1. Seleccioná el contacto.
+2. Elegí tipo de pago (cliente/proveedor).
+3. Seleccioná comprobantes.
+4. Ingresá medios de pago.
+5. Confirmá.
 
-Envía por email el comprobante de pago o el estado de Cuenta Corriente actualizado al contacto.
+---
 
-## Reglas
+## Casos frecuentes
 
-- No podés ingresar un comprobante sin monto a acreditar.
-- No podés ingresar un monto mayor al adeudado.
-- No podés aplicar sobre un comprobante un monto mayor al del pago.
-- No podés dejar parte del pago sin aplicar (en ese caso se genera nota de crédito).
-- Mercado Pago: no podés guardar sin procesar y aprobar la transacción.
+### Cobro total
 
-## BuenasPracticas
+Se cancela completamente la deuda.
 
-- Verificá que el total de medios de pago coincida con el monto a aplicar.
-- Usá "Enviar comprobante" o "Enviar saldo" para que el contacto reciba el detalle por email.
+### Pago parcial
+
+Se distribuye el pago en varios comprobantes.
+
+### Múltiples medios de pago
+
+Ejemplo: efectivo + transferencia.
+
+---
+
+## Recomendaciones de uso
+
+Siempre aplicá pagos sobre comprobantes.
+
+👉 Evitá registrar pagos sin aplicación, ya que rompe la trazabilidad.
+
+---
+
+## Si algo sale mal
+
+- **Monto incorrecto**
+  - Verificá antes de confirmar.
+
+- **No podés guardar**
+  - Revisá reglas de aplicación.
+
+---
+
+## Buenas prácticas
+
+- Validá montos antes de confirmar.
+- Usá observaciones para claridad.
+- Enviá comprobantes al contacto.
+
+---
+
+## Ver también
+
+- [Cuenta corriente](./cuenta-corriente.md)
+- [Caja diaria](./caja-diaria.md)

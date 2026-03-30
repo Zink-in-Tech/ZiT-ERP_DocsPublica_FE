@@ -1,49 +1,84 @@
 ---
 title: Ingresos
-sidebar_position: 52
+description: Registrá entradas de dinero fuera del flujo de ventas y mantené el control de caja.
+sidebar_position: 5
 ---
+
 ## Resumen
 
-- Registrá la entrada de dinero a la caja (cobros fuera de ventas, aportes, etc.).
-- Requerís concepto (motivo) y monto; opcional: contacto y observaciones.
-- No impacta la Cuenta Corriente del contacto; solo sirve para referencia.
-- Los conceptos deben ser de tipo ingreso (configurados en Conceptos).
-- Sirve para categorizar y reportar ingresos por tipo.
+Los ingresos permiten registrar entradas de dinero que no provienen de ventas.
 
-## CuandoUsar
+Se utilizan para mantener control sobre movimientos financieros externos al flujo comercial.
 
-- Registrás una entrada de dinero a caja que no es una venta (cobros manuales, aportes, reintegros).
-- Querés categorizar el ingreso con un concepto para filtrar y reportar después.
-- Opcional: asociar a un contacto para referencia (no modifica cuenta corriente).
+---
 
-## Flujo
+## Antes de empezar
 
-- Elegí concepto (motivo del ingreso). Indicá monto. Opcional: contacto, observaciones. Registrá.
+- Tener conceptos configurados.
+- **TODO: confirmar con producto** — validaciones adicionales.
 
-## Campos
+---
 
-## Concepto
+## Ubicación dentro del sistema
 
-Motivo del ingreso. Debe ser un concepto de tipo ingreso configurado en Conceptos.
+Ingreso → Caja
 
-## Monto
+👉 No pasa por cuenta corriente.
 
-Monto que ingresa a la caja.
+---
 
-## Contacto (opcional)
+## Cuándo usar ingresos
 
-Podés asociar el ingreso a un contacto. No modifica la Cuenta Corriente del contacto.
+- Aportes de dinero
+- Reintegros
+- Cobros manuales
 
-## Observación (opcional)
+---
 
-Comentarios o justificación del ingreso.
+## Qué cambia y qué no cambia
 
-## Reglas
+**El ingreso:**
 
-- El concepto debe ser de tipo ingreso (configurado en Conceptos).
-- Asociar a contacto no modifica la Cuenta Corriente.
+- ✔️ Aumenta dinero en caja
+- ✔️ Permite categorizar
+- ❌ No impacta deuda
 
-## BuenasPracticas
+---
 
-- Usá conceptos claros para poder filtrar y reportar ingresos por tipo.
-- Completá observaciones cuando el ingreso requiera justificación o referencia.
+## Procedimiento
+
+1. Seleccioná concepto.
+2. Ingresá monto.
+3. (Opcional) asociá contacto.
+4. Confirmá.
+
+---
+
+## Casos frecuentes
+
+### Aporte de capital
+
+Ingreso manual para financiar operaciones.
+
+### Ajuste de caja
+
+Corrección puntual.
+
+---
+
+## Recomendaciones de uso
+
+Usalos solo fuera del flujo de ventas.
+
+---
+
+## Buenas prácticas
+
+- Usá conceptos claros.
+- Registrá observaciones.
+
+---
+
+## Ver también
+
+- [Caja diaria](./caja-diaria.md)

@@ -1,77 +1,200 @@
 ---
-title: Caja Diaria
-sidebar_position: 51
+title: Caja diaria
+description: Analizá en tiempo real el estado financiero del negocio y conciliá todos los movimientos del día.
+sidebar_position: 4
 ---
+
 ## Resumen
 
-- Consultá el resumen de movimiento de dinero del día (caja inicial, efectivo, ventas, compras, ingresos, egresos, notas).
-- No impacta movimientos; solo muestra totales acumulados según la fecha seleccionada.
-- Podés obtener un informe entre fechas con la misma información para un rango.
-- La caja inicial podés editarla solo con permisos especiales.
-- Sirve para conciliar efectivo y movimientos al cierre del día.
+La caja diaria es un panel de control que muestra el estado financiero del negocio en una fecha determinada.
 
-## CuandoUsar
+Permite visualizar en un solo lugar:
 
-- Revisar el resumen del día (caja, ventas, compras, ingresos, egresos).
-- Verificar total fiscal y total de ingresos por ventas cobradas por medio de pago.
-- Obtener el informe "Caja Diaria entre Fechas" para períodos semanales o mensuales.
+- dinero disponible
+- ventas y compras
+- ingresos y egresos
+- medios de pago
+- movimientos fiscales
 
-## Flujo
+Es la herramienta principal para controlar que el negocio esté funcionando correctamente a nivel financiero.
 
-- Elegí fecha (Caja Diaria). Consultá caja inicial, efectivo en caja, totales de ventas, compras, ingresos, egresos, notas. Opcional: informe entre fechas.
+---
 
-## Campos
+## Antes de empezar
 
-## Caja Diaria
+- Tener registradas ventas, compras, pagos, ingresos o egresos.
+- **TODO: confirmar con producto** — comportamiento con múltiples usuarios o cajas.
 
-Fecha a la que corresponden los datos mostrados.
+---
 
-## Caja Inicial
+## Ubicación dentro del sistema
 
-Monto con el que se inició el día en la caja. Editarlo requiere permisos especiales.
+Pagos / Ingresos / Egresos → Caja diaria
 
-## Efectivo en Caja
+👉 Es el resultado consolidado de todas las operaciones del negocio.
 
-Monto acumulado en la caja a la fecha indicada.
+---
 
-## Total Ventas
+## Cómo leer la caja diaria
 
-Valor acumulado por ventas (incluye ventas del día aún no cobradas).
+La pantalla está organizada en bloques que representan distintos aspectos del negocio.
 
-## Total Fiscal
+---
 
-Total acumulado de ventas con comprobante fiscal asociado.
+### 🧾 Información general
 
-## Total Ingresos Ventas
+- **Caja diaria**: fecha seleccionada
+- **Caja inicial**: dinero con el que se inicia el día
+- **Efectivo en caja**: dinero disponible actual
+- **Cantidad de ventas**: número de operaciones realizadas
 
-Total de ingresos por ventas ya cobradas, por medio de pago.
+👉 Estos valores permiten entender rápidamente la actividad del día.
 
-## Total Compras
+---
 
-Total acumulado por compras (incluye compras del día aún no pagadas).
+### 🧮 Totales operativos
 
-## Total Egresos Compras
+- **Total ventas**: suma de ventas realizadas
+- **Total compras**: suma de compras registradas
 
-Total de egresos por compras ya abonadas, por medio de pago.
+👉 Incluyen operaciones independientemente de si fueron cobradas o pagadas.
 
-## Notas Débito / Crédito
+---
 
-Monto total acumulado para Notas de Crédito y Débito en la fecha indicada.
+### 💳 Ingresos por ventas
 
-## Ingresos / Egresos
+Detalle de cómo se cobraron las ventas:
 
-Monto total acumulado para Ingresos y Egresos en la fecha indicada.
+- efectivo
+- transferencia
+- tarjeta
+- cuenta corriente
+- Mercado Pago
+- otros
 
-## Caja Diaria entre Fechas
+👉 Permite entender cómo ingresa el dinero al negocio.
 
-Informe con la misma información entre fechas que seleccionés.
+---
 
-## Reglas
+### 💸 Egresos por compras
 
-- La caja inicial solo se puede editar con permisos especiales.
-- Los totales son acumulados según la fecha seleccionada.
+Detalle de cómo se pagaron las compras:
 
-## BuenasPracticas
+- efectivo
+- transferencia
+- tarjeta
+- cuenta corriente
+- otros
 
-- Revisá caja diaria al cierre del día para conciliar efectivo y movimientos.
-- Usá el informe entre fechas para períodos mensuales o semanales.
+👉 Muestra cómo sale el dinero hacia proveedores.
+
+---
+
+### 📊 Movimientos adicionales
+
+- **Ingresos**: dinero ingresado manualmente
+- **Egresos**: gastos o retiros
+- **Notas de crédito/débito**: ajustes financieros
+
+👉 Representan movimientos fuera del flujo principal.
+
+---
+
+### 🧾 Información fiscal
+
+- **Importe fiscal pendiente**
+- **Importe fiscal autorizado**
+
+👉 Permite controlar el estado fiscal de las operaciones.
+
+---
+
+### 📅 Informe entre fechas
+
+Permite obtener el mismo análisis para un rango de fechas.
+
+👉 Útil para análisis semanal o mensual.
+
+---
+
+## Qué cambia y qué no cambia
+
+**La caja diaria:**
+
+- ✔️ Consolida toda la información financiera
+- ✔️ Permite análisis operativo
+- ✔️ Ayuda a detectar errores
+- ❌ No modifica datos
+- ❌ No registra movimientos
+
+---
+
+## Casos frecuentes
+
+### Cierre de caja
+
+Al finalizar el día:
+
+- comparar efectivo real vs sistema
+- detectar diferencias
+
+---
+
+### Control de medios de pago
+
+Analizar cómo se están cobrando las ventas:
+
+- mucho efectivo
+- mucho crédito
+- transferencias
+
+---
+
+### Control de gastos
+
+Revisar egresos e identificar desvíos.
+
+---
+
+## Recomendaciones de uso
+
+La caja diaria debe revisarse todos los días.
+
+Es clave para:
+
+- detectar errores rápidamente
+- evitar pérdidas
+- controlar el flujo de dinero
+
+👉 Si no revisás la caja, no estás controlando el negocio.
+
+---
+
+## Si algo sale mal
+
+- **Diferencias en efectivo**
+  - Revisá pagos, ingresos y egresos.
+
+- **Totales inconsistentes**
+  - Verificá ventas o compras no registradas correctamente.
+
+- **Medios de pago incorrectos**
+  - Revisá cómo se cargaron los pagos.
+
+---
+
+## Buenas prácticas
+
+- Revisar al cierre de cada jornada
+- Comparar con dinero real
+- Analizar medios de pago
+- Controlar movimientos manuales
+
+---
+
+## Ver también
+
+- [Pagos](./pagos.md)
+- [Ingresos](./ingresos.md)
+- [Egresos](./egresos.md)
+- [Cuenta corriente](./cuenta-corriente.md)
