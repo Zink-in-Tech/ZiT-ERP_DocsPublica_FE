@@ -1,23 +1,155 @@
 ---
+
 sidebar_position: 1
+
 title: Introducción
+
+description: Conocé cómo está organizado ZinK ERP y cómo usar esta documentación para operar tu negocio.
+
 ---
 
-**ZinkERP** es el sistema operativo que tu pyme necesita para simplificar operaciones, conectar sucursales y crecer sin perder el control — desde **una sucursal o veinte**.
+## Resumen
 
-Esta documentación te acompaña en el día a día del producto: pantallas, flujos y buenas prácticas alineadas con la ayuda que ves dentro del sistema. Para la propuesta comercial, precios y recursos de la marca, visitá el sitio público en **[zinkerp.com](https://zinkerp.com)**.
+ZinK ERP es un sistema diseñado para organizar y controlar las operaciones de un negocio en un solo lugar.
 
-## Por qué usar ZinkERP
+Permite gestionar ventas, compras, inventario y finanzas de forma integrada, manteniendo trazabilidad y control en cada etapa.
 
-**Todo cambia cuando empezás a tener el control.** El producto está pensado para que dejes atrás el caos operativo y tomes decisiones con claridad:
+Esta documentación está pensada para acompañarte en el uso diario del sistema.
 
-1. **Ventas** — Convertís presupuestos en ventas reales: pedidos con trazabilidad, seguimiento de entregas y menos pérdida de tiempo.
-2. **Compras** — Controlás lo que comprás y lo que realmente recibís: órdenes de compra con trazabilidad frente a proveedores, lejos del Excel suelto.
-3. **Negocio conectado** — Sede y sucursales coordinadas: aprobaciones, precios y operación alineados; menos fricción que en flujos informales por mensajería.
+---
 
-Implementación express y soporte prioritario forman parte de la propuesta de acompañamiento; para una demo guiada podés coordinar en [cal.com/zinkintech](https://cal.com/zinkintech).
+## Qué es ZinK ERP
 
-## Qué encontrás en este sitio
+ZinK ERP funciona como un sistema operativo del negocio.
 
-- **[Arquitectura](/arquitectura)** y **[Primeros pasos](/primeros-pasos)** — contexto del producto y puesta en marcha.
-- **Guías por módulo** (Administración, Ventas, Informes, etc.) generadas a partir de las mismas ayudas que ves en el ERP, adaptadas a este sitio (navegación y títulos Docusaurus).
+Centraliza:
+
+- operaciones comerciales
+
+- control de stock
+
+- movimientos de dinero
+
+- gestión de sucursales
+
+Todo conectado y en tiempo real.
+
+---
+
+## Qué vas a poder hacer
+
+Con ZinK ERP podés:
+
+### Ventas
+
+- gestionar cotizaciones, presupuestos, pedidos y ventas
+
+- trabajar con trazabilidad completa
+
+- usar POS para ventas rápidas
+
+---
+
+### Compras
+
+- registrar órdenes y compras
+
+- controlar proveedores
+
+- mantener consistencia en el abastecimiento
+
+---
+
+### Inventario
+
+- controlar stock en tiempo real
+
+- registrar ajustes y conteos
+
+- evitar faltantes o desvíos
+
+---
+
+### Finanzas
+
+- controlar deudas (cuenta corriente)
+
+- registrar pagos
+
+- analizar caja diaria
+
+- gestionar ingresos y egresos
+
+---
+
+## Cómo usar esta documentación
+
+Esta documentación está organizada para que puedas encontrar rápidamente lo que necesitás según el momento.
+
+---
+
+### Entender el sistema
+
+- [Cómo funciona ZinK ERP](./arquitectura.md)
+
+---
+
+### Aprender a operar
+
+Guías por módulo:
+
+- Administración
+
+- Ventas
+
+- Compras
+
+- Inventario
+
+- Finanzas
+
+---
+
+### Resolver tareas concretas
+
+Cada sección incluye:
+
+- procedimientos paso a paso
+
+- casos frecuentes
+
+- recomendaciones de uso
+
+---
+
+## Cómo está pensada la documentación
+
+Los contenidos están alineados con la ayuda que ves dentro del sistema, pero ampliados para:
+
+- entender el contexto
+
+- evitar errores
+
+- mejorar la operación
+
+---
+
+## Recomendaciones iniciales
+
+Si estás empezando:
+
+1. Revisá cómo funciona el sistema completo  
+
+2. Empezá por ventas o compras según tu operación  
+
+3. Controlá inventario y caja diariamente  
+
+👉 El orden en que trabajes impacta directamente en el control del negocio.
+
+---
+
+## Ver también
+
+- [Cómo funciona ZinK ERP](./arquitectura.md)
+- [Flujo de ventas](./ventas/flujo-ventas.md)
+- [Finanzas](./finanzas/finanzas.md)

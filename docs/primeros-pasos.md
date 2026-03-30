@@ -1,36 +1,212 @@
 ---
 sidebar_position: 3
 title: Primeros pasos
+description: Configurá ZinK ERP y empezá a operar tu negocio correctamente desde el primer día.
 ---
 
-Guía para equipos que empiezan a trabajar con **ZinK ERP**. Los textos se alinean con las ayudas del producto; la URL y los contactos de soporte los define tu organización.
+## Resumen
 
-## 1. Acceso al sistema
+Esta guía te ayuda a empezar a usar ZinK ERP de forma correcta, configurando lo necesario y entendiendo cómo operar desde el primer momento.
 
-- Usá la **URL** del entorno que te indique tu administrador (producción, pruebas, etc.).
-- La **credencial** es tu usuario (login) y contraseña. El **email** registrado sirve para recuperación de contraseña y notificaciones.
-- Si tu usuario queda **bloqueado** por intentos fallidos, un administrador o quien tenga permisos puede **desbloquearte**. Los usuarios **inactivos** no pueden ingresar.
+El objetivo es evitar errores comunes y lograr control desde el inicio.
 
-## 2. Organización y permisos
+---
 
-- Cada usuario opera en el marco de al menos una **organización** y un **perfil**. El perfil determina qué menús y acciones están habilitados (marcados en la configuración de permisos).
-- Si tu rol abarca varias organizaciones, elegí la que corresponda a la tarea del día.
+## Antes de empezar
 
-## 3. Configuración inicial recomendada (administradores)
+- Tener usuario y acceso al sistema.
+- Definir quién será administrador.
+- **TODO: confirmar con producto** — configuración inicial recomendada según tipo de negocio.
 
-Orden típico al habilitar una nueva sede o proyecto:
+---
 
-1. **Datos de la organización**: logo, razón social, CUIT, dirección fiscal y física, teléfono, mail y moneda base, para que facturas e informes sean correctos.
-2. **Preferencias**: vencimientos por defecto, lista de precios, formato de comprobante, proceso de pago, zona horaria, año fiscal y demás valores que afectan ventas, compras y consultas.
-3. **Perfiles y usuarios**: definir perfiles (roles) y dar de alta colaboradores con el nivel de acceso adecuado.
-4. **Nuevas organizaciones** (si aplica): el asistente en tres pasos — datos principales (incluye tipo propia o franquicia), usuario administrador y contacto asociado — necesario para facturar y operar con esa sucursal.
+## Paso 1: Acceso al sistema
 
-## 4. Uso cotidiano
+1. Ingresá a la URL del sistema.
+2. Iniciá sesión con tu usuario y contraseña.
+3. Si corresponde, seleccioná la organización.
 
-- Entrá por **Tablero** o **Dashboard** para ver resúmenes y atajos según tu rol.
-- La **ayuda contextual** dentro del ERP complementa esta documentación con textos por pantalla.
+### Consideraciones
 
-## 5. Soporte y mejora continua
+- El email se usa para recuperación de contraseña.
+- Usuarios inactivos no pueden ingresar.
+- Usuarios bloqueados deben ser habilitados por un administrador.
 
-- Canal de soporte o contacto interno: consultá con tu administrador de ZinK ERP.
-- Esta documentación pública se irá ampliando (incluido contenido multimedia cuando corresponda).
+---
+
+## Paso 2: Entender cómo funciona el sistema
+
+Antes de operar, es importante entender la lógica general:
+
+- Ventas → generan ingresos
+- Compras → generan egresos
+- Inventario → controla stock
+- Finanzas → controla dinero
+
+👉 Recomendado:  
+- [Cómo funciona ZinK ERP](./arquitectura.md)
+
+---
+
+## Paso 3: Configuración inicial (administradores)
+
+Antes de operar, configurá el sistema correctamente.
+
+---
+
+### 3.1 Datos de la organización
+
+Configurá:
+
+- razón social
+- CUIT
+- direcciones
+- logo
+- moneda
+
+👉 Impacta en comprobantes e informes.
+
+---
+
+### 3.2 Preferencias
+
+Definí:
+
+- listas de precios
+- vencimientos
+- formatos de comprobantes
+- comportamiento de ventas y compras
+
+👉 Estas configuraciones afectan toda la operación.
+
+---
+
+### 3.3 Usuarios y perfiles
+
+- Creá usuarios
+- Asigná perfiles
+- Definí permisos
+
+👉 Cada usuario verá y podrá hacer solo lo que le corresponde.
+
+---
+
+### 3.4 Organizaciones (si aplica)
+
+Si trabajás con múltiples sucursales:
+
+- configurá cada organización
+- asigná responsables
+- vinculá contactos
+
+---
+
+## Paso 4: Primera operación recomendada
+
+Para validar que todo funciona correctamente:
+
+---
+
+### 👉 Opción A: Venta rápida
+
+1. Ir a POS
+2. Registrar una venta
+3. Verificar impacto en caja
+
+---
+
+### 👉 Opción B: Venta con flujo
+
+1. Crear cotización
+2. Convertir a presupuesto
+3. Convertir a venta
+4. Registrar pago
+
+---
+
+### 👉 Opción C: Compra
+
+1. Registrar compra
+2. Verificar ingreso de stock
+3. Verificar cuenta corriente
+
+---
+
+## Paso 5: Validaciones clave
+
+Después de operar, verificá:
+
+- stock actualizado (inventario)
+- deuda registrada (cuenta corriente)
+- dinero reflejado (caja diaria)
+
+👉 Esto confirma que el sistema está funcionando correctamente.
+
+---
+
+## Uso cotidiano
+
+En el día a día:
+
+- Entrá por tablero o dashboard
+- Usá los módulos según la operación
+- Consultá ayuda contextual en cada pantalla
+
+---
+
+## Casos frecuentes
+
+### Usuario nuevo
+
+Debe tener perfil y permisos asignados.
+
+---
+
+### Error en operación
+
+Revisar:
+
+- flujo utilizado
+- datos cargados
+- impacto en inventario y finanzas
+
+---
+
+## Recomendaciones de uso
+
+- Seguí los flujos del sistema (no saltear pasos)
+- Verificá stock y caja diariamente
+- Configurá correctamente antes de operar
+
+👉 El orden en que trabajás impacta directamente en el control del negocio.
+
+---
+
+## Si algo sale mal
+
+- **No podés ingresar**
+  - Usuario inactivo o bloqueado
+
+- **No ves opciones**
+  - Falta de permisos
+
+- **Resultados incorrectos**
+  - Revisar configuración inicial
+
+---
+
+## Buenas prácticas
+
+- Definir roles desde el inicio
+- Validar primera operación completa
+- Controlar caja diariamente
+- Capacitar al equipo
+
+---
+
+## Ver también
+
+- [Cómo funciona ZinK ERP](./arquitectura.md)
+- [Flujo de ventas](./ventas/flujo-ventas.md)
+- [Inventario](./inventario/inventarios.md)
+- [Finanzas](./finanzas/finanzas.md)

@@ -1,44 +1,204 @@
 ---
 sidebar_position: 2
-title: Arquitectura del producto
+title: Cómo funciona ZinK ERP
+description: Entendé cómo se conectan ventas, compras, inventario y finanzas dentro del sistema.
 ---
 
-Esta visión resume cómo está organizado **ZinK ERP** y encaja con las ayudas contextuales del sistema. El detalle de cada pantalla se amplía en guías por módulo.
+## Resumen
 
-## Qué es ZinK ERP
+ZinK ERP organiza el negocio en un sistema conectado donde cada operación impacta automáticamente en otras áreas.
 
-ZinK ERP es un sistema **multiorganización**: cada **organización** (sede, sucursal o punto de venta) tiene su propio conjunto de datos y operaciones (compras, ventas, inventario, etc.). Los **usuarios** acceden con credencial y **perfil**; el perfil define qué pantallas y acciones pueden usar en cada organización.
+Permite gestionar:
 
-## Pantallas de entrada
+- ventas
+- compras
+- stock
+- dinero
 
-Tras el inicio de sesión, el acceso principal suele ser el **Tablero** o el **Dashboard**: vistas resumidas, indicadores y accesos rápidos según el rol y la organización. La pantalla concreta depende de la configuración de tu contexto.
+todo de forma integrada y en tiempo real.
 
-## Capas funcionales
+---
+
+## Cómo está organizado el sistema
+
+ZinK ERP se estructura en módulos que representan procesos reales del negocio.
+
+Estos módulos no funcionan de forma aislada, sino conectados entre sí.
+
+---
+
+## Flujo del negocio
+
+El sistema refleja el funcionamiento real de cualquier empresa:
+
+### Ventas
+
+Cotización → Presupuesto → Pedido → Venta  
+               ↘ POS
+
+---
+
+### Compras
+
+Orden de compra → Compra
+
+---
+
+### Inventario
+
+Compras → Inventario → Ventas
+
+---
+
+### Finanzas
+
+Venta / Compra → Cuenta corriente → Pago → Caja
+
+---
+
+## Qué significa esto en la práctica
+
+Cada acción que realizás genera impacto automático:
+
+- una **venta** descuenta stock
+- una **compra** ingresa stock
+- un **pago** reduce deuda
+- un **egreso** reduce caja
+
+👉 Todo está conectado.
+
+---
+
+## Estructura organizacional
+
+ZinK ERP es un sistema **multiorganización**.
+
+Cada organización representa:
+
+- una sucursal
+- un punto de venta
+- una franquicia
+
+Cada una tiene:
+
+- sus operaciones
+- su stock
+- sus usuarios
+
+---
+
+## Usuarios y permisos
+
+Los usuarios acceden al sistema con perfiles que definen:
+
+- qué pueden ver
+- qué pueden hacer
+
+Esto permite controlar el acceso según el rol.
+
+---
+
+## Componentes principales
 
 ### Administración
 
-- **Usuarios y perfiles**: alta de colaboradores, asignación de organización y nivel de acceso (permisos agrupados como en el menú).
-- **Organizaciones**: incorporación de sucursales o puntos de venta (propios o franquicia), con flujo en pasos (datos principales, usuario administrador, contacto asociado).
+Gestión de usuarios, contactos y estructura del sistema.
+
+---
 
 ### Configuración
 
-- **Datos de la organización**: razón social, CUIT, direcciones, logo para comprobantes, moneda base, etc.; impacta facturación e informes.
-- **Preferencias**: comportamiento por defecto (vencimientos, listas de precio, formato de comprobante, control de ventas, zona horaria, año fiscal, consulta de precios, entre otros).
-- **Integración**: espacio previsto para conectar ZinK ERP con sistemas externos (e-commerce, contabilidad, etc.) mediante APIs o flujos de datos, según la configuración del producto.
+Define cómo funciona el sistema:
+
+- datos de la organización
+- preferencias
+- integraciones
+
+---
 
 ### Operaciones
 
-Áreas típicas del negocio: **contactos**, **productos**, **compras** y **ventas** (incluye POS, pedidos, cotizaciones, presupuestos), **inventarios**, **finanzas** (caja, ingresos/egresos, cuenta corriente, pagos), **impuestos** e **informes**. Cada módulo tiene reglas y flujos descritos en la ayuda in-app.
+Dónde ocurre el negocio:
+
+- ventas
+- compras
+- inventario
+- finanzas
+
+---
 
 ### Informes
 
-Reportes de stock, ventas, ingresos/egresos, cuenta corriente, etiquetas, promociones, análisis 80/20, etc., alineados con los datos operativos y la configuración de la organización.
+Permiten analizar:
 
-## Conceptos transversales
+- ventas
+- stock
+- dinero
+- rendimiento
 
-Por ejemplo, los **conceptos** (en administración) categorizan ingresos y egresos de caja para informes; son distintos de Cuenta Corriente y se definen por tipo ingreso o egreso.
+---
 
-## Próximos pasos en esta documentación
+## Conceptos clave
 
-- Guías detalladas por módulo (ventas, compras, inventarios, etc.).
-- Diagramas o esquemas de integración cuando la API o los conectores estén documentados para clientes.
+### Todo está conectado
+
+No existen módulos aislados.
+
+Cada acción impacta en múltiples áreas.
+
+---
+
+### El orden importa
+
+Trabajar correctamente el flujo evita errores:
+
+- vender antes de cobrar
+- comprar antes de pagar
+- controlar stock antes de vender
+
+---
+
+### El sistema refleja la realidad
+
+ZinK ERP no inventa procesos:
+
+👉 replica cómo funciona un negocio real
+
+---
+
+## Casos frecuentes
+
+### Venta simple
+
+POS → Venta → Caja
+
+---
+
+### Venta con proceso
+
+Cotización → Presupuesto → Pedido → Venta → Pago
+
+---
+
+### Compra de mercadería
+
+Orden → Compra → Inventario → Pago
+
+---
+
+## Recomendaciones de uso
+
+Para aprovechar el sistema:
+
+- seguí los flujos definidos
+- evitá saltear etapas innecesariamente
+- controlá stock y caja diariamente
+
+---
+
+## Ver también
+
+- [Flujo de ventas](./ventas/flujo-ventas.md)
+- [Compras](./compras/compras.md)
+- [Inventario](./inventario/inventarios.md)
+- [Finanzas](./finanzas/finanzas.md)
