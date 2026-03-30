@@ -1,62 +1,135 @@
 ---
-title: Órdenes de Compra
-sidebar_position: 35
+title: Órdenes de compra
+description: Registrá solicitudes a proveedores y organizá tus compras antes de generar el impacto en stock y cuenta corriente.
+sidebar_position: 2
 ---
+
 ## Resumen
 
-- Registrá el pedido que enviás al proveedor antes de recibir la mercadería o el comprobante.
-- No impacta stock hasta que se apruebe y se genere la compra asociada.
-- Al APROBAR se crea una Compra en BORRADOR con ítems, cantidades y precios para cargar el comprobante.
-- El contacto (proveedor) no puede ser Consumidor Final.
-- RECHAZAR vuelve a BORRADOR; CANCELADO cierra el flujo.
+Las órdenes de compra permiten registrar lo que se le solicita a un proveedor antes de concretar la compra.
 
-## CuandoUsar
+Funcionan como una instancia de planificación y control, donde se definen productos, cantidades y condiciones antes del impacto real en el sistema.
 
-- Enviás un pedido al proveedor antes de recibir la mercadería o el comprobante.
-- Querés solicitar ítems con precios y cantidades; al aprobar se genera la compra para completar con el comprobante.
-- Reponés stock crítico: podés filtrar ítems con stock igual o menor al mínimo.
+No impactan stock ni cuenta corriente.
 
-## Flujo
+---
 
-BORRADOR → CONFIRMADO → APROBADO (crea Compra en BORRADOR)
+## Antes de empezar
 
-- RECHAZAR vuelve a BORRADOR (no disponible en APROBADO ni CANCELADO).
-- CANCELADO finaliza el flujo.
+- Tener proveedores cargados como contactos.
+- Verificá que los productos estén configurados.
+- Algunas modificaciones pueden requerir permisos especiales.
 
-## Campos
+---
 
-## Contacto
+## Ubicación dentro del flujo
 
-Proveedor de la orden. No puede ser Consumidor Final.
+Orden de compra → Compra
 
-## Fecha de Creación
+La orden de compra representa la etapa inicial del proceso.
 
-Se asigna automáticamente. Cambiarla requiere permisos especiales.
+👉 Al concretar la operación, se registra la compra.
 
-## Ítems
+---
 
-Productos solicitados al proveedor. El precio debe ser válido; cambiarlo puede requerir permisos especiales.
+## Cuándo usar órdenes de compra
 
-## Observaciones
+Usá órdenes de compra cuando:
 
-Texto libre para plazos, condiciones de entrega o acuerdos con el proveedor.
+- Necesitás solicitar productos a un proveedor.
+- Querés planificar compras antes de ejecutarlas.
+- Trabajás con reposición de stock.
+- Necesitás dejar registro de lo solicitado.
+
+---
+
+## Qué cambia y qué no cambia
+
+**La orden de compra:**
+
+- ✔️ Define qué se le solicita al proveedor
+- ✔️ Permite organizar compras
+- ✔️ Funciona como referencia de compra
+- ❌ No impacta stock
+- ❌ No genera deuda
+
+👉 El impacto ocurre al registrar la compra.
+
+---
+
+## Procedimiento
+
+1. Creá una nueva orden de compra.
+2. Seleccioná el proveedor.
+3. Agregá productos y cantidades.
+4. Revisá condiciones (precios, fechas, observaciones).
+5. Confirmá la orden.
+6. Enviá al proveedor si corresponde.
+7. Cuando se concreta:
+   - Registrá la compra asociada
+
+---
 
 ## Estados
 
-| Estado   | Descripción |
-| -------- | ----------- |
-| BORRADOR | Editable. Podés modificar ítems, contacto y precios. |
-| CONFIRMADO | No editable. Siguiente: aprobar para generar la compra. |
-| APROBADO | Se creó la Compra asociada en BORRADOR con ítems, cantidades y precios. |
-| RECHAZAR | Vuelve a BORRADOR. No disponible en APROBADO ni CANCELADO. |
-| CANCELADO | Flujo cerrado. No editable. |
+| Estado     | Descripción |
+|------------|------------|
+| BORRADOR   | Editable. |
+| CONFIRMADO | Lista para enviar o ejecutar. |
+| CANCELADO  | Flujo cerrado. |
 
-## Reglas
+---
 
-- Stock crítico: podés filtrar ítems con stock igual o menor al mínimo. Agregar ítem: botón o tecla "+". Búsqueda de productos por etiquetas.
-- El contacto (proveedor) no puede ser Consumidor Final.
+## Casos frecuentes
 
-## BuenasPracticas
+### Reposición de stock
 
-- Usá Stock crítico para reponer productos con bajo stock.
-- Dejá observaciones claras para el proveedor (plazos, condiciones).
+Se generan órdenes para mantener niveles de inventario.
+
+### Planificación de compras
+
+Permite organizar pedidos antes de ejecutarlos.
+
+### Control con proveedores
+
+Sirve como registro de lo solicitado.
+
+---
+
+## Recomendaciones de uso
+
+Las órdenes de compra son ideales para mantener control sobre lo que se solicita a proveedores antes de impactar el sistema.
+
+Usalas cuando:
+
+- Querés planificar compras
+- Necesitás aprobación interna
+- Trabajás con proveedores recurrentes
+
+👉 Evitá registrar compras directamente si necesitás control previo.
+
+---
+
+## Si algo sale mal
+
+- **Datos incorrectos**
+  - Revisá productos y cantidades antes de confirmar.
+
+- **Proveedor incorrecto**
+  - Verificá el contacto seleccionado.
+
+---
+
+## Buenas prácticas
+
+- Confirmá la orden antes de enviarla.
+- Revisá cantidades y condiciones.
+- Usá observaciones para acuerdos con proveedores.
+- Mantené consistencia entre orden y compra final.
+
+---
+
+## Ver también
+
+- [Compras](./compras.md)
+- [Flujo de compras](./compras.md)

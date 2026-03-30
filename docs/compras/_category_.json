@@ -1,5 +1,9 @@
 {
   "label": "Compras",
   "position": 30,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "compras/flujo-compras"
+  }
 }
