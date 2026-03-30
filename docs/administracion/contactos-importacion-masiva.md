@@ -1,41 +1,83 @@
 ---
 title: Contactos - Importación masiva
+description: Cargá múltiples contactos desde un archivo y gestioná el resultado de la importación.
 sidebar_position: 2
 ---
+
 ## Resumen
 
-- Cargá muchos contactos (clientes y/o proveedores) en una sola operación desde un archivo.
-- El archivo debe respetar el formato indicado; podés descargar un archivo ejemplo desde la pantalla.
-- Cada importación queda registrada con estado (en proceso / finalizado), cantidad de registros OK y con error, y resultado descargable.
+Permite cargar múltiples contactos (clientes o proveedores) en una sola operación desde un archivo.
 
-## CuandoUsar
+Cada importación queda registrada con su estado, cantidad de registros procesados y un archivo de resultado.
 
-- Tenés muchos contactos para cargar y querés hacerlo por planilla.
-- Migrar una base de contactos desde otro sistema o desde Excel/CSV.
-- Necesitás replicar la estructura de contactos en otra organización o entorno.
+Es útil para migraciones o cargas iniciales de datos.
 
-## Flujo
+---
 
-- Descargá el archivo ejemplo para ver el formato esperado.
-- Prepará tu archivo con los datos de contactos (columnas según el ejemplo).
-- Subí el archivo con el botón de importación.
-- Revisá el estado del proceso en la grilla; cuando finalice, podés descargar el resultado si corresponde.
+## Antes de empezar
 
-## Campos
+- Descargá el archivo ejemplo desde la pantalla.
+- Asegurate de respetar el formato requerido.
+- Verificá que las columnas obligatorias estén completas.
 
-## Grilla de importaciones
+---
 
-- **Archivo**: nombre del archivo subido.
-- **Estado**: en proceso o finalizado.
-- **Registros OK / Registros error / Total**: cantidades procesadas.
-- **Resultado**: en importaciones finalizadas, podés descargar el archivo de resultado (éxitos y errores).
+## Procedimiento
 
-## Reglas
+1. Descargar archivo ejemplo.
+2. Preparar archivo con los datos de contactos.
+3. Subir archivo desde la pantalla.
+4. Procesar importación.
+5. Revisar resultado:
+   - estado (en proceso / finalizado)
+   - registros OK
+   - registros con error
+6. (Opcional) Descargar archivo de resultado.
 
-- Usá el formato del archivo ejemplo; las columnas obligatorias deben estar presentes.
-- Si hay errores en filas, el resultado indicará qué registros fallaron y el motivo.
+---
 
-## BuenasPracticas
+## Campos principales
 
-- Probá primero con pocos registros para validar el formato.
-- Revisá el archivo de resultado después de una importación con errores para corregir datos y volver a intentar.
+### Archivo
+
+Nombre del archivo importado.
+
+### Estado
+
+Indica si la importación está en proceso o finalizada.
+
+### Registros OK / Error / Total
+
+Cantidad de registros procesados correctamente o con error.
+
+### Resultado
+
+Archivo descargable con detalle de errores.
+
+---
+
+## Casos frecuentes
+
+### Migración desde Excel
+
+Carga inicial de clientes o proveedores.
+
+### Corrección de errores
+
+Se ajusta el archivo según el resultado y se vuelve a importar.
+
+---
+
+## Si algo sale mal
+
+- **Errores en la importación**
+  - Revisar archivo de resultado para identificar filas incorrectas.
+
+- **Archivo rechazado**
+  - Verificar formato y columnas obligatorias.
+
+---
+
+## Ver también
+
+- [Contactos](./contactos.md)

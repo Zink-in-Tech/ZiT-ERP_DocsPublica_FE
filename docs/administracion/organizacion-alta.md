@@ -1,46 +1,73 @@
 ---
 title: Nuevas Organizaciones
+description: Creá sucursales o puntos de venta y configurá su estructura operativa dentro del sistema.
 sidebar_position: 60
 ---
+
 ## Resumen
 
-- Creá una nueva sucursal o punto de venta (organización propia o franquicia) en tres pasos.
-- Impacta usuarios, contactos y operaciones: cada organización tiene su propio conjunto de datos y operaciones (compras, ventas, inventario).
-- Propia: administración completa. Franquicia: solo consulta de algunos datos de su operación.
-- Franquicia: el usuario administrador debe ser nuevo. Propia: podés elegir uno existente o dar de alta uno nuevo.
-- El contacto asociado es necesario para facturar y operar con la nueva sucursal.
+Permite crear nuevas organizaciones dentro del sistema, como sucursales propias o franquicias.
 
-## CuandoUsar
+Cada organización funciona como una unidad independiente con sus propios usuarios, contactos y operaciones (compras, ventas, inventario).
 
-- Incorporar una nueva sucursal o punto de venta (propio o franquicia).
-- Configurar datos principales, usuario administrador y contacto asociado en tres pasos.
-- En franquicia: crear un usuario nuevo. En propia: seleccionar uno existente o dar de alta uno nuevo.
+El alta se realiza en tres pasos: datos principales, usuario administrador y contacto asociado.
 
-## Flujo
+---
 
-- Paso 1: Datos principales (nombre de fantasía, domicilio facturación y principal, tipo: Propia o Terceros/Franquicia).
-- Paso 2: Usuario administrador (existente o nuevo si propia; nuevo si franquicia).
-- Paso 3: Contacto asociado (datos para el ejercicio comercial con la nueva sucursal; después podés completar desde Contactos).
+## Antes de empezar
 
-## Campos
+- Definí si la organización será **propia o franquicia**.
+- En caso de franquicia, vas a necesitar crear un usuario nuevo.
+- Tené en cuenta que el contacto asociado es necesario para facturar y operar.
 
-## Paso 1 – Datos Principales
+---
 
-Nombre de fantasía, domicilio de facturación y principal, tipo de organización (Propia o Terceros/Franquicia). Define si la sucursal es propia o franquicia.
+## Procedimiento
 
-## Paso 2 – Usuario Administrador
+1. Paso 1 — Datos principales:
+   - Ingresar:
+     - nombre de fantasía
+     - domicilio de facturación
+     - domicilio principal
+     - tipo de organización (propia o franquicia)
 
-Usuario que administrará la organización. Propia: podés seleccionar uno existente o dar de alta uno nuevo. Franquicia: debe ser usuario nuevo.
+2. Paso 2 — Usuario administrador:
+   - Organización propia:
+     - seleccionar usuario existente o crear uno nuevo
+   - Organización franquicia:
+     - crear usuario nuevo obligatorio
 
-## Paso 3 – Contacto Asociado
+3. Paso 3 — Contacto asociado:
+   - Ingresar datos comerciales de la organización
+   - Este contacto se utilizará para facturación y operaciones
 
-Datos de contacto para el ejercicio comercial con la nueva sucursal. Importante: necesario para facturar y operar; después podés completar desde el formulario de Contactos.
+4. Confirmar creación de la organización
 
-## Reglas
+---
 
-- Organización propia: administración completa. Franquicia: solo consulta de algunos datos de su operación.
-- Franquicia: usuario administrador debe ser nuevo. Propia: puede ser existente o nuevo.
+## Casos frecuentes
 
-## BuenasPracticas
+### Nueva sucursal propia
 
-- Completá los tres pasos en orden; el contacto asociado es necesario para facturar y operar con la nueva sucursal.
+Se crea con control total y puede usar usuarios existentes.
+
+### Nueva franquicia
+
+Se crea con acceso restringido y requiere usuario administrador nuevo.
+
+---
+
+## Si algo sale mal
+
+- **No permite avanzar en el proceso**
+  - Verificá que todos los pasos estén completos.
+
+- **Problemas en facturación**
+  - Revisá que el contacto asociado esté correctamente configurado.
+
+---
+
+## Ver también
+
+- [Contactos](./contactos.md)
+- [Usuarios](./usuarios.md)

@@ -1,95 +1,84 @@
 ---
 title: Productos
+description: Gestioná el catálogo de productos que se utilizan en ventas, compras e inventario.
 sidebar_position: 2
 ---
+
 ## Resumen
 
-- Son los artículos que usás en inventario y operaciones (presupuestos, pedidos, ventas, órdenes de compra, compras).
-- Podés crear por Alta Rápida (campos esenciales) o Formulario Completo (todas las opciones).
-- Incluyen listas de precios, stock, ubicación y etiquetas; impactan stock y precios en ventas/compras.
-- Valida Stock: si está activo, el sistema valida stock antes de permitir una venta.
-- No podés eliminar un producto que tenga movimientos asociados.
+Los productos son la base operativa del sistema y se utilizan en todo el flujo comercial y de inventario: cotizaciones, presupuestos, pedidos, ventas, órdenes de compra y compras.
 
-## CuandoUsar
+Definen precios, stock, ubicación y comportamiento en las operaciones, impactando directamente en ventas y compras.
 
-- Dar de alta o editar artículos del catálogo.
-- Agregar un producto urgente durante una venta o compra (Alta Rápida).
-- Configurar precios, stock mínimo, ubicación y listas de precios.
+---
 
-## Flujo
+## Antes de empezar
 
-- Alta Rápida: código, descripción, código de barras, precio.
-- Formulario Completo: dimensiones, stock, listas de precios, etiquetas. Editar precios desde el diálogo específico o el formulario completo.
+- Definí correctamente listas de precios.
+- Verificá unidades de medida.
+- Algunas modificaciones pueden requerir permisos especiales.
 
-## Campos
+---
 
-## Código Interno
+## Cuándo usar productos
 
-Código alfanumérico de uso interno. Sirve para búsquedas en grilla y formularios.
+Usá esta pantalla cuando:
 
-## Descripción
+- Necesitás dar de alta artículos.
+- Querés actualizar precios, stock o configuración.
+- Tenés que configurar listas de precios o etiquetas.
 
-Texto descriptivo del producto. Sirve para búsquedas.
+---
 
-## Unidad
+## Qué cambia y qué no cambia
 
-Cantidad de unidades por defecto en operaciones con este producto.
+**El producto:**
 
-## Unidad de Medida
+- ✔️ Impacta en todas las operaciones comerciales
+- ✔️ Define precios y stock
+- ❌ No se puede eliminar si tiene movimientos
 
-Unidad utilizada (cantidad, kgs, cm3, litros). Si no existe, solicitarla por medio de la ayuda.
+---
 
-## Unidad Mínima de Venta
+## Procedimiento
 
-Controla las unidades que se pueden vender (mínimo por operación).
+1. Crear producto:
+   - Alta rápida o formulario completo
+2. Configurar:
+   - precios
+   - stock
+   - ubicación
+   - etiquetas
+3. Guardar
 
-## Unidades x Bulto
+---
 
-Cantidad de unidades que contiene un bulto cerrado del producto.
+## Casos frecuentes
 
-## Stock
+### Alta rápida
+Para agregar productos durante una venta o compra.
 
-Solo se define en el alta; después cambia por compras, ventas o inventario.
+### Configuración completa
+Para definir precios, stock y comportamiento.
 
-## Costo
+---
 
-Precio de compra por unidad. Base para el cálculo de precios en listas.
+## Si algo sale mal
 
-## Listas de Precios
+- **No podés eliminar**
+  - El producto tiene movimientos asociados.
 
-Público, Mayorista, Distribuidora, Franquicia, Promoción (opcional). Cada lista: Precio Calculado (desde costo, % ganancia, impuesto) o Precio Manual. Botón "APLICAR A TODAS" para misma configuración.
+---
 
-## Código de Barras
+## Buenas prácticas
 
-Sirve para búsqueda y carga en operaciones comerciales. Podés generarlo o descargarlo con el ícono de varita (dentro del campo) o escanearlo con la cámara del celular usando el botón de cámara junto al campo.
+- Usá etiquetas para organizar.
+- Configurá correctamente listas de precios.
+- Activá validación de stock si corresponde.
 
-## Código Variable
+---
 
-Hasta 6 dígitos (EAN13); el resto determina precio. Útil para balanzas y productos a granel.
+## Ver también
 
-## Ubicación
-
-Lugar o sector del almacén donde se encuentra el producto.
-
-## Etiquetas
-
-Agrupadores para categorizar; se usan para búsqueda de productos relacionados en presupuestos, pedidos, ventas.
-
-## Valida Stock
-
-Si está activo, el sistema valida stock disponible antes de permitir una venta.
-
-## Actualizar Precios al Recibir Compras
-
-Si está activo, los precios calculados se actualizan al recibir una compra que modifique el costo. Se desactiva si alguna lista está en modo MANUAL.
-
-## Reglas
-
-- Productos creados con Alta Rápida podés completarlos después desde el formulario completo.
-- No podés eliminar un producto que tenga movimientos asociados.
-
-## BuenasPracticas
-
-- Usá Alta Rápida durante ventas o compras cuando hace falta agregar un producto urgente.
-- Configurá etiquetas para organizar el catálogo y facilitar búsquedas.
-- Activá "Actualizar precios al recibir compras" solo si querés que los precios se ajusten automáticamente con el costo.
+- [Ventas](../ventas/ventas.md)
+- [Compras](../compras/compras.md)

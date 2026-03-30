@@ -1,43 +1,73 @@
 ---
 title: Perfiles
+description: Definí permisos y niveles de acceso para los usuarios del sistema.
 sidebar_position: 9
 ---
+
 ## Resumen
 
-- Definís conjuntos de permisos (perfiles) para asignar a uno o más usuarios.
-- Impacta qué pantallas y acciones puede usar cada usuario en la organización.
-- Los permisos aparecen categorizados como en el menú; tílde = acceso habilitado, casillero vacío = sin acceso.
-- Un usuario debe tener un perfil asignado para tener permisos.
-- Sirve para definir niveles de acceso (vendedor, administrador, auditor) sin configurar usuario por usuario.
+Los perfiles permiten definir conjuntos de permisos y controlar qué acciones puede realizar cada usuario dentro del sistema.
 
-## CuandoUsar
+Facilitan la gestión de accesos al asignar configuraciones reutilizables a múltiples usuarios.
 
-- Definir niveles de acceso (ej. vendedor, administrador, auditor).
-- Asignar el mismo conjunto de permisos a varios usuarios.
-- Cambiar permisos de muchos usuarios a la vez (editando el perfil).
+---
 
-## Flujo
+## Antes de empezar
 
-- Crear perfil con nombre y descripción. Asignar permisos por categoría (como en el menú). Asignar el perfil a usuarios.
+- Definí los roles necesarios (ej. vendedor, administrador).
 
-## Campos
+---
 
-## Nombre
+## Procedimiento
 
-Nombre del perfil. Sirve para búsqueda al asignar a usuario.
+1. Crear perfil.
+2. Completar:
+   - nombre
+   - descripción
+3. Asignar permisos por categoría.
+4. Guardar.
+5. Asociar a usuarios.
 
-## Descripción
+---
 
-Comentario sobre el objetivo del perfil (ej. "Vendedor solo lectura").
+## Campos principales
 
-## Permisos
+### Nombre
 
-Listado de permisos posibles, categorizados como en el menú. Tílde habilita el acceso; casillero vacío no permite el acceso.
+Identifica el perfil.
 
-## Reglas
+### Descripción
 
-- Un usuario debe tener un perfil asignado para tener permisos sobre la organización.
+Define el objetivo del perfil.
 
-## BuenasPracticas
+### Permisos
 
-- Usá descripciones claras para identificar el rol (ej. "Vendedor solo lectura", "Administrador completo").
+Listado de accesos disponibles.
+
+---
+
+## Casos frecuentes
+
+### Perfil vendedor
+
+Acceso limitado a ventas.
+
+### Perfil administrador
+
+Acceso completo al sistema.
+
+---
+
+## Si algo sale mal
+
+- **Usuario sin acceso**
+  - Verificá que tenga un perfil asignado.
+
+- **Permisos incorrectos**
+  - Revisá configuración del perfil.
+
+---
+
+## Ver también
+
+- [Usuarios](./usuarios.md)

@@ -1,78 +1,104 @@
 ---
 title: Contactos
+description: Gestioná clientes y proveedores utilizados en ventas, compras y operaciones comerciales.
 sidebar_position: 1
 ---
+
 ## Resumen
 
-- Registrá personas o empresas con las que operás: clientes y/o proveedores.
-- Se usa en presupuestos, pedidos, ventas, órdenes de compra y compras; impacta lista de precios, Cuenta Corriente y comprobantes.
-- Podés configurar lista de precios, bonificación, días de vencimiento y costo de envío por contacto.
-- Los datos fiscales y comerciales afectan facturación y Cuenta Corriente.
-- Sirve para búsquedas en grilla y en formularios de operaciones.
+Los contactos representan a las personas o empresas con las que operás: clientes y proveedores.
 
-## CuandoUsar
+Se utilizan en todo el flujo comercial (presupuestos, pedidos, ventas, órdenes de compra y compras) y afectan directamente listas de precios, cuenta corriente y comprobantes.
 
-- Registrar clientes o proveedores nuevos.
-- Antes de emitir presupuestos, pedidos, ventas, órdenes de compra o compras (necesitás el contacto cargado).
-- Configurar lista de precios, bonificación, días de vencimiento y costo de envío por contacto.
+También permiten definir condiciones comerciales específicas como bonificaciones, vencimientos y costos de envío.
 
-## Flujo
+---
 
-- Crear o editar contacto. Completar datos generales, fiscal y comercial, domicilios, personas de contacto e información adicional.
-- Los tabs con errores muestran número rojo; los completos muestran check verde.
+## Antes de empezar
 
-## Campos
+- Definí correctamente los datos fiscales del contacto.
+- Configurá la lista de precios si corresponde.
+- Verificá condiciones comerciales (bonificaciones, vencimientos, envío).
 
-## Nombre
+---
 
-Nombre del contacto. Sirve para búsquedas en grilla y formularios.
+## Procedimiento
 
-## Apellido
+1. Crear o editar un contacto.
 
-Apellido del contacto. Sirve para búsquedas.
+2. Completar la información:
+   - datos generales (nombre, razón social, contacto)
+   - datos fiscales
+   - datos comerciales
+   - domicilios
+   - personas de contacto
 
-## Razón Social
+3. Guardar el contacto.
 
-Nombre de empresa o marca que identifica al contacto. Sirve para búsquedas y comprobantes.
+4. Usar el contacto en operaciones:
+   - ventas
+   - compras
+   - cuenta corriente
 
-## Mail
+---
 
-Correo electrónico. Se usa para envío de información, pedidos, saldo de Cuenta Corriente, comprobante de pago.
+## Campos principales
 
-## Teléfono
+### Nombre / Apellido / Razón Social
 
-Número telefónico del contacto.
+Identificación del contacto para búsquedas y comprobantes.
 
-## Dirección
+### Mail / Teléfono
 
-Dirección física (facturación, principal, entrega).
+Datos de contacto utilizados para comunicación y envío de comprobantes.
 
-## Datos de Facturación
+### Dirección
 
-Lista de precios, bonificación (0% a 100%), días de vencimiento (venta/compra), envío y costo. Afecta presupuestos, pedidos y ventas.
+Ubicación física del contacto (facturación, entrega, principal).
 
-## Personas de Contacto
+### Datos de facturación
 
-Personas de referencia (encargado de compras/ventas). En cada una podés agregar varios canales de comunicación.
+Incluye:
+- lista de precios
+- bonificación
+- días de vencimiento
+- condiciones de envío
 
-## CUIT
+Impacta presupuestos, pedidos y ventas.
 
-Identificador fiscal único del contacto.
+### CUIT
 
-## Contacto Destacado
+Identificador fiscal del contacto.
 
-Permite identificar al contacto para un tratamiento especial en listados.
+### Personas de contacto
 
-## Actividades de Auditoría
+Referentes dentro del cliente o proveedor.
 
-Desde el ícono en la vista de edición, historial de cambios realizados sobre el contacto.
+---
 
-## Reglas
+## Casos frecuentes
 
-- Si ingresás Razón Social y CUIT como tipo de documento, el sistema sugiere "Responsable Inscripto".
-- Atajos: Alt + ← → navegar entre tabs; Alt + 1-5 ir a un tab; Esc cancelar (con confirmación si hay cambios).
+### Cliente habitual
 
-## BuenasPracticas
+Se configura lista de precios y condiciones comerciales específicas.
 
-- Completá los cinco tabs para tener el contacto completo y evitar errores en operaciones.
-- Usá atajos de teclado para navegar más rápido entre secciones.
+### Proveedor
+
+Se registran datos fiscales y condiciones de compra.
+
+---
+
+## Si algo sale mal
+
+- **Errores en comprobantes o cuenta corriente**
+  - Revisá datos fiscales o condiciones comerciales.
+
+- **No aparece en operaciones**
+  - Verificá que el contacto esté correctamente creado.
+
+---
+
+## Ver también
+
+- [Ventas](../ventas/ventas.md)
+- [Compras](../compras/compras.md)

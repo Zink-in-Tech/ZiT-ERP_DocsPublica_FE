@@ -1,41 +1,76 @@
 ---
 title: Conceptos
+description: Definí categorías para clasificar ingresos y egresos en caja.
 sidebar_position: 5
 ---
+
 ## Resumen
 
-- Son los motivos con los que categorizás ingresos y egresos de caja.
-- No impactan Cuenta Corriente; solo sirven para clasificar y reportar movimientos de caja.
-- Cada concepto es de tipo ingreso o egreso; no podés usar el mismo para ambos.
-- Se usan en Ingresos y Egresos para filtrar y reportar por tipo.
+Los conceptos permiten clasificar los movimientos de caja como ingresos o egresos.
 
-## CuandoUsar
+Se utilizan para organizar y analizar la información en reportes, pero no impactan la cuenta corriente.
 
-- Categorizar movimientos de caja (ingresos o egresos) para reportes.
-- Configurar los motivos que vas a usar en Ingresos y Egresos antes de cargar movimientos.
+Cada concepto pertenece a un único tipo de movimiento: ingreso o egreso.
 
-## Flujo
+---
 
-- Crear concepto indicando tipo (ingreso o egreso), código y nombre. Luego usarlo en registros de Ingresos o Egresos.
+## Antes de empezar
 
-## Campos
+- Definí qué categorías necesitás para clasificar los movimientos.
+- Tené en cuenta que el tipo (ingreso o egreso) no se puede cambiar después.
 
-## Tipo de Movimiento
+---
 
-Indica si el concepto se usa para ingreso o egreso de dinero. No se puede cambiar después.
+## Procedimiento
 
-## Código
+1. Crear concepto.
+2. Completar:
+   - tipo de movimiento (ingreso o egreso)
+   - código
+   - nombre
+3. Guardar.
+4. Utilizar el concepto en:
+   - ingresos
+   - egresos
 
-Código o nombre corto del concepto. Sirve para búsquedas y listados.
+---
 
-## Nombre
+## Campos principales
 
-Descripción o nombre largo del concepto. Sirve para identificar el motivo en reportes.
+### Tipo de movimiento
 
-## Reglas
+Define si el concepto se usa para ingreso o egreso.
 
-- Cada concepto es solo de tipo ingreso o solo egreso; no podés usar el mismo para ambos.
+### Código
 
-## BuenasPracticas
+Identificador corto para búsquedas.
 
-- Usá códigos cortos y nombres descriptivos para identificar rápido el motivo del movimiento.
+### Nombre
+
+Descripción del concepto utilizada en reportes.
+
+---
+
+## Casos frecuentes
+
+### Clasificación de ingresos
+
+Ejemplo: ventas, cobros, ajustes positivos.
+
+### Clasificación de egresos
+
+Ejemplo: gastos, pagos, compras menores.
+
+---
+
+## Si algo sale mal
+
+- **Concepto incorrecto en un movimiento**
+  - Revisá el tipo seleccionado (no se puede cambiar después).
+
+---
+
+## Ver también
+
+- [Ingresos](../finanzas/ingresos.md)
+- [Egresos](../finanzas/egresos.md)

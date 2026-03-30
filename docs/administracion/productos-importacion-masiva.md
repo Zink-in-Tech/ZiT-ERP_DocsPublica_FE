@@ -1,37 +1,48 @@
 ---
 title: Importación de Productos
+description: Cargá productos de forma masiva desde un archivo CSV o Excel.
 sidebar_position: 3
 ---
+
 ## Resumen
 
-- Incorporá muchos productos en una sola operación desde un archivo (CSV/Excel).
-- Impacta el catálogo: los productos cargados quedan disponibles para presupuestos, pedidos, ventas y compras.
-- El archivo debe incluir los campos esperados (código, descripción, unidades, precios por lista, etc.) con el formato indicado.
-- Precios sin signos ($, U$D, etc.) ni separador de miles; separador decimal: coma.
-- UnidadMedida: LTS, CMS, KG, UNIDAD (deben existir en el sistema).
+Permite incorporar múltiples productos en una sola operación desde un archivo.
 
-## CuandoUsar
+Los productos cargados quedan disponibles en todo el sistema.
 
-- Tenés muchos productos para cargar y querés hacerlo por planilla (CSV/Excel).
-- Migrar un catálogo desde otro sistema o planilla.
-- Los precios deben indicarse sin signos ni separador de miles; separador decimal: coma.
+---
 
-## Flujo
+## Antes de empezar
 
-- Prepará el archivo con las columnas esperadas. Cargá el archivo y procesá. Revisá el resultado antes de confirmar.
+- Usar formato correcto del archivo.
+- Verificar unidades de medida existentes.
 
-## Campos
+---
 
-## Campos esperados (resumen)
+## Procedimiento
 
-actualizaPrecio (Si/No), franquicia (Si/No), puntoVenta (Si/No), destacado (Si/No), codigoInterno, CodigoBarras, Descripcion, Ubicacion, Unidades, UnidadMedida (LTS, CMS, KG, UNIDAD), UnidadMinimaVenta, UnidadBulto, BultosPallet, StockMinimo, CostoUnidad, Alto, Ancho, Profundidad, PrecioListaPublico, PrecioListaMayorista, PrecioListaDistribuidora, PrecioListaFranquicia. Precios sin signos ni separador de miles; separador decimal: coma.
+1. Preparar archivo.
+2. Subir archivo.
+3. Procesar.
+4. Revisar resultado.
 
-## Reglas
+---
 
-- Los precios no deben tener signos ($, U$D, AR$, EUR, etc.) ni separador de miles. Separador decimal: coma.
-- UnidadMedida: LTS (Litros), CMS (Centímetros), KG (Kilogramos), UNIDAD (Unidades). Deben existir en el sistema.
+## Casos frecuentes
 
-## BuenasPracticas
+### Migración de catálogo
 
-- Validá el archivo con pocos registros antes de cargar todo el catálogo.
-- Revisá que las unidades de medida existan en el sistema; si no, solicitarlas por medio de la ayuda.
+Carga masiva desde otro sistema.
+
+---
+
+## Si algo sale mal
+
+- **Errores en archivo**
+  - Revisar formato y columnas.
+
+---
+
+## Ver también
+
+- [Productos](./productos.md)

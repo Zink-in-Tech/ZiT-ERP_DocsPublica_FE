@@ -1,64 +1,60 @@
 ---
 title: Usuarios
+description: Administrá los accesos al sistema y los permisos de cada colaborador.
 sidebar_position: 8
 ---
+
 ## Resumen
 
-- Registrá los colaboradores que acceden al sistema (credencial, organización y perfil).
-- Impacta el nivel de acceso: el perfil define qué pantallas y acciones puede usar el usuario.
-- Cada usuario debe tener al menos una organización y un perfil asignados.
-- Podés inactivar un usuario para bloquear el acceso; tras intentos fallidos el sistema puede bloquearlo y un admin puede desbloquearlo.
-- El email sirve para recuperación de contraseña y notificaciones.
+Los usuarios representan a las personas que acceden al sistema y determinan qué pueden ver y hacer según el perfil asignado.
 
-## CuandoUsar
+El acceso a funcionalidades depende directamente de los permisos definidos en los perfiles.
 
-- Incorporar un nuevo colaborador que debe acceder al sistema.
-- Asignar o cambiar organización y perfil (nivel de acceso).
-- Inactivar o desbloquear acceso.
+---
 
-## Flujo
+## Antes de empezar
 
-- Crear usuario con nombre, apellido, usuario (login), organización y perfil. Opcional: email, activo, desbloqueo tras intentos fallidos.
+- Definí perfiles previamente.
+- Verificá la organización a la que pertenece el usuario.
 
-## Campos
+---
 
-## Nombre
+## Procedimiento
 
-Nombre del colaborador.
+1. Crear usuario.
+2. Completar datos:
+   - nombre
+   - email
+3. Asignar:
+   - organización
+   - perfil
+4. Guardar.
 
-## Apellido
+---
 
-Apellido del colaborador.
+## Casos frecuentes
 
-## Usuario
+### Alta de un nuevo usuario
 
-Credencial para ingresar al sistema; junto con la contraseña completa el acceso.
+Se crea el usuario y se asigna un perfil con permisos definidos.
 
-## Organización
+### Bloqueo de acceso
 
-Organización a la que tendrá acceso el usuario.
+Se puede inactivar o desbloquear el usuario.
 
-## Perfil
+---
 
-Nivel de acceso sobre la organización seleccionada (permisos por pantalla y acción).
+## Si algo sale mal
 
-## Email
+- **No puede acceder**
+  - Verificá estado del usuario.
+  - Revisá el perfil asignado.
 
-Se usa para comunicaciones, alertas y recuperación de contraseña.
+- **No ve ciertas funciones**
+  - Revisá permisos del perfil.
 
-## Activo
+---
 
-Podés inactivar el usuario para bloquear el acceso a la aplicación.
+## Ver también
 
-## Bloqueado
-
-Tras reiterados intentos fallidos el sistema bloquea al usuario. Un administrador o usuario con permisos puede desbloquearlo.
-
-## Reglas
-
-- Cada usuario debe tener al menos una organización y un perfil asignados.
-
-## BuenasPracticas
-
-- Asigná el perfil adecuado según el rol del colaborador.
-- Usá email para recuperación de contraseña y notificaciones.
+- [Perfiles](./perfiles.md)

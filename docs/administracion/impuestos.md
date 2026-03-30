@@ -1,41 +1,80 @@
 ---
 title: Impuestos
+description: Configurá tributos que afectan precios y operaciones comerciales en el sistema.
 sidebar_position: 6
 ---
+
 ## Resumen
 
-- Configurás tributos o cargas que se aplican sobre productos (contable o comercial).
-- Impacta el valor final en listas de precios, compras, presupuestos, pedidos y ventas.
-- Cada impuesto es monto fijo ($) o porcentaje (%); no ambos.
-- Se usa en grilla de productos y en formularios de compra, presupuestos, pedidos y ventas.
+Los impuestos permiten definir cargas o tributos que se aplican sobre los productos.
 
-## CuandoUsar
+Impactan directamente en los precios finales y se utilizan en listas de precios, compras, presupuestos, pedidos y ventas.
 
-- Aplicar un tributo o carga sobre productos para informes o precios finales.
-- Configurar impuestos que se sumen o apliquen sobre el valor de lista del producto.
+Cada impuesto puede ser de monto fijo o porcentaje, pero no ambos.
 
-## Flujo
+---
 
-- Crear impuesto con código, nombre y tipo (monto fijo o porcentaje). Asignar a productos según corresponda.
+## Antes de empezar
 
-## Campos
+- Definí si el impuesto será:
+  - monto fijo
+  - porcentaje
+- Verificá cómo impacta en precios finales.
 
-## Código
+---
 
-Nombre corto del impuesto. Sirve para búsquedas en grilla de productos y en formularios de compra, presupuestos, pedidos y ventas.
+## Procedimiento
 
-## Nombre
+1. Crear impuesto.
+2. Completar:
+   - código
+   - nombre
+   - tipo (monto fijo o porcentaje)
+3. Guardar.
+4. Asignar el impuesto a productos según corresponda.
 
-Nombre del impuesto. Aparece en listados y comprobantes.
+---
 
-## Monto Fijo o Porcentaje
+## Campos principales
 
-Tipo de cálculo: Monto Fijo ($) se suma sobre el valor de lista; Porcentaje (%) se aplica sobre el valor de lista del producto.
+### Código
 
-## Reglas
+Identificador corto para búsquedas.
 
-- Un impuesto es solo monto fijo o solo porcentaje; no podés combinar ambos.
+### Nombre
 
-## BuenasPracticas
+Nombre visible en listados y comprobantes.
 
-- Usá códigos claros para identificar el impuesto en listas y comprobantes.
+### Tipo de cálculo
+
+- Monto fijo: se suma al precio
+- Porcentaje: se aplica sobre el precio
+
+---
+
+## Casos frecuentes
+
+### Impuesto porcentual
+
+Se aplica sobre el valor del producto.
+
+### Impuesto fijo
+
+Se suma directamente al precio.
+
+---
+
+## Si algo sale mal
+
+- **Cálculo incorrecto de precios**
+  - Revisá el tipo de impuesto configurado.
+
+- **Impuesto no aplicado**
+  - Verificá que esté asignado al producto.
+
+---
+
+## Ver también
+
+- [Productos](./productos.md)
+- [Ventas](../ventas/ventas.md)
