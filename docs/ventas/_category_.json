@@ -1,5 +1,9 @@
 {
   "label": "Ventas",
   "position": 80,
-  "collapsed": true
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "ventas/flujo-ventas"
+  }
 }

@@ -1,62 +1,99 @@
 ---
 title: Notas de Débito
-sidebar_position: 11
+description: Registrá cargos adicionales que aumentan la deuda del cliente.
+sidebar_position: 9
 ---
+
 ## Resumen
 
-- Registrá un cargo adicional al cliente (intereses, gastos no incluidos, ajustes que suben la deuda).
-- Cada ítem se asocia a una venta existente e indica motivo e importe a debitar.
-- Impacta la cuenta corriente del contacto (aumenta la deuda) y se envía a AFIP al confirmar.
-- No impacta stock.
-- Solo en estados permitidos podés cancelar la nota según las reglas del sistema.
+Las notas de débito permiten registrar cargos adicionales sobre ventas ya realizadas, como intereses, gastos o ajustes.
 
-## CuandoUsar
+Impactan la cuenta corriente aumentando la deuda del cliente y se envían a AFIP al confirmarse.
 
-- Cobrás intereses por pago fuera de término.
-- Sumás gastos (envío, gestión) que no estaban en la factura original.
-- Registrás un ajuste que aumenta lo que el cliente adeuda.
+No afectan stock.
 
-## Flujo
+---
 
-BORRADOR → CONFIRMADO
+## Antes de empezar
 
-- Listado: crear, editar, ver detalle, filtrar o eliminar (según permisos).
-- Comprobante: descargar o imprimir. Factura electrónica: enviar a AFIP cuando corresponda.
-- Cancelación solo en estados permitidos, según reglas del sistema.
+- El contacto debe coincidir con la venta asociada.
+- Debés tener una venta previa.
+- Cada ítem requiere motivo e importe.
 
-## Campos
+---
 
-## Contacto
+## Cuándo usar notas de débito
 
-Cliente al que se emite la nota. Debe coincidir con el contacto de la/s venta/s asociada/s en los ítems. Importante: si no coincide, el sistema no permitirá confirmar.
+Usalas cuando:
 
-## Fecha
+- Cobrás intereses por mora.
+- Agregás gastos no incluidos.
+- Ajustás el importe a cobrar.
 
-Fecha de emisión del comprobante.
+---
 
-## Ítems
+## Qué cambia y qué no cambia
 
-Cada ítem: venta asociada (factura), motivo (concepto), importe a debitar, observación opcional. El débito se registra en la cuenta corriente del contacto.
+**La nota de débito:**
 
-## Observaciones
+- ✔️ Aumenta la deuda del cliente
+- ✔️ Impacta fiscalmente (AFIP)
+- ❌ No modifica stock
+- ❌ No altera la venta original
 
-Texto libre para comentarios de la nota.
+---
+
+## Procedimiento
+
+1. Creá una nota de débito.
+2. Seleccioná el contacto.
+3. Agregá ítems:
+   - venta asociada
+   - motivo
+   - importe
+4. Revisá datos.
+5. Confirmá.
+
+---
 
 ## Estados
 
-| Estado    | Descripción                                      |
-| --------- | ------------------------------------------------ |
-| BORRADOR  | Editable. En preparación.                        |
-| CONFIRMADO| No editable. Impacta cuenta corriente y AFIP.   |
+| Estado     | Descripción |
+|------------|------------|
+| BORRADOR   | Editable. |
+| CONFIRMADO | Impacta cuenta corriente y AFIP. |
 
-## Reglas
+---
 
-- El contacto debe coincidir con el de la/s venta/s de los ítems.
-- Cada ítem debe tener venta, motivo e importe.
-- La cancelación solo está permitida en ciertos estados; consultá las reglas del sistema.
+## Casos frecuentes
 
-## BuenasPracticas
+### Intereses por mora
+Se agrega un cargo adicional sobre una venta.
 
-- Verificá que el contacto coincida con el de la venta asociada antes de confirmar.
-- Usá el motivo correcto para cada ítem (fiscal y organizativo).
-- Revisá importes antes de confirmar para evitar errores en cuenta corriente.
+### Ajustes posteriores
+Se corrigen importes sin modificar la factura original.
+
+---
+
+## Si algo sale mal
+
+- **No podés confirmar**
+  - Verificá que el contacto coincida.
+
+- **Errores en importes**
+  - Revisá los ítems antes de confirmar.
+
+---
+
+## Buenas prácticas
+
+- Validá siempre el contacto.
+- Usá motivos claros.
+- Revisá impacto en deuda.
+
+---
+
+## Ver también
+
+- [Notas de crédito](./notas-credito.md)
+- [Cuenta corriente](/finanzas/cuenta-corriente)

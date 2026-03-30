@@ -1,70 +1,103 @@
 ---
 title: Presupuestos
-sidebar_position: 22
+description: Formalizá una propuesta comercial con precios definidos y convertí la aceptación del cliente en un pedido.
+sidebar_position: 3
 ---
+
 ## Resumen
 
-- Registrá la oferta de precio para uno o varios artículos; congela precios por el tiempo de vigencia.
-- No impacta stock ni cuenta corriente hasta que se acepte y se genere el pedido.
-- Al ACEPTAR se crea un pedido asociado en BORRADOR con ítems, cantidades y precios.
-- Por defecto el contacto es Consumidor Final; podés cambiarlo.
-- RECHAZAR vuelve a BORRADOR; CANCELADO cierra el flujo.
+Los presupuestos permiten registrar una propuesta comercial con precios definidos por un tiempo de vigencia.
 
-## CuandoUsar
+No impactan stock ni cuenta corriente hasta que el cliente acepta.  
+Al aceptar, el sistema genera automáticamente un **pedido en BORRADOR** para continuar el proceso.
 
-- El cliente pidió precio por un conjunto de artículos y querés congelarlo por unos días.
-- Querés formalizar una cotización eligiendo la lista aplicable.
-- Cuando el cliente acepta, aceptás el presupuesto y el sistema genera el pedido para editar si hace falta.
+---
 
-## Flujo
+## Antes de empezar
 
-BORRADOR → CONFIRMADO → ACEPTADO (crea pedido en BORRADOR)
+- Verificá que los productos tengan precios correctos.
+- Definí el contacto (por defecto es Consumidor Final).
+- Algunas modificaciones pueden requerir permisos especiales.
 
-- RECHAZAR vuelve a BORRADOR (no disponible en ACEPTADO ni CANCELADO).
-- CANCELADO finaliza el flujo.
+---
 
-## Campos
+## Cuándo usar presupuestos
 
-## Contacto
+Usá presupuestos cuando:
 
-Cliente del presupuesto. Por defecto Consumidor Final.
+- El cliente ya tiene una propuesta concreta.
+- Querés congelar precios por un período.
+- Estás esperando confirmación antes de avanzar.
+- Necesitás formalizar una cotización.
 
-## Fecha de Creación
+---
 
-Se asigna automáticamente. Cambiarla requiere permisos especiales.
+## Qué cambia y qué no cambia
 
-## Fecha de entrega estimada
+**El presupuesto:**
 
-Si no la cargás, se usa la fecha actual.
+- ✔️ Define precios y condiciones
+- ✔️ Permite avanzar a pedido al aceptar
+- ❌ No impacta stock
+- ❌ No genera deuda
 
-## Ítems
+---
 
-Productos y cantidades. El precio se toma de la lista vigente; cambiar precio, lista o descuento requiere permisos especiales.
+## Procedimiento
 
-## Descuento y Costo de envío
+1. Creá un presupuesto.
+2. Seleccioná el contacto.
+3. Agregá productos y cantidades.
+4. Revisá precios.
+5. Confirmá el presupuesto.
+6. Esperá respuesta del cliente.
+7. Si acepta:
+   - Se genera automáticamente un pedido en BORRADOR
 
-Pueden heredarse del contacto. Modificarlos requiere permisos especiales.
-
-## Observaciones
-
-Texto libre para condiciones de entrega, forma de pago o acuerdos con el cliente.
+---
 
 ## Estados
 
-| Estado   | Descripción |
-| -------- | ----------- |
-| BORRADOR | Editable. Podés modificar ítems, contacto y fechas. |
-| CONFIRMADO | No editable. El cliente puede aceptar o rechazar. |
-| ACEPTADO | Se creó el pedido asociado en BORRADOR con ítems, cantidades y precios. |
-| RECHAZAR | Vuelve a BORRADOR. No disponible en ACEPTADO ni CANCELADO. |
-| CANCELADO | Flujo cerrado. No editable. |
+| Estado     | Descripción |
+|------------|------------|
+| BORRADOR   | Editable. |
+| CONFIRMADO | No editable. Espera respuesta. |
+| ACEPTADO   | Genera pedido en BORRADOR. |
+| RECHAZAR   | Vuelve a BORRADOR. |
+| CANCELADO  | Flujo cerrado. |
 
-## Reglas
+---
 
-- Una vez vencida la vigencia no se puede aceptar.
-- Agregar ítem: botón o tecla "+". Búsqueda de productos relacionados por etiquetas.
+## Casos frecuentes
 
-## BuenasPracticas
+### El cliente necesita tiempo para decidir
+El presupuesto mantiene el precio durante la vigencia.
 
-- Verificá la vigencia antes de que venza.
-- Usá observaciones para condiciones de entrega y forma de pago.
+### Convertir una cotización en operación
+Se elige la lista y se formaliza en presupuesto.
+
+---
+
+## Si algo sale mal
+
+- **No se puede aceptar**
+  - Puede estar vencido.
+
+- **No se genera pedido**
+  - Verificá que el estado sea ACEPTADO.
+
+---
+
+## Buenas prácticas
+
+- Controlá la vigencia.
+- Usá observaciones para condiciones comerciales.
+- Confirmá antes de enviar al cliente.
+
+---
+
+## Ver también
+
+- [Cotizaciones](./cotizaciones.md)
+- [Pedidos](./pedidos.md)
+- [Ventas](./ventas.md)

@@ -1,65 +1,139 @@
 ---
 title: Cotizaciones
-sidebar_position: 20
+description: Mostrá precios por distintas listas en una misma propuesta para que el cliente compare antes de definir la compra.
+sidebar_position: 2
 ---
+
 ## Resumen
 
-- Mostrá precios por varias listas (Mayorista, Minorista, etc.) en una sola pantalla para que el cliente compare.
-- No impacta stock ni cuenta corriente; es solo oferta comercial.
-- Una vez definida la lista, podés aprobar como presupuesto y seguir el flujo comercial.
-- Útil cuando el cliente aún no definió volumen o lista a aplicar.
-- No genera comprobante hasta que se convierta en presupuesto.
+Las cotizaciones permiten armar una propuesta comercial mostrando **varias listas de precios al mismo tiempo**, para que el cliente compare opciones antes de tomar una decisión.
 
-## CuandoUsar
+No impactan stock ni generan deuda: son una instancia previa al presupuesto dentro del flujo comercial.
 
-- El cliente pide comparar precios según volumen o tipo (mayorista, minorista).
-- Tenés varias listas activas y aún no está definido cuál aplicar.
-- Es una negociación abierta; el precio final se cierra después.
-- Si el precio ya está definido, podés crear directamente un presupuesto.
+Una vez que el cliente define la opción, podés aprobar la cotización y convertirla en presupuesto.
 
-## Flujo
+---
 
-BORRADOR → Aprobar como presupuesto
+## Antes de empezar
 
-- Crear, editar, ver detalle, filtrar o eliminar (listado). Aprobar: elegís lista y se genera presupuesto en BORRADOR.
-- Visualizar o imprimir: descargar, imprimir, enviar al cliente.
+- Tené configuradas las listas de precios.
+- Verificá que los productos tengan precios cargados.
+- Algunas modificaciones pueden requerir permisos especiales.
 
-## Campos
+---
 
-## Contacto
+## Cuándo usar cotizaciones
 
-Cliente de la cotización. Opcional: si no cargás ninguno, la cotización no queda asociada a un cliente.
+Usá cotizaciones cuando:
 
-## Fecha y vigencia
+- El cliente quiere comparar precios (mayorista, minorista, etc.).
+- No está definida la lista de precios a aplicar.
+- Estás en una etapa de negociación.
+- Querés presentar varias opciones en una sola propuesta.
 
-Fecha de emisión y días de vigencia (vencimiento). Modificar puede requerir permisos especiales.
+👉 Si el precio ya está definido, conviene ir directamente a presupuesto.
 
-## Ítems
+---
 
-Productos con cantidad y precios por cada lista configurada. Las columnas dependen de las listas activas. Cambios manuales pueden requerir permisos especiales.
+## Qué cambia y qué no cambia
 
-## Listas de precios
+**La cotización:**
 
-Cada lista activa aparece como columna (ej. Minorista, Mayorista) para que el cliente compare y defina qué opción aplicar.
+- ✔️ Permite comparar listas de precios
+- ✔️ Funciona como propuesta comercial
+- ❌ No impacta stock
+- ❌ No genera cuenta corriente
+- ❌ No emite comprobantes
 
-## Observaciones
+👉 El impacto ocurre recién cuando se convierte en presupuesto.
 
-Texto libre para condiciones comerciales, plazos, forma de pago y comentarios.
+---
+
+## Procedimiento
+
+1. Creá una nueva cotización.
+2. (Opcional) Seleccioná un contacto.
+3. Agregá productos y cantidades.
+4. Visualizá los precios en las distintas listas.
+5. Ajustá observaciones si es necesario.
+6. Compartí la cotización con el cliente.
+7. Cuando el cliente define:
+   - Aprobá la cotización
+   - Elegí la lista de precios
+   - Se genera un presupuesto en BORRADOR
+
+---
+
+## Campos principales
+
+### Contacto
+
+Cliente asociado a la cotización.  
+Es opcional, pero recomendable para seguimiento.
+
+### Fecha y vigencia
+
+Define cuándo se emitió la cotización y hasta cuándo es válida.
+
+### Ítems
+
+Productos con cantidades.  
+Cada lista de precios se muestra como una columna para comparación.
+
+### Listas de precios
+
+Permiten mostrar múltiples opciones (ej. mayorista, minorista).
+
+### Observaciones
+
+Texto libre para condiciones comerciales.
+
+---
 
 ## Estados
 
-| Estado   | Descripción                          |
-| -------- | ------------------------------------ |
-| BORRADOR | Editable. Podés aprobar como presupuesto eligiendo la lista. |
+| Estado   | Descripción |
+|----------|------------|
+| BORRADOR | Editable. Permite aprobar como presupuesto seleccionando una lista. |
 
-## Reglas
+---
 
-- Los precios deben estar correctamente configurados en las listas.
-- Cambios manuales de precios pueden requerir permisos especiales.
-- Al aprobar se elige la lista y se genera un presupuesto en BORRADOR.
+## Casos frecuentes
 
-## BuenasPracticas
+### El cliente quiere comparar opciones
+Se muestran varias listas en una sola pantalla.
 
-- Verificá las listas de precios antes de aprobar.
-- Confirmá vigencia si el cliente tarda en responder.
-- Usá observaciones para dejar claras condiciones y plazos.
+### No está definido el volumen de compra
+La cotización permite avanzar sin cerrar condiciones.
+
+### Envío de propuesta comercial
+Se puede compartir sin comprometer stock ni venta.
+
+---
+
+## Si algo sale mal
+
+- **No aparecen precios**
+  - Verificá que las listas estén configuradas.
+
+- **No podés modificar precios**
+  - Puede requerir permisos especiales.
+
+- **No podés aprobar**
+  - Verificá que tenga ítems cargados.
+
+---
+
+## Buenas prácticas
+
+- Verificá listas antes de enviar.
+- Usá observaciones para aclarar condiciones.
+- Controlá la vigencia.
+- Convertí rápidamente a presupuesto cuando el cliente confirme.
+
+---
+
+## Ver también
+
+- [Presupuestos](./presupuestos.md)
+- [Ventas](./ventas.md)

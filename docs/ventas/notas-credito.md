@@ -1,62 +1,100 @@
 ---
 title: Notas de Crédito
-sidebar_position: 10
+description: Registrá devoluciones o ajustes que reducen la deuda del cliente.
+sidebar_position: 8
 ---
+
 ## Resumen
 
-- Registrá un crédito a favor del cliente (devolución, bonificación, descuento o corrección).
-- Cada ítem se asocia a una venta existente e indica motivo e importe a creditar.
-- Impacta la cuenta corriente del contacto (reduce la deuda) y se envía a AFIP al confirmar.
-- No impacta stock; el movimiento de mercadería se gestiona aparte si corresponde.
-- Solo en estados permitidos podés cancelar la nota según las reglas del sistema.
+Las notas de crédito permiten registrar importes a favor del cliente, ya sea por devoluciones, descuentos o correcciones.
 
-## CuandoUsar
+Impactan directamente en la cuenta corriente (reduciendo la deuda) y se envían a AFIP al confirmarse.
 
-- El cliente devolvió mercadería o se anuló parte de una venta.
-- Concedés un descuento o bonificación después de emitida la factura.
-- Corregís un error que implica devolver dinero o bajar la deuda del cliente.
+No afectan stock; los movimientos de mercadería deben gestionarse por separado.
 
-## Flujo
+---
 
-BORRADOR → CONFIRMADO
+## Antes de empezar
 
-- Listado: crear, editar, ver detalle, filtrar o eliminar (según permisos).
-- Comprobante: descargar o imprimir. Factura electrónica: enviar a AFIP cuando corresponda.
-- Cancelación solo en estados permitidos, según reglas del sistema.
+- El contacto debe coincidir con la venta asociada.
+- Debés tener una venta previa para asociar.
+- Cada ítem debe tener motivo e importe.
 
-## Campos
+---
 
-## Contacto
+## Cuándo usar notas de crédito
 
-Cliente al que se emite la nota. Debe coincidir con el contacto de la/s venta/s asociada/s en los ítems. Importante: si no coincide, el sistema no permitirá confirmar.
+Usalas cuando:
 
-## Fecha
+- El cliente devuelve mercadería.
+- Necesitás corregir una venta.
+- Otorgás un descuento posterior.
+- Bajás la deuda del cliente.
 
-Fecha de emisión del comprobante.
+---
 
-## Ítems
+## Qué cambia y qué no cambia
 
-Cada ítem: venta asociada (factura), motivo (concepto), importe a creditar, observación opcional. El crédito se registra en la cuenta corriente del contacto.
+**La nota de crédito:**
 
-## Observaciones
+- ✔️ Reduce la deuda en cuenta corriente
+- ✔️ Impacta fiscalmente (AFIP)
+- ❌ No modifica stock
+- ❌ No altera la venta original
 
-Texto libre para comentarios de la nota.
+---
+
+## Procedimiento
+
+1. Creá una nota de crédito.
+2. Seleccioná el contacto.
+3. Agregá ítems:
+   - venta asociada
+   - motivo
+   - importe
+4. Revisá datos.
+5. Confirmá la nota.
+
+---
 
 ## Estados
 
-| Estado    | Descripción                                      |
-| --------- | ------------------------------------------------ |
-| BORRADOR  | Editable. En preparación.                        |
-| CONFIRMADO| No editable. Impacta cuenta corriente y AFIP.   |
+| Estado     | Descripción |
+|------------|------------|
+| BORRADOR   | Editable. |
+| CONFIRMADO | Impacta cuenta corriente y AFIP. |
 
-## Reglas
+---
 
-- El contacto debe coincidir con el de la/s venta/s de los ítems.
-- Cada ítem debe tener venta, motivo e importe.
-- La cancelación solo está permitida en ciertos estados; consultá las reglas del sistema.
+## Casos frecuentes
 
-## BuenasPracticas
+### Devolución de mercadería
+Se registra el crédito, pero el stock se maneja aparte.
 
-- Verificá que el contacto coincida con el de la venta asociada antes de confirmar.
-- Usá el motivo correcto para cada ítem (fiscal y organizativo).
-- Revisá importes antes de confirmar para evitar errores en cuenta corriente.
+### Ajuste de factura
+Se corrige el importe sin modificar la venta original.
+
+---
+
+## Si algo sale mal
+
+- **No podés confirmar**
+  - Verificá que el contacto coincida con la venta.
+
+- **Error en importes**
+  - Revisá cada ítem antes de confirmar.
+
+---
+
+## Buenas prácticas
+
+- Verificá datos antes de confirmar.
+- Usá motivos claros.
+- Revisá impacto en cuenta corriente.
+
+---
+
+## Ver también
+
+- [Notas de débito](./notas-debito.md)
+- [Cuenta corriente](/finanzas/cuenta-corriente)

@@ -1,36 +1,87 @@
 ---
 title: Consulta de Precios
-sidebar_position: 45
+description: Consultá precios y stock de productos sin generar comprobantes ni afectar el sistema.
+sidebar_position: 7
 ---
+
 ## Resumen
 
-- Consultá el precio de cualquier producto del catálogo sin abrir presupuesto o venta.
-- No impacta stock ni genera comprobantes; solo consulta.
-- Las listas de precios y la visualización de stock se configuran en Preferencias.
-- Si está habilitada la consulta inter-organización en preferencias, podés ver stock en otras sucursales.
-- Sirve para responder consultas rápidas de precio en mostrador.
+La consulta de precios permite verificar rápidamente el valor de un producto sin necesidad de crear una venta o presupuesto.
 
-## CuandoUsar
+Es una herramienta ágil para atención en mostrador o consultas internas.
 
-- Verificar el precio de un producto sin abrir un presupuesto o venta.
-- Consultar precios por lista (Público, Mayorista, etc.) según la configuración de preferencias.
-- Ver stock en otras sucursales si la consulta inter-organización está habilitada en preferencias.
+No genera comprobantes ni impacta stock.
 
-## Flujo
+---
 
-- Ingresá código o descripción del producto. Si la búsqueda devuelve varios, elegí el correcto. Verificá precio (y stock si aplica) según listas y preferencias.
-
-## Campos
-
-## Código / Descripción de producto
-
-Código o descripción del producto a buscar. Si la búsqueda devuelve varios, elegí el correcto. A continuación podés verificar el precio. Las listas a mostrar y la visualización de stock se configuran en Preferencias (pantalla consulta precio de producto).
-
-## Reglas
+## Antes de empezar
 
 - Las listas de precios visibles dependen de la configuración en Preferencias.
-- La visualización de stock y productos relacionados por etiquetas se configura en Preferencias.
+- La visualización de stock también depende de configuración.
+- La consulta inter-organización debe estar habilitada para ver otras sucursales.
 
-## BuenasPracticas
+---
 
-- Usá esta pantalla para responder consultas rápidas de precio sin generar un comprobante.
+## Cuándo usar consulta de precios
+
+Usala cuando:
+
+- Necesitás responder rápidamente el precio de un producto.
+- No querés iniciar un proceso de venta.
+- Querés verificar precios por lista.
+- Querés consultar stock (si está habilitado).
+
+---
+
+## Qué cambia y qué no cambia
+
+**La consulta:**
+
+- ✔️ Muestra precios y stock (según configuración)
+- ❌ No genera comprobantes
+- ❌ No impacta stock
+- ❌ No registra operaciones
+
+---
+
+## Procedimiento
+
+1. Ingresá código o descripción del producto.
+2. Seleccioná el producto si hay múltiples resultados.
+3. Visualizá precios según listas disponibles.
+4. (Opcional) Consultá stock si está habilitado.
+
+---
+
+## Casos frecuentes
+
+### Consulta rápida en mostrador
+Permite responder sin iniciar una venta.
+
+### Comparación de listas
+Se visualizan distintos precios según configuración.
+
+---
+
+## Si algo sale mal
+
+- **No aparecen precios**
+  - Verificá configuración de listas en Preferencias.
+
+- **No aparece stock**
+  - Puede no estar habilitado.
+
+---
+
+## Buenas prácticas
+
+- Usá esta pantalla para consultas rápidas.
+- Evitá iniciar ventas innecesarias.
+- Confirmá listas configuradas.
+
+---
+
+## Ver también
+
+- [POS](./pos.md)
+- [Ventas](./ventas.md)

@@ -1,74 +1,106 @@
 ---
 title: Pedidos
-sidebar_position: 25
+description: Registrá pedidos confirmados para preparar mercadería y generar automáticamente la venta.
+sidebar_position: 4
 ---
+
 ## Resumen
 
-- Registrá la solicitud de compra del cliente para preparar mercadería.
-- El comprobante tiene estados que reflejan la situación (editable, confirmado, en preparación, preparado).
-- En PREPARADO se genera la venta asociada con las cantidades resultantes; impacta stock al despachar.
-- El contacto no puede ser Consumidor Final.
-- RECHAZAR vuelve a BORRADOR; CANCELADO cierra el flujo.
+Los pedidos permiten registrar una compra confirmada por el cliente y organizar la preparación de la mercadería antes de generar la venta.
 
-## CuandoUsar
+Funcionan como un paso intermedio entre la intención de compra y la venta final, especialmente útil cuando hay procesos de picking o preparación en depósito.
 
-- El cliente confirmó la compra y querés preparar mercadería.
-- Necesitás el informe de picking (artículo, cantidad, ubicación) para preparar por depósito.
-- Al terminar la preparación, pasás a PREPARADO y el sistema genera la venta asociada.
-- Querés registrar rechazos o cancelaciones antes de generar la venta.
+Al completar la preparación, el sistema genera automáticamente la venta asociada.
 
-## Flujo
+---
 
-BORRADOR → CONFIRMADO → EN_PREPARACION → PREPARADO
+## Antes de empezar
 
-- RECHAZAR vuelve a BORRADOR (no disponible en PREPARADO ni CANCELADO).
-- CANCELADO finaliza el flujo.
+- El contacto **no puede ser Consumidor Final**.
+- Verificá que los productos tengan precios válidos.
+- Algunas modificaciones pueden requerir permisos especiales.
 
-## Campos
+---
 
-## Contacto
+## Cuándo usar pedidos
 
-Cliente del pedido. No puede ser Consumidor Final. Importante: debe tener datos válidos para facturación.
+Usá pedidos cuando:
 
-## Fecha de Creación
+- El cliente ya confirmó la compra.
+- Necesitás preparar mercadería antes de entregarla.
+- Trabajás con picking o depósito.
+- Querés separar el proceso de venta en etapas.
 
-Se asigna automáticamente. Cambiarla requiere permisos especiales.
+---
 
-## Fecha de entrega estimada
+## Qué cambia y qué no cambia
 
-Si no la cargás, se usa la fecha actual.
+**El pedido:**
 
-## Ítems
+- ✔️ Organiza la preparación de productos
+- ✔️ Permite generar una venta automáticamente
+- ❌ No impacta stock directamente
+- ❌ No genera deuda hasta la venta
 
-Productos y cantidades. El precio se toma de la lista vigente; cambiar precio, lista o descuento requiere permisos especiales.
+👉 El impacto ocurre cuando se genera la venta.
 
-## Descuento y Costo de envío
+---
 
-Pueden heredarse del contacto. Modificarlos requiere permisos especiales.
+## Procedimiento
 
-## Observaciones
+1. Creá un pedido.
+2. Seleccioná el contacto (no puede ser Consumidor Final).
+3. Agregá productos y cantidades.
+4. Confirmá el pedido.
+5. Pasá a EN_PREPARACION.
+6. Prepará la mercadería (picking).
+7. Marcá como PREPARADO:
+   - Se genera automáticamente la venta asociada
 
-Texto libre para horarios, condiciones de entrega o acuerdos con el cliente.
+---
 
 ## Estados
 
-| Estado        | Descripción |
-| ------------- | ----------- |
-| BORRADOR      | Editable. Podés modificar ítems, contacto y fechas. |
-| CONFIRMADO    | No editable. Siguiente paso: pasar a EN_PREPARACION para picking. |
-| EN_PREPARACION| Se procesa con picking; podés obtener el informe (artículo, cantidad, ubicación). |
-| PREPARADO     | Se informaron cantidades reales; se crea la venta asociada. No editable. |
-| RECHAZAR      | Vuelve a BORRADOR. No disponible en PREPARADO ni CANCELADO. |
-| CANCELADO     | Flujo cerrado. No editable. |
+| Estado         | Descripción |
+|----------------|------------|
+| BORRADOR       | Editable. |
+| CONFIRMADO     | Listo para preparación. |
+| EN_PREPARACION | En proceso de picking. |
+| PREPARADO      | Genera la venta asociada. |
+| RECHAZAR       | Vuelve a BORRADOR. |
+| CANCELADO      | Flujo cerrado. |
 
-## Reglas
+---
 
-- El contacto no puede ser Consumidor Final.
-- Agregar ítem: botón o tecla "+". Búsqueda de productos relacionados por etiquetas.
-- En estados permitidos podés cancelar según las reglas del sistema.
+## Casos frecuentes
 
-## BuenasPracticas
+### Preparación en depósito
+Se usa EN_PREPARACION para organizar el picking.
 
-- Confirmá el pedido antes de enviarlo a preparación.
-- Usá el informe de picking cuando tengas ubicaciones configuradas en los productos.
-- Revisá cantidades y condiciones antes de pasar a PREPARADO para evitar errores en la venta generada.
+### Venta diferida
+Primero se prepara el pedido, luego se genera la venta.
+
+---
+
+## Si algo sale mal
+
+- **No podés avanzar de estado**
+  - Verificá que el pedido esté correctamente confirmado.
+
+- **No se genera la venta**
+  - Confirmá que el pedido esté en PREPARADO.
+
+---
+
+## Buenas prácticas
+
+- Confirmá antes de enviar a preparación.
+- Revisá cantidades antes de marcar PREPARADO.
+- Usá picking si tenés ubicaciones configuradas.
+
+---
+
+## Ver también
+
+- [Presupuestos](./presupuestos.md)
+- [Ventas](./ventas.md)

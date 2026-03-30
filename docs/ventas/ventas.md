@@ -1,72 +1,118 @@
 ---
 title: Ventas
-sidebar_position: 30
+description: Registrá ventas, controlá entrega de mercadería y gestioná el cobro según el tipo de cliente.
+sidebar_position: 5
 ---
+
 ## Resumen
 
-- Registrá la salida de mercadería y el ingreso de dinero (efectivo o cuenta corriente).
-- El comprobante tiene estados: editable, confirmado, despacho, entregado; impacta stock y cuenta corriente.
-- Consumidor Final: pagá el total al confirmar; Contacto: el cobro se registra desde Cuenta Corriente.
-- Al marcar ENTREGADO el stock se descuenta y se actualiza la cuenta del cliente.
-- RECHAZAR vuelve a BORRADOR; CANCELADO cierra el flujo.
+La pantalla de ventas permite registrar operaciones comerciales completas, desde la carga de productos hasta la entrega y el cobro.
 
-## CuandoUsar
+A diferencia de otras instancias previas (cotizaciones o presupuestos), la venta **impacta stock y cuenta corriente** según su estado.
 
-- Registrás una venta en mostrador o por entrega programada.
-- El cliente es Consumidor Final y abona en el momento (cargá el pago antes de imprimir).
-- El cliente es Contacto y el cobro se anota en cuenta corriente o se registra un pago.
-- Necesitás controlar despacho (métodos según preferencias) antes de dar por entregado.
+El flujo contempla distintas etapas (borrador, confirmación, despacho y entrega) para adaptarse tanto a ventas inmediatas como a entregas programadas.
 
-## Flujo
+---
 
-BORRADOR → CONFIRMADO → DESPACHAR → ENTREGADO
+## Antes de empezar
 
-- RECHAZAR vuelve a BORRADOR (no disponible en ENTREGADO ni CANCELADO).
-- CANCELADO finaliza el flujo.
+- Definí correctamente el **tipo de cliente**:
+  - Consumidor Final (pago inmediato)
+  - Contacto (puede generar cuenta corriente)
+- Verificá que los productos tengan precios válidos.
+- Algunas modificaciones (precios, fechas, descuentos) pueden requerir permisos especiales.
 
-## Campos
+---
 
-## Contacto
+## Cuándo usar ventas
 
-Cliente de la venta. Por defecto Consumidor Final (debe abonar el total al confirmar). Otros contactos: el cobro se registra desde Cuenta Corriente o contactos.
+Usá ventas cuando:
 
-## Fecha de Creación
+- Estás registrando una operación real con entrega de productos.
+- El cliente ya confirmó la compra.
+- Necesitás impactar stock y registrar el ingreso o deuda.
+- Querés gestionar despacho antes de entregar la mercadería.
 
-Se asigna automáticamente. Cambiarla requiere permisos especiales.
+---
 
-## Días Vencimiento Cobro
+## Qué cambia y qué no cambia
 
-Días hasta considerar el cobro vencido. Por defecto en preferencias o en el contacto. Consumidor Final: 0.
+**La venta:**
 
-## Ítems
+- ✔️ Descarga stock (al marcar ENTREGADO)
+- ✔️ Impacta cuenta corriente (según cliente)
+- ✔️ Puede generar comprobante
+- ❌ No es editable una vez confirmada (según estado)
 
-Productos y cantidades. El precio debe ser válido; cambiar precio, lista o descuento requiere permisos especiales.
+---
 
-## Descuento y Costo de envío
+## Procedimiento
 
-Pueden heredarse del contacto. Modificarlos requiere permisos especiales.
+1. Creá una nueva venta.
+2. Seleccioná el contacto:
+   - Consumidor Final → pago inmediato
+   - Contacto → puede generar deuda
+3. Agregá productos y cantidades.
+4. Ajustá precios o descuentos si corresponde (según permisos).
+5. Confirmá la venta.
+6. Si aplica:
+   - Gestioná despacho
+7. Marcá como ENTREGADO para:
+   - descontar stock
+   - actualizar cuenta corriente
 
-## Observaciones
-
-Texto libre para horarios, condiciones de entrega o acuerdos.
+---
 
 ## Estados
 
-| Estado    | Descripción |
-| --------- | ----------- |
-| BORRADOR  | Editable. Podés modificar ítems, contacto y montos. |
-| CONFIRMADO| No editable. Siguiente: control de despacho (según preferencias). |
-| DESPACHAR | Control sobre el inventario afectado (métodos según preferencias). |
-| ENTREGADO | Stock descontado; Cuenta Corriente actualizada. Consumidor Final con pago cargado puede pasar directo. |
-| RECHAZAR  | Vuelve a BORRADOR. No disponible en ENTREGADO ni CANCELADO. |
-| CANCELADO | Flujo cerrado. No editable. |
+| Estado     | Descripción |
+|------------|------------|
+| BORRADOR   | Editable. Podés modificar productos y datos. |
+| CONFIRMADO | No editable. Permite avanzar al despacho. |
+| DESPACHAR  | Control del inventario según configuración. |
+| ENTREGADO  | Se descuenta stock y se impacta cuenta corriente. |
+| RECHAZAR   | Vuelve a BORRADOR (no disponible en estados finales). |
+| CANCELADO  | Flujo cerrado. No editable. |
 
-## Reglas
+---
 
-- Agregar ítem: botón o tecla "+". Productos relacionados: búsqueda por etiquetas.
-- Consumidor Final debe tener el pago cargado para poder marcar ENTREGADO (o según configuración).
+## Casos frecuentes
 
-## BuenasPracticas
+### Venta en mostrador (Consumidor Final)
+Se carga el pago antes de finalizar. Puede pasar directamente a ENTREGADO.
 
-- Verificá contacto y lista de precios antes de confirmar.
-- Para Consumidor Final, cargá el pago completo antes de imprimir el comprobante.
+### Venta a cliente con cuenta corriente
+El pago se registra luego desde cuenta corriente.
+
+### Venta con entrega diferida
+Se confirma primero y luego se gestiona el despacho.
+
+---
+
+## Si algo sale mal
+
+- **No podés marcar como ENTREGADO**
+  - Verificá que el pago esté cargado (Consumidor Final).
+  
+- **No podés modificar la venta**
+  - Puede estar en estado no editable.
+
+- **Problemas con precios**
+  - Revisá lista de precios o permisos.
+
+---
+
+## Buenas prácticas
+
+- Verificá el cliente antes de confirmar.
+- Controlá precios y descuentos.
+- Para ventas en mostrador, cargá el pago antes de finalizar.
+- Usá el flujo de despacho si trabajás con logística.
+
+---
+
+## Ver también
+
+- [Presupuestos](./presupuestos.md)
+- [Pedidos](./pedidos.md)
+- [POS](./pos.md)
