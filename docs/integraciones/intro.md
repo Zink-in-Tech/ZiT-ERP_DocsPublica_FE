@@ -60,8 +60,7 @@ Datos de contacto y horarios de soporte: **TODO: completar con producto** cuando
 
 ## Ver también
 
-- [Preferencias](/configuracion/preferencias) — configuración general de la organización.
-- [Integración (resumen en Configuración)](/configuracion/integracion) — artículo breve en el módulo Configuración.
+- [Preferencias](/configuracion/preferencias) — incluye la **pestaña Integraciones** en el producto y el acceso con **Gestionar**.
 
 ---
 

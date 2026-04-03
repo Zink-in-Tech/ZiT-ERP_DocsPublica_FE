@@ -1,7 +1,9 @@
 ---
 title: Preferencias
+description: Configuración general de la organización, incluida la pestaña Integraciones y el enlace a las guías por proveedor.
 sidebar_position: 70
 ---
+
 ## Resumen
 
 - Configurás el comportamiento por defecto del sistema (moneda, vencimientos, lista de precios, formato de comprobante, control de ventas).
@@ -19,6 +21,17 @@ sidebar_position: 70
 ## Flujo
 
 - Editar preferencias. Configurar moneda base, proceso de pago, días de vencimiento, lista por defecto, zona horaria, año fiscal, consulta precio, actualizar listas al actualizar costo, formato comprobante, tipo de control, control full ante inconsistencias. Guardar.
+
+---
+
+## Pestaña Integraciones
+
+En la misma pantalla de **Preferencias** tenés una pestaña **Integraciones**. Ahí ves los **servicios externos** disponibles para tu organización (Facturante, Mercado Pago, WooCommerce, etc., según lo que habilite el sistema).
+
+- El **tilde verde** indica que el vínculo quedó registrado del lado del servidor.
+- **Gestionar** abre el asistente del proveedor (formulario o redirección para autorizar).
+
+La **documentación detallada** por proveedor, conceptos (OAuth, claves), seguridad y resolución de problemas está en la sección **[Integraciones](/integraciones)** del menú principal del portal — así evitamos duplicar dos entradas con nombres parecidos en el índice.
 
 ## Campos
 
@@ -83,3 +96,7 @@ Si se debe hacer control completo ante reiteradas inconsistencias (valor indicad
 
 - Revisá días de vencimiento y lista por defecto al iniciar; afectan presupuestos, ventas y compras.
 - Configurá tipo de control según el volumen de ítems y el nivel de control que necesites.
+
+## Ver también
+
+- [Integraciones](/integraciones) — guías por proveedor (Facturante, Mercado Pago, WooCommerce, seguridad, problemas frecuentes).

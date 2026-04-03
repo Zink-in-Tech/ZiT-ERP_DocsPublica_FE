@@ -24,6 +24,20 @@ const config: Config = {
     locales: ['es'],
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/configuracion/integracion',
+            to: '/integraciones',
+          },
+        ],
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
