@@ -79,6 +79,10 @@ const config: Config = {
               label: 'Primeros pasos',
               to: '/primeros-pasos',
             },
+            {
+              label: 'Integraciones',
+              to: '/integraciones',
+            },
           ],
         },
         {
