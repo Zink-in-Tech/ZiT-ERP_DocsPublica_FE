@@ -28,10 +28,10 @@ sidebar_position: 70
 
 En la misma pantalla de **Preferencias** tenés una pestaña **Integraciones**. Ahí ves los **servicios externos** disponibles para tu organización (Facturante, Mercado Pago, WooCommerce, etc., según lo que habilite el sistema).
 
-- El **tilde verde** indica que el vínculo quedó registrado del lado del servidor.
-- **Gestionar** abre el asistente del proveedor (formulario o redirección para autorizar).
+- El **tilde verde** junto a un servicio indica que el alta quedó registrada **del lado del servidor** (en casos puntuales puede haber diferencias momentáneas en tu pantalla). Es el mismo criterio que explica [Integraciones con servicios externos](/integraciones).
+- **Gestionar** abre el asistente del proveedor (formulario, pasos guiados o redirección para autorizar).
 
-La **documentación detallada** por proveedor, conceptos (OAuth, claves), seguridad y resolución de problemas está en la sección **[Integraciones](/integraciones)** del menú principal del portal — así evitamos duplicar dos entradas con nombres parecidos en el índice.
+El **detalle por proveedor** no se repite acá: conceptos generales, seguridad y resolución de problemas están en **[Integraciones](/integraciones)**. Para la tienda online (vincular tienda, enlazar productos, pestaña Ecommerce en productos), ver **[Integración WooCommerce](/integraciones/woocommerce)**.
 
 ## Campos
 

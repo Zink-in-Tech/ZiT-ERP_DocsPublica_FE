@@ -38,7 +38,7 @@ Cuando el equipo publique material en el portal, sumaremos capturas anotadas de 
 | [Cómo funcionan las integraciones](/integraciones/como-funciona) | Conceptos en palabras simples (OAuth, claves, mapeos). |
 | [Facturante](/integraciones/facturante) | Facturación electrónica y contexto Argentina / AFIP. |
 | [Mercado Pago](/integraciones/mercado-pago) | Vincular cuenta y sucursal sin ingresar la contraseña en el ERP. |
-| [WooCommerce](/integraciones/woocommerce) | Tienda online: claves y buenas prácticas. |
+| [WooCommerce](/integraciones/woocommerce) | Tienda online: vincular tienda, enlazar productos, pestaña Ecommerce y buenas prácticas. |
 | [Mercado Libre](/integraciones/mercado-libre) | Placeholder hasta alinear el flujo real del producto. |
 | [Seguridad y cumplimiento](/integraciones/seguridad) | Cómo cuidar claves y cuentas. |
 | [Problemas frecuentes](/integraciones/problemas-frecuentes) | Qué revisar cuando algo no vincula o falla. |
