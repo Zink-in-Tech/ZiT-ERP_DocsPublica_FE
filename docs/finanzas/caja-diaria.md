@@ -1,6 +1,16 @@
 ---
 title: Caja diaria
 description: Analizá en tiempo real el estado financiero del negocio y conciliá todos los movimientos del día.
+keywords:
+  - caja diaria
+  - cierre de caja
+  - efectivo en caja
+  - cobros del día
+  - pagos del día
+  - medios de pago
+  - caja global
+  - conciliación
+  - Mercado Pago
 sidebar_position: 4
 ---
 
@@ -23,11 +33,15 @@ Es la herramienta principal para controlar que el negocio esté funcionando corr
 ## Antes de empezar
 
 - Tener registradas ventas, compras, pagos, ingresos o egresos.
-- **TODO: confirmar con producto** — comportamiento con múltiples usuarios o cajas.
+- Definir si la organización controla caja por operador o de forma global.
+- Para ver o seleccionar caja de otros usuarios, el perfil debe tener permiso de **caja global**.
+- Para modificar caja inicial, el perfil debe tener permiso para editar caja inicial.
 
 ---
 
 ## Ubicación dentro del sistema
+
+Entrá desde **Finanzas → Caja diaria**.
 
 Pagos / Ingresos / Egresos → Caja diaria
 
@@ -47,6 +61,7 @@ La pantalla está organizada en bloques que representan distintos aspectos del n
 - **Caja inicial**: dinero con el que se inicia el día
 - **Efectivo en caja**: dinero disponible actual
 - **Cantidad de ventas**: número de operaciones realizadas
+- **Usuario**: si el perfil tiene permiso de caja global, permite revisar la caja de un operador específico
 
 👉 Estos valores permiten entender rápidamente la actividad del día.
 
@@ -58,6 +73,8 @@ La pantalla está organizada en bloques que representan distintos aspectos del n
 - **Total compras**: suma de compras registradas
 
 👉 Incluyen operaciones independientemente de si fueron cobradas o pagadas.
+
+Por eso puede haber diferencia entre **Total ventas** y **Total ingresos ventas**: una venta puede quedar en cuenta corriente y cobrarse más tarde.
 
 ---
 
@@ -73,6 +90,8 @@ Detalle de cómo se cobraron las ventas:
 - otros
 
 👉 Permite entender cómo ingresa el dinero al negocio.
+
+Si una venta quedó a cuenta corriente, no necesariamente aumenta el efectivo del día. Cuando se registra el cobro, ese movimiento aparece según el medio de pago usado.
 
 ---
 
@@ -123,9 +142,13 @@ Permite obtener el mismo análisis para un rango de fechas.
 
 - ✔️ Consolida toda la información financiera
 - ✔️ Permite análisis operativo
+- ✔️ Puede mostrar caja por fecha y, según permisos, por usuario
+- ✔️ Permite cargar o ajustar caja inicial si el perfil lo habilita
 - ✔️ Ayuda a detectar errores
-- ❌ No modifica datos
+- ❌ No reemplaza la cuenta corriente
 - ❌ No registra movimientos
+
+La caja diaria lee movimientos generados en ventas, compras, pagos, ingresos, egresos y notas. Si necesitás corregir el origen de un importe, revisá la operación que generó ese movimiento.
 
 ---
 
@@ -137,6 +160,8 @@ Al finalizar el día:
 
 - comparar efectivo real vs sistema
 - detectar diferencias
+- revisar medios de pago
+- dejar comentarios de actividad si hace falta
 
 ---
 
@@ -153,6 +178,12 @@ Analizar cómo se están cobrando las ventas:
 ### Control de gastos
 
 Revisar egresos e identificar desvíos.
+
+### Control por operador
+
+Si el usuario tiene permiso de caja global, puede filtrar por operador para analizar quién registró los movimientos del día.
+
+Usalo cuando haya diferencias de caja o cuando varias personas operen ventas/cobros durante la misma jornada.
 
 ---
 
@@ -174,12 +205,26 @@ Es clave para:
 
 - **Diferencias en efectivo**
   - Revisá pagos, ingresos y egresos.
+  - Confirmá que la caja inicial sea correcta.
+  - Revisá si algún cobro fue cargado con otro medio de pago.
 
 - **Totales inconsistentes**
   - Verificá ventas o compras no registradas correctamente.
+  - Compará Total ventas contra Total ingresos ventas: no miden exactamente lo mismo.
+  - Revisá si hubo ventas a cuenta corriente.
 
 - **Medios de pago incorrectos**
   - Revisá cómo se cargaron los pagos.
+  - Si usás Mercado Pago, confirmá que el cobro haya quedado aprobado.
+
+- **No aparece un cobro**
+  - Revisá la fecha seleccionada.
+  - Verificá si estás filtrando por un usuario específico.
+  - Confirmá que el pago fue guardado y aplicado al contacto correcto.
+  - Revisá la cuenta corriente del cliente.
+
+- **No podés ver caja de otros usuarios**
+  - Revisá el permiso de caja global en el perfil.
 
 ---
 
@@ -198,3 +243,5 @@ Es clave para:
 - [Ingresos](./ingresos.md)
 - [Egresos](./egresos.md)
 - [Cuenta corriente](./cuenta-corriente.md)
+- [Ventas](../ventas/ventas.md)
+- [Perfiles](../administracion/perfiles.md)

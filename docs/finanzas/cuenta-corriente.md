@@ -1,6 +1,16 @@
 ---
 title: Cuenta corriente
 description: Consultá y controlá las deudas con clientes y proveedores, con trazabilidad completa de movimientos.
+keywords:
+  - cuenta corriente
+  - deuda clientes
+  - deuda proveedores
+  - saldo contacto
+  - cobrar deuda
+  - pagar proveedor
+  - movimientos
+  - comprobantes pendientes
+  - saldo incorrecto
 sidebar_position: 2
 ---
 
@@ -13,19 +23,29 @@ La cuenta corriente permite visualizar el saldo y los movimientos con cada conta
 
 Se actualiza automáticamente con ventas, compras, pagos y notas, y es la base del control financiero del negocio.
 
+Usala cuando necesites responder preguntas como: "qué debe este cliente", "qué le debemos a este proveedor", "qué comprobantes siguen pendientes" o "por qué este cobro no cerró la deuda".
+
 ---
 
 ## Antes de empezar
 
 - Tener contactos cargados.
 - Registrar ventas o compras.
-- **TODO: confirmar con producto** — comportamiento de múltiples cuentas o segmentación.
+- Para registrar un cobro desde cuenta corriente de clientes, el usuario debe tener permiso para ingresar movimientos/cobros de clientes.
+- Para registrar un pago desde cuenta corriente de proveedores, el usuario debe tener permiso para ingresar movimientos/pagos de proveedores.
 
 ---
 
 ## Ubicación dentro del sistema
 
-Venta / Compra → Cuenta corriente → Pago
+Existen dos vistas principales:
+
+| Vista | Ruta operativa |
+|-------|----------------|
+| Cuenta corriente de clientes | **Finanzas → Cuenta corriente clientes** |
+| Cuenta corriente de proveedores | **Finanzas → Cuenta corriente proveedores** |
+
+Venta / Compra → Cuenta corriente → Pago o Cobro
 
 👉 Es donde se registra la deuda antes de cancelarla.
 
@@ -37,6 +57,8 @@ Venta / Compra → Cuenta corriente → Pago
 - Analizar movimientos históricos
 - Identificar deudas pendientes
 - Controlar pagos aplicados
+- Exportar o revisar movimientos para conciliación
+- Registrar cobros o pagos desde el contacto, según permisos
 
 ---
 
@@ -54,12 +76,28 @@ Venta / Compra → Cuenta corriente → Pago
 
 ## Procedimiento
 
-1. Seleccioná el contacto.
-2. Visualizá:
+1. Entrá a la cuenta corriente de clientes o proveedores.
+2. Buscá el contacto.
+3. Revisá:
    - saldo actual
-   - movimientos
-3. Analizá deuda pendiente.
-4. Si corresponde, registrá un pago.
+   - última operación
+   - movimientos detallados
+4. Analizá comprobantes pendientes.
+5. Si corresponde, registrá un cobro o pago.
+6. Volvé a revisar el saldo para confirmar que el movimiento aplicó correctamente.
+
+---
+
+## Cómo interpretar el saldo
+
+| Situación | Qué significa |
+|-----------|---------------|
+| Cliente con saldo pendiente | El cliente tiene deuda asociada a ventas, notas o movimientos no cancelados. |
+| Proveedor con saldo pendiente | La organización tiene deuda asociada a compras o movimientos de proveedor. |
+| Saldo en cero | No hay deuda pendiente para ese contacto, o los comprobantes fueron compensados. |
+| Última operación antigua | Puede indicar que no hubo movimientos recientes o que el cobro/pago se registró en otro contacto. |
+
+La cuenta corriente muestra deuda y trazabilidad. La disponibilidad de dinero se revisa en [Caja diaria](./caja-diaria.md).
 
 ---
 
@@ -77,6 +115,12 @@ Permite identificar pagos pendientes y montos.
 
 Comparar movimientos del sistema con registros externos.
 
+### Cobro desde cuenta corriente
+
+Cuando un cliente tiene deuda, podés registrar un cobro desde la cuenta corriente si el perfil del usuario tiene permiso para hacerlo.
+
+Ese cobro reduce el saldo del contacto y aparece luego en caja diaria según fecha, medio de pago y configuración.
+
 ---
 
 ## Recomendaciones de uso
@@ -91,6 +135,18 @@ Usá cuenta corriente como referencia principal de deuda.
 
 - **Saldo incorrecto**
   - Revisá ventas, compras y pagos aplicados.
+  - Confirmá que el movimiento se haya registrado sobre el contacto correcto.
+  - Verificá si existen notas de crédito, notas de débito o movimientos manuales.
+
+- **El cobro no aparece**
+  - Revisá que el pago haya sido guardado correctamente.
+  - Verificá la fecha del cobro.
+  - Confirmá que el medio de pago esté cargado.
+  - Si fue Mercado Pago, verificá que haya quedado aprobado.
+
+- **No podés registrar el cobro o pago**
+  - Revisá los permisos del perfil del usuario.
+  - Si el botón no aparece o está deshabilitado, puede faltar el permiso de acción correspondiente.
 
 ---
 
@@ -108,3 +164,4 @@ Usá cuenta corriente como referencia principal de deuda.
 - [Caja diaria](./caja-diaria.md)
 - [Ventas](../ventas/ventas.md)
 - [Compras](../compras/compras.md)
+- [Perfiles](../administracion/perfiles.md)

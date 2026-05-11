@@ -7,9 +7,9 @@
 - Paginas revisadas: 64.
 - Articulos con imagenes: 2.
 - Articulos candidatos a capturas: 60.
-- Articulos candidatos a video corto: 32.
-- Articulos con TODOs: 22.
-- TODOs totales: 24.
+- Articulos candidatos a video corto: 33.
+- Articulos con TODOs: 20.
+- TODOs totales: 22.
 - Articulos con secciones heredadas de semilla: 30.
 
 ## Como usar esta matriz
@@ -30,8 +30,6 @@
 | `docs/finanzas/finanzas.md` |finanzas |1 |Flujo |Si |Si |`static/img/ayuda/finanzas/finanzas-01.png` |
 | `docs/integraciones/woocommerce.md` |integraciones |1 |Flujo |Si |Si |`static/img/ayuda/integraciones/woocommerce-01.png` |
 | `docs/compras/compras.md` |compras |1 |- |Si |Si |`static/img/ayuda/compras/compras-01.png` |
-| `docs/finanzas/caja-diaria.md` |finanzas |1 |- |Si |Si |`static/img/ayuda/finanzas/caja-diaria-01.png` |
-| `docs/finanzas/cuenta-corriente.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/cuenta-corriente-01.png` |
 | `docs/finanzas/egresos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/egresos-01.png` |
 | `docs/finanzas/ingresos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/ingresos-01.png` |
 | `docs/finanzas/pagos.md` |finanzas |1 |- |Si |Si |`static/img/ayuda/finanzas/pagos-01.png` |
@@ -74,6 +72,7 @@
 | `docs/ventas/flujo-ventas.md` |ventas |0 |Flujo |Si |Si |`static/img/ayuda/ventas/flujo-ventas-01.png` |
 | `docs/administracion/productos-actualizacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | `docs/administracion/productos-importacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
+| `docs/finanzas/caja-diaria.md` |finanzas |0 |- |Si |Si |`static/img/ayuda/finanzas/caja-diaria-01.png` |
 | `docs/primeros-4-dias.md` |raiz |0 |- |Si |Si |`static/img/ayuda/raiz/primeros-4-dias-01.png` |
 | `docs/ventas/ventas.md` |ventas |0 |- |Si |Si |`static/img/ayuda/ventas/ventas-01.png` |
 
@@ -102,8 +101,8 @@
 | Media |`docs/compras/orden-compras.md` |Órdenes de compra |419 |0 |- |`static/img/ayuda/compras/orden-compras-01.png` |
 | Alta |`docs/configuracion/datos-org.md` |Datos de la Organización |261 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/configuracion/datos-org-01.png` |
 | Alta |`docs/configuracion/preferencias.md` |Preferencias |646 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/configuracion/preferencias-01.png` |
-| Alta |`docs/finanzas/caja-diaria.md` |Caja diaria |555 |0 |Procedimiento |`static/img/ayuda/finanzas/caja-diaria-01.png` |
-| Alta |`docs/finanzas/cuenta-corriente.md` |Cuenta corriente |289 |0 |- |`static/img/ayuda/finanzas/cuenta-corriente-01.png` |
+| Alta |`docs/finanzas/caja-diaria.md` |Caja diaria |884 |0 |Procedimiento |`static/img/ayuda/finanzas/caja-diaria-01.png` |
+| Media |`docs/finanzas/cuenta-corriente.md` |Cuenta corriente |680 |0 |- |`static/img/ayuda/finanzas/cuenta-corriente-01.png` |
 | Alta |`docs/finanzas/egresos.md` |Egresos |149 |0 |Si algo sale mal |`static/img/ayuda/finanzas/egresos-01.png` |
 | Alta |`docs/finanzas/finanzas.md` |Finanzas |431 |0 |Procedimiento |`static/img/ayuda/finanzas/finanzas-01.png` |
 | Alta |`docs/finanzas/ingresos.md` |Ingresos |161 |0 |Si algo sale mal |`static/img/ayuda/finanzas/ingresos-01.png` |
