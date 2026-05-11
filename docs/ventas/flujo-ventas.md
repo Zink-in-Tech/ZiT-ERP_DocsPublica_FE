@@ -19,7 +19,8 @@ Cada vez que avanzás en el flujo, el sistema genera automáticamente el siguien
 - Tener productos configurados.
 - Tener contactos (clientes) cargados.
 - Definir listas de precios.
-- **TODO: confirmar con producto** — permisos necesarios para avanzar entre etapas.
+- Tener permisos para crear o editar la etapa que corresponda.
+- Para cerrar una venta con cobro, el usuario debe tener permiso para **realizar cobro en ventas**.
 
 ---
 
@@ -81,6 +82,7 @@ Esto permite:
 - Cierre de la operación
 - Impacta stock
 - Impacta cuenta corriente
+- Puede abrir el cobro si el cliente o la configuración requieren pago inmediato
 
 ---
 
@@ -92,6 +94,21 @@ Esto permite:
 | Presupuesto  | ❌   | ❌               | Formalizar |
 | Pedido       | ❌   | ❌               | Preparar |
 | Venta        | ✔️   | ✔️               | Ejecutar |
+
+---
+
+## Permisos en el flujo
+
+Cada etapa puede tener permisos propios para ver, crear, editar, eliminar o avanzar. Tener acceso a Ventas no implica necesariamente poder crear cotizaciones, editar pedidos o registrar cobros.
+
+Para diagnosticar un bloqueo, separá el problema en dos preguntas:
+
+| Pregunta | Dónde revisar |
+|----------|---------------|
+| ¿El usuario puede entrar a la pantalla? | Permiso de menú o visualización de la etapa. |
+| ¿El usuario puede ejecutar la acción? | Permiso específico de acción, por ejemplo crear, editar, confirmar o cobrar. |
+
+El cobro en POS y en ventas comerciales depende del permiso para **realizar cobro en ventas**. La explicación completa de permisos está centralizada en [Perfiles](../administracion/perfiles.md).
 
 ---
 
@@ -115,6 +132,7 @@ Cotización → Presupuesto → Pedido → Venta
 
 - **No podés avanzar de etapa**
   - Verificá el estado del documento.
+  - Revisá el permiso de acción correspondiente a esa etapa.
 
 - **Datos incorrectos en la venta**
   - Revisá la información en las etapas anteriores.

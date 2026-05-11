@@ -1,6 +1,15 @@
 ---
 title: Pagos
 description: Registrá cobros y pagos, aplicalos a comprobantes y mantené actualizada la cuenta corriente.
+keywords:
+  - pagos
+  - cobros
+  - cobrar venta
+  - cuenta corriente
+  - medios de pago
+  - pago parcial
+  - Mercado Pago
+  - realizar cobro en ventas
 sidebar_position: 3
 ---
 
@@ -60,6 +69,19 @@ Cuenta corriente → Pago → Caja
 
 ---
 
+## Relación con ventas
+
+En ventas comerciales, el cobro puede aparecer en dos momentos:
+
+| Momento | Qué ocurre |
+|---------|------------|
+| Al confirmar la venta | Si el cliente es Consumidor Final o si el proceso de pago está configurado como inmediato, el sistema abre el formulario de cobro. |
+| Después de confirmar | Si la venta queda en cuenta corriente, el cobro puede registrarse luego desde Pagos o desde la cuenta corriente del contacto. |
+
+En ambos casos, si el cobro corresponde a una venta, el usuario necesita permiso para **realizar cobro en ventas**.
+
+---
+
 ## Casos frecuentes
 
 ### Cobro total
@@ -73,6 +95,12 @@ Se distribuye el pago en varios comprobantes.
 ### Múltiples medios de pago
 
 Ejemplo: efectivo + transferencia.
+
+### Cobro desde una venta
+
+La venta queda asociada al comprobante y el pago se aplica sobre ese importe.
+
+Si se trata de Consumidor Final o pago inmediato, el sistema puede abrir el cobro automáticamente al confirmar la venta.
 
 ---
 
@@ -93,6 +121,13 @@ Siempre aplicá pagos sobre comprobantes.
   - Revisá reglas de aplicación.
   - Si el pago corresponde a una venta, verificá que tu usuario tenga permiso para realizar cobro en ventas.
 
+- **Mercado Pago no permite confirmar**
+  - Verificá que el pago haya sido solicitado y aprobado.
+  - Si el estado no está aprobado, no guardes el cobro como finalizado.
+
+- **El total no coincide**
+  - Revisá que la suma de los medios de pago coincida con el importe del comprobante.
+
 ---
 
 ## Buenas prácticas
@@ -107,3 +142,5 @@ Siempre aplicá pagos sobre comprobantes.
 
 - [Cuenta corriente](./cuenta-corriente.md)
 - [Caja diaria](./caja-diaria.md)
+- [Ventas](../ventas/ventas.md)
+- [Perfiles](../administracion/perfiles.md)
