@@ -13,7 +13,9 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "import-help": "node scripts/import-erp-help.mjs"
+    "import-help": "node scripts/import-erp-help.mjs",
+    "audit:docs": "node scripts/audit-docs-media.mjs",
+    "capture:erp": "node scripts/capture-erp-screenshots.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

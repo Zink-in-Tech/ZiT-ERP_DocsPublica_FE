@@ -1,0 +1,51 @@
+[
+  {
+    "id": "dashboard",
+    "doc": "docs/admin/dashboard.md",
+    "url": "/admin/dashboard",
+    "output": "static/img/ayuda/admin/dashboard-01.png",
+    "waitForText": "Dashboard"
+  },
+  {
+    "id": "pos",
+    "doc": "docs/ventas/pos.md",
+    "url": "/admin/pos",
+    "output": "static/img/ayuda/ventas/pos-01.png",
+    "waitForText": "POS"
+  },
+  {
+    "id": "ventas",
+    "doc": "docs/ventas/ventas.md",
+    "url": "/admin/ventas",
+    "output": "static/img/ayuda/ventas/ventas-01.png",
+    "waitForText": "Ventas"
+  },
+  {
+    "id": "cotizaciones",
+    "doc": "docs/ventas/cotizaciones.md",
+    "url": "/admin/cotizaciones",
+    "output": "static/img/ayuda/ventas/cotizaciones-01.png",
+    "waitForText": "Cotizaciones"
+  },
+  {
+    "id": "productos",
+    "doc": "docs/administracion/productos.md",
+    "url": "/admin/productos",
+    "output": "static/img/ayuda/administracion/productos-01.png",
+    "waitForText": "Productos"
+  },
+  {
+    "id": "contactos",
+    "doc": "docs/administracion/contactos.md",
+    "url": "/admin/contactos",
+    "output": "static/img/ayuda/administracion/contactos-01.png",
+    "waitForText": "Contactos"
+  },
+  {
+    "id": "informes",
+    "doc": "docs/informes/informes.md",
+    "url": "/admin/informes",
+    "output": "static/img/ayuda/informes/informes-01.png",
+    "waitForText": "Informes"
+  }
+]
