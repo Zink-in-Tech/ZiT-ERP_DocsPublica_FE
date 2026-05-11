@@ -1,6 +1,14 @@
 ---
 title: Toma de inventario
 description: Registrá el conteo físico de productos por ubicación y actualizá el stock en una sola operación.
+keywords:
+  - toma de inventario
+  - conteo físico
+  - stock por ubicación
+  - ubicación
+  - ajuste masivo de stock
+  - validación de stock
+  - depósito
 sidebar_position: 3
 ---
 
@@ -16,7 +24,9 @@ Es una herramienta para sincronizar el sistema con la realidad del depósito.
 
 - Tener ubicaciones configuradas.
 - Tener productos cargados.
-- **TODO: confirmar con producto** — comportamiento con múltiples ubicaciones.
+- Definir qué ubicación o depósito se va a contar.
+- Tener permiso para cargar inventario.
+- Si necesitás modificar la validación de stock del producto durante la toma, el usuario debe tener permiso específico para hacerlo.
 
 ---
 
@@ -54,10 +64,26 @@ Usala cuando:
 
 ## Procedimiento
 
-1. Seleccioná la ubicación.
-2. Buscá el producto.
-3. Ingresá la cantidad real.
-4. Confirmá.
+Entrá desde **Inventario → Toma de inventario**.
+
+1. Ingresá la ubicación.
+2. Buscá productos por descripción, código o listado.
+3. Ingresá la cantidad real contada.
+4. Agregá todos los productos de la ubicación.
+5. Confirmá.
+
+Si el sistema detecta diferencias entre stock actual y stock informado, puede mostrar una confirmación con el detalle de productos y cantidades antes de aplicar el cambio.
+
+---
+
+## Toma de inventario vs ajuste manual
+
+| Herramienta | Cuándo usarla |
+|-------------|---------------|
+| Toma de inventario | Para conteos físicos por ubicación o correcciones de varios productos. |
+| Registro de inventario | Para ajustes puntuales de uno o pocos productos. |
+
+En conteos grandes, la toma de inventario es más segura porque obliga a trabajar por ubicación y reduce ajustes aislados sin contexto.
 
 ---
 
@@ -90,6 +116,16 @@ Usala cuando:
 
 - **Stock incorrecto**
   - Verificá cantidades ingresadas.
+  - Revisá si confirmaste una diferencia entre stock actual y stock informado.
+  - Confirmá que elegiste la ubicación correcta.
+
+- **No podés guardar**
+  - Verificá que cada producto tenga cantidad mayor a cero.
+  - Revisá permisos de inventario.
+
+- **No aparece el producto**
+  - Probá buscar por código, descripción o listado.
+  - Confirmá que el producto esté activo.
 
 ---
 
@@ -105,3 +141,5 @@ Usala cuando:
 
 - [Registro de inventario](./inventarios.md)
 - [Consulta de stock](./productos-consulta-inter-org.md)
+- [Productos](../administracion/productos.md)
+- [Perfiles](../administracion/perfiles.md)

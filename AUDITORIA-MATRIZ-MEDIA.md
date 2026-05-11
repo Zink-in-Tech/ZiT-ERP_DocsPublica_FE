@@ -7,9 +7,9 @@
 - Paginas revisadas: 64.
 - Articulos con imagenes: 2.
 - Articulos candidatos a capturas: 60.
-- Articulos candidatos a video corto: 36.
-- Articulos con TODOs: 15.
-- TODOs totales: 17.
+- Articulos candidatos a video corto: 39.
+- Articulos con TODOs: 12.
+- TODOs totales: 14.
 - Articulos con secciones heredadas de semilla: 30.
 
 ## Como usar esta matriz
@@ -32,9 +32,6 @@
 | `docs/integraciones/intro.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/intro-01.png` |
 | `docs/integraciones/mercado-libre.md` |integraciones |1 |- |Si |No |`static/img/ayuda/integraciones/mercado-libre-01.png` |
 | `docs/integraciones/mercado-pago.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/mercado-pago-01.png` |
-| `docs/inventario/inventarios-ubicacion.md` |inventario |1 |- |Si |No |`static/img/ayuda/inventario/inventarios-ubicacion-01.png` |
-| `docs/inventario/inventarios.md` |inventario |1 |- |Si |Si |`static/img/ayuda/inventario/inventarios-01.png` |
-| `docs/inventario/productos-consulta-inter-org.md` |inventario |1 |- |Si |No |`static/img/ayuda/inventario/productos-consulta-inter-org-01.png` |
 | `docs/primeros-pasos.md` |raiz |1 |- |Si |Si |`static/img/ayuda/raiz/primeros-pasos-01.png` |
 | `docs/ventas/consulta-precio.md` |ventas |1 |- |Si |Si |`static/img/ayuda/ventas/consulta-precio-01.png` |
 | `docs/ventas/notas-credito.md` |ventas |1 |- |Si |Si |`static/img/ayuda/ventas/notas-credito-01.png` |
@@ -70,6 +67,7 @@
 | `docs/administracion/productos-actualizacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | `docs/administracion/productos-importacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
 | `docs/finanzas/caja-diaria.md` |finanzas |0 |- |Si |Si |`static/img/ayuda/finanzas/caja-diaria-01.png` |
+| `docs/inventario/inventarios.md` |inventario |0 |- |Si |Si |`static/img/ayuda/inventario/inventarios-01.png` |
 | `docs/primeros-4-dias.md` |raiz |0 |- |Si |Si |`static/img/ayuda/raiz/primeros-4-dias-01.png` |
 | `docs/ventas/ventas.md` |ventas |0 |- |Si |Si |`static/img/ayuda/ventas/ventas-01.png` |
 
@@ -90,7 +88,7 @@
 | Alta |`docs/administracion/perfiles.md` |Perfiles |989 |1 |- |- |
 | Alta |`docs/administracion/productos-actualizacion-masiva.md` |Actualización masiva de productos |75 |0 |- |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | Alta |`docs/administracion/productos-importacion-masiva.md` |Importación de Productos |87 |0 |- |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
-| Media |`docs/administracion/productos.md` |Productos |226 |0 |- |`static/img/ayuda/administracion/productos-01.png` |
+| Media |`docs/administracion/productos.md` |Productos |454 |0 |- |`static/img/ayuda/administracion/productos-01.png` |
 | Media |`docs/administracion/usuarios.md` |Usuarios |145 |0 |- |`static/img/ayuda/administracion/usuarios-01.png` |
 | Alta |`docs/arquitectura.md` |Cómo funciona ZinK ERP |426 |0 |Antes de empezar, Procedimiento, Si algo sale mal |`static/img/ayuda/raiz/arquitectura-01.png` |
 | Media |`docs/compras/compras.md` |Compras |684 |0 |- |`static/img/ayuda/compras/compras-01.png` |
@@ -127,9 +125,9 @@
 | Media |`docs/integraciones/seguridad.md` |Seguridad y cumplimiento (integraciones) |266 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/seguridad-01.png` |
 | Alta |`docs/integraciones/woocommerce.md` |Integración WooCommerce (guía para operadores) |1733 |0 |Resumen, Antes de empezar, Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/woocommerce-01.png` |
 | Media |`docs/intro.md` |Introducción |333 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/raiz/intro-01.png` |
-| Alta |`docs/inventario/inventarios-ubicacion.md` |Toma de inventario |260 |0 |- |`static/img/ayuda/inventario/inventarios-ubicacion-01.png` |
-| Alta |`docs/inventario/inventarios.md` |Registro de inventario |359 |0 |- |`static/img/ayuda/inventario/inventarios-01.png` |
-| Alta |`docs/inventario/productos-consulta-inter-org.md` |Consulta de stock |202 |0 |- |`static/img/ayuda/inventario/productos-consulta-inter-org-01.png` |
+| Media |`docs/inventario/inventarios-ubicacion.md` |Toma de inventario |463 |0 |- |`static/img/ayuda/inventario/inventarios-ubicacion-01.png` |
+| Alta |`docs/inventario/inventarios.md` |Registro de inventario |567 |0 |- |`static/img/ayuda/inventario/inventarios-01.png` |
+| Media |`docs/inventario/productos-consulta-inter-org.md` |Consulta de stock |347 |0 |- |`static/img/ayuda/inventario/productos-consulta-inter-org-01.png` |
 | Alta |`docs/primeros-4-dias.md` |Primeros resultados con ZinK ERP |462 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/raiz/primeros-4-dias-01.png` |
 | Alta |`docs/primeros-pasos.md` |Aspectos Generales |557 |0 |Procedimiento |`static/img/ayuda/raiz/primeros-pasos-01.png` |
 | Alta |`docs/ventas/consulta-precio.md` |Consulta de precios |477 |0 |- |`static/img/ayuda/ventas/consulta-precio-01.png` |

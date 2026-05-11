@@ -1,6 +1,16 @@
 ---
 title: Registro de inventario
 description: Registrá ajustes de stock que no provienen de compras o ventas y mantené la consistencia del inventario.
+keywords:
+  - inventario
+  - stock
+  - ajuste de stock
+  - movimiento de inventario
+  - stock inicial
+  - rotura
+  - pérdida
+  - devolución
+  - validación de stock
 sidebar_position: 2
 ---
 
@@ -18,7 +28,9 @@ Todos los movimientos quedan registrados para auditoría.
 
 - Tener productos configurados.
 - Verificá el stock actual antes de realizar ajustes.
-- **TODO: confirmar con producto** — permisos necesarios para ajustes manuales.
+- Tener permiso para agregar, editar o eliminar inventarios según la operación.
+- Si necesitás modificar la validación de stock del producto desde inventario, el usuario debe tener el permiso específico para modificar validación de stock.
+- Confirmá que el movimiento no corresponda a una compra o venta que debería registrarse por su flujo normal.
 
 ---
 
@@ -58,17 +70,35 @@ Usalo cuando:
 
 ## Procedimiento
 
-1. Seleccioná tipo de movimiento:
+Entrá desde **Inventario → Inventarios**.
+
+1. Creá un nuevo inventario.
+2. Seleccioná tipo de movimiento:
    - Ingreso
    - Egreso
    - Ajuste manual
    - Inicialización
-2. (Opcional) Seleccioná tipo de evento:
+3. (Opcional) Seleccioná tipo de evento:
    - Desecho
    - Devolución
-3. Buscá el producto.
-4. Ingresá la cantidad.
-5. Confirmá el movimiento.
+4. Buscá el producto o escaneá código.
+5. Ingresá la cantidad.
+6. Si corresponde y tenés permiso, marcá validación de stock para el producto.
+7. Confirmá el movimiento.
+
+---
+
+## Relación con compras y ventas
+
+El stock puede cambiar por distintos caminos:
+
+| Origen | Cuándo usarlo |
+|--------|---------------|
+| Compra | Cuando ingresa mercadería desde un proveedor y debe impactar cuenta corriente. |
+| Venta | Cuando se entrega o vende mercadería a un cliente. |
+| Inventario | Cuando necesitás corregir, inicializar o ajustar stock sin documento comercial. |
+
+Usar inventario para corregir una compra o venta mal cargada puede ocultar el origen del problema. Primero revisá el documento que generó el movimiento.
 
 ---
 
@@ -105,9 +135,16 @@ Usalo cuando:
 
 - **Stock incorrecto**
   - Revisá movimientos previos.
+  - Verificá si hubo compras, ventas, toma de inventario o ajustes manuales recientes.
 
 - **Error en cantidad**
   - Verificá antes de confirmar.
+
+- **No podés agregar o editar inventario**
+  - Revisá permisos de inventario en el perfil.
+
+- **No podés cambiar validación de stock**
+  - Revisá el permiso específico para modificar validación de stock desde inventario.
 
 ---
 
@@ -125,3 +162,5 @@ Usalo cuando:
 - [Consulta de stock](./productos-consulta-inter-org.md)
 - [Compras](../compras/compras.md)
 - [Ventas](../ventas/ventas.md)
+- [Productos](../administracion/productos.md)
+- [Perfiles](../administracion/perfiles.md)

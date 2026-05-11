@@ -1,6 +1,15 @@
 ---
 title: Consulta de stock
 description: Consultá el stock disponible por producto y organización para tomar decisiones de venta o reposición.
+keywords:
+  - consulta de stock
+  - stock inter organización
+  - stock inter-org
+  - sucursales
+  - disponibilidad
+  - reposición
+  - ubicación
+  - producto
 sidebar_position: 4
 ---
 
@@ -15,7 +24,9 @@ Es una herramienta de consulta que no modifica datos.
 ## Antes de empezar
 
 - Tener productos configurados.
-- **TODO: confirmar con producto** — habilitación de consulta inter-organización en preferencias.
+- Tener habilitada la preferencia de **Consulta Stock Inter-Organización** si necesitás ver otras organizaciones o sucursales.
+- Tener permisos para acceder a la consulta.
+- Recordá que esta pantalla es solo de lectura: no modifica stock.
 
 ---
 
@@ -39,10 +50,28 @@ Consulta → Venta / Pedido / Reposición
 
 ## Procedimiento
 
-1. Buscar producto.
-2. Visualizar stock:
+Entrá desde **Inventario → Consulta de stock**.
+
+1. Buscá el producto.
+2. Visualizá stock:
    - en la organización actual
    - en otras si aplica
+3. Revisá ubicación y organización.
+4. Usá la información para decidir venta, pedido, reposición o transferencia operativa si tu proceso lo contempla.
+
+---
+
+## Qué muestra la consulta
+
+La consulta puede mostrar:
+
+- código;
+- descripción;
+- stock;
+- ubicación;
+- organización.
+
+Si la consulta inter-organización no está habilitada, la visibilidad puede limitarse a la organización actual.
 
 ---
 
@@ -74,6 +103,15 @@ Ideal para:
 
 - **Stock incorrecto**
   - Revisá movimientos o ajustes.
+  - Verificá compras, ventas, inventarios y toma de inventario recientes.
+
+- **No ves otras organizaciones**
+  - Revisá la preferencia de consulta stock inter-organización.
+  - Confirmá permisos y alcance del usuario.
+
+- **No aparece un producto**
+  - Verificá que el producto esté activo y correctamente configurado.
+  - Probá buscar por código o descripción.
 
 ---
 
@@ -89,3 +127,5 @@ Ideal para:
 - [Registro de inventario](./inventarios.md)
 - [Toma de inventario](./inventarios-ubicacion.md)
 - [Ventas](../ventas/ventas.md)
+- [Productos](../administracion/productos.md)
+- [Preferencias](../configuracion/preferencias.md)
