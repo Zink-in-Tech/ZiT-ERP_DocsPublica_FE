@@ -1,6 +1,16 @@
 ---
 title: POS (Punto de venta)
 description: Registrá ventas rápidas en mostrador con carga ágil de productos y cobro inmediato.
+keywords:
+  - POS
+  - punto de venta
+  - venta rápida
+  - venta mostrador
+  - cobrar
+  - cobro
+  - no puedo cobrar
+  - consumidor final
+  - permiso de cobro
 sidebar_position: 6
 ---
 
@@ -11,6 +21,8 @@ El POS permite registrar ventas de forma rápida, especialmente en mostrador, en
 A diferencia del flujo completo de ventas, el POS está pensado para operaciones inmediatas donde no es necesario pasar por cotización, presupuesto o pedido.
 
 Permite cargar productos, cobrar y generar la venta directamente.
+
+También podés encontrarlo o buscarlo como **punto de venta**, **venta rápida**, **venta de mostrador**, **cobro en POS** o **venta a Consumidor Final**.
 
 ---
 
@@ -26,7 +38,11 @@ Permite cargar productos, cobrar y generar la venta directamente.
 
 ## Ubicación dentro del sistema
 
+Entrá desde **Gestión Operativa → POS**.
+
 El POS es una **forma alternativa de generar ventas**, independiente del flujo comercial tradicional.
+
+![Pantalla inicial de POS con buscador de producto, cliente Consumidor Final y total de la venta](/img/ayuda/ventas/pos-01.png)
 
 En Zink ERP existen dos formas de registrar una venta:
 
@@ -62,16 +78,32 @@ POS → Venta
 
 ## Procedimiento
 
-1. Ingresar productos:
+1. Ingresá productos desde el campo **Escanear o buscar producto**:
    - por código de barras
    - por búsqueda
 2. Ajustar cantidades si es necesario.
-3. (Opcional) Seleccionar cliente.
-4. Aplicar descuentos o recargos.
+
+![POS con un producto agregado, total actualizado y botón Finalizar habilitado](/img/ayuda/ventas/pos-02-producto-agregado.png)
+
+3. (Opcional) Seleccioná cliente con **[F3] Cliente**. Si no seleccionás uno, la venta queda asociada a **Consumidor Final**.
+
+![Diálogo de POS para seleccionar cliente o volver a Consumidor Final](/img/ayuda/ventas/pos-03-seleccionar-cliente.png)
+
+4. Aplicá descuentos o recargos si corresponde:
+   - **[F6] Descuento**
+   - **[F9] Recargo**
+
+![Diálogo de descuento del POS con campos de porcentaje y monto](/img/ayuda/ventas/pos-04-descuento.png)
+
 5. Revisar el total.
-6. Abrir el diálogo de pago. Esta acción depende del permiso para **realizar cobro en ventas**.
+6. Usá **Finalizar (F2)** para abrir el diálogo de pago. Esta acción depende del permiso para **realizar cobro en ventas**.
+
+![Confirmación de finalización de venta en POS antes de guardar y cobrar](/img/ayuda/ventas/pos-05-finalizar.png)
+
 7. Confirmar el cobro:
    - se genera la venta automáticamente
+
+Si necesitás ver o elegir entre varios resultados, usá **[F4] Listado**.
 
 ---
 
@@ -79,7 +111,7 @@ POS → Venta
 
 ### Producto
 
-Ingreso por código o búsqueda.
+Ingreso por código de barras o búsqueda manual.
 
 ### Ítems
 
@@ -92,6 +124,14 @@ Subtotal, descuentos y total final.
 ### Cliente
 
 Por defecto Consumidor Final.
+
+Si seleccionás un contacto, pueden cambiar condiciones comerciales, listas de precios o comportamiento de cuenta corriente según la configuración de la organización.
+
+### Finalizar
+
+Acción para cerrar la venta y avanzar al cobro.
+
+Si el botón aparece deshabilitado, revisá que haya productos cargados y que el usuario tenga permiso para realizar cobro en ventas.
 
 ---
 
@@ -138,12 +178,18 @@ Es ideal en negocios donde:
 - **No podés confirmar la venta**
   - Verificá que el pago esté cargado.
   - Si no podés abrir o completar el cobro, revisá que tu usuario tenga permiso para realizar cobro en ventas.
+  - Si **Finalizar (F2)** está deshabilitado, verificá que haya al menos un producto cargado.
 
 - **Precios incorrectos**
   - Revisá lista de precios o cliente seleccionado.
 
 - **Problemas con medios de pago**
   - Verificá configuración del sistema.
+
+- **No encontrás el producto**
+  - Probá con código de barras, descripción o **[F4] Listado**.
+
+![Mensaje de POS cuando no se encuentra un producto por código o descripción](/img/ayuda/ventas/pos-06-producto-no-encontrado.png)
 
 ---
 

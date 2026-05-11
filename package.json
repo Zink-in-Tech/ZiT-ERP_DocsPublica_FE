@@ -15,7 +15,8 @@
     "typecheck": "tsc",
     "import-help": "node scripts/import-erp-help.mjs",
     "audit:docs": "node scripts/audit-docs-media.mjs",
-    "capture:erp": "node scripts/capture-erp-screenshots.mjs"
+    "capture:erp": "node scripts/capture-erp-screenshots.mjs",
+    "capture:pos": "node scripts/capture-pos-flow.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

@@ -60,12 +60,25 @@ ERP_SCREENSHOT_USER="usuario@test.com" ERP_SCREENSHOT_PASSWORD="***" npm run cap
 
 El comando lee `scripts/erp-screenshot-routes.json`, inicia sesión en `ERP_SCREENSHOT_BASE_URL` (por defecto `https://testziterp.azurewebsites.net`) y guarda las imágenes en las rutas indicadas. También actualiza `AUDITORIA-CAPTURAS-ERP.md` con el resultado de cada captura.
 
+Para regenerar capturas del flujo POS sin confirmar una venta:
+
+```bash
+ERP_SCREENSHOT_USER="usuario@test.com" ERP_SCREENSHOT_PASSWORD="***" npm run capture:pos
+```
+
+El comando actualiza `AUDITORIA-CAPTURAS-POS.md` y genera capturas de producto agregado, selección de cliente, descuento, finalización y producto no encontrado.
+
 Regla importante: este repo puede **leer** el proyecto hermano `../ZiT-ERP_FE` para reutilizar Playwright si está instalado, pero no debe escribir ni modificar archivos dentro del frontend.
 
 Capturas base ya generadas desde el ERP de test:
 
 - `static/img/ayuda/admin/dashboard-01.png`
 - `static/img/ayuda/ventas/pos-01.png`
+- `static/img/ayuda/ventas/pos-02-producto-agregado.png`
+- `static/img/ayuda/ventas/pos-03-seleccionar-cliente.png`
+- `static/img/ayuda/ventas/pos-04-descuento.png`
+- `static/img/ayuda/ventas/pos-05-finalizar.png`
+- `static/img/ayuda/ventas/pos-06-producto-no-encontrado.png`
 - `static/img/ayuda/ventas/ventas-01.png`
 - `static/img/ayuda/ventas/cotizaciones-01.png`
 - `static/img/ayuda/administracion/productos-01.png`
