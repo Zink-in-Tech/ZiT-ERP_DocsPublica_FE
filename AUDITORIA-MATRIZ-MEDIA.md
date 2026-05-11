@@ -7,9 +7,9 @@
 - Paginas revisadas: 64.
 - Articulos con imagenes: 2.
 - Articulos candidatos a capturas: 60.
-- Articulos candidatos a video corto: 33.
-- Articulos con TODOs: 20.
-- TODOs totales: 22.
+- Articulos candidatos a video corto: 34.
+- Articulos con TODOs: 18.
+- TODOs totales: 20.
 - Articulos con secciones heredadas de semilla: 30.
 
 ## Como usar esta matriz
@@ -26,10 +26,8 @@
 | --- |--- |---: |--- |--- |--- |--- |
 | `docs/integraciones/problemas-frecuentes.md` |integraciones |3 |- |Si |Si |`static/img/ayuda/integraciones/problemas-frecuentes-01.png` |
 | `docs/ventas/pos.md` |ventas |1 |Flujo, Campos |No |Si |`static/img/ayuda/ventas/pos-01.png` |
-| `docs/compras/flujo-compras.md` |compras |1 |Flujo |Si |No |`static/img/ayuda/compras/flujo-compras-01.png` |
 | `docs/finanzas/finanzas.md` |finanzas |1 |Flujo |Si |Si |`static/img/ayuda/finanzas/finanzas-01.png` |
 | `docs/integraciones/woocommerce.md` |integraciones |1 |Flujo |Si |Si |`static/img/ayuda/integraciones/woocommerce-01.png` |
-| `docs/compras/compras.md` |compras |1 |- |Si |Si |`static/img/ayuda/compras/compras-01.png` |
 | `docs/finanzas/egresos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/egresos-01.png` |
 | `docs/finanzas/ingresos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/ingresos-01.png` |
 | `docs/finanzas/pagos.md` |finanzas |1 |- |Si |Si |`static/img/ayuda/finanzas/pagos-01.png` |
@@ -69,6 +67,7 @@
 | `docs/administracion/impuestos.md` |administracion |0 |Campos |Si |No |`static/img/ayuda/administracion/impuestos-01.png` |
 | `docs/administracion/perfiles.md` |administracion |0 |Campos |No |Si |`static/img/ayuda/administracion/perfiles-01.png` |
 | `docs/arquitectura.md` |raiz |0 |Flujo |Si |Si |`static/img/ayuda/raiz/arquitectura-01.png` |
+| `docs/compras/flujo-compras.md` |compras |0 |Flujo |Si |Si |`static/img/ayuda/compras/flujo-compras-01.png` |
 | `docs/ventas/flujo-ventas.md` |ventas |0 |Flujo |Si |Si |`static/img/ayuda/ventas/flujo-ventas-01.png` |
 | `docs/administracion/productos-actualizacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | `docs/administracion/productos-importacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
@@ -96,9 +95,9 @@
 | Media |`docs/administracion/productos.md` |Productos |226 |0 |- |`static/img/ayuda/administracion/productos-01.png` |
 | Media |`docs/administracion/usuarios.md` |Usuarios |145 |0 |- |`static/img/ayuda/administracion/usuarios-01.png` |
 | Alta |`docs/arquitectura.md` |Cómo funciona ZinK ERP |426 |0 |Antes de empezar, Procedimiento, Si algo sale mal |`static/img/ayuda/raiz/arquitectura-01.png` |
-| Alta |`docs/compras/compras.md` |Compras |409 |0 |- |`static/img/ayuda/compras/compras-01.png` |
-| Alta |`docs/compras/flujo-compras.md` |Flujo de compras |276 |0 |Procedimiento |`static/img/ayuda/compras/flujo-compras-01.png` |
-| Media |`docs/compras/orden-compras.md` |Órdenes de compra |419 |0 |- |`static/img/ayuda/compras/orden-compras-01.png` |
+| Media |`docs/compras/compras.md` |Compras |684 |0 |- |`static/img/ayuda/compras/compras-01.png` |
+| Alta |`docs/compras/flujo-compras.md` |Flujo de compras |491 |0 |Procedimiento |`static/img/ayuda/compras/flujo-compras-01.png` |
+| Media |`docs/compras/orden-compras.md` |Órdenes de compra |550 |0 |- |`static/img/ayuda/compras/orden-compras-01.png` |
 | Alta |`docs/configuracion/datos-org.md` |Datos de la Organización |261 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/configuracion/datos-org-01.png` |
 | Alta |`docs/configuracion/preferencias.md` |Preferencias |646 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/configuracion/preferencias-01.png` |
 | Alta |`docs/finanzas/caja-diaria.md` |Caja diaria |884 |0 |Procedimiento |`static/img/ayuda/finanzas/caja-diaria-01.png` |

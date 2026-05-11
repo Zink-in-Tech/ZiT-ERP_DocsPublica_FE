@@ -1,6 +1,16 @@
 ---
 title: Compras
 description: Registrá la compra a proveedores, ingresá mercadería y generá el impacto en stock y cuenta corriente.
+keywords:
+  - compras
+  - compra proveedor
+  - pago proveedor
+  - cuenta corriente proveedor
+  - ingreso de stock
+  - mercadería
+  - orden de compra
+  - registrar pago
+  - días vencimiento pago
 sidebar_position: 3
 ---
 
@@ -19,7 +29,8 @@ Puede generarse a partir de una orden de compra o registrarse directamente.
 - Tener proveedores cargados como contactos.
 - Verificá que los productos estén configurados.
 - Algunas modificaciones pueden requerir permisos especiales.
-- **TODO: confirmar con producto** — comportamiento de recepción parcial o diferencias.
+- Para registrar pagos a proveedores, el usuario debe tener permiso para **registrar pagos**.
+- Revisá los **días de vencimiento de pago** del proveedor o la configuración general, porque pueden afectar cuándo queda pendiente la deuda.
 
 ---
 
@@ -52,9 +63,28 @@ La compra es la etapa final del proceso.
 3. Agregar productos y cantidades.
 4. Verificar precios y condiciones.
 5. Confirmar la compra.
-6. Registrar el ingreso de mercadería:
+6. Si corresponde, registrar el pago al proveedor.
+7. Registrar el ingreso de mercadería:
    - se actualiza el stock
-7. Verificar impacto en cuenta corriente.
+8. Verificar impacto en cuenta corriente.
+
+---
+
+## Pago de la compra
+
+Al aprobar o confirmar una compra, el sistema puede ofrecer registrar el pago al proveedor si:
+
+- la compra tiene importe pendiente;
+- el usuario tiene permiso para registrar pagos;
+- el comprobante permite asociar el pago.
+
+Si no se registra el pago en el momento, la deuda queda en la cuenta corriente del proveedor y puede pagarse luego desde Finanzas, Pagos o Cuenta corriente proveedores.
+
+| Situación | Qué revisar |
+|-----------|-------------|
+| Se pagó en el momento | El pago debe aparecer en pagos, cuenta corriente del proveedor y caja diaria según fecha y medio. |
+| Quedó pendiente | Revisá cuenta corriente proveedores. |
+| No aparece el formulario de pago | Revisá permiso para registrar pagos y estado de la compra. |
 
 ---
 
@@ -83,6 +113,12 @@ Se registra la compra sin planificación previa.
 
 Se confirma la llegada de productos y se actualiza el stock.
 
+### Compra con deuda al proveedor
+
+Se confirma la compra, pero el pago queda pendiente para cancelarlo luego.
+
+Este caso impacta la cuenta corriente del proveedor.
+
 ---
 
 ## Recomendaciones de uso
@@ -103,12 +139,24 @@ Es ideal en situaciones como:
 
 - **Stock incorrecto**
   - Verificá cantidades antes de confirmar.
+  - Revisá si la compra ya fue ingresada.
 
 - **Diferencias con proveedor**
   - Revisá valores registrados.
+  - Verificá descuentos, impuestos y vencimiento de pago.
 
 - **No podés modificar**
   - Puede estar en estado CONFIRMADO o INGRESADO.
+
+- **No podés registrar el pago**
+  - Revisá el permiso para registrar pagos.
+  - Confirmá que la compra tenga importe pendiente.
+  - Verificá que el proveedor esté correctamente seleccionado.
+
+- **El pago no aparece en caja diaria**
+  - Revisá la fecha del pago.
+  - Confirmá el medio de pago.
+  - Si la caja está filtrada por usuario, revisá el operador correcto.
 
 ---
 
@@ -124,4 +172,7 @@ Es ideal en situaciones como:
 ## Ver también
 
 - [Órdenes de compra](./orden-compras.md)
-- [Flujo de compras](./compras.md)
+- [Flujo de compras](./flujo-compras.md)
+- [Pagos](../finanzas/pagos.md)
+- [Cuenta corriente](../finanzas/cuenta-corriente.md)
+- [Caja diaria](../finanzas/caja-diaria.md)

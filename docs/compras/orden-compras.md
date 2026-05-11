@@ -1,6 +1,14 @@
 ---
 title: Órdenes de compra
 description: Registrá solicitudes a proveedores y organizá tus compras antes de generar el impacto en stock y cuenta corriente.
+keywords:
+  - órdenes de compra
+  - orden de compra
+  - compras
+  - proveedor
+  - planificación de compras
+  - reposición de stock
+  - solicitud a proveedor
 sidebar_position: 2
 ---
 
@@ -19,6 +27,7 @@ No impactan stock ni cuenta corriente.
 - Tener proveedores cargados como contactos.
 - Verificá que los productos estén configurados.
 - Algunas modificaciones pueden requerir permisos especiales.
+- Tener permiso para crear o editar órdenes de compra.
 
 ---
 
@@ -70,6 +79,21 @@ Usá órdenes de compra cuando:
 
 ---
 
+## Relación con la compra
+
+La orden de compra no mueve stock ni genera deuda. Su función es dejar preparada la solicitud al proveedor.
+
+El impacto real ocurre cuando se registra la compra:
+
+| Documento | Qué representa | Impacto |
+|-----------|----------------|---------|
+| Orden de compra | Solicitud o planificación | No impacta stock ni cuenta corriente. |
+| Compra | Operación final con proveedor | Ingresa stock y puede generar deuda o pago. |
+
+Si la mercadería llega con diferencias, revisá cantidades y precios antes de registrar la compra final.
+
+---
+
 ## Estados
 
 | Estado     | Descripción |
@@ -118,6 +142,10 @@ Usalas cuando:
 - **Proveedor incorrecto**
   - Verificá el contacto seleccionado.
 
+- **No podés generar o editar la orden**
+  - Revisá los permisos del perfil.
+  - Confirmá que la orden no esté en un estado cerrado.
+
 ---
 
 ## Buenas prácticas
@@ -132,4 +160,6 @@ Usalas cuando:
 ## Ver también
 
 - [Compras](./compras.md)
-- [Flujo de compras](./compras.md)
+- [Flujo de compras](./flujo-compras.md)
+- [Productos](../administracion/productos.md)
+- [Perfiles](../administracion/perfiles.md)
