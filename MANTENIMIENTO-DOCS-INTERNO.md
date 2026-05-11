@@ -83,6 +83,7 @@ Capturas base ya generadas desde el ERP de test:
 - `static/img/ayuda/ventas/cotizaciones-01.png`
 - `static/img/ayuda/administracion/productos-01.png`
 - `static/img/ayuda/administracion/contactos-01.png`
+- `static/img/ayuda/administracion/perfiles-01-formulario.png`
 - `static/img/ayuda/informes/informes-01.png`
 
 Estas imágenes todavía deben revisarse antes de insertarlas en artículos publicados. Algunas muestran datos demo del entorno de prueba.

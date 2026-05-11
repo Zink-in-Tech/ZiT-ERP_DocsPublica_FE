@@ -5,9 +5,9 @@
 ## Resumen
 
 - Paginas revisadas: 64.
-- Articulos con imagenes: 0.
-- Articulos candidatos a capturas: 62.
-- Articulos candidatos a video corto: 30.
+- Articulos con imagenes: 2.
+- Articulos candidatos a capturas: 60.
+- Articulos candidatos a video corto: 32.
 - Articulos con TODOs: 23.
 - TODOs totales: 25.
 - Articulos con secciones heredadas de semilla: 30.
@@ -25,7 +25,7 @@
 | Articulo |Modulo |TODOs |Secciones heredadas |Captura |Video |Ruta sugerida |
 | --- |--- |---: |--- |--- |--- |--- |
 | `docs/integraciones/problemas-frecuentes.md` |integraciones |3 |- |Si |Si |`static/img/ayuda/integraciones/problemas-frecuentes-01.png` |
-| `docs/ventas/pos.md` |ventas |1 |Flujo, Campos |Si |Si |`static/img/ayuda/ventas/pos-01.png` |
+| `docs/ventas/pos.md` |ventas |1 |Flujo, Campos |No |Si |`static/img/ayuda/ventas/pos-01.png` |
 | `docs/compras/flujo-compras.md` |compras |1 |Flujo |Si |No |`static/img/ayuda/compras/flujo-compras-01.png` |
 | `docs/finanzas/finanzas.md` |finanzas |1 |Flujo |Si |Si |`static/img/ayuda/finanzas/finanzas-01.png` |
 | `docs/integraciones/woocommerce.md` |integraciones |1 |Flujo |Si |Si |`static/img/ayuda/integraciones/woocommerce-01.png` |
@@ -35,7 +35,7 @@
 | `docs/finanzas/cuenta-corriente.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/cuenta-corriente-01.png` |
 | `docs/finanzas/egresos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/egresos-01.png` |
 | `docs/finanzas/ingresos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/ingresos-01.png` |
-| `docs/finanzas/pagos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/pagos-01.png` |
+| `docs/finanzas/pagos.md` |finanzas |1 |- |Si |Si |`static/img/ayuda/finanzas/pagos-01.png` |
 | `docs/integraciones/facturante.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/facturante-01.png` |
 | `docs/integraciones/intro.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/intro-01.png` |
 | `docs/integraciones/mercado-libre.md` |integraciones |1 |- |Si |No |`static/img/ayuda/integraciones/mercado-libre-01.png` |
@@ -70,7 +70,7 @@
 | `docs/administracion/contactos-importacion-masiva.md` |administracion |0 |Campos |Si |No |`static/img/ayuda/administracion/contactos-importacion-masiva-01.png` |
 | `docs/administracion/contactos.md` |administracion |0 |Campos |Si |No |`static/img/ayuda/administracion/contactos-01.png` |
 | `docs/administracion/impuestos.md` |administracion |0 |Campos |Si |No |`static/img/ayuda/administracion/impuestos-01.png` |
-| `docs/administracion/perfiles.md` |administracion |0 |Campos |Si |No |`static/img/ayuda/administracion/perfiles-01.png` |
+| `docs/administracion/perfiles.md` |administracion |0 |Campos |No |Si |`static/img/ayuda/administracion/perfiles-01.png` |
 | `docs/arquitectura.md` |raiz |0 |Flujo |Si |Si |`static/img/ayuda/raiz/arquitectura-01.png` |
 | `docs/administracion/productos-actualizacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | `docs/administracion/productos-importacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
@@ -91,7 +91,7 @@
 | Media |`docs/administracion/notificaciones-recibidas-precio.md` |Recepción de Notificación de cambio de Precio |88 |0 |- |`static/img/ayuda/administracion/notificaciones-recibidas-precio-01.png` |
 | Media |`docs/administracion/notificar-cambio-precio.md` |Notificación de cambio de Precio |118 |0 |- |- |
 | Media |`docs/administracion/organizacion-alta.md` |Nuevas Organizaciones |240 |0 |- |`static/img/ayuda/administracion/organizacion-alta-01.png` |
-| Alta |`docs/administracion/perfiles.md` |Perfiles |139 |0 |- |`static/img/ayuda/administracion/perfiles-01.png` |
+| Alta |`docs/administracion/perfiles.md` |Perfiles |989 |1 |- |- |
 | Alta |`docs/administracion/productos-actualizacion-masiva.md` |Actualización masiva de productos |75 |0 |- |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | Alta |`docs/administracion/productos-importacion-masiva.md` |Importación de Productos |87 |0 |- |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
 | Media |`docs/administracion/productos.md` |Productos |226 |0 |- |`static/img/ayuda/administracion/productos-01.png` |
@@ -107,7 +107,7 @@
 | Alta |`docs/finanzas/egresos.md` |Egresos |149 |0 |Si algo sale mal |`static/img/ayuda/finanzas/egresos-01.png` |
 | Alta |`docs/finanzas/finanzas.md` |Finanzas |431 |0 |Procedimiento |`static/img/ayuda/finanzas/finanzas-01.png` |
 | Alta |`docs/finanzas/ingresos.md` |Ingresos |161 |0 |Si algo sale mal |`static/img/ayuda/finanzas/ingresos-01.png` |
-| Alta |`docs/finanzas/pagos.md` |Pagos |273 |0 |- |`static/img/ayuda/finanzas/pagos-01.png` |
+| Alta |`docs/finanzas/pagos.md` |Pagos |309 |0 |- |`static/img/ayuda/finanzas/pagos-01.png` |
 | Alta |`docs/informes/informe-8020.md` |Informe 80/20 (ganancia bruta) |256 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-8020-01.png` |
 | Alta |`docs/informes/informe-articulos-vendidos.md` |Informe Artículos vendidos entre fechas |222 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-articulos-vendidos-01.png` |
 | Alta |`docs/informes/informe-cuenta-corriente.md` |Informe Cuenta corriente |221 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-cuenta-corriente-01.png` |
@@ -142,9 +142,9 @@
 | Alta |`docs/ventas/notas-credito.md` |Notas de crédito |451 |0 |- |`static/img/ayuda/ventas/notas-credito-01.png` |
 | Alta |`docs/ventas/notas-debito.md` |Notas de débito |439 |0 |- |`static/img/ayuda/ventas/notas-debito-01.png` |
 | Media |`docs/ventas/pedidos.md` |Pedidos |380 |0 |- |`static/img/ayuda/ventas/pedidos-01.png` |
-| Alta |`docs/ventas/pos.md` |POS (Punto de venta) |528 |0 |- |`static/img/ayuda/ventas/pos-01.png` |
+| Alta |`docs/ventas/pos.md` |POS (Punto de venta) |801 |6 |- |- |
 | Media |`docs/ventas/presupuestos.md` |Presupuestos |372 |0 |- |`static/img/ayuda/ventas/presupuestos-01.png` |
-| Alta |`docs/ventas/ventas.md` |Ventas |448 |0 |- |`static/img/ayuda/ventas/ventas-01.png` |
+| Alta |`docs/ventas/ventas.md` |Ventas |495 |0 |- |`static/img/ayuda/ventas/ventas-01.png` |
 
 ## Convencion de capturas
 

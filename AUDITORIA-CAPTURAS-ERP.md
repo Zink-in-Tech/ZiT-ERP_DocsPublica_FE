@@ -2,9 +2,9 @@
 
 **Uso interno del equipo.** Archivo generado automaticamente con `npm run capture:erp`.
 
-- Fecha: 2026-05-11T12:07:14.018Z.
+- Fecha: 2026-05-11T13:10:34.609Z.
 - Base URL: https://testziterp.azurewebsites.net.
-- Capturas correctas: 7.
+- Capturas correctas: 8.
 - Capturas con error: 0.
 
 | Estado |ID |Doc |URL |Archivo |Detalle |
@@ -15,6 +15,7 @@
 | OK |cotizaciones |`docs/ventas/cotizaciones.md` |https://testziterp.azurewebsites.net/admin/cotizaciones |`static/img/ayuda/ventas/cotizaciones-01.png` |- |
 | OK |productos |`docs/administracion/productos.md` |https://testziterp.azurewebsites.net/admin/productos |`static/img/ayuda/administracion/productos-01.png` |- |
 | OK |contactos |`docs/administracion/contactos.md` |https://testziterp.azurewebsites.net/admin/contactos |`static/img/ayuda/administracion/contactos-01.png` |- |
+| OK |perfiles-crear |`docs/administracion/perfiles.md` |https://testziterp.azurewebsites.net/admin/perfiles/crear |`static/img/ayuda/administracion/perfiles-01-formulario.png` |- |
 | OK |informes |`docs/informes/informes.md` |https://testziterp.azurewebsites.net/admin/informes |`static/img/ayuda/informes/informes-01.png` |- |
 
 ## Siguiente paso

@@ -42,6 +42,13 @@
     "waitForText": "Contactos"
   },
   {
+    "id": "perfiles-crear",
+    "doc": "docs/administracion/perfiles.md",
+    "url": "/admin/perfiles/crear",
+    "output": "static/img/ayuda/administracion/perfiles-01-formulario.png",
+    "waitForText": "Datos Generales"
+  },
+  {
     "id": "informes",
     "doc": "docs/informes/informes.md",
     "url": "/admin/informes",

@@ -1,6 +1,17 @@
 ---
 title: Perfiles
 description: Definí permisos y niveles de acceso para los usuarios del sistema.
+keywords:
+  - permisos
+  - perfiles
+  - seguridad
+  - accesos
+  - roles
+  - usuarios
+  - no puedo acceder
+  - no puedo cobrar
+  - botón deshabilitado
+  - acciones
 sidebar_position: 9
 ---
 
@@ -9,6 +20,8 @@ sidebar_position: 9
 Los perfiles permiten definir conjuntos de permisos y controlar qué puede ver y qué acciones puede realizar cada usuario dentro del sistema.
 
 Facilitan la gestión de accesos al asignar configuraciones reutilizables a múltiples usuarios.
+
+Entrá desde **Administración → Perfiles**.
 
 Un perfil es un **conjunto de permisos**. El nombre del perfil es referencial: lo elige el operador o administrador para identificarlo, pero no define por sí solo qué puede hacer el usuario.
 
@@ -34,6 +47,8 @@ Por ejemplo, dos organizaciones pueden tener un perfil llamado "Vendedor" con pe
 4. Guardar.
 5. Asociar a usuarios.
 
+![Formulario de perfil con datos generales y categorías de permisos](/img/ayuda/administracion/perfiles-01-formulario.png)
+
 ---
 
 ## Cómo se organizan los permisos
@@ -47,6 +62,8 @@ Los permisos están organizados en niveles:
 | Acción | Define qué puede hacer dentro de esa pantalla. |
 
 En la práctica, un usuario puede tener acceso a una pantalla pero no a todas sus acciones. Por ejemplo, puede ver ventas sin poder eliminarlas, o puede consultar POS sin poder completar un cobro si no tiene el permiso correspondiente.
+
+La recomendación para la ayuda es centralizar la explicación completa en este artículo y, en cada pantalla operativa, mencionar solo el permiso que afecta esa acción. Por ejemplo, en POS y Ventas se indica que el cobro depende del permiso para **realizar cobro en ventas**, pero el diagnóstico completo se mantiene acá.
 
 ---
 
