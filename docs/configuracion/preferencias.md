@@ -12,13 +12,13 @@ sidebar_position: 70
 - Consumidor Final siempre tiene proceso de pago inmediato.
 - Sirve para definir zona horaria, año fiscal y pantalla de consulta de precios.
 
-## CuandoUsar
+## Cuándo usar
 
 - Cambiar el comportamiento por defecto (vencimientos, lista de precios por defecto, formato de comprobante, tipo de control de ventas).
 - Configurar proceso de pago (inmediato o asíncrono para contactos).
 - Habilitar o configurar la pantalla de consulta de precios (listas, stock, productos relacionados por etiquetas).
 
-## Flujo
+## Procedimiento
 
 - Editar preferencias. Configurar moneda base, proceso de pago, días de vencimiento, lista por defecto, zona horaria, año fiscal, consulta precio, actualizar listas al actualizar costo, formato comprobante, tipo de control, control full ante inconsistencias. Guardar.
 
@@ -33,7 +33,7 @@ En la misma pantalla de **Preferencias** tenés una pestaña **Integraciones**. 
 
 El **detalle por proveedor** no se repite acá: conceptos generales, seguridad y resolución de problemas están en **[Integraciones](/integraciones)**. Para la tienda online (vincular tienda, enlazar productos, pestaña Ecommerce en productos), ver **[Integración WooCommerce](/integraciones/woocommerce)**.
 
-## Campos
+## Campos principales
 
 ## Moneda Base
 
@@ -87,12 +87,12 @@ Tipo de control de ventas por defecto: Full (control completo), 80/20 Valor, 80/
 
 Si se debe hacer control completo ante reiteradas inconsistencias (valor indicado no coincide con el requerido).
 
-## Reglas
+## Reglas de uso
 
 - Consumidor Final siempre tiene proceso de pago inmediato.
 - Tipo de control y control full ante inconsistencias aplican a las ventas que usen control.
 
-## BuenasPracticas
+## Buenas prácticas
 
 - Revisá días de vencimiento y lista por defecto al iniciar; afectan presupuestos, ventas y compras.
 - Configurá tipo de control según el volumen de ítems y el nivel de control que necesites.

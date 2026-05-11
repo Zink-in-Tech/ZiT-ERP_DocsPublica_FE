@@ -9,17 +9,17 @@ sidebar_position: 61
 - Las columnas incluyen código, código de barras, descripción, stock actual, stock mínimo y precio.
 - Sirve para planificar reposición y evitar roturas de stock.
 
-## CuandoUsar
+## Cuándo usar
 
 - Para identificar productos que requieren compra o reposición.
 - Para revisar por proveedor qué ítems están bajo el mínimo.
 - Para tomar decisiones de compra o producción según prioridad.
 
-## Flujo
+## Procedimiento
 
 - Elegí el informe Stock crítico desde Informes. Opcional: filtrá por contacto (proveedor). Consultá; la grilla muestra los productos con stock por debajo del mínimo. Podés exportar o usar los datos para generar órdenes de compra.
 
-## Campos
+## Campos principales
 
 ## Contacto (proveedor)
 
@@ -29,11 +29,11 @@ Filtro opcional. Si seleccionás un proveedor, solo se listan productos asociado
 
 Código, código de barras, descripción, stock actual, stock mínimo, precio. El stock mínimo es el definido en el maestro del producto.
 
-## Reglas
+## Reglas de uso
 
 - Solo se listan productos con stock actual menor al stock mínimo configurado.
 - El permiso de menú controla si el informe está visible.
 
-## BuenasPracticas
+## Buenas prácticas
 
 - Revisá este informe con frecuencia para reponer a tiempo. Combiná con el informe de productos faltantes para priorizar.

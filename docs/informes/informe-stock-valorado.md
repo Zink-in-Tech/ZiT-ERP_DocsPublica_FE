@@ -10,18 +10,18 @@ sidebar_position: 62
 - Permite filtrar por etiquetas de producto y restringir a solo productos con stock > 0.
 - Export a PDF, Excel y CSV generados en el front con los criterios aplicados.
 
-## CuandoUsar
+## Cuándo usar
 
 - Para conocer el valor total del inventario y su composición por producto.
 - Para ver concentración de valor (qué ítems representan la mayor parte del stock valorado).
 - Para revisar margen y precio de venta de referencia por producto (análisis profundo de rentabilidad en el informe Pareto).
 - Para reportes periódicos de inventario valorado con filtros por etiquetas.
 
-## Flujo
+## Procedimiento
 
 - Entrá a Informes y elegí "Informe Stock Valorado". Aplicá filtros (etiquetas, solo con stock > 0). Consultá; verás el resumen ejecutivo arriba, la tabla ordenada por valor (total ítem) y los totales al pie. Exportá a PDF, Excel o CSV según necesidad.
 
-## Campos
+## Campos principales
 
 ## Filtros
 
@@ -40,13 +40,13 @@ Código interno, código de barras, descripción, cantidad (stock), costo unitar
 
 Monto total valorizado, cantidad de SKUs, cantidad total de unidades.
 
-## Reglas
+## Reglas de uso
 
 - El backend solo devuelve JSON; PDF, Excel y CSV se generan en el front con título, fecha, criterios y totales.
 - El acceso al informe está controlado por permiso de menú (informes).
 - El análisis de rentabilidad/ganancia por producto queda cubierto por el informe Pareto; este informe no lo duplica.
 
-## BuenasPracticas
+## Buenas prácticas
 
 - Usá el filtro "Solo productos con stock > 0" para no llenar el informe de ceros cuando solo te interesa inventario con existencia.
 - Revisá el indicador de concentración para priorizar ítems que representan la mayor parte del valor.

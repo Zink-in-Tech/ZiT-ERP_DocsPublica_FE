@@ -8,13 +8,13 @@ sidebar_position: 7
 - Podés ver tu usuario, email, nombre, rol, cuenta y organización actual.
 - Desde acá cambiás la contraseña, el avatar y la preferencia de modo claro/oscuro.
 
-## CuandoUsar
+## Cuándo usar
 
 - Cambiar tu contraseña de acceso al sistema.
 - Actualizar tu foto o avatar.
 - Activar o desactivar el modo oscuro de la interfaz.
 
-## Flujo
+## Procedimiento
 
 - Entrá a Perfil de usuario desde el menú.
 - En **Datos de perfil** se muestran tu usuario, email, nombre, rol, cuenta y organización (solo lectura).
@@ -22,7 +22,7 @@ sidebar_position: 7
 - Usá **Cambiar avatar** para elegir o actualizar tu imagen de perfil.
 - En **Opciones de visualización**, activá o desactivá el modo oscuro según tu preferencia.
 
-## Campos
+## Campos principales
 
 ## Datos de perfil (solo lectura)
 

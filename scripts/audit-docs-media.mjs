@@ -115,6 +115,11 @@ function countMatches(content, regex) {
   return (content.match(regex) || []).length;
 }
 
+function hasExactHeading(content, heading) {
+  const escapedHeading = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return new RegExp(`^${escapedHeading}\\s*$`, 'm').test(content);
+}
+
 function hasAnyTerm(content, terms) {
   const normalized = stripAccents(content).toLowerCase();
   return terms.some((term) => normalized.includes(stripAccents(term).toLowerCase()));
@@ -139,8 +144,8 @@ function collectDocs() {
       const title = parsed.data.title || path.basename(file, path.extname(file));
       const body = parsed.content;
       const words = body.trim().split(/\s+/).filter(Boolean).length;
-      const missingSections = REQUIRED_SECTIONS.filter((section) => !raw.includes(section));
-      const legacySections = LEGACY_SECTIONS.filter((section) => raw.includes(section));
+      const missingSections = REQUIRED_SECTIONS.filter((section) => !hasExactHeading(raw, section));
+      const legacySections = LEGACY_SECTIONS.filter((section) => hasExactHeading(raw, section));
       const images = countMatches(raw, /!\[/g);
       const todos = countMatches(raw, /TODO/g);
       const screenshotCandidate = images === 0 && hasAnyTerm(`${title}\n${body}`, HIGH_VISUAL_TERMS);

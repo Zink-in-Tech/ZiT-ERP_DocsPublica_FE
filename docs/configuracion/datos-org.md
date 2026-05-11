@@ -10,16 +10,16 @@ sidebar_position: 71
 - El nombre y razón social figuran en informes y comprobantes.
 - La dirección de facturación es la fiscal para que le sean emitidas las facturas.
 
-## CuandoUsar
+## Cuándo usar
 
 - Actualizar logo, razón social, CUIT o direcciones de la organización.
 - Asegurarte de que facturas y comprobantes reflejen los datos correctos de la empresa.
 
-## Flujo
+## Procedimiento
 
 - Editar datos de la organización. Completar imagen, nombre, razón social, CUIT, dirección facturación, dirección física, teléfono, mail, moneda base. Guardar.
 
-## Campos
+## Campos principales
 
 ## Imagen
 
@@ -57,11 +57,11 @@ Correo electrónico; se usa para envío de información, facturas, etc.
 
 Moneda base de la organización. Por el momento solo pesos.
 
-## Reglas
+## Reglas de uso
 
 - Los datos son obligatorios para facturación y comprobantes; mantenelos actualizados.
 
-## BuenasPracticas
+## Buenas prácticas
 
 - Revisá razón social y CUIT al menos una vez al año para coincidir con datos fiscales.
 - Usá imagen de buena calidad (240x240px recomendado) para comprobantes.

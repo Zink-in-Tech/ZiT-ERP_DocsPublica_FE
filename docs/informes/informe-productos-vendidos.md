@@ -9,19 +9,19 @@ sidebar_position: 70
 - Incluye una **sección general** (resumen por producto, sin fechas) y una **sección detallada** (con el día de cada venta). Al final se muestran los totales de ganancia bruta y monto total.
 - Útil para análisis de ventas por lista de precio, mix de productos y performance comercial.
 
-## CuandoUsar
+## Cuándo usar
 
 - Para analizar ventas por producto filtrando por una lista de precios concreta (ej. Público, Oferta).
 - Para ver cantidades vendidas, importes y ganancia bruta según la lista seleccionada.
 - Para cruzar con stock o con el informe 80/20 y tomar decisiones de compra o promoción.
 
-## Flujo
+## Procedimiento
 
 - Entrá al informe Productos vendidos desde Informes.
 - Seleccioná los **productos** y la **lista de precios** con la que querés obtener el informe (y el rango de fechas si aplica).
 - Ejecutá la consulta. El informe muestra la sección general (resumen por producto) y la sección detallada (ventas con fecha). Revisá los totales de ganancia bruta y monto total al pie.
 
-## Campos
+## Campos principales
 
 ## Productos
 
@@ -47,11 +47,11 @@ Mismo tipo de datos pero con la columna **día** (fecha de cada venta) para ver 
 
 Al final del informe: **Ganancia bruta** total y **Monto total** del período y lista seleccionados.
 
-## Reglas
+## Reglas de uso
 
 - El informe considera solo las ventas que corresponden a la **lista de precios seleccionada**. Es posible que existan ventas con otras listas que no figuren en este reporte.
 - Los datos se basan en comprobantes confirmados/entregados. La visibilidad del informe depende de los permisos de menú.
 
-## BuenasPracticas
+## Buenas prácticas
 
 - Elegí bien la lista de precios (Público, Mayorista, Oferta, etc.) para que el análisis coincida con el canal o tipo de venta que te interesa. Combiná con el informe de históricas para el detalle por comprobante.
