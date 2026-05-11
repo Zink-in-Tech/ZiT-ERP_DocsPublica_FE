@@ -42,12 +42,13 @@ Si cerraste la ventana o no terminaste el proceso, **volvé a Gestionar** y repe
 
 ## Cuenta ya vinculada
 
-Desde el mismo asistente suele poder:
+Desde el mismo asistente podés encontrar acciones como:
 
-- **Cambiar la sucursal** asociada, si el producto lo permite.
+- **VINCULAR SUCURSAL** para elegir o cambiar la sucursal asociada.
 - **Desconectar** la cuenta cuando necesites dejar de usar esa vinculación.
+- Confirmaciones como **¿Desconectar Mercado Pago?** antes de cortar el vínculo.
 
-Los textos exactos de botones pueden variar según la versión: **TODO: verificar etiquetas en la UI** si hace falta material de capturas.
+Cuando una venta usa Mercado Pago, el sistema puede pedir el **punto de venta** asociado a la integración. El impacto en caja y en el registro final depende del circuito de venta y de los permisos del usuario.
 
 ---
 
@@ -56,6 +57,8 @@ Los textos exactos de botones pueden variar según la versión: **TODO: verifica
 - Revisá que el navegador **no esté bloqueando ventanas emergentes**.
 - Probá en una **ventana privada** o cerrá sesión en Mercado Pago en otras pestañas y reintentá (evitá mezclar cuentas).
 - Si el sistema no “vuelve” al ERP, verificá la **conexión a internet** y que no haya extensiones que corten redirecciones.
+- Si no aparecen sucursales o puntos de venta, reabrí **Gestionar** y repetí la autorización. Si persiste, confirmá que la cuenta de Mercado Pago usada tenga esos datos disponibles.
+- Si vinculaste una cuenta equivocada, desconectala desde el asistente y repetí el alta usando la cuenta correcta.
 
 ---
 

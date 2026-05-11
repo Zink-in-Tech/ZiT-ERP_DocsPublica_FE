@@ -39,6 +39,8 @@ El orden puede ajustarse según la versión del producto; en general incluye:
 
 Si algo falla, anotá el **texto del mensaje** y, si aparece, un **código o referencia** para soporte.
 
+Cuando la configuración fiscal ya quedó activa, el botón **Gestionar** puede no estar disponible para Facturante. Para cambios posteriores, trabajá con soporte o con la persona administradora de la organización.
+
 ---
 
 ## Pasos fuera del ERP
@@ -75,7 +77,7 @@ Los enlaces anteriores llevan a sitios ajenos a ZinK ERP. Revisá siempre la URL
 
 :::info Instructivo AFIP
 
-Si el producto expone un **instructivo AFIP en PDF con URL fija**, el equipo de documentación puede enlazarlo acá: **TODO: agregar enlace cuando esté definido**.
+El asistente puede mostrar o descargar un **instructivo AFIP** desde el ERP. Si no aparece en tu pantalla, pedilo a soporte o a la persona administradora antes de avanzar con trámites sensibles.
 
 :::
 

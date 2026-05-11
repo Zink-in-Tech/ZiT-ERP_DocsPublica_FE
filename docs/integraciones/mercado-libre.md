@@ -6,19 +6,22 @@ sidebar_position: 6
 
 ## Resumen
 
-Además de Facturante, Mercado Pago y WooCommerce, el sistema puede listar **otros servicios externos** según lo que habilite el **backend** para tu organización. Este artículo concentra lo que hoy podemos documentar de forma genérica y deja espacio para **Mercado Libre** cuando el flujo del asistente esté cerrado con producto.
+Además de Facturante, Mercado Pago y WooCommerce, el sistema puede listar **otros servicios externos** según lo que habilite el **backend** para tu organización. Este artículo concentra lo que conviene revisar cuando aparece una integración adicional, incluido Mercado Libre.
 
 ---
 
 ## Mercado Libre
 
-**TODO: describir con producto** el flujo real del asistente en ZinK ERP, por ejemplo:
+Si Mercado Libre aparece habilitado para tu organización, abrilo desde **Preferencias → Integraciones → Gestionar** y seguí las indicaciones del asistente. El flujo puede variar según la versión y el alcance contratado.
 
-- si usa **OAuth** (redirección al sitio de Mercado Libre para autorizar);
-- **permisos** que se solicitan;
-- relación con **publicaciones**, stock u órdenes, según exponga el ERP.
+Antes de conectar, confirmá con tu responsable interno:
 
-Hasta tener esa información validada, seguí las indicaciones en pantalla con **Gestionar** y, si falla, guardá **mensaje de error** y **captura** (sin datos sensibles) para soporte.
+- Qué cuenta o usuario externo se va a usar.
+- Qué permisos necesita la operación.
+- Si la integración afecta publicaciones, stock, órdenes u otro circuito operativo.
+- Qué persona queda autorizada para desconectar o volver a vincular el servicio.
+
+Si falla el alta, guardá el **mensaje de error**, el paso donde ocurrió y una **captura sin datos sensibles** para soporte.
 
 ---
 

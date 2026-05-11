@@ -8,8 +8,8 @@
 - Articulos con imagenes: 2.
 - Articulos candidatos a capturas: 60.
 - Articulos candidatos a video corto: 39.
-- Articulos con TODOs: 12.
-- TODOs totales: 14.
+- Articulos con TODOs: 6.
+- TODOs totales: 6.
 - Articulos con secciones heredadas de semilla: 30.
 
 ## Como usar esta matriz
@@ -24,14 +24,8 @@
 
 | Articulo |Modulo |TODOs |Secciones heredadas |Captura |Video |Ruta sugerida |
 | --- |--- |---: |--- |--- |--- |--- |
-| `docs/integraciones/problemas-frecuentes.md` |integraciones |3 |- |Si |Si |`static/img/ayuda/integraciones/problemas-frecuentes-01.png` |
 | `docs/ventas/pos.md` |ventas |1 |Flujo, Campos |No |Si |`static/img/ayuda/ventas/pos-01.png` |
-| `docs/integraciones/woocommerce.md` |integraciones |1 |Flujo |Si |Si |`static/img/ayuda/integraciones/woocommerce-01.png` |
 | `docs/finanzas/pagos.md` |finanzas |1 |- |Si |Si |`static/img/ayuda/finanzas/pagos-01.png` |
-| `docs/integraciones/facturante.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/facturante-01.png` |
-| `docs/integraciones/intro.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/intro-01.png` |
-| `docs/integraciones/mercado-libre.md` |integraciones |1 |- |Si |No |`static/img/ayuda/integraciones/mercado-libre-01.png` |
-| `docs/integraciones/mercado-pago.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/mercado-pago-01.png` |
 | `docs/primeros-pasos.md` |raiz |1 |- |Si |Si |`static/img/ayuda/raiz/primeros-pasos-01.png` |
 | `docs/ventas/consulta-precio.md` |ventas |1 |- |Si |Si |`static/img/ayuda/ventas/consulta-precio-01.png` |
 | `docs/ventas/notas-credito.md` |ventas |1 |- |Si |Si |`static/img/ayuda/ventas/notas-credito-01.png` |
@@ -63,10 +57,14 @@
 | `docs/arquitectura.md` |raiz |0 |Flujo |Si |Si |`static/img/ayuda/raiz/arquitectura-01.png` |
 | `docs/compras/flujo-compras.md` |compras |0 |Flujo |Si |Si |`static/img/ayuda/compras/flujo-compras-01.png` |
 | `docs/finanzas/finanzas.md` |finanzas |0 |Flujo |Si |Si |`static/img/ayuda/finanzas/finanzas-01.png` |
+| `docs/integraciones/woocommerce.md` |integraciones |0 |Flujo |Si |Si |`static/img/ayuda/integraciones/woocommerce-01.png` |
 | `docs/ventas/flujo-ventas.md` |ventas |0 |Flujo |Si |Si |`static/img/ayuda/ventas/flujo-ventas-01.png` |
 | `docs/administracion/productos-actualizacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | `docs/administracion/productos-importacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
 | `docs/finanzas/caja-diaria.md` |finanzas |0 |- |Si |Si |`static/img/ayuda/finanzas/caja-diaria-01.png` |
+| `docs/integraciones/facturante.md` |integraciones |0 |- |Si |Si |`static/img/ayuda/integraciones/facturante-01.png` |
+| `docs/integraciones/intro.md` |integraciones |0 |- |Si |Si |`static/img/ayuda/integraciones/intro-01.png` |
+| `docs/integraciones/mercado-pago.md` |integraciones |0 |- |Si |Si |`static/img/ayuda/integraciones/mercado-pago-01.png` |
 | `docs/inventario/inventarios.md` |inventario |0 |- |Si |Si |`static/img/ayuda/inventario/inventarios-01.png` |
 | `docs/primeros-4-dias.md` |raiz |0 |- |Si |Si |`static/img/ayuda/raiz/primeros-4-dias-01.png` |
 | `docs/ventas/ventas.md` |ventas |0 |- |Si |Si |`static/img/ayuda/ventas/ventas-01.png` |
@@ -117,13 +115,13 @@
 | Alta |`docs/informes/informe-stock-valorado.md` |Informe Stock Valorado |428 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-stock-valorado-01.png` |
 | Alta |`docs/informes/informes.md` |Informes |667 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informes-01.png` |
 | Media |`docs/integraciones/como-funciona.md` |Cómo funcionan las integraciones |403 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/como-funciona-01.png` |
-| Alta |`docs/integraciones/facturante.md` |Facturante (facturación electrónica) |491 |0 |Casos frecuentes |`static/img/ayuda/integraciones/facturante-01.png` |
-| Alta |`docs/integraciones/intro.md` |Integraciones con servicios externos |466 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/intro-01.png` |
-| Alta |`docs/integraciones/mercado-libre.md` |Mercado Libre y otros servicios |229 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/mercado-libre-01.png` |
-| Alta |`docs/integraciones/mercado-pago.md` |Mercado Pago |419 |0 |Casos frecuentes |`static/img/ayuda/integraciones/mercado-pago-01.png` |
-| Alta |`docs/integraciones/problemas-frecuentes.md` |Problemas frecuentes (integraciones) |335 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/problemas-frecuentes-01.png` |
+| Alta |`docs/integraciones/facturante.md` |Facturante (facturación electrónica) |528 |0 |Casos frecuentes |`static/img/ayuda/integraciones/facturante-01.png` |
+| Alta |`docs/integraciones/intro.md` |Integraciones con servicios externos |420 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/intro-01.png` |
+| Media |`docs/integraciones/mercado-libre.md` |Mercado Libre y otros servicios |252 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/mercado-libre-01.png` |
+| Alta |`docs/integraciones/mercado-pago.md` |Mercado Pago |495 |0 |Casos frecuentes |`static/img/ayuda/integraciones/mercado-pago-01.png` |
+| Media |`docs/integraciones/problemas-frecuentes.md` |Problemas frecuentes (integraciones) |613 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/problemas-frecuentes-01.png` |
 | Media |`docs/integraciones/seguridad.md` |Seguridad y cumplimiento (integraciones) |266 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/seguridad-01.png` |
-| Alta |`docs/integraciones/woocommerce.md` |Integración WooCommerce (guía para operadores) |1733 |0 |Resumen, Antes de empezar, Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/woocommerce-01.png` |
+| Alta |`docs/integraciones/woocommerce.md` |Integración WooCommerce (guía para operadores) |1435 |0 |Resumen, Antes de empezar, Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/woocommerce-01.png` |
 | Media |`docs/intro.md` |Introducción |333 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/raiz/intro-01.png` |
 | Media |`docs/inventario/inventarios-ubicacion.md` |Toma de inventario |463 |0 |- |`static/img/ayuda/inventario/inventarios-ubicacion-01.png` |
 | Alta |`docs/inventario/inventarios.md` |Registro de inventario |567 |0 |- |`static/img/ayuda/inventario/inventarios-01.png` |

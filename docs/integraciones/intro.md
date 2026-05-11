@@ -25,7 +25,7 @@ Antes de abrir el diálogo, la pantalla puede mostrar una **guía resumida** del
 
 :::note Capturas
 
-Cuando el equipo publique material en el portal, sumaremos capturas anotadas de la pestaña Integraciones.
+La ayuda puede incorporar capturas anotadas de la pestaña **Integraciones** a medida que se consoliden los flujos publicados.
 
 :::
 
@@ -39,7 +39,7 @@ Cuando el equipo publique material en el portal, sumaremos capturas anotadas de 
 | [Facturante](/integraciones/facturante) | Facturación electrónica y contexto Argentina / AFIP. |
 | [Mercado Pago](/integraciones/mercado-pago) | Vincular cuenta y sucursal sin ingresar la contraseña en el ERP. |
 | [WooCommerce](/integraciones/woocommerce) | Tienda online: vincular tienda, enlazar productos, pestaña Ecommerce y buenas prácticas. |
-| [Mercado Libre](/integraciones/mercado-libre) | Placeholder hasta alinear el flujo real del producto. |
+| [Mercado Libre](/integraciones/mercado-libre) | Servicios adicionales que pueden aparecer según habilitación. |
 | [Seguridad y cumplimiento](/integraciones/seguridad) | Cómo cuidar claves y cuentas. |
 | [Problemas frecuentes](/integraciones/problemas-frecuentes) | Qué revisar cuando algo no vincula o falla. |
 
@@ -52,7 +52,7 @@ Cuando el equipo publique material en el portal, sumaremos capturas anotadas de 
 
 :::info Contacto
 
-Datos de contacto y horarios de soporte: **TODO: completar con producto** cuando estén definidos para publicación.
+Usá el canal de soporte definido por tu organización. Al pedir ayuda, indicá servicio, organización, usuario, horario aproximado, paso donde falló y mensaje visible; si adjuntás captura, ocultá claves, secretos y datos sensibles.
 
 :::
 
@@ -61,11 +61,3 @@ Datos de contacto y horarios de soporte: **TODO: completar con producto** cuando
 ## Ver también
 
 - [Preferencias](/configuracion/preferencias) — incluye la **pestaña Integraciones** en el producto y el acceso con **Gestionar**.
-
----
-
-## Notas para el equipo de documentación
-
-- Alinear con **Preferencias → Integraciones** en el producto y con la ayuda in-app (`docs/help/integracion.md` en el repo del ERP, si aplica).
-- **Estilo:** español rioplatense, vos, pasos numerados; enlaces externos: verificar vigencia antes de publicar.
-- **Versionado:** en cada artículo publicado, indicar versión mínima del ERP o del módulo de integraciones cuando el producto lo defina.

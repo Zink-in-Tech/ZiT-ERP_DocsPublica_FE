@@ -4,7 +4,7 @@ description: Conectar la tienda online con el catálogo de ZinK ERP, enlazar pro
 sidebar_position: 5
 ---
 
-Material orientado a **operadores de ZinK ERP** (administración, ventas, depósito) **sin conocimiento técnico**. Alcance: uso de la integración con **WooCommerce** (conectar tienda, enlazar productos, pestaña Ecommerce en la ficha de producto, desvincular).
+Material orientado a **operadores de ZinK ERP** (administración, ventas, depósito) **sin conocimiento técnico**. Alcance: conectar una tienda WooCommerce, enlazar productos, revisar la pestaña **Ecommerce** y desvincular cuando corresponda.
 
 :::info Coherencia con otras páginas
 
@@ -17,18 +17,12 @@ El criterio del **tilde verde** y del estado vinculado es el mismo que en [Integ
 ## Qué resuelve la integración
 
 - **Conecta** la tienda online (sitio con WordPress y WooCommerce) con el **catálogo de productos** de ZinK ERP.
-- Permite **decir qué producto del ERP** corresponde a **cada artículo de la tienda**, para que el sistema pueda mantener alineados datos como precios o existencias **según las reglas que habilite el servidor y el producto** (no todo depende solo de la pantalla).
+- Permite **decir qué producto del ERP** corresponde a **cada artículo de la tienda**, para que el sistema pueda mantener alineados datos como precios o existencias según las reglas habilitadas para tu organización.
 - Desde la **ficha de un producto** podés **gestionar el vínculo** con un artículo de la tienda y marcar si el producto **sincroniza con la tienda online**.
 
-:::caution Acordar con producto
+:::caution Alcance de sincronización
 
-Un párrafo explícito de **“qué sincroniza hoy”** (precio, stock, alta de artículo, órdenes, etc.) según la versión comercial hace el artículo plenamente defendible ante soporte. Hasta tener esa definición, este texto se mantiene genérico.
-
-:::
-
-:::note Beneficios para la organización
-
-En la versión ampliada del portal conviene sumar el beneficio concreto (menos carga doble, precios coherentes, stock visible en la web, etc.) según lo que prometa ZinK ERP en cada plan o región.
+El alcance exacto puede variar por versión, plan o configuración. Antes de operar en producción, confirmá si tu instalación actual sincroniza precios, stock, altas de artículos, órdenes u otros datos.
 
 :::
 
@@ -48,13 +42,13 @@ En la versión ampliada del portal conviene sumar el beneficio concreto (menos c
 2. En la lista, **WooCommerce**.
 3. **Gestionar** abre el asistente (conexión y, luego, enlazado de productos).
 
-Antes de vincular, suele mostrarse una **guía resumida** (pasos en WordPress para obtener clave y secreto). Podés cruzar con las capturas que agregue el equipo en [Integraciones](/integraciones) o en este artículo cuando estén publicadas.
+Antes de vincular, suele mostrarse una **guía resumida** con los pasos en WordPress para obtener la clave y el secreto.
 
 ---
 
-## Referencia de textos en pantalla (validar en la versión publicada)
+## Textos que podés ver en pantalla
 
-Estos rótulos salen del cliente actual; **confirmá en staging o producción** antes de usarlos en material offline o capacitaciones.
+Los rótulos pueden variar levemente entre versiones, pero el flujo operativo se mantiene alrededor de estas acciones.
 
 **Asistente WooCommerce**
 
@@ -77,15 +71,9 @@ Estos rótulos salen del cliente actual; **confirmá en staging o producción** 
 ## Requisitos previos
 
 1. Tienda en línea con **WooCommerce** en WordPress.
-2. Acceso de administrador al WordPress para crear una **clave de conexión** (clave del cliente y secreto) desde el panel de WooCommerce (ruta típica: **WooCommerce → Ajustes → Avanzado** → apartado de claves; el artículo ampliado puede ir con capturas).
+2. Acceso de administrador al WordPress para crear una **clave de conexión** (clave del cliente y secreto) desde el panel de WooCommerce.
 3. **URL pública** de la tienda (la de los compradores, con `https://` cuando sea posible).
-4. Acordar si la integración debe **solo consultar** la tienda o también **actualizar** precio o stock: en WordPress se eligen **permisos** de la clave (solo lectura vs lectura y escritura).
-
-:::note Documentación técnica interna
-
-Para el equipo técnico: enlace a la guía oficial de WooCommerce sobre credenciales de integración, en el idioma que use la organización.
-
-:::
+4. Definir si la integración debe **solo consultar** la tienda o también **actualizar** precio o stock: en WordPress se eligen **permisos** de la clave (solo lectura vs lectura y escritura).
 
 ---
 
@@ -110,11 +98,11 @@ Tras **ENLAZAR PRODUCTOS**, trabajás con la grilla de la tienda:
 | **Sin mapear** | Artículos de la tienda **sin** producto del ERP asignado. |
 | **Enlace inválido** | Vínculos inconsistentes; si hay texto de **motivo**, ayuda a corregir o a escalar a soporte. |
 
-- **Filtro** y **paginación:** en catálogos grandes, conviene saber si **cambiar de página** o **cerrar** puede perder cambios no guardados. **Validá con producto o QA** el comportamiento real (mensaje de confirmación o no) y documentalo cuando esté cerrado; reduce muchos tickets.
+- **Filtro y paginación:** en catálogos grandes, guardá los enlaces antes de cambiar de página, cerrar el asistente o modificar filtros.
 - **GUARDAR ENLACES:** persiste los emparejamientos de la operación; hasta guardar, los cambios pueden no quedar registrados.
 - **Sugerencias automáticas** (si están activas): son orientativas; revisá antes de guardar.
 
-**Productos variables (WooCommerce):** confirmá con producto **qué hace hoy** el sistema: ¿una fila por variación o solo el producto “padre”? ¿hace falta **SKU** alineado entre tienda y ERP? El tooltip del cliente ya advierte limitación; el artículo definitivo debe cerrar el comportamiento con una frase explícita aprobada por producto.
+**Productos variables (WooCommerce):** pueden requerir atención especial. Si la tienda usa variaciones, revisá si el sistema muestra la fila principal, cada variación o un identificador específico. Ante dudas, alineá el criterio con administración antes de guardar vínculos masivos.
 
 ---
 
@@ -127,12 +115,9 @@ Tras **ENLAZAR PRODUCTOS**, trabajás con la grilla de la tienda:
 
 ---
 
-## Varias tiendas (FAQ — validar con producto)
+## Varias tiendas
 
-Redactar según la regla real:
-
-- ¿Una **organización** en ZinK ERP puede tener **una** URL WooCommerce o **varias**?
-- Si solo una: decirlo claro en FAQ para alinear expectativas.
+La cantidad de tiendas WooCommerce que puede operar una organización depende de la configuración habilitada. Si necesitás trabajar con más de una URL, consultá a soporte o administración antes de desvincular una tienda existente.
 
 ---
 
@@ -140,9 +125,7 @@ Redactar según la regla real:
 
 - Botón **DESVINCULAR TIENDA** (o estado **DESVINCULANDO…** mientras procesa).
 
-**Preguntas para cerrar con producto:** ¿qué queda guardado en el ERP (mapeos, histórico)? ¿Hace falta perfil administrador u otro permiso? ¿Se puede revincular la misma u otra URL sin pasos extra?
-
-Recomendación genérica: coordinar con **administración** antes de desvincular en producción.
+Coordiná con **administración** antes de desvincular en producción. La acción puede afectar la operación diaria con la tienda y conviene revisar los enlaces de productos si después se vuelve a vincular la misma URL u otra distinta.
 
 ---
 
@@ -158,8 +141,8 @@ Recomendación genérica: coordinar con **administración** antes de desvincular
 - Error al vincular con datos verificados.
 - Listado de la tienda **vacío** cuando en la web hay productos.
 - Enlaces guardados pero la tienda **no muestra** precios o stock esperados.
-- Comportamiento de **productos variables** distinto al documentado.
-- **Cambios sin guardar:** si el operador perdió trabajo al cambiar de pestaña o página, revisar si el producto debería avisar; si ya avisa, documentarlo.
+- Comportamiento de **productos variables** distinto al esperado.
+- Cambios que no quedaron registrados después de cerrar, filtrar o cambiar de página.
 - Mensajes largos o poco claros: captura y horario aproximado.
 
 ---
@@ -184,19 +167,6 @@ Más detalle en [Problemas frecuentes](/integraciones/problemas-frecuentes).
 
 ---
 
-## Checklist para el equipo de documentación
-
-- [ ] Capturas: Integraciones → WooCommerce → vincular → **Catálogo tienda** / **Sin mapear** / **Enlace inválido** → **GUARDAR ENLACES**.
-- [ ] Capturas: Producto → pestaña **Ecommerce** (interruptor, enlace, **Ver en la tienda** si aplica).
-- [ ] Párrafo **“Qué sincroniza hoy”** firmado por producto.
-- [ ] FAQ: una vs varias tiendas por organización.
-- [ ] FAQ: **guardar producto** (ficha ERP) vs **guardar enlaces** (asistente WooCommerce).
-- [ ] Comportamiento real ante **paginación / cierre / cambio de pestaña** con cambios sin guardar.
-- [ ] Unificar redacción del **tilde verde** entre [Integraciones](/integraciones), [Preferencias](/configuracion/preferencias) y este artículo.
-- [ ] Descripción YAML (SEO) y cuerpo del artículo alineados al mismo tono, sin jerga innecesaria para operadores.
-
----
-
 ## Ver también
 
 - [Integraciones — inicio](/integraciones)
@@ -214,8 +184,4 @@ Más detalle en [Problemas frecuentes](/integraciones/problemas-frecuentes).
 4. **Creá una nueva clave** y elegí los permisos (solo lectura vs lectura y escritura) según lo acordado con tu equipo.
 5. Guardá y copiá el **par clave + secreto** en un lugar seguro. El secreto muchas veces **solo se muestra una vez**.
 
-:::note Capturas
-
-**TODO:** sumar en el portal una secuencia de capturas del flujo en WordPress cuando el equipo tenga el material.
-
-:::
+Si necesitás compartir una captura para soporte, ocultá la clave, el secreto y cualquier dato privado del panel de WordPress.
