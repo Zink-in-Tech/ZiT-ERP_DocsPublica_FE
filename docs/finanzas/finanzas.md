@@ -1,6 +1,16 @@
 ---
 title: Finanzas
 description: Controlá el dinero del negocio, las deudas con clientes y proveedores y el flujo financiero completo en Zink ERP.
+keywords:
+  - finanzas
+  - caja
+  - cuenta corriente
+  - pagos
+  - ingresos
+  - egresos
+  - deuda
+  - flujo financiero
+  - conciliación
 sidebar_position: 1
 ---
 
@@ -22,7 +32,9 @@ Es clave para tomar decisiones financieras y evitar errores operativos.
 
 - Tener registradas ventas y/o compras.
 - Tener contactos cargados (clientes y proveedores).
-- **TODO: confirmar con producto** — comportamiento de múltiples cajas o configuraciones avanzadas.
+- Configurar conceptos para ingresos y egresos manuales.
+- Revisar permisos para registrar pagos, ingresos, egresos, caja global y edición de caja inicial.
+- Definir si la organización controla caja por operador o como caja global.
 
 ---
 
@@ -80,6 +92,8 @@ Esto significa:
 2. Registrás un pago (cancelás deuda)
 3. El dinero impacta en caja
 
+Los ingresos y egresos manuales no pasan por cuenta corriente. Se usan para movimientos fuera del circuito principal de ventas, compras y pagos.
+
 ---
 
 ## Qué hace cada componente
@@ -91,6 +105,18 @@ Esto significa:
 | Caja diaria      | Control del dinero |
 | Ingresos         | Entradas manuales |
 | Egresos          | Salidas manuales |
+
+---
+
+## Procedimiento de control diario
+
+1. Revisá ventas y compras registradas.
+2. Controlá cuenta corriente de clientes y proveedores.
+3. Registrá cobros y pagos pendientes.
+4. Cargá ingresos o egresos manuales solo si el movimiento no corresponde a ventas, compras o pagos.
+5. Revisá caja diaria por fecha y, si corresponde, por operador.
+6. Compará medios de pago contra comprobantes externos.
+7. Dejá observaciones cuando haya diferencias o ajustes.
 
 ---
 
@@ -136,9 +162,18 @@ Para mantener control financiero:
 
 - **Saldos incorrectos**
   - Revisá pagos aplicados.
+  - Verificá si el movimiento está en el contacto correcto.
+  - Revisá notas de crédito, notas de débito o movimientos manuales.
 
 - **Caja no coincide**
   - Verificá ingresos, egresos y pagos.
+  - Revisá fecha, operador y medio de pago.
+  - Compará Total ventas contra Total ingresos ventas.
+
+- **No sabés si usar pago, ingreso o egreso**
+  - Si cancela deuda de cliente o proveedor, usá Pagos.
+  - Si entra dinero fuera de ventas, usá Ingresos.
+  - Si sale dinero fuera de compras, usá Egresos.
 
 ---
 

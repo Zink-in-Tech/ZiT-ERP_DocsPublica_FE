@@ -7,9 +7,9 @@
 - Paginas revisadas: 64.
 - Articulos con imagenes: 2.
 - Articulos candidatos a capturas: 60.
-- Articulos candidatos a video corto: 34.
-- Articulos con TODOs: 18.
-- TODOs totales: 20.
+- Articulos candidatos a video corto: 36.
+- Articulos con TODOs: 15.
+- TODOs totales: 17.
 - Articulos con secciones heredadas de semilla: 30.
 
 ## Como usar esta matriz
@@ -26,10 +26,7 @@
 | --- |--- |---: |--- |--- |--- |--- |
 | `docs/integraciones/problemas-frecuentes.md` |integraciones |3 |- |Si |Si |`static/img/ayuda/integraciones/problemas-frecuentes-01.png` |
 | `docs/ventas/pos.md` |ventas |1 |Flujo, Campos |No |Si |`static/img/ayuda/ventas/pos-01.png` |
-| `docs/finanzas/finanzas.md` |finanzas |1 |Flujo |Si |Si |`static/img/ayuda/finanzas/finanzas-01.png` |
 | `docs/integraciones/woocommerce.md` |integraciones |1 |Flujo |Si |Si |`static/img/ayuda/integraciones/woocommerce-01.png` |
-| `docs/finanzas/egresos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/egresos-01.png` |
-| `docs/finanzas/ingresos.md` |finanzas |1 |- |Si |No |`static/img/ayuda/finanzas/ingresos-01.png` |
 | `docs/finanzas/pagos.md` |finanzas |1 |- |Si |Si |`static/img/ayuda/finanzas/pagos-01.png` |
 | `docs/integraciones/facturante.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/facturante-01.png` |
 | `docs/integraciones/intro.md` |integraciones |1 |- |Si |Si |`static/img/ayuda/integraciones/intro-01.png` |
@@ -68,6 +65,7 @@
 | `docs/administracion/perfiles.md` |administracion |0 |Campos |No |Si |`static/img/ayuda/administracion/perfiles-01.png` |
 | `docs/arquitectura.md` |raiz |0 |Flujo |Si |Si |`static/img/ayuda/raiz/arquitectura-01.png` |
 | `docs/compras/flujo-compras.md` |compras |0 |Flujo |Si |Si |`static/img/ayuda/compras/flujo-compras-01.png` |
+| `docs/finanzas/finanzas.md` |finanzas |0 |Flujo |Si |Si |`static/img/ayuda/finanzas/finanzas-01.png` |
 | `docs/ventas/flujo-ventas.md` |ventas |0 |Flujo |Si |Si |`static/img/ayuda/ventas/flujo-ventas-01.png` |
 | `docs/administracion/productos-actualizacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | `docs/administracion/productos-importacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
@@ -102,9 +100,9 @@
 | Alta |`docs/configuracion/preferencias.md` |Preferencias |646 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/configuracion/preferencias-01.png` |
 | Alta |`docs/finanzas/caja-diaria.md` |Caja diaria |884 |0 |Procedimiento |`static/img/ayuda/finanzas/caja-diaria-01.png` |
 | Media |`docs/finanzas/cuenta-corriente.md` |Cuenta corriente |680 |0 |- |`static/img/ayuda/finanzas/cuenta-corriente-01.png` |
-| Alta |`docs/finanzas/egresos.md` |Egresos |149 |0 |Si algo sale mal |`static/img/ayuda/finanzas/egresos-01.png` |
-| Alta |`docs/finanzas/finanzas.md` |Finanzas |431 |0 |Procedimiento |`static/img/ayuda/finanzas/finanzas-01.png` |
-| Alta |`docs/finanzas/ingresos.md` |Ingresos |161 |0 |Si algo sale mal |`static/img/ayuda/finanzas/ingresos-01.png` |
+| Media |`docs/finanzas/egresos.md` |Egresos |385 |0 |- |`static/img/ayuda/finanzas/egresos-01.png` |
+| Alta |`docs/finanzas/finanzas.md` |Finanzas |621 |0 |- |`static/img/ayuda/finanzas/finanzas-01.png` |
+| Media |`docs/finanzas/ingresos.md` |Ingresos |396 |0 |- |`static/img/ayuda/finanzas/ingresos-01.png` |
 | Alta |`docs/finanzas/pagos.md` |Pagos |500 |0 |- |`static/img/ayuda/finanzas/pagos-01.png` |
 | Alta |`docs/informes/informe-8020.md` |Informe 80/20 (ganancia bruta) |256 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-8020-01.png` |
 | Alta |`docs/informes/informe-articulos-vendidos.md` |Informe Artículos vendidos entre fechas |222 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-articulos-vendidos-01.png` |
