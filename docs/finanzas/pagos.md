@@ -16,6 +16,7 @@ Son el mecanismo que transforma deuda en dinero, impactando tanto la cuenta corr
 
 - Tener comprobantes registrados.
 - Verificar saldo en cuenta corriente.
+- Para registrar cobros asociados a ventas, el usuario debe tener permiso para **realizar cobro en ventas**.
 - Mercado Pago debe estar aprobado antes de registrar.
 - **TODO: confirmar con producto** — manejo de anticipos.
 
@@ -90,6 +91,7 @@ Siempre aplicá pagos sobre comprobantes.
 
 - **No podés guardar**
   - Revisá reglas de aplicación.
+  - Si el pago corresponde a una venta, verificá que tu usuario tenga permiso para realizar cobro en ventas.
 
 ---
 

@@ -20,6 +20,7 @@ Puede generarse desde un pedido o registrarse directamente, según el tipo de op
   - Consumidor Final (pago inmediato)
   - Contacto (puede generar cuenta corriente)
 - Verificá que los productos tengan precios válidos.
+- Para registrar cobros en ventas comerciales, el usuario debe tener permiso para **realizar cobro en ventas**.
 - Algunas modificaciones (precios, fechas, descuentos) pueden requerir permisos especiales.
 
 ---
@@ -90,12 +91,15 @@ Se crea una venta sin pasar por cotización, presupuesto o pedido.
 
 Se registra con pago inmediato y puede marcarse directamente como ENTREGADO.
 
+El cobro en este tipo de venta depende del permiso para **realizar cobro en ventas**.
+
 ---
 
 ## Si algo sale mal
 
 - **No podés marcar como ENTREGADO**
   - Verificá que el pago esté cargado (Consumidor Final).
+  - Si no podés registrar el cobro, revisá el permiso para realizar cobro en ventas.
 
 - **No podés modificar la venta**
   - Puede estar en un estado no editable.

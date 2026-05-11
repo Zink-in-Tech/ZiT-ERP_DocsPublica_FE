@@ -18,6 +18,7 @@ Permite cargar productos, cobrar y generar la venta directamente.
 
 - Verificá que los productos tengan precios configurados.
 - Confirmá los medios de pago disponibles.
+- El usuario debe tener permiso para **realizar cobro en ventas**.
 - Algunas configuraciones dependen de preferencias del sistema.
 - **TODO: confirmar con producto** — comportamiento de listas de precios según cliente.
 
@@ -68,7 +69,7 @@ POS → Venta
 3. (Opcional) Seleccionar cliente.
 4. Aplicar descuentos o recargos.
 5. Revisar el total.
-6. Abrir el diálogo de pago.
+6. Abrir el diálogo de pago. Esta acción depende del permiso para **realizar cobro en ventas**.
 7. Confirmar el cobro:
    - se genera la venta automáticamente
 
@@ -136,6 +137,7 @@ Es ideal en negocios donde:
 
 - **No podés confirmar la venta**
   - Verificá que el pago esté cargado.
+  - Si no podés abrir o completar el cobro, revisá que tu usuario tenga permiso para realizar cobro en ventas.
 
 - **Precios incorrectos**
   - Revisá lista de precios o cliente seleccionado.
