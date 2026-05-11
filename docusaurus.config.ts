@@ -33,6 +33,10 @@ const config: Config = {
             from: '/configuracion/integracion',
             to: '/integraciones',
           },
+          {
+            from: '/integraciones/woocommerce',
+            to: '/ayuda/integraciones/woocommerce',
+          },
         ],
       },
     ],

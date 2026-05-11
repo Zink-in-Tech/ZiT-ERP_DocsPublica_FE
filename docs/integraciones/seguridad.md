@@ -46,5 +46,5 @@ Si alguien vio un **secreto**, si un ex integrante tenía acceso, o si hubo **fi
 ## Ver también
 
 - [Integraciones — inicio](/integraciones)
-- [WooCommerce](/integraciones/woocommerce)
+- [WooCommerce](/ayuda/integraciones/woocommerce)
 - [Problemas frecuentes](/integraciones/problemas-frecuentes)

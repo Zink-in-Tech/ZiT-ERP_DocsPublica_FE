@@ -31,7 +31,7 @@ En la misma pantalla de **Preferencias** tenés una pestaña **Integraciones**. 
 - El **tilde verde** junto a un servicio indica que el alta quedó registrada **del lado del servidor** (en casos puntuales puede haber diferencias momentáneas en tu pantalla). Es el mismo criterio que explica [Integraciones con servicios externos](/integraciones).
 - **Gestionar** abre el asistente del proveedor (formulario, pasos guiados o redirección para autorizar).
 
-El **detalle por proveedor** no se repite acá: conceptos generales, seguridad y resolución de problemas están en **[Integraciones](/integraciones)**. Para la tienda online (vincular tienda, enlazar productos, pestaña Ecommerce en productos), ver **[Integración WooCommerce](/integraciones/woocommerce)**.
+El **detalle por proveedor** no se repite acá: conceptos generales, seguridad y resolución de problemas están en **[Integraciones](/integraciones)**. Para la tienda online (vincular tienda, enlazar productos, pestaña Ecommerce en productos), ver **[Integración WooCommerce](/ayuda/integraciones/woocommerce)**.
 
 ## Campos principales
 

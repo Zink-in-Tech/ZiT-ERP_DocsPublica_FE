@@ -62,5 +62,5 @@ Para resolver más rápido, enviá:
 - [Integraciones — inicio](/integraciones)
 - [Cómo funcionan las integraciones](/integraciones/como-funciona)
 - [Mercado Pago](/integraciones/mercado-pago)
-- [WooCommerce](/integraciones/woocommerce)
+- [WooCommerce](/ayuda/integraciones/woocommerce)
 - [Facturante](/integraciones/facturante)

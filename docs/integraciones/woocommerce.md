@@ -1,187 +1,257 @@
 ---
-title: Integración WooCommerce (guía para operadores)
-description: Conectar la tienda online con el catálogo de ZinK ERP, enlazar productos y revisar la pestaña Ecommerce; clave y secreto desde WordPress.
+title: WooCommerce
+description: Vinculá una tienda WooCommerce con ZinkERP, creá claves REST, enlazá productos y revisá artículos sin mapear o enlaces inválidos.
 sidebar_position: 5
+slug: /ayuda/integraciones/woocommerce
 ---
 
-Material orientado a **operadores de ZinK ERP** (administración, ventas, depósito) **sin conocimiento técnico**. Alcance: conectar una tienda WooCommerce, enlazar productos, revisar la pestaña **Ecommerce** y desvincular cuando corresponda.
+## Resumen
 
-:::info Coherencia con otras páginas
+La integración con **WooCommerce** permite conectar una tienda en WordPress con el catálogo de productos de ZinkERP.
 
-El criterio del **tilde verde** y del estado vinculado es el mismo que en [Integraciones con servicios externos](/integraciones). La entrada habitual es **Preferencias → Integraciones**; el detalle operativo de WooCommerce está concentrado en este artículo.
+El objetivo principal es **vincular productos de la tienda con productos del ERP**. Ese vínculo ayuda a mantener alineados datos como precios o existencias cuando la configuración del sistema lo permite.
+
+Esta ayuda se enfoca en lo que ve el usuario en la aplicación:
+
+- Crear una clave REST en WooCommerce.
+- Vincular la tienda desde **Preferencias → Integraciones**.
+- Enlazar productos de la tienda con productos del ERP.
+- Revisar productos **sin mapear** y **enlaces inválidos**.
+- Cuidar credenciales y no asumir alcances no visibles en pantalla.
+
+:::caution Alcance
+
+No asumas sincronización en tiempo real, sincronización bidireccional completa, facturación automática, importación automática de órdenes ni configuración de un solo clic. El alcance real depende de la configuración habilitada para tu organización y de lo que el frontend muestre en cada pantalla.
 
 :::
-
----
-
-## Qué resuelve la integración
-
-- **Conecta** la tienda online (sitio con WordPress y WooCommerce) con el **catálogo de productos** de ZinK ERP.
-- Permite **decir qué producto del ERP** corresponde a **cada artículo de la tienda**, para que el sistema pueda mantener alineados datos como precios o existencias según las reglas habilitadas para tu organización.
-- Desde la **ficha de un producto** podés **gestionar el vínculo** con un artículo de la tienda y marcar si el producto **sincroniza con la tienda online**.
-
-:::caution Alcance de sincronización
-
-El alcance exacto puede variar por versión, plan o configuración. Antes de operar en producción, confirmá si tu instalación actual sincroniza precios, stock, altas de artículos, órdenes u otros datos.
-
-:::
-
----
-
-## Relación con otras páginas de ayuda
-
-- La entrada habitual del usuario es **Preferencias → Integraciones** (o el menú equivalente en tu versión de ZinK ERP).
-- El artículo [Integraciones con servicios externos](/integraciones) describe el recorrido común a varios proveedores.
-- En Preferencias / Integraciones **no hace falta repetir** todo el procedimiento WooCommerce: alcanza con el enlace a esta página y el mismo criterio sobre el tilde verde.
-
----
-
-## Dónde está en el sistema
-
-1. **Preferencias** → **Integraciones** (o **Configuración** → **Integraciones**, según cómo figure en tu versión).
-2. En la lista, **WooCommerce**.
-3. **Gestionar** abre el asistente (conexión y, luego, enlazado de productos).
-
-Antes de vincular, suele mostrarse una **guía resumida** con los pasos en WordPress para obtener la clave y el secreto.
-
----
-
-## Textos que podés ver en pantalla
-
-Los rótulos pueden variar levemente entre versiones, pero el flujo operativo se mantiene alrededor de estas acciones.
-
-**Asistente WooCommerce**
-
-- Pasos del asistente: **Vincular tienda** · **Enlazar productos**.
-- Pantalla inicial de conexión: título **Vincular la tienda online**; botones **CANCELAR** · **VINCULAR TIENDA** (durante el proceso: **VINCULANDO…**).
-- Campos: **URL de la tienda** (o similar), **Clave del cliente**, **Secreto del cliente**.
-- Cuando la tienda ya está vinculada: **Tienda WooCommerce vinculada**; botones **CERRAR** · **DESVINCULAR TIENDA** · **ENLAZAR PRODUCTOS**.
-- En el paso de mapeo, título: **Enlazar productos de la tienda con el ERP**; pestañas: **Catálogo tienda** · **Sin mapear** · **Enlace inválido**.
-- Pie de la grilla: **DESVINCULAR TIENDA** · **VOLVER** · **GUARDAR ENLACES** (**GUARDANDO…** mientras procesa).
-- Paginación: **Filas por página** (10 / 25 / 50).
-- Mensaje de ayuda sobre productos variables (tooltip): indica que en el futuro puede hacer falta enlazar cada variación; por ahora se puede usar la **fila principal** o dejar sin enlace.
-
-**Ficha de producto**
-
-- Pestaña: **Ecommerce**.
-- Título de sección: **WooCommerce**; acciones **Guardar enlace** / **Guardando…** · **Quitar enlace** / **Quitando…**; campo **ID en WooCommerce**; lista **Artículo en la tienda (sin vínculo)** (artículos de la tienda aún no enlazados a otro producto del ERP); interruptor **Sincronizar con la tienda al guardar el enlace**; indicador **Sincroniza con la tienda online**; enlace **Ver en la tienda** (si el sistema envía la URL pública del artículo).
 
 ---
 
 ## Requisitos previos
 
-1. Tienda en línea con **WooCommerce** en WordPress.
-2. Acceso de administrador al WordPress para crear una **clave de conexión** (clave del cliente y secreto) desde el panel de WooCommerce.
-3. **URL pública** de la tienda (la de los compradores, con `https://` cuando sea posible).
-4. Definir si la integración debe **solo consultar** la tienda o también **actualizar** precio o stock: en WordPress se eligen **permisos** de la clave (solo lectura vs lectura y escritura).
+Antes de empezar, verificá:
+
+- Tener una tienda **WordPress con WooCommerce instalado**.
+- Tener acceso de administrador al panel de WordPress.
+- Conocer la **URL pública** de la tienda, la misma que usan los clientes, por ejemplo `https://mitienda.com`.
+- Tener permisos en ZinkERP para entrar a **Preferencias → Integraciones** y usar **Gestionar**.
+- Definir si la clave REST necesita permisos de **lectura** o **lectura/escritura**. Si ZinkERP debe actualizar precio o stock en la tienda, la guía in-app indica usar **Lectura/Escritura**.
+- Tener productos creados en ZinkERP si vas a enlazar artículos de la tienda con el catálogo del ERP.
 
 ---
 
-## Flujo general
+## Crear claves REST en WooCommerce
 
-### Etapa 1 — Vincular la tienda
+Las claves REST permiten que ZinkERP se conecte con WooCommerce sin usar la contraseña del administrador de WordPress.
 
-1. **Integraciones** → **WooCommerce** → **Gestionar**.
-2. Completá URL, clave del cliente y secreto.
-3. **VINCULAR TIENDA**.
-4. Si hay error, anotá el mensaje o captura para soporte (credenciales, URL o permisos de la clave suelen ser la causa).
+1. Iniciá sesión en el panel de **WordPress** de la tienda.
+2. Entrá a **WooCommerce → Ajustes**.
+3. Abrí la pestaña **Avanzado**.
+4. Entrá a **API REST**.
+5. Tocá **Añadir clave**.
+6. Completá una descripción clara, por ejemplo `ZinkERP`.
+7. Elegí el usuario que va a quedar asociado a la clave.
+8. Seleccioná los permisos:
+   - **Lectura**, si solo se necesita consultar datos.
+   - **Lectura/Escritura**, si el sistema debe actualizar datos como precio o stock según la configuración.
+9. Generá la clave.
+10. Copiá la **clave del cliente** y el **secreto del cliente**.
 
-**Buena práctica:** las claves son como contraseñas; si se filtraron, **revocá la clave en WooCommerce**, generá un par nuevo y volvé a vincular en ZinK ERP.
+:::warning Importante
 
-### Etapa 2 — Enlazar (mapear) productos
+El secreto suele mostrarse una sola vez. Guardalo en un lugar seguro durante el alta y no lo compartas por correo, chat ni capturas.
 
-Tras **ENLAZAR PRODUCTOS**, trabajás con la grilla de la tienda:
-
-| Pestaña | Uso operativo |
-|--------|----------------|
-| **Catálogo tienda** | Listado general; asignás producto del ERP por fila. |
-| **Sin mapear** | Artículos de la tienda **sin** producto del ERP asignado. |
-| **Enlace inválido** | Vínculos inconsistentes; si hay texto de **motivo**, ayuda a corregir o a escalar a soporte. |
-
-- **Filtro y paginación:** en catálogos grandes, guardá los enlaces antes de cambiar de página, cerrar el asistente o modificar filtros.
-- **GUARDAR ENLACES:** persiste los emparejamientos de la operación; hasta guardar, los cambios pueden no quedar registrados.
-- **Sugerencias automáticas** (si están activas): son orientativas; revisá antes de guardar.
-
-**Productos variables (WooCommerce):** pueden requerir atención especial. Si la tienda usa variaciones, revisá si el sistema muestra la fila principal, cada variación o un identificador específico. Ante dudas, alineá el criterio con administración antes de guardar vínculos masivos.
+:::
 
 ---
 
-## Ficha de producto — pestaña Ecommerce
+## Vincular la tienda en ZinkERP
 
-- Nombre en pantalla: **Ecommerce** (traducción actual del producto).
-- Interruptor de **sincronización con la tienda** alineado al dato que devuelve el sistema al abrir el producto.
-- Enlace con WooCommerce: lista de artículos **sin vínculo** con otro producto del ERP y/o **ID en WooCommerce** manual; **Guardar enlace** / **Quitar enlace**.
-- **Ver en la tienda:** solo si el sistema envía la URL pública; si no está desplegado en tu versión, omití esta función en capacitaciones o indicá “según versión”.
+1. Entrá a **Preferencias → Integraciones**.
+2. Seleccioná **WooCommerce**.
+3. Tocá **Gestionar**.
+4. En el paso **Vincular tienda**, completá:
+   - **Dirección web de la tienda**: podés escribirla con o sin `https://`; el sistema normaliza la URL.
+   - **Clave del cliente**: corresponde a la clave REST de WooCommerce.
+   - **Secreto del cliente**: corresponde al secreto REST de WooCommerce.
+5. Tocá **VINCULAR TIENDA**.
+
+Si falta algún dato, el sistema pide completar la dirección web, la clave y el secreto. Si la vinculación falla, revisá URL, permisos de la clave y que WooCommerce acepte conexiones externas.
+
+Cuando el vínculo se registra correctamente, la pantalla muestra **Tienda WooCommerce vinculada** y habilita acciones como **ENLAZAR PRODUCTOS** o **DESVINCULAR TIENDA**.
 
 ---
 
-## Varias tiendas
+## Mapear productos
 
-La cantidad de tiendas WooCommerce que puede operar una organización depende de la configuración habilitada. Si necesitás trabajar con más de una URL, consultá a soporte o administración antes de desvincular una tienda existente.
+Después de vincular la tienda, entrá a **ENLAZAR PRODUCTOS**.
+
+La pantalla muestra una grilla para indicar qué producto de WooCommerce corresponde a qué producto del ERP.
+
+### Catálogo tienda
+
+La pestaña **Catálogo tienda** lista productos de WooCommerce con datos como:
+
+- producto de la tienda;
+- ID de tienda;
+- código o SKU;
+- código de barras, si existe;
+- precio;
+- stock;
+- tipo de producto, por ejemplo variable.
+
+En cada fila, usá el campo **Producto en el ERP** para buscar y seleccionar el producto correspondiente.
+
+La búsqueda de la tienda la hace el servidor. Si hay muchos resultados, usá el filtro y la paginación.
+
+### Sugerencias
+
+La pantalla puede ofrecer **sugerencias** al cargar cada página o mediante **Buscar en esta página**.
+
+Estas sugerencias comparan datos como código, código de barras y palabras del nombre del producto. Son una ayuda operativa, no una confirmación automática. Revisá siempre el producto sugerido antes de guardar.
+
+### Guardar enlaces
+
+Cuando tengas uno o más productos seleccionados:
+
+1. Revisá que cada fila apunte al producto correcto del ERP.
+2. Tocá **GUARDAR ENLACES**.
+3. Esperá el mensaje de confirmación.
+
+Hasta guardar, los cambios pueden no quedar registrados. En catálogos grandes, guardá antes de cambiar de página, cerrar el asistente o modificar filtros.
+
+---
+
+## Productos sin mapear
+
+La pestaña **Sin mapear** muestra artículos de WooCommerce que todavía no tienen vínculo con un producto del ERP.
+
+Usala para:
+
+- encontrar productos pendientes de asociar;
+- reducir diferencias entre tienda y catálogo;
+- revisar artículos nuevos publicados en WooCommerce;
+- evitar que queden productos fuera del circuito controlado por el ERP.
+
+El listado se busca en la tienda y muestra solo artículos sin vínculo en el ERP. Si dejás el buscador vacío, la tabla puede quedar limpia hasta que ingreses un filtro.
+
+---
+
+## Enlaces inválidos
+
+La pestaña **Enlace inválido** muestra casos donde el vínculo guardado tiene una inconsistencia.
+
+Puede aparecer un motivo o un ID de producto ERP relacionado. Usá esa información para:
+
+- corregir el producto del ERP asociado;
+- volver a guardar el enlace;
+- revisar si un producto fue eliminado, cambiado o dejó de estar disponible;
+- escalar a soporte con captura y horario si el motivo no es claro.
+
+No edites masivamente sin revisar estos casos. Un enlace incorrecto puede hacer que el ERP y la tienda apunten a productos distintos.
+
+---
+
+## Ficha de producto: pestaña Ecommerce
+
+Cuando WooCommerce está habilitado para la organización, la ficha de producto puede mostrar la pestaña **Ecommerce**.
+
+Desde esa pestaña podés:
+
+- ver si el producto tiene enlace con la tienda;
+- abrir **Ver en la tienda** si el sistema recibió una URL pública;
+- buscar un artículo de WooCommerce todavía sin vínculo;
+- cargar manualmente el **ID en WooCommerce** si el artículo no aparece en la lista;
+- activar o desactivar **Sincronizar cambios de este producto con la tienda**;
+- **Guardar vínculo**, **Actualizar vínculo** o **Quitar vínculo**.
+
+El producto debe estar guardado antes de poder vincularlo con la tienda.
+
+:::info Sincronizar cambios
+
+El interruptor de sincronización indica que los cambios guardados en ese producto deben aplicarse también en la tienda, según la configuración del sistema. No significa, por sí solo, sincronización bidireccional completa ni tiempo real.
+
+:::
+
+---
+
+## Productos variables
+
+WooCommerce permite productos variables y variaciones.
+
+La pantalla de ZinkERP advierte que más adelante puede hacer falta enlazar cada variación. En la versión visible actualmente, podés usar la fila principal o dejar sin enlace cuando no tengas certeza.
+
+Antes de guardar vínculos masivos con productos variables, confirmá el criterio operativo con la persona administradora de la tienda.
 
 ---
 
 ## Desvincular la tienda
 
-- Botón **DESVINCULAR TIENDA** (o estado **DESVINCULANDO…** mientras procesa).
+Si la tienda ya está vinculada, el asistente muestra **DESVINCULAR TIENDA**.
 
-Coordiná con **administración** antes de desvincular en producción. La acción puede afectar la operación diaria con la tienda y conviene revisar los enlaces de productos si después se vuelve a vincular la misma URL u otra distinta.
+Al confirmar, se elimina la vinculación de WooCommerce con la organización. El sistema indica que podés volver a vincular más adelante.
 
----
+Antes de desvincular en producción:
 
-## Seguridad
-
-- No compartir **clave ni secreto** por medios informales ni capturas sin censurar.
-- Si hubo filtración: revocar en WordPress, generar claves nuevas y vincular de nuevo en ZinK ERP.
-
----
-
-## Cuándo pedir ayuda a soporte o administración
-
-- Error al vincular con datos verificados.
-- Listado de la tienda **vacío** cuando en la web hay productos.
-- Enlaces guardados pero la tienda **no muestra** precios o stock esperados.
-- Comportamiento de **productos variables** distinto al esperado.
-- Cambios que no quedaron registrados después de cerrar, filtrar o cambiar de página.
-- Mensajes largos o poco claros: captura y horario aproximado.
+- avisá a administración o soporte interno;
+- revisá si hay productos enlazados;
+- documentá por qué se desvincula;
+- evitá hacerlo durante horarios de venta activa.
 
 ---
 
-## Si algo sale mal (referencia rápida)
+## Seguridad de credenciales
 
-- **Error 401 o “no autorizado”:** permisos de la clave (¿solo lectura cuando hace falta escritura?), URL exacta con `https`, clave no revocada.
-- **La tienda no responde:** certificado SSL, que la URL sea la **pública** (la que abre un cliente), no una dirección interna.
+Tratá la **clave del cliente** y el **secreto del cliente** como contraseñas.
 
-Más detalle en [Problemas frecuentes](/integraciones/problemas-frecuentes).
+Buenas prácticas:
+
+- No las compartas por correo, chat ni tickets sin protección.
+- No publiques capturas donde se vean completas.
+- Usá una descripción clara en WordPress para identificar la clave.
+- Revocá claves que ya no se usan.
+- Si alguien vio el secreto, borrá la clave en WooCommerce y generá un par nuevo.
+- Usá permisos mínimos cuando el circuito solo necesite lectura.
 
 ---
 
-## Glosario mínimo
+## Qué no debe asumir el usuario
 
-| Término | Significado para el operador |
-|--------|------------------------------|
-| **WooCommerce** | Módulo de tienda dentro de WordPress. |
-| **Clave del cliente / Secreto** | Credenciales generadas en el panel de WooCommerce para que ZinK ERP se conecte a la tienda sin usar la contraseña del administrador. |
-| **Mapeo / enlace** | Indicar que un producto del ERP y un artículo de la tienda son el mismo. |
-| **Sincronizar con la tienda** | El producto participa del canal tienda online según las reglas del sistema (no siempre implica que ya esté publicado a la vista del cliente). |
+Esta integración no implica automáticamente:
+
+- sincronización en tiempo real;
+- sincronización bidireccional completa;
+- importación automática de órdenes;
+- facturación automática de ventas online;
+- publicación automática de todo el catálogo;
+- creación de productos en WooCommerce sin configuración previa;
+- mapeo perfecto sin revisión humana;
+- soporte completo para variaciones en todos los escenarios;
+- una tienda por organización o varias tiendas sin validarlo con soporte;
+- que el precio o stock visible en WooCommerce cambie si no se guardó el enlace o si la configuración no lo habilita.
+
+Si necesitás confirmar el alcance exacto de tu instalación, revisá la configuración activa con soporte o administración.
+
+---
+
+## Si algo sale mal
+
+| Síntoma | Qué revisar |
+|---------|-------------|
+| No se puede vincular la tienda | URL pública, `https`, clave, secreto y permisos de la clave REST. |
+| Error 401 o 403 | Permisos insuficientes, credenciales incorrectas o clave revocada en WooCommerce. |
+| No carga el catálogo | Conexión con WooCommerce, API REST activa, certificado SSL y disponibilidad de la tienda. |
+| No aparecen productos sin mapear | Probá buscar por nombre, SKU o ID. Verificá que haya productos sin vínculo. |
+| Hay enlaces inválidos | Revisá el motivo, corregí el producto ERP asociado y guardá nuevamente. |
+| El producto no aparece en la pestaña Ecommerce | Confirmá que WooCommerce esté habilitado para la organización y que el producto ya esté guardado. |
+
+Al pedir soporte, enviá organización, usuario, horario aproximado, paso donde falló, mensaje visible y captura sin claves ni secretos.
 
 ---
 
 ## Ver también
 
-- [Integraciones — inicio](/integraciones)
-- [Preferencias](/configuracion/preferencias)
+- [Integraciones](/integraciones)
+- [Cómo funcionan las integraciones](/integraciones/como-funciona)
 - [Seguridad y cumplimiento](/integraciones/seguridad)
 - [Problemas frecuentes](/integraciones/problemas-frecuentes)
-
----
-
-## Pasos en WordPress (resumen)
-
-1. Iniciá sesión en el **panel de WordPress** de tu tienda.
-2. Andá a **WooCommerce → Ajustes → Avanzado**.
-3. Buscá la sección de **claves** (el nombre exacto puede variar según la versión de WooCommerce).
-4. **Creá una nueva clave** y elegí los permisos (solo lectura vs lectura y escritura) según lo acordado con tu equipo.
-5. Guardá y copiá el **par clave + secreto** en un lugar seguro. El secreto muchas veces **solo se muestra una vez**.
-
-Si necesitás compartir una captura para soporte, ocultá la clave, el secreto y cualquier dato privado del panel de WordPress.

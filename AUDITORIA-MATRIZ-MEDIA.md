@@ -92,7 +92,7 @@
 | Alta |`docs/integraciones/mercado-pago.md` |Mercado Pago |495 |0 |Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/mercado-pago-01.png` |
 | Media |`docs/integraciones/problemas-frecuentes.md` |Problemas frecuentes (integraciones) |613 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/problemas-frecuentes-01.png` |
 | Media |`docs/integraciones/seguridad.md` |Seguridad y cumplimiento (integraciones) |266 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/seguridad-01.png` |
-| Alta |`docs/integraciones/woocommerce.md` |Integración WooCommerce (guía para operadores) |1435 |0 |Resumen, Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/woocommerce-01.png` |
+| Alta |`docs/integraciones/woocommerce.md` |WooCommerce |1558 |0 |Antes de empezar, Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/woocommerce-01.png` |
 | Media |`docs/intro.md` |Introducción |333 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/raiz/intro-01.png` |
 | Media |`docs/inventario/inventarios-ubicacion.md` |Toma de inventario |463 |0 |- |`static/img/ayuda/inventario/inventarios-ubicacion-01.png` |
 | Alta |`docs/inventario/inventarios.md` |Registro de inventario |567 |0 |- |`static/img/ayuda/inventario/inventarios-01.png` |
