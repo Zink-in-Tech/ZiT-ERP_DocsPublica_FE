@@ -16,7 +16,7 @@ El objetivo es evitar errores comunes y lograr control desde el inicio.
 
 - Tener usuario y acceso al sistema.
 - Definir quién será administrador.
-- **TODO: confirmar con producto** — configuración inicial recomendada según tipo de negocio.
+- Relevar el tipo de operación antes de configurar: venta rápida/POS, venta comercial por etapas, compras, stock, caja, cuenta corriente e integraciones.
 
 ---
 
@@ -76,6 +76,7 @@ Definí:
 - vencimientos
 - formatos de comprobantes
 - comportamiento de ventas y compras
+- manejo de stock, caja y pagos según el circuito operativo
 
 👉 Estas configuraciones afectan toda la operación.
 
@@ -98,6 +99,19 @@ Si trabajás con múltiples sucursales:
 - configurá cada organización
 - asigná responsables
 - vinculá contactos
+
+---
+
+### 3.5 Configuración mínima por tipo de negocio
+
+| Tipo de operación | Configuración clave |
+|-------------------|---------------------|
+| Mostrador o retail | POS, medios de pago, lista de precios default, permisos de cobro y control diario de caja. |
+| Venta comercial por etapas | Cotizaciones, presupuestos, pedidos, condiciones del cliente, cuenta corriente y permisos por etapa. |
+| Negocio con stock | Productos, ubicaciones, inventarios, stock mínimo y reglas de salida de mercadería. |
+| Operación con facturación o cobros externos | Integraciones, datos fiscales, puntos de venta y permisos de administración. |
+
+No hace falta configurar todo el ERP el primer día. Conviene empezar por el circuito real del negocio y sumar módulos cuando el equipo ya domina la operación básica.
 
 ---
 

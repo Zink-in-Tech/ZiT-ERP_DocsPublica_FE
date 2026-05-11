@@ -18,7 +18,7 @@ Pueden impactar en stock y siempre afectan la cuenta corriente según el caso.
 
 - Tener una venta previamente registrada.
 - Tener definido el motivo del ajuste (devolución, error, anulación).
-- **TODO: confirmar con producto** — comportamiento sobre stock según configuración.
+- Revisar si el ajuste también requiere movimiento físico de mercadería. El impacto en stock depende del circuito de inventario configurado y de cómo se registre la devolución.
 
 ---
 
@@ -67,7 +67,7 @@ Venta → Nota de crédito
 **La nota de crédito:**
 
 - ✔️ Ajusta la cuenta corriente del cliente
-- ✔️ Puede devolver stock (según configuración)
+- ✔️ Puede acompañar una devolución o corrección de stock si el circuito lo registra
 - ✔️ Permite corregir operaciones
 - ❌ No genera una nueva venta
 - ❌ No reemplaza la operación original, la ajusta
@@ -79,6 +79,8 @@ Venta → Nota de crédito
 ### Devolución de mercadería
 
 El cliente devuelve productos y se ajusta la cuenta corriente.
+
+Después de confirmar, verificá si el stock quedó actualizado. Si tu circuito no lo actualiza desde la nota, registrá el movimiento de inventario correspondiente para mantener trazabilidad.
 
 ### Error en facturación
 
@@ -112,6 +114,7 @@ Es ideal en situaciones como:
 
 - **El ajuste no impacta correctamente**
   - Verificá la venta asociada.
+  - Si esperabas impacto en stock, revisá el movimiento de inventario relacionado.
 
 - **Diferencias en cuenta corriente**
   - Revisá los importes aplicados.

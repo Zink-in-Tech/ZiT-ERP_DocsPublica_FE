@@ -27,7 +27,7 @@ Son el mecanismo que transforma deuda en dinero, impactando tanto la cuenta corr
 - Verificar saldo en cuenta corriente.
 - Para registrar cobros asociados a ventas, el usuario debe tener permiso para **realizar cobro en ventas**.
 - Mercado Pago debe estar aprobado antes de registrar.
-- **TODO: confirmar con producto** — manejo de anticipos.
+- Aplicar el monto sobre uno o varios comprobantes. Si queda una diferencia sin aplicar, el sistema puede generar o requerir un comprobante de ajuste, como una nota de crédito, según el flujo.
 
 ---
 
@@ -45,6 +45,7 @@ Cuenta corriente → Pago → Caja
 - Aplicar pagos parciales o totales
 - Registrar múltiples medios de pago
 - Enviar comprobantes al contacto
+- Aplicar el cobro o pago completo sobre comprobantes relacionados
 
 ---
 
@@ -102,6 +103,10 @@ La venta queda asociada al comprobante y el pago se aplica sobre ese importe.
 
 Si se trata de Consumidor Final o pago inmediato, el sistema puede abrir el cobro automáticamente al confirmar la venta.
 
+### Diferencia o saldo a favor
+
+Si el pago supera o no coincide con los comprobantes seleccionados, revisá la aplicación antes de guardar. El sistema no debería dejar montos sin aplicar sin trazabilidad; puede pedir corregir el importe o generar un comprobante de ajuste.
+
 ---
 
 ## Recomendaciones de uso
@@ -127,6 +132,7 @@ Siempre aplicá pagos sobre comprobantes.
 
 - **El total no coincide**
   - Revisá que la suma de los medios de pago coincida con el importe del comprobante.
+  - Revisá también que el monto aplicado a comprobantes coincida con el total del pago.
 
 ---
 

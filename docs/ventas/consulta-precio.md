@@ -19,7 +19,7 @@ No genera documentos ni impacta stock o cuenta corriente.
 - Tener productos configurados.
 - Tener listas de precios activas.
 - La lista de precios visible depende de la configuración en preferencias.
-- **TODO: confirmar con producto** — si permite seleccionar lista manualmente o es fija según configuración.
+- Las listas visibles y la visualización de stock dependen de **Preferencias**. Según la configuración, podés ver una lista definida para consulta o varias listas disponibles.
 
 ---
 
@@ -51,7 +51,7 @@ Consulta de precios → Cotización / POS / Venta
    - por código
    - por código de barras
 2. Visualizar los precios disponibles:
-   - según la lista de precios configurada en preferencias
+   - según las listas de precios configuradas en preferencias
 3. Utilizar la información para:
    - responder al cliente
    - definir una cotización
@@ -68,6 +68,10 @@ El vendedor consulta precios antes de generar una venta o cotización.
 ### Validación interna
 
 Se utiliza para verificar listas de precios o diferencias entre ellas.
+
+### Consulta por lista configurada
+
+Si la pantalla muestra una sola lista, usá esa referencia como precio vigente para el punto de consulta. Si muestra varias, verificá que estés leyendo la lista correcta antes de responder al cliente.
 
 ### Soporte a ventas
 
@@ -98,6 +102,7 @@ Un cliente en el showroom consulta o escanea un producto y puede ver el precio s
 
 - **No aparecen precios**
   - Verificá que las listas de precios estén configuradas correctamente.
+  - Revisá en Preferencias qué listas están habilitadas para consulta.
 
 - **Producto no encontrado**
   - Revisá nombre, código o configuración del producto.

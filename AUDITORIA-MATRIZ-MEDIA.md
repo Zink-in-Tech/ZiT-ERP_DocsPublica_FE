@@ -8,8 +8,8 @@
 - Articulos con imagenes: 2.
 - Articulos candidatos a capturas: 60.
 - Articulos candidatos a video corto: 39.
-- Articulos con TODOs: 6.
-- TODOs totales: 6.
+- Articulos con TODOs: 0.
+- TODOs totales: 0.
 - Articulos con secciones heredadas de semilla: 30.
 
 ## Como usar esta matriz
@@ -24,12 +24,6 @@
 
 | Articulo |Modulo |TODOs |Secciones heredadas |Captura |Video |Ruta sugerida |
 | --- |--- |---: |--- |--- |--- |--- |
-| `docs/ventas/pos.md` |ventas |1 |Flujo, Campos |No |Si |`static/img/ayuda/ventas/pos-01.png` |
-| `docs/finanzas/pagos.md` |finanzas |1 |- |Si |Si |`static/img/ayuda/finanzas/pagos-01.png` |
-| `docs/primeros-pasos.md` |raiz |1 |- |Si |Si |`static/img/ayuda/raiz/primeros-pasos-01.png` |
-| `docs/ventas/consulta-precio.md` |ventas |1 |- |Si |Si |`static/img/ayuda/ventas/consulta-precio-01.png` |
-| `docs/ventas/notas-credito.md` |ventas |1 |- |Si |Si |`static/img/ayuda/ventas/notas-credito-01.png` |
-| `docs/ventas/notas-debito.md` |ventas |1 |- |Si |Si |`static/img/ayuda/ventas/notas-debito-01.png` |
 | `docs/configuracion/datos-org.md` |configuracion |0 |CuandoUsar, Flujo, Campos, Reglas, BuenasPracticas |Si |No |`static/img/ayuda/configuracion/datos-org-01.png` |
 | `docs/configuracion/preferencias.md` |configuracion |0 |CuandoUsar, Flujo, Campos, Reglas, BuenasPracticas |Si |Si |`static/img/ayuda/configuracion/preferencias-01.png` |
 | `docs/informes/informe-8020.md` |informes |0 |CuandoUsar, Flujo, Campos, Reglas, BuenasPracticas |Si |No |`static/img/ayuda/informes/informe-8020-01.png` |
@@ -48,6 +42,7 @@
 | `docs/informes/informes.md` |informes |0 |CuandoUsar, Flujo, Campos, Reglas, BuenasPracticas |Si |Si |`static/img/ayuda/informes/informes-01.png` |
 | `docs/admin/perfil-usuario.md` |admin |0 |CuandoUsar, Flujo, Campos |Si |No |`static/img/ayuda/admin/perfil-usuario-01.png` |
 | `docs/admin/tablero.md` |admin |0 |CuandoUsar, Flujo |Si |No |`static/img/ayuda/admin/tablero-01.png` |
+| `docs/ventas/pos.md` |ventas |0 |Flujo, Campos |No |Si |`static/img/ayuda/ventas/pos-01.png` |
 | `docs/admin/dashboard.md` |admin |0 |CuandoUsar |No |No |`static/img/ayuda/admin/dashboard-01.png` |
 | `docs/administracion/conceptos.md` |administracion |0 |Campos |Si |No |`static/img/ayuda/administracion/conceptos-01.png` |
 | `docs/administracion/contactos-importacion-masiva.md` |administracion |0 |Campos |Si |No |`static/img/ayuda/administracion/contactos-importacion-masiva-01.png` |
@@ -62,11 +57,13 @@
 | `docs/administracion/productos-actualizacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-actualizacion-masiva-01.png` |
 | `docs/administracion/productos-importacion-masiva.md` |administracion |0 |- |Si |No |`static/img/ayuda/administracion/productos-importacion-masiva-01.png` |
 | `docs/finanzas/caja-diaria.md` |finanzas |0 |- |Si |Si |`static/img/ayuda/finanzas/caja-diaria-01.png` |
+| `docs/finanzas/pagos.md` |finanzas |0 |- |Si |Si |`static/img/ayuda/finanzas/pagos-01.png` |
 | `docs/integraciones/facturante.md` |integraciones |0 |- |Si |Si |`static/img/ayuda/integraciones/facturante-01.png` |
 | `docs/integraciones/intro.md` |integraciones |0 |- |Si |Si |`static/img/ayuda/integraciones/intro-01.png` |
 | `docs/integraciones/mercado-pago.md` |integraciones |0 |- |Si |Si |`static/img/ayuda/integraciones/mercado-pago-01.png` |
 | `docs/inventario/inventarios.md` |inventario |0 |- |Si |Si |`static/img/ayuda/inventario/inventarios-01.png` |
 | `docs/primeros-4-dias.md` |raiz |0 |- |Si |Si |`static/img/ayuda/raiz/primeros-4-dias-01.png` |
+| `docs/primeros-pasos.md` |raiz |0 |- |Si |Si |`static/img/ayuda/raiz/primeros-pasos-01.png` |
 | `docs/ventas/ventas.md` |ventas |0 |- |Si |Si |`static/img/ayuda/ventas/ventas-01.png` |
 
 ## Matriz completa
@@ -99,7 +96,7 @@
 | Media |`docs/finanzas/egresos.md` |Egresos |385 |0 |- |`static/img/ayuda/finanzas/egresos-01.png` |
 | Alta |`docs/finanzas/finanzas.md` |Finanzas |621 |0 |- |`static/img/ayuda/finanzas/finanzas-01.png` |
 | Media |`docs/finanzas/ingresos.md` |Ingresos |396 |0 |- |`static/img/ayuda/finanzas/ingresos-01.png` |
-| Alta |`docs/finanzas/pagos.md` |Pagos |500 |0 |- |`static/img/ayuda/finanzas/pagos-01.png` |
+| Alta |`docs/finanzas/pagos.md` |Pagos |593 |0 |- |`static/img/ayuda/finanzas/pagos-01.png` |
 | Alta |`docs/informes/informe-8020.md` |Informe 80/20 (ganancia bruta) |256 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-8020-01.png` |
 | Alta |`docs/informes/informe-articulos-vendidos.md` |Informe Artículos vendidos entre fechas |222 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-articulos-vendidos-01.png` |
 | Alta |`docs/informes/informe-cuenta-corriente.md` |Informe Cuenta corriente |221 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-cuenta-corriente-01.png` |
@@ -127,14 +124,14 @@
 | Alta |`docs/inventario/inventarios.md` |Registro de inventario |567 |0 |- |`static/img/ayuda/inventario/inventarios-01.png` |
 | Media |`docs/inventario/productos-consulta-inter-org.md` |Consulta de stock |347 |0 |- |`static/img/ayuda/inventario/productos-consulta-inter-org-01.png` |
 | Alta |`docs/primeros-4-dias.md` |Primeros resultados con ZinK ERP |462 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/raiz/primeros-4-dias-01.png` |
-| Alta |`docs/primeros-pasos.md` |Aspectos Generales |557 |0 |Procedimiento |`static/img/ayuda/raiz/primeros-pasos-01.png` |
-| Alta |`docs/ventas/consulta-precio.md` |Consulta de precios |477 |0 |- |`static/img/ayuda/ventas/consulta-precio-01.png` |
+| Alta |`docs/primeros-pasos.md` |Aspectos Generales |701 |0 |Procedimiento |`static/img/ayuda/raiz/primeros-pasos-01.png` |
+| Media |`docs/ventas/consulta-precio.md` |Consulta de precios |535 |0 |- |`static/img/ayuda/ventas/consulta-precio-01.png` |
 | Media |`docs/ventas/cotizaciones.md` |Cotizaciones |465 |0 |- |`static/img/ayuda/ventas/cotizaciones-01.png` |
 | Alta |`docs/ventas/flujo-ventas.md` |Flujo de ventas |561 |0 |Procedimiento |`static/img/ayuda/ventas/flujo-ventas-01.png` |
-| Alta |`docs/ventas/notas-credito.md` |Notas de crédito |451 |0 |- |`static/img/ayuda/ventas/notas-credito-01.png` |
-| Alta |`docs/ventas/notas-debito.md` |Notas de débito |439 |0 |- |`static/img/ayuda/ventas/notas-debito-01.png` |
+| Media |`docs/ventas/notas-credito.md` |Notas de crédito |515 |0 |- |`static/img/ayuda/ventas/notas-credito-01.png` |
+| Media |`docs/ventas/notas-debito.md` |Notas de débito |505 |0 |- |`static/img/ayuda/ventas/notas-debito-01.png` |
 | Media |`docs/ventas/pedidos.md` |Pedidos |380 |0 |- |`static/img/ayuda/ventas/pedidos-01.png` |
-| Alta |`docs/ventas/pos.md` |POS (Punto de venta) |801 |6 |- |- |
+| Alta |`docs/ventas/pos.md` |POS (Punto de venta) |902 |6 |- |- |
 | Media |`docs/ventas/presupuestos.md` |Presupuestos |372 |0 |- |`static/img/ayuda/ventas/presupuestos-01.png` |
 | Alta |`docs/ventas/ventas.md` |Ventas |865 |0 |- |`static/img/ayuda/ventas/ventas-01.png` |
 

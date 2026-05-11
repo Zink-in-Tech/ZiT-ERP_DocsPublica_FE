@@ -18,7 +18,7 @@ Impactan la cuenta corriente del cliente.
 
 - Tener una venta previamente registrada o un cliente asociado.
 - Definir el motivo del ajuste (recargo, diferencia, actualización de precio).
-- **TODO: confirmar con producto** — si puede asociarse obligatoriamente a una venta o puede ser independiente.
+- Seleccionar el cliente y, cuando corresponda, la venta o comprobante relacionado. Asociarla a una venta mejora la trazabilidad del ajuste.
 
 ---
 
@@ -50,6 +50,8 @@ Venta → Nota de débito
 3. Definir los importes o conceptos a ajustar.
 4. Verificar los valores.
 5. Confirmar la nota de débito.
+
+Si el sistema exige comprobante relacionado, elegí la venta desde el listado de ventas asociadas al cliente. Si el flujo permite un ajuste sin venta específica, registrá una observación clara para explicar el motivo.
 
 ---
 
@@ -87,6 +89,8 @@ Se aplica un costo extra posterior a la venta.
 
 Se corrige un importe por fuera del flujo habitual.
 
+Usalo con cuidado y documentá el motivo, especialmente si no queda asociado a una venta concreta.
+
 ---
 
 ## Recomendaciones de uso
@@ -110,6 +114,7 @@ Es ideal en situaciones como:
 
 - **El ajuste no se refleja correctamente**
   - Verificá los importes cargados.
+  - Revisá que la venta o comprobante relacionado corresponda al cliente seleccionado.
 
 - **Diferencias en cuenta corriente**
   - Revisá la operación asociada.

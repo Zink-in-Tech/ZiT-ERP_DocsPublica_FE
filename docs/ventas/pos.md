@@ -32,7 +32,7 @@ También podés encontrarlo o buscarlo como **punto de venta**, **venta rápida*
 - Confirmá los medios de pago disponibles.
 - El usuario debe tener permiso para **realizar cobro en ventas**.
 - Algunas configuraciones dependen de preferencias del sistema.
-- **TODO: confirmar con producto** — comportamiento de listas de precios según cliente.
+- Por defecto se usa **Consumidor Final** con la lista configurada para la organización. Si elegís un cliente, el POS puede aplicar la lista asociada a ese contacto.
 
 ---
 
@@ -127,6 +127,10 @@ Por defecto Consumidor Final.
 
 Si seleccionás un contacto, pueden cambiar condiciones comerciales, listas de precios o comportamiento de cuenta corriente según la configuración de la organización.
 
+### Lista de precios
+
+El POS calcula precios con la misma lógica de ventas: usa la lista por defecto de la organización para **Consumidor Final** y puede cambiar a la lista del cliente cuando seleccionás un contacto. Si el precio no coincide con lo esperado, revisá primero el cliente elegido y la configuración de listas del producto.
+
 ### Finalizar
 
 Acción para cerrar la venta y avanzar al cobro.
@@ -181,7 +185,8 @@ Es ideal en negocios donde:
   - Si **Finalizar (F2)** está deshabilitado, verificá que haya al menos un producto cargado.
 
 - **Precios incorrectos**
-  - Revisá lista de precios o cliente seleccionado.
+  - Revisá cliente seleccionado, lista de precios del contacto y lista por defecto de la organización.
+  - Si usaste búsqueda por texto y había varios productos similares, probá con código de barras, código exacto o **[F4] Listado**.
 
 - **Problemas con medios de pago**
   - Verificá configuración del sistema.
