@@ -37,7 +37,7 @@ La ayuda puede incorporar capturas anotadas de la pestaña **Integraciones** a m
 |----------|----------------|
 | [Cómo funcionan las integraciones](/integraciones/como-funciona) | Conceptos en palabras simples (OAuth, claves, mapeos). |
 | [Facturante](/integraciones/facturante) | Facturación electrónica y contexto Argentina / AFIP. |
-| [Mercado Pago](/integraciones/mercado-pago) | Vincular cuenta y sucursal sin ingresar la contraseña en el ERP. |
+| [Mercado Pago](/ayuda/integraciones/mercado-pago) | Vincular cuenta y sucursal sin ingresar la contraseña en el ERP. |
 | [WooCommerce](/ayuda/integraciones/woocommerce) | Tienda online: vincular tienda, enlazar productos, pestaña Ecommerce y buenas prácticas. |
 | [Mercado Libre](/integraciones/mercado-libre) | Servicios adicionales que pueden aparecer según habilitación. |
 | [Seguridad y cumplimiento](/integraciones/seguridad) | Cómo cuidar claves y cuentas. |

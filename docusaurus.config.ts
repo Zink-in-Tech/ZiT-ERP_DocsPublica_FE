@@ -37,6 +37,10 @@ const config: Config = {
             from: '/integraciones/woocommerce',
             to: '/ayuda/integraciones/woocommerce',
           },
+          {
+            from: '/integraciones/mercado-pago',
+            to: '/ayuda/integraciones/mercado-pago',
+          },
         ],
       },
     ],

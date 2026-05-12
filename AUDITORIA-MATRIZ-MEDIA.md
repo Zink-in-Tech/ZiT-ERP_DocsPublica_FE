@@ -89,7 +89,7 @@
 | Alta |`docs/integraciones/facturante.md` |Facturante (facturación electrónica) |528 |0 |Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/facturante-01.png` |
 | Alta |`docs/integraciones/intro.md` |Integraciones con servicios externos |420 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/intro-01.png` |
 | Media |`docs/integraciones/mercado-libre.md` |Mercado Libre y otros servicios |252 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/mercado-libre-01.png` |
-| Alta |`docs/integraciones/mercado-pago.md` |Mercado Pago |495 |0 |Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/mercado-pago-01.png` |
+| Alta |`docs/integraciones/mercado-pago.md` |Mercado Pago |1495 |0 |Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/mercado-pago-01.png` |
 | Media |`docs/integraciones/problemas-frecuentes.md` |Problemas frecuentes (integraciones) |613 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/problemas-frecuentes-01.png` |
 | Media |`docs/integraciones/seguridad.md` |Seguridad y cumplimiento (integraciones) |266 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/seguridad-01.png` |
 | Alta |`docs/integraciones/woocommerce.md` |WooCommerce |1558 |0 |Antes de empezar, Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/woocommerce-01.png` |
