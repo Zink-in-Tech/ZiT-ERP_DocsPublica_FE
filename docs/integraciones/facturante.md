@@ -1,90 +1,236 @@
 ---
-title: Facturante (facturación electrónica)
-description: Vinculá Facturante con ZinK ERP para emitir comprobantes electrónicos. Requisitos, pasos del asistente y plazos AFIP en Argentina.
+title: Facturante
+description: Configurá facturación electrónica en ZinkERP con Facturante, datos fiscales, plazos ARCA, términos e instructivo del asistente.
 sidebar_position: 3
+slug: /ayuda/integraciones/facturante
 ---
 
 ## Resumen
 
-**Facturante** es el proveedor que permite **emitir comprobantes electrónicos** desde ZinK ERP sin tener que usar a mano otro programa aparte para cada factura.
+**Facturante** es el proveedor que permite habilitar la emisión de comprobantes electrónicos desde ZinkERP.
 
-En **Argentina**, los datos suelen estar alineados con lo que exige **AFIP**. Después de hacer los trámites en el ente, la habilitación puede demorar **hasta 24 horas**: es normal, no es un fallo del ERP.
+La configuración se realiza desde **Preferencias → Integraciones** mediante un asistente que solicita datos fiscales y de la empresa. En Argentina, el alta puede depender de trámites ante **ARCA** y de tiempos externos al ERP.
+
+Esta ayuda explica:
+
+- qué permite la integración;
+- qué revisar antes de empezar;
+- qué datos fiscales y de empresa vas a necesitar;
+- qué significa el plazo de habilitación de ARCA;
+- cómo completar el alta desde el asistente;
+- dónde revisar términos e instructivo PDF;
+- qué ocurre al confirmar;
+- qué significa que la configuración fiscal ya esté activa;
+- límites de alcance y preguntas frecuentes.
+
+:::caution Alcance
+
+Esta documentación no promete facturación automática para todos los flujos, tipos de comprobante específicos, cancelaciones, notas de crédito ni cambios futuros de proveedor. Describe el alta pública visible hoy desde el asistente de integración.
+
+:::
 
 ---
 
-## Qué resuelve
+## Qué permite
 
-- Centralizás la emisión de comprobantes desde el mismo sistema donde operás el negocio.
-- Reducís errores de carga manual entre sistemas distintos.
-- Trabajás con un proveedor especializado en facturación electrónica.
+La integración permite preparar la facturación electrónica de la organización para operar desde ZinkERP con información fiscal ordenada.
+
+El comportamiento validado es:
+
+- abrir el alta desde **Preferencias → Integraciones**;
+- revisar un aviso de plazos;
+- acceder a términos del proveedor e instructivo PDF;
+- completar datos fiscales, datos de empresa y domicilios;
+- enviar el alta al backend;
+- ver una finalización correcta o un mensaje de error según la respuesta.
+
+Facturante es el proveedor usado actualmente para este flujo de facturación electrónica.
 
 ---
 
 ## Antes de empezar
 
-- Contar con los **datos fiscales** de la organización (CUIT, razón social, condición frente al IVA, punto de venta, domicilios, etc.).
-- Tener avanzados los **trámites en AFIP** que correspondan a tu caso (el asistente suele recordarte plazos y documentación).
-- Permisos de **administrador de organización** (o el rol que el producto exija) para abrir **Preferencias → Integraciones** y usar **Gestionar** en Facturante.
+Antes de abrir el asistente, prepará:
+
+- acceso a ZinkERP con permisos para usar **Preferencias → Integraciones** y **Gestionar**;
+- datos fiscales correctos de la organización;
+- información de contacto actualizada;
+- domicilio real y domicilio fiscal;
+- datos del punto de venta que corresponda;
+- trámite o documentación necesaria ante ARCA, según tu caso;
+- tiempo operativo suficiente si necesitás emitir comprobantes el mismo día.
+
+Los datos deben coincidir con la información fiscal real de la organización. Un error en CUIT, condición frente al IVA, punto de venta o domicilio puede frenar el alta.
 
 ---
 
-## Procedimiento en el ERP (resumen del asistente)
+## Datos que vas a necesitar
 
-El orden puede ajustarse según la versión del producto; en general incluye:
+El asistente puede precargar algunos datos desde la organización, pero conviene revisarlos antes de confirmar.
 
-1. **Aviso de plazos** (incluye la demora posible de AFIP).
-2. **Instructivo y/o términos y condiciones** (por ejemplo un PDF). Leelo con calma antes de confirmar.
-3. **Formulario** con datos fiscales, domicilios, CUIT, razón social, punto de venta, condición IVA y demás campos que pida el flujo.
-4. **Confirmación** y mensaje de **éxito** o **error** con el detalle que muestre el sistema.
+Datos visibles en el flujo:
 
-Si algo falla, anotá el **texto del mensaje** y, si aparece, un **código o referencia** para soporte.
+| Grupo | Datos |
+|-------|-------|
+| Acceso/contacto | Email, contraseña de acceso al servicio, teléfono. |
+| Identificación | Tipo de documento, número de documento, CUIT. |
+| Empresa | Razón social, nombre de fantasía, fecha de comienzo de actividad. |
+| Facturación | Punto de venta, condición frente al IVA. |
+| Domicilio real | Calle, número, código postal, provincia y ciudad. |
+| Domicilio fiscal | Calle, número, código postal, provincia y ciudad. |
 
-Cuando la configuración fiscal ya quedó activa, el botón **Gestionar** puede no estar disponible para Facturante. Para cambios posteriores, trabajá con soporte o con la persona administradora de la organización.
+El formulario incluye una acción para copiar datos del domicilio real al domicilio fiscal cuando corresponda.
 
----
+:::warning Revisá antes de confirmar
 
-## Pasos fuera del ERP
-
-- Completar lo que AFIP exija para tu contribuyente antes o durante el proceso.
-- Revisar la **documentación y TyC del proveedor** (enlace abajo).
-
----
-
-## Plazos y limitaciones
-
-- Tras el trámite en AFIP, la habilitación puede tardar **hasta 24 horas**.
-- Hasta que el ente y el proveedor reflejen el alta, podés ver demoras aunque el ERP esté bien configurado.
-
----
-
-## Si algo sale mal
-
-- Verificá que los **datos fiscales** coincidan exactamente con AFIP (CUIT, razón social, punto de venta).
-- Revisá que no quede un trámite **pendiente** en el sitio de AFIP.
-- Si el mensaje habla de **servicio no disponible**, puede ser una caída temporal del proveedor o del ente: reintentá más tarde.
-
----
-
-## Enlaces oficiales del proveedor
-
-- [Términos y condiciones Facturante](https://www.facturante.com/Content/facturante/TerminosYCondiciones_Facturante2023.pdf) (PDF) — **verificar URL vigente** antes de compartir en soporte o en material impreso.
-
-:::caution Salís del sitio de documentación
-
-Los enlaces anteriores llevan a sitios ajenos a ZinK ERP. Revisá siempre la URL en la barra del navegador antes de cargar datos sensibles.
+No completes datos de memoria si tenés dudas. Validá la información fiscal con la documentación de la organización o con la persona responsable administrativa/contable.
 
 :::
 
-:::info Instructivo AFIP
+---
 
-El asistente puede mostrar o descargar un **instructivo AFIP** desde el ERP. Si no aparece en tu pantalla, pedilo a soporte o a la persona administradora antes de avanzar con trámites sensibles.
+## Tiempos de habilitación ARCA
+
+El asistente advierte que la integración puede demorar **hasta 24 horas** luego de haber realizado el trámite correspondiente ante **ARCA**.
+
+Ese plazo no necesariamente indica un error de ZinkERP. Puede depender de la disponibilidad, validación o procesamiento externo del ente regulador y del proveedor.
+
+Si necesitás facturar en una fecha específica, planificá el alta con margen.
+
+---
+
+## Términos e instructivo PDF
+
+Antes de completar el alta, el asistente muestra un paso con documentación.
+
+Ahí podés:
+
+- abrir los **términos y condiciones de Facturante**;
+- descargar o visualizar un **instructivo PDF** para trámites vinculados a ARCA;
+- revisar la información antes de avanzar al formulario.
+
+Enlace del proveedor:
+
+- [Términos y condiciones de Facturante](https://www.facturante.com/Content/facturante/TerminosYCondiciones_Facturante2023.pdf)
+
+:::caution Enlace externo
+
+El enlace anterior abre documentación de un tercero. Revisá la URL del navegador antes de cargar o compartir información sensible.
 
 :::
+
+---
+
+## Cómo completar el alta
+
+1. Entrá a **Preferencias → Integraciones**.
+2. Seleccioná **Facturante**.
+3. Tocá **Gestionar**.
+4. Leé el aviso de plazos.
+5. Revisá los términos y el instructivo PDF.
+6. Avanzá al formulario fiscal.
+7. Completá o corregí los datos requeridos.
+8. Revisá especialmente CUIT, condición frente al IVA, punto de venta, razón social y domicilios.
+9. Tocá **CONFIRMAR**.
+
+Mientras el formulario se envía, evitá cerrar la ventana o volver atrás.
+
+---
+
+## Qué pasa al confirmar
+
+Al confirmar, ZinkERP envía los datos del alta al backend.
+
+Después de la respuesta:
+
+- si el alta finaliza correctamente, el asistente muestra un mensaje de integración finalizada;
+- si ocurre un error, el asistente muestra un estado de error y el sistema informa el problema disponible;
+- si necesitás soporte, conviene enviar el texto del error, la organización, el usuario, la fecha/hora aproximada y una captura sin datos sensibles.
+
+No edites otros datos fiscales mientras haya una duda sobre el resultado del alta.
+
+---
+
+## Si la configuración fiscal ya está activa
+
+Cuando la configuración fiscal de la cuenta ya está activa, el botón **Gestionar** puede no estar disponible para Facturante.
+
+En ese caso, no necesariamente falta una acción: puede significar que el alta fiscal ya fue realizada para esa organización.
+
+Para cambios posteriores, correcciones o dudas sobre el estado fiscal, trabajá con soporte o con la persona administradora de la organización.
+
+---
+
+## Problemas frecuentes
+
+| Síntoma | Qué revisar |
+|---------|-------------|
+| No aparece Facturante en Integraciones | Permisos del usuario y servicios habilitados para la organización. |
+| No está disponible **Gestionar** | La configuración fiscal puede estar activa o el usuario puede no tener permisos suficientes. |
+| El formulario no permite confirmar | Campos requeridos incompletos o datos con formato inválido. |
+| CUIT rechazado o inválido | Revisá el número y confirmá que corresponda a la organización. |
+| No aparecen provincias o ciudades | Reintentá más tarde o contactá soporte si el listado no carga. |
+| Error al confirmar | Revisá el mensaje, validá datos fiscales y enviá captura a soporte si persiste. |
+| Demora luego del trámite | Recordá que la habilitación ante ARCA puede demorar hasta 24 horas. |
+
+---
+
+## Límites de alcance
+
+Esta documentación no afirma:
+
+- facturación automática en todos los flujos;
+- tipos exactos de comprobantes soportados;
+- emisión de notas de crédito o cancelaciones;
+- reemplazo futuro de Facturante;
+- módulo propio de facturación;
+- plazos distintos a los indicados por el asistente;
+- resolución automática de trámites pendientes ante ARCA;
+- validación contable o fiscal completa sin revisión administrativa.
+
+Para confirmar un flujo fiscal específico, consultá con soporte o con la persona responsable administrativa/contable de tu organización.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Facturante permite emitir comprobantes electrónicos desde ZinkERP?
+
+Sí. Facturante es el proveedor usado actualmente para habilitar la facturación electrónica desde ZinkERP.
+
+### ¿Dónde se configura?
+
+En **Preferencias → Integraciones → Facturante → Gestionar**, siempre que la acción esté disponible para tu organización y usuario.
+
+### ¿Por qué habla de ARCA?
+
+Porque la habilitación fiscal puede depender de trámites o validaciones ante el ente regulador en Argentina. El asistente indica que el proceso puede demorar hasta 24 horas luego del trámite correspondiente.
+
+### ¿Qué hago si necesito facturar hoy?
+
+Iniciá el alta con margen y revisá que los trámites externos estén completos. Si hay urgencia, contactá soporte antes de asumir que la habilitación será inmediata.
+
+### ¿Qué significa si no veo el botón Gestionar?
+
+Puede indicar que la configuración fiscal ya está activa o que tu usuario no tiene permisos suficientes. Consultá con administración o soporte.
+
+### ¿Puedo cambiar datos fiscales después del alta?
+
+No lo asumas desde esta pantalla. Para correcciones posteriores, trabajá con soporte o con la persona administradora de la organización.
+
+### ¿Qué comprobantes se pueden emitir?
+
+Esta documentación no detalla tipos exactos de comprobantes. Validá el alcance fiscal específico con soporte o con el flujo de emisión correspondiente.
+
+### ¿El alta reemplaza los trámites ante ARCA?
+
+No. El asistente acompaña la configuración en ZinkERP, pero puede requerir trámites o validaciones externas.
 
 ---
 
 ## Ver también
 
-- [Integraciones — inicio](/integraciones)
+- [Integraciones](/integraciones)
 - [Cómo funcionan las integraciones](/integraciones/como-funciona)
+- [Preferencias](/configuracion/preferencias)
 - [Problemas frecuentes](/integraciones/problemas-frecuentes)

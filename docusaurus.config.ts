@@ -41,6 +41,10 @@ const config: Config = {
             from: '/integraciones/mercado-pago',
             to: '/ayuda/integraciones/mercado-pago',
           },
+          {
+            from: '/integraciones/facturante',
+            to: '/ayuda/integraciones/facturante',
+          },
         ],
       },
     ],

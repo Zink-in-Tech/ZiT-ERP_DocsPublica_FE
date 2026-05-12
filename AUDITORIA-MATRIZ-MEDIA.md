@@ -86,7 +86,7 @@
 | Media |`docs/informes/informe-stock-valorado.md` |Informe Stock Valorado |433 |0 |Antes de empezar, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informe-stock-valorado-01.png` |
 | Media |`docs/informes/informes.md` |Informes |672 |0 |Antes de empezar, Casos frecuentes, Si algo sale mal, Ver también |`static/img/ayuda/informes/informes-01.png` |
 | Media |`docs/integraciones/como-funciona.md` |Cómo funcionan las integraciones |403 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/como-funciona-01.png` |
-| Alta |`docs/integraciones/facturante.md` |Facturante (facturación electrónica) |528 |0 |Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/facturante-01.png` |
+| Alta |`docs/integraciones/facturante.md` |Facturante |1341 |0 |Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/facturante-01.png` |
 | Alta |`docs/integraciones/intro.md` |Integraciones con servicios externos |420 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/intro-01.png` |
 | Media |`docs/integraciones/mercado-libre.md` |Mercado Libre y otros servicios |252 |0 |Antes de empezar, Procedimiento, Casos frecuentes, Si algo sale mal |`static/img/ayuda/integraciones/mercado-libre-01.png` |
 | Alta |`docs/integraciones/mercado-pago.md` |Mercado Pago |1495 |0 |Procedimiento, Casos frecuentes |`static/img/ayuda/integraciones/mercado-pago-01.png` |

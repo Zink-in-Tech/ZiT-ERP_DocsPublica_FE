@@ -63,4 +63,4 @@ Para resolver más rápido, enviá:
 - [Cómo funcionan las integraciones](/integraciones/como-funciona)
 - [Mercado Pago](/ayuda/integraciones/mercado-pago)
 - [WooCommerce](/ayuda/integraciones/woocommerce)
-- [Facturante](/integraciones/facturante)
+- [Facturante](/ayuda/integraciones/facturante)
