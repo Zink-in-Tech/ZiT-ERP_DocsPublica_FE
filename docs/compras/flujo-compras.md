@@ -26,6 +26,23 @@ Permite trabajar en etapas, manteniendo control y trazabilidad de cada operació
 
 Orden de compra → Compra
 
+```mermaid
+flowchart LR
+  OC[Orden de compra] --> Co[Compra]
+  OC -.->|Concretar operación| Co
+```
+
+La flecha punteada indica que la **compra** puede generarse desde una orden confirmada o registrarse **directamente** sin orden previa.
+
+### Ciclo de estados por documento
+
+| Documento        | Estado inicial | Estado final exitoso | Al rechazar      |
+|------------------|----------------|----------------------|------------------|
+| [Orden de compra](./orden-compras.md) | BORRADOR | CONFIRMADO | — |
+| Compra           | BORRADOR       | INGRESADO            | —                |
+
+En compras no existe la acción **Rechazar** como en ventas; el cierre alternativo es **CANCELADO**.
+
 ---
 
 ## Cómo funciona el flujo
@@ -123,7 +140,7 @@ Se registra la compra y la deuda queda pendiente en la cuenta corriente del prov
 
 ## Ver también
 
-- [Orden de compra](./orden-compras.md)
+- [Órdenes de compra](./orden-compras.md)
 - [Compras](./compras.md)
 - [Pagos](../finanzas/pagos.md)
 - [Cuenta corriente](../finanzas/cuenta-corriente.md)

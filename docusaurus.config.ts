@@ -45,12 +45,25 @@ const config: Config = {
             from: '/integraciones/facturante',
             to: '/ayuda/integraciones/facturante',
           },
+          {
+            from: '/compras/orden-compras',
+            to: '/compras/orden-compra',
+          },
+          {
+            from: '/compras/orden_compra',
+            to: '/compras/orden-compra',
+          },
         ],
       },
     ],
   ],
 
+  markdown: {
+    mermaid: true,
+  },
+
   themes: [
+    '@docusaurus/theme-mermaid',
     [
       '@easyops-cn/docusaurus-search-local',
       {
@@ -139,6 +152,22 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    mermaid: {
+      theme: {
+        light: 'neutral',
+        dark: 'dark',
+      },
+      options: {
+        themeVariables: {
+          primaryColor: '#f5f0fa',
+          primaryBorderColor: '#7500b9',
+          primaryTextColor: '#333',
+          lineColor: '#008ed3',
+          secondaryColor: '#e8f4fc',
+          tertiaryColor: '#fafafa',
+        },
+      },
     },
   } satisfies Preset.ThemeConfig,
 };

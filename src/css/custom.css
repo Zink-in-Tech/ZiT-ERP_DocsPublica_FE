@@ -34,3 +34,9 @@
 .navbar__title {
   font-weight: 600;
 }
+
+/* Diagramas Mermaid: margen y scroll en móvil */
+.docusaurus-mermaid-container {
+  margin: 1.25rem 0 1.5rem;
+  overflow-x: auto;
+}

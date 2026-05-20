@@ -79,6 +79,33 @@ Usá pedidos cuando:
 | RECHAZAR       | Vuelve a BORRADOR. |
 | CANCELADO      | Flujo cerrado. |
 
+### Ciclo de vida
+
+**Estado inicial:** BORRADOR · **Estado final (éxito):** PREPARADO · **Al rechazar:** vuelve a **BORRADOR** · **Cierre sin éxito:** CANCELADO.
+
+```mermaid
+stateDiagram-v2
+  direction LR
+  [*] --> BORRADOR: Crear
+  BORRADOR --> CONFIRMADO: Confirmar
+  CONFIRMADO --> EN_PREPARACION: Iniciar preparación
+  EN_PREPARACION --> PREPARADO: Marcar preparado
+  CONFIRMADO --> BORRADOR: Rechazar
+  EN_PREPARACION --> BORRADOR: Rechazar
+  PREPARADO --> [*]: Fin — genera venta BORRADOR
+  BORRADOR --> CANCELADO: Cancelar
+  CONFIRMADO --> CANCELADO: Cancelar
+  EN_PREPARACION --> CANCELADO: Cancelar
+  CANCELADO --> [*]: Fin — flujo cerrado
+  note right of BORRADOR
+    Estado inicial
+    (también destino al rechazar)
+  end note
+  note right of PREPARADO
+    Estado final exitoso
+  end note
+```
+
 ---
 
 ## Casos frecuentes

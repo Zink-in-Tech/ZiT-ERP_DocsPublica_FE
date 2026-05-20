@@ -28,6 +28,33 @@ Cada vez que avanzás en el flujo, el sistema genera automáticamente el siguien
 
 Cotización → Presupuesto → Pedido → Venta
 
+```mermaid
+flowchart LR
+  C[Cotización] --> P[Presupuesto] --> Pe[Pedido] --> V[Venta]
+  C -.->|Aceptar| P
+  P -.->|Aceptar| Pe
+  Pe -.->|Preparado| V
+```
+
+Cada flecha punteada representa la **generación automática** del siguiente documento en estado **BORRADOR**.
+
+### Variantes del flujo
+
+```mermaid
+flowchart TB
+  subgraph completo["Flujo completo con logística"]
+    direction LR
+    C1[Cotización] --> P1[Presupuesto] --> Pe1[Pedido] --> V1[Venta]
+  end
+  subgraph neg["Negociación sin pedido"]
+    direction LR
+    C2[Cotización] --> P2[Presupuesto] --> V2[Venta]
+  end
+  subgraph rapida["Venta rápida"]
+    V3[Venta directa]
+  end
+```
+
 ---
 
 ## Cómo funciona el flujo
@@ -125,6 +152,19 @@ Cotización → Presupuesto → Venta
 ### Venta con logística
 
 Cotización → Presupuesto → Pedido → Venta
+
+---
+
+## Ciclo de estados por documento
+
+Cada etapa tiene su propio ciclo de vida. En presupuesto, pedido y venta, **Rechazar** devuelve el documento a **BORRADOR** (estado inicial editable). El detalle está en el artículo de cada entidad.
+
+| Documento   | Estado inicial | Estado final exitoso | Al rechazar      |
+|-------------|----------------|----------------------|------------------|
+| Cotización  | BORRADOR       | ACEPTADA             | —                |
+| Presupuesto | BORRADOR       | ACEPTADO             | Vuelve a BORRADOR |
+| Pedido      | BORRADOR       | PREPARADO            | Vuelve a BORRADOR |
+| Venta       | BORRADOR       | ENTREGADO            | Vuelve a BORRADOR |
 
 ---
 

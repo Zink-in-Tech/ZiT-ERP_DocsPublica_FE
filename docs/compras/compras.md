@@ -97,6 +97,30 @@ Si no se registra el pago en el momento, la deuda queda en la cuenta corriente d
 | INGRESADO  | Se actualiza el stock. |
 | CANCELADO  | Flujo cerrado. |
 
+### Ciclo de vida
+
+**Estado inicial:** BORRADOR · **Estado final (éxito):** INGRESADO · **Cierre sin éxito:** CANCELADO.
+
+No aplica **Rechazar** como en ventas.
+
+```mermaid
+stateDiagram-v2
+  direction LR
+  [*] --> BORRADOR: Crear
+  BORRADOR --> CONFIRMADO: Confirmar
+  CONFIRMADO --> INGRESADO: Ingresar mercadería
+  INGRESADO --> [*]: Fin — stock actualizado
+  BORRADOR --> CANCELADO: Cancelar
+  CONFIRMADO --> CANCELADO: Cancelar
+  CANCELADO --> [*]: Fin — flujo cerrado
+  note right of BORRADOR
+    Estado inicial editable
+  end note
+  note right of INGRESADO
+    Estado final exitoso
+  end note
+```
+
 ---
 
 ## Casos frecuentes

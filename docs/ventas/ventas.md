@@ -107,6 +107,33 @@ Si el usuario confirma una venta con contacto y el proceso de pago es diferido, 
 | RECHAZAR   | Vuelve a BORRADOR (no disponible en estados finales). |
 | CANCELADO  | Flujo cerrado. No editable. |
 
+### Ciclo de vida
+
+**Estado inicial:** BORRADOR · **Estado final (éxito):** ENTREGADO · **Al rechazar:** vuelve a **BORRADOR** (no disponible desde ENTREGADO ni CANCELADO) · **Cierre sin éxito:** CANCELADO.
+
+```mermaid
+stateDiagram-v2
+  direction LR
+  [*] --> BORRADOR: Crear
+  BORRADOR --> CONFIRMADO: Confirmar
+  CONFIRMADO --> DESPACHAR: Despachar
+  DESPACHAR --> ENTREGADO: Entregar
+  CONFIRMADO --> BORRADOR: Rechazar
+  DESPACHAR --> BORRADOR: Rechazar
+  ENTREGADO --> [*]: Fin — stock y cuenta corriente
+  BORRADOR --> CANCELADO: Cancelar
+  CONFIRMADO --> CANCELADO: Cancelar
+  DESPACHAR --> CANCELADO: Cancelar
+  CANCELADO --> [*]: Fin — flujo cerrado
+  note right of BORRADOR
+    Estado inicial
+    (también destino al rechazar)
+  end note
+  note right of ENTREGADO
+    Estado final exitoso
+  end note
+```
+
 ---
 
 ## Casos frecuentes

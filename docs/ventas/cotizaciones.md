@@ -82,6 +82,27 @@ Usá cotizaciones cuando:
 | CONFIRMADA  | Propuesta enviada. |
 | ACEPTADA    | Genera presupuesto en BORRADOR. |
 
+### Ciclo de vida
+
+**Estado inicial:** BORRADOR · **Estado final (éxito):** ACEPTADA (genera presupuesto en BORRADOR).
+
+En cotizaciones no figura la acción **Rechazar**; el avance es lineal hasta aceptar o dejar el documento en borrador/confirmada.
+
+```mermaid
+stateDiagram-v2
+  direction LR
+  [*] --> BORRADOR: Crear
+  BORRADOR --> CONFIRMADA: Confirmar / enviar
+  CONFIRMADA --> ACEPTADA: Aprobar y elegir lista
+  ACEPTADA --> [*]: Fin — genera presupuesto BORRADOR
+  note right of BORRADOR
+    Estado inicial editable
+  end note
+  note right of ACEPTADA
+    Estado final exitoso
+  end note
+```
+
 ---
 
 ## Casos frecuentes

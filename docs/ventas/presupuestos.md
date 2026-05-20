@@ -79,6 +79,30 @@ Usá presupuestos cuando:
 | RECHAZAR   | Vuelve a BORRADOR. |
 | CANCELADO  | Flujo cerrado. |
 
+### Ciclo de vida
+
+**Estado inicial:** BORRADOR · **Estado final (éxito):** ACEPTADO · **Al rechazar:** vuelve a **BORRADOR** · **Cierre sin éxito:** CANCELADO.
+
+```mermaid
+stateDiagram-v2
+  direction LR
+  [*] --> BORRADOR: Crear
+  BORRADOR --> CONFIRMADO: Confirmar
+  CONFIRMADO --> ACEPTADO: Cliente acepta
+  CONFIRMADO --> BORRADOR: Rechazar
+  ACEPTADO --> [*]: Fin — genera pedido BORRADOR
+  BORRADOR --> CANCELADO: Cancelar
+  CONFIRMADO --> CANCELADO: Cancelar
+  CANCELADO --> [*]: Fin — flujo cerrado
+  note right of BORRADOR
+    Estado inicial
+    (también destino al rechazar)
+  end note
+  note right of ACEPTADO
+    Estado final exitoso
+  end note
+```
+
 ---
 
 ## Casos frecuentes

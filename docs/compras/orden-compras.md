@@ -1,6 +1,7 @@
 ---
 title: Órdenes de compra
 description: Registrá solicitudes a proveedores y organizá tus compras antes de generar el impacto en stock y cuenta corriente.
+slug: /compras/orden-compra
 keywords:
   - órdenes de compra
   - orden de compra
@@ -101,6 +102,29 @@ Si la mercadería llega con diferencias, revisá cantidades y precios antes de r
 | BORRADOR   | Editable. |
 | CONFIRMADO | Lista para enviar o ejecutar. |
 | CANCELADO  | Flujo cerrado. |
+
+### Ciclo de vida
+
+**Estado inicial:** BORRADOR · **Estado final (éxito):** CONFIRMADO (listo para registrar la compra) · **Cierre sin éxito:** CANCELADO.
+
+No aplica **Rechazar**; para anular una orden confirmada usá **Cancelar**.
+
+```mermaid
+stateDiagram-v2
+  direction LR
+  [*] --> BORRADOR: Crear
+  BORRADOR --> CONFIRMADO: Confirmar
+  CONFIRMADO --> [*]: Fin — registrar compra asociada
+  BORRADOR --> CANCELADO: Cancelar
+  CONFIRMADO --> CANCELADO: Cancelar
+  CANCELADO --> [*]: Fin — flujo cerrado
+  note right of BORRADOR
+    Estado inicial editable
+  end note
+  note right of CONFIRMADO
+    Estado final exitoso de la orden
+  end note
+```
 
 ---
 
