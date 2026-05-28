@@ -64,16 +64,6 @@ const config: Config = {
 
   themes: [
     '@docusaurus/theme-mermaid',
-    [
-      '@easyops-cn/docusaurus-search-local',
-      {
-        hashed: true,
-        language: ['es'],
-        docsRouteBasePath: '/',
-        indexBlog: false,
-        highlightSearchTermsOnTargetPage: true,
-      },
-    ],
   ],
 
   presets: [
@@ -132,6 +122,10 @@ const config: Config = {
               to: '/primeros-pasos',
             },
             {
+              label: 'Informes',
+              to: '/informes',
+            },
+            {
               label: 'Integraciones',
               to: '/integraciones',
             },
@@ -152,6 +146,11 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    algolia: {
+      appId: '5ZD369E1WB',
+      apiKey: 'f6654a27606a2f4cfee6ed715e70e123',
+      indexName: 'ZinK ERP Docs',
     },
     mermaid: {
       theme: {
