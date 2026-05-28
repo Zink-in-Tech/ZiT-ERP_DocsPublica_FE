@@ -2,6 +2,10 @@
 title: Conceptos
 description: Definí categorías para clasificar ingresos y egresos en caja.
 sidebar_position: 5
+keywords:
+  - conceptos
+  - ingresos egresos
+  - categoría caja
 ---
 
 ## Resumen
@@ -72,5 +76,7 @@ Ejemplo: gastos, pagos, compras menores.
 
 ## Ver también
 
+- [Administración](./administracion.md)
 - [Ingresos](../finanzas/ingresos.md)
 - [Egresos](../finanzas/egresos.md)
+- [Informe Ingresos](../informes/informe-ingresos.md)

@@ -64,13 +64,12 @@ El objetivo es que puedas:
 
 - Registrar un ingreso  
 - Registrar un egreso  
-- Registrar inventario de productos  
-- Crear 2 órdenes de compra:
+- Registrar inventario de productos ([Registro de inventario](./inventario/inventarios.md))  
+- Crear 2 órdenes de compra ([Órdenes de compra](./compras/orden-compras.md)):
   - cancelar una  
-  - aprobar otra (genera compra)  
-- Aprobar la compra  
-- Verificar stock  
-- Explorar actualización masiva  
+  - confirmar otra y registrar la [Compra](./compras/compras.md) asociada  
+- Marcar la compra como **INGRESADO** y verificar stock  
+- Explorar [actualización masiva](./administracion/productos-actualizacion-masiva.md)  
 - Revisar movimientos de inventario  
 
 ---
@@ -93,16 +92,12 @@ El objetivo es que puedas:
 
 ### Tareas
 
-- Actualizar un contacto  
-- Crear presupuesto  
-- Crear pedido  
-- Crear venta  
-- Registrar venta a consumidor final  
-- Registrar pago  
-- Revisar:
-  - cuenta corriente  
-  - caja diaria  
-  - informes  
+- Actualizar un contacto ([Contactos](./administracion/contactos.md))  
+- Crear [cotización](./ventas/cotizaciones.md) o [presupuesto](./ventas/presupuestos.md)  
+- Crear [pedido](./ventas/pedidos.md) y [venta](./ventas/ventas.md)  
+- Registrar venta a consumidor final (o usar [POS](./ventas/pos.md))  
+- Registrar [pago](./finanzas/pagos.md)  
+- Revisar [cuenta corriente](./finanzas/cuenta-corriente.md), [caja diaria](./finanzas/caja-diaria.md) e [informes](/informes)  
 
 ---
 
@@ -151,7 +146,7 @@ El objetivo es que puedas:
 - cómo registrar pagos  
 - cómo analizar la caja  
 
-👉 Es decir: cómo funciona tu negocio dentro de Zink.
+Es decir: cómo funciona tu negocio dentro de ZinK ERP.
 
 ---
 
@@ -163,12 +158,16 @@ El objetivo es que puedas:
 
 ---
 
+## Si algo sale mal
+
+- **Un paso no coincide con lo que ves en pantalla**
+  - Revisá permisos en [Perfiles](./administracion/perfiles.md) y la guía específica del módulo.
+- **Stock o caja no cierran**
+  - Verificá que la venta o compra esté en el estado final correcto (**ENTREGADO** / **INGRESADO**) y que los pagos estén registrados.
+
 ## Soporte
 
-Si tenés dudas:
-
-- consultá con tu administrador  
-- utilizá la ayuda dentro del sistema  
+Si tenés dudas, consultá con tu administrador o la ayuda dentro del sistema.
 
 ---
 

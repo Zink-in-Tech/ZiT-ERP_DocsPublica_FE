@@ -1,67 +1,80 @@
 ---
 title: Datos de la Organización
+description: Configurá logo, razón social, CUIT y direcciones que figuran en comprobantes e informes de tu organización.
 sidebar_position: 71
+keywords:
+  - datos organización
+  - razón social
+  - CUIT
+  - logo comprobantes
+  - dirección fiscal
 ---
+
 ## Resumen
 
-- Configurás los datos de la organización que aparecen en facturas y comprobantes.
-- Impacta todos los comprobantes emitidos; deben estar correctos para facturación.
-- Incluyen imagen/logo, nombre, razón social, CUIT, direcciones (facturación y física), teléfono, mail y moneda base.
-- El nombre y razón social figuran en informes y comprobantes.
-- La dirección de facturación es la fiscal para que le sean emitidas las facturas.
+Configurás los datos de la organización que aparecen en facturas y comprobantes. Impactan todos los comprobantes emitidos: deben coincidir con tu situación fiscal.
 
-## Cuándo usar
+Incluyen imagen/logo, nombre, razón social, CUIT, direcciones (facturación y física), teléfono, mail y moneda base.
 
-- Actualizar logo, razón social, CUIT o direcciones de la organización.
-- Asegurarte de que facturas y comprobantes reflejen los datos correctos de la empresa.
+---
+
+## Cuándo usarlo
+
+- Al dar de alta la organización o abrir un nuevo punto de venta.
+- Cuando cambian datos fiscales (razón social, CUIT, domicilio).
+- Antes de habilitar facturación electrónica o integraciones.
+
+---
 
 ## Procedimiento
 
-- Editar datos de la organización. Completar imagen, nombre, razón social, CUIT, dirección facturación, dirección física, teléfono, mail, moneda base. Guardar.
+1. Entrá a la configuración de **Datos de la organización**.
+2. Completá imagen, nombre, razón social, CUIT, dirección de facturación, dirección física, teléfono, mail y moneda base.
+3. Guardá los cambios.
+4. Verificá un comprobante de prueba si facturás.
+
+---
 
 ## Campos principales
 
-## Imagen
+| Campo | Qué es |
+|-------|--------|
+| Imagen | Logo (recomendado 240×240 px). Aparece en comprobantes. |
+| Nombre | Referencia interna de la organización. |
+| Razón social | Nombre legal o de fantasía en informes y comprobantes. |
+| CUIT | Identificador fiscal. |
+| Dirección facturación | Domicilio fiscal para facturación. |
+| Dirección física | Ubicación operativa o depósito. |
+| Teléfono / Mail | Contacto; el mail puede usarse para envío de comprobantes. |
+| Moneda base | Moneda de la organización (actualmente AR$). |
 
-Logo de la empresa. Tamaño recomendado 240x240px. Aparece en comprobantes.
+---
 
-## Nombre
+## Qué cambia y qué no cambia
 
-Nombre interno para referirse a la organización.
+- ✔️ Actualiza datos en **nuevos** comprobantes e informes que usen esos campos.
+- ❌ No modifica operaciones ya registradas ni sustituye datos de [contactos](../administracion/contactos.md).
 
-## Razón Social
+---
 
-Nombre de fantasía o legal del negocio. Figura en informes y comprobantes.
+## Si algo sale mal
 
-## CUIT
+- **Facturación rechazada o datos incorrectos en PDF**
+  - Revisá CUIT y dirección de facturación contra tu constancia fiscal.
+- **El logo no se ve bien**
+  - Usá imagen cuadrada ~240×240 px y volvé a cargar.
 
-Identificador fiscal único de la organización.
-
-## Dirección Facturación
-
-Dirección fiscal para facturación. Importante: debe coincidir con datos fiscales.
-
-## Dirección Física
-
-Dirección física de la organización o depósito.
-
-## Teléfono
-
-Número telefónico de la organización.
-
-## Mail
-
-Correo electrónico; se usa para envío de información, facturas, etc.
-
-## Moneda Base
-
-Moneda base de la organización. Por el momento solo pesos.
-
-## Reglas de uso
-
-- Los datos son obligatorios para facturación y comprobantes; mantenelos actualizados.
+---
 
 ## Buenas prácticas
 
-- Revisá razón social y CUIT al menos una vez al año para coincidir con datos fiscales.
-- Usá imagen de buena calidad (240x240px recomendado) para comprobantes.
+- Revisá razón social y CUIT al menos una vez al año.
+- Mantené el mail operativo si enviás comprobantes por correo.
+
+---
+
+## Ver también
+
+- [Configuración](./configuracion.md)
+- [Preferencias](./preferencias.md)
+- [Primeros pasos](../primeros-pasos.md)

@@ -2,6 +2,11 @@
 title: Nuevas Organizaciones
 description: Creá sucursales o puntos de venta y configurá su estructura operativa dentro del sistema.
 sidebar_position: 60
+keywords:
+  - nueva organización
+  - sucursal
+  - franquicia
+  - multi organización
 ---
 
 ## Resumen
@@ -69,5 +74,7 @@ Se crea con acceso restringido y requiere usuario administrador nuevo.
 
 ## Ver también
 
+- [Administración](./administracion.md)
+- [Datos de la organización](../configuracion/datos-org.md)
 - [Contactos](./contactos.md)
 - [Usuarios](./usuarios.md)

@@ -131,11 +131,12 @@ Usalos cuando:
 
 ## Si algo sale mal
 
-- **No se puede aceptar**
-  - Puede estar vencido.
-
-- **No se genera pedido**
-  - Verificá estado ACEPTADO.
+- **No podés aceptar el presupuesto**
+  - Puede estar **vencido** (revisá días de vencimiento en [Preferencias](../configuracion/preferencias.md)).
+  - Verificá que esté en estado **CONFIRMADO** y con ítems cargados.
+- **No se genera el pedido**
+  - El presupuesto debe quedar en **ACEPTADO**.
+  - Revisá permisos de pedidos en [Perfiles](../administracion/perfiles.md).
 
 ---
 

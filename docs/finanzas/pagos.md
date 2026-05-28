@@ -146,6 +146,7 @@ Siempre aplicá pagos sobre comprobantes.
 
 ## Ver también
 
+- [Finanzas](./finanzas.md)
 - [Cuenta corriente](./cuenta-corriente.md)
 - [Caja diaria](./caja-diaria.md)
 - [Ventas](../ventas/ventas.md)

@@ -31,28 +31,43 @@ Estos módulos no funcionan de forma aislada, sino conectados entre sí.
 
 El sistema refleja el funcionamiento real de cualquier empresa:
 
+```mermaid
+flowchart TB
+  subgraph ventas["Ventas"]
+    C[Cotización] --> P[Presupuesto] --> Pe[Pedido] --> V[Venta]
+    POS[POS] --> V
+  end
+  subgraph compras["Compras"]
+    OC[Orden de compra] --> Co[Compra]
+  end
+  subgraph inv["Inventario"]
+    St[(Stock)]
+  end
+  subgraph fin["Finanzas"]
+    CC[Cuenta corriente] --> Pag[Pago] --> Caj[Caja]
+  end
+  Co --> St
+  V --> St
+  V --> CC
+  Co --> CC
+  Pag --> Caj
+```
+
 ### Ventas
 
-Cotización → Presupuesto → Pedido → Venta  
-               ↘ POS
-
----
+[Cotización → Presupuesto → Pedido → Venta](./ventas/flujo-ventas.md), o [POS](./ventas/pos.md) para venta directa.
 
 ### Compras
 
-Orden de compra → Compra
-
----
+[Orden de compra → Compra](./compras/flujo-compras.md)
 
 ### Inventario
 
-Compras → Inventario → Ventas
-
----
+Compras y ventas mueven stock; los [ajustes](./inventario/inventarios.md) corrigen sin documento comercial.
 
 ### Finanzas
 
-Venta / Compra → Cuenta corriente → Pago → Caja
+[Venta / Compra → Cuenta corriente → Pago → Caja](./finanzas/finanzas.md)
 
 ---
 

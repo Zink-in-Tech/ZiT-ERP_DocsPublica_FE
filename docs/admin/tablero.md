@@ -1,18 +1,37 @@
 ---
 title: Tablero
+description: Pantalla de inicio con indicadores y accesos rápidos; en el producto equivale al Dashboard.
 sidebar_position: 0
+keywords:
+  - tablero
+  - dashboard
+  - panel
+  - inicio
 ---
+
 ## Resumen
 
-- Pantalla de tablero para vistas resumidas o accesos rápidos según el rol y la organización.
-- Complementa al Dashboard con otra vista de trabajo o métricas, según la configuración del producto.
+**Tablero** y [Dashboard](./dashboard.md) son la **misma pantalla** en ZinK ERP: vista general al ingresar, con indicadores y accesos según tu rol y organización.
 
-## Cuándo usar
+En el menú puede figurar como **Tablero** o **Dashboard** según la versión o el perfil; el contenido y el uso son equivalentes.
 
-- Cuando tu organización o rol tiene habilitado el tablero como pantalla principal o alternativa.
-- Para acceder a indicadores o tareas definidas en el tablero.
+---
+
+## Cuándo usarlo
+
+- Al iniciar sesión para ver el estado del negocio.
+- Para ir a módulos frecuentes desde accesos rápidos.
+
+---
 
 ## Procedimiento
 
-- Accedé al Tablero desde el menú de administración.
-- La pantalla muestra el contenido configurado para tu contexto (indicadores, enlaces o widgets según la versión del producto).
+Seguí los pasos del artículo [Dashboard](./dashboard.md): ingresá, revisá indicadores y usá los enlaces del panel.
+
+---
+
+## Ver también
+
+- [Dashboard](./dashboard.md)
+- [Perfil de usuario](./perfil-usuario.md)
+- [Informes](/informes)

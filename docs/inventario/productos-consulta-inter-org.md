@@ -124,6 +124,7 @@ Ideal para:
 
 ## Ver también
 
+- [Inventario](./inventario.md)
 - [Registro de inventario](./inventarios.md)
 - [Toma de inventario](./inventarios-ubicacion.md)
 - [Ventas](../ventas/ventas.md)

@@ -139,6 +139,7 @@ Usala cuando:
 
 ## Ver también
 
+- [Inventario](./inventario.md)
 - [Registro de inventario](./inventarios.md)
 - [Consulta de stock](./productos-consulta-inter-org.md)
 - [Productos](../administracion/productos.md)

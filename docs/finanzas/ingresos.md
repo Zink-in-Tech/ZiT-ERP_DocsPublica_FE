@@ -126,6 +126,7 @@ Si el ingreso existe porque un cliente pagó una venta, registralo como pago/cob
 
 ## Ver también
 
+- [Finanzas](./finanzas.md)
 - [Caja diaria](./caja-diaria.md)
 - [Pagos](./pagos.md)
 - [Cuenta corriente](./cuenta-corriente.md)

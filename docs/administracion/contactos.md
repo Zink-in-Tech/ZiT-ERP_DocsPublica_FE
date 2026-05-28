@@ -2,6 +2,12 @@
 title: Contactos
 description: Gestioná clientes y proveedores utilizados en ventas, compras y operaciones comerciales.
 sidebar_position: 1
+keywords:
+  - contactos
+  - clientes
+  - proveedores
+  - lista de precios contacto
+  - cuenta corriente
 ---
 
 ## Resumen
@@ -100,5 +106,7 @@ Se registran datos fiscales y condiciones de compra.
 
 ## Ver también
 
+- [Administración](./administracion.md)
+- [Importación masiva de contactos](./contactos-importacion-masiva.md)
 - [Ventas](../ventas/ventas.md)
 - [Compras](../compras/compras.md)

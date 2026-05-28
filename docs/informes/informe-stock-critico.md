@@ -1,39 +1,68 @@
 ---
 title: Informe Stock crítico
+description: Listá productos con stock por debajo del mínimo para planificar reposición; filtrá por proveedor si aplica.
 sidebar_position: 61
+keywords:
+  - stock crítico
+  - stock mínimo
+  - reposición
+  - informe de stock
 ---
+
 ## Resumen
 
-- Lista los productos con stock actual menor al stock mínimo configurado en el producto (sin unidades disponibles).
-- Permite filtrar por proveedor (contacto) para ver solo productos de un proveedor determinado.
-- Las columnas incluyen código, código de barras, descripción, stock actual, stock mínimo y precio.
-- Sirve para planificar reposición y evitar roturas de stock.
+Este informe muestra productos cuyo **stock actual es menor al stock mínimo** definido en el maestro del producto. Podés filtrar por proveedor (contacto) para armar pedidos a un solo abastecedor.
 
-## Cuándo usar
+Columnas habituales: código, código de barras, descripción, stock actual, stock mínimo y precio.
 
-- Para identificar productos que requieren compra o reposición.
-- Para revisar por proveedor qué ítems están bajo el mínimo.
-- Para tomar decisiones de compra o producción según prioridad.
+---
+
+## Cuándo usarlo
+
+- Antes de generar [órdenes de compra](../compras/orden-compras.md).
+- En rutinas de control de depósito, junto con [Productos faltantes](./informe-productos-faltantes.md).
+
+---
 
 ## Procedimiento
 
-- Elegí el informe Stock crítico desde Informes. Opcional: filtrá por contacto (proveedor). Consultá; la grilla muestra los productos con stock por debajo del mínimo. Podés exportar o usar los datos para generar órdenes de compra.
+1. En **Informes**, abrí **Stock crítico**.
+2. (Opcional) Elegí **Contacto (proveedor)**.
+3. Consultá. Revisá la grilla de productos bajo el mínimo.
+4. Exportá si necesitás compartir la lista o armar la compra.
+
+---
 
 ## Campos principales
 
-## Contacto (proveedor)
+### Contacto (proveedor)
 
 Filtro opcional. Si seleccionás un proveedor, solo se listan productos asociados a ese contacto con stock bajo el mínimo.
 
-## Columnas del informe
+### Columnas del informe
 
-Código, código de barras, descripción, stock actual, stock mínimo, precio. El stock mínimo es el definido en el maestro del producto.
+Código, código de barras, descripción, stock actual, stock mínimo, precio. El stock mínimo es el definido en [Productos](../administracion/productos.md).
 
-## Reglas de uso
+---
 
-- Solo se listan productos con stock actual menor al stock mínimo configurado.
-- El permiso de menú controla si el informe está visible.
+## Si algo sale mal
+
+- **Un producto no aparece aunque esté bajo mínimo**
+  - Verificá que tenga **stock mínimo** cargado en el maestro del producto.
+- **No veo el informe**
+  - Revisá permisos de menú con tu administrador.
+
+---
 
 ## Buenas prácticas
 
-- Revisá este informe con frecuencia para reponer a tiempo. Combiná con el informe de productos faltantes para priorizar.
+- Revisá este informe con frecuencia para reponer a tiempo.
+- Combiná con productos faltantes para priorizar incumplimientos de pedido vs falta de stock en depósito.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Órdenes de compra](../compras/orden-compras.md)
+- [Productos](../administracion/productos.md)

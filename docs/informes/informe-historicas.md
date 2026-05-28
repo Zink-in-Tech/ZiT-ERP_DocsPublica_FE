@@ -1,42 +1,52 @@
 ---
 title: Informe Históricas de ventas
-sidebar_position: 69
+description: Consultá el historial de ventas por período, cliente u organización para facturación y auditoría.
+sidebar_position: 70
+keywords:
+  - históricas ventas
+  - historial ventas
+  - facturación período
 ---
+
 ## Resumen
 
-- Muestra el historial de ventas en un período: comprobantes, fechas, montos, clientes.
-- Permite filtrar por fechas, organización y opcionalmente por contacto (cliente).
-- Sirve para análisis de facturación, auditoría y reportes por período o por cliente.
+Muestra el historial de ventas en un período: comprobantes, fechas, montos y clientes. Permite filtrar por fechas, organización y contacto (cliente).
 
-## Cuándo usar
+---
 
-- Para revisar las ventas realizadas en un rango de fechas.
-- Para analizar facturación por cliente o por período.
-- Para exportar el detalle de ventas para contabilidad o gestión.
+## Cuándo usarlo
+
+- Para revisar ventas en un rango de fechas.
+- Para analizar facturación por cliente o período.
+- Para exportar detalle para contabilidad o gestión.
+
+---
 
 ## Procedimiento
 
-- Entrá al informe Históricas desde Informes. Configurá fecha desde, fecha hasta y filtros (organización, contacto). Consultá; la grilla muestra las ventas del período. Podés exportar o imprimir según las opciones del informe.
+1. En **Informes**, abrí **Históricas de ventas**.
+2. Configurá **fecha desde**, **fecha hasta** y filtros (organización, contacto).
+3. Consultá la grilla; exportá o imprimí según opciones del informe.
 
-## Campos principales
+---
 
-## Fecha desde / Fecha hasta
+## Si algo sale mal
 
-Rango de fechas del período a consultar. Obligatorias en la mayoría de los diseños.
+- **Consulta lenta**
+  - Acotá el rango de fechas.
+- **Faltan comprobantes esperados**
+  - Verificá estados de ventas incluidos en el criterio del sistema (confirmadas/entregadas según diseño del informe).
 
-## Organización / Contacto
-
-Filtros opcionales para restringir por organización (multi-org) o por cliente (contacto).
-
-## Columnas típicas
-
-Fecha, comprobante, cliente, total, estado, etc., según el diseño del informe.
-
-## Reglas de uso
-
-- Solo se incluyen ventas confirmadas/entregadas (o según criterio del sistema) en el período.
-- La visibilidad del informe depende de los permisos de menú.
+---
 
 ## Buenas prácticas
 
-- Usá rangos de fechas acotados cuando haya mucho volumen para que la consulta sea rápida. Exportá a Excel cuando necesites trabajar los datos fuera del sistema.
+- Usá rangos acotados con mucho volumen; exportá a Excel para análisis externo.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Productos vendidos](./informe-productos-vendidos.md)
+- [Ventas](../ventas/ventas.md)

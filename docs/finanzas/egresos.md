@@ -124,6 +124,7 @@ Si la salida existe porque se pagó una compra, registrala como pago a proveedor
 
 ## Ver también
 
+- [Finanzas](./finanzas.md)
 - [Caja diaria](./caja-diaria.md)
 - [Pagos](./pagos.md)
 - [Cuenta corriente](./cuenta-corriente.md)

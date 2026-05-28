@@ -2,6 +2,11 @@
 title: Usuarios
 description: Administrá los accesos al sistema y los permisos de cada colaborador.
 sidebar_position: 8
+keywords:
+  - usuarios
+  - alta usuario
+  - bloquear usuario
+  - acceso sistema
 ---
 
 ## Resumen
@@ -57,4 +62,6 @@ Se puede inactivar o desbloquear el usuario.
 
 ## Ver también
 
+- [Administración](./administracion.md)
 - [Perfiles](./perfiles.md)
+- [Perfil de usuario](../admin/perfil-usuario.md)

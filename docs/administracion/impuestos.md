@@ -2,6 +2,10 @@
 title: Impuestos
 description: Configurá tributos que afectan precios y operaciones comerciales en el sistema.
 sidebar_position: 6
+keywords:
+  - impuestos
+  - IVA
+  - tributos productos
 ---
 
 ## Resumen
@@ -76,5 +80,6 @@ Se suma directamente al precio.
 
 ## Ver también
 
+- [Administración](./administracion.md)
 - [Productos](./productos.md)
 - [Ventas](../ventas/ventas.md)

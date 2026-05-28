@@ -1,34 +1,55 @@
 ---
 title: Informe Promociones por vencer
-sidebar_position: 68
+description: Listá promociones y listas de precio promocionales que vencen pronto para renovar o comunicar ofertas.
+sidebar_position: 69
+keywords:
+  - promociones por vencer
+  - vigencia promoción
+  - listas promocionales
 ---
+
 ## Resumen
 
-- Lista productos con promociones o listas de precio promocionales cuya vigencia está por vencer en un plazo cercano.
-- Ayuda a planificar renovación de promociones, comunicación comercial y evitar vencimientos sin reemplazo.
-- Los datos dependen de las listas de precio y vigencias configuradas en los productos.
+Lista productos con promociones o listas de precio promocionales cuya vigencia está por vencer. Los datos dependen de listas y vigencias configuradas en productos.
 
-## Cuándo usar
+---
 
-- Para ver qué promociones vencen pronto y decidir si renovar, comunicar o dar de baja.
+## Cuándo usarlo
+
+- Para renovar o dar de baja promociones antes del vencimiento.
 - Para coordinar con ventas o marketing la continuidad de ofertas.
-- Para evitar que una promoción venza sin tener una nueva definida.
+
+---
 
 ## Procedimiento
 
-- Entrá al informe Promociones por vencer desde Informes. El sistema puede usar un rango de fechas o “días hasta vencimiento”. Consultá; la grilla muestra productos con promoción próxima a vencer. Exportá si necesitás.
+1. En **Informes**, abrí **Promociones por vencer**.
+2. Aplicá filtros (fechas o días hasta vencimiento) según la pantalla.
+3. Consultá la grilla; exportá si necesitás.
 
-## Campos principales
-
-## Filtros
-
-Según el diseño: fecha hasta la cual considerar “por vencer”, o cantidad de días. Columnas típicas: producto, lista de precio promocional, vigencia desde/hasta, precio, días restantes.
+---
 
 ## Reglas de uso
 
-- Solo se consideran productos con listas de precio de tipo promocional y con vigencia hasta definida.
-- La visibilidad del informe depende de los permisos de menú.
+- Solo considera listas promocionales con vigencia definida.
+- La visibilidad depende de permisos de menú.
+
+---
+
+## Si algo sale mal
+
+- **No aparece una promoción activa en tienda**
+  - Verificá vigencia y lista en el maestro del [Producto](../administracion/productos.md).
+
+---
 
 ## Buenas prácticas
 
-- Revisá este informe con periodicidad para no dejar promociones vencidas activas y para planificar la siguiente tanda de ofertas.
+- Revisá con periodicidad para no dejar promociones vencidas visibles.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Preferencias](../configuracion/preferencias.md)

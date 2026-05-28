@@ -1,52 +1,63 @@
 ---
 title: Informe Etiquetas para góndola
-sidebar_position: 63
+description: Imprimí etiquetas de góndola con precios actualizados por lista, intervalo de fechas y tamaño de etiqueta.
+sidebar_position: 64
+keywords:
+  - etiquetas góndola
+  - imprimir etiquetas
+  - precios góndola
 ---
+
 ## Resumen
 
-- Sirve para **imprimir etiquetas para la góndola del showroom**.
-- Permite buscar productos **actualizados según un intervalo de fechas** y la **lista de precio** que querés imprimir.
-- Permite **seleccionar el tamaño de la etiqueta** para la impresión.
-- Con esos filtros obtenés el listado de productos a etiquetar; luego podés imprimir las etiquetas con los datos (código, descripción, precio, etc.) para colocar en góndola.
-- Las etiquetas se configuran en el maestro del producto; este informe filtra por actualización y lista para armar la salida de impresión.
+Permite **imprimir etiquetas para góndola**: buscá productos actualizados en un intervalo de fechas, elegí **lista de precios** y **tamaño de etiqueta**, y obtené el listado para imprimir (código, descripción, precio, etc.).
 
-## Cuándo usar
+---
 
-- Para imprimir etiquetas de góndola con precios actualizados (por lista de precio y período de modificación).
-- Para refrescar las etiquetas del showroom cuando cambiaron precios o productos en un rango de fechas.
-- Para elegir una lista de precio (ej. Público, Oferta) y generar solo los ítems que se actualizaron en ese período.
+## Cuándo usarlo
+
+- Para refrescar etiquetas cuando cambiaron precios o productos en un período.
+- Para imprimir solo ítems de una lista (Público, Oferta, etc.).
+
+---
 
 ## Procedimiento
 
-- Entrá al informe Productos etiquetados desde Informes.
-- Indicá el **intervalo de fechas** (productos actualizados en ese período), la **lista de precio** con la que querés imprimir y el **tamaño de la etiqueta**.
-- Ejecutá la consulta; la grilla muestra los productos que cumplen los criterios.
-- Usá el resultado para imprimir las etiquetas de góndola (precio, código, descripción, etc., según el tamaño y formato elegidos).
+1. En **Informes**, abrí **Etiquetas para góndola** (Productos etiquetados).
+2. Indicá **intervalo de fechas** (productos actualizados en ese período).
+3. Elegí **lista de precio** y **tamaño de etiqueta**.
+4. Consultá la grilla y usá la salida para imprimir.
+
+---
 
 ## Campos principales
 
-## Intervalo de fechas
+| Campo | Descripción |
+|-------|-------------|
+| Intervalo de fechas | Productos modificados en ese rango. |
+| Lista de precio | Precio que irá en la etiqueta. |
+| Tamaño de etiqueta | Formato de impresión disponible en el informe. |
 
-Productos que se hayan actualizado (modificación de datos o precios) dentro de ese rango. Así limitás la impresión a lo que cambió o a un período relevante.
+---
 
-## Lista de precio
+## Si algo sale mal
 
-Lista de precio con la que querés imprimir las etiquetas (ej. Público, Mayorista, Oferta). El informe usa esa lista para mostrar el precio que irá en la etiqueta.
+- **No aparecen productos esperados**
+  - Ampliá el intervalo de fechas o verificá que el producto se haya actualizado en el período.
+- **El precio en etiqueta no coincide**
+  - Confirmá la lista elegida con la que mostrás en góndola.
 
-## Tamaño de etiqueta
-
-Podés elegir el **tamaño de la etiqueta** para la impresión (según los formatos disponibles en el informe). El diseño de la salida se ajusta al tamaño seleccionado.
-
-## Etiqueta / Filtros adicionales
-
-Según el diseño del informe, podés filtrar además por etiqueta de producto u otros criterios. Las columnas suelen incluir código, descripción, precio (de la lista elegida), etiquetas.
-
-## Reglas de uso
-
-- Solo se listan productos que cumplan el intervalo de fechas y la lista de precio seleccionados (y etiquetas si aplica).
-- La visibilidad del informe depende de los permisos de menú.
+---
 
 ## Buenas prácticas
 
-- Usá el intervalo de fechas para no reimprimir todo el catálogo: por ejemplo “última semana” o “desde la última impresión” para etiquetas actualizadas.
-- Elegí la lista de precio que realmente se muestra en góndola para que las etiquetas coincidan con lo que ve el cliente.
+- Usá intervalos acotados (ej. última semana) para no reimprimir todo el catálogo.
+- Elegí la misma lista de precio que ve el cliente en sala.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Etiquetas circulares](./informe-etiquetas-circulares.md)
+- [Productos](../administracion/productos.md)

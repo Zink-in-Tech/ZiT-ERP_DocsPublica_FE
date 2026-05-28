@@ -239,6 +239,7 @@ Es clave para:
 
 ## Ver también
 
+- [Finanzas](./finanzas.md)
 - [Pagos](./pagos.md)
 - [Ingresos](./ingresos.md)
 - [Egresos](./egresos.md)

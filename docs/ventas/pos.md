@@ -44,7 +44,7 @@ El POS es una **forma alternativa de generar ventas**, independiente del flujo c
 
 ![Pantalla inicial de POS con buscador de producto, cliente Consumidor Final y total de la venta](/img/ayuda/ventas/pos-01.png)
 
-En Zink ERP existen dos formas de registrar una venta:
+En ZinK ERP existen dos formas de registrar una venta:
 
 ### Flujo de ventas (proceso completo)
 

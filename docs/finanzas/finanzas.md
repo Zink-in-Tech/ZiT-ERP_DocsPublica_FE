@@ -1,6 +1,6 @@
 ---
 title: Finanzas
-description: Controlá el dinero del negocio, las deudas con clientes y proveedores y el flujo financiero completo en Zink ERP.
+description: Controlá el dinero del negocio, las deudas con clientes y proveedores y el flujo financiero completo en ZinK ERP.
 keywords:
   - finanzas
   - caja
@@ -40,7 +40,7 @@ Es clave para tomar decisiones financieras y evitar errores operativos.
 
 ## Cómo funciona el sistema financiero
 
-En Zink ERP, el dinero se gestiona en tres niveles:
+En ZinK ERP, el dinero se gestiona en tres niveles:
 
 ### 1. Cuenta corriente (deuda)
 

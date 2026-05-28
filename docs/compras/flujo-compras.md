@@ -1,12 +1,12 @@
 ---
 title: Flujo de compras
-description: Entendé cómo funciona el proceso completo desde la orden de compra hasta el registro de la compra en Zink ERP.
+description: Entendé cómo funciona el proceso completo desde la orden de compra hasta el registro de la compra en ZinK ERP.
 sidebar_position: 1
 ---
 
 ## Resumen
 
-El flujo de compras en Zink ERP organiza el proceso desde la solicitud al proveedor hasta el registro final de la compra.
+El flujo de compras en ZinK ERP organiza el proceso desde la solicitud al proveedor hasta el registro final de la compra.
 
 Permite trabajar en etapas, manteniendo control y trazabilidad de cada operación.
 
@@ -128,13 +128,21 @@ Se registra la compra y la deuda queda pendiente en la cuenta corriente del prov
 - **Datos incorrectos**
   - Revisá información antes de confirmar.
   - Si la compra ya fue confirmada, puede no ser editable.
-
 - **Problemas de stock**
-  - Verificá productos y cantidades.
-
+  - Verificá productos y cantidades antes de **INGRESADO**.
 - **No podés registrar el pago**
   - Revisá permiso para registrar pagos.
   - Verificá que la compra tenga importe pendiente.
+- **No podés avanzar desde la orden**
+  - La orden debe estar **CONFIRMADA** para registrar la compra asociada.
+
+---
+
+## Buenas prácticas
+
+- Usá órdenes de compra para planificar; registrá la compra cuando la mercadería llegue.
+- Verificá cantidades y precios antes de confirmar.
+- Si el pago es posterior, controlá la deuda en [Cuenta corriente](../finanzas/cuenta-corriente.md).
 
 ---
 

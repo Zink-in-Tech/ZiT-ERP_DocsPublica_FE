@@ -2,6 +2,12 @@
 title: Cotizaciones
 description: Mostrá precios por distintas listas en una misma propuesta para que el cliente compare antes de definir la compra.
 sidebar_position: 2
+keywords:
+  - cotizaciones
+  - cotización
+  - listas de precios
+  - comparar precios
+  - propuesta comercial
 ---
 
 ## Resumen
@@ -28,7 +34,7 @@ Cotización → Presupuesto → Pedido → Venta
 
 La cotización representa la etapa inicial, donde el cliente evalúa opciones antes de tomar una decisión.
 
-👉 Al aprobar, se genera un presupuesto en BORRADOR.
+Al pasar a **ACEPTADO**, se genera un presupuesto en **BORRADOR**.
 
 ---
 
@@ -41,7 +47,7 @@ Usá cotizaciones cuando:
 - Estás en una etapa de negociación.
 - Querés presentar varias opciones en una sola propuesta.
 
-👉 Si el precio ya está definido, conviene ir directamente a presupuesto.
+Si el precio ya está definido, conviene ir directamente a [Presupuestos](./presupuestos.md).
 
 ---
 
@@ -55,7 +61,7 @@ Usá cotizaciones cuando:
 - ❌ No genera cuenta corriente
 - ❌ No emite comprobantes
 
-👉 El impacto ocurre recién cuando se convierte en presupuesto.
+El impacto ocurre recién cuando se convierte en presupuesto.
 
 ---
 
@@ -67,10 +73,11 @@ Usá cotizaciones cuando:
 4. Visualizá los precios en las distintas listas.
 5. Ajustá observaciones si es necesario.
 6. Compartí la cotización con el cliente.
-7. Cuando el cliente define:
-   - Aprobá la cotización
-   - Elegí la lista de precios
-   - Se genera un presupuesto en BORRADOR
+7. Confirmá la cotización (estado **CONFIRMADO**).
+8. Cuando el cliente define la opción:
+   - Aceptá la cotización (estado **ACEPTADO**)
+   - Elegí la lista de precios a aplicar
+   - El sistema genera un presupuesto en **BORRADOR**
 
 ---
 
@@ -79,26 +86,26 @@ Usá cotizaciones cuando:
 | Estado      | Descripción |
 |-------------|------------|
 | BORRADOR    | Editable. |
-| CONFIRMADA  | Propuesta enviada. |
-| ACEPTADA    | Genera presupuesto en BORRADOR. |
+| CONFIRMADO  | Propuesta confirmada o enviada. |
+| ACEPTADO    | Genera presupuesto en BORRADOR. |
 
 ### Ciclo de vida
 
-**Estado inicial:** BORRADOR · **Estado final (éxito):** ACEPTADA (genera presupuesto en BORRADOR).
+**Estado inicial:** BORRADOR · **Estado final (éxito):** ACEPTADO (genera presupuesto en BORRADOR).
 
-En cotizaciones no figura la acción **Rechazar**; el avance es lineal hasta aceptar o dejar el documento en borrador/confirmada.
+En cotizaciones no figura la acción **Rechazar**; el avance es lineal: **BORRADOR** → **CONFIRMADO** → **ACEPTADO**.
 
 ```mermaid
 stateDiagram-v2
   direction LR
   [*] --> BORRADOR: Crear
-  BORRADOR --> CONFIRMADA: Confirmar / enviar
-  CONFIRMADA --> ACEPTADA: Aprobar y elegir lista
-  ACEPTADA --> [*]: Fin — genera presupuesto BORRADOR
+  BORRADOR --> CONFIRMADO: Confirmar
+  CONFIRMADO --> ACEPTADO: Aceptar y elegir lista
+  ACEPTADO --> [*]: Fin — genera presupuesto BORRADOR
   note right of BORRADOR
     Estado inicial editable
   end note
-  note right of ACEPTADA
+  note right of ACEPTADO
     Estado final exitoso
   end note
 ```
@@ -108,40 +115,29 @@ stateDiagram-v2
 ## Casos frecuentes
 
 ### El cliente quiere comparar opciones
+
 Se muestran varias listas en una sola pantalla.
 
 ### No está definido el volumen de compra
+
 Permite avanzar sin cerrar condiciones.
 
 ### Envío de propuesta comercial
+
 Se comparte sin comprometer operación.
-
----
-
-## Recomendaciones de uso
-
-Las cotizaciones son ideales para procesos de venta consultivos o con negociación.
-
-Usalas cuando:
-
-- El cliente necesita evaluar alternativas
-- Existen múltiples listas de precios
-- El cierre no es inmediato
-
-👉 Evitá usarlas si la venta ya está definida.
 
 ---
 
 ## Si algo sale mal
 
 - **No aparecen precios**
-  - Verificá que las listas estén configuradas.
-
+  - Verificá que las listas estén configuradas en [Preferencias](../configuracion/preferencias.md).
 - **No podés modificar precios**
   - Puede requerir permisos especiales.
-
-- **No podés aprobar**
+- **No podés pasar a ACEPTADO**
   - Verificá que tenga ítems cargados.
+  - La cotización debe estar en **CONFIRMADO** antes de aceptar.
+  - Revisá permisos de la etapa en [Perfiles](../administracion/perfiles.md).
 
 ---
 
@@ -149,8 +145,7 @@ Usalas cuando:
 
 - Verificá listas antes de enviar.
 - Usá observaciones para condiciones.
-- Controlá la vigencia.
-- Convertí rápidamente a presupuesto al confirmar.
+- Pasá a presupuesto en cuanto el cliente defina la lista.
 
 ---
 

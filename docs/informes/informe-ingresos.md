@@ -1,34 +1,52 @@
 ---
 title: Informe Ingresos
-sidebar_position: 66
+description: Generá un PDF de ingresos de caja por período; movimientos manuales distintos de ventas.
+sidebar_position: 67
+keywords:
+  - informe ingresos
+  - ingresos caja
+  - PDF ingresos
 ---
+
 ## Resumen
 
-- Genera un PDF con los ingresos de caja en un rango de fechas.
-- Los ingresos son entradas de dinero registradas en el módulo Ingresos (concepto, monto, contacto opcional), distintas de las ventas.
-- El informe detalla por fecha y concepto. Sirve para control de caja y conciliación.
+Genera un **PDF** con los ingresos de caja en un rango de fechas. Los datos provienen del módulo [Ingresos](../finanzas/ingresos.md) (entradas manuales, no ventas).
 
-## Cuándo usar
+---
 
-- Para revisar entradas de caja no vinculadas a ventas (cobros manuales, aportes, reintegros) en un período.
-- Para cerrar caja o conciliar con el módulo Ingresos.
-- Para imprimir o archivar el detalle de ingresos por fechas.
+## Cuándo usarlo
+
+- Para revisar entradas de caja no vinculadas a ventas en un período.
+- Para cerrar caja o conciliar.
+- Para archivar el detalle por fechas.
+
+---
 
 ## Procedimiento
 
-- Indicá fecha desde y fecha hasta. Pulsá Consultar; el sistema genera un PDF con los ingresos del período. Podés visualizarlo o descargarlo. No se permiten fechas futuras.
+1. En **Informes**, abrí **Ingresos**.
+2. Indicá **fecha desde** y **fecha hasta** (obligatorias; no fechas futuras).
+3. Pulsá **Consultar**; visualizá o descargá el PDF.
 
-## Campos principales
+---
 
-## Fecha desde / Fecha hasta
+## Si algo sale mal
 
-Rango de fechas para el período. Ambas obligatorias. Solo fechas pasadas o hoy.
+- **El PDF está vacío**
+  - Verificá ingresos en el período y [conceptos](../administracion/conceptos.md) de tipo ingreso.
+- **Confundo ingreso con cobro de venta**
+  - Los cobros de clientes van por [Pagos](../finanzas/pagos.md); los ingresos son movimientos manuales fuera de ventas.
 
-## Reglas de uso
-
-- Los datos provienen de los ingresos registrados en el módulo Ingresos; los conceptos deben ser de tipo ingreso.
-- El permiso de menú controla el acceso al informe.
+---
 
 ## Buenas prácticas
 
-- Usalo junto con el informe de egresos y caja diaria para tener el panorama completo de movimientos de caja.
+- Usalo con [Egresos](./informe-egresos.md) y caja diaria para el cierre completo.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Ingresos](../finanzas/ingresos.md)
+- [Finanzas](../finanzas/finanzas.md)

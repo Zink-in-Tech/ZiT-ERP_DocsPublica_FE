@@ -1,34 +1,51 @@
 ---
 title: Informe Etiquetas circulares
-sidebar_position: 64
+description: Listá productos con etiqueta circular para destacados u ofertas; imprimí o exportá para góndola.
+sidebar_position: 65
+keywords:
+  - etiquetas circulares
+  - ofertas góndola
+  - productos destacados
 ---
+
 ## Resumen
 
-- Las **etiquetas circulares** son etiquetas redondas que pueden utilizarse para **productos destacados** u **ofertas especiales** (góndola, promociones, etc.).
-- Este informe lista y filtra los productos que tienen asignada una etiqueta de tipo circular, para imprimir, exportar o revisar qué ítems llevan esa etiqueta.
-- Los datos se basan en las etiquetas configuradas en el maestro del producto.
+Las **etiquetas circulares** son etiquetas redondas para productos destacados u ofertas. Este informe lista productos con esa etiqueta asignada en el maestro, para imprimir, exportar o revisar qué ítems la llevan.
 
-## Cuándo usar
+---
 
-- Para ver qué productos están marcados con etiquetas circulares (destacados u ofertas).
-- Para imprimir o exportar el listado y usarlo en punto de venta, góndola o material promocional.
-- Para revisar o actualizar qué productos llevan etiqueta circular.
+## Cuándo usarlo
+
+- Para ver qué productos tienen etiqueta circular.
+- Para material de góndola o punto de venta.
+- Para mantener consistencia en promociones visibles.
+
+---
 
 ## Procedimiento
 
-- Entrá al informe Etiquetas circulares desde Informes. Configurá filtros por etiqueta si corresponde. Ejecutá la consulta; la grilla muestra los productos con etiquetas circulares. Revisá o exportá el resultado.
+1. En **Informes**, abrí **Etiquetas circulares**.
+2. Configurá filtros por etiqueta si la pantalla lo permite.
+3. Consultá, revisá o exportá el resultado.
 
-## Campos principales
+---
 
-## Filtros
+## Si algo sale mal
 
-Filtro por etiqueta u otros criterios según la pantalla. Columnas típicas: producto, etiqueta, precios, stock.
+- **Un producto no aparece**
+  - Verificá que tenga la etiqueta circular asignada en [Productos](../administracion/productos.md).
+- **No veo el informe**
+  - Revisá permisos de menú.
 
-## Reglas de uso
-
-- La visibilidad del informe depende de los permisos de menú.
-- Los productos deben tener asignada la etiqueta correspondiente para aparecer en el informe.
+---
 
 ## Buenas prácticas
 
-- Usá etiquetas circulares de forma consistente (por ejemplo una etiqueta “Oferta” o “Destacado”) y mantené actualizados los productos que las llevan para que el informe refleje bien la góndola o la oferta.
+- Usá etiquetas circulares de forma consistente (ej. “Oferta”, “Destacado”) para que el informe refleje la góndola real.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Etiquetas para góndola](./informe-productos-etiquetados.md)

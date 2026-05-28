@@ -1,7 +1,13 @@
 ---
 sidebar_position: 3
-title: Aspectos Generales
-description: Configurá ZinK ERP y empezá a operar tu negocio correctamente desde el primer día.
+title: Primeros pasos
+description: Configurá ZinK ERP y validá la primera operación según tu tipo de negocio — POS, flujo comercial o compras.
+keywords:
+  - configuración inicial
+  - onboarding
+  - primera venta
+  - preferencias
+  - usuarios y perfiles
 ---
 
 ## Resumen
@@ -43,8 +49,7 @@ Antes de operar, es importante entender la lógica general:
 - Inventario → controla stock
 - Finanzas → controla dinero
 
-👉 Recomendado:  
-- [Cómo funciona ZinK ERP](./arquitectura.md)
+Recomendado: [Cómo funciona ZinK ERP](./arquitectura.md)
 
 ---
 
@@ -52,55 +57,27 @@ Antes de operar, es importante entender la lógica general:
 
 Antes de operar, configurá el sistema correctamente.
 
----
-
 ### 3.1 Datos de la organización
 
-Configurá:
+Configurá razón social, CUIT, direcciones, logo y moneda. Ver [Datos de la organización](./configuracion/datos-org.md) y el hub [Configuración](./configuracion/configuracion.md).
 
-- razón social
-- CUIT
-- direcciones
-- logo
-- moneda
-
-👉 Impacta en comprobantes e informes.
-
----
+Impacta en comprobantes e informes.
 
 ### 3.2 Preferencias
 
-Definí:
+Definí listas de precios, vencimientos, formatos de comprobantes, comportamiento de ventas y compras, y manejo de stock, caja y pagos. Ver [Preferencias](./configuracion/preferencias.md).
 
-- listas de precios
-- vencimientos
-- formatos de comprobantes
-- comportamiento de ventas y compras
-- manejo de stock, caja y pagos según el circuito operativo
-
-👉 Estas configuraciones afectan toda la operación.
-
----
+Estas configuraciones afectan toda la operación.
 
 ### 3.3 Usuarios y perfiles
 
-- Creá usuarios
-- Asigná perfiles
-- Definí permisos
+Creá usuarios, asigná perfiles y definí permisos. Ver [Usuarios](./administracion/usuarios.md) y [Perfiles](./administracion/perfiles.md).
 
-👉 Cada usuario verá y podrá hacer solo lo que le corresponde.
-
----
+Cada usuario verá y podrá hacer solo lo que le corresponde.
 
 ### 3.4 Organizaciones (si aplica)
 
-Si trabajás con múltiples sucursales:
-
-- configurá cada organización
-- asigná responsables
-- vinculá contactos
-
----
+Si trabajás con múltiples sucursales, configurá cada organización, asigná responsables y vinculá contactos. Ver [Alta de organización](./administracion/organizacion-alta.md).
 
 ### 3.5 Configuración mínima por tipo de negocio
 
@@ -117,32 +94,19 @@ No hace falta configurar todo el ERP el primer día. Conviene empezar por el cir
 
 ## Paso 4: Primera operación recomendada
 
-Para validar que todo funciona correctamente:
+Para validar que todo funciona correctamente, elegí una opción según tu negocio:
 
----
+### Opción A: Venta rápida
 
-### 👉 Opción A: Venta rápida
+Seguí [POS](./ventas/pos.md) y verificá el impacto en [Caja diaria](./finanzas/caja-diaria.md).
 
-1. Ir a POS
-2. Registrar una venta
-3. Verificar impacto en caja
+### Opción B: Venta con flujo
 
----
+Seguí [Cotizaciones](./ventas/cotizaciones.md) → [Presupuestos](./ventas/presupuestos.md) → [Ventas](./ventas/ventas.md) → [Pagos](./finanzas/pagos.md). Consultá el mapa completo en [Flujo de ventas](./ventas/flujo-ventas.md).
 
-### 👉 Opción B: Venta con flujo
+### Opción C: Compra
 
-1. Crear cotización
-2. Convertir a presupuesto
-3. Convertir a venta
-4. Registrar pago
-
----
-
-### 👉 Opción C: Compra
-
-1. Registrar compra
-2. Verificar ingreso de stock
-3. Verificar cuenta corriente
+Seguí [Órdenes de compra](./compras/orden-compras.md) → [Compras](./compras/compras.md) y verificá stock en [Registro de inventario](./inventario/inventarios.md).
 
 ---
 
@@ -154,7 +118,7 @@ Después de operar, verificá:
 - deuda registrada (cuenta corriente)
 - dinero reflejado (caja diaria)
 
-👉 Esto confirma que el sistema está funcionando correctamente.
+Esto confirma que el sistema está funcionando correctamente.
 
 ---
 
@@ -174,25 +138,9 @@ En el día a día:
 
 Debe tener perfil y permisos asignados.
 
----
-
 ### Error en operación
 
-Revisar:
-
-- flujo utilizado
-- datos cargados
-- impacto en inventario y finanzas
-
----
-
-## Recomendaciones de uso
-
-- Seguí los flujos del sistema (no saltear pasos)
-- Verificá stock y caja diariamente
-- Configurá correctamente antes de operar
-
-👉 El orden en que trabajás impacta directamente en el control del negocio.
+Revisá el flujo utilizado, los datos cargados y el impacto en inventario y finanzas.
 
 ---
 
@@ -200,12 +148,10 @@ Revisar:
 
 - **No podés ingresar**
   - Usuario inactivo o bloqueado
-
 - **No ves opciones**
   - Falta de permisos
-
 - **Resultados incorrectos**
-  - Revisar configuración inicial
+  - Revisá configuración inicial (preferencias, listas, perfiles)
 
 ---
 
@@ -221,6 +167,7 @@ Revisar:
 ## Ver también
 
 - [Cómo funciona ZinK ERP](./arquitectura.md)
+- [Primeros resultados](./primeros-4-dias.md)
 - [Flujo de ventas](./ventas/flujo-ventas.md)
-- [Inventario](./inventario/inventarios.md)
+- [Inventario](./inventario/inventario.md)
 - [Finanzas](./finanzas/finanzas.md)

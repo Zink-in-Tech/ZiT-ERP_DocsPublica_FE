@@ -124,6 +124,8 @@ Permite detectar productos que necesitan reposición desde informes o controles 
 
 ## Ver también
 
+- [Administración](./administracion.md)
+
 - [Ventas](../ventas/ventas.md)
 - [Compras](../compras/compras.md)
 - [Registro de inventario](../inventario/inventarios.md)

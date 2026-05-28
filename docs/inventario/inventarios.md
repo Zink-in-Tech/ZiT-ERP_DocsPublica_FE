@@ -158,6 +158,7 @@ Usalo cuando:
 
 ## Ver también
 
+- [Inventario](./inventario.md)
 - [Toma de inventario](./inventarios-ubicacion.md)
 - [Consulta de stock](./productos-consulta-inter-org.md)
 - [Compras](../compras/compras.md)

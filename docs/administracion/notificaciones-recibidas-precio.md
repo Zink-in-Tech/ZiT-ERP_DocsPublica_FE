@@ -2,6 +2,10 @@
 title: Recepción de Notificación de cambio de Precio
 description: Recibí y aplicá cambios de precios enviados desde la central.
 sidebar_position: 13
+keywords:
+  - recibir precios
+  - aceptar precios central
+  - notificación precios
 ---
 
 ## Resumen
@@ -44,4 +48,5 @@ Se actualizan solo algunos productos.
 
 ## Ver también
 
-- [Notificación de cambio de Precio](./notificar-cambio-precio.md)
+- [Administración](./administracion.md)
+- [Notificación de cambio de precio](./notificar-cambio-precio.md)

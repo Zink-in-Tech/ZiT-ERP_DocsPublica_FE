@@ -1,46 +1,65 @@
 ---
 title: Informe Productos faltantes
+description: Detectá diferencias entre lo pedido y lo vendido o entregado para priorizar reposición y revisar picking.
 sidebar_position: 62
+keywords:
+  - productos faltantes
+  - pedido vs venta
+  - incumplimiento
+  - picking
 ---
+
 ## Resumen
 
-- Lista los productos que el sistema detecta como **faltantes**: son **ventas incumplidas sobre lo pedido**.
-- Un producto aparece como faltante cuando fue registrado en un **pedido**, al confirmar el pedido se informan **menos cantidades de las pedidas**, y en la **venta** se registran menos ítems o cantidades que las del pedido.
-- El sistema cruza pedido confirmado con la venta asociada y marca como faltante la diferencia (lo que se pidió y no se entregó/vendió).
-- Sirve para detectar incumplimientos, roturas de stock en el camino pedido→venta, y para planificar reposición o revisar procesos.
+Lista productos **faltantes**: ventas incumplidas respecto de lo pedido. Un ítem aparece cuando fue registrado en un **pedido**, al confirmar o vender se informan **menores cantidades** que las pedidas, y el sistema cruza pedido con la **venta** asociada.
 
-## Cuándo usar
+Sirve para detectar incumplimientos, roturas de stock en el camino pedido→venta y revisar procesos.
 
-- Para ver qué productos quedaron sin cumplir respecto a lo que el cliente había pedido (pedido vs venta efectiva).
-- Para analizar causas: falta de stock al preparar, errores de picking, cancelación parcial, etc.
-- Para priorizar reposición o atención al cliente cuando hubo faltantes.
+---
+
+## Cuándo usarlo
+
+- Para ver qué quedó sin cumplir respecto del pedido del cliente.
+- Para analizar causas: stock al preparar, picking, cancelación parcial.
 - Para auditoría de cumplimiento de pedidos.
+
+---
 
 ## Procedimiento
 
-1. El cliente hace un **pedido** con productos y cantidades.
-2. Al **confirmar** el pedido, en algún punto del flujo (preparación, picking o venta) se informan **menores cantidades** que las pedidas.
-3. La **venta** asociada al pedido se registra con menos ítems o cantidades que el pedido original.
-4. El sistema detecta esa diferencia y la considera **faltante**: lo pedido que no se entregó/vendió.
-5. El informe Productos faltantes lista esos productos (y cantidades faltantes, según el diseño). Podés filtrar por fechas u otros criterios y exportar.
+1. En **Informes**, abrí **Productos faltantes**.
+2. Aplicá filtros (fechas, organización, contacto) según la pantalla.
+3. Consultá la grilla: producto, cantidades pedidas vs vendidas/entregadas, faltante.
+4. Exportá si la opción está disponible.
 
-## Campos principales
-
-## Filtros
-
-Según la pantalla: rango de fechas, organización, contacto (cliente), etc., para acotar a pedidos/ventas de un período o cliente.
-
-## Columnas típicas
-
-Producto (código, descripción), cantidad pedida, cantidad vendida/entregada, cantidad faltante, cliente, pedido, venta, etc. La estructura depende del diseño del informe.
+---
 
 ## Reglas de uso
 
-- Solo se consideran productos que provienen de **pedidos**; la comparación es entre lo pedido (confirmado) y lo registrado en la **venta** asociada.
-- Si en la venta se registra la misma cantidad que en el pedido, no hay faltante para ese ítem.
-- La visibilidad del informe depende de los permisos de menú.
+- Solo considera productos de **pedidos** comparados con la **venta** asociada.
+- Si la venta registra la misma cantidad que el pedido, no hay faltante para ese ítem.
+- La visibilidad depende de permisos de menú.
+
+---
+
+## Si algo sale mal
+
+- **No aparece un faltante esperado**
+  - Verificá que exista pedido confirmado y venta vinculada con menor cantidad.
+- **No veo el informe**
+  - Revisá permisos con tu administrador.
+
+---
 
 ## Buenas prácticas
 
-- Revisá el informe con periodicidad para detectar patrones de faltantes (mismo producto, mismo depósito, mismo cliente) y corregir causas (stock, picking, comunicación con el cliente).
-- Combiná con el informe de stock crítico para ver si los faltantes se deben a stock insuficiente al momento de preparar.
+- Revisá con periodicidad para detectar patrones (producto, depósito, cliente).
+- Combiná con [Stock crítico](./informe-stock-critico.md) si la causa es stock insuficiente al preparar.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Pedidos](../ventas/pedidos.md)
+- [Ventas](../ventas/ventas.md)

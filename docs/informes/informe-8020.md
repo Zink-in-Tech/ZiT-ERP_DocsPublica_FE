@@ -1,38 +1,54 @@
 ---
 title: Informe 80/20 (ganancia bruta)
-sidebar_position: 67
+description: Ranking de productos por ganancia bruta en un período para surtido, reposición y promociones.
+sidebar_position: 68
+keywords:
+  - informe 80/20
+  - pareto
+  - ganancia bruta
+  - margen productos
 ---
+
 ## Resumen
 
-- Análisis de ganancia bruta por producto: ranking de ítems según su contribución al resultado.
-- Permite identificar los productos que más aportan (típicamente un 20% de productos concentra un alto porcentaje de la ganancia).
-- Útil para decisiones de surtido, reposición y promociones.
+Análisis de **ganancia bruta por producto**: ranking según contribución al resultado. Útil para identificar el núcleo de productos que concentran la ganancia (enfoque 80/20).
 
-## Cuándo usar
+---
 
-- Para ver qué productos generan la mayor ganancia bruta en un período.
+## Cuándo usarlo
+
+- Para ver qué productos más aportan en un período.
 - Para priorizar reposición y espacio en góndola.
-- Para enfocar promociones en productos de alto margen o alto volumen.
+- Para enfocar promociones en alto margen o alto volumen.
+
+---
 
 ## Procedimiento
 
-- Entrá al informe 80/20 desde Informes. Configurá el rango de fechas u otros filtros. Ejecutá la consulta; el resultado muestra el ranking por ganancia bruta (o métrica configurada). Podés exportar si está disponible.
+1. En **Informes**, abrí **80/20**.
+2. Configurá rango de fechas y filtros que ofrezca la pantalla.
+3. Consultá el ranking; exportá si está disponible.
+4. El PDF incluye: posición, descripción, cantidad vendida, total costo, total venta, ganancia bruta por ítem y totales al pie.
 
-## Campos principales
+---
 
-## Fecha desde / Fecha hasta
+## Si algo sale mal
 
-Período sobre el que se calcula la ganancia bruta. Los datos se basan en ventas y costos del período.
+- **Rankings incoherentes**
+  - Verificá costos y precios en [Productos](../administracion/productos.md) y listas de precios.
+- **No veo el informe**
+  - Revisá permisos de menú.
 
-## Contenido del informe (PDF)
-
-El PDF se genera para el rango de fechas elegido e incluye: **POS** (posición/ranking), **DESCRIPCIÓN** (producto), **CANT. VENDIDA**, **TOTAL COSTO**, **TOTAL VENTA**, **GANANCIA BRUTA** por ítem. Los productos van ordenados por contribución (mayor ganancia primero). Al pie figuran los totales de costo, venta y ganancia bruta del período.
-
-## Reglas de uso
-
-- El cálculo usa ventas y costos del período; los productos deben tener costo y precios de venta correctos.
-- La visibilidad del informe depende de los permisos de menú.
+---
 
 ## Buenas prácticas
 
-- Revisá que costos y listas de precios estén actualizados para que el 80/20 sea confiable. Usalo para decidir qué productos destacar o reponer primero.
+- Mantené costos actualizados para un 80/20 confiable.
+- Combiná con [Productos vendidos](./informe-productos-vendidos.md) si necesitás filtrar por lista de precios.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Stock valorado](./informe-stock-valorado.md)

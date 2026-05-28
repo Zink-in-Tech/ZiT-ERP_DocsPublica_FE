@@ -134,11 +134,14 @@ Usalos cuando:
 
 ## Si algo sale mal
 
-- **No podés avanzar**
-  - Verificá estado.
-
-- **No se genera venta**
-  - Confirmá estado PREPARADO.
+- **No podés avanzar de estado**
+  - Verificá la secuencia: **CONFIRMADO** → **EN_PREPARACION** → **PREPARADO**.
+  - Revisá permisos de la etapa en [Perfiles](../administracion/perfiles.md).
+- **No se genera la venta**
+  - El pedido debe estar en **PREPARADO**.
+  - El contacto no puede ser Consumidor Final (regla de pedidos).
+- **Faltantes en la entrega**
+  - Revisá el informe [Productos faltantes](../informes/informe-productos-faltantes.md) si hay diferencia entre pedido y venta.
 
 ---
 

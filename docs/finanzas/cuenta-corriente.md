@@ -160,6 +160,7 @@ Usá cuenta corriente como referencia principal de deuda.
 
 ## Ver también
 
+- [Finanzas](./finanzas.md)
 - [Pagos](./pagos.md)
 - [Caja diaria](./caja-diaria.md)
 - [Ventas](../ventas/ventas.md)

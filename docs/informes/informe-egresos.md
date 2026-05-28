@@ -1,35 +1,52 @@
 ---
 title: Informe Egresos
-sidebar_position: 65
+description: Generá un PDF de egresos de caja por período para control, cierre y auditoría.
+sidebar_position: 66
+keywords:
+  - informe egresos
+  - egresos caja
+  - PDF egresos
 ---
+
 ## Resumen
 
-- Genera un PDF con los egresos de caja en un rango de fechas.
-- Los egresos son movimientos de salida de dinero registrados en el módulo Egresos (concepto, monto, contacto opcional).
-- El informe agrupa o detalla por fecha y concepto según el diseño del reporte.
-- Sirve para control de caja, auditoría y conciliación.
+Genera un **PDF** con los egresos de caja en un rango de fechas. Los datos provienen del módulo [Egresos](../finanzas/egresos.md) (concepto, monto, contacto opcional).
 
-## Cuándo usar
+---
 
-- Para revisar salidas de caja en un período (gastos, retiros, pagos).
-- Para cerrar caja o conciliar con el módulo Egresos.
-- Para imprimir o archivar el detalle de egresos por fechas.
+## Cuándo usarlo
+
+- Para revisar salidas de caja en un período.
+- Para cerrar caja o conciliar con egresos registrados.
+- Para archivar el detalle por fechas.
+
+---
 
 ## Procedimiento
 
-- Indicá fecha desde y fecha hasta. Pulsá Consultar; el sistema genera un PDF con los egresos del período. Podés visualizarlo en pantalla o descargarlo. No se permiten fechas futuras.
+1. En **Informes**, abrí **Egresos**.
+2. Indicá **fecha desde** y **fecha hasta** (obligatorias; no fechas futuras).
+3. Pulsá **Consultar**; visualizá o descargá el PDF.
 
-## Campos principales
+---
 
-## Fecha desde / Fecha hasta
+## Si algo sale mal
 
-Rango de fechas para el período a consultar. Ambas son obligatorias. Solo fechas pasadas o hoy.
+- **El PDF está vacío**
+  - Verificá que existan egresos en el período y que los [conceptos](../administracion/conceptos.md) sean de tipo egreso.
+- **No puedo elegir fechas futuras**
+  - Comportamiento esperado del informe.
 
-## Reglas de uso
-
-- Los datos provienen de los egresos registrados en el módulo Egresos; los conceptos deben ser de tipo egreso.
-- El permiso de menú controla el acceso al informe.
+---
 
 ## Buenas prácticas
 
-- Revisá que los conceptos de egreso estén bien configurados para que el informe sea claro. Usalo junto con el informe de ingresos y caja diaria para el cierre de caja.
+- Revisá que los conceptos de egreso estén bien definidos.
+- Usalo junto con [Ingresos](./informe-ingresos.md) y [Caja diaria](../finanzas/caja-diaria.md).
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Egresos](../finanzas/egresos.md)

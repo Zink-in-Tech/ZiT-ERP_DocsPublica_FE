@@ -1,57 +1,65 @@
 ---
 title: Notas de débito
-description: Registrá recargos o ajustes sobre ventas realizadas y actualizá la cuenta corriente del cliente.
+description: Registrá recargos o ajustes que incrementan el importe adeudado por el cliente; siempre asociadas a una venta.
 sidebar_position: 31
+keywords:
+  - nota de débito
+  - recargo
+  - diferencia de precio
+  - ajuste cliente
+  - incrementar deuda
 ---
 
 ## Resumen
 
-Las notas de débito permiten registrar ajustes adicionales sobre ventas ya realizadas.
+Las notas de débito registran ajustes que **aumentan** lo que el cliente debe: recargos, diferencias de precio o cargos posteriores a la venta.
 
-Se utilizan para aplicar recargos, diferencias de precio o cualquier ajuste que incremente el importe de una operación.
+Son **comprobantes asociados a una venta**: no podés emitir una nota de débito sin vincularla a una venta existente.
 
-Impactan la cuenta corriente del cliente.
+Impactan la cuenta corriente al confirmarse. No generan una venta nueva.
 
 ---
 
 ## Antes de empezar
 
-- Tener una venta previamente registrada o un cliente asociado.
-- Definir el motivo del ajuste (recargo, diferencia, actualización de precio).
-- Seleccionar el cliente y, cuando corresponda, la venta o comprobante relacionado. Asociarla a una venta mejora la trazabilidad del ajuste.
+- Tener la **venta** a la que corresponde el ajuste (obligatorio).
+- Definir motivo: recargo, diferencia, actualización de precio.
 
 ---
 
 ## Ubicación dentro del sistema
 
-Las notas de débito forman parte del **proceso post-venta**.
-
-Se utilizan después de haber registrado una venta:
+Proceso **post-venta**:
 
 Venta → Nota de débito
 
-👉 Permiten ajustar operaciones aumentando el importe registrado.
+---
+
+## Cuándo usarla
+
+- Detectaste una diferencia de precio después de facturar.
+- Aplicás un recargo por servicio adicional vinculado a esa venta.
+
+No uses nota de débito para corregir a favor del cliente; en ese caso corresponde [Nota de crédito](./notas-credito.md).
 
 ---
 
-## Qué permite hacer
+## Qué cambia y qué no cambia
 
-- Aplicar recargos a una venta
-- Ajustar diferencias de precio
-- Incrementar saldos en cuenta corriente
-- Registrar cargos adicionales posteriores a la venta
+- ✔️ Incrementa cuenta corriente del cliente
+- ✔️ Queda trazada a la venta origen
+- ❌ No genera venta nueva
+- ❌ No puede emitirse sin venta asociada
 
 ---
 
 ## Procedimiento
 
-1. Crear una nueva nota de débito.
-2. Seleccionar la venta asociada (si corresponde).
-3. Definir los importes o conceptos a ajustar.
-4. Verificar los valores.
-5. Confirmar la nota de débito.
-
-Si el sistema exige comprobante relacionado, elegí la venta desde el listado de ventas asociadas al cliente. Si el flujo permite un ajuste sin venta específica, registrá una observación clara para explicar el motivo.
+1. Creá una nueva nota de débito.
+2. Seleccioná la **venta asociada** (obligatorio).
+3. Definí importes o conceptos a ajustar.
+4. Verificá valores.
+5. Confirmá (**CONFIRMADO**).
 
 ---
 
@@ -59,19 +67,8 @@ Si el sistema exige comprobante relacionado, elegí la venta desde el listado de
 
 | Estado     | Descripción |
 |------------|------------|
-| BORRADOR   | Editable. Permite modificar datos antes de confirmar. |
-| CONFIRMADO | No editable. Aplica los ajustes correspondientes. |
-
----
-
-## Qué cambia y qué no cambia
-
-**La nota de débito:**
-
-- ✔️ Incrementa la cuenta corriente del cliente
-- ✔️ Permite ajustar operaciones
-- ❌ No genera una nueva venta
-- ❌ No modifica la operación original
+| BORRADOR   | Editable. |
+| CONFIRMADO | No editable; aplica el ajuste. |
 
 ---
 
@@ -79,54 +76,30 @@ Si el sistema exige comprobante relacionado, elegí la venta desde el listado de
 
 ### Diferencia de precio
 
-Se ajusta una venta que quedó con un valor incorrecto.
+La venta quedó por debajo del valor correcto; la ND incrementa la deuda sobre esa misma venta.
 
 ### Recargo adicional
 
-Se aplica un costo extra posterior a la venta.
-
-### Ajuste manual
-
-Se corrige un importe por fuera del flujo habitual.
-
-Usalo con cuidado y documentá el motivo, especialmente si no queda asociado a una venta concreta.
-
----
-
-## Recomendaciones de uso
-
-Las notas de débito deben utilizarse cuando una operación ya fue registrada pero requiere un ajuste adicional que incrementa su importe.
-
-Es ideal en situaciones como:
-
-- Diferencias detectadas después de la venta
-- Recargos por servicios adicionales
-- Ajustes administrativos
-
-👉 Usalas en lugar de modificar ventas confirmadas para mantener la trazabilidad.
+Flete, instalación u otro cargo posterior a la operación original.
 
 ---
 
 ## Si algo sale mal
 
-- **No podés modificar la nota**
-  - Puede estar en estado CONFIRMADO.
-
-- **El ajuste no se refleja correctamente**
-  - Verificá los importes cargados.
-  - Revisá que la venta o comprobante relacionado corresponda al cliente seleccionado.
-
-- **Diferencias en cuenta corriente**
-  - Revisá la operación asociada.
+- **No podés guardar sin venta**
+  - Debés elegir una venta del cliente; no existe emisión de ND suelta.
+- **No podés modificar**
+  - Estado **CONFIRMADO**.
+- **El saldo no subió como esperabas**
+  - Verificá importes y que la venta asociada sea la correcta.
 
 ---
 
 ## Buenas prácticas
 
-- Asociá la nota a una venta cuando sea posible.
-- Verificá los importes antes de confirmar.
-- Registrá claramente el motivo del ajuste.
-- Evitá modificar ventas ya cerradas.
+- Revisá la venta origen antes de confirmar.
+- Evitá modificar ventas confirmadas; usá la nota para trazabilidad.
+- Revisá [Cuenta corriente](../finanzas/cuenta-corriente.md) después de confirmar.
 
 ---
 
@@ -135,3 +108,4 @@ Es ideal en situaciones como:
 - [Ventas](./ventas.md)
 - [Notas de crédito](./notas-credito.md)
 - [Flujo de ventas](./flujo-ventas.md)
+- [Finanzas](../finanzas/finanzas.md)

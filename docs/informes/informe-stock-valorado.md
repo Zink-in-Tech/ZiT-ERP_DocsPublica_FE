@@ -1,53 +1,68 @@
 ---
 title: Informe Stock Valorado
-sidebar_position: 62
+description: Conocé el valor del inventario por producto, concentración y margen; exportá PDF, Excel o CSV.
+sidebar_position: 63
+keywords:
+  - stock valorado
+  - valor inventario
+  - inventario valorizado
 ---
+
 ## Resumen
 
-- Lista todos los productos con stock y costo según filtros elegidos.
-- Muestra el valor del inventario por producto: código interno, código de barras, descripción, cantidad, costo unitario, total por ítem, % sobre el total (valor), precio de venta (lista por defecto), margen y ubicación.
-- Incluye un resumen ejecutivo (total valorizado, SKUs, unidades, concentración) y totales al pie.
-- Permite filtrar por etiquetas de producto y restringir a solo productos con stock > 0.
-- Export a PDF, Excel y CSV generados en el front con los criterios aplicados.
+Lista productos con stock y costo según filtros. Muestra valor por ítem (cantidad, costo unitario, total, % del total, precio de venta de lista por defecto, margen, ubicación) y un resumen ejecutivo (total valorizado, SKUs, unidades, concentración).
 
-## Cuándo usar
+Permite filtrar por etiquetas y restringir a productos con stock mayor a cero. Exportá PDF, Excel o CSV desde el front.
 
-- Para conocer el valor total del inventario y su composición por producto.
-- Para ver concentración de valor (qué ítems representan la mayor parte del stock valorado).
-- Para revisar margen y precio de venta de referencia por producto (análisis profundo de rentabilidad en el informe Pareto).
-- Para reportes periódicos de inventario valorado con filtros por etiquetas.
+---
+
+## Cuándo usarlo
+
+- Para conocer el valor total del inventario y su composición.
+- Para ver concentración de valor (qué ítems representan la mayor parte).
+- Para reportes periódicos con filtros por etiquetas.
+
+El análisis de ganancia por producto en profundidad está en [80/20](./informe-8020.md); este informe no lo duplica.
+
+---
 
 ## Procedimiento
 
-- Entrá a Informes y elegí "Informe Stock Valorado". Aplicá filtros (etiquetas, solo con stock > 0). Consultá; verás el resumen ejecutivo arriba, la tabla ordenada por valor (total ítem) y los totales al pie. Exportá a PDF, Excel o CSV según necesidad.
+1. En **Informes**, abrí **Stock Valorado**.
+2. Aplicá filtros (etiquetas, solo con stock > 0).
+3. Consultá resumen ejecutivo, tabla y totales al pie.
+4. Exportá a PDF, Excel o CSV según necesidad.
+
+---
 
 ## Campos principales
 
-## Filtros
+| Elemento | Descripción |
+|----------|-------------|
+| Etiquetas | Filtrar o agrupar por etiquetas de producto. |
+| Solo stock > 0 | Si está marcado, excluye productos sin existencia. |
+| Resumen ejecutivo | Total valorizado, SKUs, unidades, concentración (ej. top 5 ítems). |
 
-- **Etiquetas**: filtrar (y opcionalmente agrupar) por etiquetas de producto.
-- **Solo productos con stock > 0**: si está marcado, solo se listan productos con stock mayor a cero; si está desmarcado, se muestran todos según definición.
+---
 
-## Resumen ejecutivo (arriba)
+## Si algo sale mal
 
-Total valorizado, cantidad de SKUs, cantidad total de unidades, indicador de concentración (ej. "Top 5 ítems representan X% del valor").
+- **Totales que no cierran con expectativa**
+  - Verificá costos en [Productos](../administracion/productos.md).
+- **No veo el informe**
+  - Revisá permisos de menú.
 
-## Columnas del informe
-
-Código interno, código de barras, descripción, cantidad (stock), costo unitario, total ítem, % sobre el total (valor), precio de venta (lista por defecto), margen, margen %, ubicación. Orden por defecto: por total ítem descendente.
-
-## Totales al pie
-
-Monto total valorizado, cantidad de SKUs, cantidad total de unidades.
-
-## Reglas de uso
-
-- El backend solo devuelve JSON; PDF, Excel y CSV se generan en el front con título, fecha, criterios y totales.
-- El acceso al informe está controlado por permiso de menú (informes).
-- El análisis de rentabilidad/ganancia por producto queda cubierto por el informe Pareto; este informe no lo duplica.
+---
 
 ## Buenas prácticas
 
-- Usá el filtro "Solo productos con stock > 0" para no llenar el informe de ceros cuando solo te interesa inventario con existencia.
-- Revisá el indicador de concentración para priorizar ítems que representan la mayor parte del valor.
-- Combiná con el informe de stock crítico para reposición y con Pareto para análisis de ganancia.
+- Usá “solo stock > 0” para evitar ruido de productos sin existencia.
+- Revisá concentración para priorizar ítems de mayor valor.
+- Combiná con [Stock crítico](./informe-stock-critico.md) para reposición.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Informe 80/20](./informe-8020.md)

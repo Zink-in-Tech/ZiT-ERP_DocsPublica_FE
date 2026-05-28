@@ -2,6 +2,10 @@
 title: Notificación de cambio de Precio
 description: Enviá actualizaciones de precios desde la central a sucursales o franquicias.
 sidebar_position: 12
+keywords:
+  - notificación precios
+  - actualizar precios sucursales
+  - central precios
 ---
 
 ## Resumen
@@ -45,4 +49,6 @@ Se envían cambios a todas las sucursales.
 
 ## Ver también
 
-- [Recepción de Notificación de cambio de Precio](./notificaciones-recibidas-precio.md)
+- [Administración](./administracion.md)
+- [Recepción de notificación de precio](./notificaciones-recibidas-precio.md)
+- [Productos](./productos.md)

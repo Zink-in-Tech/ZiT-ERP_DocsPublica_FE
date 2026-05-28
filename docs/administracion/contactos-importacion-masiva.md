@@ -2,6 +2,10 @@
 title: Contactos - Importación masiva
 description: Cargá múltiples contactos desde un archivo y gestioná el resultado de la importación.
 sidebar_position: 2
+keywords:
+  - importación contactos
+  - carga masiva clientes
+  - migración contactos
 ---
 
 ## Resumen
@@ -80,4 +84,5 @@ Se ajusta el archivo según el resultado y se vuelve a importar.
 
 ## Ver también
 
+- [Administración](./administracion.md)
 - [Contactos](./contactos.md)

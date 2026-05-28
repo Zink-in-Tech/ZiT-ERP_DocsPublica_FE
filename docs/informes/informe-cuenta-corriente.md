@@ -1,34 +1,52 @@
 ---
 title: Informe Cuenta corriente
-sidebar_position: 72
+description: Descargá un Excel con saldos y movimientos de cuenta corriente por contacto — estado actual.
+sidebar_position: 73
+keywords:
+  - informe cuenta corriente
+  - estado de cuenta
+  - Excel cuenta corriente
 ---
+
 ## Resumen
 
-- Genera un archivo Excel con el estado de cuenta corriente: saldos y movimientos por contacto (clientes o proveedores según el tipo).
-- Se descarga directamente desde la pantalla; no requiere elegir fechas (incluye el estado actual).
-- Sirve para conciliar saldos, enviar a clientes o proveedores y para auditoría.
+Genera un archivo **Excel** con el estado de cuenta corriente: saldos y movimientos por contacto (clientes o proveedores según el tipo). Se descarga desde la pantalla; **no requiere fechas** — refleja el estado actual.
 
-## Cuándo usar
+---
 
-- Para obtener un resumen de saldos de cuenta corriente en Excel.
-- Para enviar el estado de cuenta a clientes o proveedores.
-- Para conciliar con contabilidad o con los movimientos de pagos y comprobantes.
+## Cuándo usarlo
+
+- Para obtener saldos en Excel.
+- Para enviar estado de cuenta a clientes o proveedores.
+- Para conciliar con contabilidad o con [Pagos](../finanzas/pagos.md).
+
+---
 
 ## Procedimiento
 
-- Entrá al informe Cuenta corriente desde Informes. Pulsá el botón para generar/descargar el informe; el sistema genera un archivo Excel con los datos de cuenta corriente y se descarga automáticamente. No hay filtro de fechas: es el estado actual.
+1. En **Informes**, abrí **Cuenta corriente**.
+2. Pulsá generar/descargar; el Excel se descarga automáticamente.
 
-## Campos principales
+---
 
-## Contenido del Excel
+## Si algo sale mal
 
-Saldos por contacto, movimientos (comprobantes, pagos), totales. La estructura depende del diseño del backend (cuenta corriente ventas o compras).
+- **Saldos que no coinciden con lo esperado**
+  - Verificá que comprobantes y pagos estén cargados antes de generar el informe.
+- **No veo el informe**
+  - Revisá permiso de estado de cuenta corriente en tu perfil.
 
-## Reglas de uso
-
-- El informe refleja el estado de cuenta al momento de la generación (saldos y movimientos cargados en el sistema).
-- La visibilidad del informe depende de los permisos de menú (estado de cuenta corriente).
+---
 
 ## Buenas prácticas
 
-- Descargá el informe con la periodicidad que necesites para conciliar. Revisá que los pagos y comprobantes estén cargados para que el saldo sea correcto.
+- Generá el informe con la periodicidad de tu conciliación.
+- Revisá [Cuenta corriente](../finanzas/cuenta-corriente.md) para registrar cobros y pagos pendientes.
+
+---
+
+## Ver también
+
+- [Informes](./informes.md)
+- [Cuenta corriente](../finanzas/cuenta-corriente.md)
+- [Pagos](../finanzas/pagos.md)

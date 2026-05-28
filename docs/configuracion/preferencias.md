@@ -2,6 +2,12 @@
 title: Preferencias
 description: Configuración general de la organización, incluida la pestaña Integraciones y el enlace a las guías por proveedor.
 sidebar_position: 70
+keywords:
+  - preferencias
+  - proceso de pago
+  - lista de precios default
+  - consulta precio
+  - integraciones
 ---
 
 ## Resumen
@@ -92,6 +98,17 @@ Si se debe hacer control completo ante reiteradas inconsistencias (valor indicad
 - Consumidor Final siempre tiene proceso de pago inmediato.
 - Tipo de control y control full ante inconsistencias aplican a las ventas que usen control.
 
+## Si algo sale mal
+
+- **Las ventas no abren el cobro al confirmar**
+  - Revisá **Proceso de pago** (inmediato vs asíncrono). Consumidor Final siempre es inmediato.
+- **No puedo aceptar un presupuesto**
+  - Revisá **Días vencimiento presupuesto**.
+- **La consulta de precios no muestra listas o stock**
+  - Revisá la sección **Pantalla consulta precio de producto** en esta misma pantalla.
+
+---
+
 ## Buenas prácticas
 
 - Revisá días de vencimiento y lista por defecto al iniciar; afectan presupuestos, ventas y compras.
@@ -99,4 +116,6 @@ Si se debe hacer control completo ante reiteradas inconsistencias (valor indicad
 
 ## Ver también
 
+- [Configuración](./configuracion.md)
+- [Datos de la organización](./datos-org.md)
 - [Integraciones](/integraciones) — guías por proveedor (Facturante, Mercado Pago, WooCommerce, seguridad, problemas frecuentes).
