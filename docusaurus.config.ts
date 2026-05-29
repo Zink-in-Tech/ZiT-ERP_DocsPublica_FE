@@ -6,6 +6,15 @@ const config: Config = {
   title: 'ZinK ERP — Documentación',
   tagline: 'Guías y referencia del producto',
   favicon: 'img/favicon.svg',
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '7E47B8905C7F835D',
+      },
+    },
+  ],
 
   future: {
     v4: true,
