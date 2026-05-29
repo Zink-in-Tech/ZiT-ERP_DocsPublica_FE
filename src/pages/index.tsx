@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
+import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
@@ -35,6 +36,9 @@ export default function Home(): ReactNode {
     <Layout
       title={siteConfig.title}
       description="Documentación pública de ZinK ERP: guías, arquitectura y primeros pasos.">
+      <Head>
+        <meta name="algolia-site-verification" content="7E47B8905C7F835D" />
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
