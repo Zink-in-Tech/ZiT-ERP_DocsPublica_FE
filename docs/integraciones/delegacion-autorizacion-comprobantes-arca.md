@@ -59,7 +59,7 @@ Prepará esto antes de ingresar:
 - acceso al servicio **Administrador de Relaciones**;
 - el criterio fiscal correcto de la empresa: **Monotributo** o **Responsable Inscripto / IVA**.
 
-Si alguno de esos servicios no aparece en el menú, tiene que revisarlo la persona que administra la clave fiscal. Si alguno de esos servicios no aparece en el menú, pedile al administrador de la clave fiscal que revise los permisos.
+Si alguno de esos servicios no aparece en el menú, pedile a la persona que administra la clave fiscal que revise los permisos.
 
 ---
 
