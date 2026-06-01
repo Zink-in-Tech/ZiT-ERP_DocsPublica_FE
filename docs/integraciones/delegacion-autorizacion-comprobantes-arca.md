@@ -10,14 +10,14 @@ slug: /integraciones/delegacion-autorizacion-comprobantes-arca
 
 Para emitir factura electrónica desde **ZinkERP** necesitamos que tu empresa (o tu contador) haga un trámite rápido en **ARCA**. Son solo dos pasos y no hace falta compartir clave fiscal.
 
-El trámite tiene dos pasos bien concretos:
-
 1. crear un **punto de venta nuevo**;
 2. delegar el servicio de **Facturación Electrónica** a **Fernando Ariel Demaio (Zink in Tech)**, **CUIT 20-31499393-5**.
 
 Después de eso, **nosotros terminamos la configuración desde nuestro lado** para que la empresa pueda facturar desde ZinK ERP.
 
 > **Importante:** no hace falta compartir clave fiscal.
+
+---
 
 :::caution Importante
 
@@ -27,7 +27,7 @@ Usá un **punto de venta nuevo**, distinto del que ya uses para factura manual, 
 
 ---
 
-## Si lo hace tu cliente o su contador
+## Quién puede hacer este trámite
 
 Esta sección es el mismo instructivo, pero pensado para quien va a ejecutar el trámite:
 
@@ -83,7 +83,7 @@ Si alguno de esos servicios no aparece en el menú, pedile a la persona que admi
 
 8. Seleccioná el domicilio asociado al punto de venta.
 9. Confirmá la operación.
-10. Guardá o anotá el número del punto de venta porque después nos lo tenés que pasar.
+10. Guardá ese número, lo vamos a necesitar al final del trámite.
 
 :::note Recomendación
 
