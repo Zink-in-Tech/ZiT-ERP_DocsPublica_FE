@@ -101,7 +101,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/og-docs-zinkerp.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
