@@ -1,54 +1,79 @@
 import type {ReactNode} from 'react';
-import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
+  description: string;
+  links: {
+    label: string;
+    to: string;
+    external?: boolean;
+  }[];
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Documentación centralizada',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Un solo lugar para guías de producto, conceptos y referencias que evolucionan con ZinK ERP.
-      </>
-    ),
+    title: '🆕 Arrancar con el sistema',
+    description:
+      'Primera vez en ZinkERP. Configuración inicial, arquitectura y primeros 4 días.',
+    links: [
+      {label: 'Primeros pasos', to: '/primeros-pasos'},
+      {label: 'Cómo funciona ZinkERP', to: '/arquitectura'},
+      {label: 'Validar en 4 días', to: '/primeros-4-dias'},
+    ],
   },
   {
-    title: 'Estructura clara',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Navegación por secciones para que equipos de implementación y usuarios encuentren lo que necesitan.
-      </>
-    ),
+    title: '⚙️ Operar el día a día',
+    description:
+      'Ventas, compras, finanzas e inventario. Lo que usás todos los días.',
+    links: [
+      {label: 'Flujo de ventas', to: '/ventas/flujo-ventas'},
+      {label: 'Flujo de compras', to: '/compras/flujo-compras'},
+      {label: 'Caja diaria', to: '/finanzas/caja-diaria'},
+      {label: 'Inventario', to: '/inventario/inventarios'},
+    ],
   },
   {
-    title: 'Actualización continua',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Este sitio se despliega desde el repositorio; los cambios en la rama principal se publican de forma automática.
-      </>
-    ),
+    title: '🛠️ Resolver un problema',
+    description:
+      'Algo no funciona. Troubleshooting, errores frecuentes y soporte.',
+    links: [
+      {
+        label: 'Problemas de integración',
+        to: '/integraciones/problemas-frecuentes',
+      },
+      {label: 'Guía rápida por necesidad', to: '/intro#por-dónde-empezar'},
+      {label: 'Sitio web ZinkERP →', to: 'https://zinkerp.com', external: true},
+    ],
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, description, links}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+    <div className="col col--4">
+      <article className="card">
+        <div className="card__header">
+          <Heading as="h3">{title}</Heading>
+        </div>
+        <div className="card__body">
+          <p>{description}</p>
+          <ul className={styles.linkList}>
+            {links.map((link) => (
+              <li key={link.to}>
+                <Link
+                  to={link.to}
+                  {...(link.external
+                    ? {target: '_blank', rel: 'noopener noreferrer'}
+                    : {})}>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </article>
     </div>
   );
 }
@@ -57,6 +82,9 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <Heading as="h2" className={styles.sectionTitle}>
+          ¿Qué necesitás hacer?
+        </Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

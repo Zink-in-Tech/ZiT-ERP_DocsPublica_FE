@@ -2,7 +2,6 @@ import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Head from '@docusaurus/Head';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
@@ -10,19 +9,25 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Documentación ZinkERP
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Guías operativas, configuración y troubleshooting para tu día a día.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
+            to="/primeros-pasos">
+            🚀 Primeros pasos
+          </Link>
+          <Link
+            className="button button--outline button--secondary button--lg"
             to="/intro">
-            Ir a la documentación
+            📖 Explorar documentación
           </Link>
         </div>
       </div>
@@ -31,11 +36,10 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.title}
-      description="Documentación pública de ZinK ERP: guías, arquitectura y primeros pasos.">
+      title="Documentación ZinkERP"
+      description="Guías operativas, configuración y troubleshooting de ZinkERP para implementación, operación diaria y soporte.">
       <Head>
         <meta name="algolia-site-verification" content="7E47B8905C7F835D" />
       </Head>
