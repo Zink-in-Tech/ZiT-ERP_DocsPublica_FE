@@ -1,10 +1,12 @@
 ---
-title: "Delegar autorización de comprobantes en ARCA | ZinkERP Docs"
+title: "Comprobantes Fiscales ARCA"
 sidebar_label: "Delegar autorización de comprobantes en ARCA"
-description: "Paso a paso para crear un punto de venta y delegar el servicio de autorización de comprobantes fiscales en ARCA a Fernando Ariel Demaio (Zink in Tech)."
+description: "Cómo dejar listo ARCA para emitir comprobantes fiscales electrónicos desde ZinkERP. Creá un punto de venta y deleganos el servicio de facturación electrónica."
 sidebar_position: 6
 slug: /integraciones/delegacion-autorizacion-comprobantes-arca
 ---
+
+# Comprobantes Fiscales ARCA
 
 ## Resumen
 
