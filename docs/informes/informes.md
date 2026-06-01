@@ -1,6 +1,7 @@
 ---
-title: Informes
-description: Consultá stock, ventas, caja y cuenta corriente desde el Centro de informes; elegí el informe según la decisión que necesitás tomar.
+title: "Informes | ZinkERP Docs"
+sidebar_label: "Informes"
+description: "Consultá stock, ventas, caja y cuenta corriente desde el Centro de informes. Incluye filtros, uso recomendado y problemas frecuentes."
 sidebar_position: 60
 keywords:
   - informes

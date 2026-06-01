@@ -1,6 +1,7 @@
 ---
-title: Cotizaciones
-description: Mostrá precios por distintas listas en una misma propuesta para que el cliente compare antes de definir la compra.
+title: "Cotizaciones | ZinkERP Docs"
+sidebar_label: "Cotizaciones"
+description: "Mostrá precios por distintas listas en una misma propuesta para que el cliente compare antes de definir la compra. Incluye procedimiento, estados, impacto operativo y solución de problemas."
 sidebar_position: 2
 keywords:
   - cotizaciones

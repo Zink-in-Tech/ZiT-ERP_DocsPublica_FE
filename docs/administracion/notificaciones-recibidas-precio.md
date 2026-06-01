@@ -1,6 +1,7 @@
 ---
-title: Recepción de Notificación de cambio de Precio
-description: Recibí y aplicá cambios de precios enviados desde la central.
+title: "Recepción de Notificación de cambio de Precio | ZinkERP Docs"
+sidebar_label: "Recepción de Notificación de cambio de Precio"
+description: "Recibí y aplicá cambios de precios enviados desde la central. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 13
 keywords:
   - recibir precios

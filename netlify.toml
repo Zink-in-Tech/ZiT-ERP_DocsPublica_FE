@@ -5,6 +5,13 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Dominio canónico
+[[redirects]]
+  from = "https://zinkerp-docs.netlify.app/*"
+  to = "https://docs.zinkerp.com/:splat"
+  status = 301
+  force = true
+
 # Rutas antiguas (/docs/...) tras mover la documentación a la raíz del sitio
 [[redirects]]
   from = "/docs"
@@ -14,4 +21,9 @@
 [[redirects]]
   from = "/docs/*"
   to = "/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/ayuda/integraciones/*"
+  to = "/integraciones/:splat"
   status = 301

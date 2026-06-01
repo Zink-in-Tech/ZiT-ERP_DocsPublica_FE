@@ -1,6 +1,7 @@
 ---
-title: Cómo funcionan las integraciones
-description: Qué es un servicio externo, OAuth, claves REST y mapeo de productos, explicado sin jerga técnica para administradores de ZinK ERP.
+title: "Cómo funcionan las integraciones | ZinkERP Docs"
+sidebar_label: "Cómo funcionan las integraciones"
+description: "Qué es un servicio externo, OAuth, claves REST y mapeo de productos en ZinkERP. Incluye requisitos y problemas frecuentes."
 sidebar_position: 2
 ---
 

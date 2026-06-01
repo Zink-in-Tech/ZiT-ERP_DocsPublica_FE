@@ -1,6 +1,7 @@
 ---
-title: Nuevas Organizaciones
-description: Creá sucursales o puntos de venta y configurá su estructura operativa dentro del sistema.
+title: "Nuevas Organizaciones | ZinkERP Docs"
+sidebar_label: "Nuevas Organizaciones"
+description: "Creá sucursales o puntos de venta y configurá su estructura operativa dentro del sistema. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 60
 keywords:
   - nueva organización
@@ -75,6 +76,7 @@ Se crea con acceso restringido y requiere usuario administrador nuevo.
 ## Ver también
 
 - [Administración](./administracion.md)
+- [Múltiples sucursales](./multi-sucursal.md)
 - [Datos de la organización](../configuracion/datos-org.md)
 - [Contactos](./contactos.md)
 - [Usuarios](./usuarios.md)

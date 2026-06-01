@@ -1,7 +1,8 @@
 ---
-title: Mercado Libre y otros servicios
-description: Integraciones adicionales listadas en ZinK ERP. Mercado Libre y otros códigos según lo habilite el backend.
-sidebar_position: 6
+title: "Mercado Libre y otros servicios | ZinkERP Docs"
+sidebar_label: "Mercado Libre y otros servicios"
+description: "Integraciones adicionales listadas en ZinK ERP. Mercado Libre y otros códigos según lo habilite el backend. Incluye requisitos, pasos de configuración y solución de problemas frecuentes."
+sidebar_position: 7
 ---
 
 ## Resumen

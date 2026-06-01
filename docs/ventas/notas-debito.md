@@ -1,6 +1,7 @@
 ---
-title: Notas de débito
-description: Registrá recargos o ajustes que incrementan el importe adeudado por el cliente; siempre asociadas a una venta.
+title: "Notas de débito | ZinkERP Docs"
+sidebar_label: "Notas de débito"
+description: "Registrá recargos o ajustes que incrementan el importe adeudado por el cliente; siempre asociadas a una venta. Incluye procedimiento, estados, impacto operativo y solución de problemas."
 sidebar_position: 31
 keywords:
   - nota de débito
@@ -69,6 +70,30 @@ No uses nota de débito para corregir a favor del cliente; en ese caso correspon
 |------------|------------|
 | BORRADOR   | Editable. |
 | CONFIRMADO | No editable; aplica el ajuste. |
+
+La documentación y páginas actuales no confirman estados adicionales para notas de débito, como **ANULADO** o **RECHAZADO**.
+
+<!-- TODO(producto): validar en el código del producto si notas de débito soportan ANULADO, RECHAZADO u otros estados y actualizar esta tabla. -->
+
+---
+
+## Ajustes parciales
+
+Una nota de débito puede cubrir un ajuste parcial cuando solo falta cobrar una parte de la operación original: una diferencia de precio, un cargo adicional o un servicio asociado a la venta.
+
+Ejemplo: vendiste un producto y después corresponde sumar un flete de $3.000. Asociá la nota de débito a la venta original, cargá el concepto o importe adicional y verificá el impacto en cuenta corriente.
+
+---
+
+## Cuándo usar ND vs nota de crédito
+
+| Situación | Documento |
+|-----------|-----------|
+| Falta cobrar una diferencia a favor de la empresa | Nota de débito |
+| Se agrega un recargo posterior asociado a la venta | Nota de débito |
+| El cliente devuelve productos o corresponde reducir deuda | [Nota de crédito](./notas-credito.md) |
+
+Ejemplo: si facturaste $45.000 y correspondía $50.000, usá nota de débito por $5.000. Si facturaste $50.000 y correspondía $45.000, usá nota de crédito por $5.000.
 
 ---
 

@@ -1,6 +1,7 @@
 ---
-title: Datos de la Organización
-description: Configurá logo, razón social, CUIT y direcciones que figuran en comprobantes e informes de tu organización.
+title: "Datos de la Organización | ZinkERP Docs"
+sidebar_label: "Datos de la Organización"
+description: "Configurá logo, razón social, CUIT y direcciones que figuran en comprobantes e informes de tu organización. Incluye configuración inicial, impacto operativo y enlaces relacionados."
 sidebar_position: 71
 keywords:
   - datos organización

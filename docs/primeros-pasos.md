@@ -1,7 +1,8 @@
 ---
 sidebar_position: 3
-title: Primeros pasos
-description: Configurá ZinK ERP y validá la primera operación según tu tipo de negocio — POS, flujo comercial o compras.
+title: "Primeros pasos | ZinkERP Docs"
+sidebar_label: "Primeros pasos"
+description: "Configurá ZinK ERP y validá la primera operación según tu tipo de negocio — POS, flujo comercial o compras. Incluye contexto operativo, pasos recomendados y enlaces para seguir avanzando."
 keywords:
   - configuración inicial
   - onboarding
@@ -65,7 +66,7 @@ Impacta en comprobantes e informes.
 
 ### 3.2 Preferencias
 
-Definí listas de precios, vencimientos, formatos de comprobantes, comportamiento de ventas y compras, y manejo de stock, caja y pagos. Ver [Preferencias](./configuracion/preferencias.md).
+Definí [listas de precio](./configuracion/listas-precio.md), [medios de pago](./configuracion/medios-pago.md), vencimientos, formatos de comprobantes, comportamiento de ventas y compras, y manejo de stock, caja y pagos. Ver [Preferencias](./configuracion/preferencias.md).
 
 Estas configuraciones afectan toda la operación.
 
@@ -77,7 +78,7 @@ Cada usuario verá y podrá hacer solo lo que le corresponde.
 
 ### 3.4 Organizaciones (si aplica)
 
-Si trabajás con múltiples sucursales, configurá cada organización, asigná responsables y vinculá contactos. Ver [Alta de organización](./administracion/organizacion-alta.md).
+Si trabajás con múltiples sucursales, configurá cada organización, asigná responsables y vinculá contactos. Ver [Alta de organización](./administracion/organizacion-alta.md) y [Múltiples sucursales](./administracion/multi-sucursal.md).
 
 ### 3.5 Configuración mínima por tipo de negocio
 

@@ -1,6 +1,7 @@
 ---
-title: Consulta de precios
-description: Consultá precios por lista y stock visible antes de cotizar, vender o atender en mostrador; no genera comprobantes.
+title: "Consulta de precios | ZinkERP Docs"
+sidebar_label: "Consulta de precios"
+description: "Consultá precios por lista y stock visible antes de cotizar, vender o atender en mostrador; no genera comprobantes. Incluye procedimiento, estados, impacto operativo y solución de problemas."
 sidebar_position: 10
 keywords:
   - consulta de precios

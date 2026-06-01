@@ -1,6 +1,7 @@
 ---
-title: Actualización masiva de productos
-description: Modificá costos, precios, datos o etiquetas de varios productos a la vez desde la grilla o un archivo.
+title: "Actualización masiva de productos | ZinkERP Docs"
+sidebar_label: "Actualización masiva de productos"
+description: "Modificá costos, precios, datos o etiquetas de varios productos a la vez desde la grilla o un archivo. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 4
 keywords:
   - actualización masiva

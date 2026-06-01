@@ -1,6 +1,7 @@
 ---
-title: Usuarios
-description: Administrá los accesos al sistema y los permisos de cada colaborador.
+title: "Usuarios | ZinkERP Docs"
+sidebar_label: "Usuarios"
+description: "Administrá los accesos al sistema y los permisos de cada colaborador. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 8
 keywords:
   - usuarios
@@ -64,4 +65,4 @@ Se puede inactivar o desbloquear el usuario.
 
 - [Administración](./administracion.md)
 - [Perfiles](./perfiles.md)
-- [Perfil de usuario](../admin/perfil-usuario.md)
+- [Perfil de usuario](./perfil-usuario.md)

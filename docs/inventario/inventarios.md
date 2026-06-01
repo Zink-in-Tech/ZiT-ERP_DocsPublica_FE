@@ -1,6 +1,7 @@
 ---
-title: Registro de inventario
-description: Registrá ajustes de stock que no provienen de compras o ventas y mantené la consistencia del inventario.
+title: "Registro de inventario | ZinkERP Docs"
+sidebar_label: "Registro de inventario"
+description: "Registrá ajustes de stock que no provienen de compras o ventas y mantené la consistencia del inventario. Incluye procedimiento, impacto en stock y solución de problemas frecuentes."
 keywords:
   - inventario
   - stock

@@ -1,6 +1,7 @@
 ---
-title: Configuración
-description: Configurá datos fiscales de la organización y preferencias que definen cómo opera ZinK ERP en ventas, compras y finanzas.
+title: "Ajustes del sistema: preferencias y datos fiscales | ZinkERP Docs"
+description: "Toda la documentación de Ajustes del sistema en ZinkERP: datos fiscales, preferencias, listas de precio, medios de pago e integraciones."
+sidebar_label: "Configuración"
 sidebar_position: 69
 keywords:
   - configuración
@@ -23,7 +24,15 @@ Conviene completarla antes de operar a escala.
 |-----------|----------|
 | Logo, CUIT, razón social y direcciones | [Datos de la organización](./datos-org.md) |
 | Listas, vencimientos, proceso de pago, consulta de precios | [Preferencias](./preferencias.md) |
+| Listas para clientes, POS, cotizaciones y ventas | [Listas de precio](./listas-precio.md) |
+| Efectivo, transferencia, tarjeta, Mercado Pago y cuenta corriente | [Medios de pago](./medios-pago.md) |
 | Facturante, Mercado Pago, WooCommerce | [Integraciones](../integraciones/intro.md) (pestaña en Preferencias) |
+
+---
+
+## ¿No encontrás lo que buscás?
+
+Si necesitás crear contactos, productos, usuarios, perfiles, impuestos o conceptos de ingresos/egresos, mirá también [Administración](../administracion/administracion.md).
 
 ---
 
@@ -31,8 +40,9 @@ Conviene completarla antes de operar a escala.
 
 1. [Datos de la organización](./datos-org.md)
 2. [Preferencias](./preferencias.md)
-3. Maestros en [Administración](../administracion/administracion.md) (contactos, productos, conceptos)
-4. [Integraciones](../integraciones/intro.md) si aplica facturación o cobros externos
+3. [Listas de precio](./listas-precio.md) y [medios de pago](./medios-pago.md), si aplican al flujo comercial.
+4. Maestros en [Administración](../administracion/administracion.md) (contactos, productos, conceptos)
+5. [Integraciones](../integraciones/intro.md) si aplica facturación o cobros externos
 
 ---
 

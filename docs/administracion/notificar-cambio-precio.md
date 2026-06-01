@@ -1,6 +1,7 @@
 ---
-title: Notificación de cambio de Precio
-description: Enviá actualizaciones de precios desde la central a sucursales o franquicias.
+title: "Notificación de cambio de Precio | ZinkERP Docs"
+sidebar_label: "Notificación de cambio de Precio"
+description: "Enviá actualizaciones de precios desde la central a sucursales o franquicias. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 12
 keywords:
   - notificación precios

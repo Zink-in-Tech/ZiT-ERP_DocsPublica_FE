@@ -1,6 +1,7 @@
 ---
-title: Consulta de stock
-description: Consultá el stock disponible por producto y organización para tomar decisiones de venta o reposición.
+title: "Consulta de stock | ZinkERP Docs"
+sidebar_label: "Consulta de stock"
+description: "Consultá el stock disponible por producto y organización para tomar decisiones de venta o reposición. Incluye procedimiento, impacto en stock y solución de problemas frecuentes."
 keywords:
   - consulta de stock
   - stock inter organización

@@ -1,8 +1,9 @@
 ---
-title: Facturante
-description: Configurá facturación electrónica en ZinkERP con Facturante, datos fiscales, plazos ARCA, términos e instructivo del asistente.
+title: "Facturante | ZinkERP Docs"
+sidebar_label: "Facturante"
+description: "Configurá facturación electrónica en ZinkERP con Facturante. Incluye datos fiscales, plazos ARCA y problemas frecuentes."
 sidebar_position: 3
-slug: /ayuda/integraciones/facturante
+slug: /integraciones/facturante
 ---
 
 ## Resumen

@@ -1,7 +1,8 @@
 ---
-title: Perfil de usuario
-description: Consultá y editá tu usuario, contraseña, avatar y modo oscuro; no administrás otros usuarios desde acá.
-sidebar_position: 7
+title: "Perfil de usuario | ZinkERP Docs"
+sidebar_label: "Perfil de usuario"
+description: "Consultá y editá tu usuario, contraseña, avatar y modo oscuro; no administrás otros usuarios desde acá. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
+sidebar_position: 10
 keywords:
   - perfil usuario
   - cambiar contraseña

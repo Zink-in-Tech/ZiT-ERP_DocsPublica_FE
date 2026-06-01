@@ -1,6 +1,7 @@
 ---
-title: Informe Promociones por vencer
-description: Listá promociones y listas de precio promocionales que vencen pronto para renovar o comunicar ofertas.
+title: "Informe Promociones por vencer | ZinkERP Docs"
+sidebar_label: "Informe Promociones por vencer"
+description: "Listá promociones y listas de precio promocionales que vencen pronto para renovar o comunicar ofertas. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
 sidebar_position: 69
 keywords:
   - promociones por vencer

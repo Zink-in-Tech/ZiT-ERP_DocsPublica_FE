@@ -1,6 +1,7 @@
 ---
-title: Informe Etiquetas circulares
-description: Listá productos con etiqueta circular para destacados u ofertas; imprimí o exportá para góndola.
+title: "Informe Etiquetas circulares | ZinkERP Docs"
+sidebar_label: "Informe Etiquetas circulares"
+description: "Listá productos con etiqueta circular para destacados u ofertas; imprimí o exportá para góndola. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
 sidebar_position: 65
 keywords:
   - etiquetas circulares

@@ -1,6 +1,7 @@
 ---
-title: Impuestos
-description: Configurá tributos que afectan precios y operaciones comerciales en el sistema.
+title: "Impuestos | ZinkERP Docs"
+sidebar_label: "Impuestos"
+description: "Configurá tributos que afectan precios y operaciones comerciales en el sistema. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 6
 keywords:
   - impuestos

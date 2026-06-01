@@ -43,16 +43,24 @@ const config: Config = {
             to: '/integraciones',
           },
           {
-            from: '/integraciones/woocommerce',
-            to: '/ayuda/integraciones/woocommerce',
+            from: '/ayuda/integraciones/woocommerce',
+            to: '/integraciones/woocommerce',
           },
           {
-            from: '/integraciones/mercado-pago',
-            to: '/ayuda/integraciones/mercado-pago',
+            from: '/ayuda/integraciones/mercado-pago',
+            to: '/integraciones/mercado-pago',
           },
           {
-            from: '/integraciones/facturante',
-            to: '/ayuda/integraciones/facturante',
+            from: '/ayuda/integraciones/facturante',
+            to: '/integraciones/facturante',
+          },
+          {
+            from: '/ayuda/integraciones/delegacion-autorizacion-comprobantes-arca',
+            to: '/integraciones/delegacion-autorizacion-comprobantes-arca',
+          },
+          {
+            from: '/admin/dashboard',
+            to: '/admin/tablero',
           },
           {
             from: '/compras/orden-compras',
@@ -137,6 +145,14 @@ const config: Config = {
             {
               label: 'Integraciones',
               to: '/integraciones',
+            },
+            {
+              label: 'Problemas frecuentes',
+              to: '/problemas-frecuentes',
+            },
+            {
+              label: 'Glosario',
+              to: '/glosario',
             },
           ],
         },

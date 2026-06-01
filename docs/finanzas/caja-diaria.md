@@ -1,6 +1,7 @@
 ---
-title: Caja diaria
-description: Analizá en tiempo real el estado financiero del negocio y conciliá todos los movimientos del día.
+title: "Caja diaria | ZinkERP Docs"
+sidebar_label: "Caja diaria"
+description: "Analizá en tiempo real el estado financiero del negocio y conciliá todos los movimientos del día. Incluye procedimiento, impacto en caja y cuenta corriente y solución de problemas."
 keywords:
   - caja diaria
   - cierre de caja
@@ -23,7 +24,7 @@ Permite visualizar en un solo lugar:
 - dinero disponible
 - ventas y compras
 - ingresos y egresos
-- medios de pago
+- [medios de pago](../configuracion/medios-pago.md)
 - movimientos fiscales
 
 Es la herramienta principal para controlar que el negocio esté funcionando correctamente a nivel financiero.
@@ -166,6 +167,8 @@ Al finalizar el día:
 ---
 
 ### Control de medios de pago
+
+Ver [Medios de pago](../configuracion/medios-pago.md) si necesitás revisar qué opciones están disponibles para cobrar o pagar.
 
 Analizar cómo se están cobrando las ventas:
 

@@ -1,6 +1,7 @@
 ---
-title: Informe Ingresos
-description: Generá un PDF de ingresos de caja por período; movimientos manuales distintos de ventas.
+title: "Informe Ingresos | ZinkERP Docs"
+sidebar_label: "Informe Ingresos"
+description: "Generá un PDF de ingresos de caja por período; movimientos manuales distintos de ventas. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
 sidebar_position: 67
 keywords:
   - informe ingresos

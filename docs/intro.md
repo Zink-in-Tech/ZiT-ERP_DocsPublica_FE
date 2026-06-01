@@ -1,7 +1,8 @@
 ---
 sidebar_position: 1
-title: Introducción
-description: Punto de entrada a la ayuda de ZinK ERP — onboarding, flujos de ventas y compras, finanzas, inventario e integraciones.
+title: "Introducción | ZinkERP Docs"
+sidebar_label: "Introducción"
+description: "Documentación ZinkERP: guías del sistema de gestión para pymes, primeros pasos, ventas, compras, finanzas e integraciones."
 keywords:
   - ayuda ZinK ERP
   - documentación
@@ -32,6 +33,7 @@ Esta documentación te ayuda a operar sin adivinar: cada artículo explica qué 
 | Ajustar stock sin compra/venta | [Inventario](./inventario/inventario.md) |
 | Conectar Facturante, Mercado Pago o tienda | [Integraciones](./integraciones/intro.md) |
 | Analizar ventas o stock | [Informes](/informes) |
+| Resolver un bloqueo general | [Problemas frecuentes](./problemas-frecuentes.md) |
 
 ---
 
@@ -86,3 +88,4 @@ El orden en que trabajás impacta directamente en el control del negocio.
 - [Primeros pasos](./primeros-pasos.md)
 - [Flujo de ventas](./ventas/flujo-ventas.md)
 - [Finanzas](./finanzas/finanzas.md)
+- [Problemas frecuentes](./problemas-frecuentes.md)

@@ -1,7 +1,8 @@
 ---
 sidebar_position: 2
-title: Cómo funciona ZinK ERP
-description: Entendé cómo se conectan ventas, compras, inventario y finanzas dentro del sistema.
+title: "Cómo funciona ZinK ERP | ZinkERP Docs"
+sidebar_label: "Cómo funciona ZinK ERP"
+description: "Entendé cómo se conectan ventas, compras, inventario y finanzas dentro del sistema. Incluye contexto operativo, pasos recomendados y enlaces para seguir avanzando."
 ---
 
 ## Resumen
@@ -86,7 +87,7 @@ Cada acción que realizás genera impacto automático:
 
 ## Estructura organizacional
 
-ZinK ERP es un sistema **multiorganización**.
+ZinK ERP es un sistema **multiorganización**. Si operás con varias sucursales, ver [Múltiples sucursales](./administracion/multi-sucursal.md).
 
 Cada organización representa:
 

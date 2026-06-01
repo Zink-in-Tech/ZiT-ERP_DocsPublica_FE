@@ -1,6 +1,7 @@
 ---
-title: Importación de Productos
-description: Cargá el catálogo de productos en lote desde CSV o Excel con archivo de resultado y control de errores.
+title: "Importación de Productos | ZinkERP Docs"
+sidebar_label: "Importación de Productos"
+description: "Cargá el catálogo de productos en lote desde CSV o Excel con archivo de resultado y control de errores. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 3
 keywords:
   - importación productos

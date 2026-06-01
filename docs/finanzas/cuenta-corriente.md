@@ -1,6 +1,7 @@
 ---
-title: Cuenta corriente
-description: Consultá y controlá las deudas con clientes y proveedores, con trazabilidad completa de movimientos.
+title: "Cuenta corriente | ZinkERP Docs"
+sidebar_label: "Cuenta corriente"
+description: "Consultá y controlá las deudas con clientes y proveedores, con trazabilidad completa de movimientos. Incluye procedimiento, impacto en caja y cuenta corriente y solución de problemas."
 keywords:
   - cuenta corriente
   - deuda clientes

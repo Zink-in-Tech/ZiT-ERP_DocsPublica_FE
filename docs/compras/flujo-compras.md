@@ -1,6 +1,7 @@
 ---
-title: Flujo de compras
-description: Entendé cómo funciona el proceso completo desde la orden de compra hasta el registro de la compra en ZinK ERP.
+title: "Flujo de compras | ZinkERP Docs"
+sidebar_label: "Flujo de compras"
+description: "Entendé cómo funciona el proceso completo desde la orden de compra hasta el registro de la compra en ZinK ERP. Incluye procedimiento, estados, impacto operativo y solución de problemas."
 sidebar_position: 1
 ---
 
@@ -42,6 +43,8 @@ La flecha punteada indica que la **compra** puede generarse desde una orden conf
 | Compra           | BORRADOR       | INGRESADO            | —                |
 
 En compras no existe la acción **Rechazar** como en ventas; el cierre alternativo es **CANCELADO**.
+
+Para ingresos completos o parciales de mercadería, ver [Recepción de mercadería](./recepcion-mercaderia.md). Para devoluciones o ajustes con proveedores, ver [Notas de crédito de compras](./notas-credito-compras.md).
 
 ---
 
@@ -150,5 +153,7 @@ Se registra la compra y la deuda queda pendiente en la cuenta corriente del prov
 
 - [Órdenes de compra](./orden-compras.md)
 - [Compras](./compras.md)
+- [Recepción de mercadería](./recepcion-mercaderia.md)
+- [Notas de crédito de compras](./notas-credito-compras.md)
 - [Pagos](../finanzas/pagos.md)
 - [Cuenta corriente](../finanzas/cuenta-corriente.md)

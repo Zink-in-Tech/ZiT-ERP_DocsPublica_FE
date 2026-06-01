@@ -1,6 +1,7 @@
 ---
-title: POS (Punto de venta)
-description: Registrá ventas rápidas en mostrador con carga ágil de productos y cobro inmediato.
+title: "POS (Punto de venta) | ZinkERP Docs"
+sidebar_label: "POS (Punto de venta)"
+description: "Registrá ventas rápidas en mostrador con carga ágil de productos y cobro inmediato. Incluye procedimiento, estados, impacto operativo y solución de problemas."
 keywords:
   - POS
   - punto de venta
@@ -29,7 +30,7 @@ También podés encontrarlo o buscarlo como **punto de venta**, **venta rápida*
 ## Antes de empezar
 
 - Verificá que los productos tengan precios configurados.
-- Confirmá los medios de pago disponibles.
+- Confirmá los [medios de pago](../configuracion/medios-pago.md) disponibles.
 - El usuario debe tener permiso para **realizar cobro en ventas**.
 - Algunas configuraciones dependen de preferencias del sistema.
 - Por defecto se usa **Consumidor Final** con la lista configurada para la organización. Si elegís un cliente, el POS puede aplicar la lista asociada a ese contacto.
@@ -125,11 +126,11 @@ Subtotal, descuentos y total final.
 
 Por defecto Consumidor Final.
 
-Si seleccionás un contacto, pueden cambiar condiciones comerciales, listas de precios o comportamiento de cuenta corriente según la configuración de la organización.
+Si seleccionás un contacto, pueden cambiar condiciones comerciales, [listas de precio](../configuracion/listas-precio.md) o comportamiento de cuenta corriente según la configuración de la organización.
 
 ### Lista de precios
 
-El POS calcula precios con la misma lógica de ventas: usa la lista por defecto de la organización para **Consumidor Final** y puede cambiar a la lista del cliente cuando seleccionás un contacto. Si el precio no coincide con lo esperado, revisá primero el cliente elegido y la configuración de listas del producto.
+El POS calcula precios con la misma lógica de ventas: usa la lista por defecto de la organización para **Consumidor Final** y puede cambiar a la lista del cliente cuando seleccionás un contacto. Si el precio no coincide con lo esperado, revisá primero el cliente elegido y la configuración de [listas de precio](../configuracion/listas-precio.md) del producto.
 
 ### Finalizar
 
@@ -189,6 +190,7 @@ Es ideal en negocios donde:
   - Si usaste búsqueda por texto y había varios productos similares, probá con código de barras, código exacto o **[F4] Listado**.
 
 - **Problemas con medios de pago**
+  - Revisá [Medios de pago](../configuracion/medios-pago.md), permisos y configuración del punto de venta.
   - Verificá configuración del sistema.
 
 - **No encontrás el producto**

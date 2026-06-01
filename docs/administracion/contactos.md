@@ -1,6 +1,7 @@
 ---
-title: Contactos
-description: Gestioná clientes y proveedores utilizados en ventas, compras y operaciones comerciales.
+title: "Contactos | ZinkERP Docs"
+sidebar_label: "Contactos"
+description: "Gestioná clientes y proveedores utilizados en ventas, compras y operaciones comerciales. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 1
 keywords:
   - contactos
@@ -23,7 +24,7 @@ También permiten definir condiciones comerciales específicas como bonificacion
 ## Antes de empezar
 
 - Definí correctamente los datos fiscales del contacto.
-- Configurá la lista de precios si corresponde.
+- Configurá la [lista de precio](../configuracion/listas-precio.md) si corresponde.
 - Verificá condiciones comerciales (bonificaciones, vencimientos, envío).
 
 ---
@@ -86,7 +87,7 @@ Referentes dentro del cliente o proveedor.
 
 ### Cliente habitual
 
-Se configura lista de precios y condiciones comerciales específicas.
+Se configura [lista de precio](../configuracion/listas-precio.md) y condiciones comerciales específicas.
 
 ### Proveedor
 

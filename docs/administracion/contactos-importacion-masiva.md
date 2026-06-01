@@ -1,6 +1,7 @@
 ---
-title: Contactos - Importación masiva
-description: Cargá múltiples contactos desde un archivo y gestioná el resultado de la importación.
+title: "Contactos - Importación masiva | ZinkERP Docs"
+sidebar_label: "Contactos - Importación masiva"
+description: "Cargá múltiples contactos desde un archivo y gestioná el resultado de la importación. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 sidebar_position: 2
 keywords:
   - importación contactos

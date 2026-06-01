@@ -1,6 +1,7 @@
 ---
-title: Tablero
-description: Pantalla de inicio con indicadores y accesos rápidos; en el producto equivale al Dashboard.
+title: "Tablero | ZinkERP Docs"
+sidebar_label: "Tablero"
+description: "Pantalla principal con indicadores, alertas y accesos rápidos según tu rol y organización en ZinK ERP. Incluye contexto operativo, pasos recomendados y enlaces para seguir avanzando."
 sidebar_position: 0
 keywords:
   - tablero
@@ -11,9 +12,9 @@ keywords:
 
 ## Resumen
 
-**Tablero** y [Dashboard](./dashboard.md) son la **misma pantalla** en ZinK ERP: vista general al ingresar, con indicadores y accesos según tu rol y organización.
+El **Tablero** es la pantalla principal al ingresar a ZinK ERP: muestra indicadores, alertas y accesos rápidos según tu rol y la organización activa.
 
-En el menú puede figurar como **Tablero** o **Dashboard** según la versión o el perfil; el contenido y el uso son equivalentes.
+En versiones anteriores también podía aparecer como **Dashboard**. Para evitar duplicados, la documentación usa el nombre **Tablero**.
 
 ---
 
@@ -26,12 +27,24 @@ En el menú puede figurar como **Tablero** o **Dashboard** según la versión o 
 
 ## Procedimiento
 
-Seguí los pasos del artículo [Dashboard](./dashboard.md): ingresá, revisá indicadores y usá los enlaces del panel.
+1. Ingresá al sistema y seleccioná la organización si corresponde.
+2. Revisá los indicadores y alertas visibles.
+3. Usá los accesos rápidos para ir al módulo que necesitás: ventas, compras, informes u otras tareas habilitadas por tu perfil.
+
+El contenido exacto depende de tu perfil y de la configuración de la organización.
+
+---
+
+## Si algo sale mal
+
+- **No veo indicadores o tarjetas**
+  - Tu perfil puede no tener permiso para esas vistas; revisá con el administrador en [Perfiles](../administracion/perfiles.md).
+- **Los números no coinciden con operaciones recientes**
+  - Verificá filtros de fecha u organización activa; algunos indicadores pueden actualizarse con demora según el diseño del producto.
 
 ---
 
 ## Ver también
 
-- [Dashboard](./dashboard.md)
-- [Perfil de usuario](./perfil-usuario.md)
+- [Perfil de usuario](../administracion/perfil-usuario.md)
 - [Informes](/informes)

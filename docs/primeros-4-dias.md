@@ -1,6 +1,7 @@
 ---
-title: Primeros resultados con ZinK ERP
-description: Empezá a usar ZinK ERP paso a paso y validá el funcionamiento completo del sistema en pocos días.
+title: "Primeros resultados con ZinK ERP | ZinkERP Docs"
+sidebar_label: "Primeros resultados con ZinK ERP"
+description: "Empezá a usar ZinK ERP paso a paso y validá el funcionamiento completo del sistema en pocos días. Incluye contexto operativo, pasos recomendados y enlaces para seguir avanzando."
 sidebar_position: 4
 ---
 

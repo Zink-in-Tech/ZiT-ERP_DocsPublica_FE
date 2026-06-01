@@ -1,6 +1,7 @@
 ---
-title: Preferencias
-description: Configuración general de la organización, incluida la pestaña Integraciones y el enlace a las guías por proveedor.
+title: "Preferencias | ZinkERP Docs"
+sidebar_label: "Preferencias"
+description: "Configuración general de la organización, incluida la pestaña Integraciones y el enlace a las guías por proveedor. Incluye configuración inicial, impacto operativo y enlaces relacionados."
 sidebar_position: 70
 keywords:
   - preferencias
@@ -37,7 +38,7 @@ En la misma pantalla de **Preferencias** tenés una pestaña **Integraciones**. 
 - El **tilde verde** junto a un servicio indica que el alta quedó registrada **del lado del servidor** (en casos puntuales puede haber diferencias momentáneas en tu pantalla). Es el mismo criterio que explica [Integraciones con servicios externos](/integraciones).
 - **Gestionar** abre el asistente del proveedor (formulario, pasos guiados o redirección para autorizar).
 
-El **detalle por proveedor** no se repite acá: conceptos generales, seguridad y resolución de problemas están en **[Integraciones](/integraciones)**. Para la tienda online (vincular tienda, enlazar productos, pestaña Ecommerce en productos), ver **[Integración WooCommerce](/ayuda/integraciones/woocommerce)**.
+El **detalle por proveedor** no se repite acá: conceptos generales, seguridad y resolución de problemas están en **[Integraciones](/integraciones)**. Para la tienda online (vincular tienda, enlazar productos, pestaña Ecommerce en productos), ver **[Integración WooCommerce](/integraciones/woocommerce)**.
 
 ## Campos principales
 
@@ -63,7 +64,7 @@ Días por defecto de vigencia del presupuesto; una vez vencido no se puede acept
 
 ## Lista de Precios por Defecto
 
-Lista que se usa con Consumidor Final y contactos sin lista asignada.
+Lista que se usa con Consumidor Final y contactos sin lista asignada. Ver [Listas de precio](./listas-precio.md) para entender cómo impacta en contactos, cotizaciones, ventas y POS.
 
 ## Zona Horaria
 
@@ -118,4 +119,6 @@ Si se debe hacer control completo ante reiteradas inconsistencias (valor indicad
 
 - [Configuración](./configuracion.md)
 - [Datos de la organización](./datos-org.md)
+- [Listas de precio](./listas-precio.md)
+- [Medios de pago](./medios-pago.md)
 - [Integraciones](/integraciones) — guías por proveedor (Facturante, Mercado Pago, WooCommerce, seguridad, problemas frecuentes).

@@ -1,6 +1,7 @@
 ---
-title: Notas de crédito
-description: Registrá devoluciones o ajustes a favor del cliente sobre ventas confirmadas; impacta cuenta corriente y puede afectar stock.
+title: "Notas de crédito | ZinkERP Docs"
+sidebar_label: "Notas de crédito"
+description: "Registrá notas de crédito en ZinkERP para devoluciones, ajustes parciales, cuenta corriente, stock y problemas frecuentes."
 sidebar_position: 30
 keywords:
   - nota de crédito
@@ -73,6 +74,30 @@ No uses nota de crédito para corregir una venta que sigue en **BORRADOR**; edit
 |------------|------------|
 | BORRADOR   | Editable antes de confirmar. |
 | CONFIRMADO | No editable; aplica el ajuste. |
+
+La documentación y páginas actuales no confirman estados adicionales para notas de crédito, como **ANULADO** o **RECHAZADO**.
+
+<!-- TODO(producto): validar en el código del producto si notas de crédito soportan ANULADO, RECHAZADO u otros estados y actualizar esta tabla. -->
+
+---
+
+## Notas de crédito parciales
+
+Una nota de crédito puede representar una anulación parcial cuando solo se corrige parte de una venta: algunos ítems, una cantidad menor o una diferencia de importe.
+
+Ejemplo: vendiste 3 remeras y el cliente devuelve 1. En ese caso, asociá la nota a la venta original y cargá solo el ítem o importe que corresponde devolver. Después verificá cuenta corriente y stock; si la devolución física no actualiza inventario automáticamente, registrá el ajuste en [Registro de inventario](../inventario/inventarios.md).
+
+---
+
+## Cuándo usar NC vs nota de débito
+
+| Situación | Documento |
+|-----------|-----------|
+| El cliente devuelve mercadería o pagó de más | Nota de crédito |
+| La venta quedó con un precio mayor al correcto para el cliente | Nota de crédito |
+| Faltó cobrar un recargo, flete o diferencia de precio | [Nota de débito](./notas-debito.md) |
+
+Ejemplo: si facturaste una campera a $50.000 y correspondía $45.000, usá nota de crédito por $5.000. Si facturaste $45.000 y correspondía $50.000, usá nota de débito por $5.000.
 
 ---
 

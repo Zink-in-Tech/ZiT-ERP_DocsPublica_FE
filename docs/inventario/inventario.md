@@ -1,6 +1,7 @@
 ---
-title: Inventario
-description: Controlá stock, ajustes manuales y toma por ubicación en ZinK ERP; elegí el artículo según tu tarea.
+title: "Inventario | ZinkERP Docs"
+sidebar_label: "Inventario"
+description: "Controlá stock, ajustes manuales y toma por ubicación en ZinK ERP; elegí el artículo según tu tarea. Incluye procedimiento, impacto en stock y solución de problemas frecuentes."
 sidebar_position: 1
 keywords:
   - inventario

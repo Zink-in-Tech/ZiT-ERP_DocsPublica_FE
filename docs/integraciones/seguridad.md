@@ -1,7 +1,8 @@
 ---
-title: Seguridad y cumplimiento (integraciones)
-description: Cómo proteger claves REST, secretos y cuentas al usar integraciones en ZinK ERP. Buenas prácticas para administradores.
-sidebar_position: 7
+title: "Seguridad y cumplimiento (integraciones) | ZinkERP Docs"
+sidebar_label: "Seguridad y cumplimiento (integraciones)"
+description: "Cómo proteger claves REST, secretos y cuentas al usar integraciones en ZinkERP. Buenas prácticas y problemas frecuentes."
+sidebar_position: 8
 ---
 
 ## Resumen
@@ -46,5 +47,5 @@ Si alguien vio un **secreto**, si un ex integrante tenía acceso, o si hubo **fi
 ## Ver también
 
 - [Integraciones — inicio](/integraciones)
-- [WooCommerce](/ayuda/integraciones/woocommerce)
+- [WooCommerce](/integraciones/woocommerce)
 - [Problemas frecuentes](/integraciones/problemas-frecuentes)

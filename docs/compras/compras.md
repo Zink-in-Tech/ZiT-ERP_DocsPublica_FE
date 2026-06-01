@@ -1,6 +1,7 @@
 ---
-title: Compras
-description: Registrá la compra a proveedores, ingresá mercadería y generá el impacto en stock y cuenta corriente.
+title: "Módulo de compras: proveedores, pagos y stock | ZinkERP Docs"
+description: "Aprendé a registrar compras en ZinkERP. Incluye ingreso de mercadería, pagos, estados y solución de problemas. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+sidebar_label: "Compras"
 keywords:
   - compras
   - compra proveedor
@@ -96,6 +97,10 @@ Si no se registra el pago en el momento, la deuda queda en la cuenta corriente d
 | CONFIRMADO | No editable. |
 | INGRESADO  | Se actualiza el stock. |
 | CANCELADO  | Flujo cerrado. |
+
+Estos estados coinciden con el flujo de compras documentado. La recepción parcial puede requerir validación operativa adicional antes de marcar la compra como **INGRESADO**.
+
+Ver [Recepción de mercadería](./recepcion-mercaderia.md) para controlar ingresos completos o parciales.
 
 ### Ciclo de vida
 
@@ -197,6 +202,8 @@ Es ideal en situaciones como:
 
 - [Órdenes de compra](./orden-compras.md)
 - [Flujo de compras](./flujo-compras.md)
+- [Recepción de mercadería](./recepcion-mercaderia.md)
+- [Notas de crédito de compras](./notas-credito-compras.md)
 - [Pagos](../finanzas/pagos.md)
 - [Cuenta corriente](../finanzas/cuenta-corriente.md)
 - [Caja diaria](../finanzas/caja-diaria.md)

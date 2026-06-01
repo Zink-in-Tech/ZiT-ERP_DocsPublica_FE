@@ -1,6 +1,7 @@
 ---
-title: Finanzas
-description: Controlá el dinero del negocio, las deudas con clientes y proveedores y el flujo financiero completo en ZinK ERP.
+title: "Finanzas | ZinkERP Docs"
+sidebar_label: "Finanzas"
+description: "Controlá dinero, deuda, caja diaria, pagos y cuenta corriente en ZinkERP. Incluye flujo financiero y solución de problemas."
 keywords:
   - finanzas
   - caja

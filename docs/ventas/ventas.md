@@ -1,6 +1,7 @@
 ---
-title: Ventas
-description: Registrá la venta final, gestioná la entrega de mercadería y el impacto en stock y cuenta corriente.
+title: "Módulo de ventas: entrega, cobro y stock | ZinkERP Docs"
+description: "Aprendé a registrar ventas en ZinkERP. Gestioná entrega, cobro, cuenta corriente, estados y solución de problemas. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+sidebar_label: "Ventas"
 keywords:
   - ventas
   - venta comercial
@@ -186,7 +187,7 @@ Usá este caso cuando querés mantener el historial del cliente pero cobrar en e
   - Puede estar en un estado no editable.
 
 - **Problemas con precios**
-  - Revisá lista de precios o permisos.
+  - Revisá [listas de precio](../configuracion/listas-precio.md) o permisos.
 
 ---
 

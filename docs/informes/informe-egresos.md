@@ -1,6 +1,7 @@
 ---
-title: Informe Egresos
-description: Generá un PDF de egresos de caja por período para control, cierre y auditoría.
+title: "Informe Egresos | ZinkERP Docs"
+sidebar_label: "Informe Egresos"
+description: "Generá un PDF de egresos de caja por período para control, cierre y auditoría. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
 sidebar_position: 66
 keywords:
   - informe egresos

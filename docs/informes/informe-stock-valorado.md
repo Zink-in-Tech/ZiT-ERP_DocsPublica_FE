@@ -1,6 +1,7 @@
 ---
-title: Informe Stock Valorado
-description: Conocé el valor del inventario por producto, concentración y margen; exportá PDF, Excel o CSV.
+title: "Informe Stock Valorado | ZinkERP Docs"
+sidebar_label: "Informe Stock Valorado"
+description: "Conocé el valor del inventario por producto, concentración y margen; exportá PDF, Excel o CSV. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
 sidebar_position: 63
 keywords:
   - stock valorado

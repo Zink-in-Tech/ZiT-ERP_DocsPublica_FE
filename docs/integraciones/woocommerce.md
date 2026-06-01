@@ -1,8 +1,9 @@
 ---
-title: WooCommerce
-description: Vinculá una tienda WooCommerce con ZinkERP, creá claves REST, enlazá productos y revisá artículos sin mapear o enlaces inválidos.
+title: "WooCommerce | ZinkERP Docs"
+sidebar_label: "WooCommerce"
+description: "Vinculá WooCommerce con ZinkERP. Incluye claves REST, enlace de productos, artículos sin mapear y problemas frecuentes."
 sidebar_position: 5
-slug: /ayuda/integraciones/woocommerce
+slug: /integraciones/woocommerce
 ---
 
 ## Resumen

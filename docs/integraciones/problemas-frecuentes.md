@@ -1,7 +1,8 @@
 ---
-title: Problemas frecuentes (integraciones)
-description: Qué revisar cuando no aparece un servicio, falla el vínculo, OAuth no vuelve al ERP o WooCommerce devuelve error 401.
-sidebar_position: 8
+title: "Problemas frecuentes (integraciones) | ZinkERP Docs"
+sidebar_label: "Problemas frecuentes (integraciones)"
+description: "Qué revisar cuando no aparece un servicio, falla el vínculo, OAuth no vuelve al ERP o WooCommerce devuelve error 401."
+sidebar_position: 9
 ---
 
 ## Resumen
@@ -61,6 +62,6 @@ Para resolver más rápido, enviá:
 
 - [Integraciones — inicio](/integraciones)
 - [Cómo funcionan las integraciones](/integraciones/como-funciona)
-- [Mercado Pago](/ayuda/integraciones/mercado-pago)
-- [WooCommerce](/ayuda/integraciones/woocommerce)
-- [Facturante](/ayuda/integraciones/facturante)
+- [Mercado Pago](/integraciones/mercado-pago)
+- [WooCommerce](/integraciones/woocommerce)
+- [Facturante](/integraciones/facturante)

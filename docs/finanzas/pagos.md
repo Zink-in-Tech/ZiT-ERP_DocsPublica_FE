@@ -1,6 +1,7 @@
 ---
-title: Pagos
-description: Registrá cobros y pagos, aplicalos a comprobantes y mantené actualizada la cuenta corriente.
+title: "Pagos | ZinkERP Docs"
+sidebar_label: "Pagos"
+description: "Registrá cobros y pagos, aplicalos a comprobantes y mantené actualizada la cuenta corriente. Incluye procedimiento, impacto en caja y cuenta corriente y solución de problemas."
 keywords:
   - pagos
   - cobros
@@ -43,7 +44,7 @@ Cuenta corriente → Pago → Caja
 
 - Cancelar deudas
 - Aplicar pagos parciales o totales
-- Registrar múltiples medios de pago
+- Registrar múltiples [medios de pago](../configuracion/medios-pago.md)
 - Enviar comprobantes al contacto
 - Aplicar el cobro o pago completo sobre comprobantes relacionados
 
@@ -65,7 +66,7 @@ Cuenta corriente → Pago → Caja
 1. Seleccioná el contacto.
 2. Elegí tipo de pago (cliente/proveedor).
 3. Seleccioná comprobantes.
-4. Ingresá medios de pago.
+4. Ingresá [medios de pago](../configuracion/medios-pago.md).
 5. Confirmá.
 
 ---
@@ -149,5 +150,6 @@ Siempre aplicá pagos sobre comprobantes.
 - [Finanzas](./finanzas.md)
 - [Cuenta corriente](./cuenta-corriente.md)
 - [Caja diaria](./caja-diaria.md)
+- [Medios de pago](../configuracion/medios-pago.md)
 - [Ventas](../ventas/ventas.md)
 - [Perfiles](../administracion/perfiles.md)

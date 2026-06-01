@@ -1,6 +1,7 @@
 ---
-title: Integraciones con servicios externos
-description: Conectá ZinK ERP con facturación electrónica, cobros y tiendas online. Guía para administradores que habilitan integraciones de terceros.
+title: "Integraciones con servicios externos | ZinkERP Docs"
+sidebar_label: "Integraciones con servicios externos"
+description: "Conectá ZinkERP con facturación electrónica, cobros y tiendas online. Guía para configurar integraciones y resolver problemas."
 sidebar_position: 1
 slug: /integraciones
 ---
@@ -36,9 +37,9 @@ La ayuda puede incorporar capturas anotadas de la pestaña **Integraciones** a m
 | Artículo | Para qué sirve |
 |----------|----------------|
 | [Cómo funcionan las integraciones](/integraciones/como-funciona) | Conceptos en palabras simples (OAuth, claves, mapeos). |
-| [Facturante](/ayuda/integraciones/facturante) | Facturación electrónica y contexto Argentina / ARCA. |
-| [Mercado Pago](/ayuda/integraciones/mercado-pago) | Vincular cuenta y sucursal sin ingresar la contraseña en el ERP. |
-| [WooCommerce](/ayuda/integraciones/woocommerce) | Tienda online: vincular tienda, enlazar productos, pestaña Ecommerce y buenas prácticas. |
+| [Facturante](/integraciones/facturante) | Facturación electrónica y contexto Argentina / ARCA. |
+| [Mercado Pago](/integraciones/mercado-pago) | Vincular cuenta y sucursal sin ingresar la contraseña en el ERP. |
+| [WooCommerce](/integraciones/woocommerce) | Tienda online: vincular tienda, enlazar productos, pestaña Ecommerce y buenas prácticas. |
 | [Mercado Libre](/integraciones/mercado-libre) | Servicios adicionales que pueden aparecer según habilitación. |
 | [Seguridad y cumplimiento](/integraciones/seguridad) | Cómo cuidar claves y cuentas. |
 | [Problemas frecuentes](/integraciones/problemas-frecuentes) | Qué revisar cuando algo no vincula o falla. |

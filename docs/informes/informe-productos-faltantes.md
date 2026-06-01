@@ -1,6 +1,7 @@
 ---
-title: Informe Productos faltantes
-description: Detectá diferencias entre lo pedido y lo vendido o entregado para priorizar reposición y revisar picking.
+title: "Informe Productos faltantes | ZinkERP Docs"
+sidebar_label: "Informe Productos faltantes"
+description: "Detectá diferencias entre lo pedido y lo vendido o entregado para priorizar reposición y revisar picking. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
 sidebar_position: 62
 keywords:
   - productos faltantes

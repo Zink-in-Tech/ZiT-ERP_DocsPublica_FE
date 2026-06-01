@@ -1,6 +1,7 @@
 ---
-title: Perfiles
-description: Definí permisos y niveles de acceso para los usuarios del sistema.
+title: "Perfiles | ZinkERP Docs"
+sidebar_label: "Perfiles"
+description: "Definí permisos y niveles de acceso para los usuarios del sistema. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
 keywords:
   - permisos
   - perfiles
