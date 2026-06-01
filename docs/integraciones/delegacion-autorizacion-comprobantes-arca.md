@@ -7,14 +7,16 @@ slug: /ayuda/integraciones/delegacion-autorizacion-comprobantes-arca
 
 ## Resumen
 
-Este instructivo sirve para que **tu empresa o tu contador** hagan el trámite en **ARCA** y nos dejen habilitados para configurar la facturación electrónica dentro de la **solución nativa de ZinK ERP**.
+Para emitir factura electrónica desde **ZinkERP** necesitamos que tu empresa (o tu contador) haga un trámite rápido en **ARCA**. Son solo dos pasos y no hace falta compartir clave fiscal.
 
-El trámite tiene dos pasos:
+El trámite tiene dos pasos bien concretos:
 
 1. crear un **punto de venta nuevo**;
 2. delegar el servicio de **Facturación Electrónica** a **Fernando Ariel Demaio (Zink in Tech)**, **CUIT 20-31499393-5**.
 
-Después de eso, **nosotros terminamos la configuración desde nuestro lado**. No hace falta compartir clave fiscal.
+Después de eso, **nosotros terminamos la configuración desde nuestro lado** para que la empresa pueda facturar desde ZinK ERP.
+
+> **Importante:** no hace falta compartir clave fiscal.
 
 :::caution Importante
 
@@ -26,7 +28,7 @@ Usá un **punto de venta nuevo**, distinto del que ya uses para factura manual, 
 
 ## Si lo hace tu cliente o su contador
 
-Este texto está pensado para que lo pueda seguir:
+Esta sección es el mismo instructivo, pero pensado para quien va a ejecutar el trámite:
 
 - la persona dueña de la empresa;
 - la persona administrativa;
@@ -44,6 +46,8 @@ La delegación debe hacerse a:
 - **Zink in Tech**
 - **CUIT 20-31499393-5**
 
+> **Tranquilidad:** la delegación solo aplica al servicio de **Facturación Electrónica**. No da acceso a nada más.
+
 ---
 
 ## Antes de empezar
@@ -55,11 +59,11 @@ Prepará esto antes de ingresar:
 - acceso al servicio **Administrador de Relaciones**;
 - el criterio fiscal correcto de la empresa: **Monotributo** o **Responsable Inscripto / IVA**.
 
-Si alguno de esos servicios no aparece en el menú, tiene que revisarlo la persona que administra la clave fiscal.
+Si alguno de esos servicios no aparece en el menú, tiene que revisarlo la persona que administra la clave fiscal. Si alguno de esos servicios no aparece en el menú, pedile al administrador de la clave fiscal que revise los permisos.
 
 ---
 
-## Paso 1: crear el punto de venta en ARCA
+## Paso 1: Crear el punto de venta en ARCA
 
 1. Ingresá a [ARCA](https://www.arca.gob.ar/) con CUIT y clave fiscal.
 2. Abrí el servicio **Administración de Puntos de Venta y Domicilios**.
@@ -88,7 +92,7 @@ Si ya emitís comprobantes por otro sistema, no reutilices ese punto de venta. P
 
 ---
 
-## Paso 2: delegar el servicio de facturación electrónica
+## Paso 2: Delegar el servicio de facturación electrónica
 
 1. Volvé al menú principal de clave fiscal.
 2. Abrí el servicio **Administrador de Relaciones**.
@@ -106,7 +110,9 @@ Si ya emitís comprobantes por otro sistema, no reutilices ese punto de venta. P
 
 :::info Qué significa esta delegación
 
-La empresa sigue siendo dueña de sus comprobantes y de su punto de venta. La delegación solo nos autoriza a hacer la gestión técnica de facturación electrónica para esa CUIT.
+La empresa sigue siendo dueña de sus comprobantes y de su punto de venta.
+
+La delegación solo nos autoriza a hacer la gestión técnica de **Facturación Electrónica** para esa CUIT. No da acceso a otros servicios de ARCA.
 
 :::
 
@@ -116,15 +122,25 @@ La empresa sigue siendo dueña de sus comprobantes y de su punto de venta. La de
 
 Cuando termines el trámite, pasanos:
 
-- **CUIT** de la empresa;
-- **número de punto de venta** creado;
-- confirmación de que la delegación quedó hecha a **Fernando Ariel Demaio - CUIT 20-31499393-5**.
+| Dato | Ejemplo |
+|------|---------|
+| CUIT de la empresa | `30-71234567-8` |
+| Número de punto de venta nuevo creado en ARCA | `00012` |
+| Confirmación de delegación | `Delegación hecha a Fernando Ariel Demaio - CUIT 20-31499393-5` |
+| Constancia del trámite | `PDF o captura de confirmación` |
 
 Con eso, desde Zink in Tech hacemos el resto:
 
 - vinculamos la delegación;
 - terminamos la configuración;
 - dejamos listo el circuito para emitir desde ZinK ERP.
+
+Antes de darnos el ok final, revisá este checklist:
+
+- [ ] CUIT de la empresa
+- [ ] Número de punto de venta nuevo creado en ARCA
+- [ ] Delegación confirmada a Fernando Ariel Demaio – CUIT 20-31499393-5
+- [ ] (Opcional) Constancia del trámite
 
 ---
 
@@ -157,7 +173,7 @@ No. La clave fiscal no se comparte. El trámite correcto es delegar el servicio 
 
 ### ¿La delegación nos da acceso total a ARCA?
 
-No. La delegación aplica al servicio de **Facturación Electrónica** para operar el webservice en nombre de tu CUIT.
+No. La delegación aplica solo al servicio de **Facturación Electrónica** para operar en nombre de tu CUIT. No da acceso a nada más.
 
 ### ¿Puedo usar un punto de venta que ya tenía?
 
@@ -165,7 +181,7 @@ No conviene. ARCA indica que para factura electrónica por este medio debe usars
 
 ### ¿Después del trámite ya puedo emitir desde ZinK ERP?
 
-Todavía falta la activación técnica de nuestro lado. Cuando nos confirmás la delegación y el punto de venta, terminamos la configuración inicial.
+Todavía falta la activación técnica de nuestro lado. Cuando nos confirmás la delegación y el punto de venta, terminamos la configuración inicial. En general lo dejamos listo en el mismo día.
 
 ---
 
