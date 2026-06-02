@@ -106,7 +106,6 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'ZinK ERP',
       logo: {
         alt: 'ZinK ERP',
         src: 'img/logo.svg',
