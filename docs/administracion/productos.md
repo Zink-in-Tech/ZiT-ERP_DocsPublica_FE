@@ -1,7 +1,9 @@
 ---
-title: "Productos | ZinkERP Docs"
-sidebar_label: "Productos"
-description: "Gestioná el catálogo de productos que se utilizan en ventas, compras e inventario. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
+title: 'Productos en Zink ERP: catálogo, datos comerciales y stock | Zink ERP'
+sidebar_label: Productos
+description: >-
+  Configurá productos en Zink ERP con precios, stock, códigos, listas y reglas
+  de venta para operar mejor en POS, ventas, compras e inventario.
 keywords:
   - productos
   - artículos
@@ -23,22 +25,24 @@ Definen precios, stock, ubicación y comportamiento en las operaciones, impactan
 
 ---
 
+## Para qué sirve esta pantalla
+
+Usá productos cuando necesitás:
+
+- dar de alta artículos nuevos;
+- configurar precios y listas;
+- cargar códigos o código de barras;
+- definir stock mínimo, ubicación o validación;
+- preparar productos para venta rápida, venta comercial o depósito.
+
+---
+
 ## Antes de empezar
 
 - Definí correctamente listas de precios.
 - Verificá unidades de medida.
 - Algunas modificaciones pueden requerir permisos especiales.
 - Revisá si la organización maneja stock y si los productos nuevos deben validar stock por defecto.
-
----
-
-## Cuándo usar productos
-
-Usá esta pantalla cuando:
-
-- Necesitás dar de alta artículos.
-- Querés actualizar precios, stock o configuración.
-- Tenés que configurar listas de precios o etiquetas.
 
 ---
 
@@ -90,6 +94,15 @@ Usala para dejar el producto listo para ventas, compras, inventario e informes.
 5. Agregá etiquetas útiles.
 6. Guardá y probá el producto desde [Consulta de precios](../ventas/consulta-precio.md) o POS.
 
+### Validación mínima recomendada
+
+Antes de dar por listo un producto nuevo:
+
+1. buscá el producto en [Consulta de precios](../ventas/consulta-precio.md);
+2. probalo en [POS](../ventas/pos.md) o [Ventas](../ventas/ventas.md);
+3. validá que el precio, la descripción y el comportamiento sean correctos;
+4. si aplica, probá lectura con código de barras o código variable.
+
 ---
 
 ## Tipos de producto
@@ -134,6 +147,10 @@ Para definir precios, stock y comportamiento.
 ### Stock mínimo
 Permite detectar productos que necesitan reposición desde informes o controles operativos.
 
+### Producto con código variable
+
+Si el artículo se opera por balanza o lectura especial, conviene revisar [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md) antes de usarlo en mostrador.
+
 ---
 
 ## Si algo sale mal
@@ -160,11 +177,28 @@ Permite detectar productos que necesitan reposición desde informes o controles 
 
 ---
 
+## Preguntas frecuentes
+
+### ¿Cuándo conviene alta rápida y cuándo ficha completa?
+
+Alta rápida sirve para no frenar una operación. La ficha completa conviene para dejar el producto bien preparado a mediano plazo.
+
+### ¿Puedo corregir stock desde el producto?
+
+Para carga inicial puede servir. Para diferencias operativas conviene usar [Registro de inventario](../inventario/inventarios.md).
+
+### ¿Qué hago si vendo productos por peso?
+
+Revisá [Códigos variables](../guias/codigos-variables.md) y [Balanzas Systel](../guias/balanzas-systel-y-codigos-variables.md) antes de operar en vivo.
+
+---
+
 ## Ver también
 
 - [Administración](./administracion.md)
-
 - [Ventas](../ventas/ventas.md)
 - [Compras](../compras/compras.md)
 - [Registro de inventario](../inventario/inventarios.md)
 - [Consulta de stock](../inventario/productos-consulta-inter-org.md)
+- [Cómo configurar tu primer producto](../guias/como-configurar-tu-primer-producto.md)
+- [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md)

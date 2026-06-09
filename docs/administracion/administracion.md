@@ -1,7 +1,11 @@
 ---
-title: "Módulo de administración: datos maestros y usuarios | ZinkERP Docs"
-description: "Toda la documentación de Administración en ZinkERP: contactos, productos, usuarios, permisos, datos maestros y problemas frecuentes."
-sidebar_label: "Administración"
+title: >-
+  Administración en Zink ERP: productos, contactos, usuarios y permisos | Zink
+  ERP
+description: >-
+  La administración concentra los datos maestros que usa todo el ERP: quién
+  compra y vende (contactos), qué se comercializa (productos)
+sidebar_label: Administración
 sidebar_position: 0
 keywords:
   - administración

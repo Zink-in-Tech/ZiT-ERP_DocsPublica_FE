@@ -1,7 +1,9 @@
 ---
-title: "Flujo de ventas | ZinkERP Docs"
-sidebar_label: "Flujo de ventas"
-description: "Entendé el proceso comercial desde cotización hasta la venta en ZinK ERP — etapas, estados, permisos y variantes. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: 'Flujo de ventas: de la cotización a la venta final | Zink ERP'
+sidebar_label: Flujo de ventas
+description: >-
+  El flujo de ventas en ZinK ERP organiza el proceso comercial desde una
+  propuesta inicial hasta la concreción de la venta.
 sidebar_position: 1
 keywords:
   - flujo de ventas

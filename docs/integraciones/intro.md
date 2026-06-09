@@ -1,7 +1,9 @@
 ---
-title: "Integraciones con servicios externos | ZinkERP Docs"
-sidebar_label: "Integraciones con servicios externos"
-description: "Conectá ZinkERP con facturación electrónica, cobros y tiendas online. Guía para configurar integraciones y resolver problemas."
+title: 'Integraciones de Zink ERP: facturación, cobros y tiendas online | Zink ERP'
+sidebar_label: Integraciones con servicios externos
+description: >-
+  Configurá integraciones de Zink ERP con facturación electrónica, cobros y
+  ecommerce, y encontrá rápido los requisitos, enlaces y problemas frecuentes.
 sidebar_position: 1
 slug: /integraciones
 ---

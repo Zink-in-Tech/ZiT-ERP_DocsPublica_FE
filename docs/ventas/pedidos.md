@@ -1,7 +1,9 @@
 ---
-title: "Pedidos | ZinkERP Docs"
-sidebar_label: "Pedidos"
-description: "Registrá pedidos confirmados para preparar mercadería y generar automáticamente la venta. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: Pedidos | Zink ERP
+sidebar_label: Pedidos
+description: >-
+  Los pedidos representan una compra confirmada por el cliente y permiten
+  organizar la preparación de la mercadería antes de concretar la venta.
 sidebar_position: 4
 ---
 

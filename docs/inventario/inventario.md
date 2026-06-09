@@ -1,7 +1,10 @@
 ---
-title: "Inventario | ZinkERP Docs"
-sidebar_label: "Inventario"
-description: "Controlá stock, ajustes manuales y toma por ubicación en ZinK ERP; elegí el artículo según tu tarea. Incluye procedimiento, impacto en stock y solución de problemas frecuentes."
+title: 'Inventario en Zink ERP: stock, ajustes y toma por ubicación | Zink ERP'
+sidebar_label: Inventario
+description: >-
+  Controlá stock en Zink ERP con ajustes, toma por ubicación y consulta entre
+  organizaciones, entendiendo cuándo usar inventario en vez de compras o
+  ventas.
 sidebar_position: 1
 keywords:
   - inventario
@@ -13,6 +16,20 @@ keywords:
 ## Resumen
 
 El módulo de inventario te permite conocer y corregir el stock: movimientos por compras y ventas, ajustes cuando no hay documento comercial, toma por ubicación y consulta entre organizaciones.
+
+---
+
+## Para qué sirve inventario
+
+Inventario no reemplaza ventas ni compras. Sirve para corregir, validar o consultar stock cuando el cambio no debe resolverse con un documento comercial.
+
+Ejemplos típicos:
+
+- ajuste inicial;
+- rotura o pérdida;
+- diferencia detectada en depósito;
+- recuento físico;
+- consulta de disponibilidad entre organizaciones.
 
 ---
 
@@ -47,6 +64,22 @@ Las compras **ingresan** stock; las ventas **entregadas** lo descuentan; el regi
 
 ---
 
+## Cómo elegir el artículo correcto
+
+- Si necesitás **corregir stock** sin compra ni venta, usá [Registro de inventario](./inventarios.md).
+- Si necesitás **contar físicamente** por ubicación, usá [Toma de inventario](./inventarios-ubicacion.md).
+- Si necesitás **ver stock en otra organización**, usá [Consulta de stock inter-org](./productos-consulta-inter-org.md).
+
+---
+
+## Buenas prácticas
+
+- No ajustes “porque falta” sin revisar antes el origen.
+- Separá los recuentos físicos de los movimientos comerciales.
+- Registrá las diferencias con criterio operativo para poder auditarlas después.
+
+---
+
 ## Si algo sale mal
 
 - **El stock no coincide con el depósito**
@@ -54,6 +87,18 @@ Las compras **ingresan** stock; las ventas **entregadas** lo descuentan; el regi
   - Verificá compras en **INGRESADO** y ventas en **ENTREGADO**.
 - **No puedo ajustar**
   - Revisá permisos de agregar/editar inventario.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Conviene corregir stock desde el producto?
+
+Solo para casos muy puntuales de carga inicial. Para operación diaria conviene dejar trazabilidad con [Registro de inventario](./inventarios.md).
+
+### ¿Cuándo usar toma de inventario y no ajuste manual?
+
+Cuando necesitás contar físicamente por sector, ubicación o depósito y dejar un recuento más ordenado.
 
 ---
 

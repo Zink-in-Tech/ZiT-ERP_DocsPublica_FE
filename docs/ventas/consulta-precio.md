@@ -1,7 +1,10 @@
 ---
-title: "Consulta de precios | ZinkERP Docs"
-sidebar_label: "Consulta de precios"
-description: "Consultá precios por lista y stock visible antes de cotizar, vender o atender en mostrador; no genera comprobantes. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: 'Consulta de precios: listas, stock visible y atención en mostrador | Zink ERP'
+sidebar_label: Consulta de precios
+description: >-
+  La consulta de precios muestra valores según las listas configuradas en
+  Preferencias. Podés usarla en mostrador, depósito o en un punto de consulta
+  para clientes.
 sidebar_position: 10
 keywords:
   - consulta de precios
@@ -98,3 +101,4 @@ El cliente consulta sin intervención; la lista expuesta debe estar alineada con
 - [POS](./pos.md)
 - [Flujo de ventas](./flujo-ventas.md)
 - [Preferencias](../configuracion/preferencias.md)
+- [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md)

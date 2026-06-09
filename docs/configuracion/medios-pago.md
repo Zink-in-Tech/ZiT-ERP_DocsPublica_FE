@@ -1,7 +1,10 @@
 ---
-title: "Medios de pago: caja, POS y cobranzas | ZinkERP Docs"
-sidebar_label: "Medios de pago: caja, POS y cobranzas"
-description: "Aprendé a configurar medios de pago en ZinkERP. Incluye efectivo, transferencia, tarjeta, Mercado Pago y caja diaria. Incluye configuración inicial, impacto operativo y enlaces relacionados."
+title: 'Medios de pago: caja, POS y cobranzas | Zink ERP'
+sidebar_label: 'Medios de pago: caja, POS y cobranzas'
+description: >-
+  Configurá medios de pago en Zink ERP para cobrar y pagar con efectivo,
+  transferencia, tarjeta, Mercado Pago o cuenta corriente, con impacto correcto
+  en caja diaria.
 sidebar_position: 73
 keywords:
   - medios de pago
@@ -20,6 +23,17 @@ Se usan al cobrar ventas, registrar pagos, operar POS y revisar la [Caja diaria]
 
 ---
 
+## Para qué sirve esta configuración
+
+Definir correctamente medios de pago ayuda a que:
+
+- el equipo vea solo opciones válidas al cobrar o pagar;
+- la caja diaria refleje bien el dinero;
+- las integraciones externas se usen donde corresponde;
+- no se mezclen cobros reales con deuda pendiente.
+
+---
+
 ## Antes de empezar
 
 - Definir qué medios acepta la organización.
@@ -34,8 +48,8 @@ Se usan al cobrar ventas, registrar pagos, operar POS y revisar la [Caja diaria]
 ## Procedimiento
 
 1. Revisá los medios de pago habilitados para la organización.
-2. Activá o desactivá los medios que correspondan.
-3. Si aplica, asociá el medio al punto de venta o sucursal que lo usará.
+2. Activá solo los que realmente correspondan a la operación.
+3. Si aplica, asociá el medio al punto de venta, caja o sucursal.
 4. Probá un cobro desde [POS](../ventas/pos.md) o [Pagos](../finanzas/pagos.md).
 5. Verificá el impacto en [Caja diaria](../finanzas/caja-diaria.md).
 
@@ -77,6 +91,10 @@ La venta puede quedar como deuda del contacto. El dinero aparece en caja cuando 
 
 Primero vinculá Mercado Pago y seleccioná sucursal o punto de venta desde [Integraciones](../integraciones/mercado-pago.md).
 
+### Negocio con pocos medios
+
+Conviene empezar con efectivo, transferencia y los medios realmente usados. Después se agregan otros si la operación lo necesita.
+
 ---
 
 ## Si algo sale mal
@@ -90,9 +108,26 @@ Primero vinculá Mercado Pago y seleccioná sucursal o punto de venta desde [Int
 
 ---
 
+## Preguntas frecuentes
+
+### ¿Un medio de pago cancela la deuda automáticamente?
+
+No. La deuda se cancela cuando el pago queda correctamente registrado y aplicado.
+
+### ¿Puedo usar varios medios en un mismo cobro?
+
+Sí, si el circuito lo permite y la suma coincide con el importe final.
+
+### ¿Qué conviene revisar primero si la caja no coincide?
+
+Fecha, medio usado, cuenta corriente, permisos y si el cobro realmente fue confirmado.
+
+---
+
 ## Ver también
 
 - [Pagos](../finanzas/pagos.md)
 - [Caja diaria](../finanzas/caja-diaria.md)
 - [POS](../ventas/pos.md)
 - [Mercado Pago](../integraciones/mercado-pago.md)
+- [Cómo configurar medios de pago](../guias/como-configurar-medios-de-pago.md)

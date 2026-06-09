@@ -1,8 +1,12 @@
 ---
 sidebar_position: 3
-title: "Primeros pasos | ZinkERP Docs"
-sidebar_label: "Primeros pasos"
-description: "Configurá ZinK ERP y validá la primera operación según tu tipo de negocio — POS, flujo comercial o compras. Incluye contexto operativo, pasos recomendados y enlaces para seguir avanzando."
+title: >-
+  Primeros pasos en Zink ERP: configuración inicial y primera operación | Zink
+  ERP
+sidebar_label: Primeros pasos
+description: >-
+  Esta guía te ayuda a empezar a usar ZinK ERP de forma correcta, configurando
+  lo necesario y entendiendo cómo operar desde el primer momento.
 keywords:
   - configuración inicial
   - onboarding
@@ -169,6 +173,9 @@ Revisá el flujo utilizado, los datos cargados y el impacto en inventario y fina
 
 - [Cómo funciona ZinK ERP](./arquitectura.md)
 - [Primeros resultados](./primeros-4-dias.md)
+- [Aprender por rol](./roles/aprender-por-rol.md)
+- [Configurar tu primer producto](./guias/como-configurar-tu-primer-producto.md)
+- [Configurar medios de pago](./guias/como-configurar-medios-de-pago.md)
 - [Flujo de ventas](./ventas/flujo-ventas.md)
 - [Inventario](./inventario/inventario.md)
 - [Finanzas](./finanzas/finanzas.md)

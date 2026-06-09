@@ -1,7 +1,10 @@
 ---
-title: "POS (Punto de venta) | ZinkERP Docs"
-sidebar_label: "POS (Punto de venta)"
-description: "Registrá ventas rápidas en mostrador con carga ágil de productos y cobro inmediato. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: 'POS en Zink ERP: ventas rápidas, cobro inmediato y mostrador | Zink ERP'
+sidebar_label: POS (Punto de venta)
+description: >-
+  Operá ventas rápidas en mostrador con POS en Zink ERP: carga de productos,
+  cobro inmediato, lectura con código de barras y control de errores
+  frecuentes.
 keywords:
   - POS
   - punto de venta
@@ -17,11 +20,11 @@ sidebar_position: 6
 
 ## Resumen
 
-El POS permite registrar ventas de forma rápida, especialmente en mostrador, en una única operación.
+El POS permite registrar ventas rápidas en una sola operación, especialmente en mostrador o atención inmediata.
 
-A diferencia del flujo completo de ventas, el POS está pensado para operaciones inmediatas donde no es necesario pasar por cotización, presupuesto o pedido.
+A diferencia del flujo completo de ventas, está pensado para situaciones donde no hace falta pasar por cotización, presupuesto o pedido.
 
-Permite cargar productos, cobrar y generar la venta directamente.
+Permite cargar productos, cobrar y generar la venta directamente, con foco en velocidad, repetición y control de caja.
 
 También podés encontrarlo o buscarlo como **punto de venta**, **venta rápida**, **venta de mostrador**, **cobro en POS** o **venta a Consumidor Final**.
 
@@ -34,6 +37,19 @@ También podés encontrarlo o buscarlo como **punto de venta**, **venta rápida*
 - El usuario debe tener permiso para **realizar cobro en ventas**.
 - Algunas configuraciones dependen de preferencias del sistema.
 - Por defecto se usa **Consumidor Final** con la lista configurada para la organización. Si elegís un cliente, el POS puede aplicar la lista asociada a ese contacto.
+
+---
+
+## Cuándo conviene usar POS
+
+Usalo cuando:
+
+- la venta se concreta en el momento;
+- el cliente no necesita seguimiento por etapas;
+- el producto se entrega al instante;
+- querés cobrar en la misma operación.
+
+No es la mejor opción cuando necesitás cotizar, presupuestar, despachar o mantener un proceso comercial largo. En esos casos conviene trabajar con [Flujo de ventas](./flujo-ventas.md) o [Ventas](./ventas.md).
 
 ---
 
@@ -79,30 +95,40 @@ POS → Venta
 
 ## Procedimiento
 
-1. Ingresá productos desde el campo **Escanear o buscar producto**:
-   - por código de barras
-   - por búsqueda
-2. Ajustar cantidades si es necesario.
+### Paso 1: Cargar productos
+
+1. Ingresá productos desde el campo **Escanear o buscar producto**.
+2. Podés hacerlo por código de barras o por búsqueda manual.
+3. Ajustá cantidades si hace falta.
 
 ![POS con un producto agregado, total actualizado y botón Finalizar habilitado](/img/ayuda/ventas/pos-02-producto-agregado.png)
 
-3. (Opcional) Seleccioná cliente con **[F3] Cliente**. Si no seleccionás uno, la venta queda asociada a **Consumidor Final**.
+### Paso 2: Elegir cliente si corresponde
+
+4. Si necesitás asociar la venta a un contacto, usá **[F3] Cliente**.
+5. Si no elegís uno, la venta queda asociada a **Consumidor Final**.
 
 ![Diálogo de POS para seleccionar cliente o volver a Consumidor Final](/img/ayuda/ventas/pos-03-seleccionar-cliente.png)
 
-4. Aplicá descuentos o recargos si corresponde:
+### Paso 3: Ajustar precio si hace falta
+
+6. Aplicá descuentos o recargos si corresponde:
    - **[F6] Descuento**
    - **[F9] Recargo**
 
 ![Diálogo de descuento del POS con campos de porcentaje y monto](/img/ayuda/ventas/pos-04-descuento.png)
 
-5. Revisar el total.
-6. Usá **Finalizar (F2)** para abrir el diálogo de pago. Esta acción depende del permiso para **realizar cobro en ventas**.
+### Paso 4: Revisar total y cobrar
+
+7. Revisá el total final.
+8. Usá **Finalizar (F2)** para abrir el diálogo de pago. Esta acción depende del permiso para **realizar cobro en ventas**.
 
 ![Confirmación de finalización de venta en POS antes de guardar y cobrar](/img/ayuda/ventas/pos-05-finalizar.png)
 
-7. Confirmar el cobro:
-   - se genera la venta automáticamente
+### Paso 5: Confirmar la operación
+
+9. Confirmá el cobro.
+10. Con eso, el sistema genera la venta automáticamente.
 
 Si necesitás ver o elegir entre varios resultados, usá **[F4] Listado**.
 
@@ -144,7 +170,7 @@ Si el botón aparece deshabilitado, revisá que haya productos cargados y que el
 
 ### Venta en mostrador
 
-Se cargan productos, se cobra y se finaliza en una sola operación.
+Se cargan productos, se cobra y se finaliza en una sola operación, sin pasar por etapas previas.
 
 ### Cliente ocasional
 
@@ -153,6 +179,10 @@ Se utiliza Consumidor Final sin generar cuenta corriente.
 ### Venta rápida sin logística
 
 No se requiere pasar por pedido ni despacho.
+
+### Productos con lectura especial
+
+Si trabajás con productos pesables o lectura desde balanza, revisá [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md) y [Balanzas Systel y códigos variables](../guias/balanzas-systel-y-codigos-variables.md).
 
 ---
 
@@ -196,6 +226,9 @@ Es ideal en negocios donde:
 - **No encontrás el producto**
   - Probá con código de barras, descripción o **[F4] Listado**.
 
+- **La lectura de balanza o código variable no coincide**
+  - Revisá el producto base, el código leído y el circuito documentado en las guías de códigos variables.
+
 ![Mensaje de POS cuando no se encuentra un producto por código o descripción](/img/ayuda/ventas/pos-06-producto-no-encontrado.png)
 
 ---
@@ -209,8 +242,26 @@ Es ideal en negocios donde:
 
 ---
 
+## Preguntas frecuentes
+
+### ¿POS reemplaza al flujo de ventas?
+
+No. POS resuelve ventas rápidas. El flujo de ventas sirve para operaciones con etapas, seguimiento o logística.
+
+### ¿Puedo vender a un contacto y no a Consumidor Final?
+
+Sí. Si seleccionás un contacto, pueden cambiar lista de precios y comportamiento de cuenta corriente.
+
+### ¿Qué hago si trabajo con productos por peso?
+
+Conviene validar el circuito de lectura con [Códigos variables](../guias/codigos-variables.md) y [Balanzas Systel](../guias/balanzas-systel-y-codigos-variables.md) antes de operar en vivo.
+
+---
+
 ## Ver también
 
 - [Ventas](./ventas.md)
 - [Consulta de precios](./consulta-precio.md)
 - [Flujo de ventas](./flujo-ventas.md)
+- [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md)
+- [Balanzas Systel y códigos variables](../guias/balanzas-systel-y-codigos-variables.md)

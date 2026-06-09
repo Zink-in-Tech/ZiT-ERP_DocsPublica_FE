@@ -1,7 +1,9 @@
 ---
-title: "Listas de precio: clientes, POS y ventas | ZinkERP Docs"
-sidebar_label: "Listas de precio: clientes, POS y ventas"
-description: "Aprendé a configurar listas de precio en ZinkERP. Incluye contactos, lista por defecto, cotizaciones, ventas, POS e informes."
+title: 'Listas de precio: clientes, POS y ventas | Zink ERP'
+sidebar_label: 'Listas de precio: clientes, POS y ventas'
+description: >-
+  Las listas de precio definen qué valor usa ZinkERP para vender, cotizar o
+  consultar un producto en cada contexto comercial.
 sidebar_position: 72
 keywords:
   - listas de precio

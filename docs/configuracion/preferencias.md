@@ -1,7 +1,7 @@
 ---
-title: "Preferencias | ZinkERP Docs"
-sidebar_label: "Preferencias"
-description: "Configuración general de la organización, incluida la pestaña Integraciones y el enlace a las guías por proveedor. Incluye configuración inicial, impacto operativo y enlaces relacionados."
+title: 'Preferencias de Zink ERP: configuración general e integraciones | Zink ERP'
+sidebar_label: Preferencias
+description: 'Preferencias de Zink ERP: configuración general e integraciones'
 sidebar_position: 70
 keywords:
   - preferencias

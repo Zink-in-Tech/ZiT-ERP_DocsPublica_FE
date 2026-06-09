@@ -1,7 +1,9 @@
 ---
-title: "Contactos | ZinkERP Docs"
-sidebar_label: "Contactos"
-description: "Gestioná clientes y proveedores utilizados en ventas, compras y operaciones comerciales. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
+title: Contactos | Zink ERP
+sidebar_label: Contactos
+description: >-
+  Los contactos representan a las personas o empresas con las que operás:
+  clientes y proveedores.
 sidebar_position: 1
 keywords:
   - contactos

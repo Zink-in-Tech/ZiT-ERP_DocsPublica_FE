@@ -1,7 +1,10 @@
 ---
-title: "Caja diaria | ZinkERP Docs"
-sidebar_label: "Caja diaria"
-description: "Analizá en tiempo real el estado financiero del negocio y conciliá todos los movimientos del día. Incluye procedimiento, impacto en caja y cuenta corriente y solución de problemas."
+title: Caja diaria | Zink ERP
+sidebar_label: Caja diaria
+description: >-
+  La caja diaria es un panel de control que muestra el estado financiero del
+  negocio en una fecha determinada. Permite visualizar en un solo lugar: en Zink
+  ERP.
 keywords:
   - caja diaria
   - cierre de caja

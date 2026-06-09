@@ -1,7 +1,9 @@
 ---
-title: "Seguridad y cumplimiento (integraciones) | ZinkERP Docs"
-sidebar_label: "Seguridad y cumplimiento (integraciones)"
-description: "Cómo proteger claves REST, secretos y cuentas al usar integraciones en ZinkERP. Buenas prácticas y problemas frecuentes."
+title: 'Seguridad de integraciones: claves, secretos y buenas prácticas | Zink ERP'
+sidebar_label: Seguridad y cumplimiento (integraciones)
+description: >-
+  Las integraciones unen ZinK ERP con cuentas y sistemas ajenos. Un error de
+  manejo de claves o capturas puede exponer tu negocio.
 sidebar_position: 8
 ---
 

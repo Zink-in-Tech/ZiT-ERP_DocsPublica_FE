@@ -1,7 +1,10 @@
 ---
-title: "Mercado Libre y otros servicios | ZinkERP Docs"
-sidebar_label: "Mercado Libre y otros servicios"
-description: "Integraciones adicionales listadas en ZinK ERP. Mercado Libre y otros códigos según lo habilite el backend. Incluye requisitos, pasos de configuración y solución de problemas frecuentes."
+title: 'Mercado Libre y otros servicios: integraciones disponibles | Zink ERP'
+sidebar_label: Mercado Libre y otros servicios
+description: >-
+  Además de Facturante, Mercado Pago y WooCommerce, el sistema puede listar
+  otros servicios externos según lo que habilite el backend para tu
+  organización.
 sidebar_position: 7
 ---
 

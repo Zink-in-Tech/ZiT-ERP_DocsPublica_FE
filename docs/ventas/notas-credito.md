@@ -1,7 +1,10 @@
 ---
-title: "Notas de crédito | ZinkERP Docs"
-sidebar_label: "Notas de crédito"
-description: "Registrá notas de crédito en ZinkERP para devoluciones, ajustes parciales, cuenta corriente, stock y problemas frecuentes."
+title: Notas de crédito | Zink ERP
+sidebar_label: Notas de crédito
+description: >-
+  Las notas de crédito corrigen o ajustan ventas ya realizadas: devoluciones,
+  anulación total o parcial, o corrección de importes en la cuenta corriente del
+  cliente.
 sidebar_position: 30
 keywords:
   - nota de crédito

@@ -1,12 +1,14 @@
 ---
-title: "Comprobantes Fiscales ARCA"
-sidebar_label: "Delegar autorización de comprobantes en ARCA"
-description: "Cómo dejar listo ARCA para emitir comprobantes fiscales electrónicos desde ZinkERP. Creá un punto de venta y deleganos el servicio de facturación electrónica."
+title: Cómo delegar Facturación Electrónica en ARCA para Zink ERP | Zink ERP
+sidebar_label: Delegar autorización de comprobantes en ARCA
+description: >-
+  Seguí el paso a paso para crear un punto de venta en ARCA y delegar
+  Facturación Electrónica, sin compartir clave fiscal, para habilitar Zink ERP.
 sidebar_position: 6
 slug: /integraciones/delegacion-autorizacion-comprobantes-arca
 ---
 
-# Comprobantes Fiscales ARCA
+## Comprobantes Fiscales ARCA
 
 ## Resumen
 

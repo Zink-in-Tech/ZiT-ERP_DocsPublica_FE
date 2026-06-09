@@ -1,7 +1,9 @@
 ---
-title: "Órdenes de compra | ZinkERP Docs"
-sidebar_label: "Órdenes de compra"
-description: "Registrá solicitudes a proveedores y organizá tus compras antes de generar el impacto en stock y cuenta corriente. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: Órdenes de compra | Zink ERP
+sidebar_label: Órdenes de compra
+description: >-
+  Las órdenes de compra permiten registrar lo que se le solicita a un proveedor
+  antes de concretar la compra.
 slug: /compras/orden-compra
 keywords:
   - órdenes de compra

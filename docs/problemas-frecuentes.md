@@ -1,7 +1,11 @@
 ---
-title: "Problemas frecuentes: login, conexión y orientación | ZinkERP Docs"
-sidebar_label: "Problemas frecuentes: login, conexión y orientación"
-description: "Resolvé problemas frecuentes en ZinkERP: login, conexión, permisos, performance, orientación y rutas para pedir soporte."
+title: >-
+  Problemas frecuentes en Zink ERP: login, permisos, rendimiento y soporte |
+  Zink ERP
+sidebar_label: 'Problemas frecuentes: login, conexión y orientación'
+description: >-
+  Resolvé bloqueos comunes de Zink ERP, desde acceso y permisos hasta
+  rendimiento, orientación de uso y cuándo conviene escalar a soporte.
 sidebar_position: 98
 keywords:
   - problemas frecuentes

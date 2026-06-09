@@ -1,7 +1,9 @@
 ---
-title: "Informe Artículos vendidos entre fechas | ZinkERP Docs"
-sidebar_label: "Informe Artículos vendidos entre fechas"
-description: "Ventas por artículo en un rango de fechas — cantidades y montos para análisis y planificación de compras. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
+title: Informe Artículos vendidos entre fechas | Zink ERP
+sidebar_label: Informe Artículos vendidos entre fechas
+description: >-
+  Informe de ventas por artículo en un rango de fechas: qué productos se
+  vendieron, cantidades y montos.
 sidebar_position: 72
 keywords:
   - artículos vendidos

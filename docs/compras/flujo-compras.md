@@ -1,7 +1,9 @@
 ---
-title: "Flujo de compras | ZinkERP Docs"
-sidebar_label: "Flujo de compras"
-description: "Entendé cómo funciona el proceso completo desde la orden de compra hasta el registro de la compra en ZinK ERP. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: 'Flujo de compras: de la orden de compra al ingreso de mercadería | Zink ERP'
+sidebar_label: Flujo de compras
+description: >-
+  El flujo de compras en ZinK ERP organiza el proceso desde la solicitud al
+  proveedor hasta el registro final de la compra.
 sidebar_position: 1
 ---
 

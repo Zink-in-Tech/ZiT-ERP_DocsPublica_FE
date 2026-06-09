@@ -1,7 +1,9 @@
 ---
-title: "Facturante | ZinkERP Docs"
-sidebar_label: "Facturante"
-description: "Configurá facturación electrónica en ZinkERP con Facturante. Incluye datos fiscales, plazos ARCA y problemas frecuentes."
+title: 'Facturante en Zink ERP: alta de facturación electrónica | Zink ERP'
+sidebar_label: Facturante
+description: >-
+  Facturante es el proveedor que permite habilitar la emisión de comprobantes
+  electrónicos desde ZinkERP.
 sidebar_position: 3
 slug: /integraciones/facturante
 ---

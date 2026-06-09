@@ -1,7 +1,9 @@
 ---
-title: "Toma de inventario | ZinkERP Docs"
-sidebar_label: "Toma de inventario"
-description: "Registrá el conteo físico de productos por ubicación y actualizá el stock en una sola operación. Incluye procedimiento, impacto en stock y solución de problemas frecuentes."
+title: 'Toma de inventario por ubicación: conteo y actualización de stock | Zink ERP'
+sidebar_label: Toma de inventario
+description: >-
+  La toma de inventario permite registrar el conteo físico de productos y
+  actualizar el stock en una sola operación.
 keywords:
   - toma de inventario
   - conteo físico

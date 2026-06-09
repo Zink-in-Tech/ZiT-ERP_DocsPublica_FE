@@ -1,7 +1,9 @@
 ---
-title: "Tablero | ZinkERP Docs"
-sidebar_label: "Tablero"
-description: "Pantalla principal con indicadores, alertas y accesos rápidos según tu rol y organización en ZinK ERP. Incluye contexto operativo, pasos recomendados y enlaces para seguir avanzando."
+title: 'Tablero de control: indicadores, alertas y accesos rápidos | Zink ERP'
+sidebar_label: Tablero
+description: >-
+  El Tablero es la pantalla principal al ingresar a ZinK ERP: muestra
+  indicadores, alertas y accesos rápidos según tu rol y la organización activa.
 sidebar_position: 0
 keywords:
   - tablero

@@ -1,7 +1,9 @@
 ---
-title: "Usuarios | ZinkERP Docs"
-sidebar_label: "Usuarios"
-description: "Administrá los accesos al sistema y los permisos de cada colaborador. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
+title: Usuarios | Zink ERP
+sidebar_label: Usuarios
+description: >-
+  Los usuarios representan a las personas que acceden al sistema y determinan
+  qué pueden ver y hacer según el perfil asignado.
 sidebar_position: 8
 keywords:
   - usuarios

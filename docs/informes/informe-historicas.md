@@ -1,7 +1,10 @@
 ---
-title: "Informe Históricas de ventas | ZinkERP Docs"
-sidebar_label: "Informe Históricas de ventas"
-description: "Consultá el historial de ventas por período, cliente u organización para facturación y auditoría. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
+title: Informe Históricas de ventas | Zink ERP
+sidebar_label: Informe Históricas de ventas
+description: >-
+  Muestra el historial de ventas en un período: comprobantes, fechas, montos y
+  clientes. Permite filtrar por fechas, organización y contacto (cliente). en
+  Zink ERP.
 sidebar_position: 70
 keywords:
   - históricas ventas

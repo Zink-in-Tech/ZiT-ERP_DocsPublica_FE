@@ -1,7 +1,9 @@
 ---
-title: "Pagos | ZinkERP Docs"
-sidebar_label: "Pagos"
-description: "Registrá cobros y pagos, aplicalos a comprobantes y mantené actualizada la cuenta corriente. Incluye procedimiento, impacto en caja y cuenta corriente y solución de problemas."
+title: Pagos | Zink ERP
+sidebar_label: Pagos
+description: >-
+  Los pagos permiten registrar cobros a clientes y pagos a proveedores,
+  aplicando montos sobre comprobantes existentes.
 keywords:
   - pagos
   - cobros

@@ -1,7 +1,9 @@
 ---
-title: "Perfiles | ZinkERP Docs"
-sidebar_label: "Perfiles"
-description: "Definí permisos y niveles de acceso para los usuarios del sistema. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
+title: Perfiles | Zink ERP
+sidebar_label: Perfiles
+description: >-
+  Los perfiles permiten definir conjuntos de permisos y controlar qué puede ver
+  y qué acciones puede realizar cada usuario dentro del sistema.
 keywords:
   - permisos
   - perfiles

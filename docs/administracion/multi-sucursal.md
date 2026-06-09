@@ -1,7 +1,10 @@
 ---
-title: "Múltiples sucursales: organizaciones, stock y usuarios | ZinkERP Docs"
-sidebar_label: "Múltiples sucursales: organizaciones, stock y usuarios"
-description: "Aprendé a operar ZinkERP con varias sucursales u organizaciones. Incluye stock inter-org, usuarios, informes y problemas frecuentes."
+title: 'Múltiples sucursales: organizaciones, stock y usuarios | Zink ERP'
+sidebar_label: 'Múltiples sucursales: organizaciones, stock y usuarios'
+description: >-
+  ZinkERP es multiorganización: cada organización puede representar una sucursal
+  propia, franquicia o punto de venta con usuarios, contactos y operaciones
+  propias.
 sidebar_position: 61
 keywords:
   - múltiples sucursales

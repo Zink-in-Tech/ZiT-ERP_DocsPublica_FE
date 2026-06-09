@@ -1,7 +1,9 @@
 ---
-title: "Conceptos | ZinkERP Docs"
-sidebar_label: "Conceptos"
-description: "Definí categorías para clasificar ingresos y egresos en caja. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
+title: Conceptos | Zink ERP
+sidebar_label: Conceptos
+description: >-
+  Los conceptos permiten clasificar los movimientos de caja como ingresos o
+  egresos.
 sidebar_position: 5
 keywords:
   - conceptos

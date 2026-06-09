@@ -1,7 +1,9 @@
 ---
-title: "Problemas frecuentes (integraciones) | ZinkERP Docs"
-sidebar_label: "Problemas frecuentes (integraciones)"
-description: "Qué revisar cuando no aparece un servicio, falla el vínculo, OAuth no vuelve al ERP o WooCommerce devuelve error 401."
+title: 'Problemas frecuentes de integraciones: OAuth, enlaces y errores 401 | Zink ERP'
+sidebar_label: Problemas frecuentes (integraciones)
+description: >-
+  Acá reunimos síntomas comunes al trabajar con integraciones y un primer
+  checklist antes de escalar a soporte.
 sidebar_position: 9
 ---
 

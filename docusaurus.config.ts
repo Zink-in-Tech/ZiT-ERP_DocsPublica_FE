@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'ZinK ERP — Documentación',
-  tagline: 'Guías y referencia del producto',
+  tagline: 'Guías operativas, integraciones y ayuda para implementar Zink ERP',
   favicon: 'img/favicon.svg',
   headTags: [
     {
@@ -12,6 +12,43 @@ const config: Config = {
       attributes: {
         name: 'algolia-site-verification',
         content: '7E47B8905C7F835D',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'description',
+        content:
+          'Documentación de Zink ERP con guías de ventas, compras, inventario, finanzas, configuración e integraciones para pymes.',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:locale',
+        content: 'es_AR',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:title',
+        content: 'Documentación de Zink ERP',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:description',
+        content:
+          'Guías de ventas, compras, inventario, finanzas, configuración e integraciones para operar Zink ERP.',
       },
     },
   ],

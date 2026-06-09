@@ -1,7 +1,9 @@
 ---
-title: "Ajustes del sistema: preferencias y datos fiscales | ZinkERP Docs"
-description: "Toda la documentación de Ajustes del sistema en ZinkERP: datos fiscales, preferencias, listas de precio, medios de pago e integraciones."
-sidebar_label: "Configuración"
+title: 'Configuración de Zink ERP: preferencias, datos fiscales y cobros | Zink ERP'
+description: >-
+  La configuración define el comportamiento base del ERP para tu organización:
+  datos que salen en comprobantes, reglas de ventas y compras
+sidebar_label: Configuración
 sidebar_position: 69
 keywords:
   - configuración

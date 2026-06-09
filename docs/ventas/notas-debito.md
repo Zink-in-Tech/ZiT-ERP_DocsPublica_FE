@@ -1,7 +1,9 @@
 ---
-title: "Notas de débito | ZinkERP Docs"
-sidebar_label: "Notas de débito"
-description: "Registrá recargos o ajustes que incrementan el importe adeudado por el cliente; siempre asociadas a una venta. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: Notas de débito | Zink ERP
+sidebar_label: Notas de débito
+description: >-
+  Las notas de débito registran ajustes que aumentan lo que el cliente debe:
+  recargos, diferencias de precio o cargos posteriores a la venta.
 sidebar_position: 31
 keywords:
   - nota de débito

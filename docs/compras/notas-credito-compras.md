@@ -1,7 +1,9 @@
 ---
-title: "Notas de crédito de compras: devoluciones a proveedores | ZinkERP Docs"
-sidebar_label: "Notas de crédito de compras: devoluciones a proveedores"
-description: "Aprendé a registrar ajustes a favor de la organización por devoluciones o errores en compras a proveedores. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: 'Notas de crédito de compras: devoluciones a proveedores | Zink ERP'
+sidebar_label: 'Notas de crédito de compras: devoluciones a proveedores'
+description: >-
+  Las notas de crédito de compras sirven para ajustar una compra ya registrada
+  cuando hay devolución al proveedor
 sidebar_position: 4
 keywords:
   - nota de crédito compras

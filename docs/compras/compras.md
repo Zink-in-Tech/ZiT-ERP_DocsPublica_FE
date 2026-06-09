@@ -1,7 +1,9 @@
 ---
-title: "Módulo de compras: proveedores, pagos y stock | ZinkERP Docs"
-description: "Aprendé a registrar compras en ZinkERP. Incluye ingreso de mercadería, pagos, estados y solución de problemas. Incluye procedimiento, estados, impacto operativo y solución de problemas."
-sidebar_label: "Compras"
+title: 'Compras en Zink ERP: mercadería, pagos y cuenta corriente | Zink ERP'
+description: >-
+  Registrá compras en Zink ERP con ingreso de mercadería, pago a proveedores,
+  stock y cuenta corriente, ya sea desde una orden o como compra directa.
+sidebar_label: Compras
 keywords:
   - compras
   - compra proveedor
@@ -22,6 +24,17 @@ Las compras representan la instancia final del proceso de abastecimiento en ZinK
 Es donde se registra la operación con el proveedor, se ingresa la mercadería al stock y se impacta la cuenta corriente.
 
 Puede generarse a partir de una orden de compra o registrarse directamente.
+
+---
+
+## Cuándo usar compras
+
+Usá esta pantalla cuando:
+
+- la operación con el proveedor ya está definida;
+- querés registrar la compra y su impacto económico;
+- necesitás ingresar mercadería al stock;
+- querés dejar deuda o pago asociado al proveedor.
 
 ---
 
@@ -59,15 +72,25 @@ La compra es la etapa final del proceso.
 
 ## Procedimiento
 
-1. Crear una nueva compra (o generarla desde una orden).
-2. Seleccionar el proveedor.
-3. Agregar productos y cantidades.
-4. Verificar precios y condiciones.
-5. Confirmar la compra.
-6. Si corresponde, registrar el pago al proveedor.
-7. Registrar el ingreso de mercadería:
-   - se actualiza el stock
-8. Verificar impacto en cuenta corriente.
+### Paso 1: Crear la compra
+
+1. Creá una nueva compra o generala desde una orden.
+2. Seleccioná el proveedor correcto.
+
+### Paso 2: Cargar productos y condiciones
+
+3. Agregá productos, cantidades y precios.
+4. Revisá vencimientos, descuentos o condición de pago si aplica.
+
+### Paso 3: Confirmar la operación
+
+5. Confirmá la compra.
+6. Si corresponde, registrá el pago al proveedor.
+
+### Paso 4: Ingresar mercadería
+
+7. Registrá el ingreso de mercadería.
+8. Verificá stock y cuenta corriente después del ingreso.
 
 ---
 
@@ -86,6 +109,11 @@ Si no se registra el pago en el momento, la deuda queda en la cuenta corriente d
 | Se pagó en el momento | El pago debe aparecer en pagos, cuenta corriente del proveedor y caja diaria según fecha y medio. |
 | Quedó pendiente | Revisá cuenta corriente proveedores. |
 | No aparece el formulario de pago | Revisá permiso para registrar pagos y estado de la compra. |
+
+### Cuándo pagar en el momento y cuándo dejar pendiente
+
+- **Pago inmediato**: compras de contado o contra entrega.
+- **Pago pendiente**: proveedores con cuenta corriente, fecha de vencimiento o cancelación posterior.
 
 ---
 
@@ -148,6 +176,10 @@ Se confirma la compra, pero el pago queda pendiente para cancelarlo luego.
 
 Este caso impacta la cuenta corriente del proveedor.
 
+### Compra con ingreso parcial
+
+Si no recibís todo, no cierres el circuito sin documentar la diferencia. Revisá [Recepción de mercadería](./recepcion-mercaderia.md).
+
 ---
 
 ## Recomendaciones de uso
@@ -195,6 +227,22 @@ Es ideal en situaciones como:
 - Controlá precios y cantidades.
 - Usá órdenes de compra para planificar.
 - Registrá correctamente el proveedor.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Puedo comprar sin orden de compra?
+
+Sí. La orden sirve para planificar, pero la compra puede cargarse directamente.
+
+### ¿Cuándo impacta el stock?
+
+Según el flujo documentado, al registrar la compra como **INGRESADO**.
+
+### ¿Qué hago si recibí menos mercadería?
+
+Documentá la diferencia antes de cerrar el circuito y revisá el criterio operativo con [Recepción de mercadería](./recepcion-mercaderia.md).
 
 ---
 

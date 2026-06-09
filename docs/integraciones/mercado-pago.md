@@ -1,7 +1,10 @@
 ---
-title: "Mercado Pago | ZinkERP Docs"
-sidebar_label: "Mercado Pago"
-description: "Conectá Mercado Pago con ZinkERP mediante autorización segura. Incluye sucursal, punto de venta, cobranzas y problemas frecuentes."
+title: 'Mercado Pago en Zink ERP: autorización, sucursal y cobranzas | Zink ERP'
+sidebar_label: Mercado Pago
+description: >-
+  La integración con Mercado Pago permite vincular una cuenta de Mercado Pago
+  con ZinkERP para usarla en flujos de cobro donde la organización tenga esa
+  integración
 sidebar_position: 4
 slug: /integraciones/mercado-pago
 ---

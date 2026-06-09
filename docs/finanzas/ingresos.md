@@ -1,7 +1,7 @@
 ---
-title: "Ingresos | ZinkERP Docs"
-sidebar_label: "Ingresos"
-description: "Registrá entradas de dinero fuera del flujo de ventas y mantené el control de caja. Incluye procedimiento, impacto en caja y cuenta corriente y solución de problemas."
+title: Ingresos | Zink ERP
+sidebar_label: Ingresos
+description: Los ingresos permiten registrar entradas de dinero que no provienen de ventas.
 keywords:
   - ingresos
   - ingreso manual

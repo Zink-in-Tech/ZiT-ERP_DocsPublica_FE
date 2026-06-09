@@ -1,7 +1,9 @@
 ---
-title: "Informe Productos vendidos | ZinkERP Docs"
-sidebar_label: "Informe Productos vendidos"
-description: "Analizá ventas por productos y lista de precios con resumen general, detalle por día y ganancia bruta. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
+title: Informe Productos vendidos | Zink ERP
+sidebar_label: Informe Productos vendidos
+description: >-
+  Seleccionás productos y lista de precios; los resultados usan solo esa lista
+  (ventas con otras listas no aparecen).
 sidebar_position: 71
 keywords:
   - productos vendidos

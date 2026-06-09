@@ -1,7 +1,9 @@
 ---
-title: "WooCommerce | ZinkERP Docs"
-sidebar_label: "WooCommerce"
-description: "Vinculá WooCommerce con ZinkERP. Incluye claves REST, enlace de productos, artículos sin mapear y problemas frecuentes."
+title: 'WooCommerce en Zink ERP: claves REST, mapeo y sincronización | Zink ERP'
+sidebar_label: WooCommerce
+description: >-
+  La integración con WooCommerce permite conectar una tienda en WordPress con el
+  catálogo de productos de ZinkERP.
 sidebar_position: 5
 slug: /integraciones/woocommerce
 ---

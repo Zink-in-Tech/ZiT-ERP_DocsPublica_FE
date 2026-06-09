@@ -1,7 +1,9 @@
 ---
-title: "Módulo de ventas: entrega, cobro y stock | ZinkERP Docs"
-description: "Aprendé a registrar ventas en ZinkERP. Gestioná entrega, cobro, cuenta corriente, estados y solución de problemas. Incluye procedimiento, estados, impacto operativo y solución de problemas."
-sidebar_label: "Ventas"
+title: 'Ventas en Zink ERP: entrega, cobro, stock y cuenta corriente | Zink ERP'
+description: >-
+  Gestioná ventas en Zink ERP con control de stock, cobro, estados y cuenta
+  corriente, ya sea desde pedido o como venta directa.
+sidebar_label: Ventas
 keywords:
   - ventas
   - venta comercial
@@ -41,6 +43,17 @@ También podés encontrar este proceso como **venta comercial**, **venta directa
 
 ---
 
+## Cuándo usar ventas
+
+Usá esta pantalla cuando:
+
+- necesitás cerrar una operación comercial con trazabilidad;
+- el cliente puede generar cuenta corriente;
+- querés registrar una venta directa fuera de POS;
+- necesitás pasar por estados como confirmación, despacho o entrega.
+
+---
+
 ## Ubicación dentro del flujo
 
 La venta es la última etapa del proceso:
@@ -65,19 +78,30 @@ Cotización → Presupuesto → Pedido → **Venta**
 
 ## Procedimiento
 
-1. Crear una nueva venta (o generarla desde un pedido).
-2. Seleccionar el contacto:
-   - Consumidor Final → pago inmediato
-   - Contacto → puede generar deuda
-3. Agregar productos y cantidades.
-4. Ajustar precios o descuentos si corresponde (según permisos).
-5. Confirmar la venta.
-6. Si corresponde, registrar el cobro.
-7. Si aplica:
-   - gestionar despacho
-8. Marcar como ENTREGADO para:
-   - descontar stock
-   - actualizar cuenta corriente
+### Paso 1: Crear la venta
+
+1. Creá una nueva venta o generala desde un pedido.
+2. Seleccioná el contacto.
+
+### Paso 2: Definir el contexto comercial
+
+3. Si es **Consumidor Final**, normalmente el circuito espera cobro inmediato.
+4. Si es un contacto, la venta puede quedar con deuda según configuración.
+
+### Paso 3: Cargar productos
+
+5. Agregá productos y cantidades.
+6. Ajustá precios o descuentos si corresponde y tenés permisos.
+
+### Paso 4: Confirmar
+
+7. Confirmá la venta.
+8. Si aplica, registrá el cobro.
+
+### Paso 5: Entregar
+
+9. Gestioná despacho si tu operación lo requiere.
+10. Marcá la venta como **ENTREGADO** para descontar stock e impactar cuenta corriente.
 
 ---
 
@@ -94,6 +118,11 @@ El cobro depende de tres factores:
 Cuando el cobro se registra correctamente, el sistema puede abrir el comprobante o continuar con el circuito fiscal según la configuración de la organización.
 
 Si el usuario confirma una venta con contacto y el proceso de pago es diferido, la deuda queda asociada a la cuenta corriente del contacto y puede cobrarse luego desde Finanzas, Cuenta corriente o Pagos.
+
+### Cuándo usar pago inmediato y cuándo diferido
+
+- **Inmediato**: mostrador, retiro en el momento o venta que no debe quedar pendiente.
+- **Diferido**: clientes con cuenta corriente, crédito comercial o cobranza posterior.
 
 ---
 
@@ -165,6 +194,10 @@ Se confirma la venta y se abre el formulario de cobro.
 
 Usá este caso cuando querés mantener el historial del cliente pero cobrar en el momento.
 
+### Venta con stock comprometido
+
+Si trabajás con control operativo o despacho, no des por cerrada la operación hasta validar la entrega y el impacto final en stock.
+
 ---
 
 ## Si algo sale mal
@@ -197,6 +230,22 @@ Usá este caso cuando querés mantener el historial del cliente pero cobrar en e
 - Controlá precios y descuentos.
 - Para ventas en mostrador, cargá el pago antes de finalizar.
 - Usá el flujo de despacho si trabajás con logística.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Qué diferencia hay entre POS y ventas?
+
+POS es para operación rápida en mostrador. Ventas sirve mejor para circuitos con más control, cuenta corriente, etapas o despacho.
+
+### ¿Cuándo impacta el stock?
+
+Según el flujo documentado, al marcar la venta como **ENTREGADO**.
+
+### ¿Puedo cobrar después?
+
+Sí, si la configuración y el tipo de cliente permiten proceso de pago diferido.
 
 ---
 

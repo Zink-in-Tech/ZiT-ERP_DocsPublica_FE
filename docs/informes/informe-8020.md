@@ -1,7 +1,9 @@
 ---
-title: "Informe 80/20 (ganancia bruta) | ZinkERP Docs"
-sidebar_label: "Informe 80/20 (ganancia bruta)"
-description: "Ranking de productos por ganancia bruta en un período para surtido, reposición y promociones. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
+title: Informe 80/20 (ganancia bruta) | Zink ERP
+sidebar_label: Informe 80/20 (ganancia bruta)
+description: >-
+  Análisis de ganancia bruta por producto: ranking según contribución al
+  resultado.
 sidebar_position: 68
 keywords:
   - informe 80/20

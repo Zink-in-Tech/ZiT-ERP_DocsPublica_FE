@@ -1,7 +1,9 @@
 ---
-title: "Egresos | ZinkERP Docs"
-sidebar_label: "Egresos"
-description: "Registrá salidas de dinero fuera del flujo de compras y controlá gastos del negocio. Incluye procedimiento, impacto en caja y cuenta corriente y solución de problemas."
+title: Egresos | Zink ERP
+sidebar_label: Egresos
+description: >-
+  Los egresos permiten registrar salidas de dinero que no provienen de compras.
+  Son clave para controlar gastos operativos. en Zink ERP.
 keywords:
   - egresos
   - egreso manual

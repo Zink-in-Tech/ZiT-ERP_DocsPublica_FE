@@ -1,7 +1,7 @@
 ---
-title: "Glosario ZinkERP: estados y términos operativos | ZinkERP Docs"
-sidebar_label: "Glosario ZinkERP: estados y términos operativos"
-description: "Consultá definiciones cortas de estados, módulos y términos usados en ZinkERP, con enlaces a las guías principales."
+title: 'Glosario de Zink ERP: estados, módulos y términos operativos | Zink ERP'
+sidebar_label: 'Glosario ZinkERP: estados y términos operativos'
+description: 'Glosario de Zink ERP: estados, módulos y términos operativos'
 sidebar_position: 99
 keywords:
   - glosario

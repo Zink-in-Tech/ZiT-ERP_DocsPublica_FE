@@ -1,7 +1,9 @@
 ---
-title: "Nuevas Organizaciones | ZinkERP Docs"
-sidebar_label: "Nuevas Organizaciones"
-description: "Creá sucursales o puntos de venta y configurá su estructura operativa dentro del sistema. Incluye procedimiento, impacto en el sistema y solución de problemas frecuentes."
+title: Alta de organizaciones y sucursales en Zink ERP | Zink ERP
+sidebar_label: Nuevas Organizaciones
+description: >-
+  Permite crear nuevas organizaciones dentro del sistema, como sucursales
+  propias o franquicias.
 sidebar_position: 60
 keywords:
   - nueva organización

@@ -1,7 +1,9 @@
 ---
-title: "Informe Cuenta corriente | ZinkERP Docs"
-sidebar_label: "Informe Cuenta corriente"
-description: "Descargá un Excel con saldos y movimientos de cuenta corriente por contacto — estado actual. Incluye filtros, uso recomendado y qué revisar si los datos no coinciden."
+title: Informe Cuenta corriente | Zink ERP
+sidebar_label: Informe Cuenta corriente
+description: >-
+  Genera un archivo Excel con el estado de cuenta corriente: saldos y
+  movimientos por contacto (clientes o proveedores según el tipo).
 sidebar_position: 73
 keywords:
   - informe cuenta corriente

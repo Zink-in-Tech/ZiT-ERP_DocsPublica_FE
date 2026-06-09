@@ -1,8 +1,11 @@
 ---
 sidebar_position: 1
-title: "Introducción | ZinkERP Docs"
-sidebar_label: "Introducción"
-description: "Documentación ZinkERP: guías del sistema de gestión para pymes, primeros pasos, ventas, compras, finanzas e integraciones."
+title: 'Documentación de Zink ERP: guías, módulos e integraciones | Zink ERP'
+sidebar_label: Introducción
+description: >-
+  Accedé a la documentación de Zink ERP con guías de ventas, compras,
+  inventario, finanzas, configuración e integraciones para equipos operativos y
+  administración.
 keywords:
   - ayuda ZinK ERP
   - documentación
@@ -37,6 +40,29 @@ Esta documentación te ayuda a operar sin adivinar: cada artículo explica qué 
 
 ---
 
+## Recorridos recomendados
+
+Si preferís aprender según la tarea de cada persona del equipo:
+
+- [Aprender por rol](./roles/aprender-por-rol.md)
+- [Para dueños](./roles/duenos.md)
+- [Para cajeros](./roles/cajeros.md)
+- [Para administración](./roles/administracion.md)
+- [Para depósito](./roles/deposito.md)
+
+---
+
+## Según tu negocio
+
+Si querés entrar por tipo de operación en vez de por módulo:
+
+- [Zink ERP por rubro](./rubros/zinkerp-por-rubro.md)
+- [Para dietéticas](./rubros/zinkerp-para-dieteticas.md)
+- [Para ferreterías](./rubros/zinkerp-para-ferreterias.md)
+- [Para locales con balanza](./rubros/zinkerp-para-locales-con-balanza.md)
+
+---
+
 ## Módulos principales
 
 ### Ventas
@@ -66,6 +92,8 @@ Contactos, productos, usuarios y perfiles. Ver [Administración](./administracio
 Los contenidos amplían la ayuda del sistema con contexto operativo, casos frecuentes y qué revisar cuando algo falla.
 
 Cada artículo operativo incluye procedimiento, estados cuando aplica, y enlaces al flujo padre.
+
+Además, la sección [Guías](./guias/facturacion-electronica-arca.md) reúne tutoriales más concretos para tareas puntuales como configuración inicial, medios de pago o circuitos con ARCA.
 
 ---
 

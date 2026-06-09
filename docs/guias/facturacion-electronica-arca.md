@@ -1,7 +1,9 @@
 ---
-title: "Facturación electrónica en Argentina: guía completa para pymes | ZinkERP Docs"
-sidebar_label: "Facturación electrónica en Argentina: guía completa para pymes"
-description: "Conocé qué es la facturación electrónica en Argentina, cómo interviene ARCA y cómo un ERP ayuda a ordenar comprobantes."
+title: 'Facturación electrónica en Argentina: guía para pymes y ARCA | Zink ERP'
+sidebar_label: 'Facturación electrónica en Argentina: guía completa para pymes'
+description: >-
+  Aprendé qué es la facturación electrónica en Argentina, qué rol cumple ARCA y
+  qué datos necesita una pyme para emitir comprobantes correctamente.
 sidebar_position: 1
 keywords:
   - facturación electrónica

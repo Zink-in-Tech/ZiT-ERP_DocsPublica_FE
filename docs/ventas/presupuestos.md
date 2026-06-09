@@ -1,7 +1,9 @@
 ---
-title: "Presupuestos | ZinkERP Docs"
-sidebar_label: "Presupuestos"
-description: "Formalizá una propuesta comercial con precios definidos y convertí la aceptación del cliente en un pedido. Incluye procedimiento, estados, impacto operativo y solución de problemas."
+title: Presupuestos | Zink ERP
+sidebar_label: Presupuestos
+description: >-
+  Los presupuestos permiten formalizar una propuesta comercial con precios
+  definidos y condiciones claras.
 sidebar_position: 3
 ---
 
