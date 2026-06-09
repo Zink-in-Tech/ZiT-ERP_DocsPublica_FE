@@ -46,6 +46,7 @@ Adaptar Zink ERP a un negocio con muchos productos, búsqueda intensa en mostrad
 
 ### Para reposición y stock
 
+- [Cómo recibir mercadería y actualizar stock](../guias/como-recibir-mercaderia-y-actualizar-stock.md)
 - [Compras](../compras/compras.md)
 - [Recepción de mercadería](../compras/recepcion-mercaderia.md)
 - [Informe Stock crítico](../informes/informe-stock-critico.md)

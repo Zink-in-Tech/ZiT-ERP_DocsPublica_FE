@@ -34,6 +34,7 @@ Mostrar cómo usar Zink ERP en una dietética o negocio similar, donde conviven 
 
 ### Para atención diaria
 
+- [Cómo operar una venta rápida en POS](../guias/como-operar-venta-rapida-en-pos.md)
 - [POS](../ventas/pos.md)
 - [Consulta de precios](../ventas/consulta-precio.md)
 - [Medios de pago](../configuracion/medios-pago.md)

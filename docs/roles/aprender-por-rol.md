@@ -72,5 +72,5 @@ Si estás armando un plan de adopción interno:
 
 - [Primeros pasos](../primeros-pasos.md)
 - [Cómo funciona Zink ERP](../arquitectura.md)
-- [Guías](../guias/facturacion-electronica-arca.md)
+- [Guías prácticas](../guias/guias-practicas.md)
 

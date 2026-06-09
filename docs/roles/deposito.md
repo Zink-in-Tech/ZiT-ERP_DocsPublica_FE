@@ -21,11 +21,12 @@ Este recorrido ayuda a ordenar el trabajo de depósito para que el stock del sis
 
 ## Qué conviene aprender primero
 
-1. [Inventario](../inventario/inventario.md)
-2. [Registro de inventario](../inventario/inventarios.md)
-3. [Toma de inventario](../inventario/inventarios-ubicacion.md)
-4. [Recepción de mercadería](../compras/recepcion-mercaderia.md)
-5. [Consulta de stock](../inventario/productos-consulta-inter-org.md)
+1. [Cómo recibir mercadería y actualizar stock](../guias/como-recibir-mercaderia-y-actualizar-stock.md)
+2. [Inventario](../inventario/inventario.md)
+3. [Registro de inventario](../inventario/inventarios.md)
+4. [Toma de inventario](../inventario/inventarios-ubicacion.md)
+5. [Recepción de mercadería](../compras/recepcion-mercaderia.md)
+6. [Consulta de stock](../inventario/productos-consulta-inter-org.md)
 
 ---
 

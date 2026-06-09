@@ -79,6 +79,7 @@ No ingreses productos equivocados como si fueran correctos. Registrá el caso y 
 
 ## Ver también
 
+- [Cómo recibir mercadería y actualizar stock](../guias/como-recibir-mercaderia-y-actualizar-stock.md)
 - [Compras](./compras.md)
 - [Órdenes de compra](./orden-compras.md)
 - [Registro de inventario](../inventario/inventarios.md)

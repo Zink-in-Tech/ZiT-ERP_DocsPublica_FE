@@ -44,6 +44,7 @@ Esta documentación te ayuda a operar sin adivinar: cada artículo explica qué 
 
 Si preferís aprender según la tarea de cada persona del equipo:
 
+- [Guías prácticas](./guias/guias-practicas.md)
 - [Aprender por rol](./roles/aprender-por-rol.md)
 - [Para dueños](./roles/duenos.md)
 - [Para cajeros](./roles/cajeros.md)
@@ -93,7 +94,7 @@ Los contenidos amplían la ayuda del sistema con contexto operativo, casos frecu
 
 Cada artículo operativo incluye procedimiento, estados cuando aplica, y enlaces al flujo padre.
 
-Además, la sección [Guías](./guias/facturacion-electronica-arca.md) reúne tutoriales más concretos para tareas puntuales como configuración inicial, medios de pago o circuitos con ARCA.
+Además, [Guías prácticas](./guias/guias-practicas.md) reúne tutoriales para tareas puntuales: configuración inicial, venta en POS, recepción de mercadería, medios de pago o circuitos con ARCA.
 
 ---
 

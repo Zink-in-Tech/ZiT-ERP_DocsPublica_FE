@@ -56,4 +56,4 @@ Ver [Zink ERP para locales con balanza](./zinkerp-para-locales-con-balanza.md).
 
 - [Aprender por rol](../roles/aprender-por-rol.md)
 - [Primeros pasos](../primeros-pasos.md)
-- [Guías](../guias/facturacion-electronica-arca.md)
+- [Guías prácticas](../guias/guias-practicas.md)

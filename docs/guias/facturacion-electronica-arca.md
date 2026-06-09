@@ -4,7 +4,7 @@ sidebar_label: 'Facturación electrónica en Argentina: guía completa para pyme
 description: >-
   Aprendé qué es la facturación electrónica en Argentina, qué rol cumple ARCA y
   qué datos necesita una pyme para emitir comprobantes correctamente.
-sidebar_position: 1
+sidebar_position: 10
 keywords:
   - facturación electrónica
   - ARCA
