@@ -78,6 +78,18 @@ Se usa en informes y consultas anuales.
 
 Qué mostrar en Consulta de Precios: listas de precio, stock de productos relacionados, productos relacionados por etiquetas.
 
+## Código de Barras Variable
+
+Sección para productos etiquetados desde balanza.
+
+### Decimales del Código Variable
+
+Define cómo Zink ERP interpreta los **6 dígitos centrales** de una etiqueta de **13 dígitos** al escanear un producto con **Cód. variable**.
+
+Debe coincidir con la programación de decimales de la balanza (por ejemplo, 2 decimales o enteros). Si el precio en venta no coincide con la etiqueta, revisá este campo antes de reprogramar productos.
+
+Ver la guía completa en [Qué son los códigos variables](../guias/codigos-variables.md) y el detalle de alineación con Systel en [Balanzas Systel y códigos variables](../guias/balanzas-systel-y-codigos-variables.md).
+
 ## Actualizar listas de precio al actualizar Costo
 
 Comportamiento por defecto al actualizar el costo de un producto. En el producto podés ver la marca ACTUALIZAR LISTAS DE PRECIO. Al cargar una compra podés indicar si actualizar costo o no por ítem.
@@ -107,6 +119,8 @@ Si se debe hacer control completo ante reiteradas inconsistencias (valor indicad
   - Revisá **Días vencimiento presupuesto**.
 - **La consulta de precios no muestra listas o stock**
   - Revisá la sección **Pantalla consulta precio de producto** en esta misma pantalla.
+- **El precio de una etiqueta de balanza no coincide en venta**
+  - Revisá **Decimales del Código Variable** en la sección **Código de Barras Variable** y alinealo con la balanza. Ver [Códigos variables](../guias/codigos-variables.md).
 
 ---
 
@@ -121,4 +135,5 @@ Si se debe hacer control completo ante reiteradas inconsistencias (valor indicad
 - [Datos de la organización](./datos-org.md)
 - [Listas de precio](./listas-precio.md)
 - [Medios de pago](./medios-pago.md)
+- [Qué son los códigos variables](../guias/codigos-variables.md)
 - [Integraciones](/integraciones) — guías por proveedor (Facturante, Mercado Pago, WooCommerce, seguridad, problemas frecuentes).

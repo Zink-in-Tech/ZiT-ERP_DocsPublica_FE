@@ -22,10 +22,11 @@ Este recorrido ayuda a operar ventas rápidas con seguridad, cobrar correctament
 
 ## Qué conviene aprender primero
 
-1. [POS](../ventas/pos.md)
-2. [Consulta de precios](../ventas/consulta-precio.md)
-3. [Medios de pago](../configuracion/medios-pago.md)
-4. [Caja diaria](../finanzas/caja-diaria.md)
+1. [Cómo operar una venta rápida en POS](../guias/como-operar-venta-rapida-en-pos.md)
+2. [POS](../ventas/pos.md)
+3. [Consulta de precios](../ventas/consulta-precio.md)
+4. [Medios de pago](../configuracion/medios-pago.md)
+5. [Caja diaria](../finanzas/caja-diaria.md)
 
 ---
 
@@ -55,8 +56,9 @@ Este recorrido ayuda a operar ventas rápidas con seguridad, cobrar correctament
 
 Leé estas guías:
 
-- [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md)
+- [Qué son los códigos variables](../guias/codigos-variables.md)
 - [Balanzas Systel y códigos variables](../guias/balanzas-systel-y-codigos-variables.md)
+- [Problemas frecuentes con códigos variables](../guias/problemas-frecuentes-codigos-variables.md)
 
 ---
 

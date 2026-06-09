@@ -145,7 +145,15 @@ Permite detectar productos que necesitan reposición desde informes o controles 
 
 ### Producto con código variable
 
-Si el artículo se opera por balanza o lectura especial, conviene revisar [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md) antes de usarlo en mostrador.
+Para productos etiquetados desde balanza (PLU de 6 dígitos, etiqueta escaneada de 13):
+
+- Activá **Cód. variable** junto a **Código de barras**.
+- Cargá **exactamente 6 dígitos numéricos** (= PLU de la balanza). No guardes el EAN-13 completo.
+- Si escaneás una etiqueta de 13 dígitos en el formulario, el ERP guarda solo los **primeros 6**.
+- No podés activar **Cód. variable** si el código de barras ya tiene 13 dígitos (EAN-13 fijo).
+- Solo podés editar la **lista de precio por defecto**; el resto aparece grisado.
+
+Configurá también **Decimales del Código Variable** en [Preferencias](../configuracion/preferencias.md). Guía completa: [Qué son los códigos variables](../guias/codigos-variables.md).
 
 ---
 
@@ -198,3 +206,4 @@ Revisá [Códigos variables](../guias/codigos-variables.md) y [Balanzas Systel](
 - [Consulta de stock](../inventario/productos-consulta-inter-org.md)
 - [Cómo configurar tu primer producto](../guias/como-configurar-tu-primer-producto.md)
 - [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md)
+- [Problemas frecuentes con códigos variables](../guias/problemas-frecuentes-codigos-variables.md)

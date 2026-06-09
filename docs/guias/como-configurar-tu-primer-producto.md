@@ -65,7 +65,7 @@ Antes de guardar, confirmá:
 - impuestos aplicables;
 - etiquetas útiles;
 - si el producto se venderá por unidad, peso o lectura especial;
-- si puede requerir [códigos variables](./codigos-variables.md).
+- si puede requerir [códigos variables](./codigos-variables.md) (PLU de **6 dígitos** + **Cód. variable**; alinear [Preferencias](../configuracion/preferencias.md));
 
 ### Paso 5: Probar el producto
 

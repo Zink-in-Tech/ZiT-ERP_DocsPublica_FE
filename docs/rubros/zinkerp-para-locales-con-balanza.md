@@ -40,6 +40,7 @@ Eso hace que la configuración de producto y la validación operativa sean más 
 
 - [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md)
 - [Balanzas Systel y códigos variables](../guias/balanzas-systel-y-codigos-variables.md)
+- [Problemas frecuentes con códigos variables](../guias/problemas-frecuentes-codigos-variables.md)
 
 ### Control posterior
 

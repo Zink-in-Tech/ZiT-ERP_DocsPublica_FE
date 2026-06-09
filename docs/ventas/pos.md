@@ -182,7 +182,12 @@ No se requiere pasar por pedido ni despacho.
 
 ### Productos con lectura especial
 
-Si trabajás con productos pesables o lectura desde balanza, revisá [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md) y [Balanzas Systel y códigos variables](../guias/balanzas-systel-y-codigos-variables.md).
+Si trabajás con productos pesables o lectura desde balanza:
+
+- En **Ventas**, el circuito de código variable está completo: decodifica el importe de la etiqueta y **bloquea la cantidad**.
+- En **POS**, la búsqueda es la misma, pero el **subtotal puede calcularse distinto** que en Ventas para la misma etiqueta. Validá siempre en Ventas antes de operar en vivo.
+
+Guías: [Códigos variables](../guias/codigos-variables.md), [Balanzas Systel](../guias/balanzas-systel-y-codigos-variables.md), [Problemas frecuentes](../guias/problemas-frecuentes-codigos-variables.md).
 
 ---
 
@@ -260,6 +265,7 @@ Conviene validar el circuito de lectura con [Códigos variables](../guias/codigo
 
 ## Ver también
 
+- [Cómo operar una venta rápida en POS](../guias/como-operar-venta-rapida-en-pos.md)
 - [Ventas](./ventas.md)
 - [Consulta de precios](./consulta-precio.md)
 - [Flujo de ventas](./flujo-ventas.md)

@@ -75,6 +75,12 @@ Confirmá con el cliente qué lista aplica (mayorista, público, oferta).
 
 El cliente consulta sin intervención; la lista expuesta debe estar alineada con la política comercial.
 
+### Etiqueta de balanza (código variable)
+
+Si escaneás una etiqueta de **13 dígitos**, el sistema encuentra el producto por su PLU de 6 dígitos, pero el **precio mostrado es el de catálogo** (lista por defecto), **no** el importe impreso en la etiqueta.
+
+Para validar el valor de una etiqueta real, usá **Ventas** o **POS**. Ver [Qué son los códigos variables](../guias/codigos-variables.md).
+
 ---
 
 ## Si algo sale mal
@@ -85,6 +91,8 @@ El cliente consulta sin intervención; la lista expuesta debe estar alineada con
   - Ajustá la configuración de consulta de precio en preferencias.
 - **Producto no encontrado**
   - Verificá código, nombre y que el producto esté activo.
+- **Precio de etiqueta de balanza no coincide**
+  - Comportamiento esperado: Consulta de precios muestra precio de lista, no el importe decodificado de la etiqueta. Validá en **Ventas** o **POS**. Ver [Códigos variables](../guias/codigos-variables.md).
 
 ---
 
@@ -102,3 +110,4 @@ El cliente consulta sin intervención; la lista expuesta debe estar alineada con
 - [Flujo de ventas](./flujo-ventas.md)
 - [Preferencias](../configuracion/preferencias.md)
 - [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md)
+- [Problemas frecuentes con códigos variables](../guias/problemas-frecuentes-codigos-variables.md)
