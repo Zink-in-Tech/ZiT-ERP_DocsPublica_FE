@@ -3,7 +3,13 @@ import {useDoc} from '@docusaurus/plugin-content-docs/client';
 
 import styles from './styles.module.css';
 
-type ShareAction = 'copy-url' | 'copy-markdown' | 'open-chatgpt' | 'open-claude';
+type ShareAction =
+  | 'copy-url'
+  | 'copy-ai-prompt'
+  | 'copy-markdown'
+  | 'open-chatgpt'
+  | 'open-claude'
+  | 'share-whatsapp';
 
 function IconCopy(): ReactNode {
   return (
@@ -37,6 +43,15 @@ function IconChevron(): ReactNode {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="m6 9 6 6 6-6" />
+    </svg>
+  );
+}
+
+function IconWhatsApp(): ReactNode {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20 11.8a8 8 0 0 1-11.7 7.1L4 20l1.2-4.1A8 8 0 1 1 20 11.8Z" />
+      <path d="M9.4 8.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.7 4.2 3.7 2 .8 2.4.6 2.8.6.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.4-.2-.8-.4s-1.4-.7-1.6-.8c-.2-.1-.4-.2-.6.2-.2.4-.7.8-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.2-1.5-.8-.8-1.4-1.7-1.6-2-.2-.3 0-.4.1-.6.1-.1.2-.3.3-.4.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.5-1.4-.7-1.8Z" />
     </svg>
   );
 }
@@ -154,6 +169,20 @@ function articleToMarkdown(article: HTMLElement, title: string, url: string): st
   return [`# ${title}`, '', `Fuente: ${url}`, '', ...blocks].join('\n\n').trim();
 }
 
+function buildAiPrompt(url: string): string {
+  return `Leé esta página: ${url}\n\nDespués respondé mis preguntas sobre su contenido en español.`;
+}
+
+function buildAiServiceUrl(service: 'chatgpt' | 'claude', prompt: string): string {
+  const encoded = encodeURIComponent(prompt);
+
+  if (service === 'chatgpt') {
+    return `https://chatgpt.com/?q=${encoded}`;
+  }
+
+  return `https://claude.ai/new?q=${encoded}`;
+}
+
 async function copyToClipboard(text: string): Promise<void> {
   await navigator.clipboard.writeText(text);
 }
@@ -220,23 +249,49 @@ export default function DocPageShare(): ReactNode {
         setStatus('Enlace copiado');
       }
 
-      if (action === 'copy-markdown' || action === 'open-chatgpt' || action === 'open-claude') {
+      if (action === 'copy-ai-prompt') {
+        await copyToClipboard(buildAiPrompt(pageUrl));
+        setStatus('Prompt para IA copiado');
+      }
+
+      if (action === 'copy-markdown') {
         const article = getArticleElement();
         if (!article) {
           throw new Error('No se encontro el contenido del articulo.');
         }
 
         const markdown = articleToMarkdown(article, title, pageUrl);
-        await copyToClipboard(markdown);
+        const aiPrompt = `${buildAiPrompt(pageUrl)}\n\nSi no podés acceder al enlace, usá este contenido:\n\n${markdown}`;
+        await copyToClipboard(aiPrompt);
         setStatus('Contenido copiado en Markdown');
       }
 
-      if (action === 'open-chatgpt') {
-        window.open('https://chatgpt.com/', '_blank', 'noopener,noreferrer');
+      if (action === 'open-chatgpt' || action === 'open-claude') {
+        const article = getArticleElement();
+        if (!article) {
+          throw new Error('No se encontro el contenido del articulo.');
+        }
+
+        const service = action === 'open-chatgpt' ? 'chatgpt' : 'claude';
+        const shortPrompt = buildAiPrompt(pageUrl);
+        const markdown = articleToMarkdown(article, title, pageUrl);
+        const backupPrompt = `${shortPrompt}\n\nSi no podés acceder al enlace, usá este contenido:\n\n${markdown}`;
+
+        await copyToClipboard(backupPrompt);
+        window.open(buildAiServiceUrl(service, shortPrompt), '_blank', 'noopener,noreferrer');
+        setStatus(service === 'chatgpt' ? 'Abriendo ChatGPT' : 'Abriendo Claude');
       }
 
-      if (action === 'open-claude') {
-        window.open('https://claude.ai/', '_blank', 'noopener,noreferrer');
+      if (action === 'share-whatsapp') {
+        const text = `${title}\n${pageUrl}`;
+        const encoded = encodeURIComponent(text);
+        const whatsappUrl =
+          typeof window !== 'undefined' && /Mobi|Android|iPhone|iPad/i.test(window.navigator.userAgent)
+            ? `https://api.whatsapp.com/send?text=${encoded}`
+            : `https://web.whatsapp.com/send?text=${encoded}`;
+
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        setStatus('Abriendo WhatsApp');
       }
 
       setOpen(false);
@@ -255,25 +310,59 @@ export default function DocPageShare(): ReactNode {
         aria-haspopup="menu"
         onClick={() => setOpen((value) => !value)}>
         <span className={styles.triggerMain}>
-          <span className={styles.iconBox}>
+          <span className={styles.triggerIcon} aria-hidden="true">
             <IconSpark />
           </span>
-          Compartir con IA
-        </span>
-        <span className={styles.triggerChevron}>
+          Compartir
+          <span className={styles.triggerChevron}>
           <IconChevron />
+          </span>
         </span>
       </button>
 
       {open && (
         <div className={styles.menu} role="menu" aria-label="Compartir pagina con asistentes">
-          <button type="button" className={styles.menuItem} role="menuitem" onClick={() => handleAction('copy-url')}>
+          <button
+            type="button"
+            className={styles.menuItem}
+            role="menuitem"
+            onClick={() => handleAction('share-whatsapp')}>
+            <span className={`${styles.iconBox} ${styles.iconBoxWhatsapp}`}>
+              <IconWhatsApp />
+            </span>
+            <span>
+              <strong>WhatsApp</strong>
+              <small>Comparte el enlace actual</small>
+            </span>
+          </button>
+
+          <button
+            type="button"
+            className={styles.menuItem}
+            role="menuitem"
+            onClick={() => handleAction('copy-url')}>
             <span className={styles.iconBox}>
               <IconCopy />
             </span>
             <span>
               <strong>Copiar enlace</strong>
-              <small>Comparte la URL actual</small>
+              <small>Copia la URL de esta página</small>
+            </span>
+          </button>
+
+          <div className={styles.menuDivider} />
+
+          <button
+            type="button"
+            className={styles.menuItem}
+            role="menuitem"
+            onClick={() => handleAction('copy-ai-prompt')}>
+            <span className={styles.iconBox}>
+              <IconSpark />
+            </span>
+            <span>
+              <strong>Prompt para IA</strong>
+              <small>Texto breve en español con el enlace</small>
             </span>
           </button>
 
@@ -286,8 +375,8 @@ export default function DocPageShare(): ReactNode {
               <IconMarkdown />
             </span>
             <span>
-              <strong>Copiar como Markdown</strong>
-              <small>Ideal para pegar en un chat de IA</small>
+              <strong>Markdown para IA</strong>
+              <small>Enlace más contenido de respaldo</small>
             </span>
           </button>
 
@@ -301,7 +390,7 @@ export default function DocPageShare(): ReactNode {
             </span>
             <span>
               <strong>Abrir en ChatGPT</strong>
-              <small>Copia el contenido y abre una nueva pestaña</small>
+              <small>Prompt en español y respaldo en el portapapeles</small>
             </span>
           </button>
 
@@ -315,7 +404,7 @@ export default function DocPageShare(): ReactNode {
             </span>
             <span>
               <strong>Abrir en Claude</strong>
-              <small>Copia el contenido y abre una nueva pestaña</small>
+              <small>Prompt en español y respaldo en el portapapeles</small>
             </span>
           </button>
         </div>

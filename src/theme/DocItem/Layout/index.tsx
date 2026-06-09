@@ -47,10 +47,12 @@ export default function DocItemLayout({children}: Props): ReactNode {
         <ContentVisibility metadata={metadata} />
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
-          <DocPageShare />
           <article>
             <DocBreadcrumbs />
-            <DocVersionBadge />
+            <div className={styles.docToolbar}>
+              <DocVersionBadge />
+              <DocPageShare />
+            </div>
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />

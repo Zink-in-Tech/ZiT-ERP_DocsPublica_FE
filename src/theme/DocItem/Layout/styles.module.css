@@ -1,5 +1,4 @@
 .docItemContainer {
-  position: relative;
   padding-top: 0.25rem;
 }
 
@@ -8,12 +7,27 @@
   margin-top: 0;
 }
 
+.docToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 1rem;
+}
+
+.docToolbar:empty {
+  display: none;
+}
+
 @media (min-width: 997px) {
   .docItemCol {
     max-width: 75% !important;
   }
+}
 
-  .docItemContainer article {
-    padding-right: min(24rem, 32vw);
+@media (max-width: 996px) {
+  .docToolbar {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
