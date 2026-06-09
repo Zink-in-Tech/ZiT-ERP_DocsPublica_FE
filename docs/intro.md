@@ -28,7 +28,7 @@ Esta documentación te ayuda a operar sin adivinar: cada artículo explica qué 
 |---------------|-------------|
 | Configurar la organización antes de vender | [Primeros pasos](./primeros-pasos.md) → [Configuración](./configuracion/configuracion.md) |
 | Entender cómo se conectan los módulos | [Cómo funciona Zink ERP](./arquitectura.md) |
-| Validar el sistema en pocos días | [Primeros resultados](./primeros-4-dias.md) |
+| Validar el sistema con un plan de práctica (opcional) | [Plan de 4 días](./primeros-4-dias.md) |
 | Vender con etapas (cotización → venta) | [Flujo de ventas](./ventas/flujo-ventas.md) |
 | Vender en mostrador | [POS](./ventas/pos.md) |
 | Comprar y recibir mercadería | [Flujo de compras](./compras/flujo-compras.md) |

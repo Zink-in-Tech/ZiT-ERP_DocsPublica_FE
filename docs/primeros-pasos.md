@@ -172,7 +172,7 @@ Revisá el flujo utilizado, los datos cargados y el impacto en inventario y fina
 ## Ver también
 
 - [Cómo funciona Zink ERP](./arquitectura.md)
-- [Primeros resultados](./primeros-4-dias.md)
+- [Plan de 4 días (opcional)](./primeros-4-dias.md)
 - [Aprender por rol](./roles/aprender-por-rol.md)
 - [Guías prácticas](./guias/guias-practicas.md)
 - [Configurar tu primer producto](./guias/como-configurar-tu-primer-producto.md)

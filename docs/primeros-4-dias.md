@@ -1,15 +1,18 @@
 ---
-title: 'Primeros resultados con Zink ERP: plan de adopción en pocos días | Zink ERP'
-sidebar_label: Primeros resultados con Zink ERP
+title: 'Plan de 4 días con Zink ERP: práctica guiada de adopción | Zink ERP'
+sidebar_label: Plan de 4 días
+sidebar_class_name: hidden
 description: >-
-  Esta guía te permite comenzar a usar Zink ERP de forma práctica, recorriendo
-  las funcionalidades clave en pocos días. El objetivo es que puedas:
+  Plan opcional de práctica para validar Zink ERP en unos días: configuración,
+  compras, ventas e informes. Completá Primeros pasos antes de empezar.
 sidebar_position: 4
 ---
 
 ## Resumen
 
-Esta guía te permite comenzar a usar Zink ERP de forma práctica, recorriendo las funcionalidades clave en pocos días.
+Plan **opcional** de práctica para recorrer funcionalidades clave en unos días (~1 hora por día).
+
+Si recién empezás, completá primero [Primeros pasos](./primeros-pasos.md). Esta guía sirve para **validar en profundidad** una vez que la base ya está configurada.
 
 El objetivo es que puedas:
 
@@ -23,9 +26,10 @@ El objetivo es que puedas:
 
 ## Cómo usar esta guía
 
-- No es necesario completar todo en un solo día
-- Podés avanzar a tu ritmo
-- Cada paso está pensado para validar el sistema
+- Empezá por [Primeros pasos](./primeros-pasos.md) si todavía no configuraste el sistema.
+- No es necesario completar todo en un solo día.
+- Podés avanzar a tu ritmo.
+- Cada paso está pensado para validar el sistema en operación real.
 
 ---
 
@@ -176,6 +180,7 @@ Si tenés dudas, consultá con tu administrador o la ayuda dentro del sistema.
 
 ## Ver también
 
+- [Primeros pasos](./primeros-pasos.md)
 - [Cómo funciona Zink ERP](./arquitectura.md)
 - [Flujo de ventas](./ventas/flujo-ventas.md)
 - [Inventario](./inventario/inventarios.md)

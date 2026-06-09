@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
     links: [
       {label: 'Primeros pasos', to: '/primeros-pasos'},
       {label: 'Cómo funciona Zink ERP', to: '/arquitectura'},
-      {label: 'Validar en 4 días', to: '/primeros-4-dias'},
+      {label: 'Plan de 4 días', to: '/primeros-4-dias'},
     ],
   },
   {
