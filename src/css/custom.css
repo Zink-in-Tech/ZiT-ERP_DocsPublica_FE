@@ -5,6 +5,13 @@
 :root {
   --zink-purple: #7500b9;
   --zink-blue: #008ed3;
+  --doc-share-text: #171a21;
+  --doc-share-muted: #5f6470;
+  --doc-share-surface: rgba(255, 255, 255, 0.82);
+  --doc-share-surface-strong: rgba(255, 255, 255, 0.94);
+  --doc-share-icon-surface: rgba(255, 255, 255, 0.6);
+  --doc-share-hover: rgba(117, 0, 185, 0.08);
+  --doc-share-border: rgba(23, 26, 33, 0.12);
   --ifm-color-primary: #7500b9;
   --ifm-color-primary-dark: #600099;
   --ifm-color-primary-darker: #56008a;
@@ -26,6 +33,13 @@
   --ifm-color-primary-light: #b07fe3;
   --ifm-color-primary-lighter: #b88de6;
   --ifm-color-primary-lightest: #cdb0ee;
+  --doc-share-text: #f3f5f8;
+  --doc-share-muted: #b2b7c2;
+  --doc-share-surface: rgba(15, 18, 24, 0.82);
+  --doc-share-surface-strong: rgba(15, 18, 24, 0.95);
+  --doc-share-icon-surface: rgba(255, 255, 255, 0.03);
+  --doc-share-hover: rgba(157, 95, 217, 0.12);
+  --doc-share-border: rgba(255, 255, 255, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(157, 95, 217, 0.25);
   --ifm-link-color: #5ec4ff;
   --ifm-link-hover-color: #cfa8ff;
