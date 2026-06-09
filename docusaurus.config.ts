@@ -139,6 +139,12 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/og-docs-zinkerp.png',
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -193,6 +199,15 @@ const config: Config = {
           ],
         },
         {
+          title: 'Soporte',
+          items: [
+            {
+              label: 'WhatsApp soporte',
+              href: 'https://wa.me/5491135598389',
+            },
+          ],
+        },
+        {
           title: 'Enlaces',
           items: [
             {
@@ -202,7 +217,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} Zink ERP. Documentación generada con Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Zink in Tech · Zink ERP. Documentación oficial.`,
     },
     prism: {
       theme: prismThemes.github,
