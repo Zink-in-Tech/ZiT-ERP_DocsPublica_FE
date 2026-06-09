@@ -13,7 +13,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          Documentación ZinkERP
+          Documentación Zink ERP
         </Heading>
         <p className="hero__subtitle">
           Guías operativas, configuración y troubleshooting para tu día a día.
@@ -39,7 +39,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Documentación ZinkERP"
-      description="Guías operativas, configuración y troubleshooting de ZinkERP para implementación, operación diaria y soporte.">
+      description="Guías operativas, configuración y troubleshooting de Zink ERP para implementación, operación diaria y soporte.">
       <Head>
         <meta name="algolia-site-verification" content="7E47B8905C7F835D" />
       </Head>

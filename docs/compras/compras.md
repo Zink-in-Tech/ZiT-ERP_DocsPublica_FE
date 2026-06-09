@@ -19,7 +19,7 @@ sidebar_position: 3
 
 ## Resumen
 
-Las compras representan la instancia final del proceso de abastecimiento en ZinK ERP.
+Las compras representan la instancia final del proceso de abastecimiento en Zink ERP.
 
 Es donde se registra la operación con el proveedor, se ingresa la mercadería al stock y se impacta la cuenta corriente.
 

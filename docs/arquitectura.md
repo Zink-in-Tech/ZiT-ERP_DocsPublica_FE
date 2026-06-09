@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: 'Cómo funciona Zink ERP: ventas, compras, stock y finanzas | Zink ERP'
-sidebar_label: Cómo funciona ZinK ERP
+sidebar_label: Cómo funciona Zink ERP
 description: >-
   Entendé cómo se conectan ventas, compras, inventario y finanzas en Zink ERP
   para registrar operaciones con impacto claro en stock, caja y deuda.
@@ -9,7 +9,7 @@ description: >-
 
 ## Resumen
 
-ZinK ERP organiza el negocio en un sistema conectado donde cada operación impacta automáticamente en otras áreas.
+Zink ERP organiza el negocio en un sistema conectado donde cada operación impacta automáticamente en otras áreas.
 
 Permite gestionar:
 
@@ -24,7 +24,7 @@ todo de forma integrada y en tiempo real.
 
 ## Cómo está organizado el sistema
 
-ZinK ERP se estructura en módulos que representan procesos reales del negocio.
+Zink ERP se estructura en módulos que representan procesos reales del negocio.
 
 Estos módulos no funcionan de forma aislada, sino conectados entre sí.
 
@@ -89,7 +89,7 @@ Cada acción que realizás genera impacto automático:
 
 ## Estructura organizacional
 
-ZinK ERP es un sistema **multiorganización**. Si operás con varias sucursales, ver [Múltiples sucursales](./administracion/multi-sucursal.md).
+Zink ERP es un sistema **multiorganización**. Si operás con varias sucursales, ver [Múltiples sucursales](./administracion/multi-sucursal.md).
 
 Cada organización representa:
 
@@ -178,7 +178,7 @@ Trabajar correctamente el flujo evita errores:
 
 ### El sistema refleja la realidad
 
-ZinK ERP no inventa procesos:
+Zink ERP no inventa procesos:
 
 👉 replica cómo funciona un negocio real
 

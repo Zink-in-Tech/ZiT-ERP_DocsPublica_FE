@@ -75,7 +75,7 @@ No uses nota de débito para corregir a favor del cliente; en ese caso correspon
 
 La documentación y páginas actuales no confirman estados adicionales para notas de débito, como **ANULADO** o **RECHAZADO**.
 
-<!-- TODO(producto): validar en el código del producto si notas de débito soportan ANULADO, RECHAZADO u otros estados y actualizar esta tabla. -->
+Si tu operación usa estados adicionales o reglas particulares de anulación, conviene validarlas con el equipo antes de estandarizar el circuito.
 
 ---
 

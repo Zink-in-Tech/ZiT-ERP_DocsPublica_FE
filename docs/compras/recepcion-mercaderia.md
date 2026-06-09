@@ -19,8 +19,6 @@ La recepción de mercadería es el control operativo entre lo comprado y lo que 
 
 En el flujo documentado, la compra pasa a **INGRESADO** cuando se registra el ingreso de mercadería. Si recibís parcialmente, documentá la diferencia y evitá cerrar stock por cantidades no recibidas.
 
-<!-- TODO(producto): confirmar si existe recepción parcial formal con estados propios o si se gestiona ajustando cantidades antes de ingresar. -->
-
 ---
 
 ## Antes de empezar

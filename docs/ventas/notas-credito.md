@@ -80,7 +80,7 @@ No uses nota de crédito para corregir una venta que sigue en **BORRADOR**; edit
 
 La documentación y páginas actuales no confirman estados adicionales para notas de crédito, como **ANULADO** o **RECHAZADO**.
 
-<!-- TODO(producto): validar en el código del producto si notas de crédito soportan ANULADO, RECHAZADO u otros estados y actualizar esta tabla. -->
+Si tu operación usa estados adicionales o reglas particulares de anulación, conviene validarlas con el equipo antes de estandarizar el circuito.
 
 ---
 

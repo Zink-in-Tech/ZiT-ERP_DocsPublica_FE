@@ -7,7 +7,7 @@ description: >-
   inventario, finanzas, configuración e integraciones para equipos operativos y
   administración.
 keywords:
-  - ayuda ZinK ERP
+  - ayuda Zink ERP
   - documentación
   - primeros pasos
   - flujo de ventas
@@ -16,7 +16,7 @@ keywords:
 
 ## Resumen
 
-ZinK ERP organiza ventas, compras, inventario y finanzas en un solo sistema con trazabilidad en cada etapa.
+Zink ERP organiza ventas, compras, inventario y finanzas en un solo sistema con trazabilidad en cada etapa.
 
 Esta documentación te ayuda a operar sin adivinar: cada artículo explica qué hace una pantalla, cuándo usarla y qué impacto tiene en stock, deuda y caja.
 
@@ -27,7 +27,7 @@ Esta documentación te ayuda a operar sin adivinar: cada artículo explica qué 
 | Si necesitás… | Empezá por… |
 |---------------|-------------|
 | Configurar la organización antes de vender | [Primeros pasos](./primeros-pasos.md) → [Configuración](./configuracion/configuracion.md) |
-| Entender cómo se conectan los módulos | [Cómo funciona ZinK ERP](./arquitectura.md) |
+| Entender cómo se conectan los módulos | [Cómo funciona Zink ERP](./arquitectura.md) |
 | Validar el sistema en pocos días | [Primeros resultados](./primeros-4-dias.md) |
 | Vender con etapas (cotización → venta) | [Flujo de ventas](./ventas/flujo-ventas.md) |
 | Vender en mostrador | [POS](./ventas/pos.md) |
@@ -101,7 +101,7 @@ Además, la sección [Guías](./guias/facturacion-electronica-arca.md) reúne tu
 
 Si estás empezando:
 
-1. Revisá [Cómo funciona ZinK ERP](./arquitectura.md).
+1. Revisá [Cómo funciona Zink ERP](./arquitectura.md).
 2. Configurá según [Primeros pasos](./primeros-pasos.md).
 3. Validá una operación real (venta, compra o POS).
 4. Controlá inventario y caja diariamente.
@@ -112,7 +112,7 @@ El orden en que trabajás impacta directamente en el control del negocio.
 
 ## Ver también
 
-- [Cómo funciona ZinK ERP](./arquitectura.md)
+- [Cómo funciona Zink ERP](./arquitectura.md)
 - [Primeros pasos](./primeros-pasos.md)
 - [Flujo de ventas](./ventas/flujo-ventas.md)
 - [Finanzas](./finanzas/finanzas.md)

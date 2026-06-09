@@ -17,10 +17,10 @@ const FeatureList: FeatureItem[] = [
   {
     title: '🆕 Arrancar con el sistema',
     description:
-      'Primera vez en ZinkERP. Configuración inicial, arquitectura y primeros 4 días.',
+      'Primera vez en Zink ERP. Configuración inicial, arquitectura y primeros 4 días.',
     links: [
       {label: 'Primeros pasos', to: '/primeros-pasos'},
-      {label: 'Cómo funciona ZinkERP', to: '/arquitectura'},
+      {label: 'Cómo funciona Zink ERP', to: '/arquitectura'},
       {label: 'Validar en 4 días', to: '/primeros-4-dias'},
     ],
   },
@@ -45,7 +45,7 @@ const FeatureList: FeatureItem[] = [
         to: '/integraciones/problemas-frecuentes',
       },
       {label: 'Guía rápida por necesidad', to: '/intro#por-dónde-empezar'},
-      {label: 'Sitio web ZinkERP →', to: 'https://zinkerp.com', external: true},
+      {label: 'Sitio web Zink ERP →', to: 'https://zinkerp.com', external: true},
     ],
   },
 ];

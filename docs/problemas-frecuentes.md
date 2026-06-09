@@ -18,7 +18,7 @@ keywords:
 
 ## Resumen
 
-Esta página reúne síntomas generales que pueden aparecer en cualquier módulo de ZinkERP y dónde conviene revisar primero.
+Esta página reúne síntomas generales que pueden aparecer en cualquier módulo de Zink ERP y dónde conviene revisar primero.
 
 ---
 

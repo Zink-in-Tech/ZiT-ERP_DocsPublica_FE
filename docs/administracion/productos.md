@@ -66,8 +66,6 @@ Usala cuando necesitás cargar un producto durante una operación y seguir traba
 
 Ejemplo: creá **Remera azul XL** con precio **$8500** para poder agregarla a una venta. Después volvé a la ficha completa para revisar impuestos, unidad de medida, stock mínimo, ubicación y etiquetas.
 
-<!-- TODO(producto): confirmar campos exactos de alta rápida según la pantalla actual. -->
-
 ### Configuración completa
 
 Usala para dejar el producto listo para ventas, compras, inventario e informes.
@@ -107,9 +105,7 @@ Antes de dar por listo un producto nuevo:
 
 ## Tipos de producto
 
-La documentación disponible confirma productos de catálogo usados en ventas, compras e inventario. No confirma todavía si existen tipos especiales como servicio, kit o producto compuesto.
-
-<!-- TODO(producto): confirmar si ZinkERP soporta productos tipo servicio, kits o compuestos y documentar reglas de stock, precio e impuestos para cada tipo. -->
+La documentación publicada hoy se centra en productos de catálogo usados en ventas, compras e inventario. Si en tu operación aparecen tipos especiales o reglas distintas, conviene validarlas con el equipo antes de aplicarlas en producción.
 
 ---
 

@@ -17,7 +17,7 @@ keywords:
 
 ## Resumen
 
-Los medios de pago indican cómo entra o sale dinero en ZinkERP: efectivo, transferencia, tarjeta, Mercado Pago, cuenta corriente u otros medios habilitados para la organización.
+Los medios de pago indican cómo entra o sale dinero en Zink ERP: efectivo, transferencia, tarjeta, Mercado Pago, cuenta corriente u otros medios habilitados para la organización.
 
 Se usan al cobrar ventas, registrar pagos, operar POS y revisar la [Caja diaria](../finanzas/caja-diaria.md).
 
@@ -40,8 +40,6 @@ Definir correctamente medios de pago ayuda a que:
 - Tener permisos para configurar preferencias o medios habilitados.
 - Si usás Mercado Pago, completar la [integración](../integraciones/mercado-pago.md).
 - Confirmar si el punto de venta opera con caja propia, caja por usuario o caja global.
-
-<!-- TODO(producto): confirmar si la habilitación/deshabilitación de medios se administra desde Preferencias, punto de venta o una pantalla específica. -->
 
 ---
 

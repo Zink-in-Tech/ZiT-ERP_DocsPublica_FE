@@ -1,15 +1,15 @@
 ---
 title: 'Primeros resultados con Zink ERP: plan de adopción en pocos días | Zink ERP'
-sidebar_label: Primeros resultados con ZinK ERP
+sidebar_label: Primeros resultados con Zink ERP
 description: >-
-  Esta guía te permite comenzar a usar ZinK ERP de forma práctica, recorriendo
+  Esta guía te permite comenzar a usar Zink ERP de forma práctica, recorriendo
   las funcionalidades clave en pocos días. El objetivo es que puedas:
 sidebar_position: 4
 ---
 
 ## Resumen
 
-Esta guía te permite comenzar a usar ZinK ERP de forma práctica, recorriendo las funcionalidades clave en pocos días.
+Esta guía te permite comenzar a usar Zink ERP de forma práctica, recorriendo las funcionalidades clave en pocos días.
 
 El objetivo es que puedas:
 
@@ -149,7 +149,7 @@ El objetivo es que puedas:
 - cómo registrar pagos  
 - cómo analizar la caja  
 
-Es decir: cómo funciona tu negocio dentro de ZinK ERP.
+Es decir: cómo funciona tu negocio dentro de Zink ERP.
 
 ---
 
@@ -176,7 +176,7 @@ Si tenés dudas, consultá con tu administrador o la ayuda dentro del sistema.
 
 ## Ver también
 
-- [Cómo funciona ZinK ERP](./arquitectura.md)
+- [Cómo funciona Zink ERP](./arquitectura.md)
 - [Flujo de ventas](./ventas/flujo-ventas.md)
 - [Inventario](./inventario/inventarios.md)
 - [Finanzas](./finanzas/finanzas.md)

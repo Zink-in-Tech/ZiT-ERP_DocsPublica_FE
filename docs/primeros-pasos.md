@@ -5,7 +5,7 @@ title: >-
   ERP
 sidebar_label: Primeros pasos
 description: >-
-  Esta guía te ayuda a empezar a usar ZinK ERP de forma correcta, configurando
+  Esta guía te ayuda a empezar a usar Zink ERP de forma correcta, configurando
   lo necesario y entendiendo cómo operar desde el primer momento.
 keywords:
   - configuración inicial
@@ -17,7 +17,7 @@ keywords:
 
 ## Resumen
 
-Esta guía te ayuda a empezar a usar ZinK ERP de forma correcta, configurando lo necesario y entendiendo cómo operar desde el primer momento.
+Esta guía te ayuda a empezar a usar Zink ERP de forma correcta, configurando lo necesario y entendiendo cómo operar desde el primer momento.
 
 El objetivo es evitar errores comunes y lograr control desde el inicio.
 
@@ -54,7 +54,7 @@ Antes de operar, es importante entender la lógica general:
 - Inventario → controla stock
 - Finanzas → controla dinero
 
-Recomendado: [Cómo funciona ZinK ERP](./arquitectura.md)
+Recomendado: [Cómo funciona Zink ERP](./arquitectura.md)
 
 ---
 
@@ -171,7 +171,7 @@ Revisá el flujo utilizado, los datos cargados y el impacto en inventario y fina
 
 ## Ver también
 
-- [Cómo funciona ZinK ERP](./arquitectura.md)
+- [Cómo funciona Zink ERP](./arquitectura.md)
 - [Primeros resultados](./primeros-4-dias.md)
 - [Aprender por rol](./roles/aprender-por-rol.md)
 - [Configurar tu primer producto](./guias/como-configurar-tu-primer-producto.md)

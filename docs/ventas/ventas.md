@@ -19,7 +19,7 @@ sidebar_position: 5
 
 ## Resumen
 
-La venta es la etapa final del flujo comercial en ZinK ERP.
+La venta es la etapa final del flujo comercial en Zink ERP.
 
 Representa el cierre de la operación y es el momento en el que el sistema impacta stock y cuenta corriente según el estado.
 

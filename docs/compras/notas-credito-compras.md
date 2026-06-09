@@ -18,7 +18,7 @@ Las notas de crédito de compras sirven para ajustar una compra ya registrada cu
 
 La documentación disponible no confirma una pantalla específica separada para este flujo; tratá esta guía como criterio operativo hasta validar el circuito exacto en producto.
 
-<!-- TODO(producto): confirmar pantalla, estados y permisos de notas de crédito de compras. -->
+Esta guía describe el circuito operativo actualmente documentado. Si tu organización usa reglas adicionales de permisos o estados, conviene validarlas antes de aplicarlas.
 
 ---
 

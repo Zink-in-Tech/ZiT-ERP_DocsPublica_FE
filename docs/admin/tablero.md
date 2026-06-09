@@ -2,7 +2,7 @@
 title: 'Tablero de control: indicadores, alertas y accesos rápidos | Zink ERP'
 sidebar_label: Tablero
 description: >-
-  El Tablero es la pantalla principal al ingresar a ZinK ERP: muestra
+  El Tablero es la pantalla principal al ingresar a Zink ERP: muestra
   indicadores, alertas y accesos rápidos según tu rol y la organización activa.
 sidebar_position: 0
 keywords:
@@ -14,7 +14,7 @@ keywords:
 
 ## Resumen
 
-El **Tablero** es la pantalla principal al ingresar a ZinK ERP: muestra indicadores, alertas y accesos rápidos según tu rol y la organización activa.
+El **Tablero** es la pantalla principal al ingresar a Zink ERP: muestra indicadores, alertas y accesos rápidos según tu rol y la organización activa.
 
 En versiones anteriores también podía aparecer como **Dashboard**. Para evitar duplicados, la documentación usa el nombre **Tablero**.
 

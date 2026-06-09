@@ -2,7 +2,7 @@
 title: 'Listas de precio: clientes, POS y ventas | Zink ERP'
 sidebar_label: 'Listas de precio: clientes, POS y ventas'
 description: >-
-  Las listas de precio definen qué valor usa ZinkERP para vender, cotizar o
+  Las listas de precio definen qué valor usa Zink ERP para vender, cotizar o
   consultar un producto en cada contexto comercial.
 sidebar_position: 72
 keywords:
@@ -15,7 +15,7 @@ keywords:
 
 ## Resumen
 
-Las listas de precio definen qué valor usa ZinkERP para vender, cotizar o consultar un producto en cada contexto comercial.
+Las listas de precio definen qué valor usa Zink ERP para vender, cotizar o consultar un producto en cada contexto comercial.
 
 Una organización puede trabajar con una lista por defecto y, cuando corresponde, asignar listas específicas a contactos. Esto permite manejar precios mayoristas, minoristas, promociones o condiciones comerciales diferenciadas.
 
@@ -37,8 +37,6 @@ Una organización puede trabajar con una lista por defecto y, cuando corresponde
 3. Asigná la lista al contacto cuando ese cliente o proveedor tenga una condición comercial específica.
 4. Configurá la **Lista de Precios por Defecto** en [Preferencias](./preferencias.md).
 5. Validá el resultado desde [Consulta de precios](../ventas/consulta-precio.md), [Cotizaciones](../ventas/cotizaciones.md), [Ventas](../ventas/ventas.md) o [POS](../ventas/pos.md).
-
-<!-- TODO(producto): confirmar desde UI si la creación de listas se realiza en una pantalla propia, desde productos o desde configuración avanzada. -->
 
 ---
 

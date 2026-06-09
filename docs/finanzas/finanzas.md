@@ -43,7 +43,7 @@ Es clave para tomar decisiones financieras y evitar errores operativos.
 
 ## Cómo funciona el sistema financiero
 
-En ZinK ERP, el dinero se gestiona en tres niveles:
+En Zink ERP, el dinero se gestiona en tres niveles:
 
 ### 1. Cuenta corriente (deuda)
 

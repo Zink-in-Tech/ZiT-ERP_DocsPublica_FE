@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'ZinK ERP — Documentación',
+  title: 'Zink ERP — Documentación',
   tagline: 'Guías operativas, integraciones y ayuda para implementar Zink ERP',
   favicon: 'img/favicon.svg',
   headTags: [
@@ -144,7 +144,7 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: 'ZinK ERP',
+        alt: 'Zink ERP',
         src: 'img/logo.svg',
       },
       items: [
@@ -202,7 +202,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `© ${new Date().getFullYear()} ZinK ERP. Documentación generada con Docusaurus.`,
+      copyright: `© ${new Date().getFullYear()} Zink ERP. Documentación generada con Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
@@ -211,7 +211,7 @@ const config: Config = {
     algolia: {
       appId: '5ZD369E1WB',
       apiKey: 'f6654a27606a2f4cfee6ed715e70e123',
-      indexName: 'ZinK ERP Docs',
+      indexName: 'Zink ERP Docs',
     },
     mermaid: {
       theme: {
