@@ -46,9 +46,21 @@ Este recorrido ayuda a operar ventas rápidas con seguridad, cobrar correctament
 
 ### Al cerrar turno
 
-- Revisar [Caja diaria](../finanzas/caja-diaria.md).
+- Revisar [Caja diaria](../finanzas/caja-diaria.md) con la fecha del día y tu usuario seleccionado.
+- Comparar **Efectivo en caja** con el dinero real del turno.
+- Usar **Actualizar ahora** si acabás de registrar un cobro y los totales no se ven al día.
+- Imprimir o guardar en PDF tu resumen con **Imprimir** (queda la fecha y tu operador).
 - Confirmar que no haya ventas pendientes de cobro.
-- Escalar diferencias de caja o cobros rechazados.
+- Escalar diferencias de caja o cobros rechazados al supervisor.
+
+### Si supervisás el local (coordinador o encargado)
+
+Con permiso **Ver caja global** podés además:
+
+- filtrar la caja de cada operador;
+- abrir **Ver consolidado** en Caja diaria para ver toda la sucursal en un solo resumen.
+
+Ese monitor no está en el menú lateral: se abre desde Caja diaria. Detalle en [Caja diaria](../finanzas/caja-diaria.md).
 
 ---
 
@@ -69,5 +81,6 @@ Leé estas guías:
 - No aparece el medio de pago esperado.
 - No se puede finalizar el cobro.
 - La caja no refleja lo cobrado.
+- No ves el botón **Ver consolidado** (suele requerir permiso **Ver caja global**; si no supervisás, no es necesario).
 
-En esos casos, revisá primero [POS](../ventas/pos.md), [Medios de pago](../configuracion/medios-pago.md) y [Problemas frecuentes](../problemas-frecuentes.md).
+En esos casos, revisá primero [POS](../ventas/pos.md), [Medios de pago](../configuracion/medios-pago.md), [Caja diaria](../finanzas/caja-diaria.md) y [Problemas frecuentes](../problemas-frecuentes.md).

@@ -14,6 +14,8 @@ keywords:
   - deuda
   - flujo financiero
   - conciliación
+  - monitor consolidado
+  - ver caja global
 sidebar_position: 1
 ---
 
@@ -36,8 +38,19 @@ Es clave para tomar decisiones financieras y evitar errores operativos.
 - Tener registradas ventas y/o compras.
 - Tener contactos cargados (clientes y proveedores).
 - Configurar conceptos para ingresos y egresos manuales.
-- Revisar permisos para registrar pagos, ingresos, egresos, caja global y edición de caja inicial.
-- Definir si la organización controla caja por operador o como caja global.
+- Definir si la organización controla caja por operador o de forma global.
+
+**Permisos frecuentes en finanzas:**
+
+| Permiso | Para qué sirve |
+|---------|----------------|
+| Registrar pagos | Cobrar a clientes y pagar a proveedores. |
+| Ingresos / Egresos | Cargar movimientos manuales fuera de ventas y compras. |
+| **Ver caja global** | Filtrar por operador, ver caja de otros y abrir el monitor consolidado. |
+| **Informe Caja Diaria** | Informe PDF entre fechas (Centro de informes o pantalla de caja). |
+| **Editar caja inicial** | Cargar o modificar la caja inicial del día. |
+
+Detalle de cada permiso en [Perfiles](../administracion/perfiles.md). Operación de caja en [Caja diaria](./caja-diaria.md).
 
 ---
 
@@ -72,10 +85,12 @@ Actualizan la cuenta corriente y registran cómo se pagó.
 
 ### 3. Caja (dinero real)
 
-Muestra:
+La [Caja diaria](./caja-diaria.md) muestra:
 
 - el dinero disponible
-- los movimientos diarios
+- los movimientos diarios por fecha y, según permisos, por operador
+
+Quienes supervisan la sucursal pueden abrir el **monitor consolidado** (**Ver consolidado** en Caja diaria): vista de solo lectura con todos los operadores del día.
 
 Se alimenta de:
 
@@ -105,7 +120,8 @@ Los ingresos y egresos manuales no pasan por cuenta corriente. Se usan para movi
 |------------------|--------|
 | Cuenta corriente | Control de deuda |
 | Pagos            | Cancelación de deuda |
-| Caja diaria      | Control del dinero |
+| Caja diaria      | Control del dinero por día y operador |
+| Monitor consolidado | Resumen de toda la sucursal en el día (desde Caja diaria) |
 | Ingresos         | Entradas manuales |
 | Egresos          | Salidas manuales |
 
@@ -117,9 +133,11 @@ Los ingresos y egresos manuales no pasan por cuenta corriente. Se usan para movi
 2. Controlá cuenta corriente de clientes y proveedores.
 3. Registrá cobros y pagos pendientes.
 4. Cargá ingresos o egresos manuales solo si el movimiento no corresponde a ventas, compras o pagos.
-5. Revisá caja diaria por fecha y, si corresponde, por operador.
-6. Compará medios de pago contra comprobantes externos.
-7. Dejá observaciones cuando haya diferencias o ajustes.
+5. Revisá [Caja diaria](./caja-diaria.md) por fecha y, si corresponde, por operador.
+6. Si supervisás varios operadores, abrí **Ver consolidado** para ver ventas, cobros y medios de pago de toda la sucursal.
+7. Compará medios de pago contra comprobantes externos.
+8. Dejá observaciones cuando haya diferencias o ajustes.
+9. Imprimí el resumen del día o el consolidado para archivo al cierre.
 
 ---
 
@@ -172,6 +190,11 @@ Para mantener control financiero:
   - Verificá ingresos, egresos y pagos.
   - Revisá fecha, operador y medio de pago.
   - Compará Total ventas contra Total ingresos ventas.
+  - Recordá que el saldo en caja es efectivo: cobros con tarjeta o transferencia no suman igual que los ingresos totales.
+
+- **No veo el monitor consolidado**
+  - Revisá el permiso **Ver caja global** en [Perfiles](../administracion/perfiles.md).
+  - El botón **Ver consolidado** está en Caja diaria, no en el menú lateral.
 
 - **No sabés si usar pago, ingreso o egreso**
   - Si cancela deuda de cliente o proveedor, usá Pagos.
@@ -185,6 +208,7 @@ Para mantener control financiero:
 - Revisá caja diariamente.
 - Controlá cuenta corriente con frecuencia.
 - Evitá registrar movimientos manuales innecesarios.
+- Si supervisás operadores, revisá el monitor consolidado durante la jornada y al cierre.
 
 ---
 
@@ -195,3 +219,5 @@ Para mantener control financiero:
 - [Caja diaria](./caja-diaria.md)
 - [Ingresos](./ingresos.md)
 - [Egresos](./egresos.md)
+- [Informes](../informes/informes.md)
+- [Perfiles](../administracion/perfiles.md)

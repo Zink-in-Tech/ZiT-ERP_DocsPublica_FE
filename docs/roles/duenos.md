@@ -42,9 +42,10 @@ El foco está en validar que:
 
 ### Caja y cobranzas
 
-- [Caja diaria](../finanzas/caja-diaria.md)
+- [Caja diaria](../finanzas/caja-diaria.md) — por operador o, con permiso **Ver caja global**, el monitor consolidado de toda la sucursal
 - [Pagos](../finanzas/pagos.md)
 - [Cuenta corriente](../finanzas/cuenta-corriente.md)
+- [Informe Caja Diaria](../informes/informes.md) — PDF entre fechas para auditoría o cierre de período
 
 ### Stock y reposición
 
