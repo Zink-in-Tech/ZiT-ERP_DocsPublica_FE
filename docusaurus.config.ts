@@ -226,7 +226,7 @@ const config: Config = {
     algolia: {
       appId: '5ZD369E1WB',
       apiKey: 'f6654a27606a2f4cfee6ed715e70e123',
-      indexName: 'Zink ERP Docs',
+      indexName: 'ZinkERP-Docs',
     },
     mermaid: {
       theme: {
