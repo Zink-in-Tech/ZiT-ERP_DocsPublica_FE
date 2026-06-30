@@ -1,4 +1,5 @@
 import type {ReactNode} from 'react';
+import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -52,12 +53,14 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, description, links}: FeatureItem) {
   return (
-    <div className="col col--4">
-      <article className="card">
-        <div className="card__header">
-          <Heading as="h3">{title}</Heading>
+    <div className={clsx('col col--4', styles.featureCol)}>
+      <article className={styles.featureCard}>
+        <div className={styles.featureCardHeader}>
+          <Heading as="h3" className={styles.featureCardTitle}>
+            {title}
+          </Heading>
         </div>
-        <div className="card__body">
+        <div className={styles.featureCardBody}>
           <p>{description}</p>
           <ul className={styles.linkList}>
             {links.map((link) => (
@@ -85,7 +88,7 @@ export default function HomepageFeatures(): ReactNode {
         <Heading as="h2" className={styles.sectionTitle}>
           ¿Qué necesitás hacer?
         </Heading>
-        <div className="row">
+        <div className={clsx('row', styles.featureGrid)}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}

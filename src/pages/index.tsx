@@ -10,23 +10,19 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
+    <header className={clsx('homepage-hero', styles.heroBanner)}>
+      <div className={clsx('container', styles.heroInner)}>
+        <Heading as="h1" className={styles.heroTitle}>
           Documentación Zink ERP
         </Heading>
-        <p className="hero__subtitle">
+        <p className={styles.heroSubtitle}>
           Guías operativas, configuración y troubleshooting para tu día a día.
         </p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/primeros-pasos">
+          <Link className={styles.buttonPrimary} to="/primeros-pasos">
             🚀 Primeros pasos
           </Link>
-          <Link
-            className="button button--outline button--secondary button--lg"
-            to="/intro">
+          <Link className={styles.buttonSecondary} to="/intro">
             📖 Explorar documentación
           </Link>
         </div>
