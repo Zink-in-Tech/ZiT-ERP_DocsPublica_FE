@@ -1,5 +1,5 @@
 .articleMeta {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.875rem;
 }
 
 .metaRow {
@@ -57,12 +57,9 @@
 
 .metaDivider {
   height: 1px;
-  margin-top: 1rem;
-  background: linear-gradient(
-    90deg,
-    var(--zink-border-subtle) 0%,
-    transparent 100%
-  );
+  margin-top: 0.75rem;
+  background: var(--zink-border-subtle);
+  opacity: 0.55;
 }
 
 @media (max-width: 996px) {

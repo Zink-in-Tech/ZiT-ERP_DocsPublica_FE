@@ -39,7 +39,9 @@
 
   /* Editorial / lectura */
   --zink-read-max-width: 63ch;
-  --zink-space-section: 3rem;
+  --zink-title-max-width: 46ch;
+  --zink-scroll-offset: calc(var(--ifm-navbar-height) + 1rem);
+  --zink-space-section: 2.25rem;
   --zink-space-block: 1.1875rem;
   --zink-space-list: 0.4375rem;
 
@@ -81,10 +83,10 @@
   --ifm-font-size-base: 16px;
   --ifm-line-height-base: 1.72;
   --ifm-heading-font-weight: 600;
-  --ifm-h1-font-size: 1.75rem;
-  --ifm-h2-font-size: 1.3125rem;
-  --ifm-h3-font-size: 1.0625rem;
-  --ifm-h4-font-size: 0.9375rem;
+  --ifm-h1-font-size: 1.6875rem;
+  --ifm-h2-font-size: 1.0625rem;
+  --ifm-h3-font-size: 0.9375rem;
+  --ifm-h4-font-size: 0.875rem;
   --ifm-heading-color: var(--zink-text-primary);
   --ifm-heading-line-height: 1.3;
   --ifm-h1-vertical-rhythm-top: 0;
@@ -128,6 +130,12 @@
   /* Tablas y bloques */
   --ifm-table-stripe-background: rgba(117, 0, 185, 0.03);
   --ifm-table-border-color: var(--zink-border-subtle);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 [data-theme='dark'] {
@@ -200,7 +208,7 @@
   [class*='docMainContainer'] .row {
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: stretch;
     margin-inline: 0;
   }
 
@@ -208,9 +216,12 @@
     flex: 0 0 14.5rem;
     width: 14.5rem;
     max-width: 14.5rem;
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
     padding-right: 0;
     margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .theme-doc-sidebar-container {
@@ -430,11 +441,7 @@
   color: var(--ifm-color-primary);
 }
 
-/* Botón colapsar sidebar */
-.theme-doc-sidebar-container button[title*='barra lateral'],
-.theme-doc-sidebar-container button[title*='sidebar'] {
-  border-top: 1px solid var(--zink-border-subtle);
-}
+/* Botón colapsar sidebar — estilos en theme/DocSidebar/Desktop/CollapseButton */
 
 /* ─── Contenido principal ───────────────────────────────────────── */
 
@@ -463,60 +470,96 @@
   font-weight: 500;
 }
 
-/* H1 — peso suave para lectura editorial */
+/* H1 — título de página, claramente por encima de las secciones */
 .markdown h1:first-child,
 .theme-doc-markdown h1:first-child {
   margin-top: 0;
-  margin-bottom: var(--zink-space-block);
+  margin-bottom: 0.875rem;
   padding-bottom: 0;
   font-size: 1.6875rem;
-  font-weight: 500;
-  letter-spacing: -0.016em;
-  line-height: 1.26;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
   color: var(--zink-text-primary);
-  max-width: var(--zink-read-max-width);
+  max-width: var(--zink-title-max-width);
   text-wrap: balance;
 }
 
-/* Títulos cortos: presencia sin dominar */
 .doc-title--short .theme-doc-markdown h1:first-child {
-  font-size: 1.8125rem;
+  font-size: 1.75rem;
   line-height: 1.22;
-  font-weight: 500;
-  max-width: none;
-  letter-spacing: -0.017em;
+  font-weight: 600;
+  max-width: min(42ch, 100%);
+  letter-spacing: -0.016em;
 }
 
-/* Títulos largos (SEO): aún más contenidos */
 .doc-title--long .theme-doc-markdown h1:first-child {
   font-size: 1.5rem;
-  line-height: 1.32;
-  font-weight: 500;
-  letter-spacing: -0.013em;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  max-width: min(44ch, 100%);
 }
 
+/* H2 — etiquetas de sección, más discretas que el título de página */
 .theme-doc-markdown h2 {
-  position: relative;
   margin-top: var(--zink-space-section);
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--zink-border-subtle);
-  letter-spacing: -0.012em;
-  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
+  margin-bottom: 0.625rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.006em;
+  color: var(--zink-text-primary);
+  scroll-margin-top: var(--zink-scroll-offset);
+}
+
+.theme-doc-markdown > h2:first-of-type {
+  margin-top: 1.25rem;
 }
 
 .theme-doc-markdown h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  margin-top: 1.625rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.35;
   color: var(--zink-text-primary);
-  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
+  scroll-margin-top: var(--zink-scroll-offset);
 }
 
 .theme-doc-markdown h4 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.625rem;
-  color: var(--zink-text-primary);
-  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--zink-text-secondary);
+  scroll-margin-top: var(--zink-scroll-offset);
+}
+
+/* Destino temporal al navegar desde el TOC */
+@keyframes zink-toc-target-flash {
+  0%,
+  100% {
+    background-color: transparent;
+  }
+
+  45% {
+    background-color: var(--zink-interactive-active);
+  }
+}
+
+.theme-doc-markdown :is(h2, h3, h4).zink-scroll-target {
+  border-radius: 0 var(--zink-radius-sm) var(--zink-radius-sm) 0;
+  animation: zink-toc-target-flash 1.05s ease-out;
+}
+
+.theme-doc-markdown :is(h2, h3, h4).zink-scroll-target--reduced {
+  background-color: var(--zink-interactive-active);
+  box-shadow: inset 3px 0 0 var(--ifm-color-primary);
+  border-radius: 0 var(--zink-radius-sm) var(--zink-radius-sm) 0;
 }
 
 .theme-doc-markdown p {
@@ -524,9 +567,10 @@
 }
 
 .theme-doc-markdown hr {
-  margin: calc(var(--zink-space-section) - 0.25rem) 0;
+  margin: 1.75rem 0;
   border: 0;
   border-top: 1px solid var(--zink-border-subtle);
+  opacity: 0.65;
 }
 
 .theme-doc-markdown h2 .hash-link,
@@ -562,16 +606,16 @@
 
 .theme-doc-markdown table {
   font-size: 0.875rem;
-  border-radius: var(--zink-radius-md);
+  border-radius: var(--zink-radius-sm);
   overflow: hidden;
   border: 1px solid var(--zink-border-subtle);
 }
 
 .theme-doc-markdown table th {
-  background: var(--zink-surface-sidebar);
+  background: transparent;
   font-weight: 600;
   font-size: 0.8125rem;
-  color: var(--zink-text-primary);
+  color: var(--zink-text-secondary);
 }
 
 .theme-doc-markdown table td,
@@ -649,8 +693,8 @@
 .theme-doc-toc-desktop::before {
   content: 'En esta página';
   display: block;
-  margin-bottom: 0.75rem;
-  padding-left: 0.875rem;
+  margin-bottom: 0.625rem;
+  padding-left: 0.625rem;
   font-size: 0.6875rem;
   font-weight: 600;
   letter-spacing: 0.055em;
