@@ -1,31 +1,155 @@
 /**
- * Tema alineado con la app Zink ERP (acentos #7500B9 / #008ED3 en App.css del cliente web).
+ * Tema Zink ERP — documentación pública.
+ * Acentos alineados con la app (#7500B9 / #008ED3).
  */
+
+/* ─── Design tokens ─────────────────────────────────────────────── */
 
 :root {
   --zink-purple: #7500b9;
   --zink-blue: #008ed3;
-  --doc-share-text: #171a21;
-  --doc-share-muted: #5f6470;
+
+  /* Superficies */
+  --zink-surface-base: #f8f9fb;
+  --zink-surface-raised: #ffffff;
+  --zink-surface-sidebar: #f3f4f7;
+  --zink-surface-toc: transparent;
+
+  /* Texto */
+  --zink-text-primary: #171a21;
+  --zink-text-secondary: #3d424d;
+  --zink-text-muted: #6b7280;
+  --zink-text-subtle: #9ca3af;
+
+  /* Bordes y radios */
+  --zink-border-subtle: rgba(23, 26, 33, 0.08);
+  --zink-border-medium: rgba(23, 26, 33, 0.14);
+  --zink-radius-sm: 6px;
+  --zink-radius-md: 10px;
+  --zink-radius-lg: 14px;
+
+  /* Sombras */
+  --zink-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --zink-shadow-md: 0 4px 16px rgba(15, 23, 42, 0.06);
+
+  /* Interactivos */
+  --zink-interactive-hover: rgba(117, 0, 185, 0.06);
+  --zink-interactive-active: rgba(117, 0, 185, 0.1);
+  --zink-interactive-active-border: rgba(117, 0, 185, 0.35);
+
+  /* Compartir (componente DocPageShare) */
+  --doc-share-text: var(--zink-text-primary);
+  --doc-share-muted: var(--zink-text-muted);
   --doc-share-surface: rgba(255, 255, 255, 0.82);
   --doc-share-surface-strong: rgba(255, 255, 255, 0.94);
   --doc-share-icon-surface: rgba(255, 255, 255, 0.6);
-  --doc-share-hover: rgba(117, 0, 185, 0.08);
-  --doc-share-border: rgba(23, 26, 33, 0.12);
-  --ifm-color-primary: #7500b9;
+  --doc-share-hover: var(--zink-interactive-hover);
+  --doc-share-border: var(--zink-border-medium);
+
+  /* Infima / Docusaurus overrides */
+  --ifm-color-primary: var(--zink-purple);
   --ifm-color-primary-dark: #600099;
   --ifm-color-primary-darker: #56008a;
   --ifm-color-primary-darkest: #42006b;
   --ifm-color-primary-light: #8f33c9;
   --ifm-color-primary-lighter: #9d4dd1;
   --ifm-color-primary-lightest: #b87ae0;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(117, 0, 185, 0.09);
-  --ifm-link-color: #008ed3;
-  --ifm-link-hover-color: #7500b9;
+
+  --ifm-background-color: var(--zink-surface-base);
+  --ifm-background-surface-color: var(--zink-surface-raised);
+  --ifm-font-color-base: var(--zink-text-secondary);
+  --ifm-font-color-base-inverse: #f3f5f8;
+
+  --ifm-link-color: var(--zink-blue);
+  --ifm-link-hover-color: var(--zink-purple);
+  --ifm-link-decoration: none;
+  --ifm-link-hover-decoration: underline;
+
+  --ifm-code-font-size: 92%;
+  --docusaurus-highlighted-code-line-bg: rgba(117, 0, 185, 0.08);
+
+  /* Tipografía — contenido más liviano */
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.72;
+  --ifm-heading-font-weight: 600;
+  --ifm-h1-font-size: 1.75rem;
+  --ifm-h2-font-size: 1.3125rem;
+  --ifm-h3-font-size: 1.0625rem;
+  --ifm-h4-font-size: 0.9375rem;
+  --ifm-heading-color: var(--zink-text-primary);
+  --ifm-heading-line-height: 1.3;
+  --ifm-h1-vertical-rhythm-top: 0;
+  --ifm-h1-vertical-rhythm-bottom: 1;
+  --ifm-heading-vertical-rhythm-top: 1.75;
+  --ifm-heading-vertical-rhythm-bottom: 0.75;
+
+  /* Navbar */
+  --ifm-navbar-background-color: var(--zink-surface-raised);
+  --ifm-navbar-height: 3.5rem;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-link-color: var(--zink-text-secondary);
+  --ifm-navbar-link-hover-color: var(--zink-purple);
+  --ifm-navbar-link-active-color: var(--zink-purple);
+  --ifm-navbar-padding-vertical: 0;
+  --ifm-navbar-item-padding-horizontal: 0.625rem;
+
+  /* Sidebar */
+  --ifm-menu-color: var(--zink-text-muted);
+  --ifm-menu-color-active: var(--zink-purple);
+  --ifm-menu-color-background-active: var(--zink-interactive-active);
+  --ifm-menu-color-background-hover: var(--zink-interactive-hover);
+  --ifm-menu-link-padding-vertical: 0.4rem;
+  --ifm-menu-link-padding-horizontal: 0.75rem;
+  --ifm-menu-link-sublist-icon-filter: none;
+
+  /* TOC */
+  --ifm-toc-border-color: var(--zink-border-subtle);
+  --ifm-toc-link-color: var(--zink-text-muted);
+  --ifm-toc-padding-vertical: 0.25rem;
+  --ifm-toc-padding-horizontal: 0;
+
+  /* Espaciado global */
+  --ifm-spacing-horizontal: 1.25rem;
+  --ifm-spacing-vertical: 1.125rem;
+
+  /* Breadcrumbs */
+  --ifm-breadcrumb-spacing: 0.35rem;
+  --ifm-breadcrumb-color-active: var(--zink-purple);
+
+  /* Tablas y bloques */
+  --ifm-table-stripe-background: rgba(117, 0, 185, 0.03);
+  --ifm-table-border-color: var(--zink-border-subtle);
 }
 
 [data-theme='dark'] {
+  --zink-surface-base: #0f1117;
+  --zink-surface-raised: #151820;
+  --zink-surface-sidebar: #12151c;
+  --zink-surface-toc: transparent;
+
+  --zink-text-primary: #eef0f4;
+  --zink-text-secondary: #c4c9d4;
+  --zink-text-muted: #8b919e;
+  --zink-text-subtle: #636878;
+
+  --zink-border-subtle: rgba(255, 255, 255, 0.07);
+  --zink-border-medium: rgba(255, 255, 255, 0.12);
+
+  --zink-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --zink-shadow-md: 0 4px 20px rgba(0, 0, 0, 0.35);
+
+  --zink-interactive-hover: rgba(157, 95, 217, 0.1);
+  --zink-interactive-active: rgba(157, 95, 217, 0.16);
+  --zink-interactive-active-border: rgba(157, 95, 217, 0.5);
+
+  --doc-share-text: var(--zink-text-primary);
+  --doc-share-muted: var(--zink-text-muted);
+  --doc-share-surface: rgba(15, 18, 24, 0.82);
+  --doc-share-surface-strong: rgba(15, 18, 24, 0.95);
+  --doc-share-icon-surface: rgba(255, 255, 255, 0.03);
+  --doc-share-hover: var(--zink-interactive-hover);
+  --doc-share-border: var(--zink-border-medium);
+
   --ifm-color-primary: #9d5fd9;
   --ifm-color-primary-dark: #8c4ccd;
   --ifm-color-primary-darker: #8445c7;
@@ -33,24 +157,424 @@
   --ifm-color-primary-light: #b07fe3;
   --ifm-color-primary-lighter: #b88de6;
   --ifm-color-primary-lightest: #cdb0ee;
-  --doc-share-text: #f3f5f8;
-  --doc-share-muted: #b2b7c2;
-  --doc-share-surface: rgba(15, 18, 24, 0.82);
-  --doc-share-surface-strong: rgba(15, 18, 24, 0.95);
-  --doc-share-icon-surface: rgba(255, 255, 255, 0.03);
-  --doc-share-hover: rgba(157, 95, 217, 0.12);
-  --doc-share-border: rgba(255, 255, 255, 0.1);
-  --docusaurus-highlighted-code-line-bg: rgba(157, 95, 217, 0.25);
+
+  --ifm-background-color: var(--zink-surface-base);
+  --ifm-background-surface-color: var(--zink-surface-raised);
+  --ifm-font-color-base: var(--zink-text-secondary);
+
   --ifm-link-color: #5ec4ff;
   --ifm-link-hover-color: #cfa8ff;
+
+  --docusaurus-highlighted-code-line-bg: rgba(157, 95, 217, 0.22);
+  --ifm-table-stripe-background: rgba(157, 95, 217, 0.06);
+  --ifm-menu-link-sublist-icon-filter: invert(100%);
+}
+
+/* ─── Layout general ────────────────────────────────────────────── */
+
+@media (min-width: 997px) {
+  .docMainContainer {
+    max-width: none;
+    background: var(--zink-surface-raised);
+    border-left: 1px solid var(--zink-border-subtle);
+    border-right: 1px solid var(--zink-border-subtle);
+  }
+
+  .theme-doc-sidebar-container {
+    background: var(--zink-surface-sidebar);
+    border-right: none;
+  }
+
+  .theme-doc-toc-desktop {
+    padding: 1.25rem 0 2rem 0.75rem;
+  }
+}
+
+/* Contenido central como foco visual */
+.theme-doc-markdown {
+  color: var(--zink-text-secondary);
+}
+
+/* ─── Navbar ────────────────────────────────────────────────────── */
+
+.navbar {
+  border-bottom: 1px solid var(--zink-border-subtle);
+  backdrop-filter: blur(12px);
+}
+
+.navbar__inner {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar__brand {
+  margin-right: 0.5rem;
+}
+
+.navbar__logo {
+  height: 1.75rem;
+}
+
+.navbar__item.navbar__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--zink-radius-sm);
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.navbar__item.navbar__link:hover {
+  background: var(--zink-interactive-hover);
+  text-decoration: none;
+}
+
+.navbar__item.navbar__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.navbar__items--right {
+  gap: 0.375rem;
+  align-items: center;
+}
+
+/* Buscador Algolia */
+.DocSearch-Button {
+  border: 1px solid var(--zink-border-medium) !important;
+  border-radius: var(--zink-radius-md) !important;
+  background: var(--zink-surface-base) !important;
+  box-shadow: var(--zink-shadow-sm) !important;
+  height: 2.125rem !important;
+  padding: 0 0.75rem !important;
+  transition: border-color 160ms ease, box-shadow 160ms ease !important;
+}
+
+.DocSearch-Button:hover,
+.DocSearch-Button:focus {
+  border-color: var(--zink-interactive-active-border) !important;
+  box-shadow: var(--zink-shadow-sm) !important;
+}
+
+.DocSearch-Button-Placeholder {
+  font-size: 0.8125rem !important;
+  color: var(--zink-text-muted) !important;
+}
+
+.DocSearch-Button-Key {
+  background: var(--zink-surface-raised) !important;
+  border: 1px solid var(--zink-border-subtle) !important;
+  box-shadow: none !important;
+  color: var(--zink-text-subtle) !important;
+  font-size: 0.6875rem !important;
 }
 
 .navbar__title {
   font-weight: 600;
 }
 
-/* Diagramas Mermaid: margen y scroll en móvil */
+/* ─── Sidebar izquierdo ─────────────────────────────────────────── */
+
+.theme-doc-sidebar-menu {
+  padding: 0.5rem 0.625rem 1.5rem;
+}
+
+.theme-doc-sidebar-menu .menu__list {
+  gap: 0.0625rem;
+}
+
+.theme-doc-sidebar-menu .menu__link {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  border-radius: var(--zink-radius-sm);
+  transition:
+    color 160ms ease,
+    background 160ms ease;
+}
+
+/* Links normales */
+.theme-doc-sidebar-item-link .menu__link {
+  font-weight: 450;
+  color: var(--zink-text-muted);
+}
+
+.theme-doc-sidebar-item-link .menu__link:hover {
+  color: var(--zink-text-secondary);
+  background: var(--zink-interactive-hover);
+  text-decoration: none;
+}
+
+/* Item activo */
+.theme-doc-sidebar-item-link .menu__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  background: var(--zink-interactive-active);
+  position: relative;
+}
+
+.theme-doc-sidebar-item-link .menu__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  bottom: 0.3rem;
+  width: 2.5px;
+  border-radius: 0 2px 2px 0;
+  background: var(--ifm-color-primary);
+}
+
+/* Categorías expandibles — más peso visual */
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--zink-text-secondary);
+  letter-spacing: 0.005em;
+}
+
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link:hover {
+  color: var(--zink-text-primary);
+  background: var(--zink-interactive-hover);
+}
+
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* Sub-items indentados con menor peso */
+.theme-doc-sidebar-item-category .menu__list .menu__link {
+  font-weight: 450;
+  font-size: 0.78125rem;
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) + 0.375rem);
+}
+
+/* Caret de expansión */
+.menu__caret {
+  opacity: 0.55;
+  transition: opacity 160ms ease;
+}
+
+.menu__list-item-collapsible:hover .menu__caret {
+  opacity: 0.85;
+}
+
+/* Botón colapsar sidebar */
+.theme-doc-sidebar-container button[title*='barra lateral'],
+.theme-doc-sidebar-container button[title*='sidebar'] {
+  border-top: 1px solid var(--zink-border-subtle);
+}
+
+/* ─── Contenido principal ───────────────────────────────────────── */
+
+.theme-doc-breadcrumbs {
+  margin-bottom: 0.625rem;
+  font-size: 0.8125rem;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  opacity: 0.4;
+}
+
+.breadcrumbs__link {
+  color: var(--zink-text-muted);
+  transition: color 160ms ease;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+/* H1 — peso reducido para que respire el primer pantallazo */
+.markdown h1:first-child,
+.theme-doc-markdown h1:first-child {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  line-height: 1.28;
+  color: var(--zink-text-primary);
+  max-width: 46rem;
+}
+
+.theme-doc-markdown h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 0.875rem;
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--zink-border-subtle);
+  letter-spacing: -0.012em;
+}
+
+.theme-doc-markdown h3 {
+  margin-top: 1.625rem;
+  margin-bottom: 0.625rem;
+  color: var(--zink-text-primary);
+}
+
+.theme-doc-markdown h4 {
+  margin-top: 1.25rem;
+  color: var(--zink-text-primary);
+}
+
+.theme-doc-markdown p {
+  margin-bottom: 1rem;
+}
+
+.theme-doc-markdown hr {
+  margin: 2rem 0;
+  border-color: var(--zink-border-subtle);
+}
+
+.theme-doc-markdown table {
+  font-size: 0.875rem;
+  border-radius: var(--zink-radius-md);
+  overflow: hidden;
+  border: 1px solid var(--zink-border-subtle);
+}
+
+.theme-doc-markdown table th {
+  background: var(--zink-surface-sidebar);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--zink-text-primary);
+}
+
+.theme-doc-markdown table td,
+.theme-doc-markdown table th {
+  padding: 0.625rem 0.875rem;
+  border-color: var(--zink-border-subtle);
+}
+
+.theme-doc-markdown ul,
+.theme-doc-markdown ol {
+  margin-bottom: 1rem;
+}
+
+.theme-doc-markdown li {
+  margin-bottom: 0.25rem;
+}
+
+.theme-admonition {
+  border-radius: var(--zink-radius-md);
+  border-width: 1px;
+  box-shadow: var(--zink-shadow-sm);
+}
+
+/* Paginador */
+.pagination-nav {
+  margin-top: 2.5rem;
+  gap: 0.75rem;
+}
+
+.pagination-nav__link {
+  border: 1px solid var(--zink-border-subtle);
+  border-radius: var(--zink-radius-md);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--zink-interactive-active-border);
+  box-shadow: var(--zink-shadow-sm);
+  text-decoration: none;
+}
+
+/* ─── TOC derecho ───────────────────────────────────────────────── */
+
+.theme-doc-toc-desktop .table-of-contents {
+  border-left: none;
+  padding-left: 0;
+}
+
+.theme-doc-toc-desktop .table-of-contents > li {
+  margin-top: 0.125rem;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link {
+  display: block;
+  font-size: 0.78125rem;
+  line-height: 1.55;
+  padding: 0.3125rem 0 0.3125rem 0.875rem;
+  border-left: 2px solid transparent;
+  color: var(--zink-text-muted);
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+  border-radius: 0 var(--zink-radius-sm) var(--zink-radius-sm) 0;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  color: var(--zink-text-secondary);
+  background: var(--zink-interactive-hover);
+  text-decoration: none;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+  border-left-color: var(--ifm-color-primary);
+  background: var(--zink-interactive-active);
+}
+
+/* Sub-secciones (h3 bajo h2) — agrupación visual */
+.theme-doc-toc-desktop .table-of-contents ul {
+  margin-top: 0.125rem;
+  margin-bottom: 0.375rem;
+  padding-left: 0;
+}
+
+.theme-doc-toc-desktop .table-of-contents ul .table-of-contents__link {
+  font-size: 0.75rem;
+  padding-left: 1.375rem;
+  color: var(--zink-text-subtle);
+}
+
+.theme-doc-toc-desktop .table-of-contents ul .table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+}
+
+/* Separación entre grupos de nivel 2 */
+.theme-doc-toc-desktop .table-of-contents > li + li {
+  margin-top: 0.0625rem;
+}
+
+.theme-doc-toc-desktop .table-of-contents > li:has(ul) {
+  margin-bottom: 0.25rem;
+}
+
+/* TOC móvil */
+.theme-doc-toc-mobile {
+  margin-bottom: 1.25rem;
+}
+
+/* ─── Accesibilidad: focus visible ──────────────────────────────── */
+
+.menu__link:focus-visible,
+.table-of-contents__link:focus-visible,
+.navbar__link:focus-visible,
+.pagination-nav__link:focus-visible,
+.DocSearch-Button:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* ─── Diagramas Mermaid ─────────────────────────────────────────── */
+
 .docusaurus-mermaid-container {
-  margin: 1.25rem 0 1.5rem;
+  margin: 1.5rem 0 1.75rem;
   overflow-x: auto;
+  padding: 0.75rem;
+  border: 1px solid var(--zink-border-subtle);
+  border-radius: var(--zink-radius-md);
+  background: var(--zink-surface-raised);
+}
+
+/* ─── Footer ────────────────────────────────────────────────────── */
+
+.footer {
+  border-top: 1px solid var(--zink-border-subtle);
 }
