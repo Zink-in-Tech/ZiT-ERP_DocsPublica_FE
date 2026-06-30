@@ -14,6 +14,7 @@ import type {Props} from '@theme/DocItem/Layout';
 
 import DocArticleMeta from '../../../components/DocArticleMeta';
 import DocPageShare from '../../../components/DocPageShare';
+import {getDocDisplayTitle, getDocTitleClass} from '../../../utils/docDisplayTitle';
 import styles from './styles.module.css';
 
 function useDocTOC() {
@@ -37,21 +38,22 @@ function useDocTOC() {
   };
 }
 
-function getDocTitleClass(title: string): string | undefined {
-  if (title.length <= 42) {
-    return 'doc-title--short';
-  }
-  if (title.length >= 65) {
-    return 'doc-title--long';
-  }
-  return undefined;
-}
-
 export default function DocItemLayout({children}: Props): ReactNode {
   const docTOC = useDocTOC();
-  const {metadata} = useDoc();
+  const {metadata, frontMatter} = useDoc();
   const windowSize = useWindowSize();
-  const docTitleClass = getDocTitleClass(metadata.title);
+  const displayTitle = getDocDisplayTitle({
+    title: metadata.title,
+    sidebarLabel:
+      typeof frontMatter.sidebar_label === 'string'
+        ? frontMatter.sidebar_label
+        : undefined,
+    displayTitle:
+      typeof frontMatter.display_title === 'string'
+        ? frontMatter.display_title
+        : undefined,
+  });
+  const docTitleClass = getDocTitleClass(displayTitle);
   const shareInAside =
     Boolean(docTOC.desktop) &&
     (windowSize === 'desktop' || windowSize === 'ssr');
