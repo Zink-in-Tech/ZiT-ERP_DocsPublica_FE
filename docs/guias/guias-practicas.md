@@ -28,9 +28,13 @@ Empezá acá si estás implementando el sistema o validando la base antes de ope
 
 | Guía | Para qué sirve |
 |------|----------------|
+| [Cómo ingresar y administrar productos](./como-ingresar-y-administrar-productos.mdx) | Tutorial en video del catálogo: alta, edición y administración de productos. |
+| [Cómo registrar y gestionar contactos](./tutorial-registrar-gestionar-contactos.mdx) | Tutorial en video para clientes, proveedores y condiciones comerciales. |
 | [Cómo configurar tu primer producto](./como-configurar-tu-primer-producto.md) | Dejar un producto listo para vender, comprar y controlar stock. |
 | [Cómo configurar medios de pago](./como-configurar-medios-de-pago.md) | Definir cómo cobra el negocio y validar el impacto en caja. |
 | [Cómo delegar Facturación Electrónica en ARCA](./como-delegar-facturacion-electronica-arca.md) | Habilitar emisión fiscal sin compartir clave fiscal. |
+| [Cómo gestionar perfiles y permisos](./tutorial-gestionar-perfiles-permisos.mdx) | Tutorial en video para definir accesos y permisos por rol. |
+| [Cómo administrar conceptos](./tutorial-administrar-conceptos.mdx) | Tutorial en video para categorías de ingresos y egresos manuales. |
 
 ---
 
@@ -40,8 +44,11 @@ Circuitos que el equipo usa todos los días en mostrador o depósito.
 
 | Guía | Para qué sirve |
 |------|----------------|
+| [Tutorial del flujo de ventas](./tutorial-flujo-de-ventas.mdx) | Video del circuito comercial: cotización → presupuesto → pedido → venta. |
+| [Tutorial del flujo de compras](./tutorial-flujo-de-compras.mdx) | Video del circuito de compras: orden de compra → ingreso de mercadería. |
 | [Cómo operar una venta rápida en POS](./como-operar-venta-rapida-en-pos.md) | Cargar productos, cobrar y cerrar una venta de mostrador. |
 | [Cómo recibir mercadería y actualizar stock](./como-recibir-mercaderia-y-actualizar-stock.md) | Ingresar lo recibido del proveedor y confirmar que el stock suba. |
+| [Cómo registrar ingresos y egresos](./como-registrar-ingresos-y-egresos.mdx) | Tutorial en video para movimientos manuales de caja fuera de ventas y compras. |
 
 ---
 
@@ -72,9 +79,12 @@ Contexto fiscal y trámites relacionados con ARCA.
 
 | Si necesitás… | Empezá por… |
 |---------------|-------------|
-| Arrancar la implementación | [Configurar tu primer producto](./como-configurar-tu-primer-producto.md) → [Medios de pago](./como-configurar-medios-de-pago.md) |
+| Arrancar la implementación | [Contactos (video)](./tutorial-registrar-gestionar-contactos.mdx) → [Ingresar y administrar productos (video)](./como-ingresar-y-administrar-productos.mdx) → [Configurar tu primer producto](./como-configurar-tu-primer-producto.md) → [Medios de pago](./como-configurar-medios-de-pago.md) |
+| Definir quién puede hacer qué | [Perfiles y permisos (video)](./tutorial-gestionar-perfiles-permisos.mdx) → [Usuarios](../administracion/usuarios.md) |
 | Capacitar a cajeros | [Venta rápida en POS](./como-operar-venta-rapida-en-pos.md) |
-| Capacitar a depósito | [Recibir mercadería](./como-recibir-mercaderia-y-actualizar-stock.md) |
+| Capacitar a ventas comerciales | [Flujo de ventas (video)](./tutorial-flujo-de-ventas.mdx) |
+| Capacitar a compras / depósito | [Flujo de compras (video)](./tutorial-flujo-de-compras.mdx) → [Recibir mercadería](./como-recibir-mercaderia-y-actualizar-stock.md) |
+| Registrar movimientos de caja manuales | [Conceptos (video)](./tutorial-administrar-conceptos.mdx) → [Ingresos y egresos (video)](./como-registrar-ingresos-y-egresos.mdx) |
 | Habilitar facturación | [Delegar ARCA](./como-delegar-facturacion-electronica-arca.md) |
 | Operar con balanza | [Códigos variables](./codigos-variables.md) → [Balanzas Systel](./balanzas-systel-y-codigos-variables.md) → [Problemas frecuentes](./problemas-frecuentes-codigos-variables.md) |
 

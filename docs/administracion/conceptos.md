@@ -79,6 +79,7 @@ Ejemplo: gastos, pagos, compras menores.
 
 ## Ver también
 
+- [Tutorial en video: administrar conceptos](../guias/tutorial-administrar-conceptos.mdx)
 - [Administración](./administracion.md)
 - [Ingresos](../finanzas/ingresos.md)
 - [Egresos](../finanzas/egresos.md)

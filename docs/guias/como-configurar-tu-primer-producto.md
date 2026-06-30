@@ -107,6 +107,7 @@ Depende de cómo manejen listas, promociones y procesos internos. Lo importante 
 
 ## Ver también
 
+- [Tutorial en video: ingresar y administrar productos](./como-ingresar-y-administrar-productos.mdx)
 - [Productos](../administracion/productos.md)
 - [Listas de precio](../configuracion/listas-precio.md)
 - [Consulta de precios](../ventas/consulta-precio.md)

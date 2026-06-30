@@ -660,6 +660,28 @@
   margin-bottom: var(--zink-space-block);
 }
 
+/* Video embebido (guías MDX) */
+.zink-video {
+  position: relative;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 0 1rem;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border: 1px solid var(--zink-border-subtle);
+  border-radius: var(--zink-radius-md);
+  background: var(--zink-surface-sidebar);
+  box-shadow: var(--zink-shadow-sm);
+}
+
+.zink-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .theme-admonition {
   border-radius: var(--zink-radius-md);
   border-width: 1px;

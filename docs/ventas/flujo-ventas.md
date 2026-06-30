@@ -196,6 +196,7 @@ El detalle de cada ciclo está en el artículo de la entidad.
 
 ## Ver también
 
+- [Tutorial en video: flujo de ventas](../guias/tutorial-flujo-de-ventas.mdx)
 - [Cotizaciones](./cotizaciones.md)
 - [Presupuestos](./presupuestos.md)
 - [Pedidos](./pedidos.md)

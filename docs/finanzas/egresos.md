@@ -127,6 +127,7 @@ Si la salida existe porque se pagó una compra, registrala como pago a proveedor
 
 ## Ver también
 
+- [Tutorial en video: registrar ingresos y egresos](../guias/como-registrar-ingresos-y-egresos.mdx)
 - [Finanzas](./finanzas.md)
 - [Caja diaria](./caja-diaria.md)
 - [Pagos](./pagos.md)

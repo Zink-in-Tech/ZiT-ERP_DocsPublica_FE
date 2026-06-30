@@ -113,6 +113,7 @@ Usá [Registro de inventario](../inventario/inventarios.md) o [Toma de inventari
 
 ## Ver también
 
+- [Tutorial en video: flujo de compras](./tutorial-flujo-de-compras.mdx)
 - [Recepción de mercadería](../compras/recepcion-mercaderia.md)
 - [Para depósito](../roles/deposito.md)
 - [Flujo de compras](../compras/flujo-compras.md)

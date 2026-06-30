@@ -197,4 +197,5 @@ Ejemplos:
 
 ## Ver también
 
+- [Tutorial en video: gestionar perfiles y permisos](../guias/tutorial-gestionar-perfiles-permisos.mdx)
 - [Usuarios](./usuarios.md)

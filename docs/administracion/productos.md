@@ -199,6 +199,7 @@ Revisá [Códigos variables](../guias/codigos-variables.md) y [Balanzas Systel](
 
 ## Ver también
 
+- [Tutorial en video: ingresar y administrar productos](../guias/como-ingresar-y-administrar-productos.mdx)
 - [Administración](./administracion.md)
 - [Ventas](../ventas/ventas.md)
 - [Compras](../compras/compras.md)

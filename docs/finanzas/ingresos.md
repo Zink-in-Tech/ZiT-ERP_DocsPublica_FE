@@ -127,6 +127,7 @@ Si el ingreso existe porque un cliente pagó una venta, registralo como pago/cob
 
 ## Ver también
 
+- [Tutorial en video: registrar ingresos y egresos](../guias/como-registrar-ingresos-y-egresos.mdx)
 - [Finanzas](./finanzas.md)
 - [Caja diaria](./caja-diaria.md)
 - [Pagos](./pagos.md)

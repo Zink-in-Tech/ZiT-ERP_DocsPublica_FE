@@ -109,6 +109,7 @@ Se registran datos fiscales y condiciones de compra.
 
 ## Ver también
 
+- [Tutorial en video: registrar y gestionar contactos](../guias/tutorial-registrar-gestionar-contactos.mdx)
 - [Administración](./administracion.md)
 - [Importación masiva de contactos](./contactos-importacion-masiva.md)
 - [Ventas](../ventas/ventas.md)

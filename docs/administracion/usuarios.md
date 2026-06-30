@@ -65,6 +65,7 @@ Se puede inactivar o desbloquear el usuario.
 
 ## Ver también
 
+- [Tutorial en video: gestionar perfiles y permisos](../guias/tutorial-gestionar-perfiles-permisos.mdx)
 - [Administración](./administracion.md)
 - [Perfiles](./perfiles.md)
 - [Perfil de usuario](./perfil-usuario.md)

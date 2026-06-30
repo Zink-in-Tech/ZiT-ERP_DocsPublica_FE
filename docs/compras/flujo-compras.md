@@ -153,6 +153,7 @@ Se registra la compra y la deuda queda pendiente en la cuenta corriente del prov
 
 ## Ver también
 
+- [Tutorial en video: flujo de compras](../guias/tutorial-flujo-de-compras.mdx)
 - [Órdenes de compra](./orden-compras.md)
 - [Compras](./compras.md)
 - [Recepción de mercadería](./recepcion-mercaderia.md)
