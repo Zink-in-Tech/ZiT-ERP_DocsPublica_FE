@@ -57,6 +57,8 @@ const config: Config = {
     v4: true,
   },
 
+  clientModules: [require.resolve('./src/clientModules/tocScrollEnhancements.ts')],
+
   url: 'https://docs.zinkerp.com',
   baseUrl: '/',
 

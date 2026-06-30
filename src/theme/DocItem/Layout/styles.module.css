@@ -33,21 +33,31 @@
   .docAside {
     position: sticky;
     top: calc(var(--ifm-navbar-height) + 0.75rem);
+    align-self: flex-start;
+    width: 100%;
     max-height: calc(100vh - var(--ifm-navbar-height) - 1.5rem);
+    padding: 0.625rem 0.5rem 0.75rem;
+    border: 1px solid var(--zink-border-subtle);
+    border-radius: var(--zink-radius-lg);
+    background: var(--zink-surface-raised);
+    box-shadow: var(--zink-shadow-md);
   }
 
   .docAsideShare {
     flex-shrink: 0;
-    padding: 0.875rem 0 0.75rem;
+    padding: 0.375rem 0.375rem 0.5rem;
   }
 
   .docAside :global(.theme-doc-toc-desktop) {
     position: static;
-    padding-top: 0;
-    max-height: none;
+    padding: 0 0.125rem 0.25rem;
+    max-height: calc(100vh - var(--ifm-navbar-height) - 8.5rem);
+    overflow-x: hidden;
     overflow-y: auto;
     flex: 1;
     min-height: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--zink-border-medium) transparent;
   }
 
   .docItemCol {

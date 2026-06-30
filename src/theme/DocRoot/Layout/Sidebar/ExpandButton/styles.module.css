@@ -1,0 +1,34 @@
+@media (min-width: 997px) {
+  .expandButton {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--zink-surface-sidebar);
+    color: var(--zink-text-subtle);
+    opacity: 0.85;
+    cursor: pointer;
+    transition:
+      opacity 180ms ease,
+      color 180ms ease,
+      background 180ms ease;
+  }
+
+  .expandButton:hover,
+  .expandButton:focus-visible {
+    opacity: 1;
+    color: var(--ifm-color-primary);
+    background: var(--zink-interactive-hover);
+  }
+
+  .expandButton:focus-visible {
+    outline: 2px solid var(--ifm-color-primary);
+    outline-offset: -2px;
+  }
+
+  .icon {
+    display: block;
+    flex-shrink: 0;
+  }
+}

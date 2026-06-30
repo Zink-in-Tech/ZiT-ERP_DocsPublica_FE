@@ -1,0 +1,49 @@
+@media (min-width: 997px) {
+  .collapseSidebarButton {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.125rem;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    bottom: 0;
+    border: 0;
+    border-top: 1px solid var(--zink-border-subtle);
+    border-radius: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      var(--zink-surface-sidebar) 35%
+    );
+    color: var(--zink-text-subtle);
+    cursor: pointer;
+    opacity: 0.72;
+    transition:
+      opacity 180ms ease,
+      color 180ms ease,
+      background 180ms ease;
+  }
+
+  .collapseSidebarButton:hover,
+  .collapseSidebarButton:focus-visible {
+    opacity: 1;
+    color: var(--zink-text-muted);
+    background: var(--zink-surface-sidebar);
+  }
+
+  .collapseSidebarButton:focus-visible {
+    outline: 2px solid var(--ifm-color-primary);
+    outline-offset: -2px;
+  }
+
+  .icon {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+
+.collapseSidebarButton {
+  display: none;
+}
