@@ -13,7 +13,6 @@ import ContentVisibility from '@theme/ContentVisibility';
 import type {Props} from '@theme/DocItem/Layout';
 
 import DocArticleMeta from '../../../components/DocArticleMeta';
-import DocPageShare from '../../../components/DocPageShare';
 import {getDocDisplayTitle, getDocTitleClass} from '../../../utils/docDisplayTitle';
 import styles from './styles.module.css';
 
@@ -41,7 +40,6 @@ function useDocTOC() {
 export default function DocItemLayout({children}: Props): ReactNode {
   const docTOC = useDocTOC();
   const {metadata, frontMatter} = useDoc();
-  const windowSize = useWindowSize();
   const displayTitle = getDocDisplayTitle({
     title: metadata.title,
     sidebarLabel:
@@ -54,9 +52,6 @@ export default function DocItemLayout({children}: Props): ReactNode {
         : undefined,
   });
   const docTitleClass = getDocTitleClass(displayTitle);
-  const shareInAside =
-    Boolean(docTOC.desktop) &&
-    (windowSize === 'desktop' || windowSize === 'ssr');
 
   return (
     <div className="row">
@@ -65,7 +60,7 @@ export default function DocItemLayout({children}: Props): ReactNode {
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
           <article className={docTitleClass}>
-            <DocArticleMeta showShare={!shareInAside} />
+            <DocArticleMeta />
             <div className={styles.docToolbar}>
               <DocVersionBadge />
             </div>
@@ -79,9 +74,6 @@ export default function DocItemLayout({children}: Props): ReactNode {
       {docTOC.desktop && (
         <div className="col col--3">
           <aside className={styles.docAside}>
-            <div className={styles.docAsideShare}>
-              <DocPageShare />
-            </div>
             {docTOC.desktop}
           </aside>
         </div>

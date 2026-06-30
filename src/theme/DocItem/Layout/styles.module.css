@@ -24,11 +24,6 @@
   align-items: stretch;
 }
 
-.docAsideShare {
-  display: flex;
-  justify-content: flex-end;
-}
-
 @media (min-width: 997px) {
   .docAside {
     position: sticky;
@@ -43,15 +38,10 @@
     box-shadow: var(--zink-shadow-md);
   }
 
-  .docAsideShare {
-    flex-shrink: 0;
-    padding: 0.375rem 0.375rem 0.5rem;
-  }
-
   .docAside :global(.theme-doc-toc-desktop) {
     position: static;
     padding: 0 0.125rem 0.25rem;
-    max-height: calc(100vh - var(--ifm-navbar-height) - 8.5rem);
+    max-height: calc(100vh - var(--ifm-navbar-height) - 4rem);
     overflow-x: hidden;
     overflow-y: auto;
     flex: 1;
