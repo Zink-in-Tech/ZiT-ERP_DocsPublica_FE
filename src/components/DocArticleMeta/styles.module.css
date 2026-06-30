@@ -9,6 +9,10 @@
   gap: 1rem 1.25rem;
 }
 
+.metaRowWithoutShare {
+  justify-content: flex-start;
+}
+
 .metaPrimary {
   display: flex;
   flex-direction: column;

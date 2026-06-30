@@ -13,6 +13,7 @@ import ContentVisibility from '@theme/ContentVisibility';
 import type {Props} from '@theme/DocItem/Layout';
 
 import DocArticleMeta from '../../../components/DocArticleMeta';
+import DocPageShare from '../../../components/DocPageShare';
 import styles from './styles.module.css';
 
 function useDocTOC() {
@@ -49,7 +50,11 @@ function getDocTitleClass(title: string): string | undefined {
 export default function DocItemLayout({children}: Props): ReactNode {
   const docTOC = useDocTOC();
   const {metadata} = useDoc();
+  const windowSize = useWindowSize();
   const docTitleClass = getDocTitleClass(metadata.title);
+  const shareInAside =
+    Boolean(docTOC.desktop) &&
+    (windowSize === 'desktop' || windowSize === 'ssr');
 
   return (
     <div className="row">
@@ -58,7 +63,7 @@ export default function DocItemLayout({children}: Props): ReactNode {
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
           <article className={docTitleClass}>
-            <DocArticleMeta />
+            <DocArticleMeta showShare={!shareInAside} />
             <div className={styles.docToolbar}>
               <DocVersionBadge />
             </div>
@@ -69,7 +74,16 @@ export default function DocItemLayout({children}: Props): ReactNode {
           <DocItemPaginator />
         </div>
       </div>
-      {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
+      {docTOC.desktop && (
+        <div className="col col--3">
+          <aside className={styles.docAside}>
+            <div className={styles.docAsideShare}>
+              <DocPageShare />
+            </div>
+            {docTOC.desktop}
+          </aside>
+        </div>
+      )}
     </div>
   );
 }

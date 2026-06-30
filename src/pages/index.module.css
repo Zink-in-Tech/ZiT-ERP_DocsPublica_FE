@@ -1,10 +1,10 @@
 .heroBanner {
   position: relative;
   overflow: hidden;
-  padding: 2rem 1.5rem 2.25rem;
+  padding: 1.625rem 1.5rem 1.875rem;
   text-align: center;
   background:
-    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(117, 0, 185, 0.12), transparent),
+    radial-gradient(ellipse 75% 55% at 50% -8%, rgba(117, 0, 185, 0.1), transparent),
     linear-gradient(180deg, var(--zink-surface-raised) 0%, var(--zink-surface-base) 100%);
   border-bottom: 1px solid var(--zink-border-subtle);
 }
@@ -15,9 +15,9 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(0, 142, 211, 0.04) 0%,
+    rgba(0, 142, 211, 0.035) 0%,
     transparent 45%,
-    rgba(117, 0, 185, 0.05) 100%
+    rgba(117, 0, 185, 0.04) 100%
   );
   pointer-events: none;
 }
@@ -25,41 +25,43 @@
 .heroInner {
   position: relative;
   z-index: 1;
-  max-width: 36rem;
+  max-width: 34rem;
   margin: 0 auto;
 }
 
 .heroTitle {
-  margin: 0 0 0.5rem;
-  font-size: clamp(1.5rem, 1.25rem + 0.6vw, 1.875rem);
+  margin: 0 0 0.375rem;
+  font-size: clamp(1.4375rem, 1.2rem + 0.5vw, 1.75rem);
   font-weight: 500;
-  letter-spacing: -0.018em;
-  line-height: 1.22;
+  letter-spacing: -0.016em;
+  line-height: 1.2;
   color: var(--zink-text-primary);
 }
 
 .heroSubtitle {
-  margin: 0 auto 1.125rem;
-  max-width: 32rem;
-  font-size: 0.9375rem;
-  line-height: 1.55;
+  margin: 0 auto 0.9375rem;
+  max-width: 30rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
   color: var(--zink-text-muted);
 }
 
 .buttons {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.5rem 0.75rem;
+  gap: 0.5rem;
 }
 
 .buttonPrimary,
 .buttonSecondary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.35rem;
-  padding: 0.5625rem 1rem;
+  min-height: var(--zink-btn-height);
+  padding: 0 1rem;
   border-radius: var(--zink-radius-md);
   font-size: 0.8125rem;
   line-height: 1.2;
@@ -87,38 +89,46 @@
   box-shadow: var(--zink-shadow-md);
 }
 
+.buttonPrimary:focus-visible,
+.buttonSecondary:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
 .buttonSecondary {
-  border: 1px solid transparent;
-  background: transparent;
-  color: var(--zink-text-muted);
-  font-weight: 450;
+  border: 1px solid var(--zink-border-medium);
+  background: var(--zink-surface-raised);
+  color: var(--zink-text-secondary);
+  font-weight: 500;
+  box-shadow: var(--zink-shadow-sm);
 }
 
 .buttonSecondary:hover {
-  border-color: transparent;
-  background: transparent;
+  border-color: var(--zink-interactive-active-border);
+  background: var(--zink-surface-base);
   color: var(--ifm-color-primary);
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
+  text-decoration: none;
+  box-shadow: var(--zink-shadow-sm);
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 1.625rem 1.25rem 1.875rem;
+    padding: 1.375rem 1.125rem 1.625rem;
   }
 
   .heroSubtitle {
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
+    font-size: 0.8125rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
   }
 
   .buttonPrimary,
   .buttonSecondary {
     width: 100%;
-    justify-content: center;
-  }
-
-  .buttonSecondary {
-    order: 2;
   }
 }

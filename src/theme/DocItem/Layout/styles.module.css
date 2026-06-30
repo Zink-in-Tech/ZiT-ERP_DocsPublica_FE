@@ -18,9 +18,42 @@
   display: none;
 }
 
+.docAside {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.docAsideShare {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @media (min-width: 997px) {
+  .docAside {
+    position: sticky;
+    top: calc(var(--ifm-navbar-height) + 0.75rem);
+    max-height: calc(100vh - var(--ifm-navbar-height) - 1.5rem);
+  }
+
+  .docAsideShare {
+    flex-shrink: 0;
+    padding: 0.875rem 0 0.75rem;
+  }
+
+  .docAside :global(.theme-doc-toc-desktop) {
+    position: static;
+    padding-top: 0;
+    max-height: none;
+    overflow-y: auto;
+    flex: 1;
+    min-height: 0;
+  }
+
   .docItemCol {
-    max-width: 72% !important;
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: none !important;
     padding-right: 2rem !important;
   }
 
@@ -32,12 +65,17 @@
 
 @media (min-width: 997px) and (max-width: 1200px) {
   .docItemCol {
-    max-width: 68% !important;
     padding-right: 1.5rem !important;
   }
 
   .docItemContainer {
     max-width: min(40rem, 100%);
+  }
+
+  [class*='docMainContainer'] .row > .col--3 {
+    flex-basis: 13rem;
+    width: 13rem;
+    max-width: 13rem;
   }
 }
 

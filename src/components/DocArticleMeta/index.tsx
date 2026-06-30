@@ -1,4 +1,5 @@
 import React, {type ReactNode, useMemo} from 'react';
+import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import {
@@ -43,12 +44,22 @@ function useSectionChip(): SectionChip | null {
   }, [breadcrumbs]);
 }
 
-export default function DocArticleMeta(): ReactNode {
+type DocArticleMetaProps = {
+  showShare?: boolean;
+};
+
+export default function DocArticleMeta({
+  showShare = true,
+}: DocArticleMetaProps): ReactNode {
   const section = useSectionChip();
 
   return (
     <header className={styles.articleMeta}>
-      <div className={styles.metaRow}>
+      <div
+        className={clsx(
+          styles.metaRow,
+          !showShare && styles.metaRowWithoutShare,
+        )}>
         <div className={styles.metaPrimary}>
           <DocBreadcrumbs />
           {section && (
@@ -57,7 +68,7 @@ export default function DocArticleMeta(): ReactNode {
             </Link>
           )}
         </div>
-        <DocPageShare />
+        {showShare && <DocPageShare />}
       </div>
       <div className={styles.metaDivider} aria-hidden="true" />
     </header>
