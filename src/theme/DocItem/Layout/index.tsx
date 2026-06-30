@@ -9,11 +9,10 @@ import DocItemFooter from '@theme/DocItem/Footer';
 import DocItemTOCMobile from '@theme/DocItem/TOC/Mobile';
 import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop';
 import DocItemContent from '@theme/DocItem/Content';
-import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import ContentVisibility from '@theme/ContentVisibility';
 import type {Props} from '@theme/DocItem/Layout';
 
-import DocPageShare from '../../../components/DocPageShare';
+import DocArticleMeta from '../../../components/DocArticleMeta';
 import styles from './styles.module.css';
 
 function useDocTOC() {
@@ -37,9 +36,20 @@ function useDocTOC() {
   };
 }
 
+function getDocTitleClass(title: string): string | undefined {
+  if (title.length <= 42) {
+    return 'doc-title--short';
+  }
+  if (title.length >= 65) {
+    return 'doc-title--long';
+  }
+  return undefined;
+}
+
 export default function DocItemLayout({children}: Props): ReactNode {
   const docTOC = useDocTOC();
   const {metadata} = useDoc();
+  const docTitleClass = getDocTitleClass(metadata.title);
 
   return (
     <div className="row">
@@ -47,11 +57,10 @@ export default function DocItemLayout({children}: Props): ReactNode {
         <ContentVisibility metadata={metadata} />
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
-          <article>
-            <DocBreadcrumbs />
+          <article className={docTitleClass}>
+            <DocArticleMeta />
             <div className={styles.docToolbar}>
               <DocVersionBadge />
-              <DocPageShare />
             </div>
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>

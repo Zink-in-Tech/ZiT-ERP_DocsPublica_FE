@@ -24,15 +24,21 @@
 
 .trigger:hover {
   border-color: var(--ifm-color-primary);
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--doc-share-hover);
+}
+
+.trigger:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
 }
 
 .triggerMain {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.36rem 0.62rem;
-  font-size: 0.78rem;
+  padding: 0.4375rem 0.75rem;
+  min-height: 2.25rem;
+  font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 0;
 }
