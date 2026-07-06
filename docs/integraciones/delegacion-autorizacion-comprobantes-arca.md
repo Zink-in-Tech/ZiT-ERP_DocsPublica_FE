@@ -164,7 +164,12 @@ Solo cuando **soporte te confirme** que la delegación está aprobada:
 2. Andá a **Preferencias** → pestaña **Integraciones**.
 3. En la columna izquierda, seleccioná **ARCA** (facturación electrónica nativa).
 4. Tocá **GESTIONAR**.
+
+![Preferencias → Integraciones → ARCA](/img/ayuda/integraciones/arca/preferencias-integraciones-arca-01.png)
+
 5. Completá el formulario:
+
+![Formulario fiscal de ARCA en ZinK ERP](/img/ayuda/integraciones/arca/formulario-fiscal-arca-01.png)
 
 | Campo | Obligatorio | Notas |
 |-------|-------------|--------|
@@ -176,11 +181,6 @@ Solo cuando **soporte te confirme** que la delegación está aprobada:
 6. Tocá **GUARDAR**.
 
 Si la configuración ya existía, **Gestionar** sirve para actualizar los mismos datos.
-
-<!-- Capturas pendientes: descomentar cuando existan en static/img/ayuda/integraciones/arca/
-![Preferencias → Integraciones → ARCA](/img/ayuda/integraciones/arca/preferencias-integraciones-arca-01.png)
-![Formulario fiscal de ARCA en ZinK ERP](/img/ayuda/integraciones/arca/formulario-fiscal-arca-01.png)
--->
 
 ---
 
