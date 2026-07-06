@@ -13,14 +13,24 @@ slug: /integraciones/delegacion-autorizacion-comprobantes-arca
 
 ## Resumen
 
-Para emitir factura electrónica desde **ZinkERP** necesitamos que tu empresa (o tu contador) haga un trámite rápido en **ARCA**. Son solo dos pasos y no hace falta compartir clave fiscal.
+Para emitir factura electrónica desde **ZinkERP** necesitamos que tu empresa (o tu contador) haga un trámite rápido en **ARCA**. El núcleo del trámite en ARCA tiene dos pasos y no hace falta compartir clave fiscal.
 
 1. crear un **punto de venta nuevo**;
 2. delegar el servicio de **Facturación Electrónica** a **Fernando Ariel Demaio (Zink in Tech)**, **CUIT 20-31499393-5**.
 
-Después de eso, **nosotros terminamos la configuración desde nuestro lado** para que la empresa pueda facturar desde ZinK ERP.
+Después de eso, **soporte revisa la delegación** y recién entonces la organización puede completar la configuración en **Preferencias → Integraciones → ARCA** dentro de ZinK ERP.
 
 > **Importante:** no hace falta compartir clave fiscal.
+
+:::info Alcance de esta guía
+
+Esta guía documenta el flujo de **ARCA nativa**.
+
+- Si en tu organización aparece **ARCA** en **Preferencias → Integraciones**, este es el artículo correcto.
+- Si en tu organización aparece **Facturante** y no aparece **ARCA**, seguí [Facturante](/integraciones/facturante).
+- Si ves ambos servicios, no inicies dos altas en paralelo: confirmá con soporte cuál corresponde a tu organización.
+
+:::
 
 :::info Las tres partes del proceso
 
@@ -181,6 +191,19 @@ Solo cuando **soporte te confirme** que la delegación está aprobada:
 6. Tocá **GUARDAR**.
 
 Si la configuración ya existía, **Gestionar** sirve para actualizar los mismos datos.
+
+## Cómo validar que quedó activo
+
+Después de guardar la configuración:
+
+1. Volvé a la pestaña **Integraciones** y verificá si el servicio queda marcado como configurado.
+2. Confirmá que soporte ya te haya dado el ok para operar.
+3. Si necesitás emitir, hacé una prueba controlada solo cuando:
+   - soporte confirmó la delegación;
+   - la configuración quedó guardada;
+   - ARCA ya habilitó el punto de venta.
+
+Si el ERP rechaza el punto de venta, informa error fiscal o no habilita la emisión, esperá hasta 24 horas desde el trámite. Si el problema sigue, enviá a soporte: organización, CUIT, punto de venta, fecha/hora aproximada y captura del mensaje visible.
 
 ---
 

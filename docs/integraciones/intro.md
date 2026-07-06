@@ -10,7 +10,7 @@ slug: /integraciones
 
 ## Resumen
 
-Las **integraciones** son la forma en que ZinK ERP se comunica con **servicios de otras empresas**: facturación electrónica (por ejemplo Facturante), cobros (Mercado Pago), tiendas online (WooCommerce) y otros que el sistema vaya habilitando.
+Las **integraciones** son la forma en que ZinK ERP se comunica con **servicios de otras empresas** o con circuitos fiscales externos: facturación electrónica (por ejemplo **ARCA** o, en algunas cuentas, **Facturante**), cobros (Mercado Pago), tiendas online (WooCommerce) y otros que el sistema vaya habilitando.
 
 No tenés que programar nada: desde la aplicación seguís un **asistente** o completás datos que el proveedor pide. Esta sección está pensada para **administradores de la organización** o supervisores que habilitan esos vínculos.
 
@@ -26,6 +26,12 @@ No tenés que programar nada: desde la aplicación seguís un **asistente** o co
 
 Antes de abrir el diálogo, la pantalla puede mostrar una **guía resumida** del proveedor: pasos, plazos y enlaces útiles.
 
+### Cómo ubicar el flujo correcto de facturación electrónica
+
+- Si en tu organización aparece **ARCA**, seguí la guía de **ARCA (facturación electrónica nativa)**. Ese es el circuito principal documentado en este portal.
+- Si en tu organización aparece **Facturante** y no aparece **ARCA**, seguí la guía de **Facturante**. Puede corresponder a una configuración previa o a una cuenta que todavía usa ese servicio.
+- Si ves ambos servicios y no sabés cuál usar, **no hagas el alta en paralelo**: confirmá con soporte cuál corresponde a tu organización.
+
 :::note Capturas
 
 La ayuda puede incorporar capturas anotadas de la pestaña **Integraciones** a medida que se consoliden los flujos publicados.
@@ -39,7 +45,8 @@ La ayuda puede incorporar capturas anotadas de la pestaña **Integraciones** a m
 | Artículo | Para qué sirve |
 |----------|----------------|
 | [Cómo funcionan las integraciones](/integraciones/como-funciona) | Conceptos en palabras simples (OAuth, claves, mapeos). |
-| [Facturante](/integraciones/facturante) | Facturación electrónica y contexto Argentina / ARCA. |
+| [Delegar autorización de comprobantes en ARCA](/integraciones/delegacion-autorizacion-comprobantes-arca) | Circuito nativo: punto de venta, delegación, aprobación y alta en ZinK ERP. |
+| [Facturante](/integraciones/facturante) | Flujo alternativo o legado para organizaciones donde todavía aparece ese servicio. |
 | [Mercado Pago](/integraciones/mercado-pago) | Vincular cuenta y sucursal sin ingresar la contraseña en el ERP. |
 | [WooCommerce](/integraciones/woocommerce) | Tienda online: vincular tienda, enlazar productos, pestaña Ecommerce y buenas prácticas. |
 | [Mercado Libre](/integraciones/mercado-libre) | Servicios adicionales que pueden aparecer según habilitación. |

@@ -14,6 +14,14 @@ slug: /integraciones/facturante
 
 La configuración se realiza desde **Preferencias → Integraciones** mediante un asistente que solicita datos fiscales y de la empresa. En Argentina, el alta puede depender de trámites ante **ARCA** y de tiempos externos al ERP.
 
+:::info Antes de seguir
+
+Esta guía aplica solo si en **Preferencias → Integraciones** tu organización muestra el servicio **Facturante**.
+
+Si en tu organización aparece **ARCA**, seguí primero [Delegar autorización de comprobantes en ARCA](/integraciones/delegacion-autorizacion-comprobantes-arca), que es el flujo nativo documentado en este portal.
+
+:::
+
 Esta ayuda explica:
 
 - qué permite la integración;
@@ -47,7 +55,7 @@ El comportamiento validado es:
 - enviar el alta al backend;
 - ver una finalización correcta o un mensaje de error según la respuesta.
 
-Facturante es el proveedor usado actualmente para este flujo de facturación electrónica.
+Facturante puede seguir siendo el servicio visible en algunas organizaciones o configuraciones existentes. Si tu cuenta muestra **ARCA** en lugar de **Facturante**, seguí la guía nativa de ARCA y no esta.
 
 ---
 
@@ -199,11 +207,15 @@ Para confirmar un flujo fiscal específico, consultá con soporte o con la perso
 
 ### ¿Facturante permite emitir comprobantes electrónicos desde ZinkERP?
 
-Sí. Facturante es el proveedor usado actualmente para habilitar la facturación electrónica desde ZinkERP.
+Sí, cuando ese servicio es el que aparece habilitado en tu organización.
 
 ### ¿Dónde se configura?
 
 En **Preferencias → Integraciones → Facturante → Gestionar**, siempre que la acción esté disponible para tu organización y usuario.
+
+### ¿Qué hago si en mi cuenta aparece ARCA y no Facturante?
+
+Seguí la guía de [ARCA nativa](/integraciones/delegacion-autorizacion-comprobantes-arca). No asumas que ambas integraciones se configuran igual ni intentes completar las dos en paralelo.
 
 ### ¿Por qué habla de ARCA?
 

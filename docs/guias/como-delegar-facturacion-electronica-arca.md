@@ -17,6 +17,14 @@ keywords:
 
 Dejar lista la cuenta fiscal para que ZinK ERP pueda emitir comprobantes electrónicos con el circuito correcto de ARCA.
 
+:::info Antes de empezar
+
+Esta guía asume que en **Preferencias → Integraciones** tu organización va a usar **ARCA**.
+
+Si en tu cuenta aparece **Facturante** y no aparece **ARCA**, seguí la guía específica de [Facturante](../integraciones/facturante.md).
+
+:::
+
 :::info Las tres partes del proceso
 
 (1) **Trámite en ARCA** —esta guía—, (2) **envío de datos a soporte** para aprobar la delegación, (3) **configuración en ZinK ERP** en **Preferencias → Integraciones → ARCA**. No uses **Gestionar** en el ERP hasta que soporte te confirme.
@@ -45,6 +53,8 @@ Al terminar el flujo completo deberías tener:
 - la delegación de **Facturación Electrónica** hecha a Zink in Tech;
 - la delegación **aprobada por soporte**;
 - la configuración guardada en **Preferencias → Integraciones → ARCA**.
+
+Eso deja lista la integración, pero la primera emisión puede depender de la habilitación final del punto de venta en ARCA.
 
 ---
 
@@ -94,6 +104,14 @@ Solo cuando soporte te confirme:
 2. Seleccioná **ARCA** y tocá **GESTIONAR**.
 3. Completá el formulario fiscal (punto de venta, inicio de actividades, domicilio, ingresos brutos si aplica).
 4. Tocá **GUARDAR**.
+
+### Paso 5: Validar que quedó listo
+
+Después de guardar:
+
+- verificá si el servicio queda marcado como configurado en la pestaña **Integraciones**;
+- probá una emisión real o controlada solo cuando soporte ya te haya confirmado que podés continuar;
+- si el sistema sigue mostrando error fiscal o rechazo del punto de venta, esperá hasta 24 horas y luego contactá soporte con captura y detalle del mensaje.
 
 ---
 
