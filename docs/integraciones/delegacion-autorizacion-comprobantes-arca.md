@@ -2,8 +2,9 @@
 title: Cómo delegar Facturación Electrónica en ARCA para Zink ERP | Zink ERP
 sidebar_label: Delegar autorización de comprobantes en ARCA
 description: >-
-  Seguí el paso a paso para crear un punto de venta en ARCA y delegar
-  Facturación Electrónica, sin compartir clave fiscal, para habilitar Zink ERP.
+  Creá un punto de venta en ARCA, delegá Facturación Electrónica, solicitá
+  aprobación a soporte y configurá ARCA en Preferencias → Integraciones de
+  ZinK ERP.
 sidebar_position: 6
 slug: /integraciones/delegacion-autorizacion-comprobantes-arca
 ---
@@ -20,6 +21,12 @@ Para emitir factura electrónica desde **ZinkERP** necesitamos que tu empresa (o
 Después de eso, **nosotros terminamos la configuración desde nuestro lado** para que la empresa pueda facturar desde ZinK ERP.
 
 > **Importante:** no hace falta compartir clave fiscal.
+
+:::info Las tres partes del proceso
+
+(1) **Trámite en ARCA** —este artículo—, (2) **envío de datos a soporte** para aprobar la delegación, (3) **configuración en ZinK ERP** en **Preferencias → Integraciones → ARCA**. No uses **Gestionar** en el ERP hasta que soporte te confirme.
+
+:::
 
 ---
 
@@ -123,29 +130,67 @@ La delegación solo nos autoriza a hacer la gestión técnica de **Facturación 
 
 ---
 
-## Qué nos tenés que enviar cuando terminás
+## Después del trámite en ARCA — solicitar aprobación a soporte
 
-Cuando termines el trámite, pasanos:
+Cuando terminaste los pasos en ARCA, **contactá a soporte** con estos datos:
+
+**[Escribinos por WhatsApp](https://wa.me/5491135598389?text=Hola%2C%20ya%20termin%C3%A9%20el%20tr%C3%A1mite%20en%20ARCA%20y%20estoy%20listo%20para%20activar%20la%20integraci%C3%B3n%20con%20ZinK%20ERP.%0A%0ACUIT%20de%20la%20empresa%3A%20%0APunto%20de%20venta%20en%20ARCA%3A%20%0ADelegaci%C3%B3n%20confirmada%20a%20Fernando%20Ariel%20Demaio%20(CUIT%2020-31499393-5)%3A%20S%C3%AD)** — se abre con un mensaje listo para enviar; completá CUIT y punto de venta antes de mandarlo.
 
 | Dato | Ejemplo |
 |------|---------|
 | CUIT de la empresa | `30-71234567-8` |
-| Número de punto de venta nuevo creado en ARCA | `00012` |
-| Confirmación de delegación | `Delegación hecha a Fernando Ariel Demaio - CUIT 20-31499393-5` |
-| Constancia del trámite | `PDF o captura de confirmación` |
+| Número de punto de venta creado en ARCA | `00012` |
+| Confirmación de delegación | Delegación hecha a Fernando Ariel Demaio - CUIT 20-31499393-5 |
 
-Con eso, desde Zink in Tech hacemos el resto:
+Opcional: PDF o captura de la confirmación en ARCA.
 
-- vinculamos la delegación;
-- terminamos la configuración;
-- dejamos listo el circuito para emitir desde ZinK ERP.
+**Qué hace soporte:** revisa y **aprueba la delegación** para que ZinK ERP pueda operar con tu CUIT.
 
-Antes de darnos el ok final, revisá este checklist:
+**Qué tenés que esperar:** un mensaje de soporte confirmando que podés continuar con la configuración en el ERP.
 
-- [ ] CUIT de la empresa
-- [ ] Número de punto de venta nuevo creado en ARCA
-- [ ] Delegación confirmada a Fernando Ariel Demaio – CUIT 20-31499393-5
-- [ ] (Opcional) Constancia del trámite
+:::caution Importante
+
+No uses **Gestionar** en **Integraciones → ARCA** hasta recibir esa confirmación.
+
+:::
+
+---
+
+## Configuración en ZinK ERP
+
+Solo cuando **soporte te confirme** que la delegación está aprobada:
+
+1. Iniciá sesión en **ZinK ERP**.
+2. Andá a **Preferencias** → pestaña **Integraciones**.
+3. En la columna izquierda, seleccioná **ARCA** (facturación electrónica nativa).
+4. Tocá **GESTIONAR**.
+5. Completá el formulario:
+
+| Campo | Obligatorio | Notas |
+|-------|-------------|--------|
+| Punto de venta | Sí | El mismo número que creaste en ARCA. |
+| Inicio de actividades | Recomendado | Como figura en ARCA. |
+| Domicilio fiscal | Recomendado | Puede precargarse desde los datos de la organización. |
+| Ingresos brutos | Si aplica | Texto que debe figurar en los comprobantes, según tu situación fiscal. |
+
+6. Tocá **GUARDAR**.
+
+Si la configuración ya existía, **Gestionar** sirve para actualizar los mismos datos.
+
+<!-- Capturas pendientes: descomentar cuando existan en static/img/ayuda/integraciones/arca/
+![Preferencias → Integraciones → ARCA](/img/ayuda/integraciones/arca/preferencias-integraciones-arca-01.png)
+![Formulario fiscal de ARCA en ZinK ERP](/img/ayuda/integraciones/arca/formulario-fiscal-arca-01.png)
+-->
+
+---
+
+## Checklist del proceso completo
+
+- [ ] Punto de venta nuevo creado en ARCA (tipo correcto: Monotributo o RI).
+- [ ] Delegación confirmada a Fernando Ariel Demaio – CUIT 20-31499393-5.
+- [ ] Datos enviados a soporte (CUIT, PV, confirmación).
+- [ ] **Confirmación de soporte** recibida.
+- [ ] Configuración guardada en **Preferencias → Integraciones → ARCA**.
 
 ---
 
@@ -186,11 +231,20 @@ No conviene. ARCA indica que para factura electrónica por este medio debe usars
 
 ### ¿Después del trámite ya puedo emitir desde ZinK ERP?
 
-Todavía falta la activación técnica de nuestro lado. Cuando nos confirmás la delegación y el punto de venta, terminamos la configuración inicial. En general lo dejamos listo en el mismo día.
+Todavía no. Primero soporte debe **aprobar la delegación** y confirmarte que podés continuar. Después tenés que guardar la configuración en **Preferencias → Integraciones → ARCA**. Recién entonces podés emitir, siempre que ARCA haya habilitado el punto de venta (puede demorar hasta 24 horas).
+
+### ¿Puedo configurar ARCA en el ERP antes de hablar con soporte?
+
+No conviene. Soporte debe aprobar la delegación primero. Si guardás la configuración antes, puede fallar o quedar incompleta.
+
+### ¿Cuándo puedo emitir la primera factura electrónica?
+
+Cuando: (1) soporte confirmó la delegación, (2) guardaste la configuración en **Integraciones → ARCA**, y (3) ARCA habilitó el punto de venta (puede demorar hasta 24 horas).
 
 ---
 
 ## Ver también
 
+- [Preferencias](/configuracion/preferencias)
 - [Integraciones con servicios externos](/integraciones)
 - [Cómo funcionan las integraciones](/integraciones/como-funciona)

@@ -2,8 +2,8 @@
 title: Cómo delegar Facturación Electrónica en ARCA para usar Zink ERP | Zink ERP
 sidebar_label: Delegar ARCA para Zink ERP
 description: >-
-  Guía paso a paso para crear un punto de venta en ARCA y delegar Facturación
-  Electrónica para usar Zink ERP, sin compartir clave fiscal.
+  Resumen del flujo completo: trámite en ARCA, aprobación por soporte y
+  configuración en Preferencias → Integraciones de ZinK ERP.
 sidebar_position: 2
 keywords:
   - delegar ARCA
@@ -15,7 +15,15 @@ keywords:
 
 ## Objetivo
 
-Dejar lista la cuenta fiscal para que Zink ERP pueda emitir comprobantes electrónicos con el circuito correcto de ARCA.
+Dejar lista la cuenta fiscal para que ZinK ERP pueda emitir comprobantes electrónicos con el circuito correcto de ARCA.
+
+:::info Las tres partes del proceso
+
+(1) **Trámite en ARCA** —esta guía—, (2) **envío de datos a soporte** para aprobar la delegación, (3) **configuración en ZinK ERP** en **Preferencias → Integraciones → ARCA**. No uses **Gestionar** en el ERP hasta que soporte te confirme.
+
+:::
+
+Para el detalle paso a paso del trámite en ARCA, revisá [Cómo delegar Facturación Electrónica en ARCA](../integraciones/delegacion-autorizacion-comprobantes-arca.md).
 
 ---
 
@@ -31,11 +39,12 @@ Dejar lista la cuenta fiscal para que Zink ERP pueda emitir comprobantes electr�
 
 ## Resultado esperado
 
-Al terminar esta guía deberías tener:
+Al terminar el flujo completo deberías tener:
 
 - un punto de venta nuevo creado en ARCA;
 - la delegación de **Facturación Electrónica** hecha a Zink in Tech;
-- los datos listos para compartir al equipo que configura Zink ERP.
+- la delegación **aprobada por soporte**;
+- la configuración guardada en **Preferencias → Integraciones → ARCA**.
 
 ---
 
@@ -64,14 +73,27 @@ Al terminar esta guía deberías tener:
 8. Verificá que corresponda a **Fernando Ariel Demaio (Zink in Tech)**.
 9. Confirmá la delegación.
 
-### Paso 3: Compartir lo necesario al equipo
+### Paso 3: Solicitar aprobación a soporte
 
-Cuando termines, pasá:
+Cuando terminaste en ARCA, **contactá a soporte** con:
+
+**[Escribinos por WhatsApp](https://wa.me/5491135598389?text=Hola%2C%20ya%20termin%C3%A9%20el%20tr%C3%A1mite%20en%20ARCA%20y%20estoy%20listo%20para%20activar%20la%20integraci%C3%B3n%20con%20ZinK%20ERP.%0A%0ACUIT%20de%20la%20empresa%3A%20%0APunto%20de%20venta%20en%20ARCA%3A%20%0ADelegaci%C3%B3n%20confirmada%20a%20Fernando%20Ariel%20Demaio%20(CUIT%2020-31499393-5)%3A%20S%C3%AD)** — se abre con un mensaje listo para enviar; completá CUIT y punto de venta antes de mandarlo.
 
 - CUIT de la empresa;
 - número del nuevo punto de venta;
 - confirmación de que la delegación quedó hecha;
-- constancia o captura si la tenés.
+- PDF o captura de la confirmación (opcional).
+
+Soporte revisa y **aprueba la delegación**. Esperá su confirmación antes de continuar en el ERP.
+
+### Paso 4: Configurar ARCA en ZinK ERP
+
+Solo cuando soporte te confirme:
+
+1. Andá a **Preferencias** → pestaña **Integraciones**.
+2. Seleccioná **ARCA** y tocá **GESTIONAR**.
+3. Completá el formulario fiscal (punto de venta, inicio de actividades, domicilio, ingresos brutos si aplica).
+4. Tocá **GUARDAR**.
 
 ---
 
@@ -101,14 +123,18 @@ No. El circuito correcto es delegar el servicio, no compartir credenciales.
 
 No. Solo habilita la gestión técnica del servicio de **Facturación Electrónica**.
 
-### ¿Esta guía reemplaza la ayuda técnica del portal de integraciones?
+### ¿Después del trámite ya puedo emitir desde ZinK ERP?
 
-No. Esta guía resume el objetivo operativo. Para más detalle del trámite, revisá también [Cómo delegar Facturación Electrónica en ARCA](../integraciones/delegacion-autorizacion-comprobantes-arca.md).
+Todavía no. Primero soporte debe aprobar la delegación; después guardás la configuración en **Integraciones → ARCA**. ARCA puede demorar hasta 24 horas en habilitar el punto de venta.
+
+### ¿Esta guía reemplaza la ayuda del portal de integraciones?
+
+No. Esta guía resume el objetivo operativo. Para el detalle del trámite en ARCA, la configuración en el ERP y el checklist completo, revisá [Cómo delegar Facturación Electrónica en ARCA](../integraciones/delegacion-autorizacion-comprobantes-arca.md).
 
 ---
 
 ## Ver también
 
-- [Facturante](../integraciones/facturante.md)
+- [Cómo delegar Facturación Electrónica en ARCA (detalle completo)](../integraciones/delegacion-autorizacion-comprobantes-arca.md)
+- [Preferencias](../configuracion/preferencias.md)
 - [Integraciones](../integraciones/intro.md)
-- [Primeros pasos](../primeros-pasos.md)
