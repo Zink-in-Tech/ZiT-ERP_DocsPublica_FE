@@ -34,7 +34,13 @@ Esta guía documenta el flujo de **ARCA nativa**.
 
 :::info Las tres partes del proceso
 
-(1) **Trámite en ARCA** —este artículo—, (2) **envío de datos a soporte** para aprobar la delegación, (3) **configuración en ZinK ERP** en **Preferencias → Integraciones → ARCA**. No uses **Gestionar** en el ERP hasta que soporte te confirme.
+| Etapa | Qué hacés | Qué esperar |
+|-------|-----------|-------------|
+| **Paso 1/3 — Trámite en ARCA** | Crear punto de venta y delegar (este artículo) | Confirmación en pantalla al terminar cada trámite |
+| **Paso 2/3 — Aprobación de soporte** | Enviar CUIT, punto de venta y confirmación de delegación | Mensaje de soporte autorizando continuar en el ERP |
+| **Paso 3/3 — Configuración en ZinK ERP** | **Preferencias → Integraciones → ARCA → Gestionar** | Servicio configurado; primera emisión cuando ARCA habilite el PV (hasta 24 h) |
+
+No uses **Gestionar** en el ERP hasta que soporte te confirme (Paso 2/3).
 
 :::
 
@@ -76,12 +82,18 @@ La delegación debe hacerse a:
 
 Prepará esto antes de ingresar:
 
-- **CUIT** y **clave fiscal** con nivel suficiente para operar los servicios de ARCA;
+- **CUIT** y **clave fiscal de nivel 2 o superior** (la que suele usar la mayoría de los trámites administrativos en ARCA);
 - acceso al servicio **Administración de Puntos de Venta y Domicilios**;
 - acceso al servicio **Administrador de Relaciones**;
 - el criterio fiscal correcto de la empresa: **Monotributo** o **Responsable Inscripto / IVA**.
 
-Si alguno de esos servicios no aparece en el menú, pedile a la persona que administra la clave fiscal que revise los permisos.
+### Cómo saber si tu clave fiscal alcanza
+
+1. Ingresá a [ARCA](https://www.arca.gob.ar/) con tu CUIT y clave fiscal.
+2. Si ves en el menú los servicios **Administración de Puntos de Venta y Domicilios** y **Administrador de Relaciones**, en general tu clave ya tiene el nivel necesario.
+3. Si **no** aparecen, pedile a quien administra la clave fiscal de la empresa que revise el **nivel de la clave** y los **permisos del usuario** (a veces hace falta nivel 2 o superior o que el titular/representante habilite esos servicios).
+
+Si alguno de esos servicios no aparece en el menú, no avances con el alta del punto de venta hasta resolverlo: sin esos accesos el trámite se corta en los primeros pasos.
 
 ---
 
@@ -89,11 +101,34 @@ Si alguno de esos servicios no aparece en el menú, pedile a la persona que admi
 
 1. Ingresá a [ARCA](https://www.arca.gob.ar/) con CUIT y clave fiscal.
 2. Abrí el servicio **Administración de Puntos de Venta y Domicilios**.
-3. Seleccioná la opción para **A/B/M de puntos de venta**.
+
+   Podés buscarlo desde el buscador del portal: escribí **Administración** y elegí **Administración de puntos de venta y domicilios**.
+
+   ![Buscar Administración de puntos de venta y domicilios en el portal de ARCA](/img/ayuda/integraciones/arca/arca-buscar-puntos-de-venta-01.png)
+
+3. Seleccioná **A/B/M de puntos de venta / emisión** (Alta/Baja/Modificación).
+
+   ![Menú de puntos de venta con la opción A/B/M de puntos de venta / emisión](/img/ayuda/integraciones/arca/arca-abm-puntos-de-venta-01.png)
+
 4. Tocá **Agregar**.
-5. Ingresá un **número de punto de venta nuevo**.
-6. Si ARCA lo pide, completá el nombre de fantasía.
-7. Cuando el sistema solicite el tipo de facturación, elegí la opción que corresponda a tu situación fiscal.
+5. Ingresá un **número de punto de venta nuevo** (ver guía abajo).
+6. Completá el **nombre de fantasía** (suele pedirse en el alta; puede ser el nombre comercial de la empresa).
+7. En **Sistema**, elegí la opción que corresponda a tu situación fiscal (ver tabla abajo).
+
+   ![Formulario de alta de punto de venta con el campo Sistema desplegable](/img/ayuda/integraciones/arca/arca-alta-punto-venta-sistema-01.png)
+
+   :::caution Elegí la opción Webservices
+
+   En el desplegable **Sistema** hay muchas variantes (CAEA, contingencia, etc.). Para ZinK ERP necesitás la opción de **Webservices**, no CAEA ni contingencia. Revisá la tabla de abajo antes de confirmar.
+
+   :::
+
+### Qué número de punto de venta elegir
+
+- Usá el **próximo número libre** que no esté en uso.
+- Si ya tenés el `00001`, probá con `00002`; si el `00002` también existe, seguí con `00003`, y así sucesivamente.
+- El número en sí **no define** el tipo de facturación: lo importante es que sea **nuevo para ZinK ERP** y que elijas el **tipo correcto** en el paso 7.
+- Si ARCA informa que el número ya existe, elegí otro. No reutilices un punto de venta de factura manual, controlador fiscal u otro sistema.
 
 ### Qué opción elegir al crear el punto de venta
 
@@ -116,19 +151,47 @@ Si ya emitís comprobantes por otro sistema, no reutilices ese punto de venta. P
 
 ## Paso 2: Delegar el servicio de facturación electrónica
 
-1. Volvé al menú principal de clave fiscal.
-2. Abrí el servicio **Administrador de Relaciones**.
-3. Ingresá en **Nueva Relación**.
+1. Volvé al menú principal de clave fiscal (o al portal de ARCA).
+2. Abrí el servicio **Administrador de Relaciones de Clave Fiscal**.
+
+   Podés buscarlo desde el buscador: escribí **Administrador de Relaciones** y elegí **Administrador de Relaciones de Clave Fiscal**.
+
+   ![Buscar Administrador de Relaciones de Clave Fiscal en el portal de ARCA](/img/ayuda/integraciones/arca/arca-buscar-administrador-relaciones-01.png)
+
+3. Tocá **Nueva Relación**.
+
+   ![Pantalla del Administrador de Relaciones con el botón Nueva Relación](/img/ayuda/integraciones/arca/arca-nueva-relacion-menu-01.png)
+
 4. Si ARCA te lo pide, seleccioná la persona o empresa representada con la que querés operar.
-5. Tocá **Buscar** para elegir el servicio.
-6. Entrá en el organismo **ARCA**.
-7. Entrá en la agrupación **Webservices**.
-8. Seleccioná el servicio **Facturación Electrónica**.
-9. En el campo de representante o usuario autorizado, cargá el CUIT **20-31499393-5**.
-10. Verificá que corresponda a **Fernando Ariel Demaio (Zink in Tech)**.
-11. Revisá el resumen.
-12. Tocá **Confirmar**.
-13. Si querés, guardá la constancia del trámite.
+5. En **Servicio**, tocá **BUSCAR**.
+
+   ![Formulario Incorporar nueva Relación con el botón BUSCAR del servicio](/img/ayuda/integraciones/arca/arca-nueva-relacion-buscar-servicio-01.png)
+
+6. Elegí el organismo **ARCA** y luego **WebServices**.
+
+   ![Selección del servicio ARCA y WebServices](/img/ayuda/integraciones/arca/arca-seleccion-arca-webservices-01.png)
+
+7. Seleccioná **Facturación Electrónica** (no confundir con «Factura electrónica de exportación» ni otras variantes).
+
+   ![Servicio Facturación Electrónica en la lista de WebServices](/img/ayuda/integraciones/arca/arca-facturacion-electronica-servicio-01.png)
+
+   :::note Nivel de clave fiscal
+
+   ARCA puede indicar que **Facturación Electrónica** requiere **nivel de seguridad 3** como mínimo. Si no podés avanzar, pedí que revisen el nivel de tu clave fiscal antes de seguir.
+
+   :::
+
+8. Confirmá el servicio y, en **Representante**, tocá **BUSCAR**.
+
+   ![Servicio Facturación Electrónica seleccionado y botón BUSCAR del representante](/img/ayuda/integraciones/arca/arca-buscar-representante-01.png)
+
+9. Cargá el CUIT **20-31499393-5**, tocá **BUSCAR** y verificá que corresponda a **Fernando Ariel Demaio (Zink in Tech)**.
+10. Tocá **CONFIRMAR** y revisá el resumen final.
+11. Si querés, guardá la constancia del trámite.
+
+   ![CUIT autorizado 20-31499393-5 con nombre Fernando Ariel Demaio](/img/ayuda/integraciones/arca/arca-cuit-autorizado-01.png)
+
+   Podés ingresar el CUIT con o sin guiones (`20-31499393-5` o `20314993935`).
 
 :::info Qué significa esta delegación
 
@@ -136,15 +199,31 @@ La empresa sigue siendo dueña de sus comprobantes y de su punto de venta.
 
 La delegación solo nos autoriza a hacer la gestión técnica de **Facturación Electrónica** para esa CUIT. No da acceso a otros servicios de ARCA.
 
+Del lado de Zink in Tech completamos la aceptación y revisión de la delegación cuando nos enviás los datos por soporte (Paso 2/3 del flujo completo).
+
 :::
 
 ---
 
 ## Después del trámite en ARCA — solicitar aprobación a soporte
 
-Cuando terminaste los pasos en ARCA, **contactá a soporte** con estos datos:
+Cuando terminaste los pasos en ARCA, **contactá a soporte** con estos datos.
 
-**[Escribinos por WhatsApp](https://wa.me/5491135598389?text=Hola%2C%20ya%20termin%C3%A9%20el%20tr%C3%A1mite%20en%20ARCA%20y%20estoy%20listo%20para%20activar%20la%20integraci%C3%B3n%20con%20ZinK%20ERP.%0A%0ACUIT%20de%20la%20empresa%3A%20%0APunto%20de%20venta%20en%20ARCA%3A%20%0ADelegaci%C3%B3n%20confirmada%20a%20Fernando%20Ariel%20Demaio%20(CUIT%2020-31499393-5)%3A%20S%C3%AD)** — se abre con un mensaje listo para enviar; completá CUIT y punto de venta antes de mandarlo.
+### Opción recomendada: WhatsApp
+
+1. Tocá **[Escribinos por WhatsApp](https://wa.me/5491135598389?text=Hola%2C%20ya%20termin%C3%A9%20el%20tr%C3%A1mite%20en%20ARCA%20y%20estoy%20listo%20para%20activar%20la%20integraci%C3%B3n%20con%20ZinK%20ERP.%0A%0ACUIT%20de%20la%20empresa%3A%20%0APunto%20de%20venta%20en%20ARCA%3A%20%0ADelegaci%C3%B3n%20confirmada%20a%20Fernando%20Ariel%20Demaio%20(CUIT%2020-31499393-5)%3A%20S%C3%AD)**.
+2. Antes de enviar, **completá** en el mensaje tu CUIT y el número de punto de venta (donde dice las líneas en blanco).
+3. Si podés, adjuntá captura o PDF de la confirmación de delegación en ARCA.
+
+Si te resulta más cómodo, copiá y pegá este texto en WhatsApp y completá los datos:
+
+```
+Hola, ya terminé el trámite en ARCA y estoy listo para activar la integración con ZinK ERP.
+
+CUIT de la empresa: [completar]
+Punto de venta en ARCA: [completar]
+Delegación confirmada a Fernando Ariel Demaio (CUIT 20-31499393-5): Sí
+```
 
 | Dato | Ejemplo |
 |------|---------|
@@ -156,7 +235,7 @@ Opcional: PDF o captura de la confirmación en ARCA.
 
 **Qué hace soporte:** revisa y **aprueba la delegación** para que ZinK ERP pueda operar con tu CUIT.
 
-**Qué tenés que esperar:** un mensaje de soporte confirmando que podés continuar con la configuración en el ERP.
+**Qué tenés que esperar:** un mensaje de soporte confirmando que podés continuar con la configuración en el ERP. Si pasaron **varios días hábiles** sin respuesta, escribinos de nuevo por WhatsApp con el mismo CUIT y punto de venta.
 
 :::caution Importante
 
@@ -183,14 +262,16 @@ Solo cuando **soporte te confirme** que la delegación está aprobada:
 
 | Campo | Obligatorio | Notas |
 |-------|-------------|--------|
-| Punto de venta | Sí | El mismo número que creaste en ARCA. |
-| Inicio de actividades | Recomendado | Como figura en ARCA. |
-| Domicilio fiscal | Recomendado | Puede precargarse desde los datos de la organización. |
-| Ingresos brutos | Si aplica | Texto que debe figurar en los comprobantes, según tu situación fiscal. |
+| Punto de venta | Sí | El mismo número que creaste en ARCA (ej. `00012`). |
+| Inicio de actividades | Recomendado | Fecha en formato **DD/MM/AAAA**, como figura en ARCA (servicio **Consulta de CUIT** o constancia fiscal). |
+| Domicilio fiscal | Recomendado | Elegí el domicilio que corresponda a la actividad del punto de venta. Si hay varios, consultá con tu contador cuál conviene. Puede precargarse desde los datos de la organización. |
+| Ingresos brutos | Si aplica | Texto **exacto** que debe figurar en los comprobantes según tu jurisdicción y condición. Si tenés dudas, pedí el texto a tu contador antes de guardar. Ejemplos frecuentes: `Exento`, `No corresponde` o la inscripción provincial correspondiente. |
 
 6. Tocá **GUARDAR**.
 
 Si la configuración ya existía, **Gestionar** sirve para actualizar los mismos datos.
+
+---
 
 ## Cómo validar que quedó activo
 
@@ -221,8 +302,10 @@ Si el ERP rechaza el punto de venta, informa error fiscal o no habilita la emisi
 
 | Problema | Qué revisar |
 |---------|-------------|
-| No aparece el servicio de puntos de venta | Confirmá que el usuario tenga acceso a **Administración de Puntos de Venta y Domicilios**. |
+| No aparece el servicio de puntos de venta | Confirmá que el usuario tenga acceso a **Administración de Puntos de Venta y Domicilios** y clave fiscal de **nivel 2 o superior**. |
 | No aparece **Administrador de Relaciones** | Revisá los permisos de clave fiscal y quién administra la representación de la empresa. |
+| No entiendo **A/B/M** en el menú | Buscá **Alta/Baja/Modificación de puntos de venta** dentro de **Administración de Puntos de Venta y Domicilios**. |
+| ARCA dice que el punto de venta ya existe | Elegí el **próximo número libre**; no reutilices uno de otro sistema. |
 | No encontrás la opción correcta de punto de venta | Verificá si la empresa es **Monotributo** o **Responsable Inscripto** antes de confirmar. |
 | El sistema no permite delegar | Revisá que hayas entrado por **Nueva Relación** y que estés seleccionando **ARCA → Webservices → Facturación Electrónica**. |
 | El CUIT del autorizado da error | Controlá que esté cargado exactamente como **20-31499393-5**. |
@@ -251,6 +334,18 @@ No. La delegación aplica solo al servicio de **Facturación Electrónica** para
 ### ¿Puedo usar un punto de venta que ya tenía?
 
 No conviene. ARCA indica que para factura electrónica por este medio debe usarse un punto de venta específico y distinto del manual u otros sistemas.
+
+### ¿Qué número de punto de venta elijo?
+
+El **próximo libre** que no esté en uso. Si tenés `00001`, probá `00002`. El número no define el tipo de factura; lo crítico es elegir el tipo correcto (Monotributo o RI) y no reutilizar un PV de otro circuito.
+
+### ¿Mi clave fiscal sirve para este trámite?
+
+En general necesitás **nivel 2 o superior** y ver los servicios **Administración de Puntos de Venta y Domicilios** y **Administrador de Relaciones** en el menú. Si no los ves, pedí que revisen permisos antes de seguir.
+
+### ¿Cuánto tarda soporte en responder?
+
+Depende del volumen de consultas. Cuando enviés los datos, guardá el mensaje enviado. Si pasaron **varios días hábiles** sin confirmación, escribinos de nuevo por WhatsApp.
 
 ### ¿Después del trámite ya puedo emitir desde ZinK ERP?
 
