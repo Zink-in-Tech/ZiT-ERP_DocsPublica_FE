@@ -5,7 +5,7 @@ description: >-
   Además de Facturante, Mercado Pago y WooCommerce, el sistema puede listar
   otros servicios externos según lo que habilite el backend para tu
   organización.
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 ## Resumen

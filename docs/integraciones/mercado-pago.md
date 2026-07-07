@@ -5,7 +5,7 @@ description: >-
   La integración con Mercado Pago permite vincular una cuenta de Mercado Pago
   con ZinkERP para usarla en flujos de cobro donde la organización tenga esa
   integración
-sidebar_position: 4
+sidebar_position: 5
 slug: /integraciones/mercado-pago
 ---
 

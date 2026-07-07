@@ -43,6 +43,7 @@ Este recorrido está orientado a quienes mantienen la base operativa del sistema
 ### Integraciones
 
 - [Integraciones](../integraciones/intro.md)
+- [ARCA](../integraciones/arca.md)
 - [Facturante](../integraciones/facturante.md)
 - [Mercado Pago](../integraciones/mercado-pago.md)
 

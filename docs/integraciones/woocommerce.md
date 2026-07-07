@@ -4,7 +4,7 @@ sidebar_label: WooCommerce
 description: >-
   La integración con WooCommerce permite conectar una tienda en WordPress con el
   catálogo de productos de ZinkERP.
-sidebar_position: 5
+sidebar_position: 6
 slug: /integraciones/woocommerce
 ---
 

@@ -42,6 +42,8 @@ const TITLE_OVERRIDES = {
     'Facturación electrónica en Argentina: guía para pymes y ARCA | Zink ERP',
   'docs/informes/informes.md':
     'Informes en Zink ERP: ventas, stock, caja y cuenta corriente | Zink ERP',
+  'docs/integraciones/arca.md':
+    'ARCA en Zink ERP: facturación electrónica nativa | Zink ERP',
   'docs/integraciones/como-funciona.md':
     'Cómo funcionan las integraciones: OAuth, claves REST y mapeos | Zink ERP',
   'docs/integraciones/delegacion-autorizacion-comprobantes-arca.md':
@@ -92,6 +94,8 @@ const DESCRIPTION_OVERRIDES = {
     'Entendé cómo se conectan ventas, compras, inventario y finanzas en Zink ERP para registrar operaciones con impacto claro en stock, caja y deuda.',
   'docs/guias/facturacion-electronica-arca.md':
     'Aprendé qué es la facturación electrónica en Argentina, qué rol cumple ARCA y qué datos necesita una pyme para emitir comprobantes correctamente.',
+  'docs/integraciones/arca.md':
+    'Configurá la facturación electrónica nativa con ARCA desde Preferencias → Integraciones: pantalla inicial, datos fiscales y plazos de habilitación.',
   'docs/integraciones/delegacion-autorizacion-comprobantes-arca.md':
     'Seguí el paso a paso para crear un punto de venta en ARCA y delegar Facturación Electrónica, sin compartir clave fiscal, para habilitar Zink ERP.',
   'docs/integraciones/intro.md':
