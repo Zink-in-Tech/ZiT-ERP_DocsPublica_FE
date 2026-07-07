@@ -70,11 +70,7 @@ Un ERP ayuda a conectar la facturación con la operación real:
 
 ## ¿Usás ZinkERP?
 
-Si tu organización usa **ARCA** como integración visible en **Preferencias → Integraciones**, seguí [delegación de autorización de comprobantes en ARCA](../integraciones/delegacion-autorizacion-comprobantes-arca.md).
-
-Si en tu organización todavía aparece **Facturante** y no aparece **ARCA**, seguí [Integración Facturante](../integraciones/facturante.md).
-
-Si ves ambos servicios o no sabés cuál corresponde, validalo con soporte antes de empezar el alta.
+Configurá facturación electrónica en **Preferencias → Integraciones → ARCA**. Seguí [ARCA en Zink ERP](../integraciones/arca.md) y, si corresponde el trámite previo, [delegación de autorización de comprobantes en ARCA](../integraciones/delegacion-autorizacion-comprobantes-arca.md).
 
 ---
 
