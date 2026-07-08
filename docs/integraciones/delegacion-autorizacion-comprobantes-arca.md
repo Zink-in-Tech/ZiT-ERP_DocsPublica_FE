@@ -113,9 +113,9 @@ Si alguno de esos servicios no aparece en el menú, no avances con el alta del p
 
    ![Formulario de alta de punto de venta con el campo Sistema desplegable](/img/ayuda/integraciones/arca/arca-alta-punto-venta-sistema-01.png)
 
-   :::caution Elegí la opción Webservices
+   :::caution Elegí la opción con Web Services
 
-   En el desplegable **Sistema** hay muchas variantes (CAEA, contingencia, etc.). Para ZinK ERP necesitás la opción de **Webservices**, no CAEA ni contingencia. Revisá la tabla de abajo antes de confirmar.
+   En el desplegable **Sistema** hay muchas variantes (CAEA, contingencia, etc.). Para ZinK ERP necesitás una opción que incluya **Web Services**, no CAEA ni contingencia. Revisá la tabla de abajo antes de confirmar.
 
    :::
 
@@ -128,10 +128,16 @@ Si alguno de esos servicios no aparece en el menú, no avances con el alta del p
 
 ### Qué opción elegir al crear el punto de venta
 
+Elegí exactamente el texto que muestra ARCA en el campo **Sistema**:
+
 | Situación fiscal | Opción a seleccionar en ARCA |
 |------------------|------------------------------|
-| Monotributo | **Factura Electrónica - Monotributo - Webservices** |
-| Responsable inscripto en IVA | **Factura Electrónica - RI IVA - Aplicativo y Webservices** |
+| Monotributo | **Factura Electronica - Monotributo - Web Services** |
+| Responsable inscripto en IVA | **RECE para aplicativo y web services** |
+
+![Opción Sistema para Monotributo: Factura Electronica - Monotributo - Web Services](/img/ayuda/integraciones/arca/arca-sistema-monotributo-webservices-01.png)
+
+![Opción Sistema para Responsable Inscripto: RECE para aplicativo y web services](/img/ayuda/integraciones/arca/arca-sistema-rece-ri-01.png)
 
 8. Seleccioná el domicilio asociado al punto de venta.
 9. Confirmá la operación.
@@ -283,7 +289,7 @@ Si el ERP rechaza el punto de venta, informa error fiscal o no habilita la emisi
 
 ## Checklist del proceso completo
 
-- [ ] Punto de venta nuevo creado en ARCA (tipo correcto: Monotributo o RI).
+- [ ] Punto de venta nuevo creado en ARCA (Sistema: **Factura Electronica - Monotributo - Web Services** o **RECE para aplicativo y web services**).
 - [ ] Delegación confirmada a Fernando Ariel Demaio – CUIT 20-31499393-5.
 - [ ] Configuración guardada en **Preferencias → Integraciones → ARCA** (paso 2).
 - [ ] Aviso enviado a soporte con CUIT, punto de venta y confirmación de delegación (paso 3).
@@ -298,7 +304,7 @@ Si el ERP rechaza el punto de venta, informa error fiscal o no habilita la emisi
 | No aparece **Administrador de Relaciones** | Revisá los permisos de clave fiscal y quién administra la representación de la empresa. |
 | No entiendo **A/B/M** en el menú | Buscá **Alta/Baja/Modificación de puntos de venta** dentro de **Administración de Puntos de Venta y Domicilios**. |
 | ARCA dice que el punto de venta ya existe | Elegí el **próximo número libre**; no reutilices uno de otro sistema. |
-| No encontrás la opción correcta de punto de venta | Verificá si la empresa es **Monotributo** o **Responsable Inscripto** antes de confirmar. |
+| No encontrás la opción correcta de punto de venta | Verificá si la empresa es **Monotributo** (**Factura Electronica - Monotributo - Web Services**) o **Responsable Inscripto** (**RECE para aplicativo y web services**) antes de confirmar. |
 | El sistema no permite delegar | Revisá que hayas entrado por **Nueva Relación** y que estés seleccionando **ARCA → Webservices → Facturación Electrónica**. |
 | El CUIT del autorizado da error | Controlá que esté cargado exactamente como **20-31499393-5**. |
 | Ya existe un punto de venta similar | No lo reutilices sin validarlo antes con soporte o con tu estudio contable. |
@@ -329,7 +335,7 @@ No conviene. ARCA indica que para factura electrónica por este medio debe usars
 
 ### ¿Qué número de punto de venta elijo?
 
-El **próximo libre** que no esté en uso. Si tenés `00001`, probá `00002`. El número no define el tipo de factura; lo crítico es elegir el tipo correcto (Monotributo o RI) y no reutilizar un PV de otro circuito.
+El **próximo libre** que no esté en uso. Si tenés `00001`, probá `00002`. El número no define el tipo de factura; lo crítico es elegir el **Sistema** correcto (**Factura Electronica - Monotributo - Web Services** o **RECE para aplicativo y web services**) y no reutilizar un PV de otro circuito.
 
 ### ¿Mi clave fiscal sirve para este trámite?
 
