@@ -121,16 +121,18 @@ POS → Venta
 ### Paso 4: Revisar total y cobrar
 
 7. Revisá el total final.
-8. Usá **Finalizar (F2)** para abrir el diálogo de pago. Esta acción depende del permiso para **realizar cobro en ventas**.
+8. Usá **Finalizar** (atajo **F2**, visible en el botón) para abrir el diálogo de pago. Esta acción depende del permiso para **realizar cobro en ventas**.
 
 ![Confirmación de finalización de venta en POS antes de guardar y cobrar](/img/ayuda/ventas/pos-05-finalizar.png)
 
 ### Paso 5: Confirmar la operación
 
-9. Confirmá el cobro.
-10. Con eso, el sistema genera la venta automáticamente.
+9. En el cobro (Consumidor Final), elegí el medio con las tarjetas **Efectivo** (**E**), **Tarjeta** (**T**) o **Mercado Pago** (**M**). El importe se completa con el total.
+10. Revisá el estado en una línea (**Total exacto · Completo**, **Restan…** o **Vuelto…**). Si hace falta, usá el lápiz para editar el importe, **F4** para la calculadora de vuelto en efectivo, o **Dividir** para repartir entre varios medios.
+11. Guardá el cobro con **Guardar** (**F2** en el botón). El sistema genera la venta.
+12. Si corresponde imprimir, usá **Imprimir** (**Enter**) o **Esc** para cerrar; esperá a que se cierre el diálogo de impresión del sistema antes de seguir.
 
-Si necesitás ver o elegir entre varios resultados, usá **[F4] Listado**.
+Si necesitás ver o elegir entre varios resultados al cargar productos, usá **[F4] Listado**.
 
 ---
 
@@ -160,9 +162,9 @@ El POS calcula precios con la misma lógica de ventas: usa la lista por defecto 
 
 ### Finalizar
 
-Acción para cerrar la venta y avanzar al cobro.
+Acción para cerrar la venta y avanzar al cobro. El atajo **F2** aparece dentro del botón.
 
-Si el botón aparece deshabilitado, revisá que haya productos cargados y que el usuario tenga permiso para realizar cobro en ventas.
+Si el botón aparece deshabilitado, revisá que haya productos cargados y que el usuario tenga permiso para realizar cobro en ventas. Mientras se guarda la venta, **Finalizar** queda bloqueado para evitar doble envío.
 
 ---
 
@@ -218,7 +220,7 @@ Es ideal en negocios donde:
 - **No podés confirmar la venta**
   - Verificá que el pago esté cargado.
   - Si no podés abrir o completar el cobro, revisá que tu usuario tenga permiso para realizar cobro en ventas.
-  - Si **Finalizar (F2)** está deshabilitado, verificá que haya al menos un producto cargado.
+  - Si **Finalizar** está deshabilitado, verificá que haya al menos un producto cargado (y que no esté en curso un guardado).
 
 - **Precios incorrectos**
   - Revisá cliente seleccionado, lista de precios del contacto y lista por defecto de la organización.

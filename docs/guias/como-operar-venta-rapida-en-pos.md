@@ -57,22 +57,24 @@ Si la operación tiene etapas comerciales, conviene [Flujo de ventas](../ventas/
 
 ### Paso 4: Cobrar y finalizar
 
-8. Usá **Finalizar (F2)** para abrir el cobro.
-9. Elegí el [medio de pago](../configuracion/medios-pago.md) correcto.
-10. Confirmá la operación. El sistema genera la venta automáticamente.
+8. Usá **Finalizar** (atajo **F2** en el botón) para abrir el cobro.
+9. Elegí el [medio de pago](../configuracion/medios-pago.md) con las tarjetas **Efectivo** (**E**), **Tarjeta** (**T**) o **Mercado Pago** (**M**), u otro medio con **+**.
+10. Si cobrás en efectivo y necesitás vuelto, abrí la calculadora con **F4**. Para repartir el cobro, usá **Dividir**.
+11. Guardá con **Guardar** (**F2**). El sistema genera la venta.
+12. Si se abre la impresión, confirmá con **Enter** o cerrá con **Esc** y esperá a que termine el diálogo del sistema.
 
 ### Paso 5: Validar el resultado
 
-11. Revisá que el total cobrado sea el esperado.
-12. Si tu turno lo requiere, controlá el impacto en [Caja diaria](../finanzas/caja-diaria.md).
+13. Revisá que el total cobrado sea el esperado.
+14. Si tu turno lo requiere, controlá el impacto en [Caja diaria](../finanzas/caja-diaria.md).
 
 ---
 
 ## Errores comunes
 
-### Finalizar (F2) deshabilitado
+### Finalizar deshabilitado
 
-No hay productos cargados o falta permiso para realizar cobro en ventas.
+No hay productos cargados, falta permiso para realizar cobro en ventas, o la venta se está guardando.
 
 ### El precio no coincide
 

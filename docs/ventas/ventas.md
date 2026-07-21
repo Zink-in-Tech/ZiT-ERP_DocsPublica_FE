@@ -95,13 +95,25 @@ Cotización → Presupuesto → Pedido → **Venta**
 
 ### Paso 4: Confirmar
 
-7. Confirmá la venta.
-8. Si aplica, registrá el cobro.
+7. Guardá la venta con **Guardar** (atajo **F2**, visible en el botón). En el diálogo de confirmación, **Enter** confirma (símbolo ↵) y **Esc** cancela.
+8. Si aplica, registrá el cobro (en Consumidor Final o pago inmediato se abre el formulario de cobro).
 
 ### Paso 5: Entregar
 
 9. Gestioná despacho si tu operación lo requiere.
 10. Marcá la venta como **ENTREGADO** para descontar stock e impactar cuenta corriente.
+
+---
+
+## Atajos del formulario de venta
+
+- **F2** — Guardar la venta (el atajo se muestra dentro del botón). No se usa Enter para guardar el formulario, para evitar un segundo envío con red lenta.
+- **F4** — Listado de productos.
+- **ENTER** — Confirma el diálogo de guardado; en ítems, avanza entre campos.
+- **ESC** — Cancela el diálogo de guardado o según el contexto.
+- **/** y **\*** (si Accesos rápidos están habilitados en preferencias) — Saltar al precio o a la cantidad del ítem anterior.
+
+En el cobro post-venta, **F2** guarda el pago y **F4** abre la calculadora de vuelto en efectivo. Detalle en [Pagos](../finanzas/pagos.md).
 
 ---
 

@@ -40,9 +40,9 @@ Este recorrido ayuda a operar ventas rápidas con seguridad, cobrar correctament
 
 ### Durante la venta
 
-- Cargar productos correctamente.
-- Aplicar descuentos o recargos si corresponde.
-- Cobrar con el medio correcto.
+- Cargar productos correctamente (**F4** = listado si hay varios resultados).
+- Aplicar descuentos o recargos si corresponde (**F6** / **F9** en POS).
+- Cobrar con el medio correcto (**E** / **T** / **M** en cobro rápido; **F4** = calculadora de vuelto en efectivo; **F2** = guardar cobro).
 
 ### Al cerrar turno
 

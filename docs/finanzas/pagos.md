@@ -69,7 +69,19 @@ Cuenta corriente → Pago → Caja
 2. Elegí tipo de pago (cliente/proveedor).
 3. Seleccioná comprobantes.
 4. Ingresá [medios de pago](../configuracion/medios-pago.md).
-5. Confirmá.
+5. Confirmá con **Guardar** (atajo **F2**, visible en el botón).
+
+---
+
+## Cobro rápido (Consumidor Final / post-venta)
+
+Cuando el sistema abre el cobro al confirmar una venta (o desde POS), el formulario prioriza velocidad:
+
+- **Total a cobrar** bien visible y estado en una línea: **Total exacto · Completo**, **Restan…** o **Vuelto…**.
+- Tres tarjetas rápidas: **Efectivo** (**E**), **Tarjeta** (**T**) y **Mercado Pago** (**M**); el importe se completa con el total.
+- Acciones compactas: lápiz (editar importe), **F4** + calculadora (vuelto en efectivo) y **+** para otros medios.
+- **Dividir** reparte el cobro entre varios medios; con dos medios, el segundo se completa solo con lo que resta.
+- **F2** guarda el movimiento. Mientras guarda, la acción queda bloqueada para evitar doble envío.
 
 ---
 
