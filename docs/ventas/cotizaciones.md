@@ -131,6 +131,16 @@ Se comparte sin comprometer operación.
 
 ---
 
+## Listado y preferencias
+
+Usá la búsqueda de la grilla o el **filtro avanzado** (fechas, contacto, estado). En computadora, el menú **Columnas** permite mostrar u ocultar columnas sin eliminar datos.
+
+Al final del menú Columnas podés marcar **“Recordar preferencias de este listado”** (también como **“Recordar filtro”** en el filtro avanzado). Si está activa, el sistema guarda en este navegador —por usuario y sucursal— el último filtro, las columnas visibles y las **filas por página** (50, 100 o 150).
+
+No guarda anchos de columnas, orden de columnas, número de página, ordenamiento ni la búsqueda rápida. Si desmarcás la opción, deja de restaurar y se borra lo guardado para esa sucursal y pantalla.
+
+---
+
 ## Si algo sale mal
 
 - **No aparecen precios**

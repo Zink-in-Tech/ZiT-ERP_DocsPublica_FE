@@ -173,11 +173,22 @@ Configurá también **Decimales del Código Variable** en [Preferencias](../conf
 
 ---
 
+## Listado y preferencias
+
+La grilla prioriza **Descripción** y **Precio**. En pantallas chicas algunas columnas se ocultan solas; si no entran todas, deslizá horizontalmente.
+
+En computadora, el menú **Columnas** permite mostrar u ocultar columnas (por ejemplo **Producto Franquicia**) sin borrar datos del producto. Al final de ese menú podés marcar **“Recordar preferencias de este listado”**: guarda en este navegador —por usuario y sucursal— las columnas visibles y las **filas por página** (50, 100 o 150).
+
+No guarda anchos, orden de columnas, número de página, ordenamiento ni la búsqueda rápida. Si desmarcás la opción, deja de restaurar y se borra lo guardado para esa sucursal y pantalla.
+
+---
+
 ## Buenas prácticas
 
 - Usá etiquetas para organizar. Ejemplos: **Nuevos**, **Liquidación**, **Temporada** para filtrar en informes y ventas.
 - Configurá correctamente [listas de precio](../configuracion/listas-precio.md).
 - Activá validación de stock si corresponde.
+- En el listado, dejá visibles Descripción y Precio; ocultá Producto Franquicia si no trabajás con franquicias.
 
 ---
 

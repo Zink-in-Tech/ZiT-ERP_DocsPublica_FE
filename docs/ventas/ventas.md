@@ -212,6 +212,24 @@ Si trabajás con control operativo o despacho, no des por cerrada la operación 
 
 ---
 
+## Listado y preferencias
+
+En el listado de ventas podés buscar desde la grilla o abrir el **filtro avanzado** (fechas, montos, estado, contacto). El intervalo de fechas no puede superar **tres meses**.
+
+En computadora, el menú **Columnas** permite mostrar u ocultar columnas. Al final de ese menú podés marcar **“Recordar preferencias de este listado”** (también como **“Recordar filtro”** en el filtro avanzado; ambas opciones comparten el mismo estado).
+
+Si la opción está activa, el sistema guarda en **este navegador** —por usuario y sucursal—:
+
+- el último filtro avanzado aplicado;
+- qué columnas elegiste ver u ocultar;
+- cuántas **filas por página** (50, 100 o 150).
+
+No guarda anchos de columnas, orden de columnas, número de página, ordenamiento ni la búsqueda rápida de la barra. Si desmarcás la opción, deja de restaurar y se borra lo guardado para esa sucursal y pantalla.
+
+Desde el detalle de una venta, el listado de pagos muestra medio de pago (con datos de cheque o transferencia), hora, observación e importe **imputado a esa venta**.
+
+---
+
 ## Si algo sale mal
 
 - **No se abre el formulario de cobro**
