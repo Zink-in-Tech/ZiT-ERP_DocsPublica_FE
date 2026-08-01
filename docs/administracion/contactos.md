@@ -63,7 +63,7 @@ Datos de contacto utilizados para comunicación y envío de comprobantes.
 
 ### Dirección
 
-Ubicación física del contacto (facturación, entrega, principal).
+Ubicación física del contacto (facturación, entrega, principal). Podés cargarla con mapa/geolocalización o **ingresarla a mano**; en ambos casos el botón para agregar la dirección se habilita cuando el texto está completo.
 
 ### Datos de facturación
 
