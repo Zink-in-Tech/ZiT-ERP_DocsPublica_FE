@@ -79,6 +79,7 @@ Cuando el sistema abre el cobro al confirmar una venta (o desde POS), el formula
 
 - **Total a cobrar** bien visible y estado en una línea: **Total exacto · Completo**, **Restan…** o **Vuelto…**.
 - Tres tarjetas rápidas: **Efectivo** (**E**), **Tarjeta** (**T**) y **Mercado Pago** (**M**); el importe se completa con el total.
+- Con **Tarjeta**, elegí el tipo de tarjeta y, si querés, los **últimos 4 dígitos** (como figuran en el cupón). El número completo no se pide.
 - Acciones compactas: lápiz (editar importe), **F4** + calculadora (vuelto en efectivo) y **+** para otros medios.
 - **Dividir** reparte el cobro entre varios medios; con dos medios, el segundo se completa solo con lo que resta.
 - **F2** guarda el movimiento. Mientras guarda, la acción queda bloqueada para evitar doble envío.
@@ -118,6 +119,10 @@ La venta queda asociada al comprobante y el pago se aplica sobre ese importe.
 
 Si se trata de Consumidor Final o pago inmediato, el sistema puede abrir el cobro automáticamente al confirmar la venta.
 
+Al abrir el cobro desde una venta, el formulario se muestra de inmediato; el saldo de cuenta corriente puede cargarse unos segundos después en segundo plano.
+
+Desde el detalle de la venta, el listado de pagos muestra medio de pago (con datos de cheque o transferencia), hora, observación e importe **imputado a esa venta** (no el total del pago si saldó varios comprobantes).
+
 ### Diferencia o saldo a favor
 
 Si el pago supera o no coincide con los comprobantes seleccionados, revisá la aplicación antes de guardar. El sistema no debería dejar montos sin aplicar sin trazabilidad; puede pedir corregir el importe o generar un comprobante de ajuste.
@@ -137,9 +142,13 @@ Siempre aplicá pagos sobre comprobantes.
 - **Monto incorrecto**
   - Verificá antes de confirmar.
 
-- **No podés guardar**
+- **El sistema pide corregir datos**
+  - Revisá el mensaje: suele indicar un campo incompleto o inválido. Corregí y guardá de nuevo; reintentar sin cambiar nada vuelve a fallar.
+
+- **No podés guardar / error de conexión**
   - Revisá reglas de aplicación.
   - Si el pago corresponde a una venta, verificá que tu usuario tenga permiso para realizar cobro en ventas.
+  - Si el aviso ofrece **Reintentar**, usalo cuando el problema sea de conexión o del servidor.
 
 - **Mercado Pago no permite confirmar**
   - Verificá que el pago haya sido solicitado y aprobado.
