@@ -85,6 +85,7 @@ Esto permite:
 - Impacta stock
 - Impacta cuenta corriente
 - Puede ofrecer registrar el pago al proveedor si hay importe pendiente y el usuario tiene permiso
+- Por ítem podés indicar si se **actualiza el costo** del producto; si además el producto tiene recálculo de precios activo, se actualizan las listas automáticas. Ver [Compras](./compras.md#actualizar-costo-desde-la-compra).
 
 ---
 

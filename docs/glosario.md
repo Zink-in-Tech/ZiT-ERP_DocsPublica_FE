@@ -32,7 +32,10 @@ keywords:
 | Cuenta corriente | Saldo y movimientos de deuda con clientes o proveedores. Ver [Cuenta corriente](./finanzas/cuenta-corriente.md). |
 | Caja diaria | Panel financiero diario para controlar ingresos, egresos y medios de pago. Ver [Caja diaria](./finanzas/caja-diaria.md). |
 | Medio de pago | Forma usada para cobrar o pagar: efectivo, transferencia, tarjeta, Mercado Pago o cuenta corriente. |
-| Lista de precio | Conjunto de precios aplicado por defecto o por contacto. Ver [Listas de precio](./configuracion/listas-precio.md). |
+| Lista de precio | Conjunto de precios aplicado por defecto o por contacto. Puede ser automática (desde el costo) o de precio manual. Ver [Listas de precio](./configuracion/listas-precio.md). |
+| Costo multi-moneda | Preferencia que permite cargar el costo del producto en ARS o USD. No habilita ventas en dólares. Ver [Preferencias](./configuracion/preferencias.md#costo-multi-moneda). |
+| Cotización de moneda | Valor de 1 USD en ARS usado para convertir costos en dólares a pesos. Ver [Preferencias](./configuracion/preferencias.md#cotizacion-de-moneda). |
+| Recalcular precios al modificar el costo | Interruptor del producto: si está activo, las listas automáticas se recalculan cuando cambia el costo. Ver [Productos](./administracion/productos.md#costo-y-recalculo-de-precios). |
 | Contacto | Cliente, proveedor u organización relacionada. Ver [Contactos](./administracion/contactos.md). |
 | Organización | Unidad operativa del sistema, como sucursal, franquicia o punto de venta. |
 | Stock inter-org | Consulta de disponibilidad de productos entre organizaciones. Ver [Consulta de stock](./inventario/productos-consulta-inter-org.md). |

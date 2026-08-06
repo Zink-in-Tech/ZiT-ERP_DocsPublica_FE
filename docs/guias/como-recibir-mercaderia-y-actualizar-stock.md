@@ -50,24 +50,25 @@ No sustituye un [Registro de inventario](../inventario/inventarios.md) para ajus
 3. Contrastá el remito o factura contra la mercadería física.
 4. Revisá producto por producto: código, descripción y cantidad.
 5. Si hay diferencia, anotá el faltante o sobrante antes de confirmar.
+6. Si al cargar la compra marcaste **actualizar costo** en algún ítem, recordá que el catálogo puede haber cambiado costo (y precios, si el producto tiene recálculo activo). Ver [Compras](../compras/compras.md#actualizar-costo-desde-la-compra).
 
 ### Paso 3: Registrar el ingreso
 
-6. Ingresá las cantidades efectivamente recibidas.
-7. Si la recepción es parcial, dejá observación sobre lo pendiente.
-8. Confirmá el ingreso de mercadería.
+7. Ingresá las cantidades efectivamente recibidas.
+8. Si la recepción es parcial, dejá observación sobre lo pendiente.
+9. Confirmá el ingreso de mercadería.
 
 En el flujo documentado, la compra pasa a **INGRESADO** cuando se registra ese ingreso.
 
 ### Paso 4: Verificar stock y deuda
 
-9. Controlá que el stock disponible haya aumentado. Podés usar [Consulta de stock](../inventario/productos-consulta-inter-org.md).
-10. Revisá la [cuenta corriente](../finanzas/cuenta-corriente.md) del proveedor si la compra generó deuda o pago pendiente.
+10. Controlá que el stock disponible haya aumentado. Podés usar [Consulta de stock](../inventario/productos-consulta-inter-org.md).
+11. Revisá la [cuenta corriente](../finanzas/cuenta-corriente.md) del proveedor si la compra generó deuda o pago pendiente.
 
 ### Paso 5: Cerrar el circuito operativo
 
-11. Si quedó mercadería pendiente, coordiná con compras si corresponde esperar el saldo o ajustar la operación.
-12. Para reposición futura, revisá [Informe Stock crítico](../informes/informe-stock-critico.md).
+12. Si quedó mercadería pendiente, coordiná con compras si corresponde esperar el saldo o ajustar la operación.
+13. Para reposición futura, revisá [Informe Stock crítico](../informes/informe-stock-critico.md).
 
 ---
 

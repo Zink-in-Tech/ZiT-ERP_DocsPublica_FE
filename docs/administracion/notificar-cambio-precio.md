@@ -41,6 +41,10 @@ Los cambios no impactan automáticamente: el receptor debe aceptarlos para que s
 
 Se envían cambios a todas las sucursales.
 
+### Precios que cambiaron por costo o cotización
+
+Si en la central recalculaste precios al modificar costos (o al actualizar la cotización USD), ese cambio de lista puede enviarse a sucursales con esta notificación. El receptor sigue teniendo que aceptar para aplicar. Ver [Productos — costo y recálculo](./productos.md#costo-y-recalculo-de-precios).
+
 ---
 
 ## Si algo sale mal

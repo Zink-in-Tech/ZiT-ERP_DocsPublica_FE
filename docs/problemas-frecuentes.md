@@ -34,6 +34,8 @@ Esta página reúne síntomas generales que pueden aparecer en cualquier módulo
 | No aparece una integración | Servicio no habilitado, permisos o organización incorrecta | [Problemas frecuentes de integraciones](./integraciones/problemas-frecuentes.md) |
 | El stock no coincide | Compra, venta, inventario o toma pendiente | [Inventario](./inventario/inventario.md) |
 | La caja no cierra | Medio de pago incorrecto, cuenta corriente o caja inicial | [Caja diaria](./finanzas/caja-diaria.md) |
+| Cambié el costo y el precio de venta no se movió | Interruptor del producto apagado, lista manual o compra sin actualizar costo | [Productos — costo y recálculo](./administracion/productos.md#costo-y-recalculo-de-precios) |
+| No veo ARS/USD en el costo del producto | Preferencia **Costo multi-moneda** apagada | [Preferencias](./configuracion/preferencias.md#costo-multi-moneda) |
 
 ---
 

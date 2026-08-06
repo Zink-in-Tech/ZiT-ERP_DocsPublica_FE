@@ -38,8 +38,9 @@ Completá como mínimo:
 - código interno o SKU si usás uno;
 - código de barras si el producto se leerá con escáner;
 - unidad de medida;
-- costo;
-- al menos un precio usable.
+- costo (en ARS, o en USD si la organización tiene [Costo multi-moneda](../configuracion/preferencias.md#costo-multi-moneda));
+- al menos un precio usable;
+- revisá el interruptor **Recalcular precios al modificar el costo** (el default viene de Preferencias).
 
 ### Paso 2: Revisar precios
 
@@ -47,7 +48,8 @@ Si tu organización usa varias listas:
 
 1. completá la lista principal;
 2. revisá listas mayoristas, minoristas u ofertas si aplican;
-3. validá que el precio visible en [Consulta de precios](../ventas/consulta-precio.md) sea el esperado.
+3. confirmá si cada lista es automática o de precio manual;
+4. validá que el precio visible en [Consulta de precios](../ventas/consulta-precio.md) sea el esperado.
 
 ### Paso 3: Configurar stock
 
@@ -85,7 +87,7 @@ Revisá precio, permisos, validación de stock y si está activo.
 
 ### El precio no coincide
 
-Revisá listas de precio, cliente seleccionado y configuración comercial.
+Revisá listas de precio, cliente seleccionado y configuración comercial. Si esperabas un recálculo automático tras cambiar el costo, mirá el interruptor del producto y si la lista es automática. Ver [Productos](../administracion/productos.md#costo-y-recalculo-de-precios).
 
 ### El producto no se encuentra con lector
 
@@ -103,12 +105,17 @@ Para carga inicial puede servir. Para correcciones posteriores, preferí [Regist
 
 Depende de cómo manejen listas, promociones y procesos internos. Lo importante es validar el impacto antes de vender.
 
+### ¿Qué pasa si después cambio el costo?
+
+Si el producto tiene activo **Recalcular precios al modificar el costo** y la lista es automática, el precio de venta se recalcula solo. Si la lista es manual, lo ajustás vos. Detalle en [Productos](../administracion/productos.md#costo-y-recalculo-de-precios).
+
 ---
 
 ## Ver también
 
 - [Tutorial en video: ingresar y administrar productos](./como-ingresar-y-administrar-productos.mdx)
 - [Productos](../administracion/productos.md)
+- [Preferencias](../configuracion/preferencias.md) (costo multi-moneda y default de recálculo)
 - [Listas de precio](../configuracion/listas-precio.md)
 - [Consulta de precios](../ventas/consulta-precio.md)
 - [Qué son los códigos variables y cómo usarlos](./codigos-variables.md)

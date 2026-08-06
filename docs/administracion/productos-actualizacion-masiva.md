@@ -52,6 +52,10 @@ Actualizás varios ítems tras una política comercial o notificación de la cen
 
 Alineás costos luego de una compra o importación de proveedor.
 
+Si los productos tienen activo **Recalcular precios al modificar el costo** y listas automáticas, un cambio de costo puede arrastrar precios de venta. Revisá esa regla en [Productos](./productos.md#costo-y-recalculo-de-precios) antes de confirmar un lote grande.
+
+Con **Costo multi-moneda**, un cambio masivo de costos en ARS/USD no reemplaza actualizar la [cotización](../configuracion/preferencias.md#cotizacion-de-moneda): si el costo está en USD, el equivalente en pesos depende de la cotización vigente.
+
 ---
 
 ## Si algo sale mal
@@ -74,4 +78,5 @@ Alineás costos luego de una compra o importación de proveedor.
 
 - [Administración](./administracion.md)
 - [Productos](./productos.md)
+- [Productos — costo y recálculo](./productos.md#costo-y-recalculo-de-precios)
 - [Importación masiva](./productos-importacion-masiva.md)

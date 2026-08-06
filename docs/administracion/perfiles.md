@@ -173,6 +173,7 @@ Ejemplos:
 | Ve la pantalla pero no puede crear | Permiso de agregar. |
 | Ve registros pero no puede modificarlos | Permiso de editar. |
 | No puede cobrar en POS o ventas | Permiso para realizar cobro en ventas. |
+| Ve la cotización USD en el encabezado pero no puede editarla | Permiso para **editar cotización de moneda** (y preferencia **Costo multi-moneda** activa). |
 | No ve un informe | Permiso del informe o del módulo Informes. |
 | No puede eliminar | Permiso de eliminar para esa pantalla. |
 

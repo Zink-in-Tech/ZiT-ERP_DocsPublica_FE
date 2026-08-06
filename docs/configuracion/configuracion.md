@@ -25,7 +25,8 @@ Conviene completarla antes de operar a escala.
 | Necesito… | Artículo |
 |-----------|----------|
 | Logo, CUIT, razón social y direcciones | [Datos de la organización](./datos-org.md) |
-| Listas, vencimientos, proceso de pago, consulta de precios | [Preferencias](./preferencias.md) |
+| Listas, vencimientos, proceso de pago, consulta de precios, costo multi-moneda | [Preferencias](./preferencias.md) |
+| Cotización USD → ARS y default de recálculo de precios | [Preferencias](./preferencias.md#costo-multi-moneda) |
 | Listas para clientes, POS, cotizaciones y ventas | [Listas de precio](./listas-precio.md) |
 | Efectivo, transferencia, tarjeta, Mercado Pago y cuenta corriente | [Medios de pago](./medios-pago.md) |
 | Facturante, Mercado Pago, WooCommerce | [Integraciones](../integraciones/intro.md) (pestaña en Preferencias) |

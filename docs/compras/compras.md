@@ -14,6 +14,8 @@ keywords:
   - orden de compra
   - registrar pago
   - días vencimiento pago
+  - actualizar costo
+  - recalcular precios
 sidebar_position: 3
 ---
 
@@ -80,17 +82,36 @@ La compra es la etapa final del proceso.
 ### Paso 2: Cargar productos y condiciones
 
 3. Agregá productos, cantidades y precios.
-4. Revisá vencimientos, descuentos o condición de pago si aplica.
+4. Por cada ítem, indicá si querés **actualizar el costo** del producto con el valor de esta compra (ver sección siguiente).
+5. Revisá vencimientos, descuentos o condición de pago si aplica.
 
 ### Paso 3: Confirmar la operación
 
-5. Confirmá la compra.
-6. Si corresponde, registrá el pago al proveedor.
+6. Confirmá la compra.
+7. Si corresponde, registrá el pago al proveedor.
 
 ### Paso 4: Ingresar mercadería
 
-7. Registrá el ingreso de mercadería.
-8. Verificá stock y cuenta corriente después del ingreso.
+8. Registrá el ingreso de mercadería.
+9. Verificá stock y cuenta corriente después del ingreso.
+
+---
+
+## Actualizar costo desde la compra
+
+Al cargar ítems podés marcar, **producto por producto**, si la compra debe actualizar el costo del catálogo.
+
+| En el ítem | En el producto | Resultado |
+|------------|----------------|-----------|
+| Actualizar costo **sí** | Interruptor **Recalcular precios al modificar el costo** **ON** | Se actualiza el costo y se recalculan las listas **automáticas**. |
+| Actualizar costo **sí** | Interruptor **OFF** (o listas en precio manual) | Se actualiza el costo; los precios de venta **no** se recalculan solos. |
+| Actualizar costo **no** | — | El costo y los precios del producto quedan como estaban. |
+
+El interruptor del producto y su valor por defecto al crear se explican en [Productos](../administracion/productos.md#costo-y-recalculo-de-precios) y [Preferencias](../configuracion/preferencias.md#actualizar-listas-de-precio-al-actualizar-costo).
+
+Ejemplo: comprás un artículo a **AR$ 8.000** y marcás actualizar costo. Si el producto tiene recálculo activo y la lista minorista es automática con margen, el precio de venta se recalcula solo. Si la lista es de **precio manual**, ese precio no cambia hasta que lo edites vos.
+
+Si el producto tiene costo en **USD** (con **Costo multi-moneda**), el costo en pesos sigue dependiendo de la [cotización](../configuracion/preferencias.md#cotizacion-de-moneda); la compra actualiza el costo según lo que indiques en el ítem y las reglas del producto.
 
 ---
 
@@ -180,6 +201,14 @@ Este caso impacta la cuenta corriente del proveedor.
 
 Si no recibís todo, no cierres el circuito sin documentar la diferencia. Revisá [Recepción de mercadería](./recepcion-mercaderia.md).
 
+### Compra que actualiza costo y precios
+
+Marcás actualizar costo en los ítems que cambiaron de precio de proveedor. Los productos con **Recalcular precios al modificar el costo** activo ajustan solos las listas automáticas; los de precio manual los revisás aparte.
+
+### Compra que solo ingresa mercadería
+
+Dejás sin marcar actualizar costo cuando el precio de compra es puntual, hay error de carga o no querés tocar el catálogo todavía.
+
 ---
 
 ## Recomendaciones de uso
@@ -219,6 +248,14 @@ Es ideal en situaciones como:
   - Confirmá el medio de pago.
   - Si la caja está filtrada por usuario, revisá el operador correcto.
 
+- **El costo del producto no cambió después de la compra**
+  - Confirmá que el ítem tenía marcada la actualización de costo.
+  - Revisá el estado de la compra y que el valor cargado sea el esperado.
+
+- **El costo cambió pero el precio de venta no**
+  - Revisá el interruptor **Recalcular precios al modificar el costo** en el [producto](../administracion/productos.md#costo-y-recalculo-de-precios).
+  - Confirmá que la lista no esté en **precio manual**.
+
 ---
 
 ## Buenas prácticas
@@ -227,6 +264,7 @@ Es ideal en situaciones como:
 - Controlá precios y cantidades.
 - Usá órdenes de compra para planificar.
 - Registrá correctamente el proveedor.
+- Marcá actualizar costo solo en los ítems donde el precio de compra deba reflejarse en el catálogo.
 
 ---
 
@@ -244,6 +282,14 @@ Según el flujo documentado, al registrar la compra como **INGRESADO**.
 
 Documentá la diferencia antes de cerrar el circuito y revisá el criterio operativo con [Recepción de mercadería](./recepcion-mercaderia.md).
 
+### ¿Actualizar costo en la compra siempre cambia los precios de venta?
+
+No. Primero tiene que estar marcada la actualización de costo en el ítem. Después manda el interruptor del producto y el modo de cada lista (automática vs manual).
+
+### ¿La preferencia de la organización fuerza el recálculo en todas las compras?
+
+No. La preferencia **Actualizar listas de precio al actualizar costo** solo define el default al **crear** productos. En cada compra decidís por ítem; el producto ya existente manda con su interruptor.
+
 ---
 
 ## Ver también
@@ -252,6 +298,8 @@ Documentá la diferencia antes de cerrar el circuito y revisá el criterio opera
 - [Flujo de compras](./flujo-compras.md)
 - [Recepción de mercadería](./recepcion-mercaderia.md)
 - [Notas de crédito de compras](./notas-credito-compras.md)
+- [Productos — costo y recálculo](../administracion/productos.md#costo-y-recalculo-de-precios)
+- [Preferencias](../configuracion/preferencias.md#actualizar-listas-de-precio-al-actualizar-costo)
 - [Pagos](../finanzas/pagos.md)
 - [Cuenta corriente](../finanzas/cuenta-corriente.md)
 - [Caja diaria](../finanzas/caja-diaria.md)

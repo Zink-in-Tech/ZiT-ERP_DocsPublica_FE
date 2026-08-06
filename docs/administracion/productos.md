@@ -2,8 +2,9 @@
 title: 'Productos en Zink ERP: catálogo, datos comerciales y stock | Zink ERP'
 sidebar_label: Productos
 description: >-
-  Configurá productos en Zink ERP con precios, stock, códigos, listas y reglas
-  de venta para operar mejor en POS, ventas, compras e inventario.
+  Configurá productos en Zink ERP con precios, stock, códigos, listas, costo
+  multi-moneda (ARS/USD) y recálculo de precios para operar mejor en POS,
+  ventas, compras e inventario.
 keywords:
   - productos
   - artículos
@@ -12,6 +13,10 @@ keywords:
   - stock mínimo
   - precios
   - listas de precios
+  - costo
+  - costo multi-moneda
+  - cotización USD
+  - recalcular precios
   - validación de stock
   - ubicación
 sidebar_position: 2
@@ -43,6 +48,8 @@ Usá productos cuando necesitás:
 - Verificá unidades de medida.
 - Algunas modificaciones pueden requerir permisos especiales.
 - Revisá si la organización maneja stock y si los productos nuevos deben validar stock por defecto.
+- Si vas a cargar costos en dólares, activá **Costo multi-moneda** en [Preferencias](../configuracion/preferencias.md#costo-multi-moneda) y revisá la cotización.
+- Revisá el default de **Actualizar listas de precio al actualizar costo** si querés que los productos nuevos recalculen precios solos.
 
 ---
 
@@ -76,7 +83,8 @@ Usala para dejar el producto listo para ventas, compras, inventario e informes.
 | Código o SKU | Ayuda a encontrar y diferenciar productos similares. |
 | Código de barras | Permite operar más rápido en POS o consultas con lector. |
 | Unidad de medida | Define cómo se interpreta la cantidad vendida o comprada. |
-| Costo | Base para márgenes, reposición e informes. |
+| Costo | Base para márgenes, reposición e informes. Podés cargarlo en ARS o USD si la organización tiene costo multi-moneda activo. |
+| Recalcular precios al modificar el costo | Si está activo, al cambiar el costo se recalculan solos los precios de las listas automáticas. |
 | Listas de precio | Definen precios por contexto comercial. Ver [Listas de precio](../configuracion/listas-precio.md). |
 | Impuestos | Aplican tributos configurados para operaciones comerciales. |
 | Stock | Cantidad disponible actual. |
@@ -132,6 +140,58 @@ El [Registro de inventario](../inventario/inventarios.md) es preferible cuando q
 
 ---
 
+## Costo y recálculo de precios
+
+El costo es el precio de compra por unidad. Sirve para márgenes, reposición e informes, y es la base de las [listas de precio](../configuracion/listas-precio.md) en modo automático.
+
+Las ventas, el POS y las listas de precio siguen operando en **ARS**. El USD, si lo usás, es solo para cargar el **costo del producto** y convertirlo a pesos con una cotización manual.
+
+### Cómo se carga el costo
+
+En la pestaña de precios hay **un solo campo de costo**. Si la organización tiene **Costo multi-moneda** activo en [Preferencias](../configuracion/preferencias.md), ese campo incluye un selector **ARS / USD**:
+
+| Moneda | Qué cargás | Qué pasa |
+|--------|------------|----------|
+| **ARS** | El costo en pesos | Se usa tal cual. |
+| **USD** | El costo en dólares | El sistema calcula el **costo en pesos (ARS)** con la cotización vigente. |
+
+Con moneda **USD** aparece un bloque de solo lectura **Costo en pesos (ARS)** con el monto grande y la fórmula:
+
+`US$ × cotización = AR$`
+
+Ejemplo: costo **US$ 10** y cotización **1 USD = 1200 ARS** → costo en pesos **AR$ 12.000**.
+
+Junto al equivalente en pesos hay un lápiz para abrir **Cotización de moneda** (si tu perfil tiene permiso para editar cotización). Detalle de accesos y impacto al guardar: [Preferencias](../configuracion/preferencias.md#costo-multi-moneda).
+
+Si **Costo multi-moneda** está apagado, el costo se carga solo en ARS (sin selector ni bloque de conversión).
+
+### Recalcular precios al modificar el costo
+
+En la misma pestaña hay un interruptor:
+
+- **Recalcular precios al modificar el costo**
+- Ayuda en pantalla: *Si está activo, los precios se recalculan solos cuando cambia el costo.*
+
+Ese interruptor afecta los **precios** de las listas automáticas (con % o ganancia). **No** “recalcula el costo”: el costo lo cargás vos (o lo trae una compra).
+
+Si está activo, el sistema recalcula precios cuando cambia el costo:
+
+- al editar el costo a mano en el producto;
+- al actualizar el costo desde una [compra](../compras/compras.md) (si en el ítem marcás actualizar costo);
+- al cambiar la [cotización USD → ARS](../configuracion/preferencias.md#cotizacion-de-moneda), para productos con costo en USD (y precios si el interruptor está activo).
+
+**No aplica** a listas con **precio manual**. Si el producto tiene alguna lista en modo manual, el interruptor queda desactivado.
+
+### Quién manda: preferencia, producto y compra
+
+| Nivel | Rol |
+|-------|-----|
+| [Preferencias](../configuracion/preferencias.md#actualizar-listas-de-precio-al-actualizar-costo) (*Actualizar listas de precio al actualizar costo*) | Valor **por defecto** del interruptor al **crear** productos nuevos. |
+| Producto (este interruptor) | Manda sobre cada artículo ya creado. |
+| [Compra](../compras/compras.md#actualizar-costo-desde-la-compra) | Por ítem decidís si se actualiza el costo; si se actualiza y el interruptor del producto está ON, también se recalculan precios. |
+
+---
+
 ## Casos frecuentes
 
 ### Alta rápida
@@ -142,6 +202,19 @@ Para definir precios, stock y comportamiento.
 
 ### Stock mínimo
 Permite detectar productos que necesitan reposición desde informes o controles operativos.
+
+### Los precios no se actualizan al cambiar el costo
+
+1. Revisá que el interruptor **Recalcular precios al modificar el costo** esté activo en el producto.
+2. Confirmá que la lista no esté en **precio manual**.
+3. Si el cambio vino de una compra, verificá que el ítem tenga marcada la actualización de costo.
+
+### Costo en dólares (USD)
+
+1. Activá **Costo multi-moneda** en [Preferencias](../configuracion/preferencias.md#costo-multi-moneda).
+2. En el producto, elegí **USD** en el selector del costo y cargá el valor en dólares.
+3. Revisá el bloque **Costo en pesos (ARS)** y la cotización vigente.
+4. Si querés que las listas automáticas sigan el costo, dejá activo **Recalcular precios al modificar el costo**.
 
 ### Producto con código variable
 
@@ -171,6 +244,19 @@ Configurá también **Decimales del Código Variable** en [Preferencias](../conf
   - Revisá movimientos de inventario.
   - Confirmá si hubo toma de inventario o ajustes manuales.
 
+- **No ves el selector ARS/USD en el costo**
+  - Revisá que **Costo multi-moneda** esté activo en [Preferencias](../configuracion/preferencias.md#costo-multi-moneda).
+
+- **El costo en pesos no coincide con lo esperado**
+  - Revisá el valor en USD del producto y la cotización vigente (ícono **$** en el encabezado o Preferencias).
+  - Recordá: ventas y listas siguen en ARS; el USD solo convierte el costo.
+
+- **El interruptor de recálculo está grisado**
+  - Alguna lista del producto está en **precio manual**. Pasala a modo automático o ajustá ese precio a mano.
+
+- **No podés abrir Cotización de moneda**
+  - Con preferencia ON todos ven el valor de cotización; editar requiere permiso para **editar cotización de moneda**. Ver [Perfiles](./perfiles.md).
+
 ---
 
 ## Listado y preferencias
@@ -187,6 +273,7 @@ No guarda anchos, orden de columnas, número de página, ordenamiento ni la bús
 
 - Usá etiquetas para organizar. Ejemplos: **Nuevos**, **Liquidación**, **Temporada** para filtrar en informes y ventas.
 - Configurá correctamente [listas de precio](../configuracion/listas-precio.md).
+- Activá **Recalcular precios al modificar el costo** solo si querés que los precios se ajusten solos cuando cambia el costo.
 - Activá validación de stock si corresponde.
 - En el listado, dejá visibles Descripción y Precio; ocultá Producto Franquicia si no trabajás con franquicias.
 
@@ -206,12 +293,30 @@ Para carga inicial puede servir. Para diferencias operativas conviene usar [Regi
 
 Revisá [Códigos variables](../guias/codigos-variables.md) y [Balanzas Systel](../guias/balanzas-systel-y-codigos-variables.md) antes de operar en vivo.
 
+### ¿Por qué no se recalcularon los precios al cambiar el costo?
+
+Porque el interruptor del producto está apagado, la lista es de precio manual, o en la compra no se marcó actualizar costo en ese ítem.
+
+### ¿Puedo vender o facturar en dólares?
+
+No con esta preferencia. **Costo multi-moneda** solo permite cargar el costo del producto en USD y convertirlo a ARS. Ventas, POS y listas de precio siguen en pesos.
+
+### ¿Qué pasa si cambio la cotización del dólar?
+
+Al guardar, el sistema pide confirmación porque **recalcula el costo en ARS de todos los productos con moneda de costo USD**. Si esos productos tienen el interruptor de recálculo activo, también se actualizan los precios de las listas automáticas.
+
+### ¿La preferencia “Actualizar listas de precio al actualizar costo” manda sobre el producto?
+
+No. Es el valor inicial al **crear** productos. Después manda el interruptor de cada producto. Ver [Preferencias](../configuracion/preferencias.md#actualizar-listas-de-precio-al-actualizar-costo).
+
 ---
 
 ## Ver también
 
 - [Tutorial en video: ingresar y administrar productos](../guias/como-ingresar-y-administrar-productos.mdx)
 - [Administración](./administracion.md)
+- [Preferencias](../configuracion/preferencias.md) (costo multi-moneda, cotización y default de recálculo)
+- [Listas de precio](../configuracion/listas-precio.md)
 - [Ventas](../ventas/ventas.md)
 - [Compras](../compras/compras.md)
 - [Registro de inventario](../inventario/inventarios.md)

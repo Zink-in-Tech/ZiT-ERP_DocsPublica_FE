@@ -30,10 +30,11 @@ Este recorrido está orientado a quienes mantienen la base operativa del sistema
 
 ### Configuración operativa
 
-- [Preferencias](../configuracion/preferencias.md)
+- [Preferencias](../configuracion/preferencias.md) (incluye costo multi-moneda, cotización USD y default de recálculo)
 - [Datos de la organización](../configuracion/datos-org.md)
 - [Listas de precio](../configuracion/listas-precio.md)
 - [Medios de pago](../configuracion/medios-pago.md)
+- [Productos — costo y recálculo de precios](../administracion/productos.md#costo-y-recalculo-de-precios)
 
 ### Control financiero
 
