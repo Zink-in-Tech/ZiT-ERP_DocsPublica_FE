@@ -18,12 +18,13 @@ keywords:
 |---------|------------|
 | BORRADOR | Estado editable inicial de una operación. Ver [Ventas](./ventas/ventas.md) y [Compras](./compras/compras.md). |
 | CONFIRMADO | Estado en el que la operación queda validada y normalmente deja de ser editable. |
-| DESPACHAR | Estado de ventas usado para preparar o controlar mercadería antes de entregar. |
+| DESPACHAR / Despachado | En ventas: acción **Despachar** y estado **Despachado** (preparación/control antes de entregar). Ver [Ventas](./ventas/ventas.md). |
 | ENTREGADO | Estado final exitoso de una venta; descuenta stock e impacta cuenta corriente. |
-| INGRESADO | Estado final exitoso de una compra; ingresa mercadería al stock. |
+| Aprobado (compra) | Estado final exitoso de una compra; ingresa mercadería al stock y puede impactar cuenta corriente. Ver [Compras](./compras/compras.md). |
+| Control (compra) | Etapa intermedia de revisión en compras antes de aprobar. |
 | PREPARADO | Estado de pedido listo para avanzar hacia la venta. Ver [Pedidos](./ventas/pedidos.md). |
 | CANCELADO | Cierre sin éxito de una operación. |
-| RECHAZAR | Acción que vuelve una operación comercial a BORRADOR cuando el flujo lo permite. |
+| RECHAZAR | Acción que vuelve una operación a un estado editable (p. ej. Borrador) cuando el flujo lo permite. |
 
 ## Términos operativos
 

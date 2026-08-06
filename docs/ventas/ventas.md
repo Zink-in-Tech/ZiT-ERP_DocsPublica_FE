@@ -90,28 +90,33 @@ Cotización → Presupuesto → Pedido → **Venta**
 
 ### Paso 3: Cargar productos
 
-5. Agregá productos y cantidades.
-6. Ajustá precios o descuentos si corresponde y tenés permisos.
+5. Agregá productos y cantidades en el formulario **V2** ([Formulario de documento V2](../guias/formulario-documento-v2.md)). Labels compactos: **Venta**, **Entrega**, **Días cobro** (con `Vence:`). Si viene de un pedido, verás **Pedido origen: …**.
+6. Ajustá precios, descuentos, recargos o envío si corresponde y tenés permisos.
 
 ### Paso 4: Confirmar
 
-7. Guardá la venta con **Guardar** (atajo **F2**, visible en el botón). En el diálogo de confirmación, **Enter** confirma (símbolo ↵) y **Esc** cancela.
-8. Si aplica, registrá el cobro (en Consumidor Final o pago inmediato se abre el formulario de cobro).
+7. Guardá la venta con **Guardar (F2)**. En el diálogo **GUARDAR VENTA**, **Enter** confirma y **Esc** cancela.
+8. Si aplica, registrá el cobro. Completá el cobro o abandoná desde el diálogo de pago antes de volver a guardar.
+9. Tras el cobro puede aparecer **Venta registrada** con **Imprimir**, **Fiscal (F10)** y **Nueva venta**.
 
 ### Paso 5: Entregar
 
-9. Gestioná despacho si tu operación lo requiere.
-10. Marcá la venta como **ENTREGADO** para descontar stock e impactar cuenta corriente.
+10. Si tu operación lo requiere, usá **Despachar** (estado **Despachado**).
+11. Marcá la venta como **Entregado** para descontar stock e impactar cuenta corriente.
 
 ---
 
 ## Atajos del formulario de venta
 
-- **F2** — Guardar la venta (el atajo se muestra dentro del botón). No se usa Enter para guardar el formulario, para evitar un segundo envío con red lenta.
-- **F4** — Listado de productos.
-- **ENTER** — Confirma el diálogo de guardado; en ítems, avanza entre campos.
-- **ESC** — Cancela el diálogo de guardado o según el contexto.
-- **/** y **\*** (si Accesos rápidos están habilitados en preferencias) — Saltar al precio o a la cantidad del ítem anterior.
+| Tecla | Acción |
+|-------|--------|
+| **F2** | Guardar la venta (también en el botón). No uses Enter para guardar el form (evita doble envío con red lenta). |
+| **F4** | Listado de productos. En cobro post-venta: calculadora de vuelto. |
+| **Enter** | Confirma el diálogo de guardado; en ítems avanza entre campos. |
+| **Esc** | Cancela el diálogo. |
+| **/** y **\*** | Con accesos rápidos: precio / cantidad del ítem anterior. |
+| **↓** | Con accesos rápidos: siguiente producto. |
+| **-** (en campo producto) | Focus en descuento del ítem. |
 
 En el cobro post-venta, **F2** guarda el pago y **F4** abre la calculadora de vuelto en efectivo. Detalle en [Pagos](../finanzas/pagos.md).
 
@@ -140,40 +145,34 @@ Si el usuario confirma una venta con contacto y el proceso de pago es diferido, 
 
 ## Estados
 
-| Estado     | Descripción |
-|------------|------------|
-| BORRADOR   | Editable. Permite modificar productos y datos. |
-| CONFIRMADO | No editable. Permite avanzar al despacho. |
-| DESPACHAR  | Control del inventario según configuración. |
-| ENTREGADO  | Se descuenta stock y se impacta cuenta corriente. |
-| RECHAZAR   | Vuelve a BORRADOR (no disponible en estados finales). |
-| CANCELADO  | Flujo cerrado. No editable. |
+| Estado | Descripción |
+|--------|-------------|
+| **Borrador** | Editable. |
+| **Confirmado** | Permite avanzar al despacho. |
+| **Despachado** | Control de mercadería (acción **Despachar**). |
+| **Entregado** | Descuenta stock e impacta cuenta corriente. |
+| **Cancelado** | Flujo cerrado. |
+
+**Rechazar** vuelve a **Borrador** (no disponible en estados finales).
 
 ### Ciclo de vida
 
-**Estado inicial:** BORRADOR · **Estado final (éxito):** ENTREGADO · **Al rechazar:** vuelve a **BORRADOR** (no disponible desde ENTREGADO ni CANCELADO) · **Cierre sin éxito:** CANCELADO.
+**Estado inicial:** Borrador · **Estado final (éxito):** Entregado · **Al rechazar:** vuelve a **Borrador** · **Cierre sin éxito:** Cancelado.
 
 ```mermaid
 stateDiagram-v2
   direction LR
-  [*] --> BORRADOR: Crear
-  BORRADOR --> CONFIRMADO: Confirmar
-  CONFIRMADO --> DESPACHAR: Despachar
-  DESPACHAR --> ENTREGADO: Entregar
-  CONFIRMADO --> BORRADOR: Rechazar
-  DESPACHAR --> BORRADOR: Rechazar
-  ENTREGADO --> [*]: Fin — stock y cuenta corriente
-  BORRADOR --> CANCELADO: Cancelar
-  CONFIRMADO --> CANCELADO: Cancelar
-  DESPACHAR --> CANCELADO: Cancelar
-  CANCELADO --> [*]: Fin — flujo cerrado
-  note right of BORRADOR
-    Estado inicial
-    (también destino al rechazar)
-  end note
-  note right of ENTREGADO
-    Estado final exitoso
-  end note
+  [*] --> Borrador: Crear
+  Borrador --> Confirmado: Confirmar
+  Confirmado --> Despachado: Despachar
+  Despachado --> Entregado: Entregar
+  Confirmado --> Borrador: Rechazar
+  Despachado --> Borrador: Rechazar
+  Entregado --> [*]: Fin — stock y cuenta corriente
+  Borrador --> Cancelado: Cancelar
+  Confirmado --> Cancelado: Cancelar
+  Despachado --> Cancelado: Cancelar
+  Cancelado --> [*]: Fin — flujo cerrado
 ```
 
 ---
@@ -281,6 +280,7 @@ Sí, si la configuración y el tipo de cliente permiten proceso de pago diferido
 
 ## Ver también
 
+- [Formulario de documento V2](../guias/formulario-documento-v2.md)
 - [Pedidos](./pedidos.md)
 - [POS](./pos.md)
 - [Consulta de precios](./consulta-precio.md)

@@ -45,7 +45,8 @@ Circuitos que el equipo usa todos los días en mostrador o depósito.
 | Guía | Para qué sirve |
 |------|----------------|
 | [Tutorial del flujo de ventas](./tutorial-flujo-de-ventas.mdx) | Video del circuito comercial: cotización → presupuesto → pedido → venta. |
-| [Tutorial del flujo de compras](./tutorial-flujo-de-compras.mdx) | Video del circuito de compras: orden de compra → ingreso de mercadería. |
+| [Tutorial del flujo de compras](./tutorial-flujo-de-compras.mdx) | Video del circuito de compras: orden de compra → compra aprobada. |
+| [Formulario de documento V2](./formulario-documento-v2.md) | Cabecera, ítems y atajos F2/F4 del formulario rediseñado (compras y ventas). |
 | [Cómo operar una venta rápida en POS](./como-operar-venta-rapida-en-pos.md) | Cargar productos, cobrar y cerrar una venta de mostrador. |
 | [Cómo recibir mercadería y actualizar stock](./como-recibir-mercaderia-y-actualizar-stock.md) | Ingresar lo recibido del proveedor y confirmar que el stock suba. |
 | [Cómo registrar ingresos y egresos](./como-registrar-ingresos-y-egresos.mdx) | Tutorial en video para movimientos manuales de caja fuera de ventas y compras. |

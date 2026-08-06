@@ -72,14 +72,25 @@ Usá órdenes de compra cuando:
 
 ## Procedimiento
 
-1. Creá una nueva orden de compra.
-2. Seleccioná el proveedor.
-3. Agregá productos y cantidades.
-4. Revisá condiciones (precios, fechas, observaciones).
-5. Confirmá la orden.
-6. Enviá al proveedor si corresponde.
-7. Cuando se concreta:
-   - Registrá la compra asociada
+1. Creá una nueva orden de compra (formulario **V2** si está activo; ver [Formulario de documento V2](../guias/formulario-documento-v2.md)).
+2. Seleccioná el **proveedor** (contacto).
+3. Completá **Fecha Orden de Compra** y, si corresponde, **Enviar comprobante**.
+4. Agregá ítems con **Agregar Items**, **Listado (F4)** o escaneo/búsqueda. Podés usar **Stock crítico** y **Faltantes** como ayudas.
+5. Revisá precios, cantidades y observación.
+6. Guardá con **Guardar (F2)** y confirmá el diálogo **GUARDAR ORDEN DE COMPRA**.
+7. En el listado, avanzá estados según el circuito (Confirmar → Aprobar).
+8. Al **Aprobar**, el sistema genera una [compra](./compras.md) en **Borrador**.
+
+### Atajos en el formulario
+
+| Tecla | Acción |
+|-------|--------|
+| **F2** | Guardar |
+| **F4** | Listado de productos |
+| **Enter** | De producto a precio en la línea |
+| **Esc** | Cancelar diálogo |
+
+Los atajos **/** y **\*** del chip de accesos **no** están operativos en órdenes de compra.
 
 ---
 
@@ -87,46 +98,50 @@ Usá órdenes de compra cuando:
 
 La orden de compra no mueve stock ni genera deuda. Su función es dejar preparada la solicitud al proveedor.
 
-El impacto real ocurre cuando se registra la compra:
+Al **Aprobar** la orden se genera la compra asociada en **Borrador**. El impacto de stock y cuenta corriente ocurre cuando esa compra se **Aprueba**.
 
 | Documento | Qué representa | Impacto |
 |-----------|----------------|---------|
 | Orden de compra | Solicitud o planificación | No impacta stock ni cuenta corriente. |
-| Compra | Operación final con proveedor | Ingresa stock y puede generar deuda o pago. |
+| Compra | Operación final con proveedor | Al **Aprobar**: ingresa stock y puede generar deuda o pago. |
 
-Si la mercadería llega con diferencias, revisá cantidades y precios antes de registrar la compra final.
+Si la mercadería llega con diferencias, revisá cantidades y precios antes de aprobar la compra final.
 
 ---
 
 ## Estados
 
-| Estado     | Descripción |
-|------------|------------|
-| BORRADOR   | Editable. |
-| CONFIRMADO | Lista para enviar o ejecutar. |
-| CANCELADO  | Flujo cerrado. |
+| Estado | Descripción |
+|--------|-------------|
+| **Borrador** | Editable. |
+| **Confirmado** | Orden confirmada; aún no genera la compra. |
+| **Aprobado** | Estado final exitoso: genera [compra](./compras.md) en **Borrador**. |
+| **Cancelado** | Flujo cerrado. |
+
+### Acciones del listado
+
+| Acción | Efecto |
+|--------|--------|
+| **Confirmar** | Pasa de Borrador a Confirmado. |
+| **Aprobar** | Pasa a Aprobado y genera la compra asociada en Borrador. |
+| **Rechazar** | Vuelve atrás en el circuito (hacia editable), según el estado actual. |
+| **Cancelar** | Cierra el flujo en Cancelado. |
 
 ### Ciclo de vida
 
-**Estado inicial:** BORRADOR · **Estado final (éxito):** CONFIRMADO (listo para registrar la compra) · **Cierre sin éxito:** CANCELADO.
-
-No aplica **Rechazar**; para anular una orden confirmada usá **Cancelar**.
+**Estado inicial:** Borrador · **Estado final (éxito):** Aprobado · **Cierre sin éxito:** Cancelado.
 
 ```mermaid
 stateDiagram-v2
   direction LR
-  [*] --> BORRADOR: Crear
-  BORRADOR --> CONFIRMADO: Confirmar
-  CONFIRMADO --> [*]: Fin — registrar compra asociada
-  BORRADOR --> CANCELADO: Cancelar
-  CONFIRMADO --> CANCELADO: Cancelar
-  CANCELADO --> [*]: Fin — flujo cerrado
-  note right of BORRADOR
-    Estado inicial editable
-  end note
-  note right of CONFIRMADO
-    Estado final exitoso de la orden
-  end note
+  [*] --> Borrador: Crear
+  Borrador --> Confirmado: Confirmar
+  Confirmado --> Aprobado: Aprobar
+  Aprobado --> [*]: Fin — genera compra BORRADOR
+  Borrador --> Cancelado: Cancelar
+  Confirmado --> Cancelado: Cancelar
+  Confirmado --> Borrador: Rechazar
+  Cancelado --> [*]: Fin — flujo cerrado
 ```
 
 ---
@@ -188,5 +203,6 @@ Usalas cuando:
 
 - [Compras](./compras.md)
 - [Flujo de compras](./flujo-compras.md)
+- [Formulario de documento V2](../guias/formulario-documento-v2.md)
 - [Productos](../administracion/productos.md)
 - [Perfiles](../administracion/perfiles.md)

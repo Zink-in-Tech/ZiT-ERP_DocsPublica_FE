@@ -47,7 +47,7 @@ Ejemplos típicos:
 
 ```mermaid
 flowchart LR
-  Co[Compra INGRESADO] --> St[Stock]
+  Co[Compra Aprobado] --> St[Stock]
   V[Venta ENTREGADO] --> St
   Inv[Ajuste inventario] --> St
 ```
@@ -84,7 +84,7 @@ Las compras **ingresan** stock; las ventas **entregadas** lo descuentan; el regi
 
 - **El stock no coincide con el depósito**
   - Revisá movimientos recientes en el historial del producto.
-  - Verificá compras en **INGRESADO** y ventas en **ENTREGADO**.
+  - Verificá compras en **Aprobado** y ventas en **Entregado**.
 - **No puedo ajustar**
   - Revisá permisos de agregar/editar inventario.
 

@@ -3,7 +3,7 @@ title: 'Flujo de compras: de la orden de compra al ingreso de mercadería | Zink
 sidebar_label: Flujo de compras
 description: >-
   El flujo de compras en ZinK ERP organiza el proceso desde la solicitud al
-  proveedor hasta el registro final de la compra.
+  proveedor hasta aprobar la compra (stock y cuenta corriente).
 sidebar_position: 1
 ---
 
@@ -32,21 +32,23 @@ Orden de compra → Compra
 ```mermaid
 flowchart LR
   OC[Orden de compra] --> Co[Compra]
-  OC -.->|Concretar operación| Co
+  OC -.->|Al Aprobar OC| Co
 ```
 
-La flecha punteada indica que la **compra** puede generarse desde una orden confirmada o registrarse **directamente** sin orden previa.
+La flecha punteada indica que la **compra** puede generarse al **Aprobar** una orden o registrarse **directamente** sin orden previa.
 
 ### Ciclo de estados por documento
 
-| Documento        | Estado inicial | Estado final exitoso | Al rechazar      |
-|------------------|----------------|----------------------|------------------|
-| [Orden de compra](./orden-compras.md) | BORRADOR | CONFIRMADO | — |
-| Compra           | BORRADOR       | INGRESADO            | —                |
+| Documento | Estado inicial | Estado final exitoso | Rechazar / Cancelar |
+|-----------|----------------|----------------------|---------------------|
+| [Orden de compra](./orden-compras.md) | Borrador | **Aprobado** (genera compra en Borrador) | Rechazar / Cancelar |
+| [Compra](./compras.md) | Borrador | **Aprobado** (stock y CC) | Rechazar / Cancelar; etapa intermedia **Control** |
 
-En compras no existe la acción **Rechazar** como en ventas; el cierre alternativo es **CANCELADO**.
+Acciones típicas de compra: **Confirmar** → (opcional) **Controlar** → **Aprobar**.
 
-Para ingresos completos o parciales de mercadería, ver [Recepción de mercadería](./recepcion-mercaderia.md). Para devoluciones o ajustes con proveedores, ver [Notas de crédito de compras](./notas-credito-compras.md).
+Para diferencias entre lo comprado y lo recibido, ver [Recepción de mercadería](./recepcion-mercaderia.md). Para devoluciones, [Notas de crédito de compras](./notas-credito-compras.md).
+
+Los formularios rediseñados (cabecera, ítems, F2/F4) se explican una sola vez en [Formulario de documento V2](../guias/formulario-documento-v2.md).
 
 ---
 
@@ -54,9 +56,9 @@ Para ingresos completos o parciales de mercadería, ver [Recepción de mercader�
 
 Cada etapa permite avanzar en el proceso:
 
-- Se registra lo que se necesita comprar
-- Se confirma la operación con el proveedor
-- Se registra el impacto en el sistema
+- Se registra lo que se necesita comprar (orden)
+- Se aprueba la orden y nace la compra en borrador (o se carga la compra directa)
+- Se confirma, controla si hace falta y se **aprueba** la compra (impacto en el sistema)
 
 Esto permite:
 
@@ -73,6 +75,7 @@ Esto permite:
 - Representa lo que se solicita al proveedor
 - Permite definir cantidades y condiciones
 - No impacta stock ni cuenta corriente
+- Al **Aprobar** genera la compra asociada en **Borrador**
 
 👉 Funciona como propuesta o planificación de compra
 
@@ -81,20 +84,19 @@ Esto permite:
 ### Compra
 
 - Representa la operación final
-- Registra ingreso de mercadería
-- Impacta stock
-- Impacta cuenta corriente
+- Impacta stock y cuenta corriente al **Aprobar**
 - Puede ofrecer registrar el pago al proveedor si hay importe pendiente y el usuario tiene permiso
-- Por ítem podés indicar si se **actualiza el costo** del producto; si además el producto tiene recálculo de precios activo, se actualizan las listas automáticas. Ver [Compras](./compras.md#actualizar-costo-desde-la-compra).
+- Por ítem podés indicar **Actualiza Costo**; si el producto tiene recálculo de precios activo, se actualizan las listas automáticas. Ver [Compras](./compras.md#actualizar-costo-desde-la-compra).
 
 ---
 
 ## Qué cambia en cada etapa
 
-| Etapa           | Stock | Cuenta corriente | Objetivo |
-|-----------------|------|------------------|----------|
-| Orden de compra | ❌   | ❌               | Planificar |
-| Compra          | ✔️   | ✔️               | Ejecutar |
+| Etapa | Stock | Cuenta corriente | Objetivo |
+|-------|------|------------------|----------|
+| Orden de compra | ❌ | ❌ | Planificar → Aprobar genera compra |
+| Compra (hasta Confirmado/Control) | ❌ | ❌ | Revisar |
+| Compra **Aprobado** | ✔️ | ✔️ | Ejecutar |
 
 ---
 
@@ -107,7 +109,7 @@ Para diagnosticar un bloqueo, separá el problema en dos preguntas:
 | Pregunta | Dónde revisar |
 |----------|---------------|
 | ¿El usuario puede entrar a la pantalla? | Permiso de menú o visualización. |
-| ¿El usuario puede ejecutar la acción? | Permiso específico de acción, por ejemplo crear, editar, confirmar o registrar pagos. |
+| ¿El usuario puede ejecutar la acción? | Permiso específico de acción, por ejemplo crear, editar, confirmar, controlar, aprobar o registrar pagos. |
 
 El pago a proveedores depende del permiso para **registrar pagos**. La explicación general de permisos está centralizada en [Perfiles](../administracion/perfiles.md).
 
@@ -117,7 +119,7 @@ El pago a proveedores depende del permiso para **registrar pagos**. La explicaci
 
 ### Compra planificada
 
-Se genera una orden de compra y luego se registra la compra.
+Se genera una orden, se **Aprueba** y nace la compra en borrador; luego se confirma/controla/aprueba la compra.
 
 ### Compra directa
 
@@ -125,29 +127,29 @@ Se registra la compra sin orden previa.
 
 ### Compra con pago posterior
 
-Se registra la compra y la deuda queda pendiente en la cuenta corriente del proveedor hasta que se cargue el pago.
+Se aprueba la compra y la deuda queda pendiente en la cuenta corriente del proveedor hasta que se cargue el pago.
 
 ---
 
 ## Si algo sale mal
 
 - **Datos incorrectos**
-  - Revisá información antes de confirmar.
-  - Si la compra ya fue confirmada, puede no ser editable.
+  - Revisá información antes de confirmar o aprobar.
+  - Si la compra ya avanzó de estado, puede no ser editable.
 - **Problemas de stock**
-  - Verificá productos y cantidades antes de **INGRESADO**.
+  - Verificá productos y cantidades antes de **Aprobar**.
 - **No podés registrar el pago**
   - Revisá permiso para registrar pagos.
   - Verificá que la compra tenga importe pendiente.
 - **No podés avanzar desde la orden**
-  - La orden debe estar **CONFIRMADA** para registrar la compra asociada.
+  - La orden debe estar **Aprobada** para generar la compra asociada (no alcanza con Confirmado).
 
 ---
 
 ## Buenas prácticas
 
-- Usá órdenes de compra para planificar; registrá la compra cuando la mercadería llegue.
-- Verificá cantidades y precios antes de confirmar.
+- Usá órdenes de compra para planificar; **Aprobá** la orden cuando quieras generar la compra.
+- Verificá cantidades y precios antes de aprobar la compra.
 - Si el pago es posterior, controlá la deuda en [Cuenta corriente](../finanzas/cuenta-corriente.md).
 
 ---
@@ -155,6 +157,7 @@ Se registra la compra y la deuda queda pendiente en la cuenta corriente del prov
 ## Ver también
 
 - [Tutorial en video: flujo de compras](../guias/tutorial-flujo-de-compras.mdx)
+- [Formulario de documento V2](../guias/formulario-documento-v2.md)
 - [Órdenes de compra](./orden-compras.md)
 - [Compras](./compras.md)
 - [Recepción de mercadería](./recepcion-mercaderia.md)

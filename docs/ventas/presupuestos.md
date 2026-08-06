@@ -61,49 +61,44 @@ Usá presupuestos cuando:
 
 ## Procedimiento
 
-1. Creá un presupuesto.
+1. Creá un presupuesto (formulario **V2**: [Formulario de documento V2](../guias/formulario-documento-v2.md)).
 2. Seleccioná el contacto.
-3. Agregá productos y cantidades.
-4. Revisá precios.
-5. Confirmá el presupuesto.
-6. Esperá respuesta del cliente.
-7. Si acepta:
-   - Se genera un pedido en BORRADOR
+3. Completá **Presupuesto**, **Días vto** y, si corresponde, activá **Plantilla** / **Nombre de Plantilla** y **Enviar comprobante**.
+4. Agregá ítems (**Agregar Items** o **Listado F4**): lista, precio, cantidad, descuento, impuesto.
+5. Revisá totales (Subtotal · Descuento · Recargo · Envío · TOTAL).
+6. Guardá con **Guardar (F2)** o **Guardar y Nuevo**. Atajos **/** y **\*** funcionan con accesos rápidos activos.
+7. Confirmá el presupuesto en el listado.
+8. Si el cliente acepta:
+   - Se genera un pedido en **Borrador**
 
 ---
 
 ## Estados
 
-| Estado     | Descripción |
-|------------|------------|
-| BORRADOR   | Editable. |
-| CONFIRMADO | No editable. Espera respuesta. |
-| ACEPTADO   | Genera pedido en BORRADOR. |
-| RECHAZAR   | Vuelve a BORRADOR. |
-| CANCELADO  | Flujo cerrado. |
+| Estado | Descripción |
+|--------|-------------|
+| **Borrador** | Editable. |
+| **Confirmado** | No editable. Espera respuesta. |
+| **Aceptado** | Genera pedido en Borrador. |
+| **Cancelado** | Flujo cerrado. |
+
+**Rechazar** vuelve a **Borrador**.
 
 ### Ciclo de vida
 
-**Estado inicial:** BORRADOR · **Estado final (éxito):** ACEPTADO · **Al rechazar:** vuelve a **BORRADOR** · **Cierre sin éxito:** CANCELADO.
+**Estado inicial:** Borrador · **Estado final (éxito):** Aceptado · **Al rechazar:** vuelve a **Borrador** · **Cierre sin éxito:** Cancelado.
 
 ```mermaid
 stateDiagram-v2
   direction LR
-  [*] --> BORRADOR: Crear
-  BORRADOR --> CONFIRMADO: Confirmar
-  CONFIRMADO --> ACEPTADO: Cliente acepta
-  CONFIRMADO --> BORRADOR: Rechazar
-  ACEPTADO --> [*]: Fin — genera pedido BORRADOR
-  BORRADOR --> CANCELADO: Cancelar
-  CONFIRMADO --> CANCELADO: Cancelar
-  CANCELADO --> [*]: Fin — flujo cerrado
-  note right of BORRADOR
-    Estado inicial
-    (también destino al rechazar)
-  end note
-  note right of ACEPTADO
-    Estado final exitoso
-  end note
+  [*] --> Borrador: Crear
+  Borrador --> Confirmado: Confirmar
+  Confirmado --> Aceptado: Aceptar
+  Confirmado --> Borrador: Rechazar
+  Aceptado --> [*]: Fin — genera pedido BORRADOR
+  Borrador --> Cancelado: Cancelar
+  Confirmado --> Cancelado: Cancelar
+  Cancelado --> [*]: Fin — flujo cerrado
 ```
 
 ---
@@ -136,9 +131,9 @@ Usalos cuando:
 
 - **No podés aceptar el presupuesto**
   - Puede estar **vencido** (revisá días de vencimiento en [Preferencias](../configuracion/preferencias.md)).
-  - Verificá que esté en estado **CONFIRMADO** y con ítems cargados.
+  - Verificá que esté en estado **Confirmado** y con ítems cargados.
 - **No se genera el pedido**
-  - El presupuesto debe quedar en **ACEPTADO**.
+  - El presupuesto debe quedar en **Aceptado**.
   - Revisá permisos de pedidos en [Perfiles](../administracion/perfiles.md).
 
 ---
@@ -153,6 +148,7 @@ Usalos cuando:
 
 ## Ver también
 
+- [Formulario de documento V2](../guias/formulario-documento-v2.md)
 - [Cotizaciones](./cotizaciones.md)
 - [Pedidos](./pedidos.md)
 - [Flujo de ventas](./flujo-ventas.md)

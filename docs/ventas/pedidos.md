@@ -60,53 +60,47 @@ Usá pedidos cuando:
 
 ## Procedimiento
 
-1. Creá un pedido.
-2. Seleccioná el contacto.
-3. Agregá productos y cantidades.
-4. Confirmá el pedido.
-5. Pasá a EN_PREPARACION.
-6. Prepará la mercadería.
-7. Marcá como PREPARADO:
-   - Se genera la venta en BORRADOR
+1. Creá un pedido (formulario **V2**: [Formulario de documento V2](../guias/formulario-documento-v2.md)).
+2. Seleccioná el contacto (no puede ser Consumidor Final).
+3. Completá **Pedido**, **Entrega** y totales (descuento, recargo, envío) si aplica.
+4. Agregá ítems (**F4** listado; **/** y **\*** con accesos rápidos).
+5. Guardá (**F2**) y **Confirmá** el pedido.
+6. Usá **Preparar** (pasa a **En preparación**).
+7. Cuando esté listo, **Confirmar preparado**:
+   - Se genera la venta en **Borrador**
 
 ---
 
 ## Estados
 
-| Estado         | Descripción |
-|----------------|------------|
-| BORRADOR       | Editable. |
-| CONFIRMADO     | Listo para preparación. |
-| EN_PREPARACION | En picking. |
-| PREPARADO      | Genera venta en BORRADOR. |
-| RECHAZAR       | Vuelve a BORRADOR. |
-| CANCELADO      | Flujo cerrado. |
+| Estado | Descripción |
+|--------|-------------|
+| **Borrador** | Editable. |
+| **Confirmado** | Listo para preparación. |
+| **En preparación** | En picking (acción **Preparar**). |
+| **Preparado** | Genera venta en Borrador (acción **Confirmar preparado**). |
+| **Rechazado** / **Cancelado** | Cierre o vuelta atrás según acción. |
+
+Acciones del listado: **Confirmar** · **Preparar** · **Confirmar preparado** · **Rechazar** · **Cancelar**.
 
 ### Ciclo de vida
 
-**Estado inicial:** BORRADOR · **Estado final (éxito):** PREPARADO · **Al rechazar:** vuelve a **BORRADOR** · **Cierre sin éxito:** CANCELADO.
+**Estado inicial:** Borrador · **Estado final (éxito):** Preparado · **Al rechazar:** vuelve a editable · **Cierre sin éxito:** Cancelado.
 
 ```mermaid
 stateDiagram-v2
   direction LR
-  [*] --> BORRADOR: Crear
-  BORRADOR --> CONFIRMADO: Confirmar
-  CONFIRMADO --> EN_PREPARACION: Iniciar preparación
-  EN_PREPARACION --> PREPARADO: Marcar preparado
-  CONFIRMADO --> BORRADOR: Rechazar
-  EN_PREPARACION --> BORRADOR: Rechazar
-  PREPARADO --> [*]: Fin — genera venta BORRADOR
-  BORRADOR --> CANCELADO: Cancelar
-  CONFIRMADO --> CANCELADO: Cancelar
-  EN_PREPARACION --> CANCELADO: Cancelar
-  CANCELADO --> [*]: Fin — flujo cerrado
-  note right of BORRADOR
-    Estado inicial
-    (también destino al rechazar)
-  end note
-  note right of PREPARADO
-    Estado final exitoso
-  end note
+  [*] --> Borrador: Crear
+  Borrador --> Confirmado: Confirmar
+  Confirmado --> EnPreparacion: Preparar
+  EnPreparacion --> Preparado: Confirmar preparado
+  Confirmado --> Borrador: Rechazar
+  EnPreparacion --> Borrador: Rechazar
+  Preparado --> [*]: Fin — genera venta BORRADOR
+  Borrador --> Cancelado: Cancelar
+  Confirmado --> Cancelado: Cancelar
+  EnPreparacion --> Cancelado: Cancelar
+  Cancelado --> [*]: Fin — flujo cerrado
 ```
 
 ---
@@ -138,10 +132,10 @@ Usalos cuando:
 ## Si algo sale mal
 
 - **No podés avanzar de estado**
-  - Verificá la secuencia: **CONFIRMADO** → **EN_PREPARACION** → **PREPARADO**.
+  - Verificá la secuencia: **Confirmado** → **Preparar** (**En preparación**) → **Confirmar preparado**.
   - Revisá permisos de la etapa en [Perfiles](../administracion/perfiles.md).
 - **No se genera la venta**
-  - El pedido debe estar en **PREPARADO**.
+  - El pedido debe estar en **Preparado**.
   - El contacto no puede ser Consumidor Final (regla de pedidos).
 - **Faltantes en la entrega**
   - Revisá el informe [Productos faltantes](../informes/informe-productos-faltantes.md) si hay diferencia entre pedido y venta.
@@ -158,6 +152,7 @@ Usalos cuando:
 
 ## Ver también
 
+- [Formulario de documento V2](../guias/formulario-documento-v2.md)
 - [Presupuestos](./presupuestos.md)
 - [Ventas](./ventas.md)
 - [Flujo de ventas](./flujo-ventas.md)

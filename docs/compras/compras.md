@@ -65,10 +65,10 @@ La compra es la etapa final del proceso.
 
 **La compra:**
 
-- ✔️ Ingresa stock
-- ✔️ Impacta cuenta corriente
+- ✔️ Ingresa stock (al **Aprobar**)
+- ✔️ Impacta cuenta corriente (al **Aprobar**)
 - ✔️ Registra la operación con el proveedor
-- ❌ No es editable una vez confirmada (según estado)
+- ❌ No es editable una vez avanzada (según estado)
 
 ---
 
@@ -76,40 +76,42 @@ La compra es la etapa final del proceso.
 
 ### Paso 1: Crear la compra
 
-1. Creá una nueva compra o generala desde una orden.
+1. Creá una nueva compra o generala al **Aprobar** una [orden de compra](./orden-compras.md).
 2. Seleccioná el proveedor correcto.
+3. Completá **Tipo Comprobante**, **Fecha Compra**, **Fecha Entrega**, **Días Vencimiento Pago** y el número de **Comprobante** si aplica. Si viene de una OC, verás el chip **Orden de Compra asociada: …**.
 
 ### Paso 2: Cargar productos y condiciones
 
-3. Agregá productos, cantidades y precios.
-4. Por cada ítem, indicá si querés **actualizar el costo** del producto con el valor de esta compra (ver sección siguiente).
-5. Revisá vencimientos, descuentos o condición de pago si aplica.
+4. Agregá productos, cantidades, descuentos e impuestos (formulario **V2**: ver [Formulario de documento V2](../guias/formulario-documento-v2.md)).
+5. Por cada ítem, indicá si querés **Actualiza Costo** del producto (hay switch **Todos** para marcar todos). Ver sección siguiente.
+6. Revisá vencimientos u observación si aplica.
+7. Guardá con **Guardar (F2)** o **Guardar y Nuevo**. Atajos **/** y **\*** (precio/cantidad del ítem anterior) funcionan si la preferencia de accesos rápidos está activa.
 
-### Paso 3: Confirmar la operación
+### Paso 3: Confirmar y avanzar estados
 
-6. Confirmá la compra.
-7. Si corresponde, registrá el pago al proveedor.
+8. En el listado: **Confirmar** → (opcional) **Controlar** → **Aprobar**.
+9. Al **Aprobar**, impactan stock y cuenta corriente; si corresponde, registrá el pago al proveedor.
 
-### Paso 4: Ingresar mercadería
+### Paso 4: Controlar recepción
 
-8. Registrá el ingreso de mercadería.
-9. Verificá stock y cuenta corriente después del ingreso.
+10. Si la mercadería llega con diferencias, usá [Recepción de mercadería](./recepcion-mercaderia.md) y el estado **Control** antes de aprobar cuando corresponda.
+11. Verificá stock y cuenta corriente después de **Aprobar**.
 
 ---
 
 ## Actualizar costo desde la compra
 
-Al cargar ítems podés marcar, **producto por producto**, si la compra debe actualizar el costo del catálogo.
+Al cargar ítems podés marcar, **producto por producto**, **Actualiza Costo** para que la compra actualice el costo del catálogo.
 
 | En el ítem | En el producto | Resultado |
 |------------|----------------|-----------|
-| Actualizar costo **sí** | Interruptor **Recalcular precios al modificar el costo** **ON** | Se actualiza el costo y se recalculan las listas **automáticas**. |
-| Actualizar costo **sí** | Interruptor **OFF** (o listas en precio manual) | Se actualiza el costo; los precios de venta **no** se recalculan solos. |
-| Actualizar costo **no** | — | El costo y los precios del producto quedan como estaban. |
+| **Actualiza Costo** sí | Interruptor **Recalcular precios al modificar el costo** **ON** | Se actualiza el costo y se recalculan las listas **automáticas**. |
+| **Actualiza Costo** sí | Interruptor **OFF** (o listas en precio manual) | Se actualiza el costo; los precios de venta **no** se recalculan solos. |
+| **Actualiza Costo** no | — | El costo y los precios del producto quedan como estaban. |
 
 El interruptor del producto y su valor por defecto al crear se explican en [Productos](../administracion/productos.md#costo-y-recalculo-de-precios) y [Preferencias](../configuracion/preferencias.md#actualizar-listas-de-precio-al-actualizar-costo).
 
-Ejemplo: comprás un artículo a **AR$ 8.000** y marcás actualizar costo. Si el producto tiene recálculo activo y la lista minorista es automática con margen, el precio de venta se recalcula solo. Si la lista es de **precio manual**, ese precio no cambia hasta que lo edites vos.
+Ejemplo: comprás un artículo a **AR$ 8.000** y marcás **Actualiza Costo**. Si el producto tiene recálculo activo y la lista minorista es automática con margen, el precio de venta se recalcula solo. Si la lista es de **precio manual**, ese precio no cambia hasta que lo edites vos.
 
 Si el producto tiene costo en **USD** (con **Costo multi-moneda**), el costo en pesos sigue dependiendo de la [cotización](../configuracion/preferencias.md#cotizacion-de-moneda); la compra actualiza el costo según lo que indiques en el ítem y las reglas del producto.
 
@@ -117,7 +119,7 @@ Si el producto tiene costo en **USD** (con **Costo multi-moneda**), el costo en 
 
 ## Pago de la compra
 
-Al aprobar o confirmar una compra, el sistema puede ofrecer registrar el pago al proveedor si:
+Al **aprobar** una compra, el sistema puede ofrecer registrar el pago al proveedor si:
 
 - la compra tiene importe pendiente;
 - el usuario tiene permiso para registrar pagos;
@@ -140,39 +142,45 @@ Si no se registra el pago en el momento, la deuda queda en la cuenta corriente d
 
 ## Estados
 
-| Estado     | Descripción |
-|------------|------------|
-| BORRADOR   | Editable. |
-| CONFIRMADO | No editable. |
-| INGRESADO  | Se actualiza el stock. |
-| CANCELADO  | Flujo cerrado. |
+| Estado | Descripción |
+|--------|-------------|
+| **Borrador** | Editable. |
+| **Confirmado** | Compra confirmada; aún no impactó stock. |
+| **Control** | Etapa de control operativo (útil ante recepción parcial o revisión). |
+| **Aprobado** | Estado final exitoso: actualiza **stock** y puede impactar **cuenta corriente**. |
+| **Cancelado** | Flujo cerrado. |
 
-Estos estados coinciden con el flujo de compras documentado. La recepción parcial puede requerir validación operativa adicional antes de marcar la compra como **INGRESADO**.
+### Acciones del listado
 
-Ver [Recepción de mercadería](./recepcion-mercaderia.md) para controlar ingresos completos o parciales.
+| Acción | Efecto |
+|--------|--------|
+| **Confirmar** | Borrador → Confirmado. |
+| **Controlar** | Pasa a **Control** (revisión antes de aprobar). |
+| **Aprobar** | Impacta stock y cuenta corriente. |
+| **Rechazar** | Vuelve el documento a un estado editable según el circuito. |
+| **Cancelar** | Cierra en Cancelado. |
+
+Ver [Recepción de mercadería](./recepcion-mercaderia.md) para diferencias entre lo comprado y lo recibido.
 
 ### Ciclo de vida
 
-**Estado inicial:** BORRADOR · **Estado final (éxito):** INGRESADO · **Cierre sin éxito:** CANCELADO.
-
-No aplica **Rechazar** como en ventas.
+**Estado inicial:** Borrador · **Estado final (éxito):** Aprobado · **Cierre sin éxito:** Cancelado.
 
 ```mermaid
 stateDiagram-v2
   direction LR
-  [*] --> BORRADOR: Crear
-  BORRADOR --> CONFIRMADO: Confirmar
-  CONFIRMADO --> INGRESADO: Ingresar mercadería
-  INGRESADO --> [*]: Fin — stock actualizado
-  BORRADOR --> CANCELADO: Cancelar
-  CONFIRMADO --> CANCELADO: Cancelar
-  CANCELADO --> [*]: Fin — flujo cerrado
-  note right of BORRADOR
-    Estado inicial editable
-  end note
-  note right of INGRESADO
-    Estado final exitoso
-  end note
+  [*] --> Borrador: Crear
+  Borrador --> Confirmado: Confirmar
+  Confirmado --> Control: Controlar
+  Confirmado --> Aprobado: Aprobar
+  Control --> Aprobado: Aprobar
+  Aprobado --> [*]: Fin — stock y CC
+  Borrador --> Cancelado: Cancelar
+  Confirmado --> Cancelado: Cancelar
+  Control --> Cancelado: Cancelar
+  Confirmado --> Borrador: Rechazar
+  Control --> Borrador: Rechazar
+  Cancelado --> [*]: Fin — flujo cerrado
 ```
 
 ---
@@ -236,7 +244,7 @@ Es ideal en situaciones como:
   - Verificá descuentos, impuestos y vencimiento de pago.
 
 - **No podés modificar**
-  - Puede estar en estado CONFIRMADO o INGRESADO.
+  - Puede estar en estado Confirmado, Control o Aprobado.
 
 - **No podés registrar el pago**
   - Revisá el permiso para registrar pagos.
@@ -249,7 +257,7 @@ Es ideal en situaciones como:
   - Si la caja está filtrada por usuario, revisá el operador correcto.
 
 - **El costo del producto no cambió después de la compra**
-  - Confirmá que el ítem tenía marcada la actualización de costo.
+  - Confirmá que el ítem tenía marcado **Actualiza Costo**.
   - Revisá el estado de la compra y que el valor cargado sea el esperado.
 
 - **El costo cambió pero el precio de venta no**
@@ -260,11 +268,11 @@ Es ideal en situaciones como:
 
 ## Buenas prácticas
 
-- Verificá la mercadería antes de ingresarla.
+- Verificá la mercadería antes de **Aprobar**.
 - Controlá precios y cantidades.
-- Usá órdenes de compra para planificar.
+- Usá órdenes de compra para planificar; **Aprobá** la OC para generar la compra en borrador.
 - Registrá correctamente el proveedor.
-- Marcá actualizar costo solo en los ítems donde el precio de compra deba reflejarse en el catálogo.
+- Marcá **Actualiza Costo** solo en los ítems donde el precio de compra deba reflejarse en el catálogo.
 
 ---
 
@@ -276,15 +284,15 @@ Sí. La orden sirve para planificar, pero la compra puede cargarse directamente.
 
 ### ¿Cuándo impacta el stock?
 
-Según el flujo documentado, al registrar la compra como **INGRESADO**.
+Al pasar la compra a **Aprobado**.
 
 ### ¿Qué hago si recibí menos mercadería?
 
-Documentá la diferencia antes de cerrar el circuito y revisá el criterio operativo con [Recepción de mercadería](./recepcion-mercaderia.md).
+Documentá la diferencia antes de aprobar y revisá [Recepción de mercadería](./recepcion-mercaderia.md). Podés usar el estado **Control** mientras revisás.
 
 ### ¿Actualizar costo en la compra siempre cambia los precios de venta?
 
-No. Primero tiene que estar marcada la actualización de costo en el ítem. Después manda el interruptor del producto y el modo de cada lista (automática vs manual).
+No. Primero tiene que estar marcado **Actualiza Costo** en el ítem. Después manda el interruptor del producto y el modo de cada lista (automática vs manual).
 
 ### ¿La preferencia de la organización fuerza el recálculo en todas las compras?
 
@@ -296,6 +304,7 @@ No. La preferencia **Actualizar listas de precio al actualizar costo** solo defi
 
 - [Órdenes de compra](./orden-compras.md)
 - [Flujo de compras](./flujo-compras.md)
+- [Formulario de documento V2](../guias/formulario-documento-v2.md)
 - [Recepción de mercadería](./recepcion-mercaderia.md)
 - [Notas de crédito de compras](./notas-credito-compras.md)
 - [Productos — costo y recálculo](../administracion/productos.md#costo-y-recalculo-de-precios)

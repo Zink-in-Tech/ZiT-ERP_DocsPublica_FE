@@ -46,22 +46,22 @@ Si la operación tiene etapas comerciales, conviene [Flujo de ventas](../ventas/
 
 ### Paso 2: Cargar productos
 
-3. Escaneá o buscá cada producto en **Escanear o buscar producto**.
-4. Ajustá cantidades si hace falta.
-5. Si hay muchos resultados similares, usá **[F4] Listado** para elegir el artículo correcto.
+3. Escaneá o buscá cada producto en **ESCANEAR O BUSCAR PRODUCTO**.
+4. Ajustá cantidades con **+/−** o **[F8] Cantidad**. Descuento por línea: **[F7] Desc. ítem**. Eliminar: **[DEL]**.
+5. Si hay muchos resultados similares, usá **[F4] Listado**. **[F5] Panel** abre el panel de productos.
 
 ### Paso 3: Revisar total y ajustes
 
 6. Verificá subtotal y total antes de cobrar.
-7. Si corresponde, aplicá **[F6] Descuento** o **[F9] Recargo**.
+7. Si corresponde, aplicá **[F6] Descuento** o **[F9] Recargo** globales.
 
 ### Paso 4: Cobrar y finalizar
 
-8. Usá **Finalizar** (atajo **F2** en el botón) para abrir el cobro.
+8. Usá **Finalizar (F2)** para confirmar (**FINALIZAR**).
 9. Elegí el [medio de pago](../configuracion/medios-pago.md) con las tarjetas **Efectivo** (**E**), **Tarjeta** (**T**) o **Mercado Pago** (**M**), u otro medio con **+**.
 10. Si cobrás en efectivo y necesitás vuelto, abrí la calculadora con **F4**. Para repartir el cobro, usá **Dividir**.
 11. Guardá con **Guardar** (**F2**). El sistema genera la venta.
-12. Si se abre la impresión, confirmá con **Enter** o cerrá con **Esc** y esperá a que termine el diálogo del sistema.
+12. En **Venta registrada** podés **Imprimir**, emitir **Fiscal (F10)** o **Nueva venta (ESC)**.
 
 ### Paso 5: Validar el resultado
 
@@ -74,7 +74,7 @@ Si la operación tiene etapas comerciales, conviene [Flujo de ventas](../ventas/
 
 ### Finalizar deshabilitado
 
-No hay productos cargados, falta permiso para realizar cobro en ventas, o la venta se está guardando.
+No hay productos cargados, falta permiso para realizar cobro en ventas, o la venta se está guardando (**Guardando…**).
 
 ### El precio no coincide
 

@@ -70,47 +70,64 @@ El impacto ocurre recién cuando se convierte en presupuesto.
 
 ## Procedimiento
 
-1. Creá una nueva cotización.
-2. (Opcional) Seleccioná un contacto.
-3. Agregá productos y cantidades.
-4. Visualizá los precios en las distintas listas.
-5. Ajustá observaciones si es necesario.
-6. Compartí la cotización con el cliente.
-7. Confirmá la cotización (estado **CONFIRMADO**).
+1. Creá una nueva cotización (formulario **V2**: ver [Formulario de documento V2](../guias/formulario-documento-v2.md)).
+2. (Opcional) Seleccioná un **Contacto (Opcional)**.
+3. Completá fechas compactas (**Cotización**, **Días vto**) si aplica.
+4. Agregá productos con **Agregar Producto** o **Listado (F4)**. Cada ítem muestra **cantidad** y **una columna por lista de precios**.
+5. Completá **Observaciones** debajo de los ítems si hace falta.
+6. Guardá con **Guardar (F2)** y confirmá **GUARDAR COTIZACIÓN**.
+7. En el listado, **Confirmá** la cotización.
 8. Cuando el cliente define la opción:
-   - Aceptá la cotización (estado **ACEPTADO**)
-   - Elegí la lista de precios a aplicar
-   - El sistema genera un presupuesto en **BORRADOR**
+   - **Aceptá** la cotización (diálogo **Aceptar cotización**)
+   - Elegí la **Lista de precios** y **Crear Presupuesto**
+   - El sistema genera un presupuesto en **Borrador**
+
+### Atajos en el formulario
+
+| Tecla | Acción |
+|-------|--------|
+| **F2** | Guardar |
+| **F4** | Listado de productos |
+| **Enter** | De producto a cantidad |
+| **Esc** | Cancelar diálogo |
+
+Los atajos **/** y **\*** del chip de accesos **no** están operativos en cotizaciones.
 
 ---
 
 ## Estados
 
-| Estado      | Descripción |
-|-------------|------------|
-| BORRADOR    | Editable. |
-| CONFIRMADO  | Propuesta confirmada o enviada. |
-| ACEPTADO    | Genera presupuesto en BORRADOR. |
+| Estado | Descripción |
+|--------|-------------|
+| **Borrador** | Editable. |
+| **Confirmado** | Propuesta confirmada o enviada. |
+| **Aceptado** | Genera presupuesto en Borrador (eligiendo lista). |
+| **Cancelado** | Flujo cerrado. |
+
+### Acciones del listado
+
+| Acción | Efecto |
+|--------|--------|
+| **Confirmar** | Borrador → Confirmado. |
+| **Aceptar** | Confirmado → Aceptado; crea presupuesto eligiendo lista. |
+| **Rechazar** | Vuelve a **Borrador**. |
+| **Cancelar** | Cierra en Cancelado. |
 
 ### Ciclo de vida
 
-**Estado inicial:** BORRADOR · **Estado final (éxito):** ACEPTADO (genera presupuesto en BORRADOR).
-
-En cotizaciones no figura la acción **Rechazar**; el avance es lineal: **BORRADOR** → **CONFIRMADO** → **ACEPTADO**.
+**Estado inicial:** Borrador · **Estado final (éxito):** Aceptado (genera presupuesto en Borrador).
 
 ```mermaid
 stateDiagram-v2
   direction LR
-  [*] --> BORRADOR: Crear
-  BORRADOR --> CONFIRMADO: Confirmar
-  CONFIRMADO --> ACEPTADO: Aceptar y elegir lista
-  ACEPTADO --> [*]: Fin — genera presupuesto BORRADOR
-  note right of BORRADOR
-    Estado inicial editable
-  end note
-  note right of ACEPTADO
-    Estado final exitoso
-  end note
+  [*] --> Borrador: Crear
+  Borrador --> Confirmado: Confirmar
+  Confirmado --> Aceptado: Aceptar y elegir lista
+  Aceptado --> [*]: Fin — genera presupuesto BORRADOR
+  Confirmado --> Borrador: Rechazar
+  Borrador --> Cancelado: Cancelar
+  Confirmado --> Cancelado: Cancelar
+  Cancelado --> [*]: Fin — flujo cerrado
 ```
 
 ---
@@ -147,9 +164,9 @@ No guarda anchos de columnas, orden de columnas, número de página, ordenamient
   - Verificá que las listas estén configuradas en [Preferencias](../configuracion/preferencias.md).
 - **No podés modificar precios**
   - Puede requerir permisos especiales.
-- **No podés pasar a ACEPTADO**
+- **No podés pasar a Aceptado**
   - Verificá que tenga ítems cargados.
-  - La cotización debe estar en **CONFIRMADO** antes de aceptar.
+  - La cotización debe estar en **Confirmado** antes de aceptar.
   - Revisá permisos de la etapa en [Perfiles](../administracion/perfiles.md).
 
 ---
@@ -164,5 +181,6 @@ No guarda anchos de columnas, orden de columnas, número de página, ordenamient
 
 ## Ver también
 
+- [Formulario de documento V2](../guias/formulario-documento-v2.md)
 - [Presupuestos](./presupuestos.md)
 - [Flujo de ventas](./flujo-ventas.md)

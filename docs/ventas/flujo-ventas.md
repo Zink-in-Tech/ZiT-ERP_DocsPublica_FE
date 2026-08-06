@@ -82,8 +82,9 @@ Esto permite trazabilidad completa, control por etapas y ajustes antes de cerrar
 - Comparación de precios entre listas
 - Negociación con el cliente
 - No impacta stock ni cuenta corriente
+- Acciones: Confirmar · Aceptar · **Rechazar** · Cancelar
 
-Cuando el cliente elige lista y condiciones, pasá la cotización a **ACEPTADO** (antes **CONFIRMADO**). El sistema genera un presupuesto en **BORRADOR**. Detalle en [Cotizaciones](./cotizaciones.md).
+Cuando el cliente elige lista y condiciones, **Aceptá** la cotización (debe estar **Confirmado**). El sistema genera un presupuesto en **Borrador**. Detalle en [Cotizaciones](./cotizaciones.md).
 
 ---
 
@@ -93,7 +94,7 @@ Cuando el cliente elige lista y condiciones, pasá la cotización a **ACEPTADO**
 - Condiciones comerciales
 - Vigencia de la propuesta
 
-Al pasar a **ACEPTADO**, se genera un pedido en **BORRADOR**. Detalle en [Presupuestos](./presupuestos.md).
+Al **Aceptar**, se genera un pedido en **Borrador**. Detalle en [Presupuestos](./presupuestos.md).
 
 ---
 
@@ -102,18 +103,19 @@ Al pasar a **ACEPTADO**, se genera un pedido en **BORRADOR**. Detalle en [Presup
 - Representa el compromiso del cliente
 - Permite organizar la preparación o logística
 
-Al marcar **PREPARADO**, se genera la venta en **BORRADOR**. Detalle en [Pedidos](./pedidos.md).
+Usá **Preparar** → **Confirmar preparado**. Al quedar **Preparado**, se genera la venta en **Borrador**. Detalle en [Pedidos](./pedidos.md).
 
 ---
 
 ### Venta
 
 - Cierre de la operación
-- Impacta stock (al **ENTREGADO**)
+- Impacta stock (al **Entregado**)
 - Impacta cuenta corriente
 - Puede abrir el cobro si el cliente o la configuración requieren pago inmediato
+- Despacho: acción **Despachar** → estado **Despachado**
 
-Detalle en [Ventas](./ventas.md).
+Detalle en [Ventas](./ventas.md). Los formularios rediseñados (excepto POS) se explican en [Formulario de documento V2](../guias/formulario-documento-v2.md).
 
 ---
 

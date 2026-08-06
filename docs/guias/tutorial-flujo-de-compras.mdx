@@ -34,6 +34,10 @@ Recorrer el **flujo de compras**: desde la solicitud al proveedor hasta el ingre
 
 [Tutorial en YouTube](https://www.youtube.com/watch?v=aZ8-gIjbCwU) — *Zink ERP - Tutorial Flujo de Compras*.
 
+:::caution UI y estados actualizados
+El video puede mostrar el formulario clásico y estados antiguos. En el ERP actual: la orden se **Aprueba** (genera compra en borrador); la compra impacta stock al **Aprobar** (con etapa opcional **Control**). Seguí las páginas escritas y el [Formulario de documento V2](./formulario-documento-v2.md).
+:::
+
 ---
 
 ## Qué necesitás antes de empezar
@@ -49,18 +53,19 @@ Recorrer el **flujo de compras**: desde la solicitud al proveedor hasta el ingre
 
 **Orden de compra → Compra**
 
-La compra puede generarse desde una orden confirmada o registrarse **directamente** sin orden previa.
+La compra puede generarse al **Aprobar** una orden o registrarse **directamente** sin orden previa.
 
 | Etapa | Para qué sirve |
 |-------|----------------|
-| Orden de compra | Solicitar mercadería al proveedor con control previo |
-| Compra | Registrar el ingreso, impactar stock y deuda con el proveedor |
+| Orden de compra | Solicitar mercadería; al **Aprobar** genera la compra en borrador |
+| Compra | Confirmar / Controlar / **Aprobar** → stock y deuda con el proveedor |
 
 ---
 
 ## Dónde profundizar
 
 - [Flujo de compras](../compras/flujo-compras.md) — estados, transiciones y excepciones
+- [Formulario de documento V2](./formulario-documento-v2.md)
 - [Órdenes de compra](../compras/orden-compras.md)
 - [Compras](../compras/compras.md)
 - [Recepción de mercadería](../compras/recepcion-mercaderia.md)

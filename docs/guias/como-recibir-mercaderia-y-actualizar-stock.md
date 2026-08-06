@@ -58,7 +58,7 @@ No sustituye un [Registro de inventario](../inventario/inventarios.md) para ajus
 8. Si la recepción es parcial, dejá observación sobre lo pendiente.
 9. Confirmá el ingreso de mercadería.
 
-En el flujo documentado, la compra pasa a **INGRESADO** cuando se registra ese ingreso.
+En el flujo documentado, la compra impacta stock al pasar a **Aprobado**. Si la recepción es parcial, documentá la diferencia y usá **Control** si corresponde antes de aprobar.
 
 ### Paso 4: Verificar stock y deuda
 
@@ -76,7 +76,7 @@ En el flujo documentado, la compra pasa a **INGRESADO** cuando se registra ese i
 
 ### El stock no aumentó
 
-Verificá que la compra quedó en estado **INGRESADO** y que ingresaste cantidades mayores a cero en los productos recibidos.
+Verificá que la compra quedó en estado **Aprobado** y que las cantidades recibidas sean mayores a cero.
 
 ### Recibí menos de lo comprado
 

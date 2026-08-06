@@ -75,7 +75,7 @@ El objetivo es que puedas:
 - Crear 2 órdenes de compra ([Órdenes de compra](./compras/orden-compras.md)):
   - cancelar una  
   - confirmar otra y registrar la [Compra](./compras/compras.md) asociada  
-- Marcar la compra como **INGRESADO** y verificar stock  
+- Marcar la compra como **Aprobado** y verificar stock  
 - Explorar [actualización masiva](./administracion/productos-actualizacion-masiva.md)  
 - Revisar movimientos de inventario  
 
@@ -170,7 +170,7 @@ Es decir: cómo funciona tu negocio dentro de Zink ERP.
 - **Un paso no coincide con lo que ves en pantalla**
   - Revisá permisos en [Perfiles](./administracion/perfiles.md) y la guía específica del módulo.
 - **Stock o caja no cierran**
-  - Verificá que la venta o compra esté en el estado final correcto (**ENTREGADO** / **INGRESADO**) y que los pagos estén registrados.
+  - Verificá que la venta o compra esté en el estado final correcto (**Entregado** / **Aprobado**) y que los pagos estén registrados.
 
 ## Soporte
 

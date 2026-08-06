@@ -97,22 +97,23 @@ POS → Venta
 
 ### Paso 1: Cargar productos
 
-1. Ingresá productos desde el campo **Escanear o buscar producto**.
-2. Podés hacerlo por código de barras o por búsqueda manual.
-3. Ajustá cantidades si hace falta.
+1. Usá el campo **ESCANEAR O BUSCAR PRODUCTO** (en celular: **ESCANEAR / BUSCAR**).
+2. Podés hacerlo por código de barras o por búsqueda manual. Si buscás por texto, se agrega el **primer** resultado; si hay varios, abrí **[F4] Listado**.
+3. Ajustá cantidades con **+/−** o **[F8] Cantidad**. Para quitar un ítem: **[DEL] Eliminar**. Descuento por línea: **[F7] Desc. ítem**.
 
 ![POS con un producto agregado, total actualizado y botón Finalizar habilitado](/img/ayuda/ventas/pos-02-producto-agregado.png)
 
 ### Paso 2: Elegir cliente si corresponde
 
-4. Si necesitás asociar la venta a un contacto, usá **[F3] Cliente**.
+4. Si necesitás asociar la venta a un contacto, usá **[F3] Cliente: …**.
 5. Si no elegís uno, la venta queda asociada a **Consumidor Final**.
+6. **[F5] Panel** abre el panel de productos cuando lo necesitás.
 
 ![Diálogo de POS para seleccionar cliente o volver a Consumidor Final](/img/ayuda/ventas/pos-03-seleccionar-cliente.png)
 
 ### Paso 3: Ajustar precio si hace falta
 
-6. Aplicá descuentos o recargos si corresponde:
+7. Aplicá descuentos o recargos globales si corresponde:
    - **[F6] Descuento**
    - **[F9] Recargo**
 
@@ -120,19 +121,36 @@ POS → Venta
 
 ### Paso 4: Revisar total y cobrar
 
-7. Revisá el total final.
-8. Usá **Finalizar** (atajo **F2**, visible en el botón) para abrir el diálogo de pago. Esta acción depende del permiso para **realizar cobro en ventas**.
+8. Revisá el total final.
+9. Usá **Finalizar (F2)** para abrir la confirmación **FINALIZAR** (*¿Confirmar y guardar la venta?*). Esta acción depende del permiso para **realizar cobro en ventas**.
 
 ![Confirmación de finalización de venta en POS antes de guardar y cobrar](/img/ayuda/ventas/pos-05-finalizar.png)
 
 ### Paso 5: Confirmar la operación
 
-9. En el cobro (Consumidor Final), elegí el medio con las tarjetas **Efectivo** (**E**), **Tarjeta** (**T**) o **Mercado Pago** (**M**). El importe se completa con el total.
-10. Revisá el estado en una línea (**Total exacto · Completo**, **Restan…** o **Vuelto…**). Si hace falta, usá el lápiz para editar el importe, **F4** para la calculadora de vuelto en efectivo, o **Dividir** para repartir entre varios medios.
-11. Guardá el cobro con **Guardar** (**F2** en el botón). El sistema genera la venta.
-12. Si corresponde imprimir, usá **Imprimir** (**Enter**) o **Esc** para cerrar; esperá a que se cierre el diálogo de impresión del sistema antes de seguir.
+10. En el cobro (Consumidor Final), elegí el medio con las tarjetas **Efectivo** (**E**), **Tarjeta** (**T**) o **Mercado Pago** (**M**). El importe se completa con el total.
+11. Revisá el estado en una línea (**Total exacto · Completo**, **Restan…** o **Vuelto…**). Si hace falta, usá el lápiz para editar el importe, **F4** para la calculadora de vuelto en efectivo, o **Dividir** para repartir entre varios medios.
+12. Guardá el cobro con **Guardar** (**F2**). El sistema genera la venta.
+13. Tras el cobro puede aparecer **Venta registrada** con **Imprimir**, **Fiscal (F10)** y **Nueva venta (ESC)**.
 
-Si necesitás ver o elegir entre varios resultados al cargar productos, usá **[F4] Listado**.
+---
+
+## Atajos del POS
+
+| Tecla / control | Acción |
+|-----------------|--------|
+| **F2** | **Finalizar (F2)** / Guardar cobro |
+| **F3** | **[F3] Cliente: …** |
+| **F4** | **[F4] Listado** de productos (en cobro: vuelto) |
+| **F5** | **[F5] Panel** de productos |
+| **F6** | **[F6] Descuento** global |
+| **F7** | **[F7] Desc. ítem** |
+| **F8** | **[F8] Cantidad** |
+| **F9** | **[F9] Recargo** |
+| **F10** | **Fiscal (F10)** post-pago |
+| **Del** | **[DEL] Eliminar** ítem |
+| **+/−** | Ajustar cantidad |
+| **Esc** | Cerrar diálogos / **Nueva venta (ESC)** según contexto |
 
 ---
 
@@ -140,11 +158,11 @@ Si necesitás ver o elegir entre varios resultados al cargar productos, usá **[
 
 ### Producto
 
-Ingreso por código de barras o búsqueda manual.
+Ingreso por código de barras o búsqueda manual en **ESCANEAR O BUSCAR PRODUCTO**.
 
 ### Ítems
 
-Lista editable con cantidades, precios y descuentos.
+Lista editable con cantidades, precios y descuentos por línea (**F7** / **F8** / **DEL** / **+/−**).
 
 ### Totales
 
@@ -162,9 +180,11 @@ El POS calcula precios con la misma lógica de ventas: usa la lista por defecto 
 
 ### Finalizar
 
-Acción para cerrar la venta y avanzar al cobro. El atajo **F2** aparece dentro del botón.
+Acción **Finalizar (F2)** para cerrar la venta y avanzar al cobro.
 
-Si el botón aparece deshabilitado, revisá que haya productos cargados y que el usuario tenga permiso para realizar cobro en ventas. Mientras se guarda la venta, **Finalizar** queda bloqueado para evitar doble envío.
+Si el botón aparece deshabilitado, revisá que haya productos cargados y que el usuario tenga permiso para realizar cobro en ventas. Mientras se guarda (**Guardando…**), **Finalizar** queda bloqueado para evitar doble envío.
+
+> **Capturas:** las imágenes de esta página pueden mostrar un layout anterior. Los labels y atajos de la tabla de arriba son el criterio actual; conviene reemplazar `pos-01`…`pos-06` cuando haya pantallazos nuevos.
 
 ---
 

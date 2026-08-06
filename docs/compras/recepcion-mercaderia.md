@@ -11,13 +11,15 @@ keywords:
   - compras
   - stock
   - proveedores
+  - Control
+  - Aprobado
 ---
 
 ## Resumen
 
 La recepción de mercadería es el control operativo entre lo comprado y lo que efectivamente ingresa al stock.
 
-En el flujo documentado, la compra pasa a **INGRESADO** cuando se registra el ingreso de mercadería. Si recibís parcialmente, documentá la diferencia y evitá cerrar stock por cantidades no recibidas.
+En el flujo actual, el stock impacta cuando la [compra](./compras.md) pasa a **Aprobado**. Si recibís parcialmente, documentá la diferencia, usá el estado **Control** si necesitás revisar, y evitá aprobar cantidades no recibidas sin trazabilidad.
 
 ---
 
@@ -25,17 +27,17 @@ En el flujo documentado, la compra pasa a **INGRESADO** cuando se registra el in
 
 - Tener una orden de compra o compra registrada.
 - Comparar remito, factura o comprobante del proveedor contra lo recibido.
-- Revisar permisos para confirmar compras e ingresar mercadería.
+- Revisar permisos para confirmar, controlar y aprobar compras.
 - Validar ubicación física si el depósito la usa.
 
 ---
 
 ## Procedimiento
 
-1. Abrí la compra o la operación pendiente de ingreso.
+1. Abrí la compra pendiente de revisión o aprobación.
 2. Compará productos, cantidades y precios contra la mercadería recibida.
-3. Si hay diferencia, registrá observaciones antes de confirmar el ingreso.
-4. Ingresá la mercadería recibida.
+3. Si hay diferencia, registrá observaciones (y pasá a **Control** si tu circuito lo usa).
+4. Cuando lo recibido esté validado, **Aprobá** la compra.
 5. Verificá que el stock se actualice.
 6. Revisá cuenta corriente del proveedor si la compra genera deuda o pago.
 
@@ -43,10 +45,10 @@ En el flujo documentado, la compra pasa a **INGRESADO** cuando se registra el in
 
 ## Qué cambia y qué no cambia
 
-- ✔️ Al ingresar mercadería, aumenta el stock disponible.
+- ✔️ Al **Aprobar** la compra, aumenta el stock disponible.
 - ✔️ La compra puede impactar cuenta corriente del proveedor.
 - ✔️ Sirve para detectar faltantes, sobrantes o errores de proveedor.
-- ❌ No conviene cerrar cantidades no recibidas sin dejar trazabilidad.
+- ❌ No conviene aprobar cantidades no recibidas sin dejar trazabilidad.
 
 ---
 
@@ -54,11 +56,11 @@ En el flujo documentado, la compra pasa a **INGRESADO** cuando se registra el in
 
 ### Recepción completa
 
-Las cantidades recibidas coinciden con la compra. Confirmá ingreso y revisá stock.
+Las cantidades recibidas coinciden con la compra. Confirmá y **Aprobá**; revisá stock.
 
 ### Recepción parcial
 
-Recibís menos unidades de las solicitadas. Dejá observación y validá con el equipo si corresponde esperar el saldo o ajustar la compra.
+Recibís menos unidades de las solicitadas. Dejá observación, usá **Control** si hace falta y validá con el equipo si corresponde esperar el saldo o ajustar la compra antes de **Aprobar**.
 
 ### Diferencia de producto
 
@@ -69,11 +71,11 @@ No ingreses productos equivocados como si fueran correctos. Registrá el caso y 
 ## Si algo sale mal
 
 - **El stock no aumentó**
-  - Verificá que la compra esté en estado **INGRESADO**.
+  - Verificá que la compra esté en estado **Aprobado**.
 - **La deuda no coincide**
   - Revisá importes, cantidades y pagos asociados.
 - **Recibí menos de lo comprado**
-  - Documentá la diferencia antes de cerrar el circuito.
+  - Documentá la diferencia antes de aprobar.
 
 ---
 
@@ -82,5 +84,6 @@ No ingreses productos equivocados como si fueran correctos. Registrá el caso y 
 - [Cómo recibir mercadería y actualizar stock](../guias/como-recibir-mercaderia-y-actualizar-stock.md)
 - [Compras](./compras.md)
 - [Órdenes de compra](./orden-compras.md)
+- [Flujo de compras](./flujo-compras.md)
 - [Registro de inventario](../inventario/inventarios.md)
 - [Stock crítico](../informes/informe-stock-critico.md)
