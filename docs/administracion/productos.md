@@ -132,6 +132,8 @@ Si la organización tiene manejo de stock activo, ventas y POS pueden validar la
 
 Para cambiar stock por una diferencia física, preferí [Registro de inventario](../inventario/inventarios.md) o [Toma de inventario](../inventario/inventarios-ubicacion.md) en lugar de editar sin revisar el origen.
 
+Para dejar **varios productos** con el mismo stock (por ejemplo 0), usá **Reiniciar stock** en [Actualización masiva de productos](./productos-actualizacion-masiva.md). Esa acción genera un movimiento de inventario y se aplica aunque haya stock reservado.
+
 ### Editar stock directo vs registro de inventario
 
 Editar el stock directo puede servir para una corrección puntual durante la carga inicial, pero deja menos contexto operativo.
@@ -287,7 +289,7 @@ Alta rápida sirve para no frenar una operación. La ficha completa conviene par
 
 ### ¿Puedo corregir stock desde el producto?
 
-Para carga inicial puede servir. Para diferencias operativas conviene usar [Registro de inventario](../inventario/inventarios.md).
+Para carga inicial puede servir. Para diferencias operativas conviene usar [Registro de inventario](../inventario/inventarios.md). Si necesitás poner el mismo stock en varios productos, usá **Reiniciar stock** en [Actualización masiva](./productos-actualizacion-masiva.md).
 
 ### ¿Qué hago si vendo productos por peso?
 
@@ -320,6 +322,7 @@ No. Es el valor inicial al **crear** productos. Después manda el interruptor de
 - [Ventas](../ventas/ventas.md)
 - [Compras](../compras/compras.md)
 - [Registro de inventario](../inventario/inventarios.md)
+- [Actualización masiva de productos](./productos-actualizacion-masiva.md)
 - [Consulta de stock](../inventario/productos-consulta-inter-org.md)
 - [Cómo configurar tu primer producto](../guias/como-configurar-tu-primer-producto.md)
 - [Qué son los códigos variables y cómo usarlos](../guias/codigos-variables.md)

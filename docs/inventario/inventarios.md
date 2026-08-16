@@ -156,6 +156,7 @@ Usalo cuando:
 - Revisá historial antes de ajustar.
 - Usá eventos para categorizar movimientos.
 - Evitá ajustes innecesarios.
+- Si varios productos deben quedar con el mismo stock (por ejemplo 0), usá **Reiniciar stock** en [Actualización masiva](../administracion/productos-actualizacion-masiva.md) en lugar de cargar un movimiento por ítem.
 
 ---
 
@@ -167,4 +168,5 @@ Usalo cuando:
 - [Compras](../compras/compras.md)
 - [Ventas](../ventas/ventas.md)
 - [Productos](../administracion/productos.md)
+- [Actualización masiva de productos](../administracion/productos-actualizacion-masiva.md)
 - [Perfiles](../administracion/perfiles.md)
