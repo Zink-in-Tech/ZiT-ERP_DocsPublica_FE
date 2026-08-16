@@ -134,6 +134,8 @@ Para cambiar stock por una diferencia física, preferí [Registro de inventario]
 
 Para dejar **varios productos** con el mismo stock (por ejemplo 0), usá **Reiniciar stock** en [Actualización masiva de productos](./productos-actualizacion-masiva.md). Esa acción genera un movimiento de inventario y se aplica aunque haya stock reservado.
 
+Para asignar el **mismo proveedor** a un lote, usá **Proveedor** en esa misma pantalla: solo cambia el contacto, el resto de la ficha no se toca.
+
 ### Editar stock directo vs registro de inventario
 
 Editar el stock directo puede servir para una corrección puntual durante la carga inicial, pero deja menos contexto operativo.
