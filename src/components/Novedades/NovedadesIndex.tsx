@@ -24,7 +24,7 @@ function NovedadCard({item}: {item: NovedadIndexItem}): ReactNode {
       </h3>
       {item.lead ? <p className={styles.lead}>{item.lead}</p> : null}
       <Link className={styles.leer} to={item.href}>
-        Leer la explicación
+        Ver detalle
       </Link>
     </li>
   );
