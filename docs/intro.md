@@ -26,6 +26,7 @@ Esta documentación te ayuda a operar sin adivinar: cada artículo explica qué 
 
 | Si necesitás… | Empezá por… |
 |---------------|-------------|
+| Ver qué cambió en el sistema | [Novedades](/novedades) |
 | Configurar la organización antes de vender | [Primeros pasos](./primeros-pasos.md) → [Configuración](./configuracion/configuracion.md) |
 | Entender cómo se conectan los módulos | [Cómo funciona Zink ERP](./arquitectura.md) |
 | Validar el sistema con un plan de práctica (opcional) | [Plan de 4 días](./primeros-4-dias.md) |
