@@ -1,0 +1,144 @@
+---
+title: '18 ago 2026: duplicar documentos, ARCA y productos en lote'
+sidebar_label: 18 ago 2026
+description: >-
+  Duplicar documentos comerciales, consulta ARCA en contactos, Excel en
+  artículos vendidos, unidad de medida y actualización masiva de productos.
+hide_title: true
+slug: /novedades/2026-08-18
+pagination_prev: null
+pagination_next: null
+sidebar_position: 3
+keywords:
+  - duplicar documentos
+  - consulta ARCA
+  - artículos vendidos
+  - unidad de medida
+  - actualización masiva
+---
+
+import NovedadCabecera from '@site/src/components/Novedades/NovedadCabecera';
+
+<NovedadCabecera tipo="feature" fecha="18 de agosto de 2026" />
+
+Menos carga repetida en documentos y contactos, más claridad al cargar ítems y más control al actualizar muchos productos.
+
+En esta entrega:
+
+- [Duplicar documentos comerciales](#duplicar-documentos-comerciales)
+- [Consulta ARCA en contactos](#consulta-arca-en-contactos)
+- [Exportar artículos vendidos a Excel](#exportar-artículos-vendidos-a-excel)
+- [Unidad de medida junto a la cantidad](#unidad-de-medida-junto-a-la-cantidad)
+- [Asignar proveedor y reiniciar stock en lote](#asignar-proveedor-y-reiniciar-stock-en-lote)
+
+---
+
+## Duplicar documentos comerciales
+
+Ahora podés duplicar **cotizaciones, presupuestos, pedidos y ventas** desde el listado o desde el detalle. El sistema crea un documento nuevo con el mismo contacto, productos y cantidades.
+
+Los precios y el envío se calculan de nuevo, como en una carga normal. Podés duplicar en cualquier estado.
+
+**Dónde:** listado o detalle del documento → Duplicar.
+
+**Qué se copia y qué no**
+
+| Se copia | No se copia (en ventas) |
+|----------|-------------------------|
+| Contacto | Datos fiscales |
+| Productos y cantidades | Pagos |
+| | Precios históricos: se recalculan |
+
+**Qué tenés que hacer**
+
+Revisá precios, envío y descuentos antes de guardar. El duplicado no hereda la situación fiscal ni los cobros de la venta original.
+
+:::tip Guías relacionadas
+[Cotizaciones](/ventas/cotizaciones) · [Presupuestos](/ventas/presupuestos) · [Pedidos](/ventas/pedidos) · [Ventas](/ventas)
+:::
+
+---
+
+## Consulta ARCA en contactos
+
+Al cargar o editar un contacto con **CUIT o CUIL**, el sistema consulta el padrón cuando dejás de escribir el número. Completa razón social, condición de IVA y domicilio cuando ARCA responde, **sin pisar** lo que ya escribiste.
+
+Si el padrón no está disponible, el aviso queda junto al CUIT: completá los datos a mano y reintentá más tarde. También funciona en el **alta rápida**.
+
+**Dónde:** alta o edición de contacto, y alta rápida.
+
+**Antes de usarlo**
+
+Hace falta tener activa la **integración fiscal** de la organización.
+
+**Qué tenés que hacer**
+
+Nada extra si la integración fiscal ya está activa. Si ARCA no responde, no esperes el autocompletado: cargá los datos y reintentá después.
+
+:::tip Guía completa
+[Contactos](/administracion/contactos) · [ARCA](/integraciones/arca)
+:::
+
+---
+
+## Exportar artículos vendidos a Excel
+
+El informe **Artículos vendidos entre fechas** ahora permite exportar a **Excel**, además de PDF. La exportación respeta los mismos filtros que aplicaste en pantalla.
+
+**Dónde:** **Informes → Artículos vendidos entre fechas**.
+
+**Cómo usarlo**
+
+1. Indicá el rango de fechas y los filtros.
+2. Consultá el informe.
+3. Exportá a Excel o a PDF, según lo que necesites.
+
+**Qué tenés que hacer**
+
+Nada: la opción aparece en el mismo informe.
+
+:::tip Guía completa
+[Informe Artículos vendidos entre fechas](/informes/informe-articulos-vendidos)
+:::
+
+---
+
+## Unidad de medida junto a la cantidad
+
+Al cargar ítems ahora ves la **unidad de medida** junto a la cantidad: por ejemplo unidad, kg o litro.
+
+**Dónde:** ventas, pedidos, presupuestos, cotizaciones, órdenes de compra y compras.
+
+**Qué tenés que hacer**
+
+Nada. Es una ayuda visual al cargar: no cambia cómo se guarda el ítem.
+
+:::tip Guía relacionada
+[Formulario de documento V2](/guias/formulario-documento-v2)
+:::
+
+---
+
+## Asignar proveedor y reiniciar stock en lote
+
+En **Actualización masiva de productos** hay dos acciones nuevas:
+
+- **Proveedor:** asigna el mismo proveedor a un lote sin cambiar el resto de la ficha.
+- **Reiniciar stock:** deja varios productos en un mismo valor (por defecto 0). Genera el movimiento de inventario correspondiente. Se aplica **aunque haya stock reservado**.
+
+**Dónde:** **Actualización masiva de productos**.
+
+**Cómo usarlo**
+
+1. Seleccioná los productos.
+2. Elegí la acción **Proveedor** o **Reiniciar stock**.
+3. Completá el proveedor o el valor de stock.
+4. Revisá el resumen antes de confirmar.
+
+**Qué tenés que hacer**
+
+Tratá **Reiniciar stock** con cuidado: pisa el stock actual, incluso si hay cantidades reservadas. Confirmá que el valor (0 u otro) es el que corresponde a todos los seleccionados.
+
+:::tip Guía completa
+[Actualización masiva de productos](/administracion/productos-actualizacion-masiva)
+:::

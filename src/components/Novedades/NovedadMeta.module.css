@@ -1,0 +1,75 @@
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0 0 0.35rem;
+}
+
+.tipo {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.625rem;
+  border: 1px solid var(--novedad-tipo-border, var(--zink-interactive-active-border));
+  border-radius: 999px;
+  background: var(--novedad-tipo-bg, var(--zink-interactive-active));
+  color: var(--novedad-tipo-fg, var(--ifm-color-primary));
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.fecha {
+  color: var(--zink-text-muted);
+  font-size: 0.8125rem;
+}
+
+.meta[data-tipo='feature'] {
+  --novedad-tipo-bg: rgba(16, 122, 74, 0.1);
+  --novedad-tipo-border: rgba(16, 122, 74, 0.28);
+  --novedad-tipo-fg: #0f6b42;
+}
+
+.meta[data-tipo='improvement'] {
+  --novedad-tipo-bg: rgba(0, 142, 211, 0.1);
+  --novedad-tipo-border: rgba(0, 142, 211, 0.28);
+  --novedad-tipo-fg: #0074ad;
+}
+
+.meta[data-tipo='bugfix'] {
+  --novedad-tipo-bg: rgba(180, 110, 0, 0.1);
+  --novedad-tipo-border: rgba(180, 110, 0, 0.28);
+  --novedad-tipo-fg: #9a5c00;
+}
+
+.meta[data-tipo='breaking'] {
+  --novedad-tipo-bg: rgba(185, 28, 28, 0.1);
+  --novedad-tipo-border: rgba(185, 28, 28, 0.28);
+  --novedad-tipo-fg: #b42318;
+}
+
+[data-theme='dark'] .meta[data-tipo='feature'] {
+  --novedad-tipo-bg: rgba(52, 211, 153, 0.12);
+  --novedad-tipo-border: rgba(52, 211, 153, 0.32);
+  --novedad-tipo-fg: #6ee7b7;
+}
+
+[data-theme='dark'] .meta[data-tipo='improvement'] {
+  --novedad-tipo-bg: rgba(94, 196, 255, 0.12);
+  --novedad-tipo-border: rgba(94, 196, 255, 0.32);
+  --novedad-tipo-fg: #7dd3fc;
+}
+
+[data-theme='dark'] .meta[data-tipo='bugfix'] {
+  --novedad-tipo-bg: rgba(251, 191, 36, 0.12);
+  --novedad-tipo-border: rgba(251, 191, 36, 0.32);
+  --novedad-tipo-fg: #fcd34d;
+}
+
+[data-theme='dark'] .meta[data-tipo='breaking'] {
+  --novedad-tipo-bg: rgba(248, 113, 113, 0.12);
+  --novedad-tipo-border: rgba(248, 113, 113, 0.32);
+  --novedad-tipo-fg: #fca5a5;
+}

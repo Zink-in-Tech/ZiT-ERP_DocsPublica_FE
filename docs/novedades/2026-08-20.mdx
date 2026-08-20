@@ -1,0 +1,129 @@
+---
+title: '20 ago 2026: cobros, duplicar venta y facturación'
+sidebar_label: 20 ago 2026
+description: >-
+  Correcciones en cobro con Mercado Pago, duplicar venta, notas de crédito y
+  débito, configuración fiscal ARCA e Integraciones.
+hide_title: true
+slug: /novedades/2026-08-20
+pagination_prev: null
+pagination_next: null
+sidebar_position: 2
+keywords:
+  - Mercado Pago
+  - duplicar venta
+  - notas de crédito
+  - Formularios V2
+  - ARCA
+---
+
+import NovedadCabecera from '@site/src/components/Novedades/NovedadCabecera';
+
+<NovedadCabecera tipo="bugfix" fecha="20 de agosto de 2026" />
+
+Correcciones ya disponibles. No tenés que cambiar ninguna preferencia.
+
+En esta entrega:
+
+- [Elegir punto de venta al cobrar con Mercado Pago](#elegir-punto-de-venta-al-cobrar-con-mercado-pago)
+- [Duplicar una venta usa precio vigente](#duplicar-una-venta-usa-precio-vigente)
+- [Notas de crédito y débito abren Formularios V2](#notas-de-crédito-y-débito-abren-formularios-v2)
+- [Fecha de inicio de actividades en ARCA](#fecha-de-inicio-de-actividades-en-arca)
+- [Contraste e iconos en Integraciones](#contraste-e-iconos-en-integraciones)
+
+---
+
+## Elegir punto de venta al cobrar con Mercado Pago
+
+Al cobrar con Mercado Pago ahora elegís el **punto de venta** en el momento del cobro. El QR permanece en pantalla hasta que el pago se acredite o venza el tiempo de espera.
+
+**Dónde:** al registrar un cobro con Mercado Pago.
+
+**Cómo usarlo**
+
+1. Elegí Mercado Pago como medio de cobro.
+2. Seleccioná el punto de venta.
+3. Dejá el QR visible: no lo cierres a mano. El sistema espera la acreditación o el vencimiento.
+
+**Qué tenés que hacer**
+
+Nada en el cobro. Si vinculás la cuenta desde **Preferencias → Integraciones**, la autorización se completa al volver al sistema.
+
+:::tip Guía completa
+[Mercado Pago: autorización, sucursal y cobranzas](/integraciones/mercado-pago)
+:::
+
+---
+
+## Duplicar una venta usa precio vigente
+
+Al duplicar una venta, los ítems toman la **lista de precios** y el **precio vigente**, igual que al duplicar un pedido. Ya no arrastran el precio histórico del comprobante original.
+
+**Dónde:** listado o detalle de Ventas → Duplicar.
+
+**Por qué importa**
+
+Si el producto cambió de precio después de la venta original, el duplicado arranca con el precio de hoy. Evita vender a un importe viejo sin darte cuenta.
+
+**Qué se copia y qué no**
+
+| Se copia | No se copia |
+|----------|-------------|
+| Contacto, productos y cantidades | Datos fiscales |
+| | Pagos |
+
+**Qué tenés que hacer**
+
+Revisá precios y descuentos antes de guardar: el duplicado es un documento nuevo, no una fotocopia fiscal.
+
+:::tip Guía completa
+[Ventas](/ventas)
+:::
+
+---
+
+## Notas de crédito y débito abren Formularios V2
+
+El alta de notas de crédito y débito abre la **versión compacta** (Formularios V2), con el número de comprobante como en ventas.
+
+**Dónde:** al crear una nota de crédito o una nota de débito.
+
+**Qué tenés que hacer**
+
+Si preferís la vista clásica, volvé a V1 desde el mismo formulario. No hace falta cambiar una preferencia global.
+
+:::tip Guías relacionadas
+[Formulario de documento V2](/guias/formulario-documento-v2) · [Notas de crédito](/ventas/notas-credito) · [Notas de débito](/ventas/notas-debito)
+:::
+
+---
+
+## Fecha de inicio de actividades en ARCA
+
+Al guardar la **configuración fiscal nativa**, la fecha de inicio de actividades se registra correctamente.
+
+**Dónde:** **Preferencias → Integraciones → ARCA**.
+
+**Qué tenés que hacer**
+
+Nada, si ya habías guardado bien los datos. Si esa fecha había quedado mal, volvé a guardar la configuración fiscal.
+
+:::tip Guía completa
+[ARCA](/integraciones/arca) · [Delegar facturación electrónica](/integraciones/delegacion-autorizacion-comprobantes-arca)
+:::
+
+---
+
+## Contraste e iconos en Integraciones
+
+Mejoramos el contraste y los iconos al gestionar Mercado Pago y el resto de las integraciones. Es un cambio visual: no modifica permisos ni el flujo de autorización.
+
+**Dónde:** **Preferencias → Integraciones**.
+
+**Qué tenés que hacer**
+
+Nada.
+
+:::tip Guía relacionada
+[Preferencias](/configuracion/preferencias)
+:::

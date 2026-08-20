@@ -1,0 +1,112 @@
+---
+title: '17 abr 2025: correcciones importantes y nuevas funcionalidades'
+sidebar_label: 17 abr 2025
+description: >-
+  Código variable consistente, flujo de pagos unificado, saldo en cuenta
+  corriente, búsquedas por código de barras e IVA contenido en comprobantes.
+hide_title: true
+slug: /novedades/2025-04-17
+pagination_prev: null
+pagination_next: null
+keywords:
+  - código variable
+  - pago inmediato
+  - cuenta corriente
+  - código de barras
+  - transparencia fiscal
+  - IVA contenido
+---
+
+import NovedadCabecera from '@site/src/components/Novedades/NovedadCabecera';
+
+<NovedadCabecera tipo="breaking" fecha="17 de abril de 2025" />
+
+Cambia el flujo de cobro: si editás una venta o el estado con Pago Inmediato, el sistema abre el formulario de pago. Los comprobantes muestran el IVA contenido.
+
+En esta entrega:
+
+- [Productos con código variable](#productos-con-código-variable)
+- [Flujo de pagos unificado](#flujo-de-pagos-unificado)
+- [Saldo en cuenta corriente](#saldo-en-cuenta-corriente)
+- [Búsqueda por código de barras](#búsqueda-por-código-de-barras)
+- [IVA contenido en comprobantes](#iva-contenido-en-comprobantes)
+
+---
+
+## Productos con código variable
+
+El cálculo en productos con **código variable** queda consistente al leer la etiqueta y al armar el importe.
+
+**Dónde:** productos con código variable, en ventas y lecturas de código de barras.
+
+**Qué tenés que hacer**
+
+Nada si ya operabas con código variable. Si un precio no cierra, volvé a escanear la etiqueta y compará con la ficha del producto.
+
+:::tip Guía completa
+[Códigos variables](/guias/codigos-variables)
+:::
+
+---
+
+## Flujo de pagos unificado
+
+El flujo de pagos queda unificado. Al **editar una venta** o **cambiar el estado** con **Pago Inmediato**, el sistema va al formulario de pago. Los **créditos del cliente** están disponibles desde cualquier acceso.
+
+**Dónde:** [Ventas](/ventas) y [Pagos](/finanzas/pagos).
+
+**Qué tenés que hacer**
+
+Si usás Pago Inmediato, esperá el formulario de pago al editar la venta o al cambiar el estado: ya no queda en el comprobante sin pasar por el cobro. Aplicá créditos del cliente desde el acceso en el que estés; no hace falta ir a otra pantalla solo para eso.
+
+:::tip Guías relacionadas
+[Ventas](/ventas) · [Pagos](/finanzas/pagos) · [Preferencias](/configuracion/preferencias)
+:::
+
+---
+
+## Saldo en cuenta corriente
+
+Las cuentas corrientes muestran el **saldo en cada movimiento** y permiten **exportaciones**.
+
+**Dónde:** [Cuenta corriente](/finanzas/cuenta-corriente).
+
+**Qué tenés que hacer**
+
+Nada para ver el saldo por movimiento. Exportá cuando necesités el detalle fuera del sistema.
+
+:::tip Guía completa
+[Cuenta corriente](/finanzas/cuenta-corriente)
+:::
+
+---
+
+## Búsqueda por código de barras
+
+Las búsquedas por **código de barras** son más precisas.
+
+**Dónde:** búsqueda de productos (ventas, productos y lecturas de código).
+
+**Qué tenés que hacer**
+
+Nada. Escaneá o escribí el código como siempre.
+
+:::tip Guías relacionadas
+[Productos](/administracion/productos) · [Códigos variables](/guias/codigos-variables)
+:::
+
+---
+
+## IVA contenido en comprobantes
+
+Por la **Ley de Transparencia Fiscal**, los comprobantes muestran el **IVA contenido**.
+
+**Dónde:** comprobantes de venta y documentos fiscales.
+
+**Qué tenés que hacer**
+
+Nada. El IVA contenido se imprime en el comprobante. Si un cliente pregunta el desglose, está en el mismo documento.
+
+:::tip Guía relacionada
+[Facturación electrónica ARCA](/guias/facturacion-electronica-arca)
+:::

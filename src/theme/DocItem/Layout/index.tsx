@@ -13,6 +13,8 @@ import ContentVisibility from '@theme/ContentVisibility';
 import type {Props} from '@theme/DocItem/Layout';
 
 import DocArticleMeta from '../../../components/DocArticleMeta';
+import NovedadNavegacion from '../../../components/Novedades/NovedadNavegacion';
+import {novedadPorHref} from '../../../components/Novedades/items';
 import {getDocDisplayTitle, getDocTitleClass} from '../../../utils/docDisplayTitle';
 import styles from './styles.module.css';
 
@@ -52,6 +54,7 @@ export default function DocItemLayout({children}: Props): ReactNode {
         : undefined,
   });
   const docTitleClass = getDocTitleClass(displayTitle);
+  const esEntregaNovedad = Boolean(novedadPorHref(metadata.permalink));
 
   return (
     <div className="row">
@@ -68,7 +71,7 @@ export default function DocItemLayout({children}: Props): ReactNode {
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
           </article>
-          <DocItemPaginator />
+          {esEntregaNovedad ? <NovedadNavegacion /> : <DocItemPaginator />}
         </div>
       </div>
       {docTOC.desktop && (

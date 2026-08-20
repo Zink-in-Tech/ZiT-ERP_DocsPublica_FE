@@ -130,6 +130,35 @@ const config: Config = {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           // Sin editUrl: no se muestra "Editar esta página" (mantenimiento vía repo privado al equipo).
+          async sidebarItemsGenerator({defaultSidebarItemsGenerator, ...args}) {
+            const items = await defaultSidebarItemsGenerator(args);
+
+            const flatten = (nodes: typeof items): typeof items =>
+              nodes.map((item) => {
+                if (item.type !== 'category') {
+                  return item;
+                }
+
+                const isNovedades =
+                  item.label === 'Novedades' ||
+                  (item.link?.type === 'doc' && item.link.id === 'novedades/novedades') ||
+                  item.items.some(
+                    (child) => child.type === 'doc' && child.id === 'novedades/novedades',
+                  );
+
+                if (isNovedades) {
+                  return {
+                    type: 'doc' as const,
+                    id: 'novedades/novedades',
+                    label: 'Novedades',
+                  };
+                }
+
+                return {...item, items: flatten(item.items)};
+              });
+
+            return flatten(items);
+          },
         },
         blog: false,
         theme: {
@@ -162,6 +191,11 @@ const config: Config = {
           position: 'left',
           label: 'Documentación',
         },
+        {
+          to: '/novedades',
+          position: 'left',
+          label: 'Novedades',
+        },
       ],
     },
     footer: {
@@ -173,6 +207,10 @@ const config: Config = {
             {
               label: 'Introducción',
               to: '/intro',
+            },
+            {
+              label: 'Novedades',
+              to: '/novedades',
             },
             {
               label: 'Arquitectura',
