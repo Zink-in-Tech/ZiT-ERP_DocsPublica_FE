@@ -56,13 +56,13 @@ El circuito se arma en este orden. Distinguí cada pieza: **producto**, **estruc
 | 2. Definir la estructura del código variable | Administrador | Producto + **Configuración → Preferencias** | Activar **Cód. variable**. Cargar **exactamente 6 dígitos** en **Código de barras** (= PLU). Alinear **Decimales del Código Variable** con la Systel. | Zink ERP sabe qué ticket va a poder interpretar. |
 | 3. Programar la Systel e imprimir el ticket | Quien configura el equipo; después, quien pesa | La **balanza Systel** (fuera del ERP) | Mismo PLU de 6 dígitos, mismos decimales, precio de referencia. Pesar e imprimir el ticket. No se imprime desde Zink ERP. Guía: [Balanzas Systel](../guias/balanzas-systel-y-codigos-variables.md). | El ticket trae el código de 13 dígitos de esa pesada. |
 | 4. Leer el código en el POS | Cajero | **Gestión Operativa → POS** (validá primero en **Ventas**) | Escanear o ingresar los **13 dígitos completos** en **ESCANEAR O BUSCAR PRODUCTO**. | El sistema busca el producto por los primeros 6 dígitos. |
-| 5. Interpretar el código | El sistema | POS o Ventas | Decodifica los 6 dígitos centrales según **Decimales del Código Variable**. En Ventas la cantidad queda bloqueada en 1. En POS la cantidad **no** se bloquea igual. | Aparece el producto con el **importe del ticket** si la alineación es correcta. |
+| 5. Interpretar el código | El sistema | POS o Ventas | Decodifica los 6 dígitos centrales según **Decimales del Código Variable**. La cantidad de la línea queda bloqueada (en Ventas y en POS). | Aparece el producto con el **importe del ticket** si la alineación es correcta. |
 | 6. Validar artículo e importe | Cajero | POS | Verificar descripción e importe contra el ticket impreso. No uses [Consulta de precios](../ventas/consulta-precio.md) para el valor de esa pesada: muestra catálogo. | El cajero confirma sin cargar peso ni importe a mano. |
 | 7. Registrar venta, cobro y comprobante | Cajero | POS | **Finalizar (F2)**, medio de pago, **Guardar (F2)**. Después: **Imprimir** o **Fiscal (F10)** si aplica. | Queda la venta cobrada. El fiscal depende de [ARCA](../integraciones/arca.md). |
 | 8. Impacto de stock, caja e informes | El sistema + control del local | [Ventas](../ventas/ventas.md), [Caja diaria](../finanzas/caja-diaria.md), [Informes](../informes/informes.md) | El stock baja cuando la venta está **Entregada**, por la **cantidad de la línea**. Caja e informes muestran el cobro y las ventas. | El kilo del ticket no es, por sí solo, la cantidad del ERP. |
 
 :::warning Validá primero en Ventas
-[Ventas](../ventas/ventas.md) es la pantalla de referencia para un ticket nuevo: decodifica el importe y bloquea la cantidad. En [POS](../ventas/pos.md) la búsqueda es la misma, pero el **subtotal puede calcularse distinto**. No des por implementado el circuito Systel si solo lo probaste en POS.
+[Ventas](../ventas/ventas.md) es la pantalla de referencia para un ticket nuevo: decodifica el importe. En [POS](../ventas/pos.md) la búsqueda es la misma y la cantidad también queda bloqueada, pero el **subtotal puede calcularse distinto**. No des por implementado el circuito Systel si solo lo probaste en POS.
 :::
 
 ---
@@ -190,7 +190,7 @@ El cajero **no** programa la Systel ni entra a Preferencias. Recibe el ticket im
 | **DEL** | Sacar un ítem mal leído |
 | **ESC** | Nueva venta |
 
-**F8** y **+/−** cambian cantidad. En POS la cantidad de un código variable **no se bloquea** como en Ventas. Si la tocás, el total puede dejar de coincidir con el ticket. Si la cantidad se ve rara, borrá el ítem (**DEL**) y volvé a leer el código. Ver [Problemas frecuentes](../guias/problemas-frecuentes-codigos-variables.md).
+**F8** y **+/−** cambian cantidad en productos comunes. En un código variable la cantidad queda **bloqueada**, igual que en Ventas. Si hace falta corregir, borrá el ítem (**DEL**) y volvé a leer el ticket. Ver [Problemas frecuentes](../guias/problemas-frecuentes-codigos-variables.md).
 
 ### Si algo falla en caja
 
@@ -275,7 +275,7 @@ Solo casos respaldados por las guías de códigos variables, Systel, POS, produc
 | El subtotal de POS no es el de Ventas | POS puede calcular distinto el mismo ticket | Probar el mismo ticket en ambas pantallas; validar siempre en Ventas | [POS](../ventas/pos.md) · [Problemas](../guias/problemas-frecuentes-codigos-variables.md) |
 | Consulta de precios no muestra lo del ticket | Muestra precio de catálogo | Usar Ventas o POS para validar un ticket ya impreso | [Consulta de precios](../ventas/consulta-precio.md) |
 | No puedo marcar **Cód. variable** | El código de barras ya tiene 13 dígitos | Dejar solo el PLU de 6 dígitos | [Productos](../administracion/productos.md#producto-con-código-variable) |
-| Cantidad rara en POS | En POS la cantidad no se bloquea | Verificar la línea; borrar y volver a leer el ticket; en Ventas queda bloqueada | [Problemas códigos variables](../guias/problemas-frecuentes-codigos-variables.md) |
+| Cantidad rara en POS | El ítem se cargó por nombre/PLU, no por el ticket de 13 dígitos | Borrar (**DEL**) y volver a leer el ticket; la cantidad de un código variable queda bloqueada | [Problemas códigos variables](../guias/problemas-frecuentes-codigos-variables.md) |
 | Impuesto no editable en la venta | Esperado en código variable | El impuesto de línea queda bloqueado | [Systel](../guias/balanzas-systel-y-codigos-variables.md) |
 | No se puede vender por stock | Validación de stock activa y cantidad insuficiente | Stock del producto, ventas entregadas, ajustes | [Productos](../administracion/productos.md) · [Inventario](../inventario/inventario.md) |
 | Finalizar deshabilitado en POS | Sin ítems, sin permiso de cobro o guardando | Permiso **realizar cobro en ventas**; que haya un producto cargado | [POS](../ventas/pos.md) · [Perfiles](../administracion/perfiles.md) |

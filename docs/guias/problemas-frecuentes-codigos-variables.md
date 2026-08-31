@@ -36,7 +36,7 @@ Para configuración inicial, empezá por [Qué son los códigos variables](./cod
 | Listas de precio “grisadas” | Comportamiento esperado | Configurar solo la **lista por defecto** |
 | Importación masiva sin código variable | La plantilla no incluye el flag | Crear o editar manualmente esos productos |
 | Impuesto no editable en venta | Esperado para código variable | El impuesto de línea queda bloqueado en productos con **Cód. variable** |
-| Cantidad rara en **POS** | En POS la cantidad no se bloquea como en Ventas | Verificar cantidad del ítem; en **Ventas** la cantidad queda bloqueada |
+| Cantidad rara en **POS** | Se cargó por nombre/PLU y no por el ticket de 13 dígitos | Borrar el ítem y volver a leer el ticket; la cantidad de un código variable queda bloqueada |
 
 ---
 
