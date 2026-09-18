@@ -2,8 +2,8 @@
 title: Contactos | Zink ERP
 sidebar_label: Contactos
 description: >-
-  Los contactos representan a las personas o empresas con las que operás:
-  clientes y proveedores.
+  Clientes y proveedores en Zink ERP: ficha, condiciones comerciales, cuenta
+  corriente e historial comercial desde el contacto.
 sidebar_position: 1
 keywords:
   - contactos
@@ -11,15 +11,16 @@ keywords:
   - proveedores
   - lista de precios contacto
   - cuenta corriente
+  - historial comercial
 ---
 
 ## Resumen
 
 Los contactos representan a las personas o empresas con las que operás: clientes y proveedores.
 
-Se utilizan en todo el flujo comercial (presupuestos, pedidos, ventas, órdenes de compra y compras) y afectan directamente listas de precios, cuenta corriente y comprobantes.
+Se utilizan en todo el flujo comercial (presupuestos, pedidos, ventas, cotizaciones, órdenes de compra y compras) y afectan listas de precios, cuenta corriente y comprobantes.
 
-También permiten definir condiciones comerciales específicas como bonificaciones, vencimientos y costos de envío.
+También permiten definir condiciones comerciales específicas (bonificaciones, vencimientos, costos de envío) y, desde la ficha, revisar el **historial comercial** del contacto.
 
 ---
 
@@ -28,6 +29,7 @@ También permiten definir condiciones comerciales específicas como bonificacion
 - Definí correctamente los datos fiscales del contacto.
 - Configurá la [lista de precio](../configuracion/listas-precio.md) si corresponde.
 - Verificá condiciones comerciales (bonificaciones, vencimientos, envío).
+- Para ver el historial comercial necesitás permiso a Ventas, Cotizaciones, Presupuestos, Pedidos o Notas de crédito/débito (según lo que quieras consultar).
 
 ---
 
@@ -44,10 +46,15 @@ También permiten definir condiciones comerciales específicas como bonificacion
 
 3. Guardar el contacto.
 
-4. Usar el contacto en operaciones:
-   - ventas
-   - compras
-   - cuenta corriente
+4. Desde la barra de acciones de la ficha (contacto ya creado):
+   - **Cta Cte Proveedor** / **Cta Cte Cliente**
+   - **Ingresar Movimiento** (cobro o pago)
+   - **Nuevo** documento (venta, presupuesto, pedido o cotización, según permisos)
+
+5. Abrí el tab **Historial comercial** para ver indicadores y listados del contacto:
+   - elegí el período de indicadores (**30 / 60 / 90 días**)
+   - cambiá el modo (Ventas, Cotizaciones, Presupuestos, Pedidos, Notas de crédito o débito) según lo que necesites
+   - en Ventas, usá también el historial filtrable debajo de los gráficos
 
 ---
 
@@ -83,17 +90,31 @@ Identificador fiscal del contacto.
 
 Referentes dentro del cliente o proveedor.
 
+### Historial comercial
+
+En la ficha del contacto (tab con chip **Nuevo**):
+
+- Resumen financiero del cliente (saldo, último pago, crédito disponible, condición de lista) cuando hay datos cargados.
+- Indicadores del período elegido y, en Ventas, gráficos de facturación y estado de pago.
+- Tablas por tipo de documento, alineadas a lo que ya conocés en cada módulo.
+
+No reemplaza los listados de Ventas o Cotizaciones: concentra la lectura **desde el contacto**.
+
 ---
 
 ## Casos frecuentes
 
 ### Cliente habitual
 
-Se configura [lista de precio](../configuracion/listas-precio.md) y condiciones comerciales específicas.
+Se configura [lista de precio](../configuracion/listas-precio.md) y condiciones comerciales específicas. Antes de llamar o armar una oferta, abrí **Historial comercial** para ver ventas y cotizaciones recientes.
 
 ### Proveedor
 
 Se registran datos fiscales y condiciones de compra.
+
+### Seguimiento comercial rápido
+
+Entrá a la ficha → tab **Historial comercial** → modo Ventas o Cotizaciones → ajustá 30 / 60 / 90 días.
 
 ---
 
@@ -105,6 +126,10 @@ Se registran datos fiscales y condiciones de compra.
 - **No aparece en operaciones**
   - Verificá que el contacto esté correctamente creado.
 
+- **No veo el tab Historial comercial**
+  - El contacto tiene que estar guardado (no alcanza el alta sin id).
+  - Revisá que tu perfil tenga permiso a algún módulo comercial (Ventas, Cotizaciones, Presupuestos, Pedidos o Notas).
+
 ---
 
 ## Ver también
@@ -112,5 +137,7 @@ Se registran datos fiscales y condiciones de compra.
 - [Tutorial en video: registrar y gestionar contactos](../guias/tutorial-registrar-gestionar-contactos.mdx)
 - [Administración](./administracion.md)
 - [Importación masiva de contactos](./contactos-importacion-masiva.md)
+- [Cuenta corriente](../finanzas/cuenta-corriente.md)
 - [Ventas](../ventas/ventas.md)
+- [Cotizaciones](../ventas/cotizaciones.md)
 - [Compras](../compras/compras.md)
