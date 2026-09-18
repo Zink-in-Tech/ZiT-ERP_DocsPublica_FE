@@ -33,8 +33,8 @@ const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
     id: '43',
     fechaISO: '2026-09-18',
     tipo: 'feature',
-    titulo: 'Consultá el historial comercial desde la ficha de cada contacto',
-    lead: 'Resumen financiero, indicadores y operaciones de 30, 60 o 90 días desde Contactos.',
+    titulo: 'Más acciones directas en contactos, documentos, stock y caja',
+    lead: 'Historial comercial, documentos y stock desde la ficha, compartir saldo y documentos, altas en Caja y gestión de conceptos.',
   },
   {
     id: '42',
