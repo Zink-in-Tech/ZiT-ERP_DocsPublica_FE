@@ -30,12 +30,27 @@ export function hrefNovedad(
 
 const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
   {
+    id: '43',
+    fechaISO: '2026-09-18',
+    tipo: 'feature',
+    titulo: 'Consultá el historial comercial desde la ficha de cada contacto',
+    lead: 'Resumen financiero, indicadores y operaciones de 30, 60 o 90 días desde Contactos.',
+  },
+  {
+    id: '42',
+    fechaISO: '2026-09-16',
+    tipo: 'feature',
+    titulo: 'Pedidos desde texto e importación asistida de productos',
+    lead: 'Pedidos desde mensajes, importación asistida de productos, Formularios V2 definitivos y descuentos en el dashboard.',
+  },
+  {
     id: '41',
     fechaISO: '2026-08-20',
     tipo: 'bugfix',
     titulo: 'Cobros con Mercado Pago, duplicar venta y facturación más confiables',
     lead: 'Ajustes en cobro QR, duplicar venta, notas de crédito y débito, y configuración fiscal ARCA.',
   },
+
   {
     id: '40',
     fechaISO: '2026-08-18',
