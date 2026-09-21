@@ -30,6 +30,13 @@ export function hrefNovedad(
 
 const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
   {
+    id: '44',
+    fechaISO: '2026-09-21',
+    tipo: 'feature',
+    titulo: 'Envío de comprobantes, fiscal A4 y descuentos del día',
+    lead: 'Enviá el comprobante de una venta por correo, elegí Ticket o A4 en el fiscal con ARCA, y consultá descuentos del día en el dashboard.',
+  },
+  {
     id: '43',
     fechaISO: '2026-09-18',
     tipo: 'feature',
