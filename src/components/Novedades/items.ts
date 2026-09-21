@@ -41,7 +41,7 @@ const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
     fechaISO: '2026-09-18',
     tipo: 'feature',
     titulo: 'Más acciones directas en contactos, documentos, stock y caja',
-    lead: 'Historial comercial, documentos y stock desde la ficha, compartir saldo y documentos, altas en Caja y gestión de conceptos.',
+    lead: 'Historial comercial del cliente en la ficha, documentos y stock desde donde ya estás, compartir saldo y comprobantes, altas en Caja y conceptos sin salir del formulario.',
   },
   {
     id: '42',

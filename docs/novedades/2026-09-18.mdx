@@ -2,9 +2,9 @@
 title: '18 sep 2026: más acciones directas en contactos, documentos, stock y caja'
 sidebar_label: 18 sep 2026
 description: >-
-  Historial comercial en contactos, documentos y stock desde la ficha, compartir
-  saldo y documentos, altas rápidas en Caja diaria y gestión de conceptos sin
-  salir del formulario.
+  Historial comercial del contacto, documentos y stock desde la ficha, compartir
+  saldo y documentos, altas en Caja diaria, conceptos sin salir del formulario y
+  comprobantes actualizados en cuenta corriente.
 hide_title: true
 slug: /novedades/2026-09-18
 pagination_prev: null
@@ -20,19 +20,23 @@ keywords:
   - caja diaria
   - conceptos
   - documentos
+  - comprobantes
 ---
 
 import NovedadCabecera from '@site/src/components/Novedades/NovedadCabecera';
 
 <NovedadCabecera tipo="feature" fecha="18 de septiembre de 2026" />
 
-Más formas de completar tareas desde el lugar donde ya estás trabajando: contactos, productos, caja y detalle de documentos.
+Menos idas y vueltas entre pantallas: resolvé seguimiento comercial, alta de documentos, stock, caja y compartir información **desde el lugar donde ya estás trabajando**.
+
+Esta entrega concentra la lectura del cliente en su ficha, acorta el camino a una nueva venta o pedido, y facilita compartir saldos y documentos con el contacto.
 
 En esta entrega:
 
 - [Historial comercial en la ficha de contacto](#historial-comercial-en-la-ficha-de-contacto)
 - [Nuevo documento desde un contacto](#nuevo-documento-desde-un-contacto)
 - [Compartir saldo de cuenta corriente](#compartir-saldo-de-cuenta-corriente)
+- [Comprobantes en cuenta corriente](#comprobantes-en-cuenta-corriente)
 - [Acciones de stock desde el producto](#acciones-de-stock-desde-el-producto)
 - [Altas rápidas en Caja diaria](#altas-rápidas-en-caja-diaria)
 - [Gestionar conceptos sin salir del formulario](#gestionar-conceptos-sin-salir-del-formulario)
@@ -42,49 +46,55 @@ En esta entrega:
 
 ## Historial comercial en la ficha de contacto
 
-Con un contacto ya guardado, el tab **Historial comercial** concentra el resumen financiero del cliente, indicadores del período y listados de operaciones.
+Antes de llamar, cotizar o cobrar, podés ver en **un solo lugar** cómo viene operando ese cliente: saldo, actividad reciente y documentos del período.
 
-Podés elegir **30, 60 o 90 días** y revisar, según tus permisos:
+Con un contacto **ya guardado**, el tab **Historial comercial** concentra:
 
-- ventas
-- cotizaciones
-- presupuestos
-- pedidos
-- notas de crédito y débito
+- **Resumen financiero** del cliente (saldo, último pago, crédito disponible, condición de lista y, si aplica, bonificación y plazo). Con permiso podés abrir la cuenta corriente desde ahí.
+- **Indicadores del período** (30, 60 o 90 días), según el modo activo.
+- En **Ventas**: cantidad, vendido, cobrado, pendiente, ticket y recurrencia; gráfico de los **últimos 6 meses** (independiente del selector 30/60/90); estado de pago; e historial filtrable debajo (máximo 3 meses por consulta).
+- En **Cotizaciones**: abiertas, vencidas, próximas 7 días, cerradas y ratio de aceptación (con aviso si no hay montos).
+- En **Pedidos**: además de cantidad e importe, pendientes de despacho y entregados cuando el resumen los informa.
+- **Tablas** de presupuestos, NC y ND alineadas a cada módulo, con acciones según permisos.
 
-En ventas también vas a ver indicadores, un gráfico de facturación reciente y el historial filtrable debajo.
+No reemplaza los listados de Ventas o Cotizaciones: concentra la lectura **desde el contacto**, para decidir más rápido sin saltar de módulo en módulo.
 
-**Dónde:** Administración → Contactos → editar contacto → tab Historial comercial.
+Los datos se cargan al **entrar al tab**, no mientras estás en otras secciones de la ficha.
+
+**Dónde:** Administración → Contactos → editar contacto → tab **Historial comercial**.
 
 **Cómo usarlo**
 
-1. Abrí un contacto ya guardado.
+1. Abrí un contacto ya guardado (necesita id; el alta sin guardar no alcanza).
 2. Entrá al tab **Historial comercial**.
-3. Elegí el período 30 / 60 / 90 días.
+3. Elegí el período **30 / 60 / 90 días**.
 4. Cambiá el modo (Ventas, Cotizaciones, etc.) según lo que necesites ver.
+5. Abrí un comprobante o seguí la acción que corresponda desde la fila.
 
 :::note Permisos
-El tab solo aparece si tenés permiso a al menos uno de los módulos comerciales listados. Cada modo muestra datos según tu permiso.
+El tab solo aparece si tu perfil tiene permiso a al menos uno de los módulos comerciales listados. Cada modo muestra datos según ese permiso; sin permiso, ese dominio no se ofrece.
 :::
 
 :::tip Guía relacionada
-[Contactos](/administracion/contactos#historial-comercial)
+[Contactos — Historial comercial](/administracion/contactos#historial-comercial)
 :::
 
 ---
 
 ## Nuevo documento desde un contacto
 
-Desde la barra de la ficha, **Nuevo** inicia una venta, un presupuesto, un pedido o una cotización con el contacto ya cargado.
+Desde la barra de la ficha, **Nuevo** inicia una venta, un presupuesto, un pedido o una cotización **con el contacto ya cargado**. Evitás buscarlo de nuevo en el formulario.
 
-**Dónde:** Administración → Contactos → editar contacto → barra de acciones.
+**Cuándo sirve:** llamada entrante, seguimiento comercial o cuando ya estás en la ficha y querés pasar a operar.
+
+**Dónde:** Administración → Contactos → editar contacto → barra de acciones → **Nuevo**.
 
 **Cómo usarlo**
 
 1. Abrí un contacto guardado.
 2. Elegí **Nuevo**.
 3. Seleccioná el tipo de documento.
-4. Completá y guardá el documento.
+4. Completá ítems, condiciones y guardá.
 
 :::note Permisos
 Solo aparecen las opciones para las que tengas permiso de alta.
@@ -98,9 +108,11 @@ Solo aparecen las opciones para las que tengas permiso de alta.
 
 ## Compartir saldo de cuenta corriente
 
-Desde la cuenta corriente de un cliente o proveedor podés **Compartir** un resumen del saldo: copiarlo o enviarlo por WhatsApp o email.
+Desde la cuenta corriente de un cliente o proveedor podés **Compartir** un resumen del saldo: copiarlo al portapapeles o enviarlo por WhatsApp o email.
 
-**Dónde:** diálogo de cuenta corriente (desde el contacto o desde el módulo).
+Útil para recordatorios de cobro, respuestas rápidas al cliente o alinear al equipo sin armar el mensaje a mano.
+
+**Dónde:** diálogo de cuenta corriente (desde el contacto o desde el módulo de cuenta corriente).
 
 **Cómo usarlo**
 
@@ -108,7 +120,21 @@ Desde la cuenta corriente de un cliente o proveedor podés **Compartir** un resu
 2. En la barra de acciones, elegí **Compartir**.
 3. Copiá el resumen o envialo por WhatsApp o email.
 
-El resumen usa el saldo que ves en pantalla al momento de compartir.
+El resumen usa el **saldo que ves en pantalla** al momento de compartir.
+
+:::tip Guía relacionada
+[Cuenta corriente](/finanzas/cuenta-corriente)
+:::
+
+---
+
+## Comprobantes en cuenta corriente
+
+En cuenta corriente de **cliente** accedés a la consulta actualizada de comprobantes, con formatos **Ticket** y **A4** e información fiscal cuando corresponde.
+
+En el listado de cuenta corriente, un clic en el **nombre o razón social** abre los movimientos del contacto (misma acción que el detalle del menú).
+
+**Dónde:** Finanzas → Cuenta corriente (clientes) · o desde el contacto.
 
 :::tip Guía relacionada
 [Cuenta corriente](/finanzas/cuenta-corriente)
@@ -118,7 +144,7 @@ El resumen usa el saldo que ves en pantalla al momento de compartir.
 
 ## Acciones de stock desde el producto
 
-Desde la ficha de un producto podés iniciar **Ajustar stock** o **Tomar inventario** con el producto ya seleccionado.
+Desde la ficha de un producto podés iniciar **Ajustar stock** o **Tomar inventario** con el producto ya seleccionado: menos pasos entre catálogo e inventario.
 
 **Dónde:** Administración → Productos → editar o consultar → barra de acciones.
 
@@ -140,11 +166,18 @@ Las acciones disponibles dependen de tus permisos de inventario y de toma de inv
 
 ## Altas rápidas en Caja diaria
 
-En cada sección de **Caja diaria**, el botón **+** del título permite registrar cobros, pagos, notas de crédito o débito, ingresos y egresos.
+En cada sección de **Caja diaria**, el botón **+** del título permite registrar cobros, pagos, notas de crédito o débito, ingresos y egresos sin salir del tablero del día.
 
-Si necesitás un movimiento ligado a un concepto concreto, primero abrí el detalle de ese concepto y cargá desde ahí.
+Si necesitás un movimiento ligado a un **concepto concreto**, primero abrí el detalle de ese concepto y cargá desde ahí: así el movimiento queda asociado al concepto correcto.
 
 **Dónde:** Finanzas → Caja diaria.
+
+**Cómo usarlo**
+
+1. Entrá a Caja diaria.
+2. En la sección que corresponda, tocá el **+** del título.
+3. Completá y confirmá el movimiento.
+4. Si es por concepto, abrí antes el detalle del concepto y cargá desde ahí.
 
 :::tip Guía relacionada
 [Caja diaria](/finanzas/caja-diaria)
@@ -154,7 +187,7 @@ Si necesitás un movimiento ligado a un concepto concreto, primero abrí el deta
 
 ## Gestionar conceptos sin salir del formulario
 
-En ingresos, egresos y notas de crédito o débito, junto al campo **Concepto** o **Motivo**, podés abrir **Gestionar conceptos** para crear o editar un concepto y seguir con la carga.
+En ingresos, egresos y notas de crédito o débito, junto al campo **Concepto** o **Motivo**, podés abrir **Gestionar conceptos** para crear o editar un concepto y seguir con la carga — sin abandonar el formulario.
 
 **Dónde:** formularios de Ingresos, Egresos y Notas de crédito o débito.
 
@@ -166,7 +199,9 @@ En ingresos, egresos y notas de crédito o débito, junto al campo **Concepto** 
 
 ## Compartir y gestionar documentos
 
-Desde el detalle de ventas y otros documentos comerciales tenés las acciones del documento y **Compartir** (resumen, WhatsApp o email). También podés generar el PDF cuando tengas el permiso correspondiente.
+Desde el detalle de ventas y otros documentos comerciales tenés las acciones del documento y **Compartir** (copiar resumen, WhatsApp o email). También podés generar el PDF cuando tengas el permiso correspondiente.
+
+Sirve para enviar un resumen al cliente o al equipo sin salir del detalle.
 
 **Dónde:** detalle del documento (por ejemplo, una venta).
 
