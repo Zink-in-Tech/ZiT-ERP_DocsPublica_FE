@@ -24,6 +24,7 @@ En versiones anteriores también podía aparecer como **Dashboard**. Para evitar
 
 - Al iniciar sesión para ver el estado del negocio.
 - Para ir a módulos frecuentes desde accesos rápidos.
+- En el rol administración, para revisar el gráfico de **descuentos del día** (resumen con datos del servidor).
 
 ---
 
