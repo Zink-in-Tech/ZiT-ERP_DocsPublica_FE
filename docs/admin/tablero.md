@@ -32,7 +32,8 @@ En versiones anteriores también podía aparecer como **Dashboard**. Para evitar
 
 1. Ingresá al sistema y seleccioná la organización si corresponde.
 2. Revisá los indicadores y alertas visibles.
-3. Usá los accesos rápidos para ir al módulo que necesitás: ventas, compras, informes u otras tareas habilitadas por tu perfil.
+3. En el rol administración, consultá el gráfico de **descuentos del día** cuando quieras el resumen del día con datos del servidor.
+4. Usá los accesos rápidos para ir al módulo que necesitás: ventas, compras, informes u otras tareas habilitadas por tu perfil.
 
 El contenido exacto depende de tu perfil y de la configuración de la organización.
 

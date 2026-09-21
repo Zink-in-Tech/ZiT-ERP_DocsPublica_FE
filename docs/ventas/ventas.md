@@ -292,5 +292,6 @@ Sí, si la configuración y el tipo de cliente permiten proceso de pago diferido
 - [Notas de crédito](./notas-credito.md)
 - [Notas de débito](./notas-debito.md)
 - [Flujo de ventas](./flujo-ventas.md)
+- [Cuenta corriente](../finanzas/cuenta-corriente.md)
 - [Pagos](../finanzas/pagos.md)
 - [Perfiles](../administracion/perfiles.md)
