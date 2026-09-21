@@ -51,10 +51,11 @@ También permiten definir condiciones comerciales específicas (bonificaciones, 
    - **Ingresar Movimiento** (cobro o pago)
    - **Nuevo** documento (venta, presupuesto, pedido o cotización, según permisos)
 
-5. Abrí el tab **Historial comercial** para ver indicadores y listados del contacto:
+5. Abrí el tab **Historial comercial** para el seguimiento del cliente desde la ficha:
    - elegí el período de indicadores (**30 / 60 / 90 días**)
-   - cambiá el modo (Ventas, Cotizaciones, Presupuestos, Pedidos, Notas de crédito o débito) según lo que necesites
-   - en Ventas, usá también el historial filtrable debajo de los gráficos
+   - cambiá el modo (Ventas, Cotizaciones, Presupuestos, Pedidos, Notas de crédito o débito)
+   - en Ventas, usá los gráficos y el historial filtrable debajo
+   - abrí comprobantes o acciones desde las filas cuando estén disponibles
 
 ---
 
@@ -92,13 +93,49 @@ Referentes dentro del cliente o proveedor.
 
 ### Historial comercial
 
-En la ficha del contacto (tab con chip **Nuevo**):
+El tab **Historial comercial** (chip **Nuevo** en la ficha) concentra el seguimiento del cliente **desde el contacto**: saldo, actividad del período y documentos, sin reemplazar los listados de cada módulo.
 
-- Resumen financiero del cliente (saldo, último pago, crédito disponible, condición de lista) cuando hay datos cargados.
-- Indicadores del período elegido y, en Ventas, gráficos de facturación y estado de pago.
-- Tablas por tipo de documento, alineadas a lo que ya conocés en cada módulo.
+Los datos se cargan **al entrar al tab** (no mientras estás en otros tabs de la ficha).
 
-No reemplaza los listados de Ventas o Cotizaciones: concentra la lectura **desde el contacto**.
+**Para qué sirve**
+
+- Antes de llamar, cotizar o cobrar: ver cómo viene operando ese cliente.
+- Armar una oferta con contexto (ventas y cotizaciones recientes).
+- Abrir un comprobante o seguir una acción sin saltar primero al listado general.
+
+**Qué vas a encontrar**
+
+1. **Resumen financiero** (cuando hay datos): saldo, último pago, crédito disponible, condición de lista y, si aplica, bonificación y plazo. Con permiso podés abrir la **cuenta corriente** desde ahí.
+2. **Selector de período** de indicadores: **30 / 60 / 90 días**.
+3. **Modos según permiso:** Ventas, Cotizaciones, Presupuestos, Pedidos, Notas de crédito y Notas de débito.
+4. En **Ventas:**
+   - Indicadores del período: cantidad, vendido, cobrado, pendiente de cobro, ticket promedio y recurrencia (días promedio entre ventas).
+   - Gráfico de facturación de los **últimos 6 meses calendario** (esa serie no cambia al mover el selector 30/60/90).
+   - Vista por **estado de pago**.
+   - Debajo, historial de ventas con filtros (intervalo máximo **3 meses** por consulta, igual que el listado de Ventas).
+5. En **Cotizaciones:** indicadores de oportunidad (abiertas, vencidas, próximas 7 días, cerradas, ratio de aceptación) y tabla filtrable. Si el origen de datos no trae montos, los indicadores muestran cantidades y un aviso lo deja claro.
+6. En **Presupuestos, Pedidos y Notas:** cantidad e importe del período, y tabla paginada. En pedidos también podés ver pendientes de despacho y entregados cuando el resumen los informa.
+7. En las tablas, las **acciones** siguen el mismo criterio de permisos que en cada módulo (ver comprobante, emitir fiscal, etc., cuando correspondan).
+
+**Cómo usarlo**
+
+1. Guardá el contacto (hace falta id; el alta sin guardar no alcanza).
+2. Entrá al tab **Historial comercial**.
+3. Elegí el período **30 / 60 / 90 días**.
+4. Cambiá el modo según lo que necesites.
+5. Abrí un comprobante o usá las acciones de la fila cuando estén disponibles.
+
+**Qué no es**
+
+No reemplaza Ventas, Cotizaciones ni los demás listados: concentra la **lectura y el acceso** desde la ficha del contacto.
+
+:::note Permisos
+El tab aparece si tu perfil tiene permiso a al menos un módulo comercial listado. Cada modo muestra solo lo que tu permiso permite. Sin permiso a un dominio, ese modo no se ofrece (no se inventan ceros como si hubiera datos).
+:::
+
+:::tip Atajos
+Con el historial visible, **Alt + ← / →** navega entre tabs de la ficha y **Alt + 1–6** salta a un tab (incluye Historial).
+:::
 
 ---
 
@@ -114,7 +151,7 @@ Se registran datos fiscales y condiciones de compra.
 
 ### Seguimiento comercial rápido
 
-Entrá a la ficha → tab **Historial comercial** → modo Ventas o Cotizaciones → ajustá 30 / 60 / 90 días.
+Entrá a la ficha → tab **Historial comercial** → modo Ventas o Cotizaciones → ajustá **30 / 60 / 90 días**. Revisá el resumen, los indicadores y, si hace falta, abrí el comprobante desde la tabla.
 
 ---
 
