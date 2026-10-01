@@ -1,10 +1,7 @@
 ---
-title: 'Inventario en Zink ERP: stock, ajustes y toma por ubicación | Zink ERP'
+title: 'Inventario: stock, ajustes y toma de inventario'
 sidebar_label: Inventario
-description: >-
-  Controlá stock en Zink ERP con ajustes, toma por ubicación y consulta entre
-  organizaciones, entendiendo cuándo usar inventario en vez de compras o
-  ventas.
+description: 'Controlá stock en Zink ERP con ajustes, toma por ubicación y consulta entre organizaciones, entendiendo cuándo usar inventario en vez de compras o ventas.'
 sidebar_position: 1
 keywords:
   - inventario
@@ -38,7 +35,7 @@ Ejemplos típicos:
 | Necesito… | Artículo |
 |-----------|----------|
 | Corregir stock sin compra/venta (rotura, inicial, ajuste) | [Registro de inventario](./inventarios.md) |
-| Contar o ajustar por ubicación en depósito | [Toma de inventario](./inventarios-ubicacion.md) |
+| Contar o ajustar por ubicación en depósito | [Toma inventario](./inventarios-ubicacion.md) |
 | Consultar stock en otra organización | [Consulta de stock inter-org](./productos-consulta-inter-org.md) |
 
 ---
@@ -48,7 +45,7 @@ Ejemplos típicos:
 ```mermaid
 flowchart LR
   Co[Compra Aprobado] --> St[Stock]
-  V[Venta ENTREGADO] --> St
+  V[Venta Entregado] --> St
   Inv[Ajuste inventario] --> St
 ```
 
@@ -67,7 +64,7 @@ Las compras **ingresan** stock; las ventas **entregadas** lo descuentan; el regi
 ## Cómo elegir el artículo correcto
 
 - Si necesitás **corregir stock** sin compra ni venta, usá [Registro de inventario](./inventarios.md).
-- Si necesitás **contar físicamente** por ubicación, usá [Toma de inventario](./inventarios-ubicacion.md).
+- Si necesitás **contar físicamente** por ubicación, usá [Toma inventario](./inventarios-ubicacion.md).
 - Si necesitás **ver stock en otra organización**, usá [Consulta de stock inter-org](./productos-consulta-inter-org.md).
 
 ---

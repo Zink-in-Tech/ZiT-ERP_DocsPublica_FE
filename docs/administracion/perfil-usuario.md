@@ -1,9 +1,7 @@
 ---
-title: Perfil de usuario | Zink ERP
+title: 'Perfil de usuario'
 sidebar_label: Perfil de usuario
-description: >-
-  Desde Perfil de usuario ves y editás tus propios datos de acceso: contraseña,
-  avatar y preferencia de modo claro/oscuro.
+description: 'Desde Perfil de usuario ves y editás tus propios datos de acceso: contraseña, avatar y preferencia de modo claro/oscuro.'
 sidebar_position: 10
 keywords:
   - perfil usuario

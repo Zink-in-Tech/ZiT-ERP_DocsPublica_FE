@@ -1,9 +1,7 @@
 ---
-title: Cotizaciones | Zink ERP
+title: 'Cotizaciones'
 sidebar_label: Cotizaciones
-description: >-
-  Las cotizaciones permiten armar una propuesta comercial mostrando múltiples
-  listas de precios en simultáneo para que el cliente compare opciones.
+description: 'Las cotizaciones permiten armar una propuesta comercial mostrando múltiples listas de precios en simultáneo para que el cliente compare opciones.'
 sidebar_position: 2
 keywords:
   - cotizaciones
@@ -37,7 +35,7 @@ Cotización → Presupuesto → Pedido → Venta
 
 La cotización representa la etapa inicial, donde el cliente evalúa opciones antes de tomar una decisión.
 
-Al pasar a **ACEPTADO**, se genera un presupuesto en **BORRADOR**.
+Al pasar a **Aceptado**, se genera un presupuesto en **Borrador**.
 
 ---
 
@@ -70,7 +68,7 @@ El impacto ocurre recién cuando se convierte en presupuesto.
 
 ## Procedimiento
 
-1. Creá una nueva cotización (formulario **V2**: ver [Formulario de documento V2](../guias/formulario-documento-v2.md)).
+1. Creá una nueva cotización (ver [Formulario de documentos](../guias/formulario-documento-v2.md)).
 2. (Opcional) Seleccioná un **Contacto (Opcional)**.
 3. Completá fechas compactas (**Cotización**, **Días vto**) si aplica.
 4. Agregá productos con **Agregar Producto** o **Listado (F4)**. Cada ítem muestra **cantidad** y **una columna por lista de precios**.
@@ -123,7 +121,7 @@ stateDiagram-v2
   [*] --> Borrador: Crear
   Borrador --> Confirmado: Confirmar
   Confirmado --> Aceptado: Aceptar y elegir lista
-  Aceptado --> [*]: Fin — genera presupuesto BORRADOR
+  Aceptado --> [*]: Fin — genera presupuesto en Borrador
   Confirmado --> Borrador: Rechazar
   Borrador --> Cancelado: Cancelar
   Confirmado --> Cancelado: Cancelar
@@ -158,6 +156,13 @@ No guarda anchos de columnas, orden de columnas, número de página, ordenamient
 
 ---
 
+## Duplicar y compartir
+
+- **Duplicar**: desde **Más acciones** en el listado o con el botón **Duplicar** en el detalle, abrís una cotización nueva con el mismo contacto, productos y cantidades. Ver [Duplicar documentos](../guias/duplicar-documentos.md).
+- **Compartir**: desde el detalle podés copiar un resumen, mandarlo por WhatsApp o email, o descargar el PDF. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md).
+
+---
+
 ## Si algo sale mal
 
 - **No aparecen precios**
@@ -181,6 +186,8 @@ No guarda anchos de columnas, orden de columnas, número de página, ordenamient
 
 ## Ver también
 
-- [Formulario de documento V2](../guias/formulario-documento-v2.md)
+- [Formulario de documentos](../guias/formulario-documento-v2.md)
 - [Presupuestos](./presupuestos.md)
 - [Flujo de ventas](./flujo-ventas.md)
+- [Duplicar documentos](../guias/duplicar-documentos.md)
+- [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md)

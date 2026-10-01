@@ -1,5 +1,5 @@
 ---
-title: Ingresos | Zink ERP
+title: 'Ingresos'
 sidebar_label: Ingresos
 description: Los ingresos permiten registrar entradas de dinero que no provienen de ventas.
 keywords:
@@ -66,10 +66,10 @@ No lo uses para cobrar ventas o deuda de clientes. En esos casos corresponde usa
 
 ## Procedimiento
 
-1. Creá un nuevo ingreso.
+1. Creá un nuevo ingreso desde **Finanzas → Ingresos**, o con el botón **+** de [Caja diaria](./caja-diaria.md#altas-rapidas).
 2. Revisá la fecha.
 3. (Opcional) asociá contacto.
-4. Seleccioná concepto.
+4. Seleccioná el concepto. Si no existe, tocá el engranaje **Gestionar conceptos** junto al campo **Concepto** para crearlo sin salir del formulario (ver [Conceptos](../administracion/conceptos.md)).
 5. Ingresá importe.
 6. Agregá observación si ayuda a justificar el movimiento.
 7. Confirmá.

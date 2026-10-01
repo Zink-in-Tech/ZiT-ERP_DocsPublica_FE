@@ -1,9 +1,7 @@
 ---
-title: Impuestos | Zink ERP
+title: 'Impuestos'
 sidebar_label: Impuestos
-description: >-
-  Los impuestos permiten definir cargas o tributos que se aplican sobre los
-  productos.
+description: 'Los impuestos permiten definir cargas o tributos que se aplican sobre los productos.'
 sidebar_position: 6
 keywords:
   - impuestos

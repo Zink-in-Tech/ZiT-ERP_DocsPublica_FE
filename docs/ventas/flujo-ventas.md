@@ -1,9 +1,7 @@
 ---
-title: 'Flujo de ventas: de la cotización a la venta final | Zink ERP'
+title: 'Flujo de ventas: de la cotización a la venta final'
 sidebar_label: Flujo de ventas
-description: >-
-  El flujo de ventas en ZinK ERP organiza el proceso comercial desde una
-  propuesta inicial hasta la concreción de la venta.
+description: 'El flujo de ventas en Zink ERP organiza el proceso comercial desde una propuesta inicial hasta la concreción de la venta.'
 sidebar_position: 1
 keywords:
   - flujo de ventas
@@ -14,11 +12,11 @@ keywords:
 
 ## Resumen
 
-El flujo de ventas en ZinK ERP organiza el proceso comercial desde una propuesta inicial hasta la concreción de la venta.
+El flujo de ventas en Zink ERP organiza el proceso comercial desde una propuesta inicial hasta la concreción de la venta.
 
 Está dividido en etapas que permiten avanzar progresivamente según el nivel de definición de la operación.
 
-Cada vez que avanzás en el flujo, el sistema genera automáticamente el siguiente documento en estado BORRADOR y mantiene la relación entre ellos.
+Cada vez que avanzás en el flujo, el sistema genera automáticamente el siguiente documento en estado Borrador y mantiene la relación entre ellos.
 
 ---
 
@@ -39,12 +37,12 @@ Cotización → Presupuesto → Pedido → Venta
 ```mermaid
 flowchart LR
   C[Cotización] --> P[Presupuesto] --> Pe[Pedido] --> V[Venta]
-  C -.->|ACEPTADO| P
-  P -.->|ACEPTADO| Pe
-  Pe -.->|PREPARADO| V
+  C -.->|Aceptado| P
+  P -.->|Aceptado| Pe
+  Pe -.->|Preparado| V
 ```
 
-Cada flecha punteada representa la **generación automática** del siguiente documento en estado **BORRADOR**.
+Cada flecha punteada representa la **generación automática** del siguiente documento en estado **Borrador**.
 
 ### Variantes del flujo
 
@@ -59,7 +57,7 @@ flowchart TB
   end
 ```
 
-No existe un atajo del sistema que genere **venta** desde **presupuesto** sin pasar por **pedido**. En el flujo por etapas, la venta se crea al marcar el pedido como **PREPARADO** (en **BORRADOR**) o podés registrar una **venta directa** / **POS** sin etapas previas.
+No existe un atajo del sistema que genere **venta** desde **presupuesto** sin pasar por **pedido**. En el flujo por etapas, la venta se crea al marcar el pedido como **Preparado** (en **Borrador**) o podés registrar una **venta directa** / **POS** sin etapas previas.
 
 ---
 
@@ -68,7 +66,7 @@ No existe un atajo del sistema que genere **venta** desde **presupuesto** sin pa
 Cada vez que avanzás en el proceso:
 
 - Se genera un nuevo documento
-- El nuevo documento queda en estado BORRADOR
+- El nuevo documento queda en estado Borrador
 - Se mantiene la relación con el documento anterior
 
 Esto permite trazabilidad completa, control por etapas y ajustes antes de cerrar la venta.
@@ -115,7 +113,7 @@ Usá **Preparar** → **Confirmar preparado**. Al quedar **Preparado**, se gener
 - Puede abrir el cobro si el cliente o la configuración requieren pago inmediato
 - Despacho: acción **Despachar** → estado **Despachado**
 
-Detalle en [Ventas](./ventas.md). Los formularios rediseñados (excepto POS) se explican en [Formulario de documento V2](../guias/formulario-documento-v2.md).
+Detalle en [Ventas](./ventas.md). Los formularios de documentos (excepto POS) se explican en [Formulario de documentos](../guias/formulario-documento-v2.md).
 
 ---
 
@@ -163,10 +161,10 @@ Mismo recorrido por etapas; el pedido organiza la preparación antes de la venta
 
 | Documento   | Estado inicial | Estado final exitoso | Al rechazar      |
 |-------------|----------------|----------------------|------------------|
-| Cotización  | BORRADOR       | ACEPTADO             | —                |
-| Presupuesto | BORRADOR       | ACEPTADO             | Vuelve a BORRADOR |
-| Pedido      | BORRADOR       | PREPARADO            | Vuelve a BORRADOR |
-| Venta       | BORRADOR       | ENTREGADO            | Vuelve a BORRADOR |
+| Cotización  | Borrador       | Aceptado             | —                |
+| Presupuesto | Borrador       | Aceptado             | Vuelve a Borrador |
+| Pedido      | Borrador       | Preparado            | Vuelve a Borrador |
+| Venta       | Borrador       | Entregado            | Vuelve a Borrador |
 
 El detalle de cada ciclo está en el artículo de la entidad.
 
@@ -180,18 +178,18 @@ El detalle de cada ciclo está en el artículo de la entidad.
 - **No aparece la acción para avanzar**
   - Separá permiso de menú vs permiso de acción (crear, confirmar, aceptar, preparar, cobrar).
 - **El documento hijo no se generó**
-  - Verificá que el padre esté en el estado final de su etapa (cotización **ACEPTADO**, presupuesto **ACEPTADO**, pedido **PREPARADO**).
+  - Verificá que el padre esté en el estado final de su etapa (cotización **Aceptado**, presupuesto **Aceptado**, pedido **Preparado**).
 - **Datos incorrectos en la venta**
   - Revisá la información en las etapas anteriores.
 - **Problemas con stock**
-  - Verificá la configuración de los productos y el estado **ENTREGADO** de la venta.
+  - Verificá la configuración de los productos y el estado **Entregado** de la venta.
 
 ---
 
 ## Buenas prácticas
 
 - No confirmes una etapa si los precios o cantidades aún se negocian: usá cotización o presupuesto según corresponda.
-- Antes de marcar un pedido como **PREPARADO**, revisá stock disponible en depósito.
+- Antes de marcar un pedido como **Preparado**, revisá stock disponible en depósito.
 - Registrá el cobro en el momento solo cuando el cliente y las preferencias lo exijan; si no, la deuda queda trazable en cuenta corriente.
 
 ---

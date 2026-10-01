@@ -1,9 +1,7 @@
 ---
-title: 'Toma de inventario por ubicación: conteo y actualización de stock | Zink ERP'
-sidebar_label: Toma de inventario
-description: >-
-  La toma de inventario permite registrar el conteo físico de productos y
-  actualizar el stock en una sola operación.
+title: 'Toma inventario: conteo físico por ubicación'
+sidebar_label: Toma inventario
+description: 'La toma de inventario permite registrar el conteo físico de productos y actualizar el stock en una sola operación.'
 keywords:
   - toma de inventario
   - conteo físico
@@ -17,7 +15,9 @@ sidebar_position: 3
 
 ## Resumen
 
-La toma de inventario permite registrar el conteo físico de productos y actualizar el stock en una sola operación.
+En **Inventario → Toma inventario** registrás el conteo físico de productos por ubicación y actualizás el stock en una sola operación.
+
+Para contar un solo producto sin salir de su ficha, usá **Ajustar stock** desde [Productos](../administracion/productos.md#acciones-de-la-ficha-ajustar-stock-y-tomar-inventario).
 
 Es una herramienta para sincronizar el sistema con la realidad del depósito.
 
@@ -67,10 +67,10 @@ Usala cuando:
 
 ## Procedimiento
 
-Entrá desde **Inventario → Toma de inventario**.
+Entrá desde **Inventario → Toma inventario**. En la pantalla vas a ver el título **Inventario / Toma de Inventario**.
 
 1. Ingresá la ubicación.
-2. Buscá productos por descripción, código o listado.
+2. Buscá productos por descripción, código o listado. También podés tocar **Escanear código de barras** en cada ítem y leer el código con la cámara del celular (ver [Escanear con la cámara](../guias/escanear-codigos-con-camara.md)).
 3. Ingresá la cantidad real contada.
 4. Agregá todos los productos de la ubicación.
 5. Confirmá.
@@ -83,7 +83,7 @@ Si el sistema detecta diferencias entre stock actual y stock informado, puede mo
 
 | Herramienta | Cuándo usarla |
 |-------------|---------------|
-| Toma de inventario | Para conteos físicos por ubicación o correcciones de varios productos. |
+| Toma inventario | Para conteos físicos por ubicación o correcciones de varios productos. |
 | Registro de inventario | Para ajustes puntuales de uno o pocos productos. |
 
 En conteos grandes, la toma de inventario es más segura porque obliga a trabajar por ubicación y reduce ajustes aislados sin contexto.

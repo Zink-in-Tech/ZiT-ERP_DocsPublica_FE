@@ -1,10 +1,7 @@
 ---
-title: 'POS en Zink ERP: ventas rápidas, cobro inmediato y mostrador | Zink ERP'
+title: 'POS: venta rápida y cobro en mostrador'
 sidebar_label: POS (Punto de venta)
-description: >-
-  Operá ventas rápidas en mostrador con POS en Zink ERP: carga de productos,
-  cobro inmediato, lectura con código de barras y control de errores
-  frecuentes.
+description: 'Operá ventas rápidas en mostrador con POS en Zink ERP: carga de productos, cobro inmediato, lectura con código de barras y control de errores frecuentes.'
 keywords:
   - POS
   - punto de venta
@@ -184,7 +181,6 @@ Acción **Finalizar (F2)** para cerrar la venta y avanzar al cobro.
 
 Si el botón aparece deshabilitado, revisá que haya productos cargados y que el usuario tenga permiso para realizar cobro en ventas. Mientras se guarda (**Guardando…**), **Finalizar** queda bloqueado para evitar doble envío.
 
-> **Capturas:** las imágenes de esta página pueden mostrar un layout anterior. Los labels y atajos de la tabla de arriba son el criterio actual; conviene reemplazar `pos-01`…`pos-06` cuando haya pantallazos nuevos.
 
 ---
 
@@ -254,7 +250,7 @@ Es ideal en negocios donde:
   - Probá con código de barras, descripción o **[F4] Listado**.
 
 - **La lectura de balanza o código variable no coincide**
-  - Revisá el producto base, el código leído y el circuito documentado en las guías de códigos variables.
+  - Revisá el producto base, el código leído y el circuito que explican las guías de códigos variables.
 
 ![Mensaje de POS cuando no se encuentra un producto por código o descripción](/img/ayuda/ventas/pos-06-producto-no-encontrado.png)
 

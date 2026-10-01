@@ -1,9 +1,7 @@
 ---
-title: 'Listas de precio: clientes, POS y ventas | Zink ERP'
+title: 'Listas de precio: clientes, POS y ventas'
 sidebar_label: 'Listas de precio: clientes, POS y ventas'
-description: >-
-  Las listas de precio definen qué valor usa Zink ERP para vender, cotizar o
-  consultar un producto en cada contexto comercial.
+description: 'Las listas de precio definen qué valor usa Zink ERP para vender, cotizar o consultar un producto en cada contexto comercial.'
 sidebar_position: 72
 keywords:
   - listas de precio

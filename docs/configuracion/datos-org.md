@@ -1,10 +1,7 @@
 ---
-title: 'Datos de la organización: razón social, CUIT y domicilios | Zink ERP'
-sidebar_label: Datos de la Organización
-description: >-
-  Configurás los datos de la organización que aparecen en facturas y
-  comprobantes. Impactan todos los comprobantes emitidos: deben coincidir con tu
-  situación fiscal.
+title: 'Datos de la organización: razón social y CUIT'
+sidebar_label: Datos de la organización
+description: 'Configurá los datos de la organización que aparecen en facturas y comprobantes. Tienen que coincidir con tu situación fiscal.'
 sidebar_position: 71
 keywords:
   - datos organización

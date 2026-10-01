@@ -1,9 +1,7 @@
 ---
-title: Órdenes de compra | Zink ERP
+title: 'Órdenes de compra'
 sidebar_label: Órdenes de compra
-description: >-
-  Las órdenes de compra permiten registrar lo que se le solicita a un proveedor
-  antes de concretar la compra.
+description: 'Las órdenes de compra permiten registrar lo que se le solicita a un proveedor antes de concretar la compra.'
 slug: /compras/orden-compra
 keywords:
   - órdenes de compra
@@ -72,7 +70,7 @@ Usá órdenes de compra cuando:
 
 ## Procedimiento
 
-1. Creá una nueva orden de compra (formulario **V2** si está activo; ver [Formulario de documento V2](../guias/formulario-documento-v2.md)).
+1. Creá una nueva orden de compra (ver [Formulario de documentos](../guias/formulario-documento-v2.md)).
 2. Seleccioná el **proveedor** (contacto).
 3. Completá **Fecha Orden de Compra** y, si corresponde, **Enviar comprobante**.
 4. Agregá ítems con **Agregar Items**, **Listado (F4)** o escaneo/búsqueda. Podés usar **Stock crítico** y **Faltantes** como ayudas.
@@ -137,7 +135,7 @@ stateDiagram-v2
   [*] --> Borrador: Crear
   Borrador --> Confirmado: Confirmar
   Confirmado --> Aprobado: Aprobar
-  Aprobado --> [*]: Fin — genera compra BORRADOR
+  Aprobado --> [*]: Fin — genera compra en Borrador
   Borrador --> Cancelado: Cancelar
   Confirmado --> Cancelado: Cancelar
   Confirmado --> Borrador: Rechazar
@@ -176,6 +174,12 @@ Usalas cuando:
 
 ---
 
+## Compartir
+
+- **Compartir**: desde el detalle podés copiar un resumen, mandarlo por WhatsApp o email, o descargar el PDF. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md).
+
+---
+
 ## Si algo sale mal
 
 - **Datos incorrectos**
@@ -203,6 +207,7 @@ Usalas cuando:
 
 - [Compras](./compras.md)
 - [Flujo de compras](./flujo-compras.md)
-- [Formulario de documento V2](../guias/formulario-documento-v2.md)
+- [Formulario de documentos](../guias/formulario-documento-v2.md)
 - [Productos](../administracion/productos.md)
 - [Perfiles](../administracion/perfiles.md)
+- [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md)

@@ -1,39 +1,36 @@
 ---
-title: >-
-  Recepción de cambios de precio: aplicar actualizaciones en sucursales | Zink
-  ERP
-sidebar_label: Recepción de Notificación de cambio de Precio
-description: >-
-  Permite recibir actualizaciones de precios enviadas por la central y decidir
-  si aplicarlas total o parcialmente. Solo se actualizan los productos
-  aceptados.
+title: 'Recibir cambios de precio en sucursales'
+sidebar_label: Recibir cambios de precio
+description: 'Revisá los cambios de precio que envió la central y aceptalos total o parcialmente. Solo se actualizan los productos que aceptás.'
 sidebar_position: 13
 keywords:
   - recibir precios
   - aceptar precios central
   - notificación precios
+  - notificaciones recibidas
 ---
 
 ## Resumen
 
-Permite recibir actualizaciones de precios enviadas por la central y decidir si aplicarlas total o parcialmente.
+Cuando la central usa [Notificar precios](./notificar-cambio-precio.md), cada sucursal o franquicia recibe una notificación con los productos que cambiaron.
 
-Solo se actualizan los productos aceptados.
+Desde ahí decidís qué precios aplicar. Solo se actualizan los productos que aceptás.
 
 ---
 
 ## Antes de empezar
 
-- Revisá la notificación recibida.
+- Tu perfil necesita permiso para ver las notificaciones recibidas. Revisalo en [Perfiles](./perfiles.md).
+- Si tenés dudas sobre un precio, consultalo con la central antes de aceptarlo.
 
 ---
 
 ## Procedimiento
 
-1. Revisar notificación.
-2. Analizar ítems.
-3. Aceptar o rechazar total o parcialmente.
-4. Confirmar.
+1. Abrí la notificación desde la campana de notificaciones del encabezado, o desde el listado de notificaciones recibidas en el menú **Administración**.
+2. En la pantalla **Notificación cambio precio**, revisá la fecha, la observación de la central y la tabla de productos.
+3. En la columna **Aceptar**, marcá los productos cuyo nuevo precio querés aplicar. Desmarcá los que no.
+4. Guardá. Los precios de los productos aceptados se actualizan en tu lista.
 
 ---
 
@@ -41,18 +38,22 @@ Solo se actualizan los productos aceptados.
 
 ### Aceptación parcial
 
-Se actualizan solo algunos productos.
+Aceptás solo algunos productos, por ejemplo porque tenés una promoción vigente en otros. Los que no aceptás mantienen su precio actual.
 
 ---
 
 ## Si algo sale mal
 
-- **Precios incorrectos**
-  - Revisar antes de aceptar.
+- **No veo la notificación**
+  - Revisá la campana de notificaciones y el listado de notificaciones recibidas.
+  - Confirmá con la central que la notificación se haya enviado a tu organización.
+- **Acepté un precio incorrecto**
+  - Corregilo en el producto o pedile a la central que envíe una nueva notificación con el precio correcto.
 
 ---
 
 ## Ver también
 
+- [Notificar precios](./notificar-cambio-precio.md)
+- [Multi-sucursal](./multi-sucursal.md)
 - [Administración](./administracion.md)
-- [Notificación de cambio de precio](./notificar-cambio-precio.md)

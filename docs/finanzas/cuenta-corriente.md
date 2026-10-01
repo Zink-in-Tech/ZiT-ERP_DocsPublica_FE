@@ -1,9 +1,7 @@
 ---
-title: Cuenta corriente | Zink ERP
+title: 'Cuenta corriente'
 sidebar_label: Cuenta corriente
-description: >-
-  Consultá saldo y movimientos por contacto, abrí comprobantes, compartí el
-  saldo y registrá cobros o pagos según permisos.
+description: 'Consultá saldo y movimientos por contacto, abrí comprobantes, compartí el saldo y registrá cobros o pagos según permisos.'
 keywords:
   - cuenta corriente
   - deuda clientes

@@ -1,9 +1,7 @@
 ---
-title: Presupuestos | Zink ERP
+title: 'Presupuestos'
 sidebar_label: Presupuestos
-description: >-
-  Los presupuestos permiten formalizar una propuesta comercial con precios
-  definidos y condiciones claras.
+description: 'Los presupuestos permiten formalizar una propuesta comercial con precios definidos y condiciones claras.'
 sidebar_position: 3
 ---
 
@@ -31,7 +29,7 @@ Cotización → Presupuesto → Pedido → Venta
 
 El presupuesto es la etapa donde se formaliza la propuesta.
 
-👉 Al aceptar, se genera un pedido en BORRADOR.
+👉 Al aceptar, se genera un pedido en Borrador.
 
 ---
 
@@ -61,7 +59,7 @@ Usá presupuestos cuando:
 
 ## Procedimiento
 
-1. Creá un presupuesto (formulario **V2**: [Formulario de documento V2](../guias/formulario-documento-v2.md)).
+1. Creá un presupuesto (ver [Formulario de documentos](../guias/formulario-documento-v2.md)).
 2. Seleccioná el contacto.
 3. Completá **Presupuesto**, **Días vto** y, si corresponde, activá **Plantilla** / **Nombre de Plantilla** y **Enviar comprobante**.
 4. Agregá ítems (**Agregar Items** o **Listado F4**): lista, precio, cantidad, descuento, impuesto.
@@ -95,7 +93,7 @@ stateDiagram-v2
   Borrador --> Confirmado: Confirmar
   Confirmado --> Aceptado: Aceptar
   Confirmado --> Borrador: Rechazar
-  Aceptado --> [*]: Fin — genera pedido BORRADOR
+  Aceptado --> [*]: Fin — genera pedido en Borrador
   Borrador --> Cancelado: Cancelar
   Confirmado --> Cancelado: Cancelar
   Cancelado --> [*]: Fin — flujo cerrado
@@ -127,6 +125,13 @@ Usalos cuando:
 
 ---
 
+## Duplicar y compartir
+
+- **Duplicar**: desde **Más acciones** en el listado o con el botón **Duplicar** en el detalle, abrís un presupuesto nuevo con el mismo contacto, productos y cantidades. Ver [Duplicar documentos](../guias/duplicar-documentos.md).
+- **Compartir**: desde el detalle podés copiar un resumen, mandarlo por WhatsApp o email, o descargar el PDF. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md).
+
+---
+
 ## Si algo sale mal
 
 - **No podés aceptar el presupuesto**
@@ -148,7 +153,9 @@ Usalos cuando:
 
 ## Ver también
 
-- [Formulario de documento V2](../guias/formulario-documento-v2.md)
+- [Formulario de documentos](../guias/formulario-documento-v2.md)
 - [Cotizaciones](./cotizaciones.md)
 - [Pedidos](./pedidos.md)
 - [Flujo de ventas](./flujo-ventas.md)
+- [Duplicar documentos](../guias/duplicar-documentos.md)
+- [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md)

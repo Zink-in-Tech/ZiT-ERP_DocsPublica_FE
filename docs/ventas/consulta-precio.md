@@ -1,10 +1,7 @@
 ---
-title: 'Consulta de precios: listas, stock visible y atención en mostrador | Zink ERP'
+title: 'Consulta de precios: listas y stock en mostrador'
 sidebar_label: Consulta de precios
-description: >-
-  La consulta de precios muestra valores según las listas configuradas en
-  Preferencias. Podés usarla en mostrador, depósito o en un punto de consulta
-  para clientes.
+description: 'La consulta de precios muestra valores según las listas configuradas. Usala en mostrador, depósito o en un punto de consulta para clientes.'
 sidebar_position: 10
 keywords:
   - consulta de precios

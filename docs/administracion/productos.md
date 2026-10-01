@@ -1,10 +1,7 @@
 ---
-title: 'Productos en Zink ERP: catálogo, datos comerciales y stock | Zink ERP'
+title: 'Productos: catálogo, precios y stock'
 sidebar_label: Productos
-description: >-
-  Configurá productos en Zink ERP con precios, stock, códigos, listas, costo
-  multi-moneda (ARS/USD) y recálculo de precios para operar mejor en POS,
-  ventas, compras e inventario.
+description: 'Configurá productos en Zink ERP: precios, stock, códigos, listas y costo en ARS o USD, y ajustá stock o tomá inventario desde la ficha.'
 keywords:
   - productos
   - artículos
@@ -67,6 +64,8 @@ Usá productos cuando necesitás:
 
 ## Procedimiento
 
+![Listado de Productos con código, código de barras, descripción, stock, precio y fecha de última actualización](/img/ayuda/administracion/productos-01.png)
+
 ### Alta rápida
 
 Usala cuando necesitás cargar un producto durante una operación y seguir trabajando sin completar toda la ficha.
@@ -100,6 +99,43 @@ Usala para dejar el producto listo para ventas, compras, inventario e informes.
 5. Agregá etiquetas útiles.
 6. Guardá y probá el producto desde [Consulta de precios](../ventas/consulta-precio.md) o POS.
 
+### Acciones de la ficha: ajustar stock y tomar inventario
+
+![Ficha de producto con los botones Ajustar stock y Tomar inventario arriba a la izquierda, y el ícono de cámara en el campo Código de barras](/img/ayuda/administracion/productos-02-ficha.png)
+
+Con el producto ya guardado, arriba a la izquierda de la ficha aparece la barra **Acciones del producto**. Desde ahí podés corregir el stock sin salir del producto.
+
+| Acción | Qué hace | Permiso |
+|--------|----------|---------|
+| **Ajustar stock** | Abre un diálogo para registrar el **conteo** del producto en una ubicación. Es el mismo registro que hacés en **Inventario → Toma inventario**. | Acceso a **Toma inventario**. |
+| **Tomar inventario** | Abre el alta de un movimiento de inventario (**Inventarios / Crear**) con el producto ya cargado en el primer ítem. | Alta de inventarios. |
+
+#### Ajustar stock
+
+1. Abrí la ficha del producto.
+2. Tocá **Ajustar stock**.
+3. Revisá el bloque **Producto** (descripción, código y código de barras).
+4. Completá **Ubicación** (viene cargada con la ubicación del producto; por ejemplo, *Depósito A - Estante 1*).
+5. Cargá el **Stock contado**. Tiene que ser mayor a 0.
+6. Mirá debajo el **Stock sistema** y la **Diferencia** (en verde si sobra, en rojo si falta).
+7. Tocá **Registrar conteo**.
+
+Si el stock contado no coincide con el del sistema, Zink ERP te muestra **Diferencia entre el stock contado y el del sistema**. Revisá los valores y, si son correctos, tocá **Registrar de todas formas**. Al terminar vas a ver **Inventario guardado con éxito.** y el stock actualizado en la ficha.
+
+#### Tomar inventario
+
+1. Abrí la ficha del producto.
+2. Tocá **Tomar inventario**.
+3. En **Inventarios / Crear**, elegí el **Tipo de movimiento** y el **Tipo de evento**.
+4. Cargá la **Cantidad** del producto (y otros productos, si querés).
+5. Guardá el movimiento.
+
+Ver [Registro de inventario](../inventario/inventarios.md) y [Toma inventario](../inventario/inventarios-ubicacion.md).
+
+### Escanear el código de barras con la cámara
+
+En el campo **Código de barras** (en la ficha y en el alta rápida) hay un ícono de cámara: **Escanear código de barras con la cámara**. Apuntá al código EAN-13 y Zink ERP lo completa solo; si el producto figura en Open Food Facts, también intenta traer sus datos. Ver [Escanear con la cámara](../guias/escanear-codigos-con-camara.md).
+
 ### Validación mínima recomendada
 
 Antes de dar por listo un producto nuevo:
@@ -108,12 +144,6 @@ Antes de dar por listo un producto nuevo:
 2. probalo en [POS](../ventas/pos.md) o [Ventas](../ventas/ventas.md);
 3. validá que el precio, la descripción y el comportamiento sean correctos;
 4. si aplica, probá lectura con código de barras o código variable.
-
----
-
-## Tipos de producto
-
-La documentación publicada hoy se centra en productos de catálogo usados en ventas, compras e inventario. Si en tu operación aparecen tipos especiales o reglas distintas, conviene validarlas con el equipo antes de aplicarlas en producción.
 
 ---
 
@@ -130,7 +160,7 @@ El stock del producto se usa en ventas, POS, pedidos, compras, inventarios e inf
 
 Si la organización tiene manejo de stock activo, ventas y POS pueden validar la cantidad disponible antes de confirmar.
 
-Para cambiar stock por una diferencia física, preferí [Registro de inventario](../inventario/inventarios.md) o [Toma de inventario](../inventario/inventarios-ubicacion.md) en lugar de editar sin revisar el origen.
+Para cambiar stock por una diferencia física, usá **Ajustar stock** o **Tomar inventario** desde la ficha, o las pantallas de [Registro de inventario](../inventario/inventarios.md) y [Toma inventario](../inventario/inventarios-ubicacion.md), en lugar de editar sin revisar el origen.
 
 Para dejar **varios productos** con el mismo stock (por ejemplo 0), usá **Reiniciar stock** en [Actualización masiva de productos](./productos-actualizacion-masiva.md). Esa acción genera un movimiento de inventario y se aplica aunque haya stock reservado.
 
@@ -144,7 +174,7 @@ El [Registro de inventario](../inventario/inventarios.md) es preferible cuando q
 
 ---
 
-## Costo y recálculo de precios
+## Costo y recálculo de precios {#costo-y-recalculo-de-precios}
 
 El costo es el precio de compra por unidad. Sirve para márgenes, reposición e informes, y es la base de las [listas de precio](../configuracion/listas-precio.md) en modo automático.
 
@@ -291,7 +321,7 @@ Alta rápida sirve para no frenar una operación. La ficha completa conviene par
 
 ### ¿Puedo corregir stock desde el producto?
 
-Para carga inicial puede servir. Para diferencias operativas conviene usar [Registro de inventario](../inventario/inventarios.md). Si necesitás poner el mismo stock en varios productos, usá **Reiniciar stock** en [Actualización masiva](./productos-actualizacion-masiva.md).
+Sí. Usá **Ajustar stock** para registrar un conteo o **Tomar inventario** para cargar un movimiento con el producto ya seleccionado. Ver [Acciones de la ficha](#acciones-de-la-ficha-ajustar-stock-y-tomar-inventario). Si necesitás poner el mismo stock en varios productos, usá **Reiniciar stock** en [Actualización masiva](./productos-actualizacion-masiva.md).
 
 ### ¿Qué hago si vendo productos por peso?
 
@@ -324,6 +354,9 @@ No. Es el valor inicial al **crear** productos. Después manda el interruptor de
 - [Ventas](../ventas/ventas.md)
 - [Compras](../compras/compras.md)
 - [Registro de inventario](../inventario/inventarios.md)
+- [Toma inventario](../inventario/inventarios-ubicacion.md)
+- [Escanear con la cámara](../guias/escanear-codigos-con-camara.md)
+- [Importación de productos](./productos-importacion-masiva.md)
 - [Actualización masiva de productos](./productos-actualizacion-masiva.md)
 - [Consulta de stock](../inventario/productos-consulta-inter-org.md)
 - [Cómo configurar tu primer producto](../guias/como-configurar-tu-primer-producto.md)

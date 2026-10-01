@@ -1,8 +1,6 @@
 ---
-title: 'Compras en Zink ERP: mercadería, pagos y cuenta corriente | Zink ERP'
-description: >-
-  Registrá compras en Zink ERP con ingreso de mercadería, pago a proveedores,
-  stock y cuenta corriente, ya sea desde una orden o como compra directa.
+title: 'Compras: mercadería, pagos y cuenta corriente'
+description: 'Registrá compras en Zink ERP con ingreso de mercadería, pago a proveedores, stock y cuenta corriente, ya sea desde una orden o como compra directa.'
 sidebar_label: Compras
 keywords:
   - compras
@@ -74,6 +72,8 @@ La compra es la etapa final del proceso.
 
 ## Procedimiento
 
+![Listado de Compras con comprobante, proveedor, importe, fechas y estado de cada compra](/img/ayuda/compras/compras-01.png)
+
 ### Paso 1: Crear la compra
 
 1. Creá una nueva compra o generala al **Aprobar** una [orden de compra](./orden-compras.md).
@@ -82,7 +82,7 @@ La compra es la etapa final del proceso.
 
 ### Paso 2: Cargar productos y condiciones
 
-4. Agregá productos, cantidades, descuentos e impuestos (formulario **V2**: ver [Formulario de documento V2](../guias/formulario-documento-v2.md)).
+4. Agregá productos, cantidades, descuentos e impuestos (ver [Formulario de documentos](../guias/formulario-documento-v2.md)).
 5. Por cada ítem, indicá si querés **Actualiza Costo** del producto (hay switch **Todos** para marcar todos). Ver sección siguiente.
 6. Revisá vencimientos u observación si aplica.
 7. Guardá con **Guardar (F2)** o **Guardar y Nuevo**. Atajos **/** y **\*** (precio/cantidad del ítem anterior) funcionan si la preferencia de accesos rápidos está activa.
@@ -233,6 +233,12 @@ Es ideal en situaciones como:
 
 ---
 
+## Compartir
+
+- **Compartir**: desde el detalle podés copiar un resumen, mandarlo por WhatsApp o email, o descargar el PDF. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md).
+
+---
+
 ## Si algo sale mal
 
 - **Stock incorrecto**
@@ -304,11 +310,11 @@ No. La preferencia **Actualizar listas de precio al actualizar costo** solo defi
 
 - [Órdenes de compra](./orden-compras.md)
 - [Flujo de compras](./flujo-compras.md)
-- [Formulario de documento V2](../guias/formulario-documento-v2.md)
+- [Formulario de documentos](../guias/formulario-documento-v2.md)
 - [Recepción de mercadería](./recepcion-mercaderia.md)
-- [Notas de crédito de compras](./notas-credito-compras.md)
 - [Productos — costo y recálculo](../administracion/productos.md#costo-y-recalculo-de-precios)
 - [Preferencias](../configuracion/preferencias.md#actualizar-listas-de-precio-al-actualizar-costo)
 - [Pagos](../finanzas/pagos.md)
 - [Cuenta corriente](../finanzas/cuenta-corriente.md)
 - [Caja diaria](../finanzas/caja-diaria.md)
+- [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md)

@@ -1,8 +1,6 @@
 ---
-title: 'Ventas en Zink ERP: entrega, cobro, stock y cuenta corriente | Zink ERP'
-description: >-
-  Gestioná ventas en Zink ERP con control de stock, cobro, estados y cuenta
-  corriente, ya sea desde pedido o como venta directa.
+title: 'Ventas: entrega, cobro, stock y cuenta corriente'
+description: 'Gestioná ventas en Zink ERP con control de stock, cobro, estados y cuenta corriente, ya sea desde pedido o como venta directa.'
 sidebar_label: Ventas
 keywords:
   - ventas
@@ -60,7 +58,7 @@ La venta es la última etapa del proceso:
 
 Cotización → Presupuesto → Pedido → **Venta**
 
-- Puede generarse automáticamente desde un pedido en estado PREPARADO.
+- Puede generarse automáticamente desde un pedido en estado Preparado.
 - También puede crearse directamente sin pasar por etapas anteriores.
 
 ---
@@ -69,7 +67,7 @@ Cotización → Presupuesto → Pedido → **Venta**
 
 **La venta:**
 
-- ✔️ Descarga stock (al marcar ENTREGADO)
+- ✔️ Descarga stock (al marcar Entregado)
 - ✔️ Impacta cuenta corriente (según cliente)
 - ✔️ Puede generar comprobante
 - ❌ No es editable una vez confirmada (según estado)
@@ -77,6 +75,8 @@ Cotización → Presupuesto → Pedido → **Venta**
 ---
 
 ## Procedimiento
+
+![Listado de Ventas con comprobante, contacto, importe, fechas, estado y estado de pago de cada venta](/img/ayuda/ventas/ventas-01.png)
 
 ### Paso 1: Crear la venta
 
@@ -90,7 +90,7 @@ Cotización → Presupuesto → Pedido → **Venta**
 
 ### Paso 3: Cargar productos
 
-5. Agregá productos y cantidades en el formulario **V2** ([Formulario de documento V2](../guias/formulario-documento-v2.md)). Labels compactos: **Venta**, **Entrega**, **Días cobro** (con `Vence:`). Si viene de un pedido, verás **Pedido origen: …**.
+5. Agregá productos y cantidades en el formulario ([Formulario de documentos](../guias/formulario-documento-v2.md)). Labels compactos: **Venta**, **Entrega**, **Días cobro** (con `Vence:`). Si viene de un pedido, verás **Pedido origen: …**.
 6. Ajustá precios, descuentos, recargos o envío si corresponde y tenés permisos.
 
 ### Paso 4: Confirmar
@@ -137,7 +137,7 @@ Cuando el cobro se registra correctamente, el sistema puede abrir el comprobante
 Desde la **consulta del comprobante** (abrí la venta por el número o el menú del listado) podés:
 
 - **Enviar por correo** el PDF al email del contacto (nativo y fiscal en el mismo mensaje, si hay documento fiscal). Si ya se envió, la acción pasa a **Enviar nuevamente**.
-- En vista **Fiscal** con facturación **ARCA**, elegir formato **Ticket** o **A4** (diseño propio de ZinkERP). Las organizaciones con Facturante siguen con su PDF habitual.
+- En vista **Fiscal** con facturación **ARCA**, elegir formato **Ticket** o **A4** (diseño propio de Zink ERP). Si tu organización todavía emite con la integración legada de Facturante, el PDF fiscal sigue siendo el habitual.
 
 Si el usuario confirma una venta con contacto y el proceso de pago es diferido, la deuda queda asociada a la cuenta corriente del contacto y puede cobrarse luego desde Finanzas, Cuenta corriente o Pagos.
 
@@ -194,7 +194,7 @@ Se crea una venta sin pasar por cotización, presupuesto o pedido.
 
 ### Venta en mostrador
 
-Se registra con pago inmediato y puede marcarse directamente como ENTREGADO.
+Se registra con pago inmediato y puede marcarse directamente como Entregado.
 
 El cobro en este tipo de venta depende del permiso para **realizar cobro en ventas**.
 
@@ -234,6 +234,14 @@ Desde el detalle de una venta, el listado de pagos muestra medio de pago (con da
 
 ---
 
+## Duplicar y compartir
+
+- **Duplicar**: desde **Más acciones** en el listado o con el botón **Duplicar** en el detalle, abrís una venta nueva con el mismo contacto, productos y cantidades. Ver [Duplicar documentos](../guias/duplicar-documentos.md).
+- **Compartir**: desde el detalle podés copiar un resumen, mandarlo por WhatsApp o email, o descargar el PDF. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md).
+- **Enviar por correo**: desde **Ver comprobante**, el ícono de sobre manda el comprobante al email del cliente. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md#enviar-por-correo).
+
+---
+
 ## Si algo sale mal
 
 - **No se abre el formulario de cobro**
@@ -246,7 +254,7 @@ Desde el detalle de una venta, el listado de pagos muestra medio de pago (con da
   - Verificá que la suma de medios de pago coincida con el total.
   - Si usás Mercado Pago, el pago debe estar aprobado antes de guardar.
 
-- **No podés marcar como ENTREGADO**
+- **No podés marcar como Entregado**
   - Verificá que el pago esté cargado (Consumidor Final).
   - Si no podés registrar el cobro, revisá el permiso para realizar cobro en ventas.
 
@@ -275,7 +283,7 @@ POS es para operación rápida en mostrador. Ventas sirve mejor para circuitos c
 
 ### ¿Cuándo impacta el stock?
 
-Según el flujo documentado, al marcar la venta como **ENTREGADO**.
+Al marcar la venta como **Entregado**.
 
 ### ¿Puedo cobrar después?
 
@@ -285,7 +293,7 @@ Sí, si la configuración y el tipo de cliente permiten proceso de pago diferido
 
 ## Ver también
 
-- [Formulario de documento V2](../guias/formulario-documento-v2.md)
+- [Formulario de documentos](../guias/formulario-documento-v2.md)
 - [Pedidos](./pedidos.md)
 - [POS](./pos.md)
 - [Consulta de precios](./consulta-precio.md)
@@ -295,3 +303,5 @@ Sí, si la configuración y el tipo de cliente permiten proceso de pago diferido
 - [Cuenta corriente](../finanzas/cuenta-corriente.md)
 - [Pagos](../finanzas/pagos.md)
 - [Perfiles](../administracion/perfiles.md)
+- [Duplicar documentos](../guias/duplicar-documentos.md)
+- [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md)

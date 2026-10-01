@@ -1,9 +1,7 @@
 ---
-title: 'Recepción de mercadería: ingreso parcial y control de stock | Zink ERP'
+title: 'Recepción de mercadería: ingreso parcial y stock'
 sidebar_label: 'Recepción de mercadería: ingreso parcial y control de stock'
-description: >-
-  La recepción de mercadería es el control operativo entre lo comprado y lo que
-  efectivamente ingresa al stock.
+description: 'La recepción de mercadería es el control operativo entre lo comprado y lo que efectivamente ingresa al stock.'
 sidebar_position: 5
 keywords:
   - recepción de mercadería

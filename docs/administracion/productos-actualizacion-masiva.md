@@ -1,9 +1,7 @@
 ---
-title: Actualización masiva de productos | Zink ERP
+title: 'Actualización masiva de productos'
 sidebar_label: Actualización masiva de productos
-description: >-
-  Actualizá varios productos a la vez: costos, precios, datos, etiquetas,
-  proveedor o reinicio de stock, desde selección en grilla o mediante archivo.
+description: 'Actualizá varios productos a la vez: costos, precios, datos, etiquetas, proveedor o reinicio de stock, desde selección en grilla o mediante archivo.'
 sidebar_position: 4
 keywords:
   - actualización masiva
@@ -90,7 +88,7 @@ Usá **Proveedor** cuando un lote debe quedar con el mismo contacto. No hace fal
 
 ### Poner stock en cero (o en un valor fijo)
 
-Usá **Reiniciar stock** cuando varios productos deben quedar con la misma cantidad, por ejemplo al cerrar un recuento o al empezar de cero. Para un solo producto o un ajuste con motivo (rotura, pérdida, recuento), preferí [Registro de inventario](../inventario/inventarios.md) o [Toma de inventario](../inventario/inventarios-ubicacion.md).
+Usá **Reiniciar stock** cuando varios productos deben quedar con la misma cantidad, por ejemplo al cerrar un recuento o al empezar de cero. Para un solo producto o un ajuste con motivo (rotura, pérdida, recuento), preferí [Registro de inventario](../inventario/inventarios.md) o [Toma inventario](../inventario/inventarios-ubicacion.md).
 
 ---
 
@@ -112,7 +110,7 @@ Usá **Reiniciar stock** cuando varios productos deben quedar con la misma canti
 ## Buenas prácticas
 
 - Probá con pocos productos antes de un cambio masivo.
-- Coordiná con [Notificación de cambio de precio](./notificar-cambio-precio.md) si operás con sucursales.
+- Coordiná con [Notificar precios](./notificar-cambio-precio.md) si operás con sucursales.
 - No uses **Reiniciar stock** para corregir un ítem suelto: conviene el [Registro de inventario](../inventario/inventarios.md).
 
 ---
@@ -122,6 +120,6 @@ Usá **Reiniciar stock** cuando varios productos deben quedar con la misma canti
 - [Administración](./administracion.md)
 - [Productos](./productos.md)
 - [Productos — costo y recálculo](./productos.md#costo-y-recalculo-de-precios)
-- [Importación masiva](./productos-importacion-masiva.md)
+- [Importación de productos](./productos-importacion-masiva.md)
 - [Registro de inventario](../inventario/inventarios.md)
-- [Toma de inventario](../inventario/inventarios-ubicacion.md)
+- [Toma inventario](../inventario/inventarios-ubicacion.md)

@@ -1,9 +1,7 @@
 ---
-title: Usuarios | Zink ERP
+title: 'Usuarios'
 sidebar_label: Usuarios
-description: >-
-  Los usuarios representan a las personas que acceden al sistema y determinan
-  qué pueden ver y hacer según el perfil asignado.
+description: 'Los usuarios representan a las personas que acceden al sistema y determinan qué pueden ver y hacer según el perfil asignado.'
 sidebar_position: 8
 keywords:
   - usuarios

@@ -1,9 +1,7 @@
 ---
-title: Notas de débito | Zink ERP
+title: 'Notas de débito'
 sidebar_label: Notas de débito
-description: >-
-  Las notas de débito registran ajustes que aumentan lo que el cliente debe:
-  recargos, diferencias de precio o cargos posteriores a la venta.
+description: 'Las notas de débito registran ajustes que aumentan lo que el cliente debe: recargos, diferencias de precio o cargos posteriores a la venta.'
 sidebar_position: 31
 keywords:
   - nota de débito
@@ -61,8 +59,9 @@ No uses nota de débito para corregir a favor del cliente; en ese caso correspon
 1. Creá una nueva nota de débito.
 2. Seleccioná la **venta asociada** (obligatorio).
 3. Definí importes o conceptos a ajustar.
+   Para el **Motivo**, si el que necesitás no existe, tocá el engranaje **Gestionar conceptos** junto al campo y crealo sin salir del formulario (ver [Conceptos](../administracion/conceptos.md)).
 4. Verificá valores.
-5. Confirmá (**CONFIRMADO**).
+5. Confirmá (**Confirmado**).
 
 ---
 
@@ -70,12 +69,10 @@ No uses nota de débito para corregir a favor del cliente; en ese caso correspon
 
 | Estado     | Descripción |
 |------------|------------|
-| BORRADOR   | Editable. |
-| CONFIRMADO | No editable; aplica el ajuste. |
+| Borrador   | Editable. |
+| Confirmado | No editable; aplica el ajuste. |
 
-La documentación y páginas actuales no confirman estados adicionales para notas de débito, como **ANULADO** o **RECHAZADO**.
 
-Si tu operación usa estados adicionales o reglas particulares de anulación, conviene validarlas con el equipo antes de estandarizar el circuito.
 
 ---
 
@@ -116,7 +113,7 @@ Flete, instalación u otro cargo posterior a la operación original.
 - **No podés guardar sin venta**
   - Debés elegir una venta del cliente; no existe emisión de ND suelta.
 - **No podés modificar**
-  - Estado **CONFIRMADO**.
+  - Estado **Confirmado**.
 - **El saldo no subió como esperabas**
   - Verificá importes y que la venta asociada sea la correcta.
 

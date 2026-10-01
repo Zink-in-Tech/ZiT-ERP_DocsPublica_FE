@@ -1,10 +1,6 @@
 ---
-title: >-
-  Administración en Zink ERP: productos, contactos, usuarios y permisos | Zink
-  ERP
-description: >-
-  La administración concentra los datos maestros que usa todo el ERP: quién
-  compra y vende (contactos), qué se comercializa (productos)
+title: 'Administración: productos, contactos y permisos'
+description: 'La administración concentra los datos maestros que usa todo el ERP: quién compra y vende (contactos), qué se comercializa (productos)'
 sidebar_label: Administración
 sidebar_position: 0
 keywords:
@@ -30,15 +26,15 @@ Configurá esto antes de operar a escala.
 | Clientes y proveedores | [Contactos](./contactos.md) |
 | Importar contactos | [Importación masiva de contactos](./contactos-importacion-masiva.md) |
 | Catálogo de productos | [Productos](./productos.md) |
-| Importar / actualizar productos en masa | [Importación masiva](./productos-importacion-masiva.md) · [Actualización masiva](./productos-actualizacion-masiva.md) |
+| Importar / actualizar productos en masa | [Importación de productos](./productos-importacion-masiva.md) · [Actualización masiva](./productos-actualizacion-masiva.md) |
 | Usuarios del sistema | [Usuarios](./usuarios.md) |
 | Permisos y roles | [Perfiles](./perfiles.md) |
 | Tu contraseña, avatar o modo oscuro | [Perfil de usuario](./perfil-usuario.md) |
 | Conceptos de ingreso/egreso | [Conceptos](./conceptos.md) |
 | Impuestos | [Impuestos](./impuestos.md) |
 | Nueva sucursal u organización | [Alta de organización](./organizacion-alta.md) |
-| Avisar cambios de precio | [Notificar cambio de precio](./notificar-cambio-precio.md) |
-| Ver notificaciones de precio recibidas | [Notificaciones recibidas](./notificaciones-recibidas-precio.md) |
+| Avisar cambios de precio a sucursales | [Notificar precios](./notificar-cambio-precio.md) |
+| Aplicar precios enviados por la central | [Recibir cambios de precio](./notificaciones-recibidas-precio.md) |
 
 La configuración general está en [Configuración](../configuracion/configuracion.md) ([Datos de la organización](../configuracion/datos-org.md) y [Preferencias](../configuracion/preferencias.md)).
 
@@ -46,7 +42,7 @@ La configuración general está en [Configuración](../configuracion/configuraci
 
 ## ¿No encontrás lo que buscás?
 
-Si necesitás cambiar reglas generales del sistema, datos fiscales, listas de precio, medios de pago o preferencias por defecto, mirá también [Ajustes del sistema](../configuracion/configuracion.md).
+Si necesitás cambiar reglas generales del sistema, datos fiscales, listas de precio, medios de pago o preferencias por defecto, mirá también [Configuración](../configuracion/configuracion.md).
 
 ---
 
@@ -71,5 +67,5 @@ Si necesitás cambiar reglas generales del sistema, datos fiscales, listas de pr
 ## Ver también
 
 - [Primeros pasos](../primeros-pasos.md)
-- [Cómo funciona ZinK ERP](../arquitectura.md)
+- [Cómo funciona Zink ERP](../arquitectura.md)
 - [Integraciones](../integraciones/intro.md)

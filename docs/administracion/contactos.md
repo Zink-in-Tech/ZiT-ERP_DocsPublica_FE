@@ -1,9 +1,7 @@
 ---
-title: Contactos | Zink ERP
+title: 'Contactos'
 sidebar_label: Contactos
-description: >-
-  Clientes y proveedores en Zink ERP: ficha, condiciones comerciales, cuenta
-  corriente e historial comercial desde el contacto.
+description: 'Clientes y proveedores en Zink ERP: ficha, condiciones comerciales, cuenta corriente e historial comercial desde el contacto.'
 sidebar_position: 1
 keywords:
   - contactos
@@ -61,7 +59,7 @@ También permiten definir condiciones comerciales específicas (bonificaciones, 
 
 ## Campos principales
 
-### Nombre / Apellido / Razón Social
+### Nombre / Apellido / Razón social
 
 Identificación del contacto para búsquedas y comprobantes.
 

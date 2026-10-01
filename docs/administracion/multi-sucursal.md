@@ -1,10 +1,7 @@
 ---
-title: 'Múltiples sucursales: organizaciones, stock y usuarios | Zink ERP'
+title: 'Múltiples sucursales: organizaciones y stock'
 sidebar_label: 'Múltiples sucursales: organizaciones, stock y usuarios'
-description: >-
-  Zink ERP es multiorganización: cada organización puede representar una sucursal
-  propia, franquicia o punto de venta con usuarios, contactos y operaciones
-  propias.
+description: 'Cada organización de Zink ERP puede ser una sucursal propia, una franquicia o un punto de venta, con usuarios, contactos y operaciones propias.'
 sidebar_position: 61
 keywords:
   - múltiples sucursales
@@ -52,16 +49,6 @@ Esta guía reúne qué revisar cuando la empresa opera con más de una sucursal.
 
 ---
 
-## Transferencias de stock
-
-La documentación actual confirma consulta de stock inter-organización, pero no describe una pantalla específica de transferencia entre organizaciones.
-
-Las transferencias o coordinaciones entre organizaciones conviene validarlas con el circuito operativo real antes de documentarlas como flujo estándar.
-
-Mientras tanto, si necesitás corregir stock físico, usá [Registro de inventario](../inventario/inventarios.md) con observaciones claras y trazabilidad operativa.
-
----
-
 ## Casos frecuentes
 
 ### Sucursal propia
@@ -75,6 +62,10 @@ Puede requerir un usuario administrador nuevo y un contacto asociado para factur
 ### Consulta de stock de otra sucursal
 
 Usá [Consulta de stock](../inventario/productos-consulta-inter-org.md) si la preferencia está habilitada.
+
+### Corregir el stock físico de una sucursal
+
+Si el stock de una sucursal no coincide con lo que hay en el local, registrá la diferencia con un [ajuste de inventario](../inventario/inventarios.md) y dejá una observación clara.
 
 ---
 

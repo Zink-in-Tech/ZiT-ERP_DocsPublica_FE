@@ -1,8 +1,6 @@
 ---
-title: 'Configuración de Zink ERP: preferencias, datos fiscales y cobros | Zink ERP'
-description: >-
-  La configuración define el comportamiento base del ERP para tu organización:
-  datos que salen en comprobantes, reglas de ventas y compras
+title: 'Configuración: preferencias, datos fiscales y cobros'
+description: 'La configuración define el comportamiento base del ERP para tu organización: datos que salen en comprobantes, reglas de ventas y compras'
 sidebar_label: Configuración
 sidebar_position: 69
 keywords:
@@ -29,7 +27,7 @@ Conviene completarla antes de operar a escala.
 | Cotización USD → ARS y default de recálculo de precios | [Preferencias](./preferencias.md#costo-multi-moneda) |
 | Listas para clientes, POS, cotizaciones y ventas | [Listas de precio](./listas-precio.md) |
 | Efectivo, transferencia, tarjeta, Mercado Pago y cuenta corriente | [Medios de pago](./medios-pago.md) |
-| Facturante, Mercado Pago, WooCommerce | [Integraciones](../integraciones/intro.md) (pestaña en Preferencias) |
+| ARCA, Mercado Pago, WooCommerce | [Integraciones](../integraciones/intro.md) (pestaña en Preferencias) |
 
 ---
 

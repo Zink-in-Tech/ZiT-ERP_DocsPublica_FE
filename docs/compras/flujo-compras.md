@@ -1,15 +1,13 @@
 ---
-title: 'Flujo de compras: de la orden de compra al ingreso de mercadería | Zink ERP'
+title: 'Flujo de compras: de la orden al ingreso de stock'
 sidebar_label: Flujo de compras
-description: >-
-  El flujo de compras en ZinK ERP organiza el proceso desde la solicitud al
-  proveedor hasta aprobar la compra (stock y cuenta corriente).
+description: 'El flujo de compras en Zink ERP organiza el proceso desde la solicitud al proveedor hasta aprobar la compra (stock y cuenta corriente).'
 sidebar_position: 1
 ---
 
 ## Resumen
 
-El flujo de compras en ZinK ERP organiza el proceso desde la solicitud al proveedor hasta el registro final de la compra.
+El flujo de compras en Zink ERP organiza el proceso desde la solicitud al proveedor hasta el registro final de la compra.
 
 Permite trabajar en etapas, manteniendo control y trazabilidad de cada operación.
 
@@ -46,9 +44,9 @@ La flecha punteada indica que la **compra** puede generarse al **Aprobar** una o
 
 Acciones típicas de compra: **Confirmar** → (opcional) **Controlar** → **Aprobar**.
 
-Para diferencias entre lo comprado y lo recibido, ver [Recepción de mercadería](./recepcion-mercaderia.md). Para devoluciones, [Notas de crédito de compras](./notas-credito-compras.md).
+Para diferencias entre lo comprado y lo recibido, ver [Recepción de mercadería](./recepcion-mercaderia.md).
 
-Los formularios rediseñados (cabecera, ítems, F2/F4) se explican una sola vez en [Formulario de documento V2](../guias/formulario-documento-v2.md).
+La cabecera, los ítems y los atajos F2/F4 se explican una sola vez en [Formulario de documentos](../guias/formulario-documento-v2.md).
 
 ---
 
@@ -157,10 +155,9 @@ Se aprueba la compra y la deuda queda pendiente en la cuenta corriente del prove
 ## Ver también
 
 - [Tutorial en video: flujo de compras](../guias/tutorial-flujo-de-compras.mdx)
-- [Formulario de documento V2](../guias/formulario-documento-v2.md)
+- [Formulario de documentos](../guias/formulario-documento-v2.md)
 - [Órdenes de compra](./orden-compras.md)
 - [Compras](./compras.md)
 - [Recepción de mercadería](./recepcion-mercaderia.md)
-- [Notas de crédito de compras](./notas-credito-compras.md)
 - [Pagos](../finanzas/pagos.md)
 - [Cuenta corriente](../finanzas/cuenta-corriente.md)

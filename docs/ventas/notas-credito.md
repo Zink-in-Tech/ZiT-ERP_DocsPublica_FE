@@ -1,10 +1,7 @@
 ---
-title: Notas de crédito | Zink ERP
+title: 'Notas de crédito'
 sidebar_label: Notas de crédito
-description: >-
-  Las notas de crédito corrigen o ajustan ventas ya realizadas: devoluciones,
-  anulación total o parcial, o corrección de importes en la cuenta corriente del
-  cliente.
+description: 'Las notas de crédito ajustan ventas ya realizadas: devoluciones, anulación total o parcial o corrección de importes en la cuenta corriente.'
 sidebar_position: 30
 keywords:
   - nota de crédito
@@ -48,7 +45,7 @@ No reemplaza la venta original: la ajusta y mantiene trazabilidad.
 - Hubo error de precio o cantidad en una venta confirmada.
 - Necesitás anular parcial o totalmente sin editar la venta cerrada.
 
-No uses nota de crédito para corregir una venta que sigue en **BORRADOR**; editá la venta directamente.
+No uses nota de crédito para corregir una venta que sigue en **Borrador**; editá la venta directamente.
 
 ---
 
@@ -66,8 +63,9 @@ No uses nota de crédito para corregir una venta que sigue en **BORRADOR**; edit
 1. Creá una nueva nota de crédito.
 2. Seleccioná la **venta asociada** (obligatorio).
 3. Definí productos o importes a ajustar.
+   Para el **Motivo**, si el que necesitás no existe, tocá el engranaje **Gestionar conceptos** junto al campo y crealo sin salir del formulario (ver [Conceptos](../administracion/conceptos.md)).
 4. Verificá totales.
-5. Confirmá la nota (**CONFIRMADO**).
+5. Confirmá la nota (**Confirmado**).
 
 ---
 
@@ -75,12 +73,10 @@ No uses nota de crédito para corregir una venta que sigue en **BORRADOR**; edit
 
 | Estado     | Descripción |
 |------------|------------|
-| BORRADOR   | Editable antes de confirmar. |
-| CONFIRMADO | No editable; aplica el ajuste. |
+| Borrador   | Editable antes de confirmar. |
+| Confirmado | No editable; aplica el ajuste. |
 
-La documentación y páginas actuales no confirman estados adicionales para notas de crédito, como **ANULADO** o **RECHAZADO**.
 
-Si tu operación usa estados adicionales o reglas particulares de anulación, conviene validarlas con el equipo antes de estandarizar el circuito.
 
 ---
 
@@ -123,7 +119,7 @@ Solo una parte de la operación se revierte.
 ## Si algo sale mal
 
 - **No podés modificar la nota**
-  - Puede estar en **CONFIRMADO**.
+  - Puede estar en **Confirmado**.
 - **El saldo del cliente no cambió**
   - Verificá que la nota esté confirmada y la venta asociada sea la correcta.
 - **El stock no se actualizó**

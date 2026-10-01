@@ -1,9 +1,7 @@
 ---
-title: 'Consulta de stock por organización: disponibilidad inter-sucursal | Zink ERP'
+title: 'Consulta de stock entre sucursales'
 sidebar_label: Consulta de stock
-description: >-
-  La consulta de stock permite visualizar la disponibilidad de productos en la
-  organización actual y, si está habilitado, en otras sucursales.
+description: 'La consulta de stock permite visualizar la disponibilidad de productos en la organización actual y, si está habilitado, en otras sucursales.'
 keywords:
   - consulta de stock
   - stock inter organización
@@ -129,7 +127,7 @@ Ideal para:
 
 - [Inventario](./inventario.md)
 - [Registro de inventario](./inventarios.md)
-- [Toma de inventario](./inventarios-ubicacion.md)
+- [Toma inventario](./inventarios-ubicacion.md)
 - [Ventas](../ventas/ventas.md)
 - [Productos](../administracion/productos.md)
 - [Preferencias](../configuracion/preferencias.md)

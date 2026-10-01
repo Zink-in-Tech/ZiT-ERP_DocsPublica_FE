@@ -1,9 +1,7 @@
 ---
-title: 'Ajustes de inventario: registrar diferencias de stock | Zink ERP'
+title: 'Ajustes de inventario: registrar diferencias de stock'
 sidebar_label: Registro de inventario
-description: >-
-  El registro de inventario permite ajustar el stock de productos cuando los
-  movimientos no provienen de compras o ventas.
+description: 'El registro de inventario permite ajustar el stock de productos cuando los movimientos no provienen de compras o ventas.'
 keywords:
   - inventario
   - stock
@@ -163,7 +161,7 @@ Usalo cuando:
 ## Ver también
 
 - [Inventario](./inventario.md)
-- [Toma de inventario](./inventarios-ubicacion.md)
+- [Toma inventario](./inventarios-ubicacion.md)
 - [Consulta de stock](./productos-consulta-inter-org.md)
 - [Compras](../compras/compras.md)
 - [Ventas](../ventas/ventas.md)

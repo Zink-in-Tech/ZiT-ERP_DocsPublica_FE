@@ -1,9 +1,7 @@
 ---
-title: Perfiles | Zink ERP
+title: 'Perfiles'
 sidebar_label: Perfiles
-description: >-
-  Los perfiles permiten definir conjuntos de permisos y controlar qué puede ver
-  y qué acciones puede realizar cada usuario dentro del sistema.
+description: 'Los perfiles permiten definir conjuntos de permisos y controlar qué puede ver y qué acciones puede realizar cada usuario dentro del sistema.'
 keywords:
   - permisos
   - perfiles

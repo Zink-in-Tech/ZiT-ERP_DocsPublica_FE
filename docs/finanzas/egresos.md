@@ -1,9 +1,7 @@
 ---
-title: Egresos | Zink ERP
+title: 'Egresos'
 sidebar_label: Egresos
-description: >-
-  Los egresos permiten registrar salidas de dinero que no provienen de compras.
-  Son clave para controlar gastos operativos. en Zink ERP.
+description: 'Los egresos permiten registrar salidas de dinero que no provienen de compras. Son clave para controlar gastos operativos. en Zink ERP.'
 keywords:
   - egresos
   - egreso manual
@@ -66,10 +64,10 @@ No lo uses para pagar compras o deuda de proveedores. En esos casos corresponde 
 
 ## Procedimiento
 
-1. Creá un nuevo egreso.
+1. Creá un nuevo egreso desde **Finanzas → Egresos**, o con el botón **+** de [Caja diaria](./caja-diaria.md#altas-rapidas).
 2. Revisá la fecha.
 3. (Opcional) asociá contacto.
-4. Seleccioná concepto.
+4. Seleccioná el concepto. Si no existe, tocá el engranaje **Gestionar conceptos** junto al campo **Concepto** para crearlo sin salir del formulario (ver [Conceptos](../administracion/conceptos.md)).
 5. Ingresá importe.
 6. Agregá observación si ayuda a justificar el movimiento.
 7. Confirmá.

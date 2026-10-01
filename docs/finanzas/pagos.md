@@ -1,9 +1,7 @@
 ---
-title: Pagos | Zink ERP
+title: 'Pagos'
 sidebar_label: Pagos
-description: >-
-  Los pagos permiten registrar cobros a clientes y pagos a proveedores,
-  aplicando montos sobre comprobantes existentes.
+description: 'Los pagos permiten registrar cobros a clientes y pagos a proveedores, aplicando montos sobre comprobantes existentes.'
 keywords:
   - pagos
   - cobros
@@ -148,7 +146,7 @@ Siempre aplicá pagos sobre comprobantes.
 - **No podés guardar / error de conexión**
   - Revisá reglas de aplicación.
   - Si el pago corresponde a una venta, verificá que tu usuario tenga permiso para realizar cobro en ventas.
-  - Si el aviso ofrece **Reintentar**, usalo cuando el problema sea de conexión o del servidor.
+  - Si el aviso ofrece **Reintentar**, usalo cuando el problema sea de conexión.
 
 - **Mercado Pago no permite confirmar**
   - Verificá que el pago haya sido solicitado y aprobado.

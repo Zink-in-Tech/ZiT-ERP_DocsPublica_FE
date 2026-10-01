@@ -1,10 +1,7 @@
 ---
-title: Caja diaria | Zink ERP
+title: 'Caja diaria'
 sidebar_label: Caja diaria
-description: >-
-  La caja diaria es un panel de control que muestra el estado financiero del
-  negocio en una fecha determinada. Permite visualizar en un solo lugar: en Zink
-  ERP.
+description: 'Controlá el dinero del día en Caja diaria: ventas, compras, ingresos, egresos y medios de pago, con altas rápidas desde el botón +.'
 keywords:
   - caja diaria
   - cierre de caja
@@ -69,9 +66,12 @@ El **monitor global** no está en el menú lateral: se abre desde la propia pant
 
 ## Cómo leer la caja diaria
 
+![Caja diaria con fecha, caja inicial, efectivo en caja, totales y tarjetas de ingresos y egresos con su botón +](/img/ayuda/finanzas/caja-diaria-01.png)
+
 La pantalla está organizada en bloques que representan distintos aspectos del negocio.
 
-En la parte superior derecha tenés accesos rápidos: selector de operador, actividad del día, **Imprimir** y, si tu perfil lo permite, **Ver consolidado**.
+En la parte superior derecha tenés accesos rápidos: selector de operador, actividad del día (**Ver actividad**), **Imprimir** y, si tu perfil lo permite, **Ver consolidado**. Cada tarjeta tiene además un botón **+** para cargar movimientos (ver [Altas rápidas](#altas-rapidas)).
+
 
 ---
 
@@ -153,6 +153,42 @@ Detalle de cómo se pagaron las compras:
 
 ---
 
+### ➕ Altas rápidas con el botón + {#altas-rapidas}
+
+Podés registrar movimientos sin salir de Caja diaria. Cada tarjeta tiene un botón **+** junto a su título:
+
+| Tarjeta | Botón **+** | Qué abre |
+|---------|-------------|----------|
+| **Total ingresos ventas** | **Nuevo cobro** | El diálogo **Registrar cobro**. |
+| **Total egresos compras** | **Nuevo pago** | El diálogo **Registrar pago**. |
+| **Notas de crédito** | **Nueva nota de crédito** | El alta de una nota de crédito. |
+| **Notas de débito** | **Nueva nota de débito** | El alta de una nota de débito. |
+| **Total otros ingresos** | **Agregar ingreso** | El alta de un ingreso con la fecha del día. |
+| **Total otros egresos** y **Total alivios de caja** | **Agregar egreso** | El alta de un egreso con la fecha del día. |
+
+1. Entrá a **Finanzas → Caja diaria**.
+2. Tocá el **+** de la tarjeta que corresponda.
+3. Completá el movimiento. En cobros y pagos, elegí el **Contacto**, el **Medio de pago** y el **Importe**.
+4. Guardá. La caja se actualiza con el nuevo movimiento.
+
+Cada botón aparece solo si tu perfil tiene permiso para crear ese tipo de movimiento.
+
+#### Cargar un movimiento de un concepto puntual
+
+Si el movimiento tiene que quedar asociado a un **concepto** concreto (por ejemplo, *Retiro del dueño*):
+
+1. Tocá la fila del concepto (›) dentro de la tarjeta de ingresos o egresos.
+2. En el detalle vas a ver el **Total del día** de ese concepto.
+3. Tocá **Agregar ingreso con este concepto** o **Agregar egreso con este concepto**. El alta se abre con la fecha y el concepto ya cargados.
+
+También podés tocar **Ver listado** para ir a todos los movimientos del concepto.
+
+#### Gestionar conceptos
+
+Si el concepto que necesitás no existe, no hace falta salir del alta. En el formulario del ingreso o egreso, tocá el engranaje **Gestionar conceptos** junto al campo **Concepto** para crear, editar o desactivar conceptos. Al cerrar, el selector se actualiza solo. Ver [Conceptos](../administracion/conceptos.md).
+
+---
+
 ### 📊 Monitor global (vista consolidada)
 
 Resumen de **toda la sucursal** en la fecha que tengas seleccionada en Caja diaria. Es solo lectura y no reemplaza la caja individual de cada operador.
@@ -202,7 +238,7 @@ En Caja diaria y en el monitor global podés imprimir lo que ves en pantalla. No
 
 | | **Imprimir (pantalla)** | **Informe entre fechas** |
 |---|-------------------------|---------------------------|
-| **Qué imprime** | Lo que ves en pantalla | Un rango de fechas generado por el servidor |
+| **Qué imprime** | Lo que ves en pantalla | Un rango de fechas, en un PDF |
 | **Fecha / operador** | Respeta el filtro actual | No respeta operador |
 | **Permiso** | Caja diaria | Informe Caja Diaria |
 
@@ -231,7 +267,7 @@ Podés iniciarlo desde la card en el [Centro de informes](../informes/informes.m
 - ✔️ Ofrece monitor consolidado para supervisar toda la sucursal
 - ✔️ Ayuda a detectar errores
 - ❌ No reemplaza la cuenta corriente
-- ❌ No registra movimientos
+- ✔️ Permite cargar cobros, pagos, notas, ingresos y egresos con el botón **+**
 
 La caja diaria lee movimientos generados en ventas, compras, pagos, ingresos, egresos y notas. Si necesitás corregir el origen de un importe, revisá la operación que generó ese movimiento.
 
@@ -319,6 +355,9 @@ Es clave para:
   - Confirmá que el pago fue guardado y aplicado al contacto correcto.
   - Revisá la cuenta corriente del cliente.
 
+- **No veo el botón + en una tarjeta**
+  - Tu perfil no tiene permiso para crear ese tipo de movimiento. Revisalo en [Perfiles](../administracion/perfiles.md).
+
 - **No podés ver caja de otros usuarios**
   - Revisá el permiso **Ver caja global** en [Perfiles](../administracion/perfiles.md).
 
@@ -352,6 +391,7 @@ Es clave para:
 - [Ingresos](./ingresos.md)
 - [Egresos](./egresos.md)
 - [Cuenta corriente](./cuenta-corriente.md)
+- [Conceptos](../administracion/conceptos.md)
 - [Ventas](../ventas/ventas.md)
 - [Informes](../informes/informes.md)
 - [Perfiles](../administracion/perfiles.md)

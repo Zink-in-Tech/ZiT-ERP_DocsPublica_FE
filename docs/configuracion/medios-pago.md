@@ -1,10 +1,7 @@
 ---
-title: 'Medios de pago: caja, POS y cobranzas | Zink ERP'
+title: 'Medios de pago: caja, POS y cobranzas'
 sidebar_label: 'Medios de pago: caja, POS y cobranzas'
-description: >-
-  Configurá medios de pago en Zink ERP para cobrar y pagar con efectivo,
-  transferencia, tarjeta, Mercado Pago o cuenta corriente, con impacto correcto
-  en caja diaria.
+description: 'Configurá los medios de pago para cobrar y pagar con efectivo, transferencia, tarjeta, Mercado Pago o cuenta corriente.'
 sidebar_position: 73
 keywords:
   - medios de pago

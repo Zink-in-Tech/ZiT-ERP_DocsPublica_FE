@@ -1,9 +1,7 @@
 ---
-title: 'Importación masiva de contactos: carga desde archivo | Zink ERP'
+title: 'Importación masiva de contactos desde CSV'
 sidebar_label: Contactos - Importación masiva
-description: >-
-  Permite cargar múltiples contactos (clientes o proveedores) en una sola
-  operación desde un archivo.
+description: 'Cargá muchos clientes o proveedores de una vez desde un archivo CSV y revisá el resultado de cada importación.'
 sidebar_position: 2
 keywords:
   - importación contactos
@@ -19,27 +17,29 @@ Cada importación queda registrada con su estado, cantidad de registros procesad
 
 Es útil para migraciones o cargas iniciales de datos.
 
+Se hace desde **Administración → Contactos**, con el ícono **Importación masiva de contactos** del listado. Se abre la pantalla **Contactos / Importación masiva**.
+
+A diferencia de la [importación de productos](./productos-importacion-masiva.md), acá no hay asistente para relacionar columnas: el archivo tiene que respetar el formato del archivo ejemplo.
+
 ---
 
 ## Antes de empezar
 
-- Descargá el archivo ejemplo desde la pantalla.
-- Asegurate de respetar el formato requerido.
+- Descargá el archivo ejemplo desde la pantalla con **Descargar archivo ejemplo**.
+- El archivo tiene que ser **CSV**, de hasta 500 KB y 500 registros.
+- Respetá las columnas y el orden del archivo ejemplo.
 - Verificá que las columnas obligatorias estén completas.
 
 ---
 
 ## Procedimiento
 
-1. Descargar archivo ejemplo.
-2. Preparar archivo con los datos de contactos.
-3. Subir archivo desde la pantalla.
-4. Procesar importación.
-5. Revisar resultado:
-   - estado (en proceso / finalizado)
-   - registros OK
-   - registros con error
-6. (Opcional) Descargar archivo de resultado.
+1. Entrá a **Administración → Contactos** y tocá el ícono **Importación masiva de contactos**.
+2. Tocá **Descargar archivo ejemplo** y completalo con los datos de tus contactos.
+3. Tocá **Subir archivo de importación** y elegí el archivo CSV.
+4. Esperá a que el **Estado** pase a finalizado.
+5. Tocá **Ver detalle importación** para revisar los registros OK y con error.
+6. Si hubo errores, descargá el archivo de resultado, corregí esas filas y volvé a importarlas.
 
 ---
 
@@ -78,10 +78,12 @@ Se ajusta el archivo según el resultado y se vuelve a importar.
 ## Si algo sale mal
 
 - **Errores en la importación**
-  - Revisar archivo de resultado para identificar filas incorrectas.
+  - Revisá el archivo de resultado para identificar las filas incorrectas.
 
 - **Archivo rechazado**
-  - Verificar formato y columnas obligatorias.
+  - Confirmá que sea un archivo CSV de hasta 500 KB y 500 registros.
+  - Verificá que tenga las mismas columnas que el archivo ejemplo.
+  - Si tenés más de 500 contactos, dividilos en varios archivos.
 
 ---
 
@@ -89,3 +91,4 @@ Se ajusta el archivo según el resultado y se vuelve a importar.
 
 - [Administración](./administracion.md)
 - [Contactos](./contactos.md)
+- [Importación de productos](./productos-importacion-masiva.md)
