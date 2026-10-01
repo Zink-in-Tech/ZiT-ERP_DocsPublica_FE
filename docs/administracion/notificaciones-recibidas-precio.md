@@ -27,7 +27,7 @@ Desde ahí decidís qué precios aplicar. Solo se actualizan los productos que a
 
 ## Procedimiento
 
-1. Abrí la notificación desde la campana de notificaciones del encabezado, o desde el listado de notificaciones recibidas en el menú **Administración**.
+1. Abrí la notificación desde la campana de notificaciones del encabezado, o desde el [centro de notificaciones](./notificaciones.md) (**Ver todas las notificaciones** al pie de la campana). Podés filtrar por el tipo **Cambio de precios**.
 2. En la pantalla **Notificación cambio precio**, revisá la fecha, la observación de la central y la tabla de productos.
 3. En la columna **Aceptar**, marcá los productos cuyo nuevo precio querés aplicar. Desmarcá los que no.
 4. Guardá. Los precios de los productos aceptados se actualizan en tu lista.
@@ -45,7 +45,7 @@ Aceptás solo algunos productos, por ejemplo porque tenés una promoción vigent
 ## Si algo sale mal
 
 - **No veo la notificación**
-  - Revisá la campana de notificaciones y el listado de notificaciones recibidas.
+  - Revisá la campana de notificaciones y el [centro de notificaciones](./notificaciones.md), con el filtro **Cambio de precios**.
   - Confirmá con la central que la notificación se haya enviado a tu organización.
 - **Acepté un precio incorrecto**
   - Corregilo en el producto o pedile a la central que envíe una nueva notificación con el precio correcto.
@@ -55,5 +55,6 @@ Aceptás solo algunos productos, por ejemplo porque tenés una promoción vigent
 ## Ver también
 
 - [Notificar precios](./notificar-cambio-precio.md)
+- [Notificaciones](./notificaciones.md)
 - [Multi-sucursal](./multi-sucursal.md)
 - [Administración](./administracion.md)

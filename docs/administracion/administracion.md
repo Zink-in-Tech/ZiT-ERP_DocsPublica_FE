@@ -30,6 +30,7 @@ Configurá esto antes de operar a escala.
 | Usuarios del sistema | [Usuarios](./usuarios.md) |
 | Permisos y roles | [Perfiles](./perfiles.md) |
 | Tu contraseña, avatar o modo oscuro | [Perfil de usuario](./perfil-usuario.md) |
+| Ver y marcar tus notificaciones | [Notificaciones](./notificaciones.md) |
 | Conceptos de ingreso/egreso | [Conceptos](./conceptos.md) |
 | Impuestos | [Impuestos](./impuestos.md) |
 | Nueva sucursal u organización | [Alta de organización](./organizacion-alta.md) |
