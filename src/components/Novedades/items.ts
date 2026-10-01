@@ -34,7 +34,7 @@ const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
     fechaISO: '2026-09-21',
     tipo: 'feature',
     titulo: 'Envío de comprobantes, fiscal A4 y descuentos del día',
-    lead: 'Enviá el comprobante de una venta por correo, elegí Ticket o A4 en el fiscal con ARCA, y consultá descuentos del día en el dashboard.',
+    lead: 'Enviá el comprobante de una venta por correo, elegí Ticket o A4 en el fiscal con ARCA, y consultá descuentos del día en el Dashboard.',
   },
   {
     id: '43',
@@ -48,7 +48,7 @@ const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
     fechaISO: '2026-09-16',
     tipo: 'feature',
     titulo: 'Pedidos desde texto e importación asistida de productos',
-    lead: 'Pedidos desde mensajes, importación asistida de productos, Formularios V2 definitivos y descuentos en el dashboard.',
+    lead: 'Pedidos desde texto, importación asistida de productos, Formularios V2 definitivos y descuentos en el Dashboard.',
   },
   {
     id: '41',
@@ -116,7 +116,7 @@ const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
     id: '32',
     fechaISO: '2026-06-05',
     tipo: 'improvement',
-    titulo: 'Listados que recuerdan tus preferencias, tablero renovado y ventas más seguras',
+    titulo: 'Listados que recuerdan tus preferencias, Dashboard renovado y ventas más seguras',
   },
   {
     id: '31',
