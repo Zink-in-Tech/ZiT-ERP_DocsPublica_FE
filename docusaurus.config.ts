@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Zink ERP — Documentación',
+  title: 'Zink ERP',
   tagline: 'Guías operativas, integraciones y ayuda para implementar Zink ERP',
   favicon: 'img/favicon.svg',
   headTags: [
@@ -98,12 +98,16 @@ const config: Config = {
             to: '/integraciones/delegacion-autorizacion-comprobantes-arca',
           },
           {
-            from: '/admin/dashboard',
-            to: '/admin/tablero',
+            from: '/admin/tablero',
+            to: '/admin/dashboard',
           },
           {
             from: '/compras/orden-compras',
             to: '/compras/orden-compra',
+          },
+          {
+            from: '/compras/notas-credito-compras',
+            to: '/compras/',
           },
           {
             from: '/compras/orden_compra',
@@ -161,6 +165,10 @@ const config: Config = {
           },
         },
         blog: false,
+        sitemap: {
+          lastmod: 'date',
+          ignorePatterns: ['/search', '/search/**'],
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -195,6 +203,11 @@ const config: Config = {
           to: '/novedades',
           position: 'left',
           label: 'Novedades',
+        },
+        {
+          href: 'https://ziterp.zinkintech.com',
+          position: 'right',
+          label: 'Ingresar a Zink ERP',
         },
       ],
     },
@@ -242,7 +255,7 @@ const config: Config = {
           title: 'Soporte',
           items: [
             {
-              label: 'WhatsApp soporte',
+              label: 'Soporte 24x7 por WhatsApp',
               href: 'https://wa.me/5491135598389',
             },
           ],
@@ -251,8 +264,16 @@ const config: Config = {
           title: 'Enlaces',
           items: [
             {
+              label: 'Ingresar a Zink ERP',
+              href: 'https://ziterp.zinkintech.com',
+            },
+            {
               label: 'Sitio web Zink ERP',
               href: 'https://zinkerp.com',
+            },
+            {
+              label: 'Planes y límites',
+              to: '/planes-y-limites',
             },
           ],
         },

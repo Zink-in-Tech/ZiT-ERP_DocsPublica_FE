@@ -8,7 +8,7 @@ const REPO_ROOT = path.join(__dirname, '..');
 const DOCS_DIR = path.join(REPO_ROOT, 'docs');
 
 const TITLE_OVERRIDES = {
-  'docs/admin/tablero.md': 'Tablero de control: indicadores, alertas y accesos rápidos | Zink ERP',
+  'docs/admin/dashboard.md': 'Dashboard: indicadores, alertas y accesos rápidos | Zink ERP',
   'docs/administracion/administracion.md':
     'Administración en Zink ERP: productos, contactos, usuarios y permisos | Zink ERP',
   'docs/administracion/contactos-importacion-masiva.md':

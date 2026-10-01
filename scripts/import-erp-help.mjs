@@ -27,7 +27,7 @@ const DEFAULT_SOURCE = path.join(
 
 /** Metadatos de categoría por carpeta (module del ERP) */
 const MODULE_CATEGORY = {
-  admin: {label: 'Tablero', position: 10},
+  admin: {label: 'Dashboard', position: 10},
   administracion: {label: 'Administración', position: 20},
   compras: {label: 'Compras', position: 30},
   configuracion: {label: 'Configuración', position: 40},

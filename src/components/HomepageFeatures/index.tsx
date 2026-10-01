@@ -46,6 +46,11 @@ const FeatureList: FeatureItem[] = [
         to: '/integraciones/problemas-frecuentes',
       },
       {label: 'Guía rápida por necesidad', to: '/intro#por-dónde-empezar'},
+      {
+        label: 'Soporte 24x7 por WhatsApp →',
+        to: 'https://wa.me/5491135598389',
+        external: true,
+      },
       {label: 'Sitio web Zink ERP →', to: 'https://zinkerp.com', external: true},
     ],
   },
