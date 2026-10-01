@@ -1,32 +1,24 @@
 ---
-title: 'WooCommerce en Zink ERP: claves REST, mapeo y sincronización | Zink ERP'
+title: 'WooCommerce: claves REST y enlace de productos'
 sidebar_label: WooCommerce
-description: >-
-  La integración con WooCommerce permite conectar una tienda en WordPress con el
-  catálogo de productos de ZinkERP.
+description: 'La integración con WooCommerce permite conectar una tienda en WordPress con el catálogo de productos de Zink ERP.'
 sidebar_position: 6
 slug: /integraciones/woocommerce
 ---
 
 ## Resumen
 
-La integración con **WooCommerce** permite conectar una tienda en WordPress con el catálogo de productos de ZinkERP.
+La integración con **WooCommerce** permite conectar una tienda en WordPress con el catálogo de productos de Zink ERP.
 
 El objetivo principal es **vincular productos de la tienda con productos del ERP**. Ese vínculo ayuda a mantener alineados datos como precios o existencias cuando la configuración del sistema lo permite.
 
-Esta ayuda se enfoca en lo que ve el usuario en la aplicación:
+En esta guía vas a ver cómo:
 
-- Crear una clave REST en WooCommerce.
-- Vincular la tienda desde **Preferencias → Integraciones**.
-- Enlazar productos de la tienda con productos del ERP.
-- Revisar productos **sin mapear** y **enlaces inválidos**.
-- Cuidar credenciales y no asumir alcances no visibles en pantalla.
-
-:::caution Alcance
-
-No asumas sincronización en tiempo real, sincronización bidireccional completa, facturación automática, importación automática de órdenes ni configuración de un solo clic. El alcance real depende de la configuración habilitada para tu organización y de lo que el frontend muestre en cada pantalla.
-
-:::
+- crear una clave REST en WooCommerce;
+- vincular la tienda desde **Preferencias → Integraciones**;
+- enlazar productos de la tienda con productos de Zink ERP;
+- revisar productos **sin mapear** y **enlaces inválidos**;
+- cuidar las credenciales.
 
 ---
 
@@ -37,22 +29,22 @@ Antes de empezar, verificá:
 - Tener una tienda **WordPress con WooCommerce instalado**.
 - Tener acceso de administrador al panel de WordPress.
 - Conocer la **URL pública** de la tienda, la misma que usan los clientes, por ejemplo `https://mitienda.com`.
-- Tener permisos en ZinkERP para entrar a **Preferencias → Integraciones** y usar **Gestionar**.
-- Definir si la clave REST necesita permisos de **lectura** o **lectura/escritura**. Si ZinkERP debe actualizar precio o stock en la tienda, la guía in-app indica usar **Lectura/Escritura**.
-- Tener productos creados en ZinkERP si vas a enlazar artículos de la tienda con el catálogo del ERP.
+- Tener permisos en Zink ERP para entrar a **Preferencias → Integraciones** y usar **Gestionar**.
+- Definir si la clave REST necesita permisos de **lectura** o **lectura/escritura**. Si Zink ERP debe actualizar precio o stock en la tienda, usá **Lectura/Escritura**, como indica la guía de la pantalla de integración.
+- Tener productos creados en Zink ERP si vas a enlazar artículos de la tienda con el catálogo del ERP.
 
 ---
 
 ## Crear claves REST en WooCommerce
 
-Las claves REST permiten que ZinkERP se conecte con WooCommerce sin usar la contraseña del administrador de WordPress.
+Las claves REST permiten que Zink ERP se conecte con WooCommerce sin usar la contraseña del administrador de WordPress.
 
 1. Iniciá sesión en el panel de **WordPress** de la tienda.
 2. Entrá a **WooCommerce → Ajustes**.
 3. Abrí la pestaña **Avanzado**.
 4. Entrá a **API REST**.
 5. Tocá **Añadir clave**.
-6. Completá una descripción clara, por ejemplo `ZinkERP`.
+6. Completá una descripción clara, por ejemplo `Zink ERP`.
 7. Elegí el usuario que va a quedar asociado a la clave.
 8. Seleccioná los permisos:
    - **Lectura**, si solo se necesita consultar datos.
@@ -68,7 +60,7 @@ El secreto suele mostrarse una sola vez. Guardalo en un lugar seguro durante el 
 
 ---
 
-## Vincular la tienda en ZinkERP
+## Vincular la tienda en Zink ERP
 
 1. Entrá a **Preferencias → Integraciones**.
 2. Seleccioná **WooCommerce**.
@@ -105,7 +97,7 @@ La pestaña **Catálogo tienda** lista productos de WooCommerce con datos como:
 
 En cada fila, usá el campo **Producto en el ERP** para buscar y seleccionar el producto correspondiente.
 
-La búsqueda de la tienda la hace el servidor. Si hay muchos resultados, usá el filtro y la paginación.
+La búsqueda se hace directamente sobre tu tienda. Si hay muchos resultados, usá el filtro y la paginación.
 
 ### Sugerencias
 
@@ -182,7 +174,7 @@ El interruptor de sincronización indica que los cambios guardados en ese produc
 
 WooCommerce permite productos variables y variaciones.
 
-La pantalla de ZinkERP advierte que más adelante puede hacer falta enlazar cada variación. En la versión visible actualmente, podés usar la fila principal o dejar sin enlace cuando no tengas certeza.
+La pantalla de Zink ERP advierte que más adelante puede hacer falta enlazar cada variación. En la versión visible actualmente, podés usar la fila principal o dejar sin enlace cuando no tengas certeza.
 
 Antes de guardar vínculos masivos con productos variables, confirmá el criterio operativo con la persona administradora de la tienda.
 
@@ -196,7 +188,7 @@ Al confirmar, se elimina la vinculación de WooCommerce con la organización. El
 
 Antes de desvincular en producción:
 
-- avisá a administración o soporte interno;
+- avisá a administración y a quien gestiona la tienda;
 - revisá si hay productos enlazados;
 - documentá por qué se desvincula;
 - evitá hacerlo durante horarios de venta activa.
@@ -218,25 +210,6 @@ Buenas prácticas:
 
 ---
 
-## Qué no debe asumir el usuario
-
-Esta integración no implica automáticamente:
-
-- sincronización en tiempo real;
-- sincronización bidireccional completa;
-- importación automática de órdenes;
-- facturación automática de ventas online;
-- publicación automática de todo el catálogo;
-- creación de productos en WooCommerce sin configuración previa;
-- mapeo perfecto sin revisión humana;
-- soporte completo para variaciones en todos los escenarios;
-- una tienda por organización o varias tiendas sin validarlo con soporte;
-- que el precio o stock visible en WooCommerce cambie si no se guardó el enlace o si la configuración no lo habilita.
-
-Si necesitás confirmar el alcance exacto de tu instalación, revisá la configuración activa con soporte o administración.
-
----
-
 ## Si algo sale mal
 
 | Síntoma | Qué revisar |
@@ -248,7 +221,7 @@ Si necesitás confirmar el alcance exacto de tu instalación, revisá la configu
 | Hay enlaces inválidos | Revisá el motivo, corregí el producto ERP asociado y guardá nuevamente. |
 | El producto no aparece en la pestaña Ecommerce | Confirmá que WooCommerce esté habilitado para la organización y que el producto ya esté guardado. |
 
-Al pedir soporte, enviá organización, usuario, horario aproximado, paso donde falló, mensaje visible y captura sin claves ni secretos.
+Si necesitás ayuda, escribinos a **Soporte 24x7 por WhatsApp**: [+54 9 11 3559-8389](https://wa.me/5491135598389). Contanos la organización, el usuario, el horario aproximado, el paso donde falló y el mensaje que viste; si mandás capturas, ocultá claves y secretos.
 
 ---
 

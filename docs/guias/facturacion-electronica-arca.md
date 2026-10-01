@@ -1,9 +1,7 @@
 ---
-title: 'Facturación electrónica en Argentina: guía para pymes y ARCA | Zink ERP'
+title: 'Facturación electrónica en Argentina: guía para pymes'
 sidebar_label: 'Facturación electrónica en Argentina: guía completa para pymes'
-description: >-
-  Aprendé qué es la facturación electrónica en Argentina, qué rol cumple ARCA y
-  qué datos necesita una pyme para emitir comprobantes correctamente.
+description: 'Aprendé qué es la facturación electrónica en Argentina, qué rol cumple ARCA y qué datos necesita una pyme para emitir comprobantes correctamente.'
 sidebar_position: 10
 keywords:
   - facturación electrónica
@@ -68,7 +66,7 @@ Un ERP ayuda a conectar la facturación con la operación real:
 
 ---
 
-## ¿Usás ZinkERP?
+## ¿Usás Zink ERP?
 
 Configurá facturación electrónica en **Preferencias → Integraciones → ARCA**. Seguí [ARCA en Zink ERP](../integraciones/arca.md) y, si corresponde el trámite previo, [delegación de autorización de comprobantes en ARCA](../integraciones/delegacion-autorizacion-comprobantes-arca.md).
 
@@ -77,7 +75,6 @@ Configurá facturación electrónica en **Preferencias → Integraciones → ARC
 ## Ver también
 
 - [Delegar autorización de comprobantes en ARCA](../integraciones/delegacion-autorizacion-comprobantes-arca.md)
-- [Facturante](../integraciones/facturante.md)
 - [Notas de crédito](../ventas/notas-credito.md)
 - [Notas de débito](../ventas/notas-debito.md)
 - [Ventas](../ventas/ventas.md)

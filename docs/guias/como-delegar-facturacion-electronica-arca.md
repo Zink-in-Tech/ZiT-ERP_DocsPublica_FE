@@ -1,9 +1,7 @@
 ---
-title: Cómo delegar Facturación Electrónica en ARCA para usar Zink ERP | Zink ERP
+title: 'Cómo delegar la facturación electrónica en ARCA'
 sidebar_label: Delegar ARCA para Zink ERP
-description: >-
-  Resumen del flujo completo: trámite en ARCA, configuración en Preferencias →
-  Integraciones y aviso a soporte para habilitar la emisión.
+description: 'Resumen del flujo completo: trámite en ARCA, configuración en Preferencias → Integraciones y aviso a soporte para habilitar la emisión.'
 sidebar_position: 2
 keywords:
   - delegar ARCA
@@ -15,15 +13,15 @@ keywords:
 
 ## Objetivo
 
-Dejar lista la cuenta fiscal para que ZinK ERP pueda emitir comprobantes electrónicos con el circuito correcto de ARCA.
+Dejar lista la cuenta fiscal para que Zink ERP pueda emitir comprobantes electrónicos con el circuito correcto de ARCA.
 
 :::info Las tres partes del proceso
 
 | Paso | Qué hacés | Dónde |
 |------|-----------|-------|
 | **1. Trámite en ARCA** | Punto de venta nuevo y delegación a **Zink in Tech** (CUIT **20-31499393-5**). Tutorial en [ARCA](/integraciones/delegacion-autorizacion-comprobantes-arca). | Portal de ARCA |
-| **2. Configuración en el ERP** | En **Preferencias → Integraciones → ARCA**, tocá **Gestionar** y cargá punto de venta, domicilio fiscal, ingresos brutos e inicio de actividades. | ZinK ERP |
-| **3. Aviso a soporte** | Cuando terminaste los pasos 1 y 2, enviá CUIT, número de punto de venta y confirmación de delegación. Soporte valida la delegación para habilitar la emisión. | Soporte ZinK ERP |
+| **2. Configuración en el ERP** | En **Preferencias → Integraciones → ARCA**, tocá **Gestionar** y cargá punto de venta, domicilio fiscal, ingresos brutos e inicio de actividades. | Zink ERP |
+| **3. Aviso a soporte** | Cuando terminaste los pasos 1 y 2, enviá CUIT, número de punto de venta y confirmación de delegación. Soporte valida la delegación para habilitar la emisión. | Soporte Zink ERP |
 
 :::
 
@@ -74,9 +72,9 @@ Ver [ARCA en Zink ERP](../integraciones/arca.md).
 
 ### Paso 3: Aviso a soporte
 
-Cuando terminaste los pasos 1 y 2, contactá a soporte con:
+Cuando terminaste los pasos 1 y 2, escribinos a [Soporte 24x7 por WhatsApp](https://wa.me/5491135598389) con:
 
-**[Escribinos por WhatsApp](https://wa.me/5491135598389?text=Hola%2C%20ya%20termin%C3%A9%20el%20tr%C3%A1mite%20en%20ARCA%20y%20la%20configuraci%C3%B3n%20en%20ZinK%20ERP.%0A%0ACUIT%20de%20la%20empresa%3A%20%0APunto%20de%20venta%20en%20ARCA%3A%20%0ADelegaci%C3%B3n%20confirmada%20a%20Fernando%20Ariel%20Demaio%20(CUIT%2020-31499393-5)%3A%20S%C3%AD)** — se abre con un mensaje listo para enviar; completá CUIT y punto de venta antes de mandarlo.
+**[Escribinos por WhatsApp](https://wa.me/5491135598389?text=Hola%2C%20ya%20termin%C3%A9%20el%20tr%C3%A1mite%20en%20ARCA%20y%20la%20configuraci%C3%B3n%20en%20Zink%20ERP.%0A%0ACUIT%20de%20la%20empresa%3A%20%0APunto%20de%20venta%20en%20ARCA%3A%20%0ADelegaci%C3%B3n%20confirmada%20a%20Fernando%20Ariel%20Demaio%20(CUIT%2020-31499393-5)%3A%20S%C3%AD)** — se abre con un mensaje listo para enviar; completá CUIT y punto de venta antes de mandarlo.
 
 - CUIT de la empresa;
 - número del punto de venta;

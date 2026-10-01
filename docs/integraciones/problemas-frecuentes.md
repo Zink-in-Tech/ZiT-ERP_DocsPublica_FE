@@ -1,15 +1,13 @@
 ---
-title: 'Problemas frecuentes de integraciones: OAuth, enlaces y errores 401 | Zink ERP'
+title: 'Problemas frecuentes de integraciones'
 sidebar_label: Problemas frecuentes (integraciones)
-description: >-
-  Acá reunimos síntomas comunes al trabajar con integraciones y un primer
-  checklist antes de escalar a soporte.
+description: 'Acá reunimos síntomas comunes al trabajar con integraciones y un primer checklist antes de escalar a soporte.'
 sidebar_position: 9
 ---
 
 ## Resumen
 
-Acá reunimos **síntomas comunes** al trabajar con integraciones y un **primer checklist** antes de escalar a soporte. No reemplaza el diagnóstico del proveedor externo ni de mesa de ayuda, pero suele ahorrar tiempo.
+Acá reunimos **síntomas comunes** al trabajar con integraciones y un **primer checklist** antes de escalar a soporte. No reemplaza el diagnóstico del servicio externo ni de soporte, pero suele ahorrar tiempo.
 
 ---
 
@@ -29,7 +27,7 @@ Acá reunimos **síntomas comunes** al trabajar con integraciones y un **primer 
 1. **Cerrá y volvé a abrir** el asistente con **Gestionar**; muchos flujos permiten reintentar sin riesgo.
 2. **Un solo navegador “limpio”:** probá en ventana privada para descartar extensiones.
 3. **Anotá la hora aproximada** del error si llamás a soporte: ayuda a cruzar registros.
-4. Si el problema es **del proveedor** (caída de Mercado Pago, AFIP, WordPress), el ERP puede estar bien y aun así fallar el paso: revisá **estado del servicio** en los canales oficiales del tercero.
+4. Si el problema es **del proveedor** (caída de Mercado Pago, ARCA, WordPress), el ERP puede estar bien y aun así fallar el paso: revisá **estado del servicio** en los canales oficiales del tercero.
 
 ---
 
@@ -58,6 +56,12 @@ Para resolver más rápido, enviá:
 - Mensaje completo o código visible.
 - Captura de pantalla sin contraseñas, claves, secretos ni datos bancarios sensibles.
 
+:::info Soporte 24x7 por WhatsApp
+
+Atención humana, sin bots ni tickets eternos. Escribinos al [+54 9 11 3559-8389](https://wa.me/5491135598389).
+
+:::
+
 ---
 
 ## Ver también
@@ -66,4 +70,4 @@ Para resolver más rápido, enviá:
 - [Cómo funcionan las integraciones](/integraciones/como-funciona)
 - [Mercado Pago](/integraciones/mercado-pago)
 - [WooCommerce](/integraciones/woocommerce)
-- [Facturante](/integraciones/facturante)
+- [Facturante (legado)](/integraciones/facturante)

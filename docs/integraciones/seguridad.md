@@ -1,15 +1,13 @@
 ---
-title: 'Seguridad de integraciones: claves, secretos y buenas prácticas | Zink ERP'
+title: 'Seguridad de integraciones: claves y buenas prácticas'
 sidebar_label: Seguridad y cumplimiento (integraciones)
-description: >-
-  Las integraciones unen ZinK ERP con cuentas y sistemas ajenos. Un error de
-  manejo de claves o capturas puede exponer tu negocio.
+description: 'Las integraciones unen Zink ERP con cuentas y sistemas ajenos. Un error de manejo de claves o capturas puede exponer tu negocio.'
 sidebar_position: 8
 ---
 
 ## Resumen
 
-Las integraciones unen ZinK ERP con **cuentas y sistemas ajenos**. Un error de manejo de **claves** o **capturas** puede exponer tu negocio. Este artículo resume prácticas simples y concretas para **administradores** y supervisores.
+Las integraciones unen Zink ERP con **cuentas y sistemas ajenos**. Un error de manejo de **claves** o **capturas** puede exponer tu negocio. Este artículo resume prácticas simples y concretas para **administradores** y supervisores.
 
 ---
 
@@ -42,7 +40,7 @@ Si alguien vio un **secreto**, si un ex integrante tenía acceso, o si hubo **fi
 
 1. **Revocá** la clave o la aplicación en el proveedor.
 2. **Generá credenciales nuevas**.
-3. **Actualizá** el vínculo en ZinK ERP con **Gestionar** en la integración correspondiente.
+3. **Actualizá** el vínculo en Zink ERP con **Gestionar** en la integración correspondiente.
 
 ---
 

@@ -1,17 +1,14 @@
 ---
-title: 'ARCA en Zink ERP: facturación electrónica nativa | Zink ERP'
+title: 'ARCA: facturación electrónica nativa'
 sidebar_label: ARCA
-description: >-
-  La integración nativa con ARCA permite emitir comprobantes electrónicos desde
-  Zink ERP cargando los datos fiscales de la organización, sin OAuth ni
-  proveedores externos como Facturante.
+description: 'Emití comprobantes electrónicos desde Zink ERP con la integración nativa con ARCA: trámite en ARCA, datos fiscales en el sistema y aviso a soporte.'
 sidebar_position: 2
 slug: /integraciones/arca
 ---
 
 ## Resumen
 
-**ARCA** es la integración nativa de ZinK ERP para facturación electrónica en Argentina. El sistema se conecta de forma directa con **ARCA** (ente recaudador; anteriormente AFIP) para emitir comprobantes electrónicos, sin depender de un proveedor externo como Facturante.
+**ARCA** es la integración nativa de Zink ERP para facturación electrónica en Argentina. El sistema se conecta de forma directa con **ARCA** (ente recaudador; anteriormente AFIP) para emitir comprobantes electrónicos, sin depender de un proveedor externo como Facturante.
 
 La configuración se realiza desde **Preferencias → Integraciones → ARCA** mediante un asistente que primero muestra una guía de inicio y luego solicita los datos fiscales de la organización.
 
@@ -20,8 +17,8 @@ La configuración se realiza desde **Preferencias → Integraciones → ARCA** m
 | Paso | Qué hacés | Dónde |
 |------|-----------|-------|
 | **1. Trámite en ARCA** | Punto de venta nuevo y delegación a **Zink in Tech** (CUIT **20-31499393-5**). Ver [tutorial en ARCA](/integraciones/delegacion-autorizacion-comprobantes-arca). | Portal de ARCA |
-| **2. Configuración en el ERP** | En **Preferencias → Integraciones → ARCA**, tocá **Gestionar** y cargá punto de venta, domicilio fiscal, ingresos brutos e inicio de actividades. | ZinK ERP |
-| **3. Aviso a soporte** | Cuando terminaste los pasos 1 y 2, enviá CUIT, número de punto de venta y confirmación de delegación. Soporte valida la delegación para habilitar la emisión. | Soporte ZinK ERP |
+| **2. Configuración en el ERP** | En **Preferencias → Integraciones → ARCA**, tocá **Gestionar** y cargá punto de venta, domicilio fiscal, ingresos brutos e inicio de actividades. | Zink ERP |
+| **3. Aviso a soporte** | Cuando terminaste los pasos 1 y 2, enviá CUIT, número de punto de venta y confirmación de delegación. Soporte valida la delegación para habilitar la emisión. | Soporte 24x7 por WhatsApp |
 
 :::
 
@@ -46,16 +43,15 @@ Esta ayuda explica:
 
 ## Qué permite
 
-La integración nativa con ARCA permite preparar la facturación electrónica de la organización para operar desde ZinK ERP con información fiscal cargada en el sistema.
+La integración nativa con ARCA permite preparar la facturación electrónica de la organización para operar desde Zink ERP con información fiscal cargada en el sistema.
 
-El comportamiento validado es:
+Desde el asistente podés:
 
-- abrir el alta desde **Preferencias → Integraciones**;
-- seleccionar **ARCA** en la columna izquierda;
-- revisar la guía inicial del asistente;
+- abrir el alta desde **Preferencias → Integraciones**, seleccionando **ARCA** en la columna izquierda;
+- revisar la guía inicial;
 - tocar **Gestionar** para avanzar al formulario fiscal;
 - completar punto de venta, domicilio fiscal, ingresos brutos e inicio de actividades;
-- guardar la configuración en el ERP.
+- guardar la configuración.
 
 No hay OAuth ni vinculación de cuentas de terceros: solo tenés que cargar los datos fiscales de la organización según consten en ARCA.
 
@@ -72,7 +68,7 @@ Al seleccionar **ARCA** en **Preferencias → Integraciones**, el panel derecho 
 | Bloque | Qué indica |
 |--------|------------|
 | **Título** | Facturación electrónica nativa (ARCA). |
-| **Descripción** | ZinK ERP se conecta de forma directa con ARCA para emitir comprobantes electrónicos, sin depender de un proveedor externo como Facturante. |
+| **Descripción** | Zink ERP se conecta de forma directa con ARCA para emitir comprobantes electrónicos, sin depender de un proveedor externo como Facturante. |
 | **Integración nativa** | Solo tenés que cargar los datos fiscales de la organización; no hay OAuth ni vinculación de cuentas de terceros. |
 | **Plazo de habilitación** | La habilitación del punto de venta en ARCA puede demorar **hasta 24 horas** después del trámite en el ente. Planificá con margen si necesitás facturar el mismo día. |
 | **Antes de empezar** | Tené a mano el punto de venta habilitado, domicilio fiscal, ingresos brutos e inicio de actividades según consten en ARCA. Completá los datos exactamente como figuran en el ente regulador para evitar rechazos al emitir. |
@@ -84,7 +80,7 @@ Al seleccionar **ARCA** en **Preferencias → Integraciones**, el panel derecho 
 
 Antes de tocar **Gestionar**, prepará:
 
-- acceso a ZinK ERP con permisos para usar **Preferencias → Integraciones** y **Gestionar**;
+- acceso a Zink ERP con permisos para usar **Preferencias → Integraciones** y **Gestionar**;
 - **punto de venta habilitado** en ARCA para facturación electrónica;
 - **domicilio fiscal** según conste en ARCA;
 - **ingresos brutos** con el texto exacto que debe figurar en los comprobantes;
@@ -101,7 +97,7 @@ Si todavía no creaste el punto de venta ni delegaste el servicio en ARCA, compl
 
 La pantalla inicial advierte que la habilitación del punto de venta en ARCA puede demorar **hasta 24 horas** después del trámite en el ente.
 
-Ese plazo no necesariamente indica un error de ZinK ERP. Puede depender de la disponibilidad, validación o procesamiento externo de ARCA.
+Ese plazo no necesariamente indica un error de Zink ERP. Puede depender de la disponibilidad, validación o procesamiento externo de ARCA.
 
 Si necesitás facturar en una fecha específica, planificá el alta con margen.
 
@@ -115,7 +111,7 @@ Si necesitás facturar en una fecha específica, planificá el alta con margen.
 4. Tocá **Gestionar**.
 5. Completá el formulario fiscal:
 
-![Formulario fiscal de ARCA en ZinK ERP](/img/ayuda/integraciones/arca/formulario-fiscal-arca-01.png)
+![Formulario fiscal de ARCA en Zink ERP](/img/ayuda/integraciones/arca/formulario-fiscal-arca-01.png)
 
 | Campo | Obligatorio | Notas |
 |-------|-------------|--------|
@@ -171,11 +167,11 @@ ARCA puede tardar en habilitar el punto de venta después del trámite en el ent
 
 ### ¿Puedo usar un punto de venta de otro sistema?
 
-No conviene. Para facturación electrónica por este medio conviene un punto de venta exclusivo para ZinK ERP, habilitado en ARCA.
+No conviene. Para facturación electrónica por este medio conviene un punto de venta exclusivo para Zink ERP, habilitado en ARCA.
 
-### ¿Puedo usar Facturante en lugar de ARCA?
+### ¿Puedo seguir usando Facturante?
 
-No. Para facturación electrónica usá **ARCA** en **Preferencias → Integraciones**.
+No. Facturante es una integración legada: la facturación electrónica se configura en **ARCA**, desde **Preferencias → Integraciones**. Ver [Facturante (legado)](/integraciones/facturante).
 
 ---
 
@@ -183,7 +179,7 @@ No. Para facturación electrónica usá **ARCA** en **Preferencias → Integraci
 
 - [Integraciones](/integraciones)
 - [Delegar autorización de comprobantes en ARCA](/integraciones/delegacion-autorizacion-comprobantes-arca)
-- [Facturante](/integraciones/facturante)
+- [Facturante (legado)](/integraciones/facturante)
 - [Cómo funcionan las integraciones](/integraciones/como-funciona)
 - [Problemas frecuentes](/integraciones/problemas-frecuentes)
 - [Preferencias](/configuracion/preferencias)

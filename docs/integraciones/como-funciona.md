@@ -1,15 +1,13 @@
 ---
-title: 'Cómo funcionan las integraciones: OAuth, claves REST y mapeos | Zink ERP'
+title: 'Cómo funcionan las integraciones'
 sidebar_label: Cómo funcionan las integraciones
-description: >-
-  Acá explicamos solo ideas que vas a cruzar al vincular ZinK ERP con un
-  proveedor externo.
+description: 'Acá explicamos solo ideas que vas a cruzar al vincular Zink ERP con un proveedor externo.'
 sidebar_position: 3
 ---
 
 ## Resumen
 
-Acá explicamos **solo ideas** que vas a cruzar al vincular ZinK ERP con un proveedor externo. Sirve como “glosario vivo” antes de entrar a ARCA, Mercado Pago o WooCommerce.
+Acá explicamos **solo ideas** que vas a cruzar al vincular Zink ERP con un proveedor externo. Sirve como “glosario vivo” antes de entrar a ARCA, Mercado Pago o WooCommerce.
 
 ---
 
@@ -18,7 +16,7 @@ Acá explicamos **solo ideas** que vas a cruzar al vincular ZinK ERP con un prov
 1. **Preferencias** → pestaña **Integraciones**.
 2. Elegís el **servicio** en la lista de la izquierda.
 3. **Gestionar** abre el asistente (formulario o redirección al sitio del proveedor).
-4. El **tilde verde** indica que el servidor registró el vínculo correctamente.
+4. El **tilde verde** indica que el vínculo quedó guardado correctamente.
 
 ---
 
@@ -26,7 +24,7 @@ Acá explicamos **solo ideas** que vas a cruzar al vincular ZinK ERP con un prov
 
 | Término | Qué significa |
 |---------|----------------|
-| **Servicio externo** | Cualquier integración listada (ARCA, Mercado Pago, WooCommerce, etc.). Es “otro sistema” con el que ZinK ERP va a trabajar. |
+| **Servicio externo** | Cualquier integración listada (ARCA, Mercado Pago, WooCommerce, etc.). Es “otro sistema” con el que Zink ERP va a trabajar. |
 | **Alta / vínculo** | El momento en que tu organización en el ERP queda **conectada de forma válida** con ese proveedor. |
 | **OAuth** (se lee “o-auth”) | Flujo en el que el ERP te **manda al sitio oficial** del proveedor para que inicies sesión **allá** y autorices el vínculo. **No** escribís la contraseña del proveedor dentro de un formulario del ERP. Ejemplo típico: Mercado Pago. |
 | **Clave REST (WooCommerce)** | En WordPress/WooCommerce generás un **par de claves** (clave del cliente + secreto) solo para que sistemas se comuniquen por la API. **No** es la contraseña del administrador de WordPress. |
