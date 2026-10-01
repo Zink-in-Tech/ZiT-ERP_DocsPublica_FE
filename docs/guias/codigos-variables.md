@@ -1,10 +1,7 @@
 ---
-title: Qué son los códigos variables y cómo usarlos en Zink ERP | Zink ERP
+title: 'Códigos variables: qué son y cómo usarlos'
 sidebar_label: Códigos variables
-description: >-
-  Configurá productos con código variable (PLU de 6 dígitos), alineá Preferencias
-  con la balanza y entendé cómo Zink ERP lee etiquetas de 13 dígitos en Ventas,
-  POS y Consulta de precios.
+description: 'Configurá productos con código variable (PLU de 6 dígitos) y alineá Preferencias con la balanza para leer etiquetas de 13 dígitos.'
 sidebar_position: 7
 keywords:
   - códigos variables
@@ -200,7 +197,7 @@ Más casos en [Problemas frecuentes con códigos variables](./problemas-frecuent
 - No integra balanzas directamente (no hay configuración Systel u otra marca dentro del ERP).
 - No tiene campo “prefijo” ni “tipo de lectura peso/importe”.
 - No soporta código variable en presupuestos, pedidos ni cotizaciones.
-- La importación masiva de productos no documenta el flag de código variable; conviene crear o editar esos productos manualmente.
+- La importación de productos no carga el indicador de código variable; conviene crear o editar esos productos manualmente.
 
 ---
 

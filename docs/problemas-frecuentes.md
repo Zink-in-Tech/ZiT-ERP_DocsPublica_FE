@@ -1,11 +1,7 @@
 ---
-title: >-
-  Problemas frecuentes en Zink ERP: login, permisos, rendimiento y soporte |
-  Zink ERP
+title: 'Problemas frecuentes: acceso, permisos y soporte'
 sidebar_label: 'Problemas frecuentes: login, conexión y orientación'
-description: >-
-  Resolvé bloqueos comunes de Zink ERP, desde acceso y permisos hasta
-  rendimiento, orientación de uso y cuándo conviene escalar a soporte.
+description: 'Resolvé bloqueos comunes de Zink ERP, desde acceso y permisos hasta rendimiento, orientación de uso y cuándo conviene escalar a soporte.'
 sidebar_position: 98
 keywords:
   - problemas frecuentes
@@ -45,6 +41,12 @@ Esta página reúne síntomas generales que pueden aparecer en cualquier módulo
 - Copiá el mensaje visible si aparece.
 - Revisá si el problema se repite al actualizar la página.
 - Si enviás captura a soporte, ocultá claves, secretos y datos sensibles.
+
+:::info Soporte 24x7 por WhatsApp
+
+Atención humana, sin bots ni tickets eternos. Escribinos al [+54 9 11 3559-8389](https://wa.me/5491135598389).
+
+:::
 
 ---
 

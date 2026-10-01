@@ -1,10 +1,7 @@
 ---
-title: Informe Egresos | Zink ERP
+title: 'Informe Egresos'
 sidebar_label: Informe Egresos
-description: >-
-  Genera un PDF con los egresos de caja en un rango de fechas. Los datos
-  provienen del módulo Egresos (concepto, monto, contacto opcional). en Zink
-  ERP.
+description: 'Genera un PDF con los egresos de caja en un rango de fechas. Los datos provienen del módulo Egresos (concepto, monto, contacto opcional). en Zink ERP.'
 sidebar_position: 66
 keywords:
   - informe egresos

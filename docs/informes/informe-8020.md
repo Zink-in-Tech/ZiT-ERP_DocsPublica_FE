@@ -1,9 +1,7 @@
 ---
-title: Informe 80/20 (ganancia bruta) | Zink ERP
+title: 'Informe 80/20 (ganancia bruta)'
 sidebar_label: Informe 80/20 (ganancia bruta)
-description: >-
-  Análisis de ganancia bruta por producto: ranking según contribución al
-  resultado.
+description: 'Análisis de ganancia bruta por producto: ranking según contribución al resultado.'
 sidebar_position: 68
 keywords:
   - informe 80/20

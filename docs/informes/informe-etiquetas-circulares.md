@@ -1,9 +1,7 @@
 ---
-title: Informe Etiquetas circulares | Zink ERP
+title: 'Informe Etiquetas circulares'
 sidebar_label: Informe Etiquetas circulares
-description: >-
-  Las etiquetas circulares son etiquetas redondas para productos destacados u
-  ofertas.
+description: 'Las etiquetas circulares son etiquetas redondas para productos destacados u ofertas.'
 sidebar_position: 65
 keywords:
   - etiquetas circulares

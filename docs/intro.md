@@ -1,11 +1,8 @@
 ---
 sidebar_position: 1
-title: 'Documentación de Zink ERP: guías, módulos e integraciones | Zink ERP'
+title: 'Documentación de Zink ERP: guías y módulos'
 sidebar_label: Introducción
-description: >-
-  Accedé a la documentación de Zink ERP con guías de ventas, compras,
-  inventario, finanzas, configuración e integraciones para equipos operativos y
-  administración.
+description: 'Documentación de Zink ERP con guías de ventas, compras, inventario, finanzas, configuración e integraciones para todo tu equipo.'
 keywords:
   - ayuda Zink ERP
   - documentación
@@ -35,7 +32,7 @@ Esta documentación te ayuda a operar sin adivinar: cada artículo explica qué 
 | Comprar y recibir mercadería | [Flujo de compras](./compras/flujo-compras.md) |
 | Controlar deuda y caja | [Finanzas](./finanzas/finanzas.md) |
 | Ajustar stock sin compra/venta | [Inventario](./inventario/inventario.md) |
-| Conectar Facturante, Mercado Pago o tienda | [Integraciones](./integraciones/intro.md) |
+| Conectar ARCA, Mercado Pago o tienda | [Integraciones](./integraciones/intro.md) |
 | Analizar ventas o stock | [Informes](/informes) |
 | Resolver un bloqueo general | [Problemas frecuentes](./problemas-frecuentes.md) |
 

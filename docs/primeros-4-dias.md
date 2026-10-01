@@ -1,10 +1,8 @@
 ---
-title: 'Plan de 4 días con Zink ERP: práctica guiada de adopción | Zink ERP'
+title: 'Plan de 4 días: práctica guiada con Zink ERP'
 sidebar_label: Plan de 4 días
 sidebar_class_name: hidden
-description: >-
-  Plan opcional de práctica para validar Zink ERP en unos días: configuración,
-  compras, ventas e informes. Completá Primeros pasos antes de empezar.
+description: 'Plan opcional de práctica para validar Zink ERP en unos días: configuración, compras, ventas e informes. Completá Primeros pasos antes de empezar.'
 sidebar_position: 4
 ---
 
@@ -174,7 +172,7 @@ Es decir: cómo funciona tu negocio dentro de Zink ERP.
 
 ## Soporte
 
-Si tenés dudas, consultá con tu administrador o la ayuda dentro del sistema.
+Si tenés dudas, consultá la ayuda dentro del sistema (**F1**) o con tu administrador. También podés escribirnos a [Soporte 24x7 por WhatsApp](https://wa.me/5491135598389): atención humana, sin bots ni tickets eternos.
 
 ---
 

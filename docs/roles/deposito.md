@@ -1,9 +1,7 @@
 ---
-title: "Zink ERP para depósito: stock, recepciones e inventario | Zink ERP"
+title: 'Zink ERP para depósito: stock e inventario'
 sidebar_label: Para depósito
-description: >-
-  Recorrido recomendado para depósito o stock: recepción de mercadería,
-  inventario, ajustes, ubicaciones y consultas de disponibilidad en Zink ERP.
+description: 'Recorrido recomendado para depósito o stock: recepción de mercadería, inventario, ajustes, ubicaciones y consultas de disponibilidad en Zink ERP.'
 sidebar_position: 5
 keywords:
   - depósito
@@ -24,7 +22,7 @@ Este recorrido ayuda a ordenar el trabajo de depósito para que el stock del sis
 1. [Cómo recibir mercadería y actualizar stock](../guias/como-recibir-mercaderia-y-actualizar-stock.md)
 2. [Inventario](../inventario/inventario.md)
 3. [Registro de inventario](../inventario/inventarios.md)
-4. [Toma de inventario](../inventario/inventarios-ubicacion.md)
+4. [Toma inventario](../inventario/inventarios-ubicacion.md)
 5. [Recepción de mercadería](../compras/recepcion-mercaderia.md)
 6. [Consulta de stock](../inventario/productos-consulta-inter-org.md)
 

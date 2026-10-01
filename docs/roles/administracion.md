@@ -1,9 +1,7 @@
 ---
-title: "Zink ERP para administración: configuración, productos y cuentas corrientes | Zink ERP"
+title: 'Zink ERP para administración: configuración y cuentas'
 sidebar_label: Para administración
-description: >-
-  Recorrido recomendado para administración: productos, contactos, usuarios,
-  permisos, medios de pago, cuenta corriente e integraciones en Zink ERP.
+description: 'Recorrido recomendado para administración: productos, contactos, usuarios, permisos, medios de pago, cuenta corriente e integraciones en Zink ERP.'
 sidebar_position: 4
 keywords:
   - administración
@@ -45,7 +43,6 @@ Este recorrido está orientado a quienes mantienen la base operativa del sistema
 
 - [Integraciones](../integraciones/intro.md)
 - [ARCA](../integraciones/arca.md)
-- [Facturante](../integraciones/facturante.md)
 - [Mercado Pago](../integraciones/mercado-pago.md)
 
 ---

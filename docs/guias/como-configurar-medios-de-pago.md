@@ -1,9 +1,7 @@
 ---
-title: Cómo configurar medios de pago en Zink ERP | Zink ERP
+title: 'Cómo configurar medios de pago en Zink ERP'
 sidebar_label: Configurar medios de pago
-description: >-
-  Guía paso a paso para definir medios de pago en Zink ERP, probar cobros en
-  POS o ventas y validar el impacto correcto en caja diaria.
+description: 'Guía paso a paso para definir medios de pago en Zink ERP, probar cobros en POS o ventas y validar el impacto correcto en caja diaria.'
 sidebar_position: 4
 keywords:
   - medios de pago

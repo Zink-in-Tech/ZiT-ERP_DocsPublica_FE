@@ -1,10 +1,8 @@
 ---
 sidebar_position: 2
-title: 'Cómo funciona Zink ERP: ventas, compras, stock y finanzas | Zink ERP'
+title: 'Cómo funciona Zink ERP: ventas, compras y stock'
 sidebar_label: Cómo funciona Zink ERP
-description: >-
-  Entendé cómo se conectan ventas, compras, inventario y finanzas en Zink ERP
-  para registrar operaciones con impacto claro en stock, caja y deuda.
+description: 'Entendé cómo se conectan ventas, compras, inventario y finanzas en Zink ERP para registrar operaciones con impacto claro en stock, caja y deuda.'
 ---
 
 ## Resumen

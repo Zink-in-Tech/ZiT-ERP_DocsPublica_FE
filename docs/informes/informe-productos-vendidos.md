@@ -1,9 +1,7 @@
 ---
-title: Informe Productos vendidos | Zink ERP
+title: 'Informe Productos vendidos'
 sidebar_label: Informe Productos vendidos
-description: >-
-  Seleccionás productos y lista de precios; los resultados usan solo esa lista
-  (ventas con otras listas no aparecen).
+description: 'Seleccionás productos y lista de precios; los resultados usan solo esa lista (ventas con otras listas no aparecen).'
 sidebar_position: 71
 keywords:
   - productos vendidos

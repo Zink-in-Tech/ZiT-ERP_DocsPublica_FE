@@ -1,10 +1,7 @@
 ---
-title: Problemas frecuentes con códigos variables y balanzas | Zink ERP
+title: 'Problemas frecuentes con códigos variables y balanzas'
 sidebar_label: Problemas códigos variables
-description: >-
-  Síntomas, causas probables y qué revisar cuando falla la lectura de etiquetas
-  de balanza en Zink ERP: producto no encontrado, precio incorrecto, diferencias
-  entre Ventas, POS y Consulta de precios.
+description: 'Qué revisar cuando falla la lectura de etiquetas de balanza: producto no encontrado, precio incorrecto o diferencias entre pantallas.'
 sidebar_position: 9
 keywords:
   - problemas códigos variables
@@ -34,7 +31,7 @@ Para configuración inicial, empezá por [Qué son los códigos variables](./cod
 | No puedo marcar **Cód. variable** | **Código de barras** ya es EAN-13 de 13 dígitos | Limpiar el código o usar solo los 6 dígitos del PLU |
 | Error al guardar producto | Código de barras ≠ 6 dígitos con flag activo | Exactamente **6 números** |
 | Listas de precio “grisadas” | Comportamiento esperado | Configurar solo la **lista por defecto** |
-| Importación masiva sin código variable | La plantilla no incluye el flag | Crear o editar manualmente esos productos |
+| Importación sin código variable | La importación no carga ese indicador | Crear o editar manualmente esos productos |
 | Impuesto no editable en venta | Esperado para código variable | El impuesto de línea queda bloqueado en productos con **Cód. variable** |
 | Cantidad rara en **POS** | Se cargó por nombre/PLU y no por el ticket de 13 dígitos | Borrar el ítem y volver a leer el ticket; la cantidad de un código variable queda bloqueada |
 

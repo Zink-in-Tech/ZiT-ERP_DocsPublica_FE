@@ -1,10 +1,7 @@
 ---
-title: Informe Promociones por vencer | Zink ERP
+title: 'Informe Promociones por vencer'
 sidebar_label: Informe Promociones por vencer
-description: >-
-  Lista productos con promociones o listas de precio promocionales cuya vigencia
-  está por vencer. Los datos dependen de listas y vigencias configuradas en
-  productos.
+description: 'Productos con promociones o listas de precio promocionales cuya vigencia está por vencer, según las vigencias cargadas.'
 sidebar_position: 69
 keywords:
   - promociones por vencer

@@ -1,5 +1,5 @@
 ---
-title: Informe Productos faltantes | Zink ERP
+title: 'Informe Productos faltantes'
 sidebar_label: Informe Productos faltantes
 description: 'Lista productos faltantes: ventas incumplidas respecto de lo pedido.'
 sidebar_position: 62

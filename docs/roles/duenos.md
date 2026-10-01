@@ -1,10 +1,7 @@
 ---
-title: "Zink ERP para dueños: qué mirar y por dónde empezar | Zink ERP"
+title: 'Zink ERP para dueños: qué mirar y por dónde empezar'
 sidebar_label: Para dueños
-description: >-
-  Recorrido recomendado para dueños o responsables del negocio: configuración
-  mínima, control de caja, stock, ventas, compras y validación de resultados en
-  Zink ERP.
+description: 'Recorrido para dueños y responsables del negocio: configuración mínima, control de caja, stock, ventas, compras y resultados.'
 sidebar_position: 2
 keywords:
   - dueño

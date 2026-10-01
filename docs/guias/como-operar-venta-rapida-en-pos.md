@@ -1,9 +1,7 @@
 ---
-title: Cómo operar una venta rápida en POS en Zink ERP | Zink ERP
+title: 'Cómo operar una venta rápida en POS en Zink ERP'
 sidebar_label: Venta rápida en POS
-description: >-
-  Guía paso a paso para registrar una venta de mostrador en POS: cargar
-  productos, elegir cliente, cobrar y validar el resultado en caja diaria.
+description: 'Guía paso a paso para registrar una venta de mostrador en POS: cargar productos, elegir cliente, cobrar y validar el resultado en caja diaria.'
 sidebar_position: 5
 keywords:
   - venta rápida

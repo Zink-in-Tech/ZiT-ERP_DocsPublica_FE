@@ -1,35 +1,55 @@
 ---
-title: 'Glosario de Zink ERP: estados, módulos y términos operativos | Zink ERP'
-sidebar_label: 'Glosario de Zink ERP: estados y términos operativos'
-description: 'Glosario de Zink ERP: estados, módulos y términos operativos'
+title: 'Glosario: estados y términos de Zink ERP'
+sidebar_label: Glosario
+description: 'Glosario de Zink ERP: estados de cada documento, acciones y términos operativos como cuenta corriente, caja diaria y ARCA.'
 sidebar_position: 99
 keywords:
   - glosario
   - estados
-  - BORRADOR
-  - CONFIRMADO
+  - borrador
+  - confirmado
+  - entregado
+  - aprobado
   - cuenta corriente
   - caja diaria
+  - dashboard
+  - ARCA
 ---
 
 ## Estados
 
-| Término | Definición |
-|---------|------------|
-| BORRADOR | Estado editable inicial de una operación. Ver [Ventas](./ventas/ventas.md) y [Compras](./compras/compras.md). |
-| CONFIRMADO | Estado en el que la operación queda validada y normalmente deja de ser editable. |
-| DESPACHAR / Despachado | En ventas: acción **Despachar** y estado **Despachado** (preparación/control antes de entregar). Ver [Ventas](./ventas/ventas.md). |
-| ENTREGADO | Estado final exitoso de una venta; descuenta stock e impacta cuenta corriente. |
-| Aprobado (compra) | Estado final exitoso de una compra; ingresa mercadería al stock y puede impactar cuenta corriente. Ver [Compras](./compras/compras.md). |
-| Control (compra) | Etapa intermedia de revisión en compras antes de aprobar. |
-| PREPARADO | Estado de pedido listo para avanzar hacia la venta. Ver [Pedidos](./ventas/pedidos.md). |
-| CANCELADO | Cierre sin éxito de una operación. |
-| RECHAZAR | Acción que vuelve una operación a un estado editable (p. ej. Borrador) cuando el flujo lo permite. |
+Cada documento muestra su estado en el listado. Estos son los estados que vas a ver y en qué documentos aparecen:
+
+| Estado | Documentos | Qué significa |
+|--------|------------|---------------|
+| **Borrador** | Todos | Estado inicial. El documento se puede editar. |
+| **Confirmado** | Todos | El documento quedó validado y, en general, ya no se edita. |
+| **Aceptado** | Presupuestos y cotizaciones | El cliente aceptó la propuesta. Una cotización aceptada genera un presupuesto y un presupuesto aceptado genera un pedido, ambos en Borrador. Ver [Presupuestos](./ventas/presupuestos.md). |
+| **En preparación** | Pedidos | El pedido se está preparando en depósito. Ver [Pedidos](./ventas/pedidos.md). |
+| **Preparado** | Pedidos | El pedido está listo y generó una venta en Borrador. Ver [Pedidos](./ventas/pedidos.md). |
+| **Despachado** | Ventas | Se controló la mercadería antes de entregarla (acción **Despachar**). Ver [Ventas](./ventas/ventas.md). |
+| **Entregado** | Ventas | Estado final de una venta: descuenta stock e impacta la cuenta corriente. Ver [Ventas](./ventas/ventas.md). |
+| **Control** | Compras | Etapa de revisión de la compra antes de aprobarla. Ver [Compras](./compras/compras.md). |
+| **Aprobado** | Compras y órdenes de compra | Estado final exitoso. En compras, ingresa la mercadería al stock y puede impactar la cuenta corriente. Ver [Compras](./compras/compras.md). |
+| **Rechazado** | Pedidos | El pedido volvió atrás para corregirlo. Ver [Pedidos](./ventas/pedidos.md). |
+| **Cancelado** | Todos | Cierre sin éxito del documento. |
+
+## Acciones sobre los estados
+
+| Acción | Documentos | Qué hace |
+|--------|------------|----------|
+| **Confirmar** | Todos | Pasa el documento de Borrador a Confirmado. |
+| **Preparar** / **Confirmar preparado** | Pedidos | Pasa el pedido a En preparación y después a Preparado. |
+| **Despachar** / **Entregar** | Ventas | Pasa la venta a Despachado y después a Entregado. |
+| **Controlar** / **Aprobar** | Compras | Pasa la compra a Control y después a Aprobado. |
+| **Rechazar** | Ventas, pedidos y compras | Vuelve el documento a un estado editable, cuando el flujo lo permite. |
+| **Cancelar** | Todos | Cierra el documento sin éxito. |
 
 ## Términos operativos
 
 | Término | Definición |
 |---------|------------|
+| Dashboard | Pantalla principal al ingresar a Zink ERP: indicadores, alertas y accesos rápidos según tu rol y la organización activa. Ver [Dashboard](./admin/dashboard.md). |
 | Cuenta corriente | Saldo y movimientos de deuda con clientes o proveedores. Ver [Cuenta corriente](./finanzas/cuenta-corriente.md). |
 | Caja diaria | Panel financiero diario para controlar ingresos, egresos y medios de pago. Ver [Caja diaria](./finanzas/caja-diaria.md). |
 | Medio de pago | Forma usada para cobrar o pagar: efectivo, transferencia, tarjeta, Mercado Pago o cuenta corriente. |
@@ -41,7 +61,8 @@ keywords:
 | Organización | Unidad operativa del sistema, como sucursal, franquicia o punto de venta. |
 | Stock inter-org | Consulta de disponibilidad de productos entre organizaciones. Ver [Consulta de stock](./inventario/productos-consulta-inter-org.md). |
 | POS | Punto de venta para operaciones rápidas de mostrador. Ver [POS](./ventas/pos.md). |
-| Facturante | Integración de facturación electrónica. Ver [Facturante](./integraciones/facturante.md). |
+| ARCA | Facturación electrónica nativa de Zink ERP: emite comprobantes autorizados por ARCA (ex AFIP) sin intermediarios. Ver [ARCA](./integraciones/arca.md). |
+| Facturante (legado) | Proveedor de facturación electrónica que se usaba antes de la integración nativa con ARCA. Ya no se ofrece. Ver [Facturante (legado)](./integraciones/facturante.md). |
 | Mercado Pago | Integración de cobros externos. Ver [Mercado Pago](./integraciones/mercado-pago.md). |
 
 ---

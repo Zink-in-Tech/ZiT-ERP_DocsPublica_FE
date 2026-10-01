@@ -1,10 +1,7 @@
 ---
-title: "Zink ERP por rubro: recorridos y casos de uso reales | Zink ERP"
+title: 'Zink ERP por rubro: recorridos y casos de uso reales'
 sidebar_label: Zink ERP por rubro
-description: >-
-  Descubrí cómo aplicar Zink ERP según el tipo de negocio, con recorridos
-  pensados para dietéticas, ferreterías y locales que trabajan con balanzas y
-  productos por peso.
+description: 'Cómo aplicar Zink ERP según tu negocio, con recorridos para dietéticas, ferreterías y locales que venden por peso con balanza.'
 sidebar_position: 1
 keywords:
   - Zink ERP por rubro

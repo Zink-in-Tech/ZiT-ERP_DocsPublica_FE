@@ -1,9 +1,7 @@
 ---
-title: Informe Etiquetas para góndola | Zink ERP
+title: 'Informe Etiquetas para góndola'
 sidebar_label: Informe Etiquetas para góndola
-description: >-
-  Permite imprimir etiquetas para góndola: buscá productos actualizados en un
-  intervalo de fechas, elegí lista de precios y tamaño de etiqueta
+description: 'Permite imprimir etiquetas para góndola: buscá productos actualizados en un intervalo de fechas, elegí lista de precios y tamaño de etiqueta'
 sidebar_position: 64
 keywords:
   - etiquetas góndola

@@ -1,12 +1,8 @@
 ---
 sidebar_position: 3
-title: >-
-  Primeros pasos en Zink ERP: configuración inicial y primera operación | Zink
-  ERP
+title: 'Primeros pasos: configuración y primera operación'
 sidebar_label: Primeros pasos
-description: >-
-  Esta guía te ayuda a empezar a usar Zink ERP de forma correcta, configurando
-  lo necesario y entendiendo cómo operar desde el primer momento.
+description: 'Esta guía te ayuda a empezar a usar Zink ERP de forma correcta, configurando lo necesario y entendiendo cómo operar desde el primer momento.'
 keywords:
   - configuración inicial
   - onboarding
@@ -33,7 +29,7 @@ El objetivo es evitar errores comunes y lograr control desde el inicio.
 
 ## Paso 1: Acceso al sistema
 
-1. Ingresá a la URL del sistema.
+1. Ingresá a [https://ziterp.zinkintech.com](https://ziterp.zinkintech.com).
 2. Iniciá sesión con tu usuario y contraseña.
 3. Si corresponde, seleccioná la organización.
 
@@ -55,6 +51,8 @@ Antes de operar, es importante entender la lógica general:
 - Finanzas → controla dinero
 
 Recomendado: [Cómo funciona Zink ERP](./arquitectura.md)
+
+Si preferís aprender haciendo, tocá **Guiado** en el pie del menú lateral. El [modo guiado](./guias/modo-guiado.md) te propone recorridos paso a paso sobre tu propio sistema, empezando por la **Activación express**.
 
 ---
 
@@ -131,9 +129,10 @@ Esto confirma que el sistema está funcionando correctamente.
 
 En el día a día:
 
-- Entrá por tablero o dashboard
+- Entrá por el [Dashboard](./admin/dashboard.md)
 - Usá los módulos según la operación
 - Consultá ayuda contextual en cada pantalla
+- Si tenés dudas, escribinos a [Soporte 24x7 por WhatsApp](https://wa.me/5491135598389): atención humana, sin bots ni tickets eternos
 
 ---
 
@@ -175,6 +174,7 @@ Revisá el flujo utilizado, los datos cargados y el impacto en inventario y fina
 - [Plan de 4 días (opcional)](./primeros-4-dias.md)
 - [Aprender por rol](./roles/aprender-por-rol.md)
 - [Guías prácticas](./guias/guias-practicas.md)
+- [Modo guiado](./guias/modo-guiado.md)
 - [Configurar tu primer producto](./guias/como-configurar-tu-primer-producto.md)
 - [Configurar medios de pago](./guias/como-configurar-medios-de-pago.md)
 - [Flujo de ventas](./ventas/flujo-ventas.md)

@@ -1,10 +1,7 @@
 ---
-title: "Zink ERP para dietéticas: mostrador, balanza y control de stock | Zink ERP"
+title: 'Zink ERP para dietéticas: mostrador y balanza'
 sidebar_label: Para dietéticas
-description: >-
-  Recorrido recomendado para dietéticas y negocios similares: productos por
-  peso, mostrador, listas de precio, consulta rápida y control de stock en Zink
-  ERP.
+description: 'Recorrido recomendado para dietéticas y negocios similares: productos por peso, mostrador, listas de precio, consulta rápida y control de stock en Zink ERP.'
 sidebar_position: 2
 keywords:
   - ERP para dietéticas

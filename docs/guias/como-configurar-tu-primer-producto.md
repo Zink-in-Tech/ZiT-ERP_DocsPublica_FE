@@ -1,10 +1,7 @@
 ---
-title: Cómo configurar tu primer producto en Zink ERP | Zink ERP
+title: 'Cómo configurar tu primer producto en Zink ERP'
 sidebar_label: Configurar tu primer producto
-description: >-
-  Guía paso a paso para crear tu primer producto en Zink ERP con nombre, código,
-  precio, stock, listas e información clave para vender, comprar y controlar
-  inventario.
+description: 'Paso a paso para crear tu primer producto en Zink ERP con nombre, código, precio, stock y listas para vender, comprar y controlar inventario.'
 sidebar_position: 3
 keywords:
   - primer producto
@@ -99,7 +96,7 @@ Controlá el código de barras cargado y el formato usado por el lector o la bal
 
 ### ¿Conviene cargar stock directo?
 
-Para carga inicial puede servir. Para correcciones posteriores, preferí [Registro de inventario](../inventario/inventarios.md) o [Toma de inventario](../inventario/inventarios-ubicacion.md).
+Para carga inicial puede servir. Para correcciones posteriores, preferí [Registro de inventario](../inventario/inventarios.md) o [Toma inventario](../inventario/inventarios-ubicacion.md).
 
 ### ¿Qué pasa si después cambio el precio?
 

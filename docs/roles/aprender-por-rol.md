@@ -1,10 +1,7 @@
 ---
-title: Aprender por rol en Zink ERP | Zink ERP
+title: 'Aprender por rol en Zink ERP'
 sidebar_label: Aprender por rol
-description: >-
-  Elegí tu rol y encontrá un recorrido recomendado de Zink ERP para dueños,
-  cajeros, administración, ventas y depósito, con enlaces directos a las guías
-  y módulos clave.
+description: 'Elegí tu rol y encontrá un recorrido recomendado de Zink ERP para dueños, cajeros, administración, ventas y depósito.'
 sidebar_position: 1
 keywords:
   - aprender por rol

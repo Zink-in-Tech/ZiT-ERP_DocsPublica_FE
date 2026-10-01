@@ -1,9 +1,7 @@
 ---
-title: "Zink ERP para ventas: cotizaciones, pedidos y cierre comercial | Zink ERP"
+title: 'Zink ERP para ventas: cotizaciones y pedidos'
 sidebar_label: Para ventas
-description: >-
-  Recorrido recomendado para ventas comerciales: consulta de precios,
-  cotizaciones, presupuestos, pedidos, ventas y cobro en Zink ERP.
+description: 'Recorrido recomendado para ventas comerciales: consulta de precios, cotizaciones, presupuestos, pedidos, ventas y cobro en Zink ERP.'
 sidebar_position: 6
 keywords:
   - ventas

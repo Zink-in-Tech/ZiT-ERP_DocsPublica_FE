@@ -1,9 +1,7 @@
 ---
-title: Informe Cuenta corriente | Zink ERP
+title: 'Informe Cuenta corriente'
 sidebar_label: Informe Cuenta corriente
-description: >-
-  Genera un archivo Excel con el estado de cuenta corriente: saldos y
-  movimientos por contacto (clientes o proveedores según el tipo).
+description: 'Genera un archivo Excel con el estado de cuenta corriente: saldos y movimientos por contacto (clientes o proveedores según el tipo).'
 sidebar_position: 73
 keywords:
   - informe cuenta corriente

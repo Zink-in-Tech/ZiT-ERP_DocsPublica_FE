@@ -1,10 +1,7 @@
 ---
-title: Balanzas Systel y códigos variables en Zink ERP | Zink ERP
+title: 'Balanzas Systel y códigos variables en Zink ERP'
 sidebar_label: Balanzas Systel
-description: >-
-  Alineá balanzas Systel con Zink ERP: PLU de 6 dígitos, etiquetas EAN-13,
-  Decimales del Código Variable en Preferencias y checklist de validación en
-  Ventas y POS.
+description: 'Alineá balanzas Systel con Zink ERP: PLU de 6 dígitos, etiquetas EAN-13, decimales del código variable y prueba en Ventas y POS.'
 sidebar_position: 8
 keywords:
   - Systel

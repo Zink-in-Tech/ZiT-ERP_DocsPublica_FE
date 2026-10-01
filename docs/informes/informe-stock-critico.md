@@ -1,9 +1,7 @@
 ---
-title: Informe Stock crítico | Zink ERP
+title: 'Informe Stock crítico'
 sidebar_label: Informe Stock crítico
-description: >-
-  Este informe muestra productos cuyo stock actual es menor al stock mínimo
-  definido en el maestro del producto.
+description: 'Este informe muestra productos cuyo stock actual es menor al stock mínimo definido en el maestro del producto.'
 sidebar_position: 61
 keywords:
   - stock crítico

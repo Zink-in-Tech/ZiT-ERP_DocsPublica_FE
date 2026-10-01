@@ -1,9 +1,7 @@
 ---
-title: "Zink ERP para comercios con balanza Systel | Zink ERP"
+title: 'Zink ERP para comercios con balanza Systel'
 sidebar_label: Para comercios con balanza Systel
-description: >-
-  Configurá tu balanza Systel con impresión de ticket y procesá los códigos
-  variables desde el POS de Zink ERP: producto, PLU, lectura, cobro y control.
+description: 'Configurá tu balanza Systel con impresión de ticket y procesá los códigos variables desde el POS de Zink ERP: producto, PLU, lectura, cobro y control.'
 sidebar_position: 4
 keywords:
   - balanza Systel
@@ -102,7 +100,7 @@ En **Administración → Productos**:
 - Si escaneás un ticket de 13 dígitos en el formulario con el flag activo, el ERP **guarda solo los primeros 6**.
 - Completá solo la **lista de precio por defecto**. Las demás quedan grisadas. Ese precio es de catálogo; en la venta con ticket manda el valor decodificado.
 
-No podés activar **Cód. variable** si el código de barras ya es un EAN-13 de 13 dígitos. La [importación masiva](../administracion/productos-importacion-masiva.md) no documenta este flag: estos productos conviene crearlos o editarlos a mano.
+No podés activar **Cód. variable** si el código de barras ya es un EAN-13 de 13 dígitos. La [importación de productos](../administracion/productos-importacion-masiva.md) no carga este indicador: estos productos conviene crearlos o editarlos a mano.
 
 Guías: [Productos](../administracion/productos.md) · [Cómo configurar tu primer producto](../guias/como-configurar-tu-primer-producto.md).
 
@@ -222,13 +220,13 @@ Hay dos precios distintos:
 | Precio de catálogo (lista por defecto) | Ficha del producto | [Consulta de precios](../ventas/consulta-precio.md), informes, etiqueta de góndola |
 | Precio de la pesada | Systel + decimales del código variable | La venta, al leer el ticket |
 
-Si cambia el precio por kilo, actualizá la **lista por defecto** y **reprogramá la Systel**. Zink ERP no empuja ese precio a la balanza. En sucursales, los cambios de lista se pueden enviar con [Notificación de cambio de precio](../administracion/notificar-cambio-precio.md); el receptor tiene que aceptarlos, y eso **tampoco** reprograma la Systel.
+Si cambia el precio por kilo, actualizá la **lista por defecto** y **reprogramá la Systel**. Zink ERP no empuja ese precio a la balanza. En sucursales, los cambios de lista se pueden enviar con [Notificar precios](../administracion/notificar-cambio-precio.md); el receptor tiene que aceptarlos, y eso **tampoco** reprograma la Systel.
 
 ### Stock
 
 - El stock del producto se usa en ventas, POS, compras e inventario.
 - La venta **entregada** descuenta la **cantidad de la línea**. En este circuito esa cantidad suele ser **1 por ticket**.
-- Si el físico se controla en kilos, no esperes que el código variable convierta el peso del ticket en cantidad. Usá [Registro de inventario](../inventario/inventarios.md) o [Toma de inventario](../inventario/inventarios-ubicacion.md).
+- Si el físico se controla en kilos, no esperes que el código variable convierta el peso del ticket en cantidad. Usá [Registro de inventario](../inventario/inventarios.md) o [Toma inventario](../inventario/inventarios-ubicacion.md).
 - Stock mínimo e [Informe Stock crítico](../informes/informe-stock-critico.md) sirven para reponer. Recorrido: [Para depósito](../roles/deposito.md).
 
 ### Tickets de Systel vs etiquetas de góndola

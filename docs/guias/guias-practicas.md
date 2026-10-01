@@ -1,10 +1,7 @@
 ---
-title: Guías prácticas de Zink ERP | Zink ERP
+title: 'Guías prácticas de Zink ERP'
 sidebar_label: Guías prácticas
-description: >-
-  Tutoriales paso a paso para tareas concretas en Zink ERP: configuración
-  inicial, operación en mostrador, recepción de mercadería, facturación
-  electrónica y códigos variables con balanza.
+description: 'Tutoriales paso a paso para tareas concretas en Zink ERP: configuración inicial, mostrador, recepción de mercadería, ARCA y balanzas.'
 sidebar_position: 1
 keywords:
   - guías Zink ERP
@@ -35,6 +32,7 @@ Empezá acá si estás implementando el sistema o validando la base antes de ope
 | [Cómo delegar Facturación Electrónica en ARCA](./como-delegar-facturacion-electronica-arca.md) | Habilitar emisión fiscal sin compartir clave fiscal. |
 | [Cómo gestionar perfiles y permisos](./tutorial-gestionar-perfiles-permisos.mdx) | Tutorial en video para definir accesos y permisos por rol. |
 | [Cómo administrar conceptos](./tutorial-administrar-conceptos.mdx) | Tutorial en video para categorías de ingresos y egresos manuales. |
+| [Modo guiado](./modo-guiado.md) | Recorridos paso a paso para aprender a operar. |
 
 ---
 
@@ -46,7 +44,10 @@ Circuitos que el equipo usa todos los días en mostrador o depósito.
 |------|----------------|
 | [Tutorial del flujo de ventas](./tutorial-flujo-de-ventas.mdx) | Video del circuito comercial: cotización → presupuesto → pedido → venta. |
 | [Tutorial del flujo de compras](./tutorial-flujo-de-compras.mdx) | Video del circuito de compras: orden de compra → compra aprobada. |
-| [Formulario de documento V2](./formulario-documento-v2.md) | Cabecera, ítems y atajos F2/F4 del formulario rediseñado (compras y ventas). |
+| [Formulario de documentos](./formulario-documento-v2.md) | Cabecera, ítems y atajos F2/F4 del formulario de ventas, compras y notas. |
+| [Duplicar documentos](./duplicar-documentos.md) | Repetir una venta, un pedido, un presupuesto o una cotización. |
+| [Compartir y enviar documentos](./compartir-y-enviar-documentos.md) | Diferencia entre Compartir y Enviar por correo. |
+| [Escanear con la cámara](./escanear-codigos-con-camara.md) | Leer códigos EAN-13 con el celular en productos e inventario. |
 | [Cómo operar una venta rápida en POS](./como-operar-venta-rapida-en-pos.md) | Cargar productos, cobrar y cerrar una venta de mostrador. |
 | [Cómo recibir mercadería y actualizar stock](./como-recibir-mercaderia-y-actualizar-stock.md) | Ingresar lo recibido del proveedor y confirmar que el stock suba. |
 | [Cómo registrar ingresos y egresos](./como-registrar-ingresos-y-egresos.mdx) | Tutorial en video para movimientos manuales de caja fuera de ventas y compras. |

@@ -1,10 +1,7 @@
 ---
-title: "Zink ERP para cajeros: POS, cobro y caja diaria | Zink ERP"
+title: 'Zink ERP para cajeros: POS, cobro y caja diaria'
 sidebar_label: Para cajeros
-description: >-
-  Recorrido recomendado para cajeros o atención de mostrador: POS, medios de
-  pago, caja diaria, consultas de precio y resolución de errores frecuentes en
-  Zink ERP.
+description: 'Recorrido para cajeros y atención de mostrador: POS, medios de pago, caja diaria, consulta de precios y errores frecuentes.'
 sidebar_position: 3
 keywords:
   - cajero

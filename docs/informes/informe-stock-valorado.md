@@ -1,6 +1,6 @@
 ---
-title: Informe Stock Valorado | Zink ERP
-sidebar_label: Informe Stock Valorado
+title: 'Informe Stock valorado'
+sidebar_label: Informe Stock valorado
 description: Lista productos con stock y costo según filtros.
 sidebar_position: 63
 keywords:

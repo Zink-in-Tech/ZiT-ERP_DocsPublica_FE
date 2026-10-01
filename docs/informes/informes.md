@@ -1,5 +1,5 @@
 ---
-title: 'Informes en Zink ERP: ventas, stock, caja y cuenta corriente | Zink ERP'
+title: 'Informes: ventas, stock, caja y cuenta corriente'
 sidebar_label: Informes
 description: El Centro de informes concentra los reportes habilitados por tu perfil.
 sidebar_position: 60
@@ -13,7 +13,7 @@ keywords:
 
 ## Resumen
 
-El **Centro de informes** concentra los reportes habilitados por tu perfil. Podés buscar por nombre, fijar favoritos (se guardan en este navegador) y abrir cada informe desde su tarjeta.
+El **Centro de informes** concentra los reportes habilitados por tu perfil. Podés buscar por nombre, fijar tus favoritos y abrir cada informe desde su tarjeta.
 
 La mayoría permite filtrar por fechas, organización y, cuando aplica, por contacto. Podés exportar o imprimir según el tipo de informe.
 
@@ -24,6 +24,7 @@ La mayoría permite filtrar por fechas, organización y, cuando aplica, por cont
 - Para decidir **reposición** (stock bajo mínimo o faltantes de pedido).
 - Para **cerrar o auditar caja** en un período.
 - Para analizar **ventas o margen** por producto o período.
+- Para revisar **compras, pagos a proveedores o cobros de clientes** en un período.
 - Para exportar **cuenta corriente** o movimientos a Excel/PDF.
 
 ---
@@ -45,6 +46,9 @@ La mayoría permite filtrar por fechas, organización y, cuando aplica, por cont
 | PDF de ingresos de caja | [Ingresos](./informe-ingresos.md) |
 | PDF de egresos de caja | [Egresos](./informe-egresos.md) |
 | Excel de cuenta corriente | [Cuenta corriente](./informe-cuenta-corriente.md) |
+| Compras de un período, por proveedor (PDF) | [Compras por proveedor](./informe-compras-proveedor.md) |
+| Pagos hechos a proveedores (CSV o PDF) | [Pagos a proveedores](./informe-pagos-proveedores.md) |
+| Cobros recibidos de clientes (CSV o PDF) | [Cobros de clientes](./informe-cobros-clientes.md) |
 | Caja en un rango de fechas | Consulta desde la card en el Centro (ver [Caja diaria](../finanzas/caja-diaria.md)) |
 
 ---
@@ -73,7 +77,7 @@ Los filtros propios de cada informe están en su artículo.
 ## Reglas de uso
 
 - Solo ves informes para los que tenés permiso de menú.
-- Los informes fijados se guardan en el navegador (localStorage); no se sincronizan entre dispositivos ni usuarios.
+- Los informes fijados quedan guardados en el navegador que usás: si entrás desde otra computadora o celular, vas a tener que volver a fijarlos.
 - En general no se permiten fechas futuras; el rango máximo puede estar limitado según el informe.
 
 ---
@@ -85,7 +89,7 @@ Los filtros propios de cada informe están en su artículo.
 - **La consulta es lenta o no carga**
   - Acotá el rango de fechas.
 - **Los fijados no aparecen en otro equipo**
-  - Los fijados son locales al navegador; volvé a fijarlos en ese equipo.
+  - Los fijados quedan guardados en cada navegador; volvé a fijarlos en ese equipo.
 
 ---
 

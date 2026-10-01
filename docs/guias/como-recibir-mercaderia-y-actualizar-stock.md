@@ -1,10 +1,7 @@
 ---
-title: Cómo recibir mercadería y actualizar stock en Zink ERP | Zink ERP
+title: 'Cómo recibir mercadería y actualizar el stock'
 sidebar_label: Recibir mercadería
-description: >-
-  Guía paso a paso para registrar el ingreso de mercadería de una compra,
-  confirmar cantidades recibidas y verificar que el stock se actualice
-  correctamente.
+description: 'Guía paso a paso para registrar el ingreso de mercadería de una compra, confirmar cantidades recibidas y verificar que el stock se actualice correctamente.'
 sidebar_position: 6
 keywords:
   - recepción de mercadería
@@ -34,7 +31,7 @@ Registrar lo que efectivamente ingresó del proveedor, dejar trazabilidad si hay
 
 Usalo cada vez que llegue mercadería de un proveedor y necesites que el stock del ERP refleje lo que entró físicamente al depósito o al local.
 
-No sustituye un [Registro de inventario](../inventario/inventarios.md) para ajustes sin compra asociada ni una [Toma de inventario](../inventario/inventarios-ubicacion.md) para recuentos generales.
+No sustituye un [Registro de inventario](../inventario/inventarios.md) para ajustes sin compra asociada ni una [Toma inventario](../inventario/inventarios-ubicacion.md) para recuentos generales.
 
 ---
 
@@ -58,7 +55,7 @@ No sustituye un [Registro de inventario](../inventario/inventarios.md) para ajus
 8. Si la recepción es parcial, dejá observación sobre lo pendiente.
 9. Confirmá el ingreso de mercadería.
 
-En el flujo documentado, la compra impacta stock al pasar a **Aprobado**. Si la recepción es parcial, documentá la diferencia y usá **Control** si corresponde antes de aprobar.
+La compra impacta stock al pasar a **Aprobado**. Si la recepción es parcial, documentá la diferencia y usá **Control** si corresponde antes de aprobar.
 
 ### Paso 4: Verificar stock y deuda
 
@@ -108,7 +105,7 @@ Podés registrar una compra directa si tu operación lo permite. Revisá [Compra
 
 ### ¿Cómo corrijo stock sin compra?
 
-Usá [Registro de inventario](../inventario/inventarios.md) o [Toma de inventario](../inventario/inventarios-ubicacion.md), según el caso.
+Usá [Registro de inventario](../inventario/inventarios.md) o [Toma inventario](../inventario/inventarios-ubicacion.md), según el caso.
 
 ---
 

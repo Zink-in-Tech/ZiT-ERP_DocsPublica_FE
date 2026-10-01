@@ -1,9 +1,7 @@
 ---
-title: "Zink ERP para ferreterías: catálogo amplio, mostrador y reposición | Zink ERP"
+title: 'Zink ERP para ferreterías: catálogo y reposición'
 sidebar_label: Para ferreterías
-description: >-
-  Recorrido recomendado para ferreterías: catálogo grande, búsqueda rápida,
-  precios por cliente, mostrador, reposición y control de stock con Zink ERP.
+description: 'Recorrido recomendado para ferreterías: catálogo grande, búsqueda rápida, precios por cliente, mostrador, reposición y control de stock con Zink ERP.'
 sidebar_position: 3
 keywords:
   - ERP para ferreterías
