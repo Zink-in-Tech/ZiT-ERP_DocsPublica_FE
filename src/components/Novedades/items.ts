@@ -47,8 +47,8 @@ const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
     id: '42',
     fechaISO: '2026-09-16',
     tipo: 'feature',
-    titulo: 'Pedidos desde texto e importación asistida de productos',
-    lead: 'Pedidos desde texto, importación asistida de productos, Formularios V2 definitivos y descuentos en el Dashboard.',
+    titulo: 'Importar pedido desde texto e importación asistida de productos',
+    lead: 'Importar pedido desde texto, importación asistida de productos, Formularios V2 definitivos y descuentos en el Dashboard.',
   },
   {
     id: '41',

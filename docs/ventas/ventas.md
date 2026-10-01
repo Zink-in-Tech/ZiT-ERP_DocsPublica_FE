@@ -137,7 +137,7 @@ Cuando el cobro se registra correctamente, el sistema puede abrir el comprobante
 Desde la **consulta del comprobante** (abrí la venta por el número o el menú del listado) podés:
 
 - **Enviar por correo** el PDF al email del contacto (nativo y fiscal en el mismo mensaje, si hay documento fiscal). Si ya se envió, la acción pasa a **Enviar nuevamente**.
-- En vista **Fiscal** con facturación **ARCA**, elegir formato **Ticket** o **A4** (diseño propio de Zink ERP). Si tu organización todavía emite con la integración legada de Facturante, el PDF fiscal sigue siendo el habitual.
+- En vista **Fiscal** con facturación **ARCA**, elegir formato **Ticket** o **A4** (diseño propio de Zink ERP).
 
 Si el usuario confirma una venta con contacto y el proceso de pago es diferido, la deuda queda asociada a la cuenta corriente del contacto y puede cobrarse luego desde Finanzas, Cuenta corriente o Pagos.
 

@@ -60,7 +60,7 @@ Usá pedidos cuando:
 
 ![Listado de Pedidos con número, contacto, importe, fechas, envío y estado de cada pedido](/img/ayuda/ventas/pedidos-01.png)
 
-1. Creá un pedido desde **Gestión operativa → Pedidos** (ver [Formulario de documentos](../guias/formulario-documento-v2.md)). Si el cliente te mandó el pedido por mensaje, podés [importarlo desde texto](#importar-pedido-desde-texto).
+1. Creá un pedido desde **Gestión operativa → Pedidos** (ver [Formulario de documentos](../guias/formulario-documento-v2.md)). Si el cliente te mandó el pedido por mensaje, podés usar [Importar pedido desde texto](#importar-pedido-desde-texto).
 2. Seleccioná el contacto (no puede ser Consumidor Final).
 3. Completá **Pedido**, **Entrega** y totales (descuento, recargo, envío) si aplica.
 4. Agregá ítems (**F4** listado; **/** y **\*** con accesos rápidos).
@@ -163,7 +163,7 @@ Usalos cuando:
 - **No se genera la venta**
   - El pedido debe estar en **Preparado**.
   - El contacto no puede ser Consumidor Final (regla de pedidos).
-- **Al importar desde texto, una línea queda en Resolver**
+- **Al importar un pedido desde texto, una línea queda en Resolver**
   - El sistema no encontró el producto. Buscalo a mano en esa línea o quitala y agregala después en el pedido.
 - **No veo Importar desde texto (Beta)**
   - Necesitás permiso para crear pedidos. Revisalo en [Perfiles](../administracion/perfiles.md).

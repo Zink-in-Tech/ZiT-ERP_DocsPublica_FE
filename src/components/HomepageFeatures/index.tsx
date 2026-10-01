@@ -39,7 +39,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: '🛠️ Resolver un problema',
     description:
-      'Algo no funciona. Troubleshooting, errores frecuentes y soporte.',
+      'Algo no funciona. Problemas frecuentes, errores y soporte.',
     links: [
       {
         label: 'Problemas de integración',
