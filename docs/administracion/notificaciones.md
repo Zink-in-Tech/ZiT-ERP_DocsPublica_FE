@@ -49,11 +49,10 @@ En la campana, las alertas de stock crítico se agrupan en una sola fila (por ej
 ### Usar el centro de notificaciones
 
 1. Desde la campana, tocá **Ver todas las notificaciones**.
-2. Arriba ves el total de notificaciones y cuántas tenés sin leer.
-3. Filtrá por estado con **Todas** o **Sin leer**. Cada filtro muestra entre paréntesis cuántas notificaciones tiene.
-4. Filtrá por tipo con los chips (**Stock crítico**, **Cambio de precios**, **Venta**, **Compra**, **Pedido**, etc.) o elegí **Menciones** para ver solo los comentarios donde te nombraron. Solo aparecen los tipos que tenés.
-5. Usá el buscador para encontrar una notificación por su texto o por su tipo. No hace falta escribir las tildes.
-6. Hacé clic en el texto de una notificación para abrirla, o usá las acciones de la fila: **Marcar como leída** y **Abrir**.
+2. Filtrá por estado con **Todas** o **Sin leer**. Cada filtro muestra entre paréntesis cuántas notificaciones tiene, así ves de un vistazo el total y cuántas te faltan leer.
+3. Filtrá por tipo con los chips (**Stock crítico**, **Cambio de precios**, **Venta**, **Compra**, **Pedido**, etc.) o elegí **Menciones** para ver solo los comentarios donde te nombraron. Solo aparecen los tipos que tenés, y cada uno tiene su color, el mismo que su etiqueta en la tabla.
+4. Usá el buscador para encontrar una notificación por su texto o por su tipo. No hace falta escribir las tildes.
+5. Hacé clic en el texto de una notificación para abrirla, o usá las acciones de la fila: **Marcar como leída** y **Abrir**.
 
 ### Marcar notificaciones como leídas
 
@@ -70,9 +69,11 @@ Si entre las que vas a marcar hay alertas de stock crítico, el sistema te pide 
 |---------|---------|
 | **Notificación** | El texto del aviso. Las que no leíste aparecen en negrita y con un punto de color. En las alertas de stock crítico ves el stock actual y el mínimo; si el stock es negativo, se resalta en rojo. |
 | **Tipo** | Una etiqueta con el origen de la notificación. |
-| **Fecha** | Cuándo llegó: "Recién", "Hace 5 minutos", "Hace 2 días". Después de una semana se muestra la fecha. Pasando el mouse ves la fecha y hora exactas. |
+| **Fecha** | Día y hora en que llegó: "Hoy, 16:01", "Ayer, 09:10" o "28/09/2026, 19:56". Si es de la última semana, debajo ves cuánto tiempo pasó ("Hace 3 horas", "Hace 2 días"). |
 
 En el celular, el tipo y la fecha se muestran debajo del texto de cada notificación.
+
+En la campana se muestra el tiempo transcurrido ("Hace 1 hora"); pasando el mouse ves la fecha y hora exactas.
 
 ---
 
