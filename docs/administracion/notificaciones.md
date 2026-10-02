@@ -58,7 +58,7 @@ En la campana, las alertas de stock crítico se agrupan en una sola fila (por ej
 
 - **Una por una**: abrila o usá la acción **Marcar como leída** de la fila.
 - **Varias juntas**: seleccionalas con las casillas y tocá **Marcar como leídas** en la barra que aparece arriba de la tabla.
-- **Todas**: tocá **Marcar todas como leídas**. Si tenés un tipo filtrado, el botón cambia a **Marcar estas como leídas** y solo marca las de ese tipo.
+- **Todas**: tocá el sobre abierto que está junto a **Refrescar**, arriba de la tabla (**Marcar todas como leídas**). Si tenés un tipo filtrado, pasa a **Marcar estas como leídas** y solo marca las de ese tipo.
 - **Desde la campana**: tocá **Marcar todas leídas** en el encabezado del menú.
 
 Si entre las que vas a marcar hay alertas de stock crítico, el sistema te pide confirmación, porque afecta a todo tu equipo.
