@@ -33,8 +33,8 @@ const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
     id: '45',
     fechaISO: '2026-09-30',
     tipo: 'feature',
-    titulo: 'Detalle de pagos, respuestas en comentarios y centro de notificaciones',
-    lead: 'Consultá a qué comprobantes se aplicó cada pago, respondé comentarios mencionando al autor y revisá todas tus notificaciones desde el centro de notificaciones.',
+    titulo: 'Detalle de pagos, centro de notificaciones y más formas de duplicar ventas',
+    lead: 'Consultá a qué comprobantes se aplicó cada pago, duplicá una venta como pedido o presupuesto, respondé comentarios mencionando al autor y revisá todas tus notificaciones desde el centro de notificaciones.',
   },
   {
     id: '44',

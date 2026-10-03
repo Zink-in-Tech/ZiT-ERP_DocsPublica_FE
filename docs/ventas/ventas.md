@@ -237,8 +237,10 @@ Desde el detalle de una venta, el listado de pagos muestra medio de pago (con da
 ## Duplicar y compartir
 
 - **Duplicar**: desde **Más acciones** en el listado o con el botón **Duplicar** en el detalle, abrís una venta nueva con el mismo contacto, productos y cantidades. Ver [Duplicar documentos](../guias/duplicar-documentos.md).
+- **Duplicar como pedido o presupuesto**: en el listado, tocá el **+** junto a **Duplicar** en **Más acciones**; en el detalle, tocá **Duplicar** y elegí el destino. Los precios se calculan a hoy y, si algún producto ya no está disponible, el aviso lo nombra. Ver [Duplicar una venta como pedido o presupuesto](../guias/duplicar-documentos.md#duplicar-una-venta-como-pedido-o-presupuesto).
 - **Compartir**: desde el detalle podés copiar un resumen, mandarlo por WhatsApp o email, o descargar el PDF. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md).
-- **Enviar por correo**: desde **Ver comprobante**, el ícono de sobre manda el comprobante al email del cliente. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md#enviar-por-correo).
+- **Comprobantes**: en **Más acciones** del listado, **Comprobantes** abre el comprobante de la venta y, si tiene, el fiscal, en el mismo visor.
+- **Enviar por correo**: desde el comprobante (**Comprobantes** en el listado o **Ver comprobante** en el detalle), el ícono de sobre manda el comprobante al email del cliente. Ver [Compartir y enviar documentos](../guias/compartir-y-enviar-documentos.md#enviar-por-correo).
 
 ---
 

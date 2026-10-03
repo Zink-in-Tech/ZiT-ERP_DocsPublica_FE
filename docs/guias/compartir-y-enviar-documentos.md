@@ -43,7 +43,7 @@ Usá **Compartir** cuando querés elegir el canal o el destinatario. Usá **Envi
 
 ### Enviar el comprobante de una venta por correo {#enviar-por-correo}
 
-1. Abrí el comprobante con **Ver comprobante**, desde el listado de ventas, el detalle de la venta, la cuenta corriente o el historial comercial del contacto.
+1. Abrí el comprobante: con **Comprobantes** en **Más acciones** del listado de ventas, o con **Ver comprobante** en el detalle de la venta, la cuenta corriente o el historial comercial del contacto.
 2. Tocá el ícono de sobre **Enviar por correo**.
 3. Zink ERP envía el PDF al email del contacto y te muestra **Comprobante enviado a** seguido del email.
 
