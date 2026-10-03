@@ -22,6 +22,7 @@ Columnas habituales: código, código de barras, descripción, stock actual, sto
 
 - Antes de generar [órdenes de compra](../compras/orden-compras.md).
 - En rutinas de control de depósito, junto con [Productos faltantes](./informe-productos-faltantes.md).
+- Cuando te llega una alerta de stock crítico a la campana: **Ver stock crítico** abre este informe. Ver [Notificaciones](../administracion/notificaciones.md).
 
 ---
 

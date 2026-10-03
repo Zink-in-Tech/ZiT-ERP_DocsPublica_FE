@@ -20,7 +20,7 @@ Desde ahí decidís qué precios aplicar. Solo se actualizan los productos que a
 
 ## Antes de empezar
 
-- Tu perfil necesita permiso para ver las notificaciones recibidas. Revisalo en [Perfiles](./perfiles.md).
+- No necesitás un permiso especial: las notificaciones de cambio de precio te llegan a la campana del encabezado y al [centro de notificaciones](./notificaciones.md).
 - Si tenés dudas sobre un precio, consultalo con la central antes de aceptarlo.
 
 ---
