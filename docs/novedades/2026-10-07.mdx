@@ -1,0 +1,102 @@
+---
+title: '7 oct 2026: saldos a favor, ítems más claros e historial desde la cuenta corriente'
+sidebar_label: 7 oct 2026
+description: >-
+  Aplicá notas de crédito y pagos a cuenta sobre las ventas pendientes,
+  filtrá informes por uno o varios clientes, y alterná la vista de los
+  productos en los ítems.
+hide_title: true
+slug: /novedades/2026-10-07
+pagination_prev: null
+pagination_next: null
+sidebar_position: 0
+keywords:
+  - saldo a favor
+  - notas de crédito
+  - pagos a cuenta
+  - cuenta corriente
+  - historial comercial
+  - informes históricas
+  - productos vendidos
+  - vista de ítems
+  - formulario de documentos
+---
+
+import NovedadCabecera from '@site/src/components/Novedades/NovedadCabecera';
+
+<NovedadCabecera tipo="feature" fecha="7 de octubre de 2026" />
+
+Aplicá saldos a favor, cargá documentos con menos ruido y seguí a cada cliente desde la cuenta corriente.
+
+En esta entrega:
+
+- [Aplicar saldo a favor](#aplicar-saldo-a-favor)
+- [Informes de uno o varios clientes](#informes-de-uno-o-varios-clientes)
+- [Vista de los productos en los ítems](#vista-de-los-productos-en-los-ítems)
+- [Cuenta corriente más directa](#cuenta-corriente-más-directa)
+
+---
+
+## Aplicar saldo a favor
+
+Si el cliente tiene notas de crédito o pagos a cuenta, y además ventas pendientes, podés aplicar esos créditos de una vez.
+
+El sistema usa primero las notas de crédito y después los pagos a cuenta, siempre del más antiguo al más reciente, sobre **todas** las ventas pendientes del cliente. Si entrás desde una venta y hay otras más viejas, el saldo se aplica primero a esas.
+
+En la vista previa podés dejar afuera un crédito. Las ventas no se eligen una por una. Las notas de crédito se usan completas; el último pago a cuenta puede quedar en parte. La operación no se puede deshacer: tenés que aceptarlo antes de confirmar. Podés pedir que se envíe la constancia por email.
+
+Si una nota de crédito es mayor que la deuda pendiente, no se aplica nada. Excluí esa nota o andá al cobro para aplicar de a uno. Para imputar un saldo a una venta puntual, seguí usando el cobro.
+
+**Dónde** (con permiso de cobro, y si hay crédito y ventas pendientes):
+
+- Pagos de una venta con saldo → **Aplicar saldo a favor**. No aparece en Consumidor Final.
+- Finanzas → Cuenta corriente clientes → menú de la fila, o dentro de los movimientos.
+- Ficha del contacto → **Historial comercial**.
+- Cobro a cliente, con medio nota de crédito o créditos disponibles → **Aplicar varios saldos**.
+
+:::note Según tu perfil
+Si no podés registrar cobros, o el cliente no tiene crédito disponible, el botón no aparece.
+:::
+
+:::tip Guía relacionada
+[Pagos](/finanzas/pagos#aplicar-saldo-a-favor)
+:::
+
+---
+
+## Informes de uno o varios clientes
+
+En **Históricas de ventas** y en **Productos vendidos** podés acotar el resultado a uno o varios contactos.
+
+Escribí al menos 3 caracteres, elegí los clientes y generá el informe. Si no elegís ninguno, el informe sigue saliendo para todos.
+
+:::tip Guías relacionadas
+[Históricas de ventas](/informes/informe-historicas) · [Productos vendidos](/informes/informe-productos-vendidos)
+:::
+
+---
+
+## Vista de los productos en los ítems
+
+En ventas, presupuestos, pedidos, cotizaciones, compras y órdenes de compra, el botón de la cabecera de ítems alterna la vista del producto.
+
+- **Expandida:** descripción completa y código. En ventas, también el stock, en rojo si falta.
+- **Compacta:** el producto en una línea.
+
+La elección queda guardada para tu usuario. La grilla entra más ítems, el subtotal queda resaltado y, en el listado de productos (**F4**), la descripción se ve en dos líneas con la búsqueda resaltada.
+
+:::tip Guía relacionada
+[Formulario de documentos](/guias/formulario-documento-v2#vista-del-producto)
+:::
+
+---
+
+## Cuenta corriente más directa
+
+En **Cuenta corriente → Clientes**, abrí los movimientos y elegí **Historial comercial** para ver la actividad del cliente sin salir de la pantalla.
+
+Los listados de clientes y de proveedores ordenan por última operación, las más recientes primero. Al abrir los movimientos ves la carga y podés elegir qué columnas mostrar.
+
+:::tip Guía relacionada
+[Cuenta corriente](/finanzas/cuenta-corriente)
+:::

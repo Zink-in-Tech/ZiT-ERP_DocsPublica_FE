@@ -30,6 +30,13 @@ export function hrefNovedad(
 
 const NOVEDADES_FUENTE: Array<Omit<NovedadIndexItem, 'href'>> = [
   {
+    id: '46',
+    fechaISO: '2026-10-07',
+    tipo: 'feature',
+    titulo: 'Saldos a favor, ítems más claros e historial desde la cuenta corriente',
+    lead: 'Aplicá notas de crédito y pagos a cuenta sobre las ventas pendientes, filtrá informes por uno o varios clientes y alterná la vista de los productos en los ítems.',
+  },
+  {
     id: '45',
     fechaISO: '2026-09-30',
     tipo: 'feature',

@@ -41,8 +41,18 @@ El **POS** tiene su propia pantalla; ver [POS](../ventas/pos.md).
 | **Listado (F4)** | Abre el listado de productos. |
 | **Nuevo producto** | Alta rápida de un producto, si tu perfil tiene permiso. |
 | **⌨️ Accesos rápidos** | Muestra u oculta la ayuda de atajos. |
+| **Vista del producto** | Alterna entre descripción completa y una sola línea. Ver [abajo](#vista-del-producto). |
 
 Algunos documentos suman botones propios, como **Stock crítico** o **Faltantes**.
+
+### Vista del producto {#vista-del-producto}
+
+En ventas, presupuestos, pedidos, cotizaciones, compras y órdenes de compra, el botón de la cabecera de ítems alterna cómo se ve el producto ya elegido:
+
+- **Expandida:** descripción completa y código. En ventas, también el stock, en rojo si falta.
+- **Compacta:** el producto en una línea.
+
+La elección queda guardada para tu usuario. En el listado de productos (**F4**), la descripción se ve en dos líneas y el texto que buscaste queda resaltado. En el panel de totales, el **subtotal** queda resaltado.
 
 Si buscás un producto y aparece un solo resultado, se selecciona solo y el cursor pasa a la línea siguiente. Es útil si cargás con lector de código de barras.
 

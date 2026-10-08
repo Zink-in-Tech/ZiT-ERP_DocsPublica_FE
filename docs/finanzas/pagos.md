@@ -121,6 +121,21 @@ Al abrir el cobro desde una venta, el formulario se muestra de inmediato; el sal
 
 Desde el detalle de la venta, el listado de pagos muestra medio de pago (con datos de cheque o transferencia), hora, observación e importe **imputado a esa venta** (no el total del pago si saldó varios comprobantes).
 
+### Aplicar saldo a favor {#aplicar-saldo-a-favor}
+
+Si el cliente tiene notas de crédito o pagos a cuenta, y además ventas pendientes, podés aplicar esos créditos de una vez. Hace falta permiso para registrar cobros. El botón no aparece en Consumidor Final ni si no hay crédito o ventas pendientes.
+
+Dónde:
+
+- Pagos de una venta con saldo: **Aplicar saldo a favor**.
+- **Cuenta corriente → Clientes**: menú de la fila y acciones de los movimientos.
+- Ficha del contacto → **Historial comercial**.
+- Cobro a cliente, con medio nota de crédito o créditos disponibles: **Aplicar varios saldos**.
+
+La vista previa no graba hasta que confirmás. Aplica primero las notas de crédito y después los pagos a cuenta, del más antiguo al más reciente, sobre todas las ventas pendientes. Podés destildar créditos; las ventas no se eligen una por una. Las notas de crédito se usan completas. El último pago a cuenta puede quedar en parte. Tenés que aceptar que no se puede deshacer. Podés enviar la constancia por email.
+
+Si una nota de crédito es mayor que la deuda, no se aplica nada: excluí esa nota o andá al cobro para aplicar de a uno. Para imputar un saldo a una venta puntual, seguí eligiendo los comprobantes en el cobro.
+
 ### Diferencia o saldo a favor
 
 Si el pago supera o no coincide con los comprobantes seleccionados, revisá la aplicación antes de guardar. El sistema no debería dejar montos sin aplicar sin trazabilidad; puede pedir corregir el importe o generar un comprobante de ajuste.

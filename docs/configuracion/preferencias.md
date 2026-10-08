@@ -130,6 +130,7 @@ Diálogo **Cotización de moneda**, con subtítulo del tipo *1 USD = ¿cuántos 
 | Campo editable | Valor de **1 USD en ARS** |
 | Auditoría | Última actualización y usuario que guardó |
 | Al guardar | Pedís confirmación porque **recalcula el costo ARS de todos los productos con moneda de costo USD** (y los precios de listas automáticas si el producto tiene activo **Recalcular precios al modificar el costo**) |
+| Primera vez | Si todavía no hay cotización, el diálogo se titula **Cargar cotización USD** y la da de alta. Si ya existe, se titula **Actualizar cotización USD** |
 
 **Quién puede editarla**
 

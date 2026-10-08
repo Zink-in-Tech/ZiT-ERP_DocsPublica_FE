@@ -28,7 +28,7 @@ Incluye sección **general** (resumen por producto) y **detallada** (con fecha d
 ## Procedimiento
 
 1. En **Informes**, abrí **Productos vendidos**.
-2. Seleccioná **productos** y **lista de precios** (y fechas si aplica).
+2. Seleccioná **productos** y **lista de precios** (y fechas si aplica). En **Contactos**, escribí al menos 3 caracteres y elegí uno o más clientes. Vacío significa todos.
 3. Ejecutá; revisá sección general, detallada y totales.
 
 ---

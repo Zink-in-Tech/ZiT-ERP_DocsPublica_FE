@@ -63,8 +63,10 @@ Hay un [informe Excel de cuenta corriente](../informes/informe-cuenta-corriente.
 
 ## Qué permite hacer
 
-- Ver saldo actual por contacto (columnas **Contacto**, **Saldo**, **Última operación**)
-- Abrir los **movimientos** con un clic en el **nombre o razón social** (misma acción que el detalle del menú de la fila)
+- Ver saldo actual por contacto (columnas **Contacto**, **Saldo**, **Última operación**). El listado abre ordenado por última operación, las más recientes primero
+- Abrir los **movimientos** con un clic en el **nombre o razón social** (misma acción que el detalle del menú de la fila). Mientras cargan ves el estado y, si falla, el error
+- En la grilla de movimientos, ocultar columnas. La elección se recuerda en este navegador
+- En **clientes**, desde los movimientos: **Historial comercial** y, si hay crédito y permiso de cobro, **Aplicar saldo a favor**
 - Analizar comprobantes e importes en la grilla de movimientos
 - Abrir el comprobante desde el número en la grilla
 - **Compartir** un resumen del saldo (copiar, WhatsApp o email)
@@ -97,8 +99,9 @@ La disponibilidad de dinero se revisa en [Caja diaria](./caja-diaria.md).
    - **saldo actual** (el color indica el sentido del saldo)
    - la grilla de comprobantes (fecha, importes, saldo acumulado cuando aplica)
 5. Si hace falta, abrí un comprobante desde su número.
-6. Opcional: usá **Compartir** o registrá un cobro/pago.
-7. Volvé a revisar el saldo para confirmar que el movimiento aplicó.
+6. En **clientes**, desde las acciones de la cabecera podés abrir **Historial comercial** o **Aplicar saldo a favor**.
+7. Opcional: usá **Compartir** o registrá un cobro/pago.
+8. Volvé a revisar el saldo para confirmar que el movimiento aplicó.
 
 ### Compartir saldo
 

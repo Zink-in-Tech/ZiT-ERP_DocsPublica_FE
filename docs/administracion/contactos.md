@@ -44,7 +44,7 @@ También permiten definir condiciones comerciales específicas (bonificaciones, 
 
 3. Guardar el contacto.
 
-4. Desde la barra de acciones de la ficha (contacto ya creado):
+4. Desde la barra de acciones de la ficha (contacto ya creado, también en consulta):
    - **Cta Cte Proveedor** / **Cta Cte Cliente**
    - **Ingresar Movimiento** (cobro o pago)
    - **Nuevo** documento (venta, presupuesto, pedido o cotización, según permisos)
@@ -53,6 +53,7 @@ También permiten definir condiciones comerciales específicas (bonificaciones, 
    - elegí el período de indicadores (**30 / 60 / 90 días**)
    - cambiá el modo (Ventas, Cotizaciones, Presupuestos, Pedidos, Notas de crédito o débito)
    - en Ventas, usá los gráficos y el historial filtrable debajo
+   - si hay crédito disponible y permiso de cobro, **Aplicar saldo a favor**
    - abrí comprobantes o acciones desde las filas cuando estén disponibles
 
 ---

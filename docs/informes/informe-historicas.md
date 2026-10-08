@@ -11,7 +11,7 @@ keywords:
 
 ## Resumen
 
-Muestra el historial de ventas en un período: comprobantes, fechas, montos y clientes. Permite filtrar por fechas, organización y contacto (cliente).
+Muestra el historial de ventas en un período: comprobantes, fechas, montos y clientes. Permite filtrar por fechas, organización y uno o varios contactos.
 
 ---
 
@@ -26,7 +26,7 @@ Muestra el historial de ventas en un período: comprobantes, fechas, montos y cl
 ## Procedimiento
 
 1. En **Informes**, abrí **Históricas de ventas**.
-2. Configurá **fecha desde**, **fecha hasta** y filtros (organización, contacto).
+2. Configurá **fecha desde**, **fecha hasta** y el resto de los filtros. En **Contactos**, escribí al menos 3 caracteres y elegí uno o más clientes. Si lo dejás vacío, el informe incluye a todos.
 3. Consultá la grilla; exportá o imprimí según opciones del informe.
 
 ---
