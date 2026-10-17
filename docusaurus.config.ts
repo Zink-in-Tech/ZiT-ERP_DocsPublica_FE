@@ -5,8 +5,56 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Zink ERP',
   tagline: 'Guías operativas, integraciones y ayuda para implementar Zink ERP',
-  favicon: 'img/favicon.svg',
+  favicon: 'img/favicon.ico',
   headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        href: '/img/favicon.svg',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/img/favicon-32.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/img/favicon-16.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/img/apple-touch-icon.png',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'manifest',
+        href: '/manifest.json',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'theme-color',
+        content: '#723f97',
+      },
+    },
     {
       tagName: 'meta',
       attributes: {
@@ -189,8 +237,10 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: 'Zink ERP',
-        src: 'img/logo.svg',
+        alt: 'ZinkERP',
+        src: 'img/brand/zinkerp-horizontal_light.svg',
+        srcDark: 'img/brand/zinkerp-horizontal_dark.svg',
+        height: 36,
       },
       items: [
         {
@@ -213,6 +263,13 @@ const config: Config = {
     },
     footer: {
       style: 'light',
+      logo: {
+        alt: 'ZinkERP',
+        src: 'img/brand/zinkerp-horizontal_light.svg',
+        srcDark: 'img/brand/zinkerp-horizontal_dark.svg',
+        href: 'https://zinkerp.com',
+        height: 36,
+      },
       links: [
         {
           title: 'Documentación',
@@ -297,9 +354,9 @@ const config: Config = {
       options: {
         themeVariables: {
           primaryColor: '#f5f0fa',
-          primaryBorderColor: '#7500b9',
+          primaryBorderColor: '#723f97',
           primaryTextColor: '#333',
-          lineColor: '#008ed3',
+          lineColor: '#10b0e6',
           secondaryColor: '#e8f4fc',
           tertiaryColor: '#fafafa',
         },

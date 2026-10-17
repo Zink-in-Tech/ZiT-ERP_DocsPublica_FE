@@ -1,13 +1,16 @@
 /**
  * Tema Zink ERP — documentación pública.
- * Acentos alineados con la app (#7500B9 / #008ED3).
+ * Paleta A1: #723f97 #8262a9 #a49fce #10b0e6 #8fcdf0 (sin degradés en marca).
  */
 
 /* ─── Design tokens ─────────────────────────────────────────────── */
 
 :root {
-  --zink-purple: #7500b9;
-  --zink-blue: #008ed3;
+  --zink-purple: #723f97;
+  --zink-purple-mid: #8262a9;
+  --zink-purple-soft: #a49fce;
+  --zink-blue: #10b0e6;
+  --zink-blue-soft: #8fcdf0;
 
   /* Superficies */
   --zink-surface-base: #f8f9fb;
@@ -32,10 +35,10 @@
   --zink-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
   --zink-shadow-md: 0 4px 16px rgba(15, 23, 42, 0.06);
 
-  /* Interactivos */
-  --zink-interactive-hover: rgba(117, 0, 185, 0.06);
-  --zink-interactive-active: rgba(117, 0, 185, 0.1);
-  --zink-interactive-active-border: rgba(117, 0, 185, 0.35);
+  /* Interactivos — #723f97 */
+  --zink-interactive-hover: rgba(114, 63, 151, 0.06);
+  --zink-interactive-active: rgba(114, 63, 151, 0.1);
+  --zink-interactive-active-border: rgba(114, 63, 151, 0.35);
 
   /* Editorial / lectura */
   --zink-read-max-width: 63ch;
@@ -57,14 +60,14 @@
   --doc-share-hover: var(--zink-interactive-hover);
   --doc-share-border: var(--zink-border-medium);
 
-  /* Infima / Docusaurus overrides */
+  /* Infima / Docusaurus — escala solo con paleta A1 */
   --ifm-color-primary: var(--zink-purple);
-  --ifm-color-primary-dark: #600099;
-  --ifm-color-primary-darker: #56008a;
-  --ifm-color-primary-darkest: #42006b;
-  --ifm-color-primary-light: #8f33c9;
-  --ifm-color-primary-lighter: #9d4dd1;
-  --ifm-color-primary-lightest: #b87ae0;
+  --ifm-color-primary-dark: var(--zink-purple);
+  --ifm-color-primary-darker: var(--zink-purple);
+  --ifm-color-primary-darkest: var(--zink-purple);
+  --ifm-color-primary-light: var(--zink-purple-mid);
+  --ifm-color-primary-lighter: var(--zink-purple-mid);
+  --ifm-color-primary-lightest: var(--zink-purple-soft);
 
   --ifm-background-color: var(--zink-surface-base);
   --ifm-background-surface-color: var(--zink-surface-raised);
@@ -77,7 +80,7 @@
   --ifm-link-hover-decoration: underline;
 
   --ifm-code-font-size: 92%;
-  --docusaurus-highlighted-code-line-bg: rgba(117, 0, 185, 0.08);
+  --docusaurus-highlighted-code-line-bg: rgba(114, 63, 151, 0.08);
 
   /* Tipografía — contenido más liviano */
   --ifm-font-size-base: 16px;
@@ -128,7 +131,7 @@
   --ifm-breadcrumb-color-active: var(--zink-purple);
 
   /* Tablas y bloques */
-  --ifm-table-stripe-background: rgba(117, 0, 185, 0.03);
+  --ifm-table-stripe-background: rgba(114, 63, 151, 0.03);
   --ifm-table-border-color: var(--zink-border-subtle);
 }
 
@@ -155,9 +158,10 @@
   --zink-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
   --zink-shadow-md: 0 4px 20px rgba(0, 0, 0, 0.35);
 
-  --zink-interactive-hover: rgba(157, 95, 217, 0.1);
-  --zink-interactive-active: rgba(157, 95, 217, 0.16);
-  --zink-interactive-active-border: rgba(157, 95, 217, 0.5);
+  /* Interactivos — #a49fce sobre oscuro */
+  --zink-interactive-hover: rgba(164, 159, 206, 0.1);
+  --zink-interactive-active: rgba(164, 159, 206, 0.16);
+  --zink-interactive-active-border: rgba(164, 159, 206, 0.5);
 
   --doc-share-text: var(--zink-text-primary);
   --doc-share-muted: var(--zink-text-muted);
@@ -167,23 +171,23 @@
   --doc-share-hover: var(--zink-interactive-hover);
   --doc-share-border: var(--zink-border-medium);
 
-  --ifm-color-primary: #9d5fd9;
-  --ifm-color-primary-dark: #8c4ccd;
-  --ifm-color-primary-darker: #8445c7;
-  --ifm-color-primary-darkest: #6f35b0;
-  --ifm-color-primary-light: #b07fe3;
-  --ifm-color-primary-lighter: #b88de6;
-  --ifm-color-primary-lightest: #cdb0ee;
+  --ifm-color-primary: var(--zink-purple-soft);
+  --ifm-color-primary-dark: var(--zink-purple-mid);
+  --ifm-color-primary-darker: var(--zink-purple-mid);
+  --ifm-color-primary-darkest: var(--zink-purple);
+  --ifm-color-primary-light: var(--zink-purple-soft);
+  --ifm-color-primary-lighter: var(--zink-purple-soft);
+  --ifm-color-primary-lightest: var(--zink-purple-soft);
 
   --ifm-background-color: var(--zink-surface-base);
   --ifm-background-surface-color: var(--zink-surface-raised);
   --ifm-font-color-base: var(--zink-text-secondary);
 
-  --ifm-link-color: #5ec4ff;
-  --ifm-link-hover-color: #cfa8ff;
+  --ifm-link-color: var(--zink-blue-soft);
+  --ifm-link-hover-color: var(--zink-purple-soft);
 
-  --docusaurus-highlighted-code-line-bg: rgba(157, 95, 217, 0.22);
-  --ifm-table-stripe-background: rgba(157, 95, 217, 0.06);
+  --docusaurus-highlighted-code-line-bg: rgba(164, 159, 206, 0.22);
+  --ifm-table-stripe-background: rgba(164, 159, 206, 0.06);
   --ifm-menu-link-sublist-icon-filter: invert(100%);
 }
 
@@ -259,7 +263,14 @@
 }
 
 .navbar__logo {
-  height: 1.75rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  height: 36px;
+  width: auto;
 }
 
 .navbar__item.navbar__link {
@@ -905,6 +916,10 @@
   margin-top: 0.5rem;
 }
 
+.footer__logo {
+  margin-bottom: 0.75rem;
+}
+
 [data-theme='dark'] .footer {
   background: var(--zink-surface-sidebar);
 }
@@ -918,15 +933,15 @@
 
 [data-theme='dark'] .homepage-hero {
   background:
-    radial-gradient(ellipse 80% 55% at 50% -15%, rgba(157, 95, 217, 0.18), transparent),
+    radial-gradient(ellipse 80% 55% at 50% -15%, rgba(164, 159, 206, 0.18), transparent),
     linear-gradient(180deg, var(--zink-surface-raised) 0%, var(--zink-surface-base) 100%);
 }
 
 [data-theme='dark'] .homepage-hero::before {
   background: linear-gradient(
     135deg,
-    rgba(94, 196, 255, 0.05) 0%,
+    rgba(143, 205, 240, 0.05) 0%,
     transparent 45%,
-    rgba(157, 95, 217, 0.08) 100%
+    rgba(164, 159, 206, 0.08) 100%
   );
 }
